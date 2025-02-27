@@ -1,0 +1,92 @@
+# Datasets
+Plasma Amino Acids
+Anthropometrics
+Bayley score
+Wolkes score
+Functioning in the Chronic Illness Scale
+fNIRS
+EF (Glitter wand and spin the pots)
+Head measurements
+Plasma Lipids
+EEG (microstates, PSD and VEP)
+Gut microbiome
+Percieved stress scale
+Sleep
+Plasma vitamins
+
+# Other variables
+Sex of the Child
+Members in household
+Number of living children less than 19 years old 
+Birth order of enrolled child among live births
+Number of siblings under 5 years, excluding enrolled child
+Number of mobile phne users in household
+Ethnicity
+Number of years lived in current household
+Number of rooms in current household
+Number of people usually sleeping in household
+Family type
+Language
+Maid working in household
+Father’s Educational attainment
+Years of father's education
+Mother’s Educational attainment
+Years of mother's education
+Father’s occupation
+Mother’s occupation
+Family own’s the home they live in
+Household head’s income taka
+Mother’s income taka
+Total monthly Income taka
+Family expenditure food, clothes, utility bills i.e. electricity, gas, water taka 
+Monthly total expenditure taka
+Household - Principal type of flooring
+Household - Principal wall material
+Household - Principal roofing material
+Household - Cooking gas
+Household - Telephone/mobile
+Household - Almeria
+Household - Table
+Household - Chair
+Household - Bench
+Household - Watch or clock
+Household - Cot or bed
+Household - Working Radio
+Household - Working TV
+Household - Bicycle
+Household - Motorcycle
+Household - Sewing machine
+Reads the newspaper
+Listens to/watches Radio/TV
+Uses social media
+Principal source of household drinking water
+Principal type of toilet facility used by household members
+Household food availability
+Washing - agent used before feeding child
+Washing - method used before feeding child
+Washing - source of water used before feeding child
+Washing - agent used before eating
+Washing - method used before eating
+Washing - source of water used before eating
+Washing - agent used after defecating
+Washing - method used after defecating
+Washing - source of water used after defecating
+Washing - agent used before cleaning child’s dishes
+Washing - method used before cleaning child’s dishes
+Washing - source of water used before cleaning child’s dishes
+Washing - agent used after cleaning child’s anus
+Washing - method used after cleaning child’s anus
+Washing - source of water used after cleaning child’s anus
+Water treatment method
+Toilet facility shared with other households
+Frequency of nail cutting of mother
+Place for cooking for household
+Type of cooking fuel
+Open drain beside house
+Condition (MAM vs well nourished)
+Feeds by Randomization
+Recovery
+Duration of Exclusive Breast Feeding Months
+Place of birth
+Delivery Mode
+Supplementation during pregnancy
