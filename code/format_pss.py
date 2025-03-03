@@ -4,13 +4,13 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
 # Mother stress Perceived stress scale
 df = pd.read_csv('../data/DhakaBangladeshLEAPE-PSS_DATA_LABELS_2024-07-18_2240.csv',index_col=0)
-translated = pd.read_csv('../data/PSS_translated.tsv', sep='\t', header=None)
+translated = pd.read_csv('../conf/PSS_translated.tsv', sep='\t')
+
 df.index = df.index + df['Event Name'].replace(
         {'12_month (Arm 2: Intervention)':'000',
          '12_month  (Arm 1: Control)':'000',
@@ -19,7 +19,7 @@ df.index = df.index + df['Event Name'].replace(
          '36_month (Arm 2: Intervention)':'104',
          '36_month (Arm 3: Outcome Reference)':'104'})
 df = df.iloc[:,3:-1]
-df.columns = translated[0]
+df.columns = translated.shorthand
 mapper = {'Never':0,
           'Almost Never':1,
           'Sometimes':2,
@@ -28,4 +28,11 @@ mapper = {'Never':0,
 df = df.replace(mapper)
 df = df.loc[~df.index.str.contains('ol')]
 
-f.save(df, 'pss')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+
+df.columns = df.columns.str.replace(' ','_')
+
+df.to_csv('../results/pss.tsv', sep='\t')

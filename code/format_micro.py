@@ -4,11 +4,9 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
-#df = pd.read_csv('../data/DhakaBangladeshLEAPE-MicrostatesVariables_DATA_LABELS_2024-04-13_2021.csv',index_col=0, sep='\t')
 df = pd.read_csv('../data/DhakaBangladeshLEAPE-MicrostatesVariables_DATA_LABELS_2024-07-18_2308.csv',index_col=0)
 
 df.index = df.index +  df['Event Name'].replace(
@@ -22,5 +20,11 @@ df = df.iloc[:,1:-1]
 # outlier
 df = df.drop('LCC2024000')
 
-f.save(df, 'micro')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+df.columns = df.columns.str.replace(' ','_')
+
+df.to_csv('../results/micro.tsv', sep='\t')
 

@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -20,6 +19,14 @@ vep.index = vep.index.str.replace('_1yo.*','000', regex=True)
 vep.index = vep.index.str.replace('_2yo.*','052', regex=True)
 vep = vep.loc[~vep.index.str.contains('_')] # drop all with underscores as 2 (4 replicates)
 vep = vep.loc[:, ~vep.columns.str.contains('All')] # drop mins
-vep = vep.loc[~vep.index.str.contains('1003')] # random error point
+df = vep.loc[~vep.index.str.contains('1003')] # random error point
 
-f.save(vep, 'vep')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+df.columns = df.columns.str.replace(' ', '_')
+df.columns.name = 'vep_feature'
+df = df.stack().to_frame('vep_value')
+
+df.to_csv('../results/vep.tsv', sep='\t')

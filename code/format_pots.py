@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import pandas as pd
 
 df = pd.read_csv('../data/DhakaBangladeshLEAPE-SpinThePotsScoring_DATA_LABELS_2024-07-18_2302.csv',index_col=0)
@@ -18,5 +17,12 @@ df.index = df.index +  df['Event Name'].replace(
 df = df.iloc[:, -4:-1].dropna() # only the scores, only lose 4 samples
 df = df.astype(int)
 
-f.save(df, 'pots')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+
+df.columns = df.columns.str.replace(' ','_')
+
+df.to_csv('../results/pots.tsv', sep='\t')
 

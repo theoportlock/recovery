@@ -4,11 +4,9 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
-# FUNCTIONING IN CHRONIC ILLNESS SCORE
 df = pd.read_csv('../data/DhakaBangladeshLEAPE-FCIScoringQC_DATA_LABELS_2024-07-18_2309.csv', index_col=0)
 
 df.index = df.index + df['Event Name'].replace(
@@ -24,6 +22,10 @@ df = df.iloc[:,3:-3]
 df['Total_FCIS'] = df['5. TOTAL SCORE  (Add all numbers in right column, including questions 3a and 3b)']
 df = df['Total_FCIS'].to_frame().dropna() # loses 20
 
-# save
-f.save(df, 'fcis')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+
+df.to_csv('../results/fcis.tsv', sep='\t')
 

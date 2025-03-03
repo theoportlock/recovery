@@ -24,5 +24,10 @@ df['glitter_seconds'] = df['Number of seconds child refrains from touching the g
 df = df['glitter_seconds'].to_frame()
 df = df.dropna()
 
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+
 f.save(df, 'glitter')
 

@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -23,6 +22,16 @@ out = out.astype(float)
 out = out.loc[out.index.str[2] != 'M'] # lose 10 samples to mothers
 out = out.reset_index()
 out.loc[out['Sample ID'].str[3] == '3', 'Sample ID'] = out.loc[out['Sample ID'].str[3] == '3', 'Sample ID'].str[:-3] + '104'
-out = out.set_index('Sample ID')
+df = out.set_index('Sample ID')
 
-f.save(out, 'vitamin')
+df.columns = df.columns.str.replace(' ','_')
+df.columns = df.columns.str.lower()
+
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+df.columns.name = 'vitamin'
+df = df.stack().to_frame('abundance')
+
+df.to_csv('../results/vitamin.tsv', sep='\t')

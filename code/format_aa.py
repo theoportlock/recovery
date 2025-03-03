@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -52,6 +51,10 @@ idcol, timecol = out.index.str[:7], out.index.str[8:].astype(int)
 out.insert(0, 'timepoint',timecol)
 out.insert(0, 'subjectID',idcol)
 out = out.set_index(['subjectID', 'timepoint'])
-f.save(out, 'aa')
+out.columns.name='amino_acid'
+out = out.stack().to_frame('concentration').reset_index()
+df = out.set_index(['subjectID', 'timepoint'])
+
+df.to_csv('../results/aa.tsv', sep='\t')
 
 

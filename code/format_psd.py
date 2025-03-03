@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -17,6 +16,14 @@ psd.index = psd.index + psd['Event Name'].replace(
          '24_month (Arm 2: Intervention)':'052',
          '36_month (Arm 3: Outcome Reference)':'104'})
 
-psd = psd.iloc[:,2:]
+df = psd.iloc[:,2:]
 
-f.save(psd, 'psd')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+df.columns = df.columns.str.replace(' ','_')
+df.columns.name = 'measurement'
+df = df.stack().to_frame('power')
+
+df.to_csv('../results/psd.tsv', sep='\t')

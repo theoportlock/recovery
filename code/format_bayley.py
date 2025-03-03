@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -26,5 +25,7 @@ idcol, timecol = bayley.index.str[:7], bayley.index.str[8:].astype(int)
 bayley.insert(0, 'timepoint',timecol)
 bayley.insert(0, 'subjectID',idcol)
 bayley = bayley.set_index(['subjectID', 'timepoint'])
+bayley.columns = bayley.columns.str.replace(' ','_')
+bayley.columns = bayley.columns.str.lower()
 
-f.save(bayley, 'bayley')
+bayley.to_csv('../results/bayley.tsv', sep='\t')

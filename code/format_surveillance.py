@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -28,6 +27,12 @@ df['Fever'] = df.Temp.gt(38)
 # Calculate capsule (half is half)
 df['Capsule'] = (df.Capsule - 1).div(2)
 
+df['timepoint'] = pd.to_timedelta(df['Day'].sub(1), unit='D') / np.timedelta64(1, 'W')
+df = df.dropna(subset='timepoint')
+df['timepoint'] = df.timepoint.apply(np.ceil).dropna().astype(int)
+df['subjectID'] = df.index
+df = df.set_index(['subjectID', 'timepoint'])
+
 # Save
-f.save(df, 'surveillance')
+df.to_csv('../results/surveillance.tsv', sep='\t')
 

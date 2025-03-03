@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -24,4 +23,12 @@ df = df.loc[:, df.columns.str.contains('min')]
 # Drop that one column that has weak data
 df = df.dropna(thresh=300, axis=1).dropna()
 
-f.save(df, 'pci')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+df.columns = df.columns.str.replace('Amount of Time Taken for ','').str.replace(' (minutes)', '')
+df.columns = df.columns.str.replace(' ','_')
+df.columns = df.columns.str.replace('&','AND')
+
+df.to_csv('../results/pci.tsv', sep='\t')

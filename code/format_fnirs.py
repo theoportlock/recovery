@@ -4,11 +4,9 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
-#df = pd.read_csv('../data/DhakaBangladeshLEAPE-FNIRSProcessedVariab_DATA_2024-02-12_1130 (1).csv', index_col=1, sep='\t')
 df = pd.read_csv('../data/DhakaBangladeshLEAPE-FNIRSProcessedVariab_DATA_LABELS_2024-07-18_2304.csv', index_col=0)
 df = df.iloc[:, :-2]
 
@@ -23,5 +21,14 @@ df.index = df.index + df['Event Name'].replace(
 df = df.iloc[:,1:]
 df = df.dropna() # loses 60
 
-f.save(df, 'fnirs')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+df.columns = df.columns.str.replace(' ','_')
+
+df.columns.name = 'connection'
+df = df.stack().to_frame('connectivity')
+
+df.to_csv("../results/fnirs.tsv", sep='\t')
 

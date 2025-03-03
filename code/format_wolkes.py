@@ -4,7 +4,6 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
@@ -20,6 +19,15 @@ wolkes = wolkes.loc[:, wolkes.columns.str.contains('wolke')]
 wolkes.columns = wolkes.columns.str.replace('_bangla','')
 wolkes.columns = wolkes.columns.str.replace('_bangle','')
 wolkes = wolkes.iloc[:, :-1]
-wolkes = wolkes.astype(float)
+df = wolkes.astype(float)
 
-f.save(wolkes, 'wolkes')
+idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
+df.insert(0, 'timepoint',timecol)
+df.insert(0, 'subjectID',idcol)
+df = df.set_index(['subjectID', 'timepoint'])
+
+df.columns = df.columns.str.replace('wolke_','')
+df.columns.name = 'wolkes_category'
+df = df.stack().to_frame('score')
+
+df.to_csv("../results/wolkes.tsv", sep='\t')
