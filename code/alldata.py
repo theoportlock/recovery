@@ -71,4 +71,3 @@ plot(mamdf, 'mdata')
 #plot(cmamdf, 'cmamdf')
 #sns.set()
 #f.upset({key: dataset.dropna().index for key, dataset in datasets.items()}, sort_by='cardinality')
-# Possibly a sankey of predicatblilyt from baseline?

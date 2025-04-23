@@ -7,8 +7,8 @@ df = pd.read_csv("../results/anthro.tsv", sep='\t', index_col=0)
 extract = {
     'LCC1008': [0, 52],
     'LCC1049': [0, 52],
-    'LCC2038': [0, 28],
-    'LCC2042': [0, 28],
+    'LCC2038': [0, 52],
+    'LCC2042': [0, 52],
 }
 
 # Initialize an empty list to collect results
