@@ -30,8 +30,8 @@
 </node>
 <node id="build_database.graphml::772678b7-9a62-4651-a764-38ba8c6f8735">
   <data key="d0">rm -r ../results/m4efad.db; sqlite3 ../results/m4efad.db &lt; create_tables.sql</data>
-  <data key="d1">490.0970286903904</data>
-  <data key="d2">-260.74438628880847</data>
+  <data key="d1">552.503304360678</data>
+  <data key="d2">-256.6521714907568</data>
 </node>
 <node id="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282">
   <data key="d0">python format_glitter.py</data>
@@ -50,8 +50,8 @@
 </node>
 <node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
   <data key="d0">python format_head.py</data>
-  <data key="d1">9.736487163169139</data>
-  <data key="d2">-399.64948656974417</data>
+  <data key="d1">4.621218665604566</data>
+  <data key="d2">-388.39589587510216</data>
 </node>
 <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
   <data key="d0">python format_surveillance.py</data>
@@ -70,8 +70,8 @@
 </node>
 <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
   <data key="d0">python format_anthro.py</data>
-  <data key="d1">-57.64780870977954</data>
-  <data key="d2">-418.0825121061435</data>
+  <data key="d1">-60.71696980831828</data>
+  <data key="d2">-438.5435860964018</data>
 </node>
 <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
   <data key="d0">python format_aa.py</data>
@@ -190,8 +190,8 @@
 </node>
 <node id="analysis.graphml::6a29d9fc-9922-4f50-ab50-98c957a1c659">
   <data key="d0">regplot.py genetics -x 'EA_PRS' -y 'Intelligent_PRS'</data>
-  <data key="d1">2570.171168889434</data>
-  <data key="d2">-849.6682036883946</data>
+  <data key="d1">1991.2052137933686</data>
+  <data key="d2">-776.1153600282773</data>
 </node>
 <node id="analysis.graphml::4c706172-29c1-45a4-9cab-59c1b9d0e672">
   <data key="d0">calculate.py onehot meta</data>
@@ -215,8 +215,8 @@
 </node>
 <node id="analysis.graphml::b4b94c68-5552-4143-aee2-c19d69b36d8b">
   <data key="d0">join.py timemeta meta --on ID -o fulltimemeta</data>
-  <data key="d1">2137.14750357336</data>
-  <data key="d2">411.31534208960204</data>
+  <data key="d1">1895.1752594891616</data>
+  <data key="d2">382.3915461495083</data>
 </node>
 <node id="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed">
   <data key="d0">bash calculate_diversity.sh metaphlan</data>
@@ -320,8 +320,8 @@
 </node>
 <node id="analysis.graphml::a1c1ae00-7a69-4ad2-97d6-ec76daec7c0b">
   <data key="d0">sig_summary.py geneticscorr -s qval -c cor</data>
-  <data key="d1">2604.930930415812</data>
-  <data key="d2">-512.7894414139721</data>
+  <data key="d1">2643.723669178941</data>
+  <data key="d2">-535.1445790062834</data>
 </node>
 <node id="analysis.graphml::b0a15be4-2656-4e12-8d23-2157a387c614">
   <data key="d0">plot_network.py ../results/geneticsnet.graphml --output_file ../results/geneticsnet.pdf</data>
@@ -643,9 +643,6 @@
 <edge source="analysis.graphml::61b8cef2-2f16-4126-9595-955c597c15e4" target="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43">
   <data key="d3">7dc22052-6868-4fb9-9beb-62f7081c0fc4</data>
 </edge>
-<edge source="analysis.graphml::61b8cef2-2f16-4126-9595-955c597c15e4" target="analysis.graphml::8980aadd-c193-41ab-851b-0e964bac7640">
-  <data key="d3">7bb5f469-995f-4d48-8721-95fb7a5427da</data>
-</edge>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d3">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
 </edge>
@@ -682,6 +679,15 @@
 <edge source="analysis.graphml::a0f1352f-177b-4fd8-bd04-c84af0af1bc7" target="analysis.graphml::1e24e984-1090-4cae-96ae-e93682faebcb">
   <data key="d3">8c32cd6f-e38d-4c8d-87bd-0fbab4069b2a</data>
 </edge>
+<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::a0f1352f-177b-4fd8-bd04-c84af0af1bc7">
+  <data key="d3">ed7a1cbc-f55b-4a99-a97d-deee0465f318</data>
+</edge>
+<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe">
+  <data key="d3">088a9798-4e93-40c9-a573-c2d1acb903ac</data>
+</edge>
+<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::4c706172-29c1-45a4-9cab-59c1b9d0e672">
+  <data key="d3">838d8708-7d48-4797-b212-3c330d7aecce</data>
+</edge>
 <edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::aae025de-9cf1-4b04-b53b-9fc8e26af4ac">
   <data key="d3">e5a3469e-66fb-4807-a339-41848fcb77f0</data>
 </edge>
@@ -691,13 +697,13 @@
 <edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed">
   <data key="d3">bba1ae9e-5c91-44aa-88ac-ce317e2fdbbf</data>
 </edge>
-<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::4c706172-29c1-45a4-9cab-59c1b9d0e672">
-  <data key="d3">838d8708-7d48-4797-b212-3c330d7aecce</data>
+<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::8980aadd-c193-41ab-851b-0e964bac7640">
+  <data key="d3">ce1c08b5-94fa-42dc-9c7c-7c4619044a13</data>
 </edge>
-<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe">
-  <data key="d3">088a9798-4e93-40c9-a573-c2d1acb903ac</data>
+<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::6a29d9fc-9922-4f50-ab50-98c957a1c659">
+  <data key="d3">6415fe44-1da0-4b6e-8e1f-6b342c09420d</data>
 </edge>
-<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::a0f1352f-177b-4fd8-bd04-c84af0af1bc7">
-  <data key="d3">ed7a1cbc-f55b-4a99-a97d-deee0465f318</data>
+<edge source="analysis.graphml::5f18dee4-4618-434e-9c2a-6073c2fdfe43" target="analysis.graphml::b4b94c68-5552-4143-aee2-c19d69b36d8b">
+  <data key="d3">0aee9608-dd02-40ff-95b4-5154b67009d8</data>
 </edge>
 </graph></graphml>
