@@ -18,11 +18,10 @@ for file in genetics_datasets:
     dfs.append(df)
 
 # Merge
-#joined = pd.concat(dfs, join='outer', axis=1).groupby(level=0, axis=1).max()
 joined = pd.concat(dfs, join='outer', axis=1).T.groupby(level=0).max().T
 
 # Standardize
-joined = joined.apply(zscore)
+#joined = joined.apply(zscore) Just removed this
 joined.index.name = 'subjectID'
 
 # Save

@@ -31,4 +31,9 @@ df.columns = df.columns.str.replace('Amount of Time Taken for ','').str.replace(
 df.columns = df.columns.str.replace(' ','_')
 df.columns = df.columns.str.replace('&','AND')
 
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
+
 df.to_csv('../results/pci.tsv', sep='\t')

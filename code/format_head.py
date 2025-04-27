@@ -25,7 +25,7 @@ df = df.dropna() # loses 20
 df = df.astype(str).replace(' ','', regex=True).astype(float)
 
 # Shorten name
-df.columns = df.columns.str.replace('\).*',')', regex=True)
+df.columns = df.columns.str.replace(r'\).*',')', regex=True)
 
 idcol, timecol = df.index.str[:7], df.index.str[8:].astype(int)
 df.insert(0, 'timepoint',timecol)
@@ -34,7 +34,12 @@ df = df.set_index(['subjectID', 'timepoint'])
 
 df.columns = df.columns.str.replace(' ','_')
 df.columns = df.columns.str.replace('-','_')
-df.columns = df.columns.str.replace('\(|\)','', regex=True).str.lower()
+df.columns = df.columns.str.replace(r'\(|\)','', regex=True).str.lower()
+
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
 
 df.to_csv('../results/head.tsv', sep='\t')
 

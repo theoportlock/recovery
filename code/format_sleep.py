@@ -21,5 +21,10 @@ df = df.set_index(['subjectID', 'timepoint'])
 
 df.columns = df.columns.str.replace('(mins)','')
 
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
+
 df.to_csv('../results/sleep.tsv', sep='\t')
 

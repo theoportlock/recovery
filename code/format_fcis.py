@@ -27,5 +27,10 @@ df.insert(0, 'timepoint',timecol)
 df.insert(0, 'subjectID',idcol)
 df = df.set_index(['subjectID', 'timepoint'])
 
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
+
 df.to_csv('../results/fcis.tsv', sep='\t')
 

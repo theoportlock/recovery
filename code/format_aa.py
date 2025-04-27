@@ -53,7 +53,13 @@ out.insert(0, 'subjectID',idcol)
 out = out.set_index(['subjectID', 'timepoint'])
 out.columns.name='amino_acid'
 out = out.stack().to_frame('concentration').reset_index()
-df = out.set_index(['subjectID', 'timepoint'])
+df = out.set_index(['subjectID', 'timepoint', 'amino_acid'])
+df = df.unstack().droplevel(0, axis=1)
+
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
 
 df.to_csv('../results/aa.tsv', sep='\t')
 

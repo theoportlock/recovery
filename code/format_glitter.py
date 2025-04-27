@@ -4,11 +4,9 @@
 Author: Theo Portlock
 For project setup
 '''
-import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 
-#df = pd.read_csv('../data/DhakaBangladeshLEAPE-GlitterWandAttractiv_DATA_LABELS_2024-03-11_0414.csv',index_col=0)
 df = pd.read_csv('../data/DhakaBangladeshLEAPE-GlitterWandAttractiv_DATA_LABELS_2024-07-18_2238.csv',index_col=0)
 
 df.index = df.index +  df['Event Name'].replace(
@@ -29,5 +27,10 @@ df.insert(0, 'timepoint',timecol)
 df.insert(0, 'subjectID',idcol)
 df = df.set_index(['subjectID', 'timepoint'])
 
-f.save(df, 'glitter')
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
+
+df.to_csv('../results/glitter.tsv', sep='\t')
 

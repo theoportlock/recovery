@@ -26,9 +26,12 @@ df.insert(0, 'timepoint',timecol)
 df.insert(0, 'subjectID',idcol)
 df = df.set_index(['subjectID', 'timepoint'])
 df.columns = df.columns.str.replace(' ','_')
-
 df.columns.name = 'connection'
-df = df.stack().to_frame('connectivity')
+
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
 
 df.to_csv("../results/fnirs.tsv", sep='\t')
 

@@ -13,4 +13,9 @@ quality = quality.loc[:,quality.columns.str.contains('final')].sum(axis=1).div(1
 quality = quality.join(samplesheet.reset_index().set_index('Seq_ID')[['subjectID','timepoint']], how='inner').set_index(['subjectID','timepoint'])
 df = quality.set_axis(['hq_read_depth_million_reads'], axis=1)
 
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
+
 df.to_csv('../results/quality.tsv', sep='\t')

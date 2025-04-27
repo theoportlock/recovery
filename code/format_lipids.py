@@ -29,8 +29,8 @@ dataset1.set_index('LEAP', inplace=True)
 
 # Clean column names:
 dataset1.columns = dataset1.columns.str[4:]                              # Remove leading 4 characters (POS/NEG)
-dataset1.columns = dataset1.columns.str.replace('^\d*\ -\ ', '', regex=True)  # Remove numeric IDs and hyphen
-dataset1.columns = dataset1.columns.str.replace('\|.*', '', regex=True)     # Remove uncertain annotations
+dataset1.columns = dataset1.columns.str.replace(r'^\d*\ -\ ', '', regex=True)  # Remove numeric IDs and hyphen
+dataset1.columns = dataset1.columns.str.replace(r'\|.*', '', regex=True)     # Remove uncertain annotations
 
 # Replace empty strings with NaN for proper missing value handling
 dataset1.replace({'': np.nan}, inplace=True)
@@ -60,7 +60,7 @@ dataset2.set_index('M4EFaD', inplace=True)
 
 # Clean column names:
 dataset2.columns = dataset2.columns.str[10:]                              # Remove leading 10 characters (POS/NEG)
-dataset2.columns = dataset2.columns.str.replace('^\d*\_', '', regex=True)   # Remove numeric IDs and underscore
+dataset2.columns = dataset2.columns.str.replace(r'^\d*\_', '', regex=True)   # Remove numeric IDs and underscore
 
 # Convert values to float and group duplicates:
 dataset2 = dataset2.astype(float)
@@ -101,8 +101,8 @@ dfn = dfn.reset_index().rename(columns={'Unnamed: 1': 'treatment', 'index': 'Lig
        .set_index(['treatment', 'Liggins sample'])
 
 # Clean column names by removing uncertain annotations in both dataframes:
-dfn.columns = dfn.columns.str.replace('\|.*', '', regex=True)
-dfp.columns = dfp.columns.str.replace('\|.*', '', regex=True)
+dfn.columns = dfn.columns.str.replace(r'\|.*', '', regex=True)
+dfp.columns = dfp.columns.str.replace(r'\|.*', '', regex=True)
 
 # Concatenate the POS and NEG datasets along columns, keeping only shared columns.
 df = pd.concat([dfp, dfn], join='inner', axis=1)
@@ -160,8 +160,11 @@ df.insert(0, 'subjectID', idcol)
 df = df.set_index(['subjectID', 'timepoint'])
 # Rename the column index to 'lipid'
 df.columns.name = 'lipid'
-# Convert the DataFrame to long format, with 'abundance' as values
-df = df.stack().to_frame('abundance').reset_index()
+
+mapping = df.index.to_frame()
+mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(str)
+mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
+df.index = mapping['sampleID']
 
 # Export the final data to a TSV file
-df.to_csv('../results/lipids.tsv', sep='\t', index=False)
+df.to_csv('../results/lipids.tsv', sep='\t')
