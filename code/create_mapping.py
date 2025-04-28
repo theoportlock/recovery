@@ -12,7 +12,7 @@ with open(datatable, 'r') as f:
 all_mappings = []
 
 for filepath in lines:
-    df = pd.read_csv(f'../results/{filepath}.tsv', sep='\t', index_col=0)
+    df = pd.read_csv(f'../results/{filepath}noyr3.tsv', sep='\t', index_col=0)
     mapping = df.index.to_series().str.split('_', expand=True).iloc[:, :2]
     mapping.columns = ['subjectID', 'timepoint']
     mapping.index = df.index

@@ -10,6 +10,9 @@ import pandas as pd
 # Load MetaPhlAn output with multi-index: (subjectID, timepoint)
 df = pd.read_csv('../results/metaphlan.tsv', sep='\t', index_col=0)
 
+# Return to original shape: rows = samples, columns = taxa
+df = df.T
+
 # Keep only species-level taxa (those containing 's__')
 df = df.loc[:, df.columns.str.contains('s__')]
 

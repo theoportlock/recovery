@@ -1,0 +1,29 @@
+id	name
+aa	Plasma amino acids
+alpha_diversity	Gut microbiome alpha diversity
+anthro	Anthropometric measurements
+bayley	Bayley Scales of Infant and Toddler Development (BSID4) 
+economics	Parent Economics
+education	Parent Education
+family	Family characteristics
+fcis	Functioning in Chronic Illness Scale
+fnirs	Functional Near-Infrared Spectroscopy (fNIRS)
+genetics	Genetic Polygenetic Risk Scores (PRS)
+glitter	Glitter wand test
+head	Head measurements
+household	Household Characteristics
+lipids	Plasma lipids
+media_consumption	Family media consumption
+meta	Metadata
+micro	Electroencephalography (EEG) microstates
+pathways	Gut microbiome gene pathways
+pci	Parent Child Interaction (PCI)
+pots	Spin the pots test
+psd	Electroencephalography (EEG) Power Spectral Density (PSD)
+pss	Perceived Stress Scale (PSS)
+sanitation	Household sanitation practices
+sleep	Infant sleep
+species	Gut microbiome species
+vep	Electroencephalography (EEG) Visual Evoked Potential (VEP)
+vitamin	Plasma water soluble vitamins
+wolkes	Wolkes test

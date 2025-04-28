@@ -10,8 +10,8 @@ dataset = f.load(subject)
 #dataset = dataset.drop('HC', axis=1).dropna()
 
 # Load metadata
-meta = f.load('fulltimemeta')
-meta['Refeed'] = meta['Feeds_by_Randomization'].str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+meta = f.load('timemeta')
+meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
 
 # Calculate |Ct2-Mt2X| / |Ct1-Mt1X| 
 Ct2samples = meta.query("timepoint == 52 and Condition == 'Well-nourished'") # 65

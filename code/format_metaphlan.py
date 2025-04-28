@@ -38,5 +38,5 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-# Save formatted data
-df.to_csv('../results/metaphlan.tsv', sep='\t')
+# Transmute and save formatted data - for alpha-diversity analysis
+df.T.to_csv('../results/metaphlan.tsv', sep='\t')

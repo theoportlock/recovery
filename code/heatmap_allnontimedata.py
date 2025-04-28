@@ -1,101 +1,118 @@
 #!/usr/bin/env python
+
 from pathlib import Path
 import argparse
 import matplotlib.pyplot as plt
-import os
 import pandas as pd
 import seaborn as sns
-from matplotlib.colors import ListedColormap
 
 def parse_arguments():
-    """Parse command line arguments using argparse."""
-    parser = argparse.ArgumentParser(description='Analyze non-timeseries datasets')
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(description='Analyze non-timeseries datasets split by RUSF type')
     parser.add_argument('-d', '--datasets-file', type=Path, default='../conf/notimedatasets.txt',
                         help='Path to file containing dataset names (one per line)')
     return parser.parse_args()
 
 def load_datasets(dataset_file):
-    """Load dataset names from the specified file."""
+    """Load dataset names from specified file."""
     with open(dataset_file, 'r') as f:
         return [line.strip() for line in f if line.strip()]
 
-def create_heatmap(data, name):
-    """
-    Create and save a one-column heatmap visualization.
-    Each row represents one dataset (or column from the input DataFrame),
-    and the cell is colored according to its total count of nonzero values.
-    """
-    # Count nonzero values for each column
+def prepare_heatmap_data(data):
+    """Prepare data for heatmap plotting."""
     ndf = (~data.isna())
     ndf = ndf.groupby(level=0, axis=1).any()
     ndf = ndf.sum()
-    # Convert Series to DataFrame with one column
-    ndf = ndf.to_frame(name="Total nonzero count")
-
-    # Calculate dynamic size based on data dimensions
-    n_rows = len(ndf)
-    size_per_cell = 0.4  # inches per cell
-    fig_width = size_per_cell * 1  # Single column
-    fig_height = size_per_cell * n_rows
+    plotdf = ndf.to_frame(name='count')
     
-    plt.figure(figsize=(fig_width, fig_height))
-    ax = sns.heatmap(
-        ndf, 
-        cmap="Reds",          # Using Reds colormap
-        cbar=False,           # No colorbar
-        linewidths=0.5,       # Grid line thickness
-        linecolor='black',    # Black grid lines
-        square=True, 
-        annot=ndf, 
-        fmt="d", 
-        annot_kws={"size": 10, "color": "black"},
-        vmin=0,               # Minimum value for color scale
-        vmax=200              # Maximum value for color scale (same as other script)
-    )
-
-    # Set tick parameters to 0.4 pt
-    ax.tick_params(axis='both', which='both', width=0.4, length=2)
-
-    ax.set_ylabel('Dataset')
-    ax.set_xlabel('')
-    plt.tight_layout()
-    output_file = Path('../results') / f'{name}_nontime_heatmap.svg'
-    plt.savefig(output_file)
-    plt.close()
-    print(f"Saved heatmap to {output_file}")
+    # Load dataset labels
+    labels = pd.read_csv('../conf/dataset_labels.tsv', sep='\t', index_col=0)
+    plotdf = plotdf.join(labels['name'], how='inner').set_index('name')
+    return plotdf.T
 
 def main():
     args = parse_arguments()
     
-    # Load dataset names from file
+    # Load data
+    meta = pd.read_csv('../results/meta.tsv', sep='\t', index_col=0)
     dataset_names = load_datasets(args.datasets_file)
+    datasets = {name: pd.read_csv(f'../results/{name}.tsv', sep='\t', index_col=0) for name in dataset_names}
     
-    # Load datasets from ../results/
-    datasets = {name: pd.read_csv(Path('../results') / f'{name}.tsv', sep='\t', index_col=0)
-                for name in dataset_names}
-    
-    # Concatenate all datasets into a single DataFrame with a hierarchical column index
     df = pd.concat(datasets, axis=1)
     
-    # Load meta data and filter as required
-    meta = pd.read_csv('../results/meta.tsv', sep='\t', index_col=0)
-    mam_filter = (meta.Condition == 'MAM') & (meta.index.str[3] != '3')
-    h_filter = (meta.Condition == 'Well-nourished')
+    # Define filters
+    erusf_filter = (meta['Feed'] == 'ERUSF (B)') & (meta['Condition'] == 'MAM')
+    localrusf_filter = (meta['Feed'] == 'Local RUSF (A)') & (meta['Condition'] == 'MAM')
+    h_filter = (meta['Condition'] == 'Well-nourished')
     
-    mamdf = (df.reset_index()
-             .set_index('subjectID')
-             .loc[mam_filter]
-             .reset_index()
-             .set_index('subjectID'))
-    hdf = (df.reset_index()
-           .set_index('subjectID')
-           .loc[h_filter]
-           .reset_index()
-           .set_index('subjectID'))
+    # Create filtered DataFrames
+    erusf_df = df.loc[erusf_filter]
+    localrusf_df = df.loc[localrusf_filter]
+    hdf = df.loc[h_filter]
+
+    # Split index if needed (sometimes you have multiple levels like 'subjectID_time')
+    erusf_df.index = erusf_df.index.str.split('_', expand=True)
+    localrusf_df.index = localrusf_df.index.str.split('_', expand=True)
+    hdf.index = hdf.index.str.split('_', expand=True)
     
-    # Create and save heatmaps for each filtered dataset
-    create_heatmap(mamdf, 'mamdf')
-    create_heatmap(hdf, 'hdf')
+    # Prepare each for plotting
+    erusf_plotdf = prepare_heatmap_data(erusf_df)
+    localrusf_plotdf = prepare_heatmap_data(localrusf_df)
+    h_plotdf = prepare_heatmap_data(hdf)
+
+    # Align rows
+    common_rows = erusf_plotdf.columns.intersection(localrusf_plotdf.columns).intersection(h_plotdf.columns)
+
+    erusf_plotdf = erusf_plotdf[common_rows]
+    localrusf_plotdf = localrusf_plotdf[common_rows]
+    h_plotdf = h_plotdf[common_rows]
+
+    # Transmute
+    erusf_plotdf = erusf_plotdf.T
+    localrusf_plotdf = localrusf_plotdf.T
+    h_plotdf = h_plotdf.T
+
+    # Plot side-by-side
+    n_rows, n_cols = erusf_plotdf.shape
+    size_per_cell = 0.4
+    fig_width = size_per_cell * (n_cols * 3)  # 3 groups
+    fig_height = size_per_cell * n_rows
+
+    fig, axes = plt.subplots(1, 3, figsize=(fig_width, fig_height), sharey=True)
+
+    for ax, data, title in zip(
+        axes,
+        [localrusf_plotdf, erusf_plotdf, h_plotdf],
+        ['Local RUSF (A)', 'ERUSF (B)', 'Well-nourished']
+    ):
+        sns.heatmap(
+            data=data,
+            cmap="Reds",
+            cbar=False,
+            square=True,
+            linewidths=0.5,
+            linecolor="black",
+            annot=data,
+            fmt='d',
+            annot_kws={"size": 7, "color": "black"},
+            vmin=0,
+            vmax=100,
+            ax=ax
+        )
+        ax.set_title(title, fontsize=7)
+        ax.tick_params(axis='both', which='both', width=0.4, length=2)
+        ax.set_xlabel('')
+        ax.set_ylabel('')
+
+    axes[0].set_ylabel('Dataset')
+    plt.gca().set_facecolor("white")
+    plt.tight_layout()
+
+    output_file = Path('../results/combined_nontime_heatmap_splitmam.svg')
+    plt.savefig(output_file)
+    plt.close()
+    print(f"Saved combined heatmap to {output_file}")
 
 if __name__ == '__main__':
     main()
+

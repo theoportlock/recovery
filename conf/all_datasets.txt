@@ -1,4 +1,5 @@
 aa
+alpha_diversity
 anthro
 bayley
 economics
@@ -15,16 +16,13 @@ media_consumption
 meta
 micro
 pathways
-pathwaysstrat
 pci
 pots
 psd
 pss
-quality
 sanitation
 sleep
 species
-surveillance
 vep
 vitamin
 wolkes
