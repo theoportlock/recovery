@@ -110,6 +110,9 @@ df = df.loc[:, ~df.columns.isin(mediacols)]
 economiccols = df.columns[df.columns.str.contains('taka')].tolist()
 ecdf = df.loc[:, economiccols]
 ecdf.columns = ecdf.columns.str.replace('_(taka)','').str.replace('(','').str.replace(')','').str.replace(',','_')
+
+# Drop the other columns as they are not commonly used
+ecdf = ecdf.loc[:, ecdf.columns[~ecdf.columns.str.contains('Other')]]
 ecdf.to_csv('../results/economics.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(economiccols)]
 

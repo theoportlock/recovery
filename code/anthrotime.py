@@ -10,9 +10,14 @@ df = anthro.join(timemeta)
 
 # Add condition to timemeta
 df.loc[df.Condition == 'Well-nourished', 'Recovery'] = 'Healthy'
+df.loc[df.Condition == 'Well-nourished', 'Feed'] = 'Healthy'
 
 # Define custom color palette
-palette = {'Healthy':'magenta','Recovered': 'orange', 'No recovery': 'red'}
+#palette = {'Healthy':'magenta','Recovered': 'orange', 'No recovery': 'red'}
+palette = {'Healthy':'magenta','ERUSF (B)': 'blue', 'Local RUSF (A)': 'red'}
+
+# Drop all after 52 weeks
+df = df.loc[df.timepoint <= 52]
 
 # Function to plot individual lines and mean trend
 def line(df, x, y, hue, ax):
@@ -40,9 +45,9 @@ def line(df, x, y, hue, ax):
 fig, axs = plt.subplots(1, 3, figsize=(6, 2.5), sharex=True)
 
 # Plot each metric
-line(df, 'timepoint', 'WLZ_WHZ', 'Recovery', axs[0])
-line(df, 'timepoint', 'Length', 'Recovery', axs[1])
-line(df, 'timepoint', 'Weight', 'Recovery', axs[2])
+line(df, 'timepoint', 'WLZ_WHZ', 'Feed', axs[0])
+line(df, 'timepoint', 'MUAC', 'Feed', axs[1])
+line(df, 'timepoint', 'Weight', 'Feed', axs[2])
 
 # Layout tweaks
 plt.subplots_adjust(wspace=0.4)

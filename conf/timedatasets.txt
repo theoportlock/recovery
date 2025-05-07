@@ -12,7 +12,6 @@ pathways
 pci
 psd
 pss
-quality
 sleep
 species
 vep

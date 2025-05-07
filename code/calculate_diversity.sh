@@ -4,9 +4,6 @@
 metaphlan_file=$1
 mkdir -p ../results/mbiome_alpha
 
-# Transpose taxo file
-transpose.py $metaphlan_file
-
 # For alpha diversity measures
 for metric in gini shannon richness simpson
 do

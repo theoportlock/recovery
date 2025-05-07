@@ -18,7 +18,7 @@ f.clustermap(nndf, figsize=(1.2,4))
 f.savefig('recoverycluster')
 
 f.polar(ndf.T)
-plt.yscale('symlog')  # Set y-axis to symlog scale
+plt.yscale('symlog')
 f.savefig('polarrecovery')
 
 

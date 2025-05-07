@@ -6,11 +6,11 @@ import metatoolkit.functions as f
 # Load data
 #subject = 'anthro'
 subject = sys.argv[1]
+dataset = pd.read_csv(subject, sep='\t', index_col=0)
 dataset = f.load(subject)
-#dataset = dataset.drop('HC', axis=1).dropna()
 
 # Load metadata
-meta = f.load('timemeta')
+meta = pd.read_csv('../results/timemeta.tsv', sep='\t', index_col=0)
 meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
 
 # Calculate |Ct2-Mt2X| / |Ct1-Mt1X| 
@@ -49,7 +49,7 @@ y = 100*((t1y/t2y)-1)
 
 df = pd.concat([Ct1,Ct2,Mt1Y,Mt1X,Mt2Y,Mt2X])
 pcoa = f.calculate('pcoa', df)
-#f.setupplot()
+
 f.spindle(pcoa)
 f.savefig(subject+'recoveryspindle')
 
@@ -61,6 +61,6 @@ t1ysig = f.PERMANOVA(pd.concat([Ct1, Mt1Y]))
 output = pd.DataFrame([x, y, t1xsig, t1ysig, t2xsig,t2ysig], columns=[subject], index=['A_improvement(%)', 'B_improvement(%)', 'A_t1_pval', 'B_t1_pval', 'A_t2_pval', 'B_t2_pval']).T
 print(output)
 
-f.save(output, subject+'recovery')
+output.to_csv('../results/{subject}recovery.tsv', sep='\t')
 
 

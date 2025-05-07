@@ -38,7 +38,7 @@ def main():
     # Load data
     meta = pd.read_csv('../results/timemeta.tsv', sep='\t', index_col=0)
     dataset_names = load_datasets(args.datasets_file)
-    datasets = {data: pd.read_csv(f'../results/{data}noyr3.tsv', sep='\t', index_col=0) for data in dataset_names}
+    datasets = {data: pd.read_csv(f'../results/filtered/{data}.tsv', sep='\t', index_col=0) for data in dataset_names}
     
     df = pd.concat(datasets, axis=1)
     
