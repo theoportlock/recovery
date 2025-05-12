@@ -1,6 +1,11 @@
 # USER DEFINED
 data/
 results/
+writing/
+reading/
+
+# images
+*.sif
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

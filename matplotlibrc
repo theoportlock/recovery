@@ -1,0 +1,75 @@
+# Matplotlib configuration file for journal publication
+
+# ----------------------
+# Figure properties
+# ----------------------
+figure.figsize       : 2, 2
+figure.dpi           : 300
+savefig.dpi          : 600
+savefig.transparent  : True
+savefig.bbox         : tight
+savefig.format       : svg
+
+# ----------------------
+# Font and Text settings
+# ----------------------
+font.family            : sans-serif
+font.sans-serif        : Arial
+axes.unicode_minus     : False
+font.size              : 6
+figure.titlesize       : 6
+
+# ----------------------
+# Lines and Markers
+# ----------------------
+lines.linewidth      : 0.4
+lines.markersize     : 2.5
+lines.color          : black
+
+# ----------------------
+# Axes settings
+# ----------------------
+axes.labelsize       : 6
+axes.titlesize       : 6
+axes.linewidth       : 0.4
+axes.grid            : False
+
+# ----------------------
+# Tick settings
+# ----------------------
+xtick.labelsize      : 6
+ytick.labelsize      : 6
+xtick.major.size     : 2
+ytick.major.size     : 2
+xtick.minor.size     : 1
+ytick.minor.size     : 1
+xtick.major.width    : 0.4
+ytick.major.width    : 0.4
+xtick.minor.width    : 0.4
+ytick.minor.width    : 0.4
+
+# ----------------------
+# Legend
+# ----------------------
+legend.fontsize      : 6
+legend.frameon       : False
+legend.edgecolor        : black
+legend.handlelength    : 1.5
+legend.handleheight    : 1.5
+legend.title_fontsize  : 6
+
+# ----------------------
+# Error bars
+# ----------------------
+errorbar.capsize     : 2
+
+# ----------------------
+# SVG font settings
+# ----------------------
+svg.fonttype         : none
+
+# ----------------------
+# Color settings
+# ----------------------
+axes.prop_cycle: cycler('color', ['66CCFF', 'FFDFBA', 'FFFFBA', 'BAFFC9', 'BAE1FF', 'E6B3FF', 'FFB3E6', 'B3FFFF', 'FFCCF9', 'FFDEAD', 'C1E1C1', 'F4C2C2', 'FFD1DC', 'D1E0E0', 'D9C3E6', 'C2E0FF', 'E0C2FF', 'C2FFD1', 'FFD1C2', 'FFFFD1'])
+

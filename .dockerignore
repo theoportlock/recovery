@@ -1,0 +1,15 @@
+data/
+results/
+reading/
+writing/
+figures/
+*.log
+*.pyc
+*.pyo
+__pycache__/
+.DS_Store
+*.swp
+.git/
+*.ipynb
+venv/
+*.Rproj.user/
