@@ -7,12 +7,12 @@ from pathlib import Path
 def parse_arguments():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description="Create subjectID/timepoint mapping from datasets.")
-    parser.add_argument('-i', '--input-file', type=Path, default=Path('../conf/timedatasets.txt'),
-                        help='Path to input file listing datasets (default: ../conf/timedatasets.txt)')
-    parser.add_argument('-d', '--datasets-dir', type=Path, default=Path('../results'),
-                        help='Directory where dataset files are located (default: ../results)')
-    parser.add_argument('-o', '--output-file', type=Path, default=Path('../results/mapping.tsv'),
-                        help='Path to output mapping TSV file (default: ../results/mapping.tsv)')
+    parser.add_argument('-i', '--input-file', type=Path, default=Path('conf/timedatasets.txt'),
+                        help='Path to input file listing datasets (default: conf/timedatasets.txt)')
+    parser.add_argument('-d', '--datasets-dir', type=Path, default=Path('results'),
+                        help='Directory where dataset files are located (default: results)')
+    parser.add_argument('-o', '--output-file', type=Path, default=Path('results/mapping.tsv'),
+                        help='Path to output mapping TSV file (default: results/mapping.tsv)')
     return parser.parse_args()
 
 def main():

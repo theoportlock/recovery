@@ -18,13 +18,13 @@ import sys
 def load(subject):
     if os.path.isfile(subject):
         return pd.read_csv(subject, sep='\t', index_col=0)
-    return pd.read_csv(f'../results/{subject}.tsv', sep='\t', index_col=0)
+    return pd.read_csv(f'results/{subject}.tsv', sep='\t', index_col=0)
 
 def load_predictor(predictor_file, target_column):
     if os.path.isfile(predictor_file):
         df = pd.read_csv(predictor_file, sep='\t', index_col=0)
-    elif os.path.isfile(f'../results/{predictor_file}.tsv'):
-        df = pd.read_csv(f'../results/{predictor_file}.tsv', sep='\t', index_col=0)
+    elif os.path.isfile(f'results/{predictor_file}.tsv'):
+        df = pd.read_csv(f'results/{predictor_file}.tsv', sep='\t', index_col=0)
     else:
         raise FileNotFoundError(f"Predictor file {predictor_file} not found.")
 
@@ -34,7 +34,7 @@ def load_predictor(predictor_file, target_column):
     return df[target_column]
 
 def save(df, subject, index=True):
-    output_path = f'../results/{subject}.tsv'
+    output_path = f'results/{subject}.tsv'
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, sep='\t', index=index)
 

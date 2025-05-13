@@ -8,7 +8,7 @@ Script to extract species-level relative abundances from MetaPhlAn output
 import pandas as pd
 
 # Load MetaPhlAn output with multi-index: (subjectID, timepoint)
-df = pd.read_csv('../results/metaphlan.tsv', sep='\t', index_col=0)
+df = pd.read_csv('results/metaphlan.tsv', sep='\t', index_col=0)
 
 # Return to original shape: rows = samples, columns = taxa
 df = df.T
@@ -29,5 +29,5 @@ df = df.T.div(df.sum(axis=1), axis=1)  # Normalize so each sample sums to 1
 df = df.T
 
 # Export the normalized species-level table (flatten index for readability)
-df.to_csv('../results/species.tsv', sep='\t')
+df.to_csv('results/species.tsv', sep='\t')
 

@@ -9,7 +9,7 @@ import seaborn as sns
 def parse_arguments():
     """Parse command line arguments using argparse."""
     parser = argparse.ArgumentParser(description='Analyze time-dependent datasets')
-    parser.add_argument('-d', '--datasets-file', type=Path, default='../conf/timedatasets.txt',
+    parser.add_argument('-d', '--datasets-file', type=Path, default='conf/timedatasets.txt',
                        help='Path to file containing dataset names (one per line)')
     return parser.parse_args()
 
@@ -27,7 +27,7 @@ def prepare_heatmap_data(data):
     plotdf = ndf.T
 
     # Load dataset labels
-    labels = pd.read_csv('../conf/dataset_labels.tsv', sep='\t', index_col=0)
+    labels = pd.read_csv('conf/dataset_labels.tsv', sep='\t', index_col=0)
     plotdf = plotdf.join(labels['name'], how='inner').set_index('name')
     
     return plotdf
@@ -36,9 +36,9 @@ def main():
     args = parse_arguments()
     
     # Load data
-    meta = pd.read_csv('../results/timemeta.tsv', sep='\t', index_col=0)
+    meta = pd.read_csv('results/timemeta.tsv', sep='\t', index_col=0)
     dataset_names = load_datasets(args.datasets_file)
-    datasets = {data: pd.read_csv(f'../results/filtered/{data}.tsv', sep='\t', index_col=0) for data in dataset_names}
+    datasets = {data: pd.read_csv(f'results/filtered/{data}.tsv', sep='\t', index_col=0) for data in dataset_names}
     
     df = pd.concat(datasets, axis=1)
     
@@ -103,7 +103,7 @@ def main():
     plt.gca().set_facecolor("white")
     plt.tight_layout()
 
-    output_file = Path('../results/combined_heatmap.svg')
+    output_file = Path('results/combined_heatmap.svg')
     plt.savefig(output_file)
     plt.close()
     print(f"Saved combined heatmap to {output_file}")

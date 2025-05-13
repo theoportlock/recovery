@@ -24,9 +24,9 @@ def cramers_v(confusion_matrix):
     return np.sqrt(chi2 / (n * (min(k - 1, r - 1))))
 
 # === CONFIGURATION ===
-meta_file = Path("../results/filtered/meta.tsv")
-surveil_file = Path("../results/filtered/surveillance.tsv")
-anthro_file = Path("../results/filtered/anthro.tsv")
+meta_file = Path("results/filtered/meta.tsv")
+surveil_file = Path("results/filtered/surveillance.tsv")
+anthro_file = Path("results/filtered/anthro.tsv")
 
 meta = pd.read_csv(meta_file, sep="\t", index_col=0)
 meta = meta.dropna(subset=[REFEED_COL])
@@ -148,7 +148,7 @@ column_renames = {
 summary_df.rename(columns=column_renames, inplace=True)
 
 # === SAVE TSV ===
-tsv_output = Path("../results/refeed_summary_with_stats.tsv")
+tsv_output = Path("results/refeed_summary_with_stats.tsv")
 summary_df.to_csv(tsv_output, sep="\t")
 print(f"Saved TSV summary to {tsv_output}")
 
@@ -178,7 +178,7 @@ for idx, row in summary_df.iterrows():
         row_cells[i + 1].text = str(val)
 
 # Save Word document
-word_output = Path("../results/refeed_summary_with_stats.docx")
+word_output = Path("results/refeed_summary_with_stats.docx")
 doc.save(word_output)
 print(f"Saved DOCX summary to {word_output}")
 

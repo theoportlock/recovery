@@ -4,8 +4,8 @@ import seaborn as sns
 import pandas as pd
 
 # Load data
-anthro = pd.read_csv('../results/anthro.tsv', sep='\t', index_col=0)
-timemeta = pd.read_csv('../results/timemeta.tsv', sep='\t', index_col=0)
+anthro = pd.read_csv('results/anthro.tsv', sep='\t', index_col=0)
+timemeta = pd.read_csv('results/timemeta.tsv', sep='\t', index_col=0)
 df = anthro.join(timemeta)
 
 # Add condition to timemeta
@@ -52,4 +52,4 @@ line(df, 'timepoint', 'Weight', 'Feed', axs[2])
 # Layout tweaks
 plt.subplots_adjust(wspace=0.4)
 plt.tight_layout()
-plt.savefig('../results/anthro_time.svg')
+plt.savefig('results/anthro_time.svg')

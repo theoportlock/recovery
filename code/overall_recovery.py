@@ -1,16 +1,26 @@
 #!/usr/bin/env python
 import pandas as pd
 import sys 
-import metatoolkit.functions as f
 
 # Load data
 #subject = 'anthro'
 subject = sys.argv[1]
 dataset = pd.read_csv(subject, sep='\t', index_col=0)
-dataset = f.load(subject)
+
+def PERMANOVA(df, pval=True, full=False):
+    np.random.seed(0)
+    Ar_dist = distance.squareform(distance.pdist(df, metric="braycurtis"))
+    DM_dist = skbio.stats.distance.DistanceMatrix(Ar_dist)
+    result = permanova(DM_dist, df.index)
+    if full:
+        return result
+    if pval:
+        return result['p-value']
+    else:
+        return result['test statistic']
 
 # Load metadata
-meta = pd.read_csv('../results/timemeta.tsv', sep='\t', index_col=0)
+meta = pd.read_csv('results/timemeta.tsv', sep='\t', index_col=0)
 meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
 
 # Calculate |Ct2-Mt2X| / |Ct1-Mt1X| 
@@ -39,28 +49,24 @@ Mt1X.index = ['Mt1X']*Mt1X.shape[0]
 Mt2Y.index = ['Mt2Y']*Mt2Y.shape[0]
 Mt2X.index = ['Mt2X']*Mt2X.shape[0]
 
-t2x = f.PERMANOVA(pd.concat([Ct2, Mt2X]), pval=False)
-t2y = f.PERMANOVA(pd.concat([Ct2, Mt2Y]), pval=False)
-t1x = f.PERMANOVA(pd.concat([Ct1, Mt1X]), pval=False)
-t1y = f.PERMANOVA(pd.concat([Ct1, Mt1Y]), pval=False)
+t2x = PERMANOVA(pd.concat([Ct2, Mt2X]), pval=False)
+t2y = PERMANOVA(pd.concat([Ct2, Mt2Y]), pval=False)
+t1x = PERMANOVA(pd.concat([Ct1, Mt1X]), pval=False)
+t1y = PERMANOVA(pd.concat([Ct1, Mt1Y]), pval=False)
 
 x = 100*((t1x/t2x)-1)
 y = 100*((t1y/t2y)-1)
 
 df = pd.concat([Ct1,Ct2,Mt1Y,Mt1X,Mt2Y,Mt2X])
-pcoa = f.calculate('pcoa', df)
 
-f.spindle(pcoa)
-f.savefig(subject+'recoveryspindle')
-
-t2xsig = f.PERMANOVA(pd.concat([Ct2, Mt2X]))
-t2ysig = f.PERMANOVA(pd.concat([Ct2, Mt2Y]))
-t1xsig = f.PERMANOVA(pd.concat([Ct1, Mt1X]))
-t1ysig = f.PERMANOVA(pd.concat([Ct1, Mt1Y]))
+t2xsig = PERMANOVA(pd.concat([Ct2, Mt2X]))
+t2ysig = PERMANOVA(pd.concat([Ct2, Mt2Y]))
+t1xsig = PERMANOVA(pd.concat([Ct1, Mt1X]))
+t1ysig = PERMANOVA(pd.concat([Ct1, Mt1Y]))
 
 output = pd.DataFrame([x, y, t1xsig, t1ysig, t2xsig,t2ysig], columns=[subject], index=['A_improvement(%)', 'B_improvement(%)', 'A_t1_pval', 'B_t1_pval', 'A_t2_pval', 'B_t2_pval']).T
 print(output)
 
-output.to_csv('../results/{subject}recovery.tsv', sep='\t')
+output.to_csv('results/{subject}recovery.tsv', sep='\t')
 
 

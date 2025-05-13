@@ -9,11 +9,11 @@ def parse_arguments():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description="Compute log differences between baseline and one-year samples.")
     parser.add_argument('-i', '--input', type=Path, required=True,
-                        help='Path to input dataset file (e.g., ../results/aanoyr3.tsv)')
+                        help='Path to input dataset file (e.g., results/aanoyr3.tsv)')
     parser.add_argument('-m', '--meta', type=Path, required=True,
                         help='Path to timemeta.tsv file')
     parser.add_argument('-o', '--output', type=Path, required=True,
-                        help='Path to output file (e.g., ../results/aadiff.tsv)')
+                        help='Path to output file (e.g., results/aadiff.tsv)')
     return parser.parse_args()
 
 def calculate_deltas(df):

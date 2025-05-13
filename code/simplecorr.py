@@ -1,5 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import pandas as pd
-df = pd.read_csv('../results/numbersfilter.tsv', index_col=0, sep='\t')
+
+df = pd.read_csv('results/numbersfilter.tsv', index_col=0, sep='\t')
 cor = df.corr()
 
 def to_edges(df, thresh=0.5, directional=True):
@@ -15,4 +19,4 @@ def to_edges(df, thresh=0.5, directional=True):
 
 edges = to_edges(cor)
 
-edges.to_csv('../results/numbersfiltercorrsimple.tsv', sep='\t')
+edges.to_csv('results/numbersfiltercorrsimple.tsv', sep='\t')

@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 import pandas as pd
 import numpy as np
-import metatoolkit.functions as f
 from statsmodels.stats.multitest import fdrcorrection
 
 # load data
-chisq = f.load('categories_chisq')
-kruskal = f.load('numbersfilter_kruskal')
-cor = f.load("numbersfiltercorrsimple")
+chisq = pd.read_csv('results/categories_chisq.tsv', sep='\t', index_col=0)
+kruskal = pd.read_csv('results/numbersfilter_kruskal.tsv', sep='\t', index_col=0)
+cor = pd.read_csv('results/numbersfiltercorrsimple.tsv', sep='\t', index_col=0)
 
 # Apply log of odds to get negative association and tanh to make -1 to 1
 chisq['effect'] = chisq.cramers_v
@@ -42,4 +41,4 @@ outdf['qval'] = fdrcorrection(outdf['pval'])[1]
 outdf = outdf.drop_duplicates()
 
 # save
-f.save(outdf, 'edges')
+outdf.to_csv('results/edges.tsv', sep='\t')

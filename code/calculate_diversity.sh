@@ -2,21 +2,21 @@
 # Biobakery's calculate diversity functions in their github/utils directory
 
 metaphlan_file=$1
-mkdir -p ../results/mbiome_alpha
+mkdir -p results/mbiome_alpha
 
 # For alpha diversity measures
 for metric in gini shannon richness simpson
 do
 calculate_diversity.R \
 	-f ${metaphlan_file} \
-	-t ../conf/mpa_v31_CHOCOPhlAn_201901_species_tree.nwk \
+	-t conf/mpa_v31_CHOCOPhlAn_201901_species_tree.nwk \
 	-d alpha \
 	-p alpha \
 	-m $metric \
 	-s s__ \
-	-o ../results/mbiome_alpha
+	-o results/mbiome_alpha
 done
 
 # Combine alpha diversity metrics and cleanup
-merge.py ../results/mbiome_alpha/* -o alpha_diversity &&
-rm -r ../results/mbiome_alpha
+merge.py results/mbiome_alpha/* -o alpha_diversity &&
+rm -r results/mbiome_alpha
