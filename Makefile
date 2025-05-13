@@ -25,7 +25,7 @@ run: $(SIF_NAME)
 	--bind /run/media/theop/maindrive/fellowship/m4efad/recovery/code:/code:ro \
 	--bind /run/media/theop/maindrive/metatoolkit/metatoolkit:/metatoolkit:ro \
 	m4efad_image.sif \
-	bash -c "export PATH=\$$PATH:/code:/metatoolkit && $$cmd"
+	bash -c "export PATH=\$$PATH:/code:/metatoolkit/metatoolkit && $$cmd"
 
 # Clean up artifacts
 clean:

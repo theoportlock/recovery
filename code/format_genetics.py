@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 '''
 Author: Theo Portlock
 For genetics data setup
 '''
+
 import pandas as pd
 from glob import glob
 from scipy.stats import zscore

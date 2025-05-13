@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import pandas as pd
 
 dataset_lables = pd.read_csv('conf/dataset_labels.tsv', sep='\t', index_col=0)

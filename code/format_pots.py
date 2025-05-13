@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 '''
 Author: Theo Portlock
 For project setup
 '''
+
 import pandas as pd
 
 df = pd.read_csv('data/DhakaBangladeshLEAPE-SpinThePotsScoring_DATA_LABELS_2024-07-18_2302.csv',index_col=0)
