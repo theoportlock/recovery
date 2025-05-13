@@ -7,7 +7,7 @@ For project setup
 import pandas as pd
 
 # Sleep
-df = pd.read_excel('../data/DhakaBangladeshLEAPE_BISQ.xlsx', sheet_name='Final_2024-01_2024_BISQ_Cleaned', index_col=0).dropna()
+df = pd.read_excel('data/DhakaBangladeshLEAPE_BISQ.xlsx', sheet_name='Final_2024-01_2024_BISQ_Cleaned', index_col=0).dropna()
 
 df.index = df.index + df.visit_timepoint.replace({'12_month':'000', '24_month':'052'})
 df['Q16'] = df['Q16'].astype(str).str.split(':').apply(lambda x: int(x[0]) * 60 + int(x[1]))
@@ -26,5 +26,5 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('../results/sleep.tsv', sep='\t')
+df.to_csv('results/sleep.tsv', sep='\t')
 

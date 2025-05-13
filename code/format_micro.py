@@ -7,7 +7,7 @@ For project setup
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('../data/DhakaBangladeshLEAPE-MicrostatesVariables_DATA_LABELS_2024-07-18_2308.csv',index_col=0)
+df = pd.read_csv('data/DhakaBangladeshLEAPE-MicrostatesVariables_DATA_LABELS_2024-07-18_2308.csv',index_col=0)
 
 df.index = df.index +  df['Event Name'].replace(
         {'12_month (Arm 2: Intervention)':'000',
@@ -31,5 +31,5 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('../results/micro.tsv', sep='\t')
+df.to_csv('results/micro.tsv', sep='\t')
 

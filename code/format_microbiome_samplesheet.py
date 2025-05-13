@@ -10,11 +10,11 @@ from docx import Document
 
 # For samplesheet processing
 docs = []
-docs.append(Document('../data/InoliWD_Batch3_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('../data/InoliWD_Batch4_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('../data/InoliWD_Batch5_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('../data/InoliWD_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('../data/CS-ANZ DNA Sample Information Form_Hui Hui_20240220_TPupdated.docx'))
+docs.append(Document('data/InoliWD_Batch3_JOS_CS-ANZ DNA Sample Information Form.docx'))
+docs.append(Document('data/InoliWD_Batch4_JOS_CS-ANZ DNA Sample Information Form.docx'))
+docs.append(Document('data/InoliWD_Batch5_JOS_CS-ANZ DNA Sample Information Form.docx'))
+docs.append(Document('data/InoliWD_JOS_CS-ANZ DNA Sample Information Form.docx'))
+docs.append(Document('data/CS-ANZ DNA Sample Information Form_Hui Hui_20240220_TPupdated.docx'))
 
 output = []
 
@@ -75,4 +75,4 @@ samplesheet.index = samplesheet.ID + samplesheet.timepoint
 # Rename
 samplesheet = samplesheet.rename(columns={'ID':'subjectID'})
 samplesheet.timepoint = samplesheet.timepoint.astype(int)
-samplesheet.to_csv('../results/samplesheet.tsv', sep='\t', index=False)
+samplesheet.to_csv('results/samplesheet.tsv', sep='\t', index=False)

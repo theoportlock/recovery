@@ -9,7 +9,7 @@ from glob import glob
 from scipy.stats import zscore
 
 # Load and process data
-genetics_datasets = glob('../data/Bang*.txt')
+genetics_datasets = glob('data/Bang*.txt')
 dfs = []
 for file in genetics_datasets:
     df = pd.read_csv(file, sep='\t')
@@ -25,4 +25,4 @@ joined = pd.concat(dfs, join='outer', axis=1).T.groupby(level=0).max().T
 joined.index.name = 'subjectID'
 
 # Save
-joined.to_csv('../results/genetics.tsv', sep='\t')
+joined.to_csv('results/genetics.tsv', sep='\t')

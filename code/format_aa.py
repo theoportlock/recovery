@@ -9,7 +9,7 @@ import pandas as pd
 
 # for amino acids
 sampleout = []
-sample_list = pd.read_excel('../data/Results-LEAP_Plasma_Oct 2023.xlsx', sheet_name='Sample list', index_col=0, header=1)
+sample_list = pd.read_excel('data/Results-LEAP_Plasma_Oct 2023.xlsx', sheet_name='Sample list', index_col=0, header=1)
 sampleout.append(sample_list.iloc[:, 0].dropna())
 sample_list = sample_list.iloc[:,3:].set_index(sample_list.iloc[:,2])
 sampleout.append(sample_list.iloc[:, 0].dropna())
@@ -25,7 +25,7 @@ sampleout = pd.concat(sampleout)
 sampleout.index = sampleout.index.astype(float)
 aaout=[]
 for ind in range(1,7):
-    df = pd.read_excel('../data/Results-LEAP_Plasma_Oct 2023.xlsx',sheet_name=f'Assay#{ind}', index_col=0).iloc[1:,:]
+    df = pd.read_excel('data/Results-LEAP_Plasma_Oct 2023.xlsx',sheet_name=f'Assay#{ind}', index_col=0).iloc[1:,:]
     df.index = pd.to_numeric(df.index, errors='coerce')
     df = df.loc[~df.index.isna()]
     aaout.append(df)
@@ -61,6 +61,6 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('../results/aa.tsv', sep='\t')
+df.to_csv('results/aa.tsv', sep='\t')
 
 

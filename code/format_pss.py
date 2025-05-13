@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 
 # Mother stress Perceived stress scale
-df = pd.read_csv('../data/DhakaBangladeshLEAPE-PSS_DATA_LABELS_2024-07-18_2240.csv', index_col=0)
-translated = pd.read_csv('../conf/PSS_translated.tsv', sep='\t')
+df = pd.read_csv('data/DhakaBangladeshLEAPE-PSS_DATA_LABELS_2024-07-18_2240.csv', index_col=0)
+translated = pd.read_csv('conf/PSS_translated.tsv', sep='\t')
 
 # Create unique subjectID + timepoint index
 df.index = df.index + df['Event Name'].replace({
@@ -57,4 +57,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Save final output
-df.to_csv('../results/pss.tsv', sep='\t')
+df.to_csv('results/pss.tsv', sep='\t')

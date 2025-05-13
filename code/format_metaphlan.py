@@ -8,11 +8,11 @@ Script to format MetaPhlAn3 output for downstream analysis
 import pandas as pd
 
 # Load MetaPhlAn3 output file, skipping the first row (contains description/metadata)
-df = pd.read_csv('../data/m4efad_metaphlan3_profiles_april2024.tsv',
+df = pd.read_csv('data/m4efad_metaphlan3_profiles_april2024.tsv',
                  sep='\t', index_col=0, header=1)
 
 # Load the sample metadata
-samplesheet = pd.read_csv('../results/samplesheet.tsv',
+samplesheet = pd.read_csv('results/samplesheet.tsv',
                           sep='\t', index_col=0)
 
 # Clean column names: remove ".metaphlan" suffix
@@ -39,4 +39,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Transmute and save formatted data - for alpha-diversity analysis
-df.T.to_csv('../results/metaphlan.tsv', sep='\t')
+df.T.to_csv('results/metaphlan.tsv', sep='\t')

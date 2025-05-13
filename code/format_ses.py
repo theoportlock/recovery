@@ -2,8 +2,8 @@ import pandas as pd
 from ast import literal_eval
 
 # Load data
-df = pd.read_excel("../data/05.LEAP_SES_CRF.xlsx", sheet_name='LEAP-SES')
-labels = pd.read_csv("../conf/05.LEAP_SES_CRF_MAPPING_TP.tsv", sep='\t', index_col=0)
+df = pd.read_excel("data/05.LEAP_SES_CRF.xlsx", sheet_name='LEAP-SES')
+labels = pd.read_csv("conf/05.LEAP_SES_CRF_MAPPING_TP.tsv", sep='\t', index_col=0)
 
 # Drop dates
 df = df.drop(['DOB', 'DOI'], axis=1)
@@ -49,7 +49,7 @@ sanitcols = df.columns[df.columns.str.contains('Washing')].tolist() + [
 ]
 sdf = df.loc[:, sanitcols]
 sdf.columns = sdf.columns.str.replace('Washing_-_', '')
-sdf.to_csv('../results/sanitation.tsv', sep='\t')
+sdf.to_csv('results/sanitation.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(sanitcols)]
 
 # Define and extract household-related columns
@@ -65,7 +65,7 @@ hdf = df.loc[:, householdcols]
 hdf.columns = hdf.columns.str.replace('Household_-_','')
 hdf.columns = hdf.columns.str.replace('Table','Tabletop')
 hdf.columns = hdf.columns.str.replace('/', '_')
-hdf.to_csv('../results/household.tsv', sep='\t')
+hdf.to_csv('results/household.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(householdcols)]
 
 # Define and extract family-related columns
@@ -77,7 +77,7 @@ familycols = [
     'Language'
 ]
 fdf = df.loc[:, familycols]
-fdf.to_csv('../results/family.tsv', sep='\t')
+fdf.to_csv('results/family.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(familycols)]
 
 # Define and extract education-related columns
@@ -92,7 +92,7 @@ educationcols = [
     'Family_owns_the_home_they_live_in'
 ]
 edf = df.loc[:, educationcols]
-edf.to_csv('../results/education.tsv', sep='\t')
+edf.to_csv('results/education.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(educationcols)]
 
 # Define and extract media consumption-related columns
@@ -103,7 +103,7 @@ mediacols = [
     'Uses_social_media'
 ]
 mdf = df.loc[:, mediacols]
-mdf.to_csv('../results/media_consumption.tsv', sep='\t')
+mdf.to_csv('results/media_consumption.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(mediacols)]
 
 # Define and extract economic columns
@@ -113,8 +113,8 @@ ecdf.columns = ecdf.columns.str.replace('_(taka)','').str.replace('(','').str.re
 
 # Drop the other columns as they are not commonly used
 ecdf = ecdf.loc[:, ecdf.columns[~ecdf.columns.str.contains('Other')]]
-ecdf.to_csv('../results/economics.tsv', sep='\t')
+ecdf.to_csv('results/economics.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(economiccols)]
 
 # Save meta
-df.to_csv('../results/premeta.tsv', sep='\t')
+df.to_csv('results/premeta.tsv', sep='\t')

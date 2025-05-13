@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 
 # Load data
-df1 = pd.read_excel('../data/LEAP Surveillance (Group-A) till 31-Aug-2023 [Full Variable].xlsx', index_col=0)
-df2 = pd.read_excel('../data/LEAP Surveillance (Group-B) till 31-Aug-2023 [Full Variable].xlsx', index_col=0)
+df1 = pd.read_excel('data/LEAP Surveillance (Group-A) till 31-Aug-2023 [Full Variable].xlsx', index_col=0)
+df2 = pd.read_excel('data/LEAP Surveillance (Group-B) till 31-Aug-2023 [Full Variable].xlsx', index_col=0)
 
 # Clean and merge
 df1 = df1.replace(99, np.nan)
@@ -52,7 +52,7 @@ days_of_catchup = df.reset_index().groupby(['Food','subjectID'])['Day'].last().x
 days_of_catchup = days_of_catchup.rename('days_of_catchup')
 
 ## quick and dirty analyis
-#meta= pd.read_csv('../results/meta.tsv', sep='\t', index_col=0)
+#meta= pd.read_csv('results/meta.tsv', sep='\t', index_col=0)
 #meta['dtr'] = days_to_recovery
 #sns.kdeplot(data=meta,x='dtr', hue='Feed')
 
@@ -97,4 +97,4 @@ fail = b.rename(columns=mapping)
 surveillance = pd.concat([days_of_catchup, base_body_temp, avs, comp, fail], axis=1)
 
 # Save result
-surveillance.to_csv('../results/surveillance.tsv', sep='\t')
+surveillance.to_csv('results/surveillance.tsv', sep='\t')

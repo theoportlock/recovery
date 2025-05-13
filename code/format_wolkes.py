@@ -7,7 +7,7 @@ For project setup
 import numpy as np
 import pandas as pd
 
-wolkes = pd.read_csv('../data/DhakaBangladeshLEAPE-Wolkes_DATA_LABELS_2024-02-29_1620.csv', index_col=0).iloc[1:]
+wolkes = pd.read_csv('data/DhakaBangladeshLEAPE-Wolkes_DATA_LABELS_2024-02-29_1620.csv', index_col=0).iloc[1:]
 
 wolkes.index = wolkes.index +  wolkes['Unnamed: 1'].replace(
         {'12_month (Arm 2: Intervention)':'000',
@@ -34,4 +34,4 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv("../results/wolkes.tsv", sep='\t')
+df.to_csv("results/wolkes.tsv", sep='\t')

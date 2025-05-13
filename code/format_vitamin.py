@@ -7,7 +7,7 @@ For project setup
 import numpy as np
 import pandas as pd
 
-df = pd.read_excel('../data/LEAP-WSV MS Results_Feb-Mar_2024.xlsx',sheet_name='Results Summary', index_col=0).iloc[1:,:]
+df = pd.read_excel('data/LEAP-WSV MS Results_Feb-Mar_2024.xlsx',sheet_name='Results Summary', index_col=0).iloc[1:,:]
 df = df.set_index('Sample ID')
 
 out = df.drop('Sample Label', axis=1)
@@ -38,4 +38,4 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('../results/vitamin.tsv', sep='\t')
+df.to_csv('results/vitamin.tsv', sep='\t')

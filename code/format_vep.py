@@ -7,10 +7,10 @@ For project setup
 import numpy as np
 import pandas as pd
 
-vep1 = pd.read_csv("../data/Dhaka_control_1yo_AllSubsAve_generatedERPvals_VEP_07-07-2023_KWC.csv", index_col=0)
-vep2 = pd.read_csv("../data/Dhaka_control_2yo_AllSubsAve_generatedERPvals_VEP_13-11-2023.csv", index_col=0)
-vep3 = pd.read_csv("../data/Dhaka_intervention_1yo_AllSubsAve_generatedERPvals_VEP_13-11-2023.csv", index_col=0)
-vep4 = pd.read_csv("../data/Dhaka_intervention_2yo_AllSubsAve_generatedERPvals_VEP_13-11-2023.csv", index_col=0)
+vep1 = pd.read_csv("data/Dhaka_control_1yo_AllSubsAve_generatedERPvals_VEP_07-07-2023_KWC.csv", index_col=0)
+vep2 = pd.read_csv("data/Dhaka_control_2yo_AllSubsAve_generatedERPvals_VEP_13-11-2023.csv", index_col=0)
+vep3 = pd.read_csv("data/Dhaka_intervention_1yo_AllSubsAve_generatedERPvals_VEP_13-11-2023.csv", index_col=0)
+vep4 = pd.read_csv("data/Dhaka_intervention_2yo_AllSubsAve_generatedERPvals_VEP_13-11-2023.csv", index_col=0)
 
 vep = pd.concat([vep1,vep2,vep3,vep4], axis=0)
 vep.drop('Average ERP Waveform', axis=0, inplace=True)
@@ -34,4 +34,4 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('../results/vep.tsv', sep='\t')
+df.to_csv('results/vep.tsv', sep='\t')
