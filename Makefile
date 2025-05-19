@@ -23,9 +23,9 @@ run: $(SIF_NAME)
 	apptainer exec \
 	--bind $(HOST_RESULTS):/results:rw \
 	--bind /run/media/theop/maindrive/fellowship/m4efad/recovery/code:/code:ro \
-	--bind /run/media/theop/maindrive/metatoolkit/metatoolkit:/metatoolkit:ro \
+	--bind /run/media/theop/maindrive/fellowship/m4efad/recovery/metatoolkit/metatoolkit:/metatoolkit:ro \
 	m4efad_image.sif \
-	bash -c "export PATH=\$$PATH:/code:/metatoolkit/metatoolkit && $$cmd"
+	bash -c "export PATH=\$$PATH:/code:/metatoolkit/ && $$cmd"
 
 # Clean up artifacts
 clean:
