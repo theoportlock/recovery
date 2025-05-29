@@ -33,9 +33,9 @@
       <data key="d4">-257.4422870934636</data>
     </node>
     <node id="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
-      <data key="d2">merge.py results/deltas/*.tsv $(sed "s|^|filtered/|" conf/notimedatasets.txt) -o mergedall -j outer</data>
-      <data key="d3">753.5384671298702</data>
-      <data key="d4">-250.3105328279644</data>
+      <data key="d2">merge.py results/deltas/*.tsv $(sed "s|^|results/filtered/|" conf/notimedatasets.txt) -o mergedall -j outer</data>
+      <data key="d3">773.5617870584015</data>
+      <data key="d4">-154.0078988859807</data>
     </node>
     <node id="analysis.graphml::5d4dc56b-cee0-4181-a97f-aa88d6c628d1">
       <data key="d2">parallel overall_recovery.py {} &lt; conf/timedatasets.txt</data>
@@ -249,18 +249,18 @@
     </node>
     <node id="analysis.graphml::78bad856-a36c-487c-b8d4-8edcbee4b910">
       <data key="d2">filter.py -dt 'object' mergedall -o categories</data>
-      <data key="d3">918.1262615394639</data>
-      <data key="d4">-164.7465680615473</data>
+      <data key="d3">908.5913472877824</data>
+      <data key="d4">-114.21152252763504</data>
     </node>
     <node id="analysis.graphml::17b11cd4-e04e-4e34-a50f-b1909113ed37">
       <data key="d2">filter.py -m 50 numbers</data>
-      <data key="d3">999.4714148510897</data>
-      <data key="d4">-232.9905854818688</data>
+      <data key="d3">974.6806377967177</data>
+      <data key="d4">-244.43248258388667</data>
     </node>
     <node id="analysis.graphml::84b95c30-b715-4a5f-ae8c-00e240b74c41">
       <data key="d2">kruskal.py numbersfilter categories</data>
-      <data key="d3">1075.184567933687</data>
-      <data key="d4">-184.33564176514196</data>
+      <data key="d3">1028.4634881004476</data>
+      <data key="d4">-178.614693214133</data>
     </node>
     <node id="analysis.graphml::a0f1352f-177b-4fd8-bd04-c84af0af1bc7">
       <data key="d2">heatmap_alltimedata.py -d conf/timedatasets.txt</data>
@@ -279,8 +279,8 @@
     </node>
     <node id="analysis.graphml::4a44d921-1efb-49e3-ac16-67668c873e8a">
       <data key="d2">filter.py -dt 'number' mergedall -o numbers</data>
-      <data key="d3">901.1304350390312</data>
-      <data key="d4">-229.4645280928667</data>
+      <data key="d3">835.3395267024285</data>
+      <data key="d4">-245.67388232072534</data>
     </node>
     <node id="analysis.graphml::0c87c0d0-8517-4fee-907d-7f62e4d9602f">
       <data key="d2">box.py mergedall -x 'Recovery' -y 'Weight'</data>
@@ -312,25 +312,15 @@
       <data key="d3">868.7052127614625</data>
       <data key="d4">-1151.5149883263148</data>
     </node>
-    <node id="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt">
-      <data key="d2">parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/meta_MAM.tsv results/maaslin/{} -f "Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"' &lt; conf/notimedatasets.txt</data>
-      <data key="d3">1083.900113855489</data>
-      <data key="d4">-497.95913180473934</data>
+    <node id="889399bc-9d22-4e16-a970-84285811bbad">
+      <data key="d2">filter.py allchange -q 'metadata=="Feed" &amp; qval &lt; 0.25'</data>
+      <data key="d3">1447.7881271014226</data>
+      <data key="d4">-484.81926563986264</data>
     </node>
-    <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
-      <data key="d2">mkdir -p results/change; parallel -j1 cp results/maaslin/{}/all_results.tsv results/change/{} &lt; conf/alldatasets.txt</data>
-      <data key="d3">1247.8547796225291</data>
-      <data key="d4">-556.2082651802491</data>
-    </node>
-    <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
-      <data key="d2">parallel -j1 pcoa.py -i results/distance/{}.tsv -o results/pcoa/{}.tsv &lt; conf/timedatasets.txt</data>
-      <data key="d3">975.5310209347083</data>
-      <data key="d4">-413.16607945469997</data>
-    </node>
-    <node id="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
-      <data key="d2">spindle.py</data>
-      <data key="d3">1143.8579421940306</data>
-      <data key="d4">-394.03802022068606</data>
+    <node id="2ea41e8c-dc3d-4c29-9802-555fb9e0e511">
+      <data key="d2">volcano.py allchangefilter</data>
+      <data key="d3">1566.0792646170644</data>
+      <data key="d4">-554.0451703701422</data>
     </node>
     <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
       <data key="d2">merge.py results/change/* -o allchange --append --add-filename</data>
@@ -342,6 +332,11 @@
       <data key="d3">953.7246053065408</data>
       <data key="d4">-572.553590920553</data>
     </node>
+    <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
+      <data key="d2">mkdir -p results/change; parallel -j1 cp results/maaslin/{}/all_results.tsv results/change/{} &lt; conf/alldatasets.txt</data>
+      <data key="d3">1247.8547796225291</data>
+      <data key="d4">-556.2082651802491</data>
+    </node>
     <node id="385985f7-a5aa-416d-956e-79fc9dd0b9b0">
       <data key="d2">format_explain_var.py</data>
       <data key="d3">1287.306866306871</data>
@@ -352,10 +347,20 @@
       <data key="d3">1000.3974979389257</data>
       <data key="d4">-1067.3457052579745</data>
     </node>
+    <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
+      <data key="d2">parallel -j1 pcoa.py -i results/distance/{}.tsv -o results/pcoa/{}.tsv &lt; conf/timedatasets.txt</data>
+      <data key="d3">975.5310209347083</data>
+      <data key="d4">-413.16607945469997</data>
+    </node>
+    <node id="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
+      <data key="d2">spindle.py</data>
+      <data key="d3">1143.8579421940306</data>
+      <data key="d4">-394.03802022068606</data>
+    </node>
     <node id="65069337-cecf-476e-b29a-7becc4a1fe8e">
       <data key="d2">filter.py allchange -q 'qval &lt; 0.25 &amp; metadata != "timepoint"' -o sigchange</data>
-      <data key="d3">1484.8203441312717</data>
-      <data key="d4">-450.28351085774386</data>
+      <data key="d3">1473.378447029254</data>
+      <data key="d4">-413.0973452761858</data>
     </node>
     <node id="e0c5398f-26da-4779-b36e-deab73e090da">
       <data key="d2">heatmap_allnontimedata.py -d conf/notimedatasets.txt</data>
@@ -372,35 +377,15 @@
       <data key="d3">1100.6953554199429</data>
       <data key="d4">39.9961975079922</data>
     </node>
+    <node id="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt">
+      <data key="d2">parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/meta_MAM.tsv results/maaslin/{} -f "Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"' &lt; conf/notimedatasets.txt</data>
+      <data key="d3">1083.900113855489</data>
+      <data key="d4">-497.95913180473934</data>
+    </node>
     <node id="filter.py meta -q 'Condition == &quot;MAM&quot; and (Recovery == &quot;No recovery&quot; or Recovery == &quot;Recovered&quot;)' -o meta_MAM">
       <data key="d2">filter.py meta -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' -o meta_MAM</data>
       <data key="d3">854.3752856238671</data>
       <data key="d4">-504.1139386734157</data>
-    </node>
-    <node id="transpose.py results/allchangefilter.tsv">
-      <data key="d2">transpose.py sigchange</data>
-      <data key="d3">1582.795765779138</data>
-      <data key="d4">-378.536095791758</data>
-    </node>
-    <node id="format_headers.R results/mergedall.tsv results/">
-      <data key="d2">format_headers.R results/mergedall.tsv results/</data>
-      <data key="d3">1420.7022235005518</data>
-      <data key="d4">-319.4196274313321</data>
-    </node>
-    <node id="filter.py mergedall -fdf sigchange -fdfx 1">
-      <data key="d2">filter.py mergedall -fdf sigchange -fdfx 1</data>
-      <data key="d3">1721.052022428521</data>
-      <data key="d4">-312.7451874551549</data>
-    </node>
-    <node id="corr.py results/mergedallfilter.tsv">
-      <data key="d2">corr.py results/mergedallfilter.tsv</data>
-      <data key="d3">1837.34439620125</data>
-      <data key="d4">-310.8382046048187</data>
-    </node>
-    <node id="filter.py -q 'pval &lt; 0.005' results/mergedallfilter.tsv.corr.tsv">
-      <data key="d2">filter.py -q 'pval &lt; 0.005' results/mergedallfilter.tsv.corr.tsv</data>
-      <data key="d3">1934.1427321267915</data>
-      <data key="d4">-300.05349411912937</data>
     </node>
     <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
       <data key="d5">67c57378-67fb-47d4-9b0a-afde6b3f55b2</data>
@@ -437,9 +422,6 @@
     </edge>
     <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="c08882fe-325e-43a1-822d-35bbed1d09ed">
       <data key="d5">88d82c1f-944a-4ea9-be29-e95c6664bc51</data>
-    </edge>
-    <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="format_headers.R results/mergedall.tsv results/">
-      <data key="d5">74c915fe-4d3a-42d5-abbf-f37e97558611</data>
     </edge>
     <edge source="analysis.graphml::5d4dc56b-cee0-4181-a97f-aa88d6c628d1" target="analysis.graphml::4b389d8e-f96e-4fbd-a6db-3ac05a4c7ea8">
       <data key="d5">2e5447a4-b146-4efe-b672-d749327595f9</data>
@@ -621,14 +603,11 @@
     <edge source="57a99b78-f52b-46f6-864e-31ca2b267b82" target="79f507ab-90e3-4b81-95ec-e89e7e8c2b32">
       <data key="d5">63b09075-2051-4514-b4f8-7ba109b195fc</data>
     </edge>
-    <edge source="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
-      <data key="d5">4b376add-ea99-458c-84ca-5cfd7045e72c</data>
+    <edge source="889399bc-9d22-4e16-a970-84285811bbad" target="2ea41e8c-dc3d-4c29-9802-555fb9e0e511">
+      <data key="d5">182232b3-374d-4963-8ad9-3f7b2d0def8a</data>
     </edge>
-    <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
-      <data key="d5">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
-    </edge>
-    <edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
-      <data key="d5">555f455e-ed7f-4309-a889-9e26ef93e756</data>
+    <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="889399bc-9d22-4e16-a970-84285811bbad">
+      <data key="d5">4c2e63af-91eb-4322-96a2-efe9acfcbf12</data>
     </edge>
     <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="65069337-cecf-476e-b29a-7becc4a1fe8e">
       <data key="d5">eb5c64bd-3054-4607-b860-4ac9680ab5c0</data>
@@ -639,26 +618,20 @@
     <edge source="28e36837-7b64-46b7-8612-251d72825bd1" target="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt">
       <data key="d5">bccf697e-3f01-4d28-ba5a-56cf40ca00ab</data>
     </edge>
+    <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
+      <data key="d5">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
+    </edge>
     <edge source="b34ed1de-1263-45fd-9169-8f8aeb3f93fd" target="79f507ab-90e3-4b81-95ec-e89e7e8c2b32">
       <data key="d5">f030e16f-3e60-40ba-8c54-b404cef8c389</data>
     </edge>
-    <edge source="65069337-cecf-476e-b29a-7becc4a1fe8e" target="transpose.py results/allchangefilter.tsv">
-      <data key="d5">2b4f230f-5165-4c0f-bba2-ffa7f5154bfa</data>
+    <edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
+      <data key="d5">555f455e-ed7f-4309-a889-9e26ef93e756</data>
+    </edge>
+    <edge source="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
+      <data key="d5">4b376add-ea99-458c-84ca-5cfd7045e72c</data>
     </edge>
     <edge source="filter.py meta -q 'Condition == &quot;MAM&quot; and (Recovery == &quot;No recovery&quot; or Recovery == &quot;Recovered&quot;)' -o meta_MAM" target="28e36837-7b64-46b7-8612-251d72825bd1">
       <data key="d5">dc3d0828-7b4a-4c5b-a95f-7af2855b0f79</data>
-    </edge>
-    <edge source="transpose.py results/allchangefilter.tsv" target="filter.py mergedall -fdf sigchange -fdfx 1">
-      <data key="d5">d9829621-78ee-432a-ab0b-d3b0a48b97ab</data>
-    </edge>
-    <edge source="format_headers.R results/mergedall.tsv results/" target="filter.py mergedall -fdf sigchange -fdfx 1">
-      <data key="d5">f40b12a2-6d47-46f3-8c37-9a2fb8c81a9f</data>
-    </edge>
-    <edge source="filter.py mergedall -fdf sigchange -fdfx 1" target="corr.py results/mergedallfilter.tsv">
-      <data key="d5">b2705bef-6505-4e71-978c-becfb443f2ca</data>
-    </edge>
-    <edge source="corr.py results/mergedallfilter.tsv" target="filter.py -q 'pval &lt; 0.005' results/mergedallfilter.tsv.corr.tsv">
-      <data key="d5">d4f66670-99f6-4465-933b-ac8dcf456554</data>
     </edge>
     <data key="d0" />
     <data key="d1" />

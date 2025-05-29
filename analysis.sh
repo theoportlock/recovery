@@ -42,26 +42,36 @@ create_mapping.py -d results/filtered/ -i conf/timedatasets.txt
 join.py mapping results/filtered/meta.tsv --on subjectID -o timemeta
 
 # Time to recovery figure
-anthrotime.py
+multiline.py --subject results/anthro.tsv \
+	--x timepoint \
+	--y WLZ_WHZ \
+	--hue Recovery \
+	--id subjectID \
+	--meta results/timemeta.tsv \
+	--output results/anthroline.svg
 
 # Explained variance
-# T1
-filter.py timemeta -q 'timepoint == 0 and Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' -o timemeta_baseline
-parallel -j1 onehot.py results/filtered/{}.tsv -o results/baseline/{}.tsv < conf/notimedatasets.txt
-parallel -j1 stratify.py results/filtered/{}.tsv subjectID --df2 timemeta_baseline -o results/baseline/{}.tsv < conf/timedatasets.txt
-mv results/baseline/meta.tsv results/meta_baseline.tsv
-explain_variance.py results/baseline/* --df_cats results/meta_baseline.tsv --explainor Recovery.Recovered
-format_explain_var.py
-box.py results/baseline/household.tsv --meta results/meta_baseline.tsv -x 'Recovery.Recovered' -y 'Number_of_years_lived_in_current_household'
+# === NOTIME: Explained variance on unstratified datasets ===
+parallel -j1 onehot.py results/filtered/{}.tsv -o results/notime/{}.tsv < conf/notimedatasets.txt
+drop.py --infile results/notime/surveillance.tsv --labels days_of_catchup --axis 1 --outfile results/notime/surveillance.tsv
+mv results/notime/meta.tsv results/meta_onehot.tsv
+explain_variance.py results/notime/* --df_cats meta_onehot --explainor Recovery.Recovered -o notimeev
+format_explain_var.py --labels conf/dataset_labels.tsv --input results/notimeev.tsv --output results/notimeev_formatted.tsv
+new_plot_bar.py results/notimeev_formatted.tsv --coef-col R2 --hue class -o results/notimeev_formatted_EF.svg
 
-# T2
+# === BASELINE (T1): Explained variance on timepoint 0 ===
+filter.py timemeta -q 'timepoint == 0 and Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' -o timemeta_baseline
+parallel -j1 stratify.py results/filtered/{}.tsv subjectID --df2 timemeta_baseline -o results/baseline/{}.tsv < conf/timedatasets.txt
+explain_variance.py results/baseline/* --df_cats meta_onehot --explainor Recovery.Recovered -o baselineev
+format_explain_var.py --labels conf/dataset_labels.tsv --input results/baselineev.tsv --output results/baselineev_formatted.tsv
+new_plot_bar.py results/baselineev_formatted.tsv --coef-col R2 --hue class -o results/baselineev_formatted_EF.svg
+
+# === 1 YEAR (T2): Explained variance on timepoint 52 ===
 filter.py timemeta -q 'timepoint == 52 and Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' -o timemeta_1yr
-parallel -j1 onehot.py results/filtered/{}.tsv -o results/1yr/{}.tsv < conf/notimedatasets.txt
 parallel -j1 stratify.py results/filtered/{}.tsv subjectID --df2 timemeta_1yr -o results/1yr/{}.tsv < conf/timedatasets.txt
-mv results/1yr/meta.tsv results/meta_1yr.tsv
-explain_variance.py results/1yr/* --df_cats results/meta_1yr.tsv --explainor Recovery.Recovered
-format_explain_var.py
-box.py results/1yr/household.tsv --meta results/meta_1yr.tsv -x 'Recovery.Recovered' -y 'Number_of_years_lived_in_current_household'
+explain_variance.py results/1yr/* --df_cats meta_onehot --explainor Recovery.Recovered -o 1yrev
+format_explain_var.py --labels conf/dataset_labels.tsv --input results/1yrev.tsv --output results/1yrev_formatted.tsv
+new_plot_bar.py results/1yrev_formatted.tsv --coef-col R2 --hue class -o results/1yrev_formatted_EF.svg
 
 # Compare Refeeds
 parallel overall_recovery.py {} < conf/timedatasets.txt
@@ -85,7 +95,7 @@ spindle.py
 
 # Delta network
 parallel -j1 deltas.py -m results/timemeta.tsv -i results/filtered/{}.tsv -o results/deltas/{}.tsv < conf/timedatasets.txt
-merge.py results/deltas/*.tsv $(sed "s|^|results/filtered/|" conf/notimedatasets.txt) -o mergedall -j outer
+merge.py results/deltas/*.tsv $(sed "s|^|results/filtered/|; s|\$|.tsv|" conf/notimedatasets.txt) -o mergedall -j outer
 filter.py -dt 'number' mergedall -o numbers
 filter.py -m 50 numbers
 kruskal.py numbersfilter categories
@@ -107,3 +117,57 @@ box.py mergedall -x 'Recovery' -y 'Weight'
 # Supp tables
 heatmap_alltimedata.py -d conf/timedatasets.txt
 heatmap_allnontimedata.py -d conf/notimedatasets.txt
+
+multiline.py --subject results/filtered/species.tsv \
+	--x timepoint \
+	--y Sutterella_wadsworthensis \
+	--hue Feed \
+	--id subjectID \
+	--meta results/timemeta.tsv \
+	--logy \
+	--figsize 2.5 2.5 \
+	--output results/sutterellaline.svg
+
+multiline.py --subject results/filtered/psd.tsv \
+	--x timepoint \
+	--y Right_Parietal_High_Gamma \
+	--hue Feed \
+	--id subjectID \
+	--meta results/timemeta.tsv \
+	--figsize 2.5 2.5 \
+	--output results/rphgline.svg
+
+box.py results/filtered/psd.tsv \
+	-x timepoint \
+	-y All_Chans_High_Gamma \
+	--hue Feed \
+	--meta results/timemeta.tsv \
+	--figsize 2.5,2.5 \
+	--output results/achgbox.svg
+
+box.py results/filtered/pots.tsv \
+	-x timepoint \
+	-y  \
+	--hue Feed \
+	--meta results/timemeta.tsv \
+	--figsize 2.5,2.5 \
+	--output results/potsbox.svg
+
+multiline.py --subject results/filtered/pathways.tsv \
+	--x timepoint \
+	--y PWY-822 \
+	--hue Recovery \
+	--id subjectID \
+	--meta results/timemeta.tsv \
+	--logy \
+	--figsize 2.5 2.5 \
+	--output results/PWY822line.svg
+
+multiline.py --subject results/filtered/psd.tsv \
+	--x timepoint \
+	--y All_Chans_High_Gamma \
+	--hue Feed \
+	--id subjectID \
+	--meta results/timemeta.tsv \
+	--figsize 3 3 \
+	--output results/achgline.svg

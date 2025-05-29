@@ -66,6 +66,8 @@ anthro.index = 'LCC' + anthro.index.astype(str)
 idcol, timecol = anthro.index.str[:7], anthro.index.str[8:].astype(int)
 anthro.insert(0, 'timepoint',timecol)
 anthro.insert(0, 'subjectID',idcol)
+# Drop all over 52 weeks
+anthro = anthro.drop(anthro[anthro['timepoint'] > 52].index)
 df = anthro.set_index(['subjectID', 'timepoint'])
 
 mapping = df.index.to_frame()

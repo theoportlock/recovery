@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-LABEL description="Pipeline Docker Image"
+LABEL description="Pipeline Docker Image for m4efad"
 LABEL maintainer="theo@portlocklab.com"
 
 WORKDIR /app
@@ -12,16 +12,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libsm6 \
     libxext6 \
     libxrender-dev \
-    git \
+    libxml2-dev \
+    libssl-dev \
+    libcurl4-openssl-dev \
+    libgit2-dev \
     fonts-dejavu-core \
     fonts-liberation \
+    git \
     curl \
     r-base \
     r-base-dev \
     gfortran \
-    libxml2-dev \
-    libssl-dev \
-    libcurl4-openssl-dev \
     parallel \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -30,14 +31,19 @@ COPY requirements.txt ./
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Install MaAsLin2 in R
-RUN Rscript -e "install.packages('BiocManager', repos='https://cloud.r-project.org')" && \
-    Rscript -e "BiocManager::install('Maaslin2')"
+# Install MaAsLin2 in R (from GitHub)
+RUN Rscript -e "install.packages(c('remotes', 'devtools'), repos='https://cloud.r-project.org')" && \
+    Rscript -e "remotes::install_github('biobakery/Maaslin2')"
 
-# Optional: add Maaslin2.R to PATH
-ENV PATH="/usr/local/lib/R/site-library/Maaslin2:${PATH}"
+# Optional: copy in Maaslin2.R wrapper script and make executable
+COPY code/Maaslin2.R /usr/local/bin/
+RUN chmod +x /usr/local/bin/Maaslin2.R
 
-# Copy local files
+# Optional: matplotlib config
 COPY matplotlibrc .
 
-# (Optional) You may want to add a default CMD or ENTRYPOINT if this will be used directly
+# Add any ENV changes (if needed)
+ENV PATH="/usr/local/bin:${PATH}"
+
+# Default command (optional)
+CMD ["/bin/bash"]

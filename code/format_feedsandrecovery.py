@@ -17,5 +17,9 @@ df = df[cols]
 df = df.rename(columns={'Feeds by Randomization':'Feed'})
 df.index.name='subjectID'
 
+# Fillna with healthy
+df.loc[df.index.str[3] ==2, 'Feed'] = 'Healthy'
+df.loc[df.index.str[3] ==2, 'Recovery'] = 'Healthy'
+
 df.to_csv('results/feedandrecovery.tsv', sep='\t')
 

@@ -2,16 +2,32 @@
 # -*- coding: utf-8 -*-
 
 import pandas as pd
+import argparse
 
-dataset_lables = pd.read_csv('conf/dataset_labels.tsv', sep='\t', index_col=0)
-df = pd.read_csv('results/aa_perm.tsv', sep='\t', index_col=0)
+def main():
+    parser = argparse.ArgumentParser(description="Format AA permutation results with dataset labels.")
+    parser.add_argument('--labels', default='conf/dataset_labels.tsv', help='Path to dataset labels file (TSV)')
+    parser.add_argument('--input', default='results/aa_perm.tsv', help='Path to input results file (TSV)')
+    parser.add_argument('--output', default='results/aa_perm_formatted.tsv', help='Path to output file (TSV)')
 
-df.index = df.index.str.replace('.tsv','').str.replace('.*/','', regex=True)
-df = df.dropna()
+    args = parser.parse_args()
 
-df.drop(columns=['Unnamed: 1'], inplace=True)
+    # Load files
+    dataset_labels = pd.read_csv(args.labels, sep='\t', index_col=0)
+    df = pd.read_csv(args.input, sep='\t', index_col=0)
 
-df = df.join(dataset_lables[['name','class']]).set_index('name')
+    # Clean index
+    df.index = df.index.str.replace('.tsv', '').str.replace('.*/', '', regex=True)
+    df = df.dropna()
 
-df.to_csv('results/aa_perm_formatted.tsv', sep='\t')
+    # Drop unnamed column if present
+    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 
+    # Join and format
+    df = df.join(dataset_labels[['name', 'class']]).set_index('name')
+
+    # Save
+    df.to_csv(args.output, sep='\t')
+
+if __name__ == '__main__':
+    main()
