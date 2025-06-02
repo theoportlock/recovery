@@ -29,13 +29,14 @@ meta_file = Path("results/filtered/meta.tsv")
 surveil_file = Path("results/filtered/surveillance.tsv")
 anthro_file = Path("results/filtered/anthro.tsv")
 
+REFEED_COL = "Feed"
+
 meta = pd.read_csv(meta_file, sep="\t", index_col=0)
 meta = meta.dropna(subset=[REFEED_COL])
 surveil = pd.read_csv(surveil_file, sep="\t", index_col=0)
 
 df = meta.join(surveil)
 
-REFEED_COL = "Feed"
 categorical_cols = [
         'Recovery',
         'Sex',
@@ -44,7 +45,7 @@ categorical_cols = [
 continuous_cols = [
         "BF",
         'fail_no.failure',
-        'days_to_recovery'] 
+        'days_of_catchup'] 
 
 # One-hot encode categorical vars
 df_encoded = pd.get_dummies(df[categorical_cols])

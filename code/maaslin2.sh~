@@ -6,7 +6,7 @@ export PATH="metatoolkit/metatoolkit/:$PATH"
 # Maaslin2
 mkdir -p results/maaslin results/change
 
-Maaslin2.R results/filtered/wolkes.tsv results/timemeta_MAM.tsv results/maaslin/wolkes -f "timepoint,Recovery,timepoint:Feed,Sex,Delivery_Mode" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
+Maaslin2.R results/filtered/wolkes.tsv results/timemeta_MAM.tsv results/maaslin/wolkes -f "timepoint,Recovery,Feed,Sex,Delivery_Mode" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/vitamin.tsv results/timemeta_MAM.tsv results/maaslin/vitamin -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/vep.tsv results/timemeta_MAM.tsv results/maaslin/vep -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/species.tsv results/timemeta_MAM.tsv results/maaslin/species -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"

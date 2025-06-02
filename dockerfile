@@ -31,19 +31,21 @@ COPY requirements.txt ./
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Install MaAsLin2 in R (from GitHub)
+# Install R packages including MaAsLin2
 RUN Rscript -e "install.packages(c('remotes', 'devtools'), repos='https://cloud.r-project.org')" && \
     Rscript -e "remotes::install_github('biobakery/Maaslin2')"
 
-# Optional: copy in Maaslin2.R wrapper script and make executable
-COPY code/Maaslin2.R /usr/local/bin/
-RUN chmod +x /usr/local/bin/Maaslin2.R
+# Clone MaAsLin2 repo to get Maaslin2.R wrapper
+RUN git clone https://github.com/biobakery/Maaslin2.git /tmp/Maaslin2 && \
+    cp /tmp/Maaslin2/R/Maaslin2.R /usr/local/bin/Maaslin2.R && \
+    chmod +x /usr/local/bin/Maaslin2.R
 
-# Optional: matplotlib config
+# Optional: add matplotlibrc config
 COPY matplotlibrc .
 
-# Add any ENV changes (if needed)
+# Set environment variables
 ENV PATH="/usr/local/bin:${PATH}"
 
-# Default command (optional)
+# Default shell
 CMD ["/bin/bash"]
+
