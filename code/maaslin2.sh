@@ -2,11 +2,13 @@
 
 export PATH="code/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"
+export PATH="Maaslin2/R/:$PATH"
 
 # Maaslin2
 mkdir -p results/maaslin results/change
 
-Maaslin2.R results/filtered/wolkes.tsv results/timemeta_MAM.tsv results/maaslin/wolkes -f "timepoint,Recovery,timepoint:Feed,Sex,Delivery_Mode" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
+#Maaslin2.R results/filtered/wolkes.tsv results/timemeta_MAM.tsv results/maaslin/wolkes -f "timepoint,Recovery,Feed,Sex,Delivery_Mode" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
+Maaslin2.R results/filtered/bayley.tsv results/timemeta_MAM.tsv results/maaslin/bayley -f "timepoint,Recovery,Feed,Sex,Delivery_Mode" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/vitamin.tsv results/timemeta_MAM.tsv results/maaslin/vitamin -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/vep.tsv results/timemeta_MAM.tsv results/maaslin/vep -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/species.tsv results/timemeta_MAM.tsv results/maaslin/species -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
@@ -21,7 +23,6 @@ Maaslin2.R results/filtered/wolkes.tsv results/timemeta_MAM.tsv results/maaslin/
 #Maaslin2.R results/filtered/glitter.tsv results/timemeta_MAM.tsv results/maaslin/glitter -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/fnirs.tsv results/timemeta_MAM.tsv results/maaslin/fnirs -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/fcis.tsv results/timemeta_MAM.tsv results/maaslin/fcis -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
-#Maaslin2.R results/filtered/bayley.tsv results/timemeta_MAM.tsv results/maaslin/bayley -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/anthro.tsv results/timemeta_MAM.tsv results/maaslin/anthro -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/alpha_diversity.tsv results/timemeta_MAM.tsv results/maaslin/alpha_diversity -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"
 #Maaslin2.R results/filtered/aa.tsv results/timemeta_MAM.tsv results/maaslin/aa -f "timepoint,Recovery,Feed" -r "subjectID" -d "Recovery,No recovery;Feed,Local RUSF (A)"

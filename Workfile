@@ -34,8 +34,8 @@
 </node>
 <node id="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d2">merge.py results/deltas/*.tsv $(sed "s|^|filtered/|" conf/notimedatasets.txt) -o mergedall -j outer</data>
-  <data key="d3">753.5384671298702</data>
-  <data key="d4">-250.3105328279644</data>
+  <data key="d3">841.7205111575113</data>
+  <data key="d4">-79.99815367653974</data>
 </node>
 <node id="analysis.graphml::5d4dc56b-cee0-4181-a97f-aa88d6c628d1">
   <data key="d2">parallel overall_recovery.py {} &lt; conf/timedatasets.txt</data>
@@ -249,8 +249,8 @@
 </node>
 <node id="analysis.graphml::78bad856-a36c-487c-b8d4-8edcbee4b910">
   <data key="d2">filter.py -dt 'object' mergedall -o categories</data>
-  <data key="d3">918.1262615394639</data>
-  <data key="d4">-164.7465680615473</data>
+  <data key="d3">935.416858407629</data>
+  <data key="d4">-182.03716492971225</data>
 </node>
 <node id="analysis.graphml::17b11cd4-e04e-4e34-a50f-b1909113ed37">
   <data key="d2">filter.py -m 50 numbers</data>
@@ -284,8 +284,8 @@
 </node>
 <node id="analysis.graphml::0c87c0d0-8517-4fee-907d-7f62e4d9602f">
   <data key="d2">box.py mergedall -x 'Recovery' -y 'Weight'</data>
-  <data key="d3">755.1414502286408</data>
-  <data key="d4">176.05575109449552</data>
+  <data key="d3">796.6388827122366</data>
+  <data key="d4">4.014312256254247</data>
 </node>
 <node id="analysis.graphml::a6c0d371-652c-4ff4-83cf-aea343303422">
   <data key="d2">box.py mergedall -x 'Recovery' -y 'WLZ_WHZ' -o results/recover_WLZ_box.svg</data>
@@ -412,6 +412,26 @@
   <data key="d3">404.58244714135975</data>
   <data key="d4">-351.09649472641433</data>
 </node>
+<node id="multiline.py --subject results/filtered/bayley.tsv --meta results/timemeta.tsv --x timepoint --y expressive_communication_score --hue Feed --id subjectID --output results/bayley_multiline.svg">
+  <data key="d2">multiline.py --subject results/filtered/bayley.tsv --meta results/timemeta.tsv --x timepoint --y expressive_communication_score --hue Feed --id subjectID --output results/bayley_multiline.svg</data>
+  <data key="d3">1307.8118544741328</data>
+  <data key="d4">36.717673258094855</data>
+</node>
+<node id="box.py results/filtered/wolkes.tsv --meta results/timemeta.tsv -x timepoint -y vocalisation --hue Feed -o results/wolkes_vocalisation_box.svg">
+  <data key="d2">box.py results/filtered/wolkes.tsv --meta results/timemeta.tsv -x timepoint -y vocalisation --hue Feed -o results/wolkes_vocalisation_box.svg</data>
+  <data key="d3">1264.8071609062658</data>
+  <data key="d4">137.46024510191145</data>
+</node>
+<node id="onehot.py results/timemeta.tsv -o results/timemeta_onehot.tsv --exclude-cols 'subjectID' --sanitize-headers --prefix-sep '_'">
+  <data key="d2">onehot.py results/timemeta.tsv -o results/timemeta_onehot.tsv --exclude-cols 'subjectID' --sanitize-headers --prefix-sep '_'</data>
+  <data key="d3">634.5649050616535</data>
+  <data key="d4">74.34956653310923</data>
+</node>
+<node id="mixedlm.py   --formula '~ Sex_Female + Delivery_Mode_Caesarean + timepoint * Feed_ERUSF__B_'   --metadata_file results/timemeta_onehot.tsv   --data_file results/filtered/bayley.tsv   --grouping_variable subjectID   --output_file results/results.tsv">
+  <data key="d2">mixedlm.py   --formula '~ Sex_Female + Delivery_Mode_Caesarean + timepoint * Feed_ERUSF__B_'   --metadata_file results/timemeta_onehot.tsv   --data_file results/filtered/bayley.tsv   --grouping_variable subjectID   --output_file results/results.tsv</data>
+  <data key="d3">830.8131795153255</data>
+  <data key="d4">285.2948483247218</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
   <data key="d5">67c57378-67fb-47d4-9b0a-afde6b3f55b2</data>
 </edge>
@@ -454,6 +474,12 @@
 <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="format_headers.R results/mergedall.tsv results/">
   <data key="d5">74c915fe-4d3a-42d5-abbf-f37e97558611</data>
 </edge>
+<edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="multiline.py --subject results/filtered/bayley.tsv --meta results/timemeta.tsv --x timepoint --y expressive_communication_score --hue Feed --id subjectID --output results/bayley_multiline.svg">
+  <data key="d5">2c4db815-37a8-4483-8ec6-841008c1e252</data>
+</edge>
+<edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="box.py results/filtered/wolkes.tsv --meta results/timemeta.tsv -x timepoint -y vocalisation --hue Feed -o results/wolkes_vocalisation_box.svg">
+  <data key="d5">39ea603d-0e16-41d0-879f-e5b7ad9c7ec8</data>
+</edge>
 <edge source="analysis.graphml::5d4dc56b-cee0-4181-a97f-aa88d6c628d1" target="analysis.graphml::4b389d8e-f96e-4fbd-a6db-3ac05a4c7ea8">
   <data key="d5">2e5447a4-b146-4efe-b672-d749327595f9</data>
 </edge>
@@ -492,6 +518,9 @@
 </edge>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="filter.py meta -q 'Condition == &quot;MAM&quot; and (Recovery == &quot;No recovery&quot; or Recovery == &quot;Recovered&quot;)' -o meta_MAM">
   <data key="d5">d0df921d-8ac8-43d8-9832-aefaafa9fb1a</data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="onehot.py results/timemeta.tsv -o results/timemeta_onehot.tsv --exclude-cols 'subjectID' --sanitize-headers --prefix-sep '_'">
+  <data key="d5">93d2148e-f2a1-4b66-b7a8-c587aa112b8e</data>
 </edge>
 <edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="de95f326-8227-4628-b6c2-af8206095052">
   <data key="d5">0d4f6ea0-ef25-4931-8d27-8fb406f98823</data>
@@ -675,5 +704,8 @@
 </edge>
 <edge source="filter.py -q 'pval &lt; 0.005' results/mergedallfilter.tsv.corr.tsv" target="create_network.py --edges results/mergedallfilter.corrfilter.tsv --nodes results/sigchangeFeed.tsv">
   <data key="d5">5c391a97-14e0-411f-a205-25b173fd086a</data>
+</edge>
+<edge source="onehot.py results/timemeta.tsv -o results/timemeta_onehot.tsv --exclude-cols 'subjectID' --sanitize-headers --prefix-sep '_'" target="mixedlm.py   --formula '~ Sex_Female + Delivery_Mode_Caesarean + timepoint * Feed_ERUSF__B_'   --metadata_file results/timemeta_onehot.tsv   --data_file results/filtered/bayley.tsv   --grouping_variable subjectID   --output_file results/results.tsv">
+  <data key="d5">47b9251c-8872-4181-a9d9-596ac65c0f3e</data>
 </edge>
 </graph></graphml>
