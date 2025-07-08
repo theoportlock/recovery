@@ -10,7 +10,7 @@ for metric in gini shannon richness simpson
 do
 calculate_diversity.R \
 	-f ${metaphlan_file} \
-	-t metaphlan/metaphlan/utils/mpa_v31_CHOCOPhlAn_201901_species_tree.nwk \
+	-t conf/mpa_v31_CHOCOPhlAn_201901_species_tree.nwk \
 	-d alpha \
 	-p alpha \
 	-m $metric \
@@ -19,5 +19,5 @@ calculate_diversity.R \
 done
 
 # Combine alpha diversity metrics and cleanup
-merge.py results/mbiome_alpha/* -o alpha_diversity &&
+merge.py results/mbiome_alpha/* -o results/alpha_diversity.tsv &&
 rm -r results/mbiome_alpha
