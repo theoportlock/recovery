@@ -1,5 +1,6 @@
 #!/bin/bash
 # Biobakery's calculate diversity functions in their github/utils directory
+export PATH="metaphlan/metaphlan/utils/:$PATH"
 
 metaphlan_file=$1
 mkdir -p results/mbiome_alpha
@@ -9,7 +10,7 @@ for metric in gini shannon richness simpson
 do
 calculate_diversity.R \
 	-f ${metaphlan_file} \
-	-t conf/mpa_v31_CHOCOPhlAn_201901_species_tree.nwk \
+	-t metaphlan/metaphlan/utils/mpa_v31_CHOCOPhlAn_201901_species_tree.nwk \
 	-d alpha \
 	-p alpha \
 	-m $metric \

@@ -14,7 +14,7 @@ fi
 docker run --rm -it \
   -v "$(pwd)":$WORKDIR \
   -w $WORKDIR \
-  -e PATH="$WORKDIR/Maaslin2/R:$WORKDIR/code:$WORKDIR/metatoolkit/metatoolkit:$PATH" \
+  -e PATH="$WORKDIR/maaslin3/R:$WORKDIR/Maaslin2/R:$WORKDIR/metaphlan/metaphlan/utils:$WORKDIR/code:$WORKDIR/metatoolkit/metatoolkit:$PATH" \
   "$IMAGE" \
   "$@"
 
