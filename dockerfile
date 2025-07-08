@@ -43,9 +43,6 @@ RUN git clone https://github.com/biobakery/Maaslin2.git /tmp/Maaslin2 && \
 # Optional: add matplotlibrc config
 COPY matplotlibrc .
 
-# Set environment variables
-ENV PATH="/usr/local/bin:${PATH}"
-
 # Default shell
 CMD ["/bin/bash"]
 
