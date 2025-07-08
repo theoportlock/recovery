@@ -7,3 +7,6 @@
 [submodule "maaslin3"]
 	path = maaslin3
 	url = https://github.com/biobakery/maaslin3.git
+[submodule "metaphlan"]
+	path = metaphlan
+	url = https://github.com/biobakery/MetaPhlAn.git

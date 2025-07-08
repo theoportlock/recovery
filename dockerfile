@@ -35,16 +35,17 @@ RUN pip install --upgrade pip && \
 RUN Rscript -e "install.packages(c('remotes', 'devtools'), repos='https://cloud.r-project.org')" && \
     Rscript -e "remotes::install_github('biobakery/Maaslin2')"
 
-# Clone MaAsLin2 repo to get Maaslin2.R wrapper
-RUN git clone https://github.com/biobakery/Maaslin2.git /tmp/Maaslin2 && \
-    cp /tmp/Maaslin2/R/Maaslin2.R /usr/local/bin/Maaslin2.R && \
-    chmod +x /usr/local/bin/Maaslin2.R
+# Skip setting Bioconductor version manually
+RUN Rscript -e "install.packages('BiocManager', repos='https://cloud.r-project.org')" && \
+    Rscript -e "BiocManager::install(c( \
+        'microbiome', 'rhdf5filters', 'sp', 'rhdf5', 'UCSC.utils', \
+        'GenomeInfoDbData', 'ade4', 'biomformat', 'igraph', \
+        'multtest', 'S4Vectors', 'IRanges', 'XVector', 'GenomeInfoDb', \
+        'phyloseq', 'Biostrings', 'Rtsne' \
+    ), ask = FALSE, update = TRUE)"
 
 # Optional: add matplotlibrc config
 COPY matplotlibrc .
-
-# Set environment variables
-ENV PATH="/usr/local/bin:${PATH}"
 
 # Default shell
 CMD ["/bin/bash"]

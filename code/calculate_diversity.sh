@@ -1,5 +1,6 @@
 #!/bin/bash
 # Biobakery's calculate diversity functions in their github/utils directory
+export PATH="metaphlan/metaphlan/utils/:$PATH"
 
 metaphlan_file=$1
 mkdir -p results/mbiome_alpha
@@ -18,5 +19,5 @@ calculate_diversity.R \
 done
 
 # Combine alpha diversity metrics and cleanup
-merge.py results/mbiome_alpha/* -o alpha_diversity &&
+merge.py results/mbiome_alpha/* -o results/alpha_diversity.tsv &&
 rm -r results/mbiome_alpha
