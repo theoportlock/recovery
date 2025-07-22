@@ -1,0 +1,63 @@
+Hi Chatgpt, I am looking to do some analysis around two separate refeed methods for childhood malnutrition between 1-2yrs of age. at baseline there were 140 MAM kids (70 on refeed A and 70 on refeed B) mixed with 70 healthy controls at both timepoints. my figures for the paper was first figure: recovery curves for change in weight from baseline as well as a small summary figure of the study design. Then, for figure 2, I was going to do a baseline predict figure where each recorded dataset  ( microbiome, anthropometrics, SES, EEG etc) were used to predict recovery (achieved wlz/whz of -1 SD) and isolate the important features/significantly different features that associate with recovery. Then for figure3, i was going to try an approach were I compare the distributions (beta diversities) of each group (MAM RefeedA yr1, MAM RefeedB yr1, MAM RefeedA yr2, Healthy Yr2 etc) and, by looking at the differences (PERMANOVA) between  each refeed method at each timepoint compared with healthy (ie does the distance from healthy shrink over the study period), measure how effective each refeed method was in imrpoving healthy development. Then for figure 4 I was going to do a differential network analysis where I take (for the datasets that have 2 timepoints) the delta between the timepoints to remove the time dimention and use all the data in a random forest model to predict recovery with nodes as important features (SHAP) and edges as important interactions (SHAP interactions). 
+
+Main findings are
+erutf was associated with reduced days to recovery
+eeg microstates were only marginally different between healthy amdn MAM
+Biharis were more malnushed than bengalis
+baseline gut microbiome is a poor predictor of bayley 2yr, glitter wand and spin the pots
+educational attainemtne PRS was weakly correlated with expressive communication baylyes score
+Executive function prs score was correlated to temproal beta waves at 2yrs of age
+F prausnitzii was associated with recovery
+anthropometrics largely determine recovery that is quick catchup growth and higher baseline weight
+Heigh PRS was correlated with improved malnutrition
+Intelligence prs scores can predict expressive communication bayleys at 1yr but not at 2 yr
+recovyer had a higher change in fine motor score from baseline than healthy
+Educational attainment PRS was correlated with Intelligent PRS and negativelly correlated with maternal income
+Educational attainment PRS increases the likelihood of recovery whilst otehrs (NAFLD PRS) is opposite
+Triglycerides and ceramides are associated with recoveyr from baseline
+
+Results
+1. Recovery Outcomes by Refeeding Method
+1.1 Days to Recovery
+Children receiving enhanced RUTF (eRUTF) had faster recovery times than those receiving standard RUTF.
+This suggests that eRUTF may accelerate anthropometric catch-up even if overall recovery rates were similar.
+
+1.2 Recovery Rates and Growth
+Overall recovery rates (based on MUAC/WHZ) were similar between groups.
+Rapid weight gain and higher baseline anthropometrics (e.g., weight-for-age) were the strongest predictors of recovery.
+
+2. Neurodevelopmental Outcomes
+2.1 Bayley Scales and Cognitive Scores
+Both feeding groups improved in Bayley Scales scores over time.
+Expressive communication scores at 1 year (but not 2 years) were predicted by intelligence PRS.
+Change in fine motor score from baseline was greater in recovered children than in healthy controls.
+
+2.2 Executive Function
+Executive function PRS was correlated with temporal beta wave activity at 2 years of age.
+These EEG findings suggest a genetic influence on brain activity patterns related to cognitive control.
+
+2.3 EEG Microstate Analysis
+Microstates showed only marginal differences between MAM and healthy children at 2 years.
+This suggests partial or near-complete neurophysiological normalization by age 2.
+
+3. Genomic and Socioeconomic Predictors
+3.1 Polygenic Risk Scores (PRS) and Cognitive Outcomes
+Educational attainment PRS was weakly correlated with expressive communication.
+Educational PRS was also positively correlated with intelligence PRS, and negatively correlated with maternal income.
+Educational PRS increased the likelihood of recovery, while NAFLD PRS was associated with poorer recovery.
+
+3.2 Height PRS and Recovery
+Children with higher height PRS had improved anthropometric response and higher likelihood of recovery.
+
+4. Gut Microbiome Associations
+4.1 Microbiome Composition and Prediction of Outcomes
+Baseline gut microbiome composition was a poor predictor of Bayley scores (Bayley at 2 years, Glitter Wand, and Spin the Pots).
+These findings challenge assumptions about microbiome maturity as a cognitive predictor in MAM.
+
+4.2 Specific Taxa and Recovery
+Faecalibacterium prausnitzii abundance was positively associated with recovery, suggesting a role in metabolic or immunological restoration.
+
+5. Metabolomic Signatures of Recovery
+5.1 Triglyceride and Ceramide Levels
+Changes in baseline serum triglycerides and ceramides were significantly associated with recovery.
+These may serve as biomarkers for metabolic readiness to respond to nutritional intervention.
