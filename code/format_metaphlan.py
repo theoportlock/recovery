@@ -3,13 +3,13 @@
 
 """
 Author: Theo Portlock
-Script to format MetaPhlAn3 output for downstream analysis
+Script to format MetaPhlAn4 output for downstream analysis
 """
 
 import pandas as pd
 
 # Load MetaPhlAn3 output file, skipping the first row (contains description/metadata)
-df = pd.read_csv('data/m4efad_metaphlan3_profiles_april2024.tsv',
+df = pd.read_csv('data/metaphlan_merged_profiles.tsv',
                  sep='\t', index_col=0, header=1)
 
 # Load the sample metadata
@@ -40,4 +40,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Transmute and save formatted data - for alpha-diversity analysis
-df.T.to_csv('results/metaphlan.tsv', sep='\t')
+df.to_csv('results/metaphlan.tsv', sep='\t')
