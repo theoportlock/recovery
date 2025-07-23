@@ -63,7 +63,7 @@
   <data key="d4">-175.80255788047307</data>
 </node>
 <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
-  <data key="d2">join.py mapping results/filtered/meta.tsv --on subjectID -o timemeta</data>
+  <data key="d2">join.py results/mapping.tsv results/filtered/meta.tsv --on subjectID -o results/timemeta.tsv</data>
   <data key="d3">515.9026192879564</data>
   <data key="d4">-256.1050518503225</data>
 </node>
@@ -268,7 +268,7 @@
   <data key="d4">-786.4325385888212</data>
 </node>
 <node id="5fd57ef7-f7bf-40b8-a881-f1b93bc82a68">
-  <data key="d2">filter.py timemeta -q 'timepoint == 0 and Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' -o results/timemeta_baseline</data>
+  <data key="d2">filter.py results/timemeta.tsv -q 'timepoint == 0 and Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' -o results/timemeta_baseline.tsv</data>
   <data key="d3">638.3774274779732</data>
   <data key="d4">-1116.344074004118</data>
 </node>
