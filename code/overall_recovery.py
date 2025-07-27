@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import numpy as np
 import pandas as pd
+from scipy.spatial.distance import pdist, squareform
+from skbio.stats.distance import permanova, permdisp, DistanceMatrix
+from scipy.spatial import distance
+import skbio
 import sys 
 
 # Load data
 #subject = 'anthro'
 subject = sys.argv[1]
-dataset = pd.read_csv(subject, sep='\t', index_col=0)
+dataset = pd.read_csv(f'results/{subject}.tsv', sep='\t', index_col=0)
 
 def PERMANOVA(df, pval=True, full=False):
     np.random.seed(0)

@@ -1,9 +1,11 @@
 imbalanced-learn
+openpyxl
 matplotlib
 numpy
 pandas
 python-docx
 scikit-learn
+scikit-bio
 scipy
 seaborn
 shap
