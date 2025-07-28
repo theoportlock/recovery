@@ -124,8 +124,8 @@ parallel overall_recovery.py {} &lt; conf/timedatasets.txt</data>
   -r "subjectID" \
   -d "Recovery,No recovery;Feed,Local RUSF (A)"' \
   &lt; conf/timedatasets.txt</data>
-      <data key="d3">2310.6956902390975</data>
-      <data key="d4">-506.91234389360375</data>
+      <data key="d3">2312.3062002390975</data>
+      <data key="d4">-534.2910138936037</data>
       <data key="d5">fail</data>
     </node>
     <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
