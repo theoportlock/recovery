@@ -82,7 +82,7 @@ However, a key distinction emerged in time to recovery, which was significantly 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{figures/table1.pdf}
+	\includegraphics[scale=0.3]{../../figures/table1.pdf}
 	\caption[Study population characteristics and recovery rates]{
 		Study population characteristics and recovery rates.
 	}
@@ -96,7 +96,7 @@ While children improved in their cognitive abilities over time, this improvement
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=1.2]{figures/anthrochange_simple.pdf}
+\includegraphics[scale=1.2]{../../figures/anthrochange_simple.pdf}
 	\caption[Measures of cognition were not significantly impacted by refeeding]{
 		Measures of cognition were not significantly impacted by refeeding.
 		a) Lineplot of how children change in WLZ/WHZ during refeeding.
@@ -121,7 +121,7 @@ The most significant factors were anthropometric such as head circumference, ind
 Other factors included the proportion of days without feeding failure, indicating compliance/adherance to the refeeding.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{figures/ev.pdf}
+\includegraphics[scale=0.8]{../../figures/ev.pdf}
 	\caption[Factors that associate with recovery.]{
 		Factors that associate with recovery.
 		Explained variance as measured by PERMANOVA of beta diversities between samples within each dataset.
@@ -137,7 +137,7 @@ For each dataset analysed through this techhniqe, the shrinking/widening of this
 ERUTF drove a greater shift toward healthy microbiome, including depletion of S. wadsworthensis and L. fermentum.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{figures/newrecoveryfeed3.pdf}
+	\includegraphics[scale=0.6]{../../figures/newrecoveryfeed3.pdf}
 	\caption[Refeed methods improve/deteriorate bodily systems differently]{
 		Refeed methods improve/deteriorate bodily systems differently.
 		A, Radial plot of percentage change in distance from Well-nourished controls before and after refeeding (1yr and 2yr). Positive and negative percentages represent improvement and deterioration, respectively.
@@ -153,7 +153,7 @@ With an understanding of the impacts that the enhanced refeed method had on deve
 It was found that proline metabolism was correlated with EEG and cognitive outcomes, suggesting neuro-metabolic recovery pathways.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{figures/mixedmodelnetwork.pdf}
+\includegraphics[scale=0.5]{../../figures/mixedmodelnetwork.pdf}
 	\caption[Mechanism of E-RUTF differential impacts on brain structure]{
 		Mechanism of E-RUTF differential impacts on brain structure.
 	}
@@ -298,7 +298,7 @@ The authors would also like to thank the study team within the Infectious Diseas
 \section*{Supplementary material}
 \begin{figure}[!htb]
 \centering
-\includegraphics[scale=0.8]{figures/newalldata.pdf}
+\includegraphics[scale=0.8]{../../figures/newalldata.pdf}
 	\caption[Datasets recoreded in the M4EFaD study]{
 		Datasets recorded in the M4EFaD study.
 	}
