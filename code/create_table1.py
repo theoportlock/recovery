@@ -7,6 +7,7 @@ from scipy.stats import chi2_contingency, f_oneway, ttest_ind
 from pathlib import Path
 from docx import Document
 from docx.shared import Inches
+import sys
 
 # === STATS FUNCTIONS ===
 def cohen_d(x, y):
@@ -180,7 +181,7 @@ for idx, row in summary_df.iterrows():
         row_cells[i + 1].text = str(val)
 
 # Save Word document
-word_output = Path("results/refeed_summary_with_stats.docx")
+word_output = Path(sys.argv[1])
 doc.save(word_output)
 print(f"Saved DOCX summary to {word_output}")
 

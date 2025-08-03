@@ -14,4 +14,4 @@ df['PoB'] = df['H/O Place of birth (1=Home, 2 = Health Facility)'].map({1:'Home'
 df = df[['BF','PoB']]
 df.index.name = 'subjectID'
 
-df.to_csv('results/bfpob.tsv', sep='\t')
+df.to_csv('results/cleaned/bfpob.tsv', sep='\t')

@@ -76,4 +76,4 @@ samplesheet.index = samplesheet.ID + samplesheet.timepoint
 # Rename
 samplesheet = samplesheet.rename(columns={'ID':'subjectID'})
 samplesheet.timepoint = samplesheet.timepoint.astype(int)
-samplesheet.to_csv('results/samplesheet.tsv', sep='\t', index=False)
+samplesheet.to_csv('results/cleaned/samplesheet.tsv', sep='\t', index=False)

@@ -99,4 +99,4 @@ fail = b.rename(columns=mapping)
 surveillance = pd.concat([days_of_catchup, base_body_temp, avs, comp, fail], axis=1)
 
 # Save result
-surveillance.to_csv('results/surveillance.tsv', sep='\t')
+surveillance.to_csv('results/cleaned/surveillance.tsv', sep='\t')

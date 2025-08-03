@@ -29,5 +29,5 @@ df.columns = df.columns.str.replace(' ','_')
 # Drop timepoint as all 52
 df = df.droplevel(1)
 
-df.to_csv('results/pots.tsv', sep='\t')
+df.to_csv('results/cleaned/pots.tsv', sep='\t')
 

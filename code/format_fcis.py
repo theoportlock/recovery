@@ -34,5 +34,5 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('results/fcis.tsv', sep='\t')
+df.to_csv('results/cleaned/fcis.tsv', sep='\t')
 

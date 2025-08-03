@@ -7,6 +7,7 @@ export PATH="metaphlan/metaphlan/utils/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"
 
 metaphlan_file=$1
+output_file=$2
 
 mkdir -p results/mbiome_alpha
 
@@ -30,5 +31,5 @@ done
 rm results/mbiome_alpha/samplesascols.tsv
 
 # Combine alpha diversity metrics and cleanup
-merge.py results/mbiome_alpha/* -o results/alpha_diversity.tsv &&
+merge.py results/mbiome_alpha/* -o $2 &&
 rm -r results/mbiome_alpha

@@ -13,7 +13,7 @@ df = pd.read_csv('data/metaphlan_merged_profiles.tsv',
                  sep='\t', index_col=0, header=1)
 
 # Load the sample metadata
-samplesheet = pd.read_csv('results/samplesheet.tsv',
+samplesheet = pd.read_csv('results/cleaned/samplesheet.tsv',
                           sep='\t', index_col=0)
 
 # Clean column names: remove ".metaphlan" suffix
@@ -40,4 +40,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Transmute and save formatted data - for alpha-diversity analysis
-df.to_csv('results/metaphlan.tsv', sep='\t')
+df.to_csv('results/cleaned/metaphlan.tsv', sep='\t')

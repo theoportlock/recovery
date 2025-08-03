@@ -15,4 +15,4 @@ df = df[['Delivery_Mode','Supplementation']]
 
 df.index.name = 'subjectID'
 
-df.to_csv('results/deliverysupp.tsv', sep='\t')
+df.to_csv('results/cleaned/deliverysupp.tsv', sep='\t')

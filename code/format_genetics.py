@@ -27,4 +27,4 @@ joined = pd.concat(dfs, join='outer', axis=1).T.groupby(level=0).max().T
 joined.index.name = 'subjectID'
 
 # Save
-joined.to_csv('results/genetics.tsv', sep='\t')
+joined.to_csv('results/cleaned/genetics.tsv', sep='\t')

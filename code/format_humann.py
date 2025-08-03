@@ -11,7 +11,7 @@ import pandas as pd
 
 # for functions - in cpm
 pathways = pd.read_csv("data/m4efad_humann3_pathway_cpm_april2024.tsv", index_col=0, sep='\t').T
-samplesheet = pd.read_csv('results/samplesheet.tsv', sep='\t', index_col=0)
+samplesheet = pd.read_csv('results/cleaned/samplesheet.tsv', sep='\t', index_col=0)
 
 pathways.index = pathways.index.str.replace('_Abundance','')
 #pathways = pathways.loc[:, ~pathways.columns.str.contains('UNMAPPED|UNINTEGRATED')]
@@ -26,7 +26,7 @@ df = df.loc[df.sum(axis=1) != 0, df.sum(axis=0) !=0]
 df.columns.name = 'stratified_pathway'
 #df = df.stack().to_frame('relative_abundance')
 #df = df.loc[df.relative_abundance != 0]
-df.to_csv('results/pathwaysstrat.tsv', sep='\t')
+df.to_csv('results/cleaned/pathwaysstrat.tsv', sep='\t')
 
 df = pathways.loc[:, ~pathways.columns.str.contains('\|')]
 df.columns = df.columns.str.replace(r'\:.*','', regex=True)
@@ -40,4 +40,4 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('results/pathways.tsv', sep='\t')
+df.to_csv('results/cleaned/pathways.tsv', sep='\t')

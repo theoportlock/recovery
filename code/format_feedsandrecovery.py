@@ -21,5 +21,5 @@ df.index.name='subjectID'
 df.loc[df.index.str[3] ==2, 'Feed'] = 'Healthy'
 df.loc[df.index.str[3] ==2, 'Recovery'] = 'Healthy'
 
-df.to_csv('results/feedandrecovery.tsv', sep='\t')
+df.to_csv('results/cleaned/feedandrecovery.tsv', sep='\t')
 

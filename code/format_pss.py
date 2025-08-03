@@ -59,4 +59,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Save final output
-df.to_csv('results/pss.tsv', sep='\t')
+df.to_csv('results/cleaned/pss.tsv', sep='\t')

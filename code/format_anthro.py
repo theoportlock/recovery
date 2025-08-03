@@ -75,4 +75,4 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('results/anthro.tsv', sep='\t', index=True)
+df.to_csv('results/cleaned/anthro.tsv', sep='\t', index=True)
