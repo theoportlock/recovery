@@ -2,62 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: writing/manuscript/output/main.aux
 The style file: unsrtnat.bst
-I couldn't open database file library.bib
----line 24 of file writing/manuscript/output/main.aux
- : \bibdata{library
- :                 }
-I'm skipping whatever remains of this command
-I found no database files---while reading file writing/manuscript/output/main.aux
-Warning--I didn't find a database entry for "UN_SDG2"
-Warning--I didn't find a database entry for "gehrig2019effects"
-Warning--I didn't find a database entry for "ahmed2012nutrition"
-Warning--I didn't find a database entry for "mozumder2022reliability"
-Warning--I didn't find a database entry for "beghini2021integrating"
-Warning--I didn't find a database entry for "liu2016plasma"
-Warning--I didn't find a database entry for "tsugawa2015ms"
-Warning--I didn't find a database entry for "van1995python"
-Warning--I didn't find a database entry for "gloor2016s"
-Warning--I didn't find a database entry for "2020SciPyNMeth"
-Warning--I didn't find a database entry for "lundberg2017unified"
-You've used 0 entries,
+Database file #1: writing/manuscript/library.bib
+You've used 11 entries,
             2481 wiz_defined-function locations,
-            564 strings with 4661 characters,
-and the built_in function-call counts, 34 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 11
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+            632 strings with 8065 characters,
+and the built_in function-call counts, 5897 in all, are:
+= -- 343
+> -- 617
+< -- 4
++ -- 218
+- -- 196
+* -- 596
+:= -- 1080
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 21
+chr.to.int$ -- 11
+cite$ -- 11
+duplicate$ -- 203
+empty$ -- 387
+format.name$ -- 211
+if$ -- 1137
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 12
+missing$ -- 11
+newline$ -- 65
+num.names$ -- 33
+pop$ -- 86
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 11
 quote$ -- 0
-skip$ -- 1
+skip$ -- 117
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 197
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 74
 warning$ -- 0
-while$ -- 0
+while$ -- 34
 width$ -- 0
-write$ -- 7
-(There were 2 error messages)
+write$ -- 152

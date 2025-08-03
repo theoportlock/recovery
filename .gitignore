@@ -3,6 +3,10 @@ data/
 results/
 reading/
 
+# vim backups
+.*~
+*~
+
 # images
 *.sif
 

@@ -78,11 +78,11 @@ Herein we discuss the results of a study that empoys The Enhanced Ready to Use S
 \subsection*{Study population characteristics}
 As a city with the second highest density of population and in a country with childhood malnutrition rate is one of the highest globally, the Mirpur region in Dhaka, Bangladesh was chosen to assess the impact of early-life malnutrition \cite{ahmed2012nutrition}.
 Refeeding resulted in recovery in approximately half the children with MAM, with no significant difference in rate between the two refeed methods (43.0\% in the Local RUSF group vs 41.2\% in the ERUSF group , MWU. p = 0.9460).
-However, a key distinction emerged in time to recovery, which was significantly shorter by approximately ten days in the ERUSF group (p = 0.0422, d = 0.46) (Table 1)
+However, a key distinction emerged in time to recovery, which was shorter by approximately ten days in the ERUSF group (p = 0.0422, d = 0.46) (Table 1)
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{../../figures/table1.pdf}
+	\includegraphics[scale=0.3]{figures/table1.pdf}
 	\caption[Study population characteristics and recovery rates]{
 		Study population characteristics and recovery rates.
 	}
@@ -91,12 +91,12 @@ However, a key distinction emerged in time to recovery, which was significantly 
 
 \subsection*{Impact of the Enhanced Refeed regimen on Neurodevelopmental Outcomes}
 Using mixed-effects models controlling for sex and delivery mode, the enhanced refeed intervention showed no statistically significant main effects or interactions with timepoint across cognitive, communication, and motor Bayley scores (Table S2).
-Enhanced refeeding did not significantly improve most cognitive/behavioral outcomes, though some marginal trends in fine motor scores were observed.
+Enhanced refeeding did not significantly improve most cognitive/b shavioral outcomes, though some marginal trends in fine motor scores were observed.
 While children improved in their cognitive abilities over time, this improvement did not differ significantly by intervention group.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=1.2]{../../figures/anthrochange_simple.pdf}
+\includegraphics[scale=1.2]{figures/anthrochange_simple.pdf}
 	\caption[Measures of cognition were not significantly impacted by refeeding]{
 		Measures of cognition were not significantly impacted by refeeding.
 		a) Lineplot of how children change in WLZ/WHZ during refeeding.
@@ -115,13 +115,13 @@ This predictive power was lost at the year-two timepoint.
 The PRS score that was most differentially associated with expressive communication score was the Intelligence PRS.
 
 \subsection*{Baseline Predictors of Recovery}
-Acknowleging that the refeed type made little impact on the overall recovery rates, an investigation into the factors that were associated with anthropometric recovery was undertaken.
+Acknowledging that the refeed type made little impact on the overall recovery rates, an investigation into the factors that were associated with anthropometric recovery was undertaken.
 Anthropometric and genetic indicators were stronger predictors than microbiome or EEG.
 The most significant factors were anthropometric such as head circumference, indicating extent of malnutrition.
 Other factors included the proportion of days without feeding failure, indicating compliance/adherance to the refeeding.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{../../figures/ev.pdf}
+\includegraphics[scale=0.8]{figures/ev.pdf}
 	\caption[Factors that associate with recovery.]{
 		Factors that associate with recovery.
 		Explained variance as measured by PERMANOVA of beta diversities between samples within each dataset.
@@ -137,7 +137,7 @@ For each dataset analysed through this techhniqe, the shrinking/widening of this
 ERUTF drove a greater shift toward healthy microbiome, including depletion of S. wadsworthensis and L. fermentum.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{../../figures/newrecoveryfeed3.pdf}
+	\includegraphics[scale=0.6]{figures/newrecoveryfeed3.pdf}
 	\caption[Refeed methods improve/deteriorate bodily systems differently]{
 		Refeed methods improve/deteriorate bodily systems differently.
 		A, Radial plot of percentage change in distance from Well-nourished controls before and after refeeding (1yr and 2yr). Positive and negative percentages represent improvement and deterioration, respectively.
@@ -153,7 +153,7 @@ With an understanding of the impacts that the enhanced refeed method had on deve
 It was found that proline metabolism was correlated with EEG and cognitive outcomes, suggesting neuro-metabolic recovery pathways.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{../../figures/mixedmodelnetwork.pdf}
+\includegraphics[scale=0.5]{figures/mixedmodelnetwork.pdf}
 	\caption[Mechanism of E-RUTF differential impacts on brain structure]{
 		Mechanism of E-RUTF differential impacts on brain structure.
 	}
@@ -291,14 +291,14 @@ BH performed EEG analyses, CAN oversaw the Boston group.
 The authors would like to acknowledge the participants in Mirpur, Dhaka, Bangladesh for their contributions to this study.
 The authors would also like to thank the study team within the Infectious Diseases Division, International Centre for Diarrheal Disease Research, Bangladesh for their work in participant recruitment, sample collection and assessments.
 
-\bibliography{library}
+\bibliography{writing/manuscript/library}
 
 \newpage
 
 \section*{Supplementary material}
 \begin{figure}[!htb]
 \centering
-\includegraphics[scale=0.8]{../../figures/newalldata.pdf}
+\includegraphics[scale=0.8]{figures/newalldata.pdf}
 	\caption[Datasets recoreded in the M4EFaD study]{
 		Datasets recorded in the M4EFaD study.
 	}
