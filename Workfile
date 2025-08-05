@@ -10,14 +10,14 @@
   <graph edgedefault="directed">
     <node id="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8">
       <data key="d2">format_genetics.py</data>
-      <data key="d3">48.42405741621613</data>
-      <data key="d4">285.58911740294485</data>
+      <data key="d3">43.70816203421601</data>
+      <data key="d4">287.94706509394484</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::ace6fac4-b2cc-4166-bf01-caf15f9fb091">
       <data key="d2">format_vep.py</data>
-      <data key="d3">50.25609814021607</data>
-      <data key="d4">-488.62861602273006</data>
+      <data key="d3">52.61404583121607</data>
+      <data key="d4">-514.56604062373</data>
       <data key="d5">ran</data>
     </node>
     <node id="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe">
@@ -33,8 +33,8 @@
       <data key="d2">calculate_diversity.sh \
   results/cleaned/metaphlan.tsv \
   results/cleaned/alpha_diversity.tsv</data>
-      <data key="d3">231.68611067861997</data>
-      <data key="d4">-82.37607168410253</data>
+      <data key="d3">231.7145540418016</data>
+      <data key="d4">-68.31349628510259</data>
       <data key="d5">ran</data>
     </node>
     <node id="de95f326-8227-4628-b6c2-af8206095052">
@@ -43,8 +43,8 @@
         results/cleaned/{}.tsv \
         -o results/filtered/{}.tsv \
     &lt; conf/all_datasets.txt</data>
-      <data key="d3">625.1597402395245</data>
-      <data key="d4">-56.90633873234374</data>
+      <data key="d3">559.1372048915247</data>
+      <data key="d4">-165.37193251834344</data>
       <data key="d5">ran</data>
     </node>
     <node id="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
@@ -57,8 +57,8 @@
     </node>
     <node id="build_database.graphml::74aa7521-feec-4bf1-a785-ac5c2decb24e">
       <data key="d2">format_micro.py</data>
-      <data key="d3">49.78930116746238</data>
-      <data key="d4">-566.5871255458616</data>
+      <data key="d3">52.14724885846238</data>
+      <data key="d4">-592.5245501468615</data>
       <data key="d5">ran</data>
     </node>
     <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
@@ -66,20 +66,20 @@
     results/filtered/meta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-      <data key="d3">1118.4870257554596</data>
-      <data key="d4">-50.8628459493027</data>
+      <data key="d3">1053.7954904074597</data>
+      <data key="d4">-160.65943973530239</data>
       <data key="d5">ran</data>
     </node>
     <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
       <data key="d2">anthrotime.py</data>
-      <data key="d3">1532.1675437140696</data>
-      <data key="d4">-1123.2144009862927</data>
+      <data key="d3">1532.167543714069</data>
+      <data key="d4">-956.4168815815259</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282">
       <data key="d2">format_glitter.py</data>
-      <data key="d3">59.94453197414023</data>
-      <data key="d4">-196.3883492327579</data>
+      <data key="d3">62.30247966514023</data>
+      <data key="d4">-222.32577383375786</data>
       <data key="d5">ran</data>
     </node>
     <node id="analysis.graphml::5e2b056b-286f-491e-ac96-9db3c3403aa4">
@@ -91,25 +91,25 @@
   -r "subjectID" \
   -d "Recovery,No recovery;Feed,Local RUSF (A)"' \
   &lt; conf/timedatasets.txt</data>
-      <data key="d3">2455.5251563249844</data>
-      <data key="d4">-556.4139222072085</data>
+      <data key="d3">2519.945556324984</data>
+      <data key="d4">-643.3814622072082</data>
     </node>
     <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
       <data key="d2">format_sleep.py</data>
-      <data key="d3">52.43757042453865</data>
-      <data key="d4">-316.2642312566861</data>
+      <data key="d3">54.79551811553865</data>
+      <data key="d4">-342.2016558576861</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
       <data key="d2">format_head.py</data>
-      <data key="d3">53.000019358960486</data>
-      <data key="d4">205.1306175096026</data>
+      <data key="d3">48.284123976960366</data>
+      <data key="d4">207.48856520060258</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
       <data key="d2">format_surveillance.py</data>
-      <data key="d3">51.70363018207277</data>
-      <data key="d4">239.0015374366948</data>
+      <data key="d3">46.98773480007265</data>
+      <data key="d4">241.35948512769482</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
@@ -120,122 +120,122 @@
   results/cleaned/bfpob.tsv \
   -j outer \
   -o results/cleaned/meta.tsv</data>
-      <data key="d3">271.5311032134098</data>
-      <data key="d4">350.4068078058496</data>
+      <data key="d3">221.16534053364973</data>
+      <data key="d4">252.90567078299983</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
       <data key="d2">format_microbiome_samplesheet.py</data>
-      <data key="d3">-253.72053389237482</data>
-      <data key="d4">26.478513872631837</data>
+      <data key="d3">-258.4364292743749</data>
+      <data key="d4">28.836461563631843</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
       <data key="d2">format_anthro.py</data>
-      <data key="d3">52.78648456925296</data>
-      <data key="d4">170.80363634089213</data>
+      <data key="d3">48.07058918725284</data>
+      <data key="d4">173.16158403189212</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
       <data key="d2">format_aa.py</data>
-      <data key="d3">45.242274110407834</data>
-      <data key="d4">-668.2601397216853</data>
+      <data key="d3">47.600221801407834</data>
+      <data key="d4">-694.1975643226853</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
       <data key="d2">format_lipids.py</data>
-      <data key="d3">45.41183071718365</data>
-      <data key="d4">-636.3020278997116</data>
+      <data key="d3">47.76977840818368</data>
+      <data key="d4">-663.5704525007114</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec">
       <data key="d2">format_fcis.py</data>
-      <data key="d3">52.640960870380866</data>
-      <data key="d4">-281.78422830914747</data>
+      <data key="d3">54.998908561380865</data>
+      <data key="d4">-307.72165291014744</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386">
       <data key="d2">format_pss.py</data>
-      <data key="d3">55.34878410954667</data>
-      <data key="d4">-246.42551270275322</data>
+      <data key="d3">57.70673180054667</data>
+      <data key="d4">-272.3629373037532</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06">
       <data key="d2">format_pci.py</data>
-      <data key="d3">52.746040727722466</data>
-      <data key="d4">-352.51127441968526</data>
+      <data key="d3">55.103988418722466</data>
+      <data key="d4">-378.44869902068524</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::5c1c37f2-4b00-4e6b-937d-d8cf348aa63f">
       <data key="d2">format_pots.py</data>
-      <data key="d3">60.083550166007655</data>
-      <data key="d4">-90.90537322108281</data>
+      <data key="d3">62.441497857007654</data>
+      <data key="d4">-116.84279782208279</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::7576a182-fecc-4d14-b02d-3bceb3d18783">
       <data key="d2">format_bayley.py</data>
-      <data key="d3">60.012492832255845</data>
-      <data key="d4">-125.71393918749573</data>
+      <data key="d3">62.370440523255844</data>
+      <data key="d4">-151.6513637884957</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::3231bf1e-9cbc-4cf2-bc21-74ab8531f86c">
       <data key="d2">format_psd.py</data>
-      <data key="d3">50.20913664202874</data>
-      <data key="d4">-528.6012438899783</data>
+      <data key="d3">52.56708433302874</data>
+      <data key="d4">-554.5386684909782</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::c6a23125-3842-489c-8bc0-3449d7ddfdd9">
       <data key="d2">format_fnirs.py</data>
-      <data key="d3">50.749708209653875</data>
-      <data key="d4">-448.53950159675253</data>
+      <data key="d3">53.107655900653874</data>
+      <data key="d4">-474.4769261977525</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::8a22f8f7-4868-4738-b19d-08060da598c8">
       <data key="d2">format_wolkes.py</data>
-      <data key="d3">60.314949073695544</data>
-      <data key="d4">-160.5673545323856</data>
+      <data key="d3">62.672896764695544</data>
+      <data key="d4">-186.50477913338557</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
       <data key="d2">format_vitamin.py</data>
-      <data key="d3">48.53780245302704</data>
-      <data key="d4">-711.5989718160698</data>
+      <data key="d3">50.89575014402704</data>
+      <data key="d4">-737.5363964170698</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
       <data key="d2">format_humann.py</data>
-      <data key="d3">53.88982589773663</data>
-      <data key="d4">19.994651437886784</data>
+      <data key="d3">49.17393051573651</data>
+      <data key="d4">22.352599128886794</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
       <data key="d2">format_metaphlan.py</data>
-      <data key="d3">55.74774962682366</data>
-      <data key="d4">59.10392056172226</data>
+      <data key="d3">51.03185424482354</data>
+      <data key="d4">61.46186825272227</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
       <data key="d2">format_kneaddata.py</data>
-      <data key="d3">53.71724292120591</data>
-      <data key="d4">-19.364247247899176</data>
+      <data key="d3">49.00134753920579</data>
+      <data key="d4">-17.00629955689917</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
       <data key="d2">format_ses.py</data>
-      <data key="d3">52.87859989334976</data>
-      <data key="d4">378.3422066295831</data>
+      <data key="d3">48.16270451134964</data>
+      <data key="d4">380.70015432058307</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
       <data key="d2">format_feedsandrecovery.py</data>
-      <data key="d3">47.605868256421246</data>
-      <data key="d4">422.04584437624885</data>
+      <data key="d3">42.889972874421126</data>
+      <data key="d4">424.40379206724884</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
       <data key="d2">format_bfpob.py</data>
-      <data key="d3">52.66801151890539</data>
-      <data key="d4">343.859697922079</data>
+      <data key="d3">47.95211613690527</data>
+      <data key="d4">346.217645613079</data>
       <data key="d5">ran</data>
     </node>
     <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
@@ -244,14 +244,14 @@
   --keep-parent \
   -l 't__' \
   -o results/cleaned/species.tsv</data>
-      <data key="d3">231.53380419531157</data>
-      <data key="d4">31.668226055074967</data>
+      <data key="d3">233.3804293766751</data>
+      <data key="d4">22.094437817711352</data>
       <data key="d5">ran</data>
     </node>
     <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
       <data key="d2">format_deliverysupp.py</data>
-      <data key="d3">56.90552992258267</data>
-      <data key="d4">474.4125417640082</data>
+      <data key="d3">52.18963454058255</data>
+      <data key="d4">476.7704894550082</data>
       <data key="d5">ran</data>
     </node>
     <node id="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
@@ -267,29 +267,21 @@
       <data key="d3">1588.7774788380761</data>
       <data key="d4">1027.8737414217567</data>
     </node>
-    <node id="7dede7d1-30bd-4778-9ac7-07ce605ad24e">
-      <data key="d2">parallel -j1 onehot.py \
-  results/filtered/{}.tsv \
-  -o results/baseline/{}.tsv \
-  &lt; conf/notimedatasets.txt</data>
-      <data key="d3">1691.4239712166573</data>
-      <data key="d4">-776.1521873956863</data>
-    </node>
     <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
       <data key="d2">create_mapping.py \
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv</data>
-      <data key="d3">866.1625049128762</data>
-      <data key="d4">-49.90987773912657</data>
+      <data key="d3">801.4709695648764</data>
+      <data key="d4">-158.3754715251263</data>
       <data key="d5">ran</data>
     </node>
     <node id="bdb970b1-d724-4f80-a997-d993292f69fd">
       <data key="d2">filter.py timemeta \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
   -o timemeta_MAM</data>
-      <data key="d3">1844.1361362780026</data>
-      <data key="d4">-455.4016721611028</data>
+      <data key="d3">1908.556536278002</data>
+      <data key="d4">-542.3692121611024</data>
     </node>
     <node id="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt">
       <data key="d2">parallel -j1 'Maaslin2.R \
@@ -300,16 +292,16 @@
   -r "subjectID" \
   -d "Recovery,No recovery;Feed,Local RUSF (A)"' \
   &lt; conf/notimedatasets.txt</data>
-      <data key="d3">2459.063802205278</data>
-      <data key="d4">-370.9918573255247</data>
+      <data key="d3">2523.4842022052776</data>
+      <data key="d4">-457.95939732552426</data>
     </node>
     <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
       <data key="d2">parallel -j1 \
   cp results/maaslin/{}/all_results.tsv \
   results/change/{} \
   &lt; conf/alldatasets.txt</data>
-      <data key="d3">2809.4500141523195</data>
-      <data key="d4">-415.2934683210344</data>
+      <data key="d3">2873.870414152319</data>
+      <data key="d4">-502.261008321034</data>
     </node>
     <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
       <data key="d2">parallel -j1 pcoa.py \
@@ -330,22 +322,22 @@
   --append \
   --add-filename</data>
       <data key="d3">2900.733605915188</data>
-      <data key="d4">-259.5002863714866</data>
+      <data key="d4">-264.3318163714865</data>
     </node>
     <node id="28e36837-7b64-46b7-8612-251d72825bd1">
       <data key="d2">mkdir -p \
   results/maaslin \
   results/change</data>
-      <data key="d3">1666.7468765846158</data>
-      <data key="d4">-404.08881105133815</data>
+      <data key="d3">1731.1672765846154</data>
+      <data key="d4">-491.05635105133774</data>
       <data key="d5">ran</data>
     </node>
     <node id="65069337-cecf-476e-b29a-7becc4a1fe8e">
       <data key="d2">filter.py allchange \
   -q 'qval &lt; 0.25 &amp; metadata != "timepoint"' \
   -o sigchange</data>
-      <data key="d3">3133.7553948356613</data>
-      <data key="d4">-256.0387233582297</data>
+      <data key="d3">3165.9655948356612</data>
+      <data key="d4">-257.6492333582296</data>
     </node>
     <node id="e0c5398f-26da-4779-b36e-deab73e090da">
       <data key="d2">heatmap_allnontimedata.py -d conf/notimedatasets.txt</data>
@@ -356,13 +348,13 @@
       <data key="d2">filter.py meta \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
   -o meta_MAM</data>
-      <data key="d3">1843.1732326736565</data>
-      <data key="d4">-360.7583273942009</data>
+      <data key="d3">1907.593632673656</data>
+      <data key="d4">-447.72586739420046</data>
     </node>
     <node id="transpose.py results/allchangefilter.tsv">
       <data key="d2">transpose.py sigchange</data>
-      <data key="d3">3469.281332169088</data>
-      <data key="d4">-240.50043458446314</data>
+      <data key="d3">3511.1545921690877</data>
+      <data key="d4">-238.88992458446316</data>
     </node>
     <node id="format_headers.R results/mergedall.tsv results/">
       <data key="d2">format_headers.R \
@@ -375,8 +367,8 @@
       <data key="d2">filter.py mergedall \
   -fdf sigchange \
   -fdfx 1</data>
-      <data key="d3">3524.4005071057845</data>
-      <data key="d4">-100.10216107766081</data>
+      <data key="d3">3522.789997105784</data>
+      <data key="d4">-104.93369107766081</data>
     </node>
     <node id="corr.py results/mergedallfilter.tsv">
       <data key="d2">corr.py results/mergedallfilter.tsv</data>
@@ -398,8 +390,8 @@
     </node>
     <node id="create_table1.py">
       <data key="d2">create_table1.py results/refeed_summary.docx</data>
-      <data key="d3">1396.2109214947466</data>
-      <data key="d4">-1207.5465943926397</data>
+      <data key="d3">1396.2109214947461</data>
+      <data key="d4">-1040.749074987873</data>
       <data key="d5">ran</data>
     </node>
     <node id="multiline.py --subject results/filtered/bayley.tsv --meta results/timemeta.tsv --x timepoint --y expressive_communication_score --hue Feed --id subjectID --output results/bayley_multiline.svg">
@@ -445,9 +437,11 @@
     <node id="node85">
       <data key="d2">filter.py results/filtered/timemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
-  -o results/filtered/timemeta_0_52tp.tsv</data>
-      <data key="d3">1554.3201247522106</data>
-      <data key="d4">-1014.6770657505108</data>
+  -q 'Condition == "MAM"' \
+  -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
+  -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
+      <data key="d3">1849.043454752209</data>
+      <data key="d4">-854.321586345744</data>
       <data key="d5">ran</data>
     </node>
     <node id="node86">
@@ -455,8 +449,8 @@
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
   --output results/filtered/timemeta_yr1_yr2.tsv</data>
-      <data key="d3">2447.1723064022117</data>
-      <data key="d4">-1019.8685840605082</data>
+      <data key="d3">2260.805686402212</data>
+      <data key="d4">-848.7320046557414</data>
       <data key="d5">ran</data>
     </node>
     <node id="node87">
@@ -481,14 +475,6 @@
   --min_prevalence 0.1</data>
       <data key="d3">3103.0998538404647</data>
       <data key="d4">316.23545917489344</data>
-    </node>
-    <node id="node89">
-      <data key="d2">filter.py results/filtered/timemeta_0_52tp.tsv \
-  -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
-  -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
-      <data key="d3">1858.306177782212</data>
-      <data key="d4">-1012.0073931405086</data>
-      <data key="d5">ran</data>
     </node>
     <node id="f8f4ce11-30d4-4565-8ab5-5637788a6c85">
       <data key="d2">docker run -it \
@@ -528,8 +514,8 @@
     </node>
     <node id="fe4298ab-84c2-4a7b-a4d5-c851907bbbfc">
       <data key="d2">explorer.exe "$(wslpath -w results/anthro_time.svg)"</data>
-      <data key="d3">1793.2309142769143</data>
-      <data key="d4">-1123.5908105190545</data>
+      <data key="d3">1793.2309142769138</data>
+      <data key="d4">-956.7932911142876</data>
       <data key="d5">fail</data>
     </node>
     <node id="0753278f-dd3f-4038-b368-456f21eab748">
@@ -564,26 +550,27 @@
     </node>
     <node id="c7359833-40de-4750-beb6-650d762f53b8">
       <data key="d2">make</data>
-      <data key="d3">4767.555162793092</data>
-      <data key="d4">-93.49378134251847</data>
+      <data key="d3">6310.939105993086</data>
+      <data key="d4">-79.85276164251859</data>
     </node>
     <node id="ef9c47b9-fe46-4b2f-89a9-432c38a56c83">
       <data key="d2">explorer.exe "$(wslpath -w writing/manuscript/output/main.pdf)"
 </data>
-      <data key="d3">4871.090854471815</data>
-      <data key="d4">-98.90178967835087</data>
+      <data key="d3">6414.474797671809</data>
+      <data key="d4">-85.26076997835098</data>
+      <data key="d5">fail</data>
     </node>
     <node id="0023bd01-aafc-415b-8548-ec81bebf1f23">
-      <data key="d2">for f in $(cat conf/timedatasets.txt); do
+      <data key="d2">for f in $(cat conf/AUGFILT_timedatasets.txt); do
   splitter.py \
-    results/filtered/${f}.tsv \
+    results/scaled/${f}.tsv \
     -m results/filtered/timemeta_yr1_yr2.tsv \
     -col timepoint \
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-      <data key="d3">2822.279798686258</data>
-      <data key="d4">-1051.3129987684579</data>
+      <data key="d3">3075.7589722095213</data>
+      <data key="d4">-965.900079363691</data>
       <data key="d5">ran</data>
     </node>
     <node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
@@ -597,8 +584,8 @@ done</data>
         -o results/rda/${tp}/${f}.tsv
     done
 done</data>
-      <data key="d3">3168.9039006862586</data>
-      <data key="d4">-1052.783632768458</data>
+      <data key="d3">3446.1013073850813</data>
+      <data key="d4">-1001.441781608091</data>
       <data key="d5">ran</data>
     </node>
     <node id="8213bd4f-8cf5-4af0-b058-3e4e2f810e78">
@@ -610,8 +597,8 @@ done</data>
     -f 'Sex,Ethnicity,Feed,Recovery,Delivery_Mode,Supplementation,BF,PoB' \
     -o results/rda/notp/${f}.tsv
 done</data>
-      <data key="d3">3173.7439006862587</data>
-      <data key="d4">-825.4962647684586</data>
+      <data key="d3">3450.9413073850815</data>
+      <data key="d4">-772.8234136080916</data>
       <data key="d5">ran</data>
     </node>
     <node id="8727268b-1b5b-4c92-9768-cbe389f6984f">
@@ -622,8 +609,8 @@ done</data>
   --add-filename \
   -o results/rda/${set}_rda.tsv
 done</data>
-      <data key="d3">3756.2850906862564</data>
-      <data key="d4">-917.5732717684583</data>
+      <data key="d3">3995.468489614</data>
+      <data key="d4">-862.1981491001113</data>
       <data key="d5">ran</data>
     </node>
     <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
@@ -634,29 +621,18 @@ done</data>
     </node>
     <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
       <data key="d2">rsync -aurvP $data .</data>
-      <data key="d3">-665.1610233520973</data>
-      <data key="d4">-147.16235811969932</data>
+      <data key="d3">-671.9228565602116</data>
+      <data key="d4">-141.15183971248672</data>
       <data key="d5">ran</data>
     </node>
     <node id="8a1d54be-d18d-494a-8d21-2fc840762f32">
       <data key="d2">for set in yr1 yr2 notp; do \
-  # First filter out the unwanted rows
   filter.py results/rda/${set}_rda.tsv \
     -rf "^(?!Total_Constrained_R2|Adjusted_Full_Model)" \
     -o results/rda/${set}_rda_filtered.tsv
-  
-  # Then create the plot
-  stacked_bar.py \
-    results/rda/${set}_rda_filtered.tsv \
-    --horizontal \
-    --bars filename \
-    --color explainer \
-    --sig pval \
-    --vals R2 \
-    -o results/rda/${set}_rda_bar.svg
 done</data>
-      <data key="d3">4151.909299999988</data>
-      <data key="d4">-984.4922999999972</data>
+      <data key="d3">4259.042211984961</data>
+      <data key="d4">-846.6863321335201</data>
       <data key="d5">ran</data>
     </node>
     <node id="5656487b-7e9b-4945-b26e-5d344660740c">
@@ -665,9 +641,118 @@ done</data>
   results/rda/yr2_rda_bar.svg \
   results/rda/notp_rda_bar.svg \
   --rows 2 \
-  -o results/rda/merged_bar.svg</data>
-      <data key="d3">4639.672399999988</data>
-      <data key="d4">-885.0786999999975</data>
+  -o results/rda/merged.svg</data>
+      <data key="d3">5051.75072198496</data>
+      <data key="d4">-848.9127321335205</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="df4dc09e-4408-4798-ae04-b10e3339f1e9">
+      <data key="d2">for set in yr1 yr2 notp; do \
+  stacked_bar.py \
+    results/rda/${set}_rda_filtered.tsv \
+    --horizontal \
+    --bars filename \
+    --color explainer \
+    --sig pval \
+    --vals R2 \
+    --figsize 6 4 \
+    -o results/rda/${set}_rda_bar.svg
+done</data>
+      <data key="d3">4706.33444198497</data>
+      <data key="d4">-899.9565821335223</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="491d15be-819e-4f22-b9c8-1d1acb32c4ee">
+      <data key="d2">explorer.exe "$(wslpath -w results/rda/merged.pdf)"</data>
+      <data key="d3">5727.36514828497</data>
+      <data key="d4">-930.6054102335222</data>
+      <data key="d5">fail</data>
+    </node>
+    <node id="43951663-2b34-451b-92d8-f12f02a13150">
+      <data key="d2">inkscape \
+  results/rda/merged.svg \
+  --export-type pdf \
+  --export-filename results/rda/merged.pdf
+</data>
+      <data key="d3">5347.605426184972</data>
+      <data key="d4">-843.5939472335223</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="dd518084-2f14-4619-9756-1152ca13807a">
+      <data key="d2">inputs=""
+for data in $(cat conf/timedatasets.txt); do
+  inputs+=" -i results/filtered/${data}.tsv"
+done
+mefisto_preprocess.py $inputs \
+  -t results/filtered/timemeta.tsv \
+  -o results/mofa/preprocessed.h5ad</data>
+      <data key="d3">2770.8370931999993</data>
+      <data key="d4">-1576.8505048999991</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="ffb33a58-e687-4692-a0df-0e3fa8acbbfc">
+      <data key="d2">mefisto_run.py \
+  --input results/mofa/preprocessed.h5ad \
+  --n_factors 15 \
+  --time_col timepoint \
+  --output results/mofa/my_model.h5ad</data>
+      <data key="d3">3173.931164799999</data>
+      <data key="d4">-1558.1291219999991</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="8ed145cb-8d26-4b50-ae14-cd4a43adba11">
+      <data key="d2">mefisto_visualize.py \
+  --input results/mofa/my_model.hdf5 \
+  --input_h5ad results/mofa/preprocessed.h5ad \
+  --output_dir results/mofa/ \
+  --time_col timepoint</data>
+      <data key="d3">3550.671430899999</data>
+      <data key="d4">-1551.1251535999995</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="67a1314f-c27c-4ce3-b00a-e4fa939150fd">
+      <data key="d2">for f in $(cat conf/alldatasets.txt); do
+  scale.py standard \
+    results/filtered/${f}.tsv \
+    -o results/scaled/${f}.tsv
+done</data>
+      <data key="d3">2672.6479999999997</data>
+      <data key="d4">-862.4879999999998</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
+      <data key="d2">scale.py log \
+  results/cleaned/unlogged_lipids.tsv \
+  -o results/cleaned/lipids.tsv</data>
+      <data key="d3">217.0</data>
+      <data key="d4">-667.0</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="1d7215eb-7aa6-4a33-b5c7-b3aa1277d5ae">
+      <data key="d2">mofa_load_data.py \
+  --data-dir results/timepoint/yr1 \
+  --meta-file results/filtered/meta.tsv \
+  --output results/mofa/mdata.h5mu</data>
+      <data key="d3">3321.1369104999985</data>
+      <data key="d4">-1269.0692349999997</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="94d8ecae-d99f-445a-9181-e68b43b274ea">
+      <data key="d2">mofa_run.py</data>
+      <data key="d3">3655.7186104999982</data>
+      <data key="d4">-1244.9974349999998</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="932c3f4f-744b-49a1-814f-c740e717511f">
+      <data key="d2">mofa_export.py</data>
+      <data key="d3">3933.897610499999</data>
+      <data key="d4">-1283.0640349999999</data>
+      <data key="d5">fail</data>
+    </node>
+    <node id="7ae6daa8-e89f-45bb-98f7-f29792e41b8d">
+      <data key="d2">mofa_plot_r2.py</data>
+      <data key="d3">3935.361710499999</data>
+      <data key="d4">-1206.930835</data>
       <data key="d5">ran</data>
     </node>
     <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
@@ -716,7 +801,6 @@ done</data>
       <data key="d6">93d2148e-f2a1-4b66-b7a8-c587aa112b8e</data>
     </edge>
     <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="node85" />
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="7dede7d1-30bd-4778-9ac7-07ce605ad24e" />
     <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="28e36837-7b64-46b7-8612-251d72825bd1" />
     <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="create_table1.py" />
     <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="fe4298ab-84c2-4a7b-a4d5-c851907bbbfc" />
@@ -753,9 +837,7 @@ done</data>
     <edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="de95f326-8227-4628-b6c2-af8206095052">
       <data key="d6">90750aec-f153-4998-8329-810c03d8a0d5</data>
     </edge>
-    <edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="de95f326-8227-4628-b6c2-af8206095052">
-      <data key="d6">57b59e7f-15c2-4173-a890-930c722cfc5e</data>
-    </edge>
+    <edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="9780f658-26ff-4a9b-a03f-a57be3e04748" />
     <edge source="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec" target="de95f326-8227-4628-b6c2-af8206095052">
       <data key="d6">a028a5be-e6fe-4e50-a47c-2dc7520bc33f</data>
     </edge>
@@ -850,12 +932,11 @@ done</data>
     <edge source="onehot.py results/timemeta.tsv -o results/timemeta_onehot.tsv --exclude-cols 'subjectID' --sanitize-headers --prefix-sep '_'" target="mixedlm.py   --formula '~ Sex_Female + Delivery_Mode_Caesarean + timepoint * Feed_ERUSF__B_'   --metadata_file results/timemeta_onehot.tsv   --data_file results/filtered/bayley.tsv   --grouping_variable subjectID   --output_file results/results.tsv">
       <data key="d6">47b9251c-8872-4181-a9d9-596ac65c0f3e</data>
     </edge>
-    <edge source="node85" target="node89" />
-    <edge source="node86" target="0023bd01-aafc-415b-8548-ec81bebf1f23" />
-    <edge source="node89" target="node86" />
+    <edge source="node85" target="node86" />
+    <edge source="node86" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd" />
     <edge source="c7359833-40de-4750-beb6-650d762f53b8" target="ef9c47b9-fe46-4b2f-89a9-432c38a56c83" />
     <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" />
-    <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" />
+    <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="1d7215eb-7aa6-4a33-b5c7-b3aa1277d5ae" />
     <edge source="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" target="8727268b-1b5b-4c92-9768-cbe389f6984f" />
     <edge source="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" target="8727268b-1b5b-4c92-9768-cbe389f6984f" />
     <edge source="8727268b-1b5b-4c92-9768-cbe389f6984f" target="8a1d54be-d18d-494a-8d21-2fc840762f32" />
@@ -870,7 +951,6 @@ done</data>
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" />
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::74aa7521-feec-4bf1-a785-ac5c2decb24e" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::3231bf1e-9cbc-4cf2-bc21-74ab8531f86c" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::ace6fac4-b2cc-4166-bf01-caf15f9fb091" />
@@ -882,15 +962,31 @@ done</data>
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386" />
+    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" />
     <edge source="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8" />
-    <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="5656487b-7e9b-4945-b26e-5d344660740c" />
+    <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="df4dc09e-4408-4798-ae04-b10e3339f1e9" />
+    <edge source="5656487b-7e9b-4945-b26e-5d344660740c" target="43951663-2b34-451b-92d8-f12f02a13150" />
+    <edge source="df4dc09e-4408-4798-ae04-b10e3339f1e9" target="5656487b-7e9b-4945-b26e-5d344660740c" />
+    <edge source="43951663-2b34-451b-92d8-f12f02a13150" target="491d15be-819e-4f22-b9c8-1d1acb32c4ee" />
+    <edge source="43951663-2b34-451b-92d8-f12f02a13150" target="c7359833-40de-4750-beb6-650d762f53b8" />
+    <edge source="dd518084-2f14-4619-9756-1152ca13807a" target="ffb33a58-e687-4692-a0df-0e3fa8acbbfc" />
+    <edge source="ffb33a58-e687-4692-a0df-0e3fa8acbbfc" target="8ed145cb-8d26-4b50-ae14-cd4a43adba11" />
+    <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23" />
+    <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" />
+    <edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="de95f326-8227-4628-b6c2-af8206095052" />
+    <edge source="1d7215eb-7aa6-4a33-b5c7-b3aa1277d5ae" target="94d8ecae-d99f-445a-9181-e68b43b274ea" />
+    <edge source="94d8ecae-d99f-445a-9181-e68b43b274ea" target="932c3f4f-744b-49a1-814f-c740e717511f" />
+    <edge source="94d8ecae-d99f-445a-9181-e68b43b274ea" target="7ae6daa8-e89f-45bb-98f7-f29792e41b8d" />
     <data key="d0">export data="/mnt/d/fellowship/m4efad/recovery/data"
 export PATH="code/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"
 export PATH="maaslin3/R/:$PATH"
 export PATH="Maaslin2/R/:$PATH"
 . venv/bin/activate
-bash -c '</data>
-    <data key="d1">'</data>
+bash -c '
+</data>
+    <data key="d1">'
+
+</data>
   </graph>
 </graphml>

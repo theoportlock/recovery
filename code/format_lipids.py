@@ -168,4 +168,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Export the final data to a TSV file
-df.to_csv('results/cleaned/lipids.tsv', sep='\t')
+df.to_csv('results/cleaned/unlogged_lipids.tsv', sep='\t')

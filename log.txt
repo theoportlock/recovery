@@ -1,0 +1,39 @@
+Preprocessed MuData object saved to 'results/mofa/preprocessed.h5ad'
+An error occurred while running the MEFISTO model: type object 'MuData' has no attribute 'read'
+An error occurred while running the MEFISTO model: type object 'MuData' has no attribute 'read'
+Could not load as MuData (read_h5ad() missing 1 required positional argument: 'mod'), attempting to load as AnnData.
+An error occurred while running the MEFISTO model: Failed to load as AnnData as well: No read method registered for IOSpec(encoding_type='MuData', encoding_version='0.1.0') from <class 'h5py._hl.files.File'>. You may need to update your installation of anndata.
+Preprocessed AnnData object saved to 'results/mofa/preprocessed.h5ad'
+Loading data...
+Loaded an AnnData object.
+Extracting time data...
+Configuring MEFISTO model...
+
+        #########################################################
+        ###           __  __  ____  ______                    ### 
+        ###          |  \/  |/ __ \|  ____/\    _             ### 
+        ###          | \  / | |  | | |__ /  \ _| |_           ### 
+        ###          | |\/| | |  | |  __/ /\ \_   _|          ###
+        ###          | |  | | |__| | | / ____ \|_|            ###
+        ###          |_|  |_|\____/|_|/_/    \_\              ###
+        ###                                                   ### 
+        ######################################################### 
+       
+ 
+        
+Setting data options and loading from AnnData object...
+Loaded view='rna' group='group1' with N=430 samples and D=5 features...
+
+
+Model options:
+- Automatic Relevance Determination prior on the factors: False
+- Automatic Relevance Determination prior on the weights: True
+- Spike-and-slab prior on the factors: False
+- Spike-and-slab prior on the weights: True
+Likelihoods:
+- View 0 (rna): gaussian
+
+
+Setting covariates and interpolation options...
+An error occurred while running the MEFISTO model: tuple index out of range
+An error occurred during visualization: Input model file not found: results/mofa/my_model.hdf5
