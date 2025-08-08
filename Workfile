@@ -449,8 +449,8 @@
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
   --output results/filtered/timemeta_yr1_yr2.tsv</data>
-      <data key="d3">2260.805686402212</data>
-      <data key="d4">-848.7320046557414</data>
+      <data key="d3">2279.505686402212</data>
+      <data key="d4">-848.7320046557413</data>
       <data key="d5">ran</data>
     </node>
     <node id="node87">
@@ -569,8 +569,8 @@
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-      <data key="d3">3075.7589722095213</data>
-      <data key="d4">-965.900079363691</data>
+      <data key="d3">3030.6589722095214</data>
+      <data key="d4">-970.300079363691</data>
       <data key="d5">ran</data>
     </node>
     <node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
@@ -711,7 +711,7 @@ mefisto_preprocess.py $inputs \
       <data key="d5">ran</data>
     </node>
     <node id="67a1314f-c27c-4ce3-b00a-e4fa939150fd">
-      <data key="d2">for f in $(cat conf/alldatasets.txt); do
+      <data key="d2">for f in $(cat conf/all_datasets.txt); do
   scale.py standard \
     results/filtered/${f}.tsv \
     -o results/scaled/${f}.tsv
@@ -730,7 +730,7 @@ done</data>
     </node>
     <node id="1d7215eb-7aa6-4a33-b5c7-b3aa1277d5ae">
       <data key="d2">mofa_load_data.py \
-  --data-dir results/timepoint/yr1 \
+  --data-dir results/timepoints/yr1 \
   --meta-file results/filtered/meta.tsv \
   --output results/mofa/mdata.h5mu</data>
       <data key="d3">3321.1369104999985</data>
@@ -738,21 +738,28 @@ done</data>
       <data key="d5">ran</data>
     </node>
     <node id="94d8ecae-d99f-445a-9181-e68b43b274ea">
-      <data key="d2">mofa_run.py</data>
-      <data key="d3">3655.7186104999982</data>
-      <data key="d4">-1244.9974349999998</data>
+      <data key="d2">mofa_run.py \
+  --input results/mofa/mdata.h5mu \
+  --factors 20 \
+  --output results/mofa/t1.hdf5</data>
+      <data key="d3">3624.918610499998</data>
+      <data key="d4">-1261.4974349999998</data>
       <data key="d5">ran</data>
     </node>
     <node id="932c3f4f-744b-49a1-814f-c740e717511f">
-      <data key="d2">mofa_export.py</data>
-      <data key="d3">3933.897610499999</data>
-      <data key="d4">-1283.0640349999999</data>
-      <data key="d5">fail</data>
+      <data key="d2">mofa_export.py \
+  --model results/mofa/t1.hdf5 \
+  --mdata results/mofa/mdata.h5mu \
+  --outdir results/mofa</data>
+      <data key="d3">3942.697610499999</data>
+      <data key="d4">-1339.1640349999998</data>
+      <data key="d5">ran</data>
     </node>
     <node id="7ae6daa8-e89f-45bb-98f7-f29792e41b8d">
-      <data key="d2">mofa_plot_r2.py</data>
-      <data key="d3">3935.361710499999</data>
-      <data key="d4">-1206.930835</data>
+      <data key="d2">mofa_plots.py \
+  --model results/mofa/t1.hdf5</data>
+      <data key="d3">4027.761710499999</data>
+      <data key="d4">-1171.7308349999998</data>
       <data key="d5">ran</data>
     </node>
     <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
@@ -934,6 +941,10 @@ done</data>
     </edge>
     <edge source="node85" target="node86" />
     <edge source="node86" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd" />
+    <edge source="f8f4ce11-30d4-4565-8ab5-5637788a6c85" target="24d20861-ab82-40ac-b0ba-ade66d21eba1" />
+    <edge source="3f937e85-4948-4547-aab4-064645c1c719" target="f8f4ce11-30d4-4565-8ab5-5637788a6c85" />
+    <edge source="a18113a5-e437-49bf-87d2-2bdc636ece37" target="2906aa99-36d9-4e63-b7be-a7e69d53ea0e" />
+    <edge source="24d20861-ab82-40ac-b0ba-ade66d21eba1" target="a18113a5-e437-49bf-87d2-2bdc636ece37" />
     <edge source="c7359833-40de-4750-beb6-650d762f53b8" target="ef9c47b9-fe46-4b2f-89a9-432c38a56c83" />
     <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" />
     <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="1d7215eb-7aa6-4a33-b5c7-b3aa1277d5ae" />

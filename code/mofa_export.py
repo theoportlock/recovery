@@ -28,15 +28,16 @@ if len(sample_index) != factors_arr.shape[0]:
     print(f"Error: Sample count mismatch. {len(sample_index)} sample names vs {factors_arr.shape[0]} factor rows.")
     exit()
 
-# Handle tuple-style sample names like ('group', 'LCC1001')
-if isinstance(sample_index[0], tuple):
-    sample_index = [i[1] for i in sample_index]
+# Extract just the 'sample' column if sample_index is a DataFrame
+if isinstance(sample_index, pd.DataFrame):
+    sample_index = sample_index.iloc[:, 1]  # or sample_index["sample"]
 
 factors_df = pd.DataFrame(
-    factors_arr,
-    index=sample_index.iloc[:, 1],
-    columns=[f"Factor_{i+1}" for i in range(model.nfactors)]
-)
+       factors_arr,
+       index=sample_index,
+       columns=[f"Factor_{i+1}" for i in range(model.nfactors)]
+       )
+
 factors_df.to_csv(os.path.join(args.outdir, 'sample_factors.tsv'), sep='\t')
 print("Exported sample factors.")
 
