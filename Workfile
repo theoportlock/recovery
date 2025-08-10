@@ -762,6 +762,20 @@ done</data>
       <data key="d4">-1171.7308349999998</data>
       <data key="d5">ran</data>
     </node>
+    <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
+      <data key="d2">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
+ -o results/census.xlsx</data>
+      <data key="d3">-418.0950000000005</data>
+      <data key="d4">572.9250000000004</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
+      <data key="d2">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
+  -o results/census_labels.xlsx</data>
+      <data key="d3">-420.5950000000005</data>
+      <data key="d4">640.4250000000004</data>
+      <data key="d5">ran</data>
+    </node>
     <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
       <data key="d6">67c57378-67fb-47d4-9b0a-afde6b3f55b2</data>
     </edge>
@@ -974,6 +988,8 @@ done</data>
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386" />
     <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" />
+    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="e01d74fd-8601-460e-858c-2f6b0be61422" />
+    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="3a43cff2-d4a9-4809-8fe3-f3ec751051f8" />
     <edge source="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8" />
     <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="df4dc09e-4408-4798-ae04-b10e3339f1e9" />
     <edge source="5656487b-7e9b-4945-b26e-5d344660740c" target="43951663-2b34-451b-92d8-f12f02a13150" />
