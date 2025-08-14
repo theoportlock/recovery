@@ -50,7 +50,7 @@ df = df.set_index(['subjectID', 'timepoint'])
 
 # Work out days to recovery
 days_of_catchup = df.reset_index().groupby(['Food','subjectID'])['Day'].last().xs(1)
-#days_of_catchup[days_of_catchup == 90.0] = np.nan
+days_of_catchup[days_of_catchup == 90.0] = np.nan
 days_of_catchup = days_of_catchup.rename('days_of_catchup')
 
 ## quick and dirty analyis

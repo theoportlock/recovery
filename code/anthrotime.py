@@ -47,7 +47,7 @@ def line(df, x, y, hue, ax):
 fig, axs = plt.subplots(1, 3, figsize=(6, 2.5), sharex=True)
 
 # Plot each metric
-line(df, 'timepoint', 'WLZ_WHZ', 'Recovery', axs[0])
+line(df, 'timepoint', 'WLZ_WHZ', 'Feed', axs[0])
 line(df, 'timepoint', 'MUAC', 'Recovery', axs[1])
 line(df, 'timepoint', 'Weight', 'Recovery', axs[2])
 

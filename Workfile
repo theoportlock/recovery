@@ -793,6 +793,19 @@ done</data>
   <data key="d4">-1114.4982290436838</data>
   <data key="d5">ran</data>
 </node>
+<node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
+  <data key="d2">schematic.py</data>
+  <data key="d3">980.0999999999995</data>
+  <data key="d4">-1412.0699999999993</data>
+  <data key="d5">fail</data>
+</node>
+<node id="4f793bf0-4176-490e-b999-f9d3f95980c8">
+  <data key="d2">box.py \
+  results/filtered/surveillance.tsv \
+  -x</data>
+  <data key="d3">1039.39</data>
+  <data key="d4">-1598.41</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
   <data key="d6">67c57378-67fb-47d4-9b0a-afde6b3f55b2</data>
 </edge>
@@ -843,6 +856,7 @@ done</data>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="create_table1.py"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="fe4298ab-84c2-4a7b-a4d5-c851907bbbfc"/>
+<edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="92024ec7-33d5-4507-976e-8eec7faadc0e"/>
 <edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="de95f326-8227-4628-b6c2-af8206095052">
   <data key="d6">0d4f6ea0-ef25-4931-8d27-8fb406f98823</data>
 </edge>
