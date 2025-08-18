@@ -1,3 +1,1 @@
-Feed	Sex	Ethnicity	Condition	Recovery	Delivery_Mode	Supplementation	BF	PoB
-ERUSF (B)	80	80	80	75	80	80	80	80
-Local RUSF (A)	79	79	79	76	79	79	79	79
+	ADHD_PRS	BMI_PRS	EA_PRS	EF_PRS	Height_PRS	IBD_CD_PRS	IBD_UC_PRS	Intelligent_PRS	NAFLD_PRS	subjectID	timepoint	Sex	Ethnicity	Condition	Feed	Recovery	Delivery_Mode	Supplementation	BF	PoB
