@@ -16,9 +16,10 @@ print("Running MOFA+...")
 mdata = mu.read(args.input)
 mu.tl.mofa(
     mdata,
-    use_obs='union',
+    use_obs='union', # Fills in the missing pieces
     n_factors=args.factors,
     convergence_mode='medium',
+    gpu_mode=True,
     outfile=args.output
 )
 print(f"MOFA+ model saved to {args.output}")
