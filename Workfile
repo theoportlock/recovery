@@ -688,8 +688,8 @@ for f in $(cat conf/all_datasets.txt); do
     results/filtered/${f}.tsv \
     -o results/scaled/${f}.tsv
 done</data>
-  <data key="d3">1193.5693580884367</data>
-  <data key="d4">-1225.3605499448668</data>
+  <data key="d3">1169.5693580884367</data>
+  <data key="d4">-1221.3605499448668</data>
   <data key="d5">ran</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
@@ -784,12 +784,12 @@ done</data>
 </node>
 <node id="1ff03cf4-bc45-4471-9318-d0d18616561e">
   <data key="d2"># Prepare the no-timepoint data into the correct directory
-mkdir -p results/timepoints/notp
+rm -r results/timepoints/notp; mkdir results/timepoints/notp
 for f in $(cat conf/notimedatasets.txt); do
   cp results/scaled/${f}.tsv results/timepoints/notp/${f}.tsv
 done</data>
-  <data key="d3">2075.2020202020203</data>
-  <data key="d4">-1089.4982290436838</data>
+  <data key="d3">2076.630591630592</data>
+  <data key="d4">-1092.3553719008266</data>
   <data key="d5">ran</data>
 </node>
 <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
@@ -830,16 +830,16 @@ done</data>
   <data key="d2"># New attempt at loading mefisto data
 mefisto_load.py \
   --timemeta results/filtered/timemeta.tsv \
-  --omics results/scaled/*.tsv \
+  --omics results/long/*.tsv \
   --out results/mofa/mefisto_input.tsv</data>
-  <data key="d3">2142.5000000000005</data>
-  <data key="d4">-1579.1666666666667</data>
-  <data key="d5">fail</data>
+  <data key="d3">2135.357142857143</data>
+  <data key="d4">-1550.5952380952383</data>
+  <data key="d5">ran</data>
 </node>
 <node id="3d58235e-84f0-46c0-99bc-5efd0d9837fa">
   <data key="d2">python code/mefisto_run.py</data>
-  <data key="d3">2605.8333333333335</data>
-  <data key="d4">-1536.5151515151515</data>
+  <data key="d3">2505.8333333333335</data>
+  <data key="d4">-1549.3722943722944</data>
   <data key="d5">fail</data>
 </node>
 <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
@@ -852,32 +852,41 @@ mefisto_load.py \
   <data key="d4">356.66666666666674</data>
   <data key="d5">ran</data>
 </node>
-<node id="7ff752a5-f401-446d-b378-ffd2373b044a">
-  <data key="d2">parallel -j1 \
-  join.py \
-  results/filtered/timemeta_0_52tp.tsv \
-  results/scaled/{}.tsv \
-  --on subjectID \
-  --how outer \
-  -o results/long/{}.tsv \
-&lt; conf/notimedatasets.txt</data>
-  <data key="d3">1756.6666666666667</data>
-  <data key="d4">-1646.6666666666667</data>
-  <data key="d5">ran</data>
-</node>
 <node id="8d8cf11c-7205-4a8e-9d70-af073634b2f6">
   <data key="d2">parallel -j1 \
-  cp results/scaled/{}.tsv \
-  results/long/{}.tsv \
+  filter.py results/scaled/{}.tsv \
+  -fdf results/filtered/timemeta_0_52tp.tsv \
+  --print_counts \
+  -o results/long/{}.tsv \
 &lt; conf/timedatasets.txt</data>
-  <data key="d3">1788.974342</data>
-  <data key="d4">-1429.801854</data>
+  <data key="d3">1750.085453111111</data>
+  <data key="d4">-1448.690742888889</data>
   <data key="d5">ran</data>
 </node>
 <node id="3548e4aa-0daf-4e68-8761-4c5913c3b4c9">
-  <data key="d2">mkdir -p results/long</data>
-  <data key="d3">1535.0</data>
-  <data key="d4">-1441.6666666666667</data>
+  <data key="d2">rm -r results/long
+mkdir results/long</data>
+  <data key="d3">1562.1428571428573</data>
+  <data key="d4">-1408.8095238095236</data>
+  <data key="d5">ran</data>
+</node>
+<node id="e951d8f0-2a36-4727-97fa-b3be876d0f58">
+  <data key="d2">for f in $(cat conf/notimedatasets.txt); do
+  replace.py \
+    results/filtered/${f}.tsv  \
+    --to_replace '{"subjectID":"$"}' \
+    --value '_0' \
+    --regex \
+    --output results/long/${f}.tsv
+done</data>
+  <data key="d3">1750.2380952380954</data>
+  <data key="d4">-1660.7142857142862</data>
+  <data key="d5">ran</data>
+</node>
+<node id="246364a8-29bd-49c2-a045-ceb068383c79">
+  <data key="d2">cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt</data>
+  <data key="d3">-1685.0</data>
+  <data key="d4">-91.0</data>
   <data key="d5">ran</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
@@ -1122,8 +1131,9 @@ mefisto_load.py \
 <edge source="7a113732-6455-4f0d-b805-fc6095b40ca3" target="a191959b-1acd-4594-8819-65c36f01f33c"/>
 <edge source="9b92e1b5-06f2-4f30-ae87-2c9179cad0f6" target="24dc9ae9-dae8-4ff3-a633-d2f9d423e86e"/>
 <edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="de95f326-8227-4628-b6c2-af8206095052"/>
-<edge source="7ff752a5-f401-446d-b378-ffd2373b044a" target="d067cb6d-c39b-470f-a95f-1e3376b4485f"/>
 <edge source="8d8cf11c-7205-4a8e-9d70-af073634b2f6" target="d067cb6d-c39b-470f-a95f-1e3376b4485f"/>
 <edge source="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" target="8d8cf11c-7205-4a8e-9d70-af073634b2f6"/>
-<edge source="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" target="7ff752a5-f401-446d-b378-ffd2373b044a"/>
+<edge source="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" target="e951d8f0-2a36-4727-97fa-b3be876d0f58"/>
+<edge source="e951d8f0-2a36-4727-97fa-b3be876d0f58" target="d067cb6d-c39b-470f-a95f-1e3376b4485f"/>
+<edge source="246364a8-29bd-49c2-a045-ceb068383c79" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8"/>
 </graph></graphml>
