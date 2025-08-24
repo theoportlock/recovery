@@ -14,6 +14,6 @@ export PATH="Maaslin2/R/:$PATH"
 if [ -f venv/bin/activate ]; then
     . venv/bin/activate
 else
-    echo "⚠️  No venv found at venv/bin/activate"
+    echo "No venv found at venv/bin/activate"
 fi
 
