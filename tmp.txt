@@ -1,0 +1,25 @@
+Design and Methods
+- Participants and Data Source
+This section details the Nipper Project dataset, including the 585 female participants from New Zealand, Singapore, and the United Kingdom etc.
+
+Experimental Design
+This describes the longitudinal study design with six time points, focusing on nutritional intervention and its effects on the maternal gut microbiome and mental health scores.
+
+Microbiome Data Processing
+Computational steps to filter and prepare the microbiome data for analysis - kneaddata metaphlan humann
+
+Data Analysis Methods
+- Statistical Software and Packages
+This lists the specific software and R/Python packages, with their versions, used for data processing and analysis.
+
+Alpha and Beta Diversity Analysis
+- This explains how Principal Coordinates Analysis (PCoA), UMAP, and PERMANOVA were used to visualize and test differences in overall microbial community composition.
+
+Differential Abundance Analysis (MaAsLin3)
+This section details the use of MaAsLin3 to identify specific microbial taxa associated with changes in mental component scores over time, accounting for fixed and random effects.
+
+Correlation Analysis (Spearman's)
+This explains the use of Spearman's correlation to measure the non-linear relationship between individual microbial taxa and MCS values.
+
+Predictive Modeling (Random Forest)
+This describes the use of a Random Forest model to identify the key microbial markers that are most predictive of MCS.

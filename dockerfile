@@ -26,14 +26,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     parallel \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install Python packages
-COPY requirements.txt ./
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
-
 # Install R packages including MaAsLin2
 RUN Rscript -e "install.packages(c('remotes', 'devtools'), repos='https://cloud.r-project.org')" && \
-    Rscript -e "remotes::install_github('biobakery/Maaslin2')"
+    Rscript -e "remotes::install_github('biobakery/maaslin3')"
 
 # Skip setting Bioconductor version manually
 RUN Rscript -e "install.packages('BiocManager', repos='https://cloud.r-project.org')" && \
@@ -44,7 +39,12 @@ RUN Rscript -e "install.packages('BiocManager', repos='https://cloud.r-project.o
         'phyloseq', 'Biostrings', 'Rtsne' \
     ), ask = FALSE, update = TRUE)"
 
-# Optional: add matplotlibrc config
+# Install Python packages
+COPY requirements.txt ./
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Add matplotlibrc config
 COPY matplotlibrc .
 
 # Default shell

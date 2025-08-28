@@ -12,3 +12,7 @@ shap
 statsmodels
 git+https://github.com/ayaandroid/mofapy2.git@fix-np-inf
 anndata
+scanpy
+ipython
+mofax
+ipdb
