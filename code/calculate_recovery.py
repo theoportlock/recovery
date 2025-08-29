@@ -2,53 +2,48 @@
 # -*- coding: utf-8 -*-
 
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('results/timepoints/yr2/anthro.tsv', sep='\t', index_col=0)
+df = pd.read_csv('results/recovery/anthro_52.tsv', sep='\t', index_col=0)
 meta = pd.read_csv('results/filtered/meta.tsv', sep='\t', index_col=0)
+ 
+# Recovered at yr2
+yr2_recovered = df['WLZ_WHZ'].gt(-1)
 
-# Just recovered
-recovered = meta.loc[meta.Recovery == 'Recovered']
-sus_recovered = df.loc[recovered.index, 'WLZ_WHZ'].gt(-1)
-meta['Sus_recovered'] = sus_recovered
+# Define categories
+meta['Recovery_status'] = 'No recovery'  # default
 
-counts = meta.reset_index().groupby(['Feed','Recovery','Sus_recovered']).count()['subjectID'].reset_index()
+# Recovery (sustained recovery at yr2)
+meta.loc[(meta.Recovery == 'Recovered') & yr2_recovered, 'Recovery_status'] = 'Sustained recovery'
 
-# meta must already have: Feed, Recovery, Sus_recovered
-def classify_recovery(row):
-    if row['Recovery'] == 'Recovered' and row['Sus_recovered']:
-        return 'Sustained recovery'
-    elif row['Recovery'] == 'Recovered':
-        return 'Recovered'
-    else:
-        return 'No recovery'
+# Unsustained recovery (recovered before 15mo, but not at yr2)
+meta.loc[(meta.Recovery == 'Recovered') & (~yr2_recovered), 'Recovery_status'] = 'Unsustained recovery'
 
-meta['Recovery_status'] = meta.apply(classify_recovery, axis=1)
+# Delayed recovery (not recovered before 15mo, but recovered at yr2)
+meta.loc[(meta.Recovery != 'Recovered') & yr2_recovered, 'Recovery_status'] = 'Delayed recovery'
 
 # --- Count and percentage calculation ---
-status_order = ['Recovered', 'Sustained recovery', 'No recovery']
+status_order = ['No recovery', 'Unsustained recovery', 'Delayed recovery', 'Sustained recovery']
 colors = {
-    'Recovered': '#91bfdb',           # light blue
-    'Sustained recovery': '#0571b0',  # darker blue
-    'No recovery': '#d73027'          # red
+    'Sustained recovery': '#0571b0',
+    'No recovery': '#d73027',
+    'Unsustained recovery': '#fc8d59',
+    'Delayed recovery': '#2ca25f'
 }
 
-# Count per Feed × Recovery_status
 counts = (
     meta.groupby(['Feed', 'Recovery_status'])
     .size()
     .reset_index(name='Count')
     .pivot(index='Feed', columns='Recovery_status', values='Count')
     .fillna(0)
-    .reindex(columns=status_order)  # ensure order
+    .reindex(columns=status_order)
 )
 
-# Percentages
 percentages = counts.div(counts.sum(axis=1), axis=0) * 100
 
 # --- Plotting ---
-fig, ax = plt.subplots(figsize=(2.6, 1.5))
+fig, ax = plt.subplots(figsize=(3.2, 1.8))
 
 bottom = None
 for status in status_order:
@@ -60,7 +55,6 @@ for status in status_order:
         label=status
     )
 
-    # Annotate counts in the middle of each section
     for i, (pct, cnt) in enumerate(zip(percentages[status], counts[status])):
         if pct > 0:
             y_pos = (bottom[i] if bottom is not None else 0) + pct / 2
@@ -79,5 +73,5 @@ ax.set_ylim(0, 100)
 ax.legend(title='Recovery status', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
 plt.savefig('results/stacked_bar_recovery.svg')
-#plt.show()
+# plt.show()
 

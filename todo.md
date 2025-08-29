@@ -1,6 +1,8 @@
 Figure 1 - Recovery
-    recovery curves, days to recovery, sustained recovery
-    Plot the constrainted analysis plot RDA or ccRDA
+    Delayed recovery
+Figure 2 - What influenced recovery
+    Preict recovery from baseline factors
+    sum abs SHAP for factors
 update to maaslin3
 Have to wait for humann download as the server is still down
 premature microbiome maturation
@@ -9,8 +11,6 @@ Recovery time
     Multivariable Cox proportional hazard analysis was conducted to assess the association between time to recovery and the type of therapeutic food, controlling for the confounding variables.
     https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-023-04168-x?utm_source=chatgpt.com
     The confounding variables include socio-demographic variables (age, sex, and residence of the child), the presenting symptoms, comorbid illnesses, immunization status, medications and nutritional supplements. A full examination, including the grade of edema, dehydration status, skin changes, and vital signs (respiratory rate, pulse rate, and temperature) was performed by the data collectors. Stool examination and hematocrit count were checked from the laboratory report in the medical history sheet.
-Figure 2 needs the 2yr data
-    Need to sort out surveillance data to remove the days before running
 Make Figure 3
 Fix Figure 4 so it's readable
 Figure 5 needs the proper anthroplot timelines

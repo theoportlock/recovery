@@ -666,8 +666,8 @@ filter.py results/filtered/timemeta.tsv \
     </node>
     <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
       <data key="d2">schematic.py</data>
-      <data key="d3">745.0999999999997</data>
-      <data key="d4">-2602.4271428571424</data>
+      <data key="d3">617.3222222222219</data>
+      <data key="d4">-2284.6493650793645</data>
     </node>
     <node id="4f793bf0-4176-490e-b999-f9d3f95980c8">
       <data key="d2">box.py \
@@ -677,9 +677,9 @@ filter.py results/filtered/timemeta.tsv \
       <data key="d4">-2788.767142857143</data>
     </node>
     <node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
-      <data key="d2">sustained_recovery.py</data>
-      <data key="d3">725.9819999999997</data>
-      <data key="d4">-2551.9701428571425</data>
+      <data key="d2">calculate_recovery.py</data>
+      <data key="d3">1258.204222222222</data>
+      <data key="d4">-2533.081253968254</data>
     </node>
     <node id="a191959b-1acd-4594-8819-65c36f01f33c">
       <data key="d2">box.py \
@@ -689,8 +689,8 @@ filter.py results/filtered/timemeta.tsv \
   -y days_of_catchup \
   --figsize 2.7,2.7 \
   -o results/days_of_catchup_box.svg</data>
-      <data key="d3">1053.4079999999994</data>
-      <data key="d4">-2639.816142857142</data>
+      <data key="d3">1223.4079999999994</data>
+      <data key="d4">-2770.9272539682534</data>
     </node>
     <node id="d067cb6d-c39b-470f-a95f-1e3376b4485f">
       <data key="d2"># Merge data for MEFISTO
@@ -745,8 +745,8 @@ mkdir results/long</data>
     --regex \
     --output results/long/${f}.tsv
 done</data>
-      <data key="d3">1535.2380952380956</data>
-      <data key="d4">-2588.2142857142862</data>
+      <data key="d3">1436.3492063492067</data>
+      <data key="d4">-2470.4365079365084</data>
     </node>
     <node id="246364a8-29bd-49c2-a045-ceb068383c79">
       <data key="d2">cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt</data>
@@ -765,8 +765,34 @@ replace.py results/mofa/mefisto_input.tsv \
       <data key="d2">mefisto_extract.py \
   --model results/mofa/mofa_model.hdf5 \
   --output_dir results/mofa/mofa_model_extract</data>
-      <data key="d3">3216.666666666667</data>
+      <data key="d3">3218.666666666667</data>
       <data key="d4">-2233.333333333334</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="16251459-1dc8-4168-bbff-cf463d8537aa">
+      <data key="d2"> filter.py \
+  results/filtered/timemeta.tsv \
+  -q 'timepoint == 52' \
+  -q 'Condition == "MAM"' \
+  -o results/recovery/timemeta_52.tsv</data>
+      <data key="d3">651.1111111111111</data>
+      <data key="d4">-2548.8888888888887</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="1f6da997-a398-46b8-8875-223ebb4382a2">
+      <data key="d2">stratify.py results/filtered/anthro.tsv \
+  subjectID \
+  --df2 results/recovery/timemeta_52.tsv \
+  -o results/recovery/anthro_52.tsv</data>
+      <data key="d3">926.6666666666666</data>
+      <data key="d4">-2512.222222222222</data>
+      <data key="d5">ran</data>
+    </node>
+    <node id="b0287d4e-69b5-4c3b-9746-bb7140ab4179">
+      <data key="d2">stratify.py -h</data>
+      <data key="d3">448.88888888888886</data>
+      <data key="d4">-2498.8888888888887</data>
+      <data key="d5">ran</data>
     </node>
     <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
       <data key="d6">67c57378-67fb-47d4-9b0a-afde6b3f55b2</data>
@@ -820,6 +846,7 @@ replace.py results/mofa/mefisto_input.tsv \
     <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="fe4298ab-84c2-4a7b-a4d5-c851907bbbfc" />
     <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="92024ec7-33d5-4507-976e-8eec7faadc0e" />
     <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="7a113732-6455-4f0d-b805-fc6095b40ca3" />
+    <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="16251459-1dc8-4168-bbff-cf463d8537aa" />
     <edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="de95f326-8227-4628-b6c2-af8206095052">
       <data key="d6">0d4f6ea0-ef25-4931-8d27-8fb406f98823</data>
     </edge>
@@ -999,11 +1026,14 @@ replace.py results/mofa/mefisto_input.tsv \
     <edge source="24dc9ae9-dae8-4ff3-a633-d2f9d423e86e" target="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" />
     <edge source="7a113732-6455-4f0d-b805-fc6095b40ca3" target="a191959b-1acd-4594-8819-65c36f01f33c" />
     <edge source="d067cb6d-c39b-470f-a95f-1e3376b4485f" target="87b776a3-432a-49ae-83c0-08282250f680" />
+    <edge source="3d58235e-84f0-46c0-99bc-5efd0d9837fa" target="4815ffa3-964e-4cf2-bb86-ad017eda51f0" />
     <edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="de95f326-8227-4628-b6c2-af8206095052" />
     <edge source="8d8cf11c-7205-4a8e-9d70-af073634b2f6" target="d067cb6d-c39b-470f-a95f-1e3376b4485f" />
     <edge source="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" target="8d8cf11c-7205-4a8e-9d70-af073634b2f6" />
     <edge source="246364a8-29bd-49c2-a045-ceb068383c79" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8" />
     <edge source="87b776a3-432a-49ae-83c0-08282250f680" target="3d58235e-84f0-46c0-99bc-5efd0d9837fa" />
+    <edge source="16251459-1dc8-4168-bbff-cf463d8537aa" target="1f6da997-a398-46b8-8875-223ebb4382a2" />
+    <edge source="1f6da997-a398-46b8-8875-223ebb4382a2" target="7a113732-6455-4f0d-b805-fc6095b40ca3" />
     <data key="d0">bash -c '. env.sh 
 </data>
     <data key="d1">'
