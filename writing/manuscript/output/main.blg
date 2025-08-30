@@ -1,11 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: writing/manuscript/output/main.aux
+The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: writing/manuscript/library.bib
 You've used 11 entries,
             2481 wiz_defined-function locations,
-            632 strings with 8065 characters,
+            632 strings with 8013 characters,
 and the built_in function-call counts, 5897 in all, are:
 = -- 343
 > -- 617

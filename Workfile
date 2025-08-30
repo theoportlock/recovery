@@ -700,6 +700,7 @@ mefisto_load.py \
   --out results/mofa/mefisto_input.tsv</data>
       <data key="d3">1823.6904761904766</data>
       <data key="d4">-2248.928571428572</data>
+      <data key="d5">ran</data>
     </node>
     <node id="3d58235e-84f0-46c0-99bc-5efd0d9837fa">
       <data key="d2">mefisto_run.py \
@@ -707,7 +708,7 @@ mefisto_load.py \
   results/mofa/mofa_model.hdf5</data>
       <data key="d3">2810.1190476190477</data>
       <data key="d4">-2228.4199134199134</data>
-      <data key="d5">running</data>
+      <data key="d5">fail</data>
     </node>
     <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
       <data key="d2">parallel -j1 \
@@ -725,9 +726,10 @@ parallel -j1 \
   -fdf results/filtered/timemeta_0_52tp.tsv \
   --print_counts \
   -o results/long/{}.tsv \
-&lt; conf/omicsdatasets.txt</data>
+&lt; conf/mbiomdatasets.txt</data>
       <data key="d3">1432.1687864444445</data>
       <data key="d4">-2263.2740762222224</data>
+      <data key="d5">ran</data>
     </node>
     <node id="3548e4aa-0daf-4e68-8761-4c5913c3b4c9">
       <data key="d2"># Clean the results dir first
@@ -735,6 +737,7 @@ rm -r results/long
 mkdir results/long</data>
       <data key="d3">1180.4166666666672</data>
       <data key="d4">-2227.3809523809523</data>
+      <data key="d5">ran</data>
     </node>
     <node id="e951d8f0-2a36-4727-97fa-b3be876d0f58">
       <data key="d2">for f in $(cat conf/notimedatasets.txt); do
@@ -760,6 +763,7 @@ replace.py results/mofa/mefisto_input.tsv \
   --output results/mofa/mefisto_input_formatted.tsv</data>
       <data key="d3">2191.666666666667</data>
       <data key="d4">-2238.3333333333335</data>
+      <data key="d5">ran</data>
     </node>
     <node id="4815ffa3-964e-4cf2-bb86-ad017eda51f0">
       <data key="d2">mefisto_extract.py \

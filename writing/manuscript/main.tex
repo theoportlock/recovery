@@ -7,13 +7,12 @@
 \usepackage{graphicx}
 \usepackage{authblk}
 \usepackage{booktabs}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
 
-\title{
-  Understanding Recovery from Malnutrition in Early Life:\\
-  A Multi-Omic Analysis of the Infant Gut Microbiome, Plasma Lipidome, and Neurodevelopmental Outcomes
-}
+\title{Understanding Recovery from Malnutrition in Early Life: A Multi-Omic Analysis of the Infant Gut Microbiome, Plasma Lipidome, and Neurodevelopmental Outcomes}
 
-\author[1]{Authors}
+%\author[1]{Authors}
 %\author[1,*]{Theo Portlock}
 %\author[2,*]{Talat Sharma}
 %\author[2,*]{Shahria Hafiz Kakon}
@@ -32,7 +31,7 @@
 %\author[7]{Terrence Forrester}
 %\author[3]{Charles Nelson}
 %
-\affil[1]{Affiliations}
+%\affil[1]{Affiliations}
 %\affil[1]{The Liggins Institute, University of Auckland, NZ}
 %\affil[2]{Infectious Diseases Division, International Centre for Diarrheal Disease Research, Bangladesh}
 %\affil[3]{Department of Pediatrics, Boston Children’s Hospital and Harvard Medical School; Harvard Graduate School of Education, Boston, USA}
@@ -55,6 +54,7 @@ Recovery from undernutrition during childhood has historically centered on short
 Herein we discuss the results of a prospective, randomized controlled trial for the use of an enhanced, brain-targeted micronutrient supplemented nutritional rehabilitation regimen versus the standard of care and healthy age-matched controls on measures of cognition and emotional regulation in a cohort of one-year-old Bangladeshi children.
 This longitudinal, multimodal study explains biological mechanism through network analysis to understand the impacts of a dietary intervention.
 
+
 \section{Main}
 % Definition of MAM
 Malnutrition refers to deficiencies, excesses, or imbalances in a person’s intake of energy and/or nutrients and can refer to undernutrition, overweight, or obesity.
@@ -69,8 +69,7 @@ A small proportion of children with MAM are treated.
 % What is treatment
 Treatment involves refeeding.
 % Problems with refeeding
-Current Refeeding methods focus solely on short term weight gain, associate with serious adverse events (such as diarrhoea or Refeeding Syndrome), and are often ineffective at restoring developmental trajectories.
-Those that recover their weight often have lasting neurological deficits including cognition and emotional regulation.
+Current Refeeding methods focus solely on short term weight gain, associate with serious adverse events (such as diarrhoea or Refeeding Syndrome), and are often ineffective at restoring developmental trajectories. Those that recover their weight often have lasting neurological deficits including cognition and emotional regulation.
 % Microbiome connection
 MAM is associated with gut microbiome immaturity.
 % Microbiome targetted refeeding
@@ -90,7 +89,8 @@ As a city with the second highest density of population and in a country with ch
 % Number of children selected and when (marasmic vs kwashiokor wasn't defined)
 % Recovery statistics (rates, days to recovery, and sustained recovery with biases measured) - \ref{Table1}. Complications (feeding failure, days of disease)
 Refeeding resulted in recovery in approximately half the children with MAM, with no significant difference in rate between the two refeed methods (43.0\% in the Local RUSF group vs 41.2\% in the ERUSF group , MWU. p = 0.9460).
-However, a key distinction emerged in time to recovery, which was shorter by approximately ten days in the ERUSF group (p = 0.0422, d = 0.46) (Table 1)
+However, a key distinction emerged in time to recovery, which was shorter by approximately ten days in the ERUSF group (p = 0.0422, d = 0.46) (Table 1).
+TABLE1 INCLUDED SEPARATELY
 
 \begin{table}[h!]
 	\centering
@@ -101,7 +101,7 @@ However, a key distinction emerged in time to recovery, which was shorter by app
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.2]{figures/recovery2.pdf}
+	\includegraphics[scale=1.2]{figures/recovery2}
 	\caption[Study design and changes in weight-for-length z-scores (WLZ) in children with moderate acute malnutrition (MAM) receiving enhanced or local refeeding]{
 		Study design and changes in weight-for-length z-scores (WLZ) in children with moderate acute malnutrition (MAM) receiving enhanced or local refeeding.
 		a) study design for the evaluation of children with MAM between 12 and 24 months of age, randomized to either an enhanced refeed and supplement arm (ERUSF followed by ESQLNS) or a local refeed and supplement arm (RUSF followed by SQLNS), alongside a well-nourished control group. Baseline (T1) and post-refeeding (T2) sampling included anthropometry, stool microbiome, and plasma metabolites, with additional one time measures of household, educational, and genetic covariates. Recovery was defined as WLZ \textless{} –1 SD.
@@ -109,19 +109,32 @@ However, a key distinction emerged in time to recovery, which was shorter by app
 		c) proportion of participants achieving recovery, sustaining recovery at 24 months, or showing no recovery in each MAM treatment arm.
 		d) distribution of time to recovery between treatment arms, with a significant difference (\textit{q} \textless{} 0.05) between local RUSF and ERUSF groups. Box plots show the median, the 25th - 75th percentiles (IQR), and whiskers extending to 1.5 x IQR.
 	}
-	\label{Figure1}
+	\label{fig:Figure1}
 \end{figure}
 
-\subsection{What influenced recovery}
+\subsection{What influenced recovery - Baseline anthropometrics, feeding failures, and genetic predisposition}
 % A background to the data collected
 Acknowledging that the refeed type made little impact on the overall recovery rates, an investigation into the factors that were associated with anthropometric recovery was undertaken.
 % Prediction of recovery from baseline facors - MOFA
+Prediction of recovery was done using MOFA to incorporate intermodal interactions.
 % risk factors for sustained recovery
 % are the same factors important for reocvery rates/days to recovery/sustained recovery?
 % Why mixed models - maaslin3
+% Difficulties of interpretation of multiple datasets - including missing data
+% MOFA and factorisation
+% Machine learning pipeline explaination
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{figures/ev}
+	\caption[Factors that associate with recovery]{
+		Explained variance as measured by PERMANOVA of beta diversities between samples within each dataset
+	}
+\label{fig:Figure2}
+\end{figure}
 
 % Influence of anthropometrics on recovery
 The most significant factors were anthropometric such as head circumference, indicating extent of malnutrition.
+This was shortly followed by Feeding failure rates, and then by genetic predisposition.
 % Influence of genetics on recovery
 %% Background on the PRS method
 % Influence of behaviour on recovery
@@ -137,10 +150,7 @@ Other factors included the proportion of days without feeding failure, and comor
 %% AA
 %% Vitamins
 
-\subsection{What did recovery influence}
-% Maaslin3
-
-\subsection{Factors improved/deteriorated during the treatment}
+\subsection{Factors improved/deteriorated during the treatment disproportionately between refeed methods}
 % Definition of improvement
 The classification of a given microbiome as 'healthy' has long been contested.
 This is true also of a number of datasets within this cohort.
@@ -152,7 +162,7 @@ ERUTF drove a greater shift toward healthy microbiome, including depletion of \t
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{figures/newrecoveryfeed3.pdf}
+	\includegraphics[scale=0.6]{figures/newrecoveryfeed2}
 	\caption[Refeed methods improve/deteriorate bodily systems differently]{
 		Refeed methods improve/deteriorate bodily systems differently.
 		A, Radial plot of percentage change in distance from Well-nourished controls before and after refeeding (1yr and 2yr). Positive and negative percentages represent improvement and deterioration, respectively.
@@ -160,13 +170,8 @@ ERUTF drove a greater shift toward healthy microbiome, including depletion of \t
 		C, Heatmap to show clusters of dataset changes.
 		D, Boxplot to show how Lactobacillus fermentum changes according to the refeed method.
 	}
-\label{Figure2}
+\label{fig:Figure3}
 \end{figure}
-
-\subsection{Using a systems biology approach to understand recovery}
-% Difficulties of interpretation of multiple datasets - including missing data
-% MOFA and factorisation
-% Machine learning pipeline explaination
 
 \subsection{Network-Based Integration of Multimodal Changes to understand recovery mechanism}
 % Networks as a tool to understand data relationships
@@ -174,20 +179,20 @@ ERUTF drove a greater shift toward healthy microbiome, including depletion of \t
 % How to link the results together
 With an understanding of the impacts that the enhanced refeed method had on developmental trajectories across the datasets recoreded, the next step was to understand how those changes might be connected together mechanisticly.
 % Network stats - number of nodes, edges, directional nodes, interaction effects
-It was found that proline metabolism was correlated with EEG and cognitive outcomes, suggesting neuro-metabolic recovery pathways.
+It was found that proline metabolism was correlated with cognitive outcomes, suggesting neuro-metabolic recovery pathways.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{figures/mixedmodelnetwork.pdf}
+\includegraphics[scale=0.5]{figures/mixedmodelnetwork}
 	\caption[Mechanism of E-RUTF differential impacts on brain structure]{
 		Mechanism of E-RUTF differential impacts on brain structure.
 	}
-\label{Figure3}
+\label{Figure4}
 \end{figure}
 
-\section{Discussion}
+\subsection{Digital twin modelling to optimise novel refeed nutritional contents}
 
-\section{Conclusion}
+\section{Discussion}
 
 \section{Methods}
 PSS method \cite{mozumder2022reliability}
@@ -215,27 +220,6 @@ Following consent, the clinical screening team completed a screening form, captu
 The WLZ/WHZ Z-score for each child was calculated using the WHO anthropometric calculator.
 The child's age was validated using the EPI vaccination card.
 Neurological measures, Bailey scores, EEG data were collected upon enrolment to evaluate neurological development.
-
-\subsection{EEG data collection and analysis}
-Continuous scalp EEG was recorded using NetStation 4.5.4. and 128-channel Hydrocel Geodesic Sensor Nets modified to remove eye electrodes (Electrical Geodesics, Inc. (EGI), Eugene, OR, USA).
-Data was sampled at 500 Hz.
-Impedances were kept under 100 k\textohm{} when possible and measured once at the beginning of the session, and again halfway through.
-Sessions were conducted in a dimly lit room with the participants sitting on the parent’s lap.
-The participants were separated from the research staff conducting the session by a curtain, but the testing area was not acoustically or electrically shielded.
-A second research staff member was present in the testing area to help keep the participant engaged.
-EEG sessions consisted of 6 paradigms, i.e., resting state, visual working memory, flanker, disengagement, visual evoked potential, and auditory stimuli.
-The subsequent (pre-)processing steps were applied to the resting state data where participants watched a 3-minute video that featured toys.
-
-EEG data were preprocessed offline with MatLab (R2021B) using the Harvard Automated Processing Pipeline for Electroencephalography (HAPPE) Version 3 (Gabard-Durnam et al., 2018).
-A specified subset of 30 channels was excluded (‘E1’, ’E8’, ’E14’, ’E17’, ’E21’, ‘E25’, ’E32’, ‘E38’, ‘E43’, ’E44’,’ E48’, ’E49’, ’E56’, ’E63’, ’E68’, ’E73’, ’E81’, ’E88’, ’E94’, ’E99’, ’E107’, ’E113’, ’E114’, ’E119’, ’E120’, ’E121’, ‘E125', 'E126', 'E127', 'E128').
-Data were downsampled to 250Hz, bandpass filtered (1-100Hz), and filtered using a 50Hz cleanline filter for line noise removal.
-Bad channels were then automatically identified and rejected, and wavelet-enhanced Independent Component Analysis (ICA) and the Multiple Artifact Rejection Algorithm (MARA) were performed to detect and impute artifacts.
-Resting state data were segmented into 2s epochs; epochs with an amplitude >±150mV were rejected.
-Segments were also rejected using segment similarity criteria.
-Data were then re-referenced to the average of all channels.
-
-EEG outputs from HAPPE were then reformatted and processed using the Batch Electroencephalography Automated Processing Platform (BEAPP) (Levin et al., 2018) to extract power spectra for each participant across the following frequency bands: delta (2-4Hz), theta (4-6Hz), low alpha (6-9Hz), high alpha (9-12Hz), beta (12-30Hz), and gamma (30-45Hz) and the following regions of interest (see Supp Figure 2): occipital (‘E70’, ’E71’, ’E75’, ‘E76’, ‘E83’), temporal (‘E36’,‘E40’, ‘E41’, ‘E45’, ‘E46’, ‘E102’, ‘E103’, ‘E104’, ‘E108’, ‘E109’), parietal (‘E52’, ‘E53’, ‘E59’, ‘E60’, ‘E85’, ‘E86’, ‘E91’, ‘E92’), and frontal (‘E5’, ‘E6’, ‘E12’, ‘E13’, ‘E24’, ‘E27’, ‘E28’, ‘E33’, ‘E34’, ‘E112’, ‘E116’, ‘E117’, ‘E122’, ‘E123’, ‘E124’).
-Further, PSD values were normalized by a Log\textsubscript{10} transform.
 
 \subsection{Developmental Outcomes} 
 The Bayley Scales of Infant and Toddler Development, Fourth Edition (BSID-IV) cognitive, language, and motor subscales were administered to all participants.
@@ -268,6 +252,7 @@ A 5 µL volume of each sample was injected onto a Phenomenex Kinetex F5 column (
 Lipids were quantified and identified with a Q-Exactive mass spectrometer (Thermo Fisher Scientific, Germany) equipped with a heated electrospray ionisation HESI source.
 Data was processed using MS-DIAL v4.92 92 \cite{tsugawa2015ms}.
 For full methodological details see the supplementary information.
+NEED VITAMIN AND AA METHODS FROM CHRIS.
 
 \subsection{Statistical Analyses}
 Python version 3.9.2 was used to perform all analysis \cite{van1995python}.
@@ -324,11 +309,11 @@ The authors would also like to thank the study team within the Infectious Diseas
 \section{Supplementary material}
 \begin{figure}[!htb]
 \centering
-\includegraphics[scale=0.8]{figures/newalldata.pdf}
+\includegraphics[scale=0.8]{figures/newalldata}
 	\caption[Datasets recoreded in the M4EFaD study]{
 		Datasets recorded in the M4EFaD study.
 	}
-\label{Figure1}
+\label{fig:FigureS1}
 \end{figure}
 
 \end{document}

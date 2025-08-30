@@ -1,50 +1,52 @@
-# Paths
-DIR = writing/manuscript
-OUTDIR = $(DIR)/output
-DOCX_OUTPUT = $(OUTDIR)/main.docx
-PDF_OUTPUT = $(OUTDIR)/main.pdf
-TEX_INPUT = $(DIR)/main.tex
-BIB_FILE = $(DIR)/library.bib
-CSL_FILE = $(DIR)/nature.csl
+# Directories
+SRC_DIR := writing/manuscript
+OUT_DIR := $(SRC_DIR)/output
 
-WATCH_FILES = $(TEX_INPUT) $(BIB_FILE) $(CSL_FILE)
+# Main files
+TEX := $(SRC_DIR)/main.tex
+PDF := $(OUT_DIR)/main.pdf
+DOCX := $(OUT_DIR)/main.docx
+TEMPLATE := $(SRC_DIR)/template.docx
 
-# Default target
-all: $(PDF_OUTPUT) $(DOCX_OUTPUT)
+# Tools
+LATEXMK := latexmk
+LATEXMK_FLAGS := -pdf -outdir=$(OUT_DIR) -interaction=nonstopmode -shell-escape
+PANDOC := pandoc
+BIB := $(SRC_DIR)/library.bib
+CSL := $(SRC_DIR)/nature.csl
 
-.PHONY: all watch clean
+# Figures directory
+FIGURES_DIR := figures
 
-# Create DOCX from LaTeX using Pandoc
-$(DOCX_OUTPUT): $(TEX_INPUT) $(BIB_FILE) $(CSL_FILE)
-	mkdir -p $(OUTDIR)
-	pandoc \
-		--filter pandoc-crossref \
+.PHONY: all pdf docx clean
+
+all: pdf docx
+
+pdf: $(PDF)
+
+$(PDF): $(TEX) $(BIB)
+	@mkdir -p $(OUT_DIR)
+	$(LATEXMK) $(LATEXMK_FLAGS) $(TEX)
+
+docx: $(DOCX)
+
+$(DOCX): $(TEX) $(BIB) $(CSL)
+	@mkdir -p $(OUT_DIR)
+	$(PANDOC) $(TEX) \
+		--bibliography=$(BIB) \
+		--csl=$(CSL) \
+		--output=$(DOCX) \
+		--standalone \
 		--citeproc \
-		--bibliography=$(BIB_FILE) \
-		-f latex \
-		-t docx \
-		--verbose \
+		--toc \
+		--filter pandoc-crossref \
+		--resource-path=$(FIGURES_DIR) \
+		--default-image-extension=png \
 		--number-sections \
-		--extract-media=writing/manuscript/output/media \
-		--csl=$(CSL_FILE) \
-		$(TEX_INPUT) \
-		-o $(DOCX_OUTPUT)
+		--reference-doc=$(TEMPLATE)
 
-# Build PDF with all intermediate and output files in OUTDIR
-$(PDF_OUTPUT): $(TEX_INPUT) $(BIB_FILE)
-	mkdir -p $(OUTDIR)
-	pdflatex -shell-escape -output-directory=$(OUTDIR) $(TEX_INPUT)
-	bibtex $(OUTDIR)/main
-	pdflatex -shell-escape -output-directory=$(OUTDIR) $(TEX_INPUT)
-	pdflatex -shell-escape -output-directory=$(OUTDIR) $(TEX_INPUT)
-
-# Watch for changes and rebuild
-watch:
-	ls $(WATCH_FILES) | entr -c make all
-
-# Clean all generated files
 clean:
-	rm -f $(OUTDIR)/*.{aux,log,out,bbl,blg,glg,glo,gls,ist,toc,acn,acr,alg,pdf,docx}
-
-
+	$(LATEXMK) -C -outdir=$(OUT_DIR)
+	rm -f $(DOCX)
+	rm -rf $(OUT_DIR)/media
 
