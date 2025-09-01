@@ -56,7 +56,7 @@ ent.set_data_options(scale_views=True)
 
 # Model options: Start with 20 factors, let dropping handle pruning
 ent.set_model_options(
-    factors=20,  # initial high number
+    factors=10,  # initial high number
 )
 
 # Train options with factor dropping enabled
