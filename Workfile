@@ -37,15 +37,6 @@
   <data key="d3">-526.0050428743714</data>
   <data key="d4">107.80254094042743</data>
 </node>
-<node id="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d2">parallel -j1 \
-    remove_3yr_control.py \
-        results/cleaned/{}.tsv \
-        -o results/filtered/{}.tsv \
-    &lt; conf/all_datasets.txt</data>
-  <data key="d3">-198.58239202464097</data>
-  <data key="d4">10.744104707190218</data>
-</node>
 <node id="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d2">merge.py results/deltas/*.tsv \
   $(sed "s|^|filtered/|" conf/notimedatasets.txt) \
@@ -66,6 +57,7 @@
     -o results/filtered/timemeta.tsv</data>
   <data key="d3">296.07589349129444</data>
   <data key="d4">15.456597490231161</data>
+  <data key="d5">ran</data>
 </node>
 <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
   <data key="d2">anthrotime.py</data>
@@ -244,6 +236,7 @@
   -o results/filtered/mapping.tsv</data>
   <data key="d3">43.75137264870705</data>
   <data key="d4">17.740565700407842</data>
+  <data key="d5">ran</data>
 </node>
 <node id="bdb970b1-d724-4f80-a997-d993292f69fd">
   <data key="d2">filter.py timemeta \
@@ -409,6 +402,7 @@
   -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
   <data key="d3">1327.5033590193866</data>
   <data key="d4">-811.7894160330616</data>
+  <data key="d5">ran</data>
 </node>
 <node id="node86">
   <data key="d2">replace.py \
@@ -417,6 +411,7 @@
   --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
   <data key="d3">1838.2146609146264</data>
   <data key="d4">-826.4254912397273</data>
+  <data key="d5">ran</data>
 </node>
 <node id="node87">
   <data key="d2">docker run -it \
@@ -532,8 +527,9 @@
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d3">2314.3679467219395</data>
-  <data key="d4">-845.6126135667246</data>
+  <data key="d3">2293.1179467219395</data>
+  <data key="d4">-868.1126135667246</data>
+  <data key="d5">ran</data>
 </node>
 <node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
   <data key="d2">for tp in yr1 yr2; do
@@ -803,61 +799,74 @@ replace.py results/mofa/mefisto_input.tsv \
 </node>
 <node id="49a148e5-9b57-4d77-9bf9-8cb5e2815fed">
   <data key="d2">mofa_load_data.py \
-  --t1-dir results/timepoints/yr1 \
-  --notp-dir results/timepoints/notp \
+  --t1-dir results/timepoints/0 \
   --meta-file results/filtered/meta.tsv \
   --output results/mofa/mdata.h5mu</data>
-  <data key="d3">1826.0</data>
-  <data key="d4">-1994.0</data>
+  <data key="d3">2240.285714285714</data>
+  <data key="d4">-1908.9999999999998</data>
+  <data key="d5">ran</data>
 </node>
 <node id="381804b5-2751-4bfa-a604-3ed6ac4a0093">
   <data key="d2">mofa_run.py \
   --input results/mofa/mdata.h5mu \
   --factors 10 \
   --output results/mofa/t1.hdf5</data>
-  <data key="d3">2256.0</data>
-  <data key="d4">-1922.0</data>
+  <data key="d3">2635.9999999999995</data>
+  <data key="d4">-1902.0</data>
+  <data key="d5">ran</data>
 </node>
 <node id="8b2a39a7-67e8-4468-9de1-9ea87df0f4f9">
   <data key="d2">mofa_export.py \
   --model results/mofa/t1.hdf5 \
   --mdata results/mofa/mdata.h5mu \
-  --outdir results/mofa</data>
-  <data key="d3">2732.0</data>
-  <data key="d4">-1796.0</data>
+  --outdir results/mofa/export</data>
+  <data key="d3">3164.8571428571427</data>
+  <data key="d4">-1853.142857142857</data>
+  <data key="d5">ran</data>
 </node>
 <node id="02588c90-b35b-45a0-8efc-4df8344bbf8a">
   <data key="d2">mofa_plots.py \
   --model results/mofa/t1.hdf5</data>
-  <data key="d3">2722.0</data>
-  <data key="d4">-1930.0</data>
+  <data key="d3">3183.428571428571</data>
+  <data key="d4">-1970.0</data>
+  <data key="d5">running</data>
 </node>
 <node id="c9e7aa36-1f16-4915-8a57-79777c653d79">
-  <data key="d2">for f in $(cat conf/timedatasets.txt); do
+  <data key="d2">for f in $(cat conf/mbiomedatatsets.txt); do
   splitter.py \
-    results/scaled/${f}.tsv \
-    -m results/filtered/timemeta_yr1_yr2.tsv \
+    results/long/${f}.tsv \
+    -m results/filtered/timemeta_0_52tp.tsv \
     -col timepoint \
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d3">1432.0</data>
-  <data key="d4">-2034.0</data>
+  <data key="d3">1836.5238095238092</data>
+  <data key="d4">-1957.333333333333</data>
+  <data key="d5">ran</data>
 </node>
-<edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">67c57378-67fb-47d4-9b0a-afde6b3f55b2</data>
-</edge>
-<edge source="build_database.graphml::ace6fac4-b2cc-4166-bf01-caf15f9fb091" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">ab37bb4b-4bb7-4604-a6b0-60d2668d2532</data>
-</edge>
+<node id="3fe70ddb-eafb-4c69-b42c-a66e787c1376">
+  <data key="d2">mofa_metabolome.sh
+mofa_microbiome.sh</data>
+  <data key="d3">2010.0</data>
+  <data key="d4">-1538.0952380952385</data>
+</node>
+<node id="433eced6-1e2d-43f9-924d-1f0853c388c5">
+  <data key="d2">parallel -j1 \
+    remove_3yr_control.py \
+        results/cleaned/{}.tsv \
+        -o results/filtered/{}.tsv \
+    &lt; conf/all_datasets.txt'</data>
+  <data key="d3">-223.74999999999994</data>
+  <data key="d4">7.5</data>
+</node>
+<node id="40e9c175-101b-461c-af80-d42f2eb6adf7">
+  <data key="d2">merge_all.py</data>
+  <data key="d3">2275.0</data>
+  <data key="d4">-1526.6666666666667</data>
+  <data key="d5">ran</data>
+</node>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
-</edge>
-<edge source="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">07017c33-b9c7-4523-8656-10e5be83331d</data>
-</edge>
-<edge source="de95f326-8227-4628-b6c2-af8206095052" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
-  <data key="d6">99d995d8-a52a-4e49-85ff-a4fa76c35e0a</data>
 </edge>
 <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="format_headers.R results/mergedall.tsv results/">
   <data key="d6">74c915fe-4d3a-42d5-abbf-f37e97558611</data>
@@ -867,9 +876,6 @@ done</data>
 </edge>
 <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="box.py results/filtered/wolkes.tsv --meta results/timemeta.tsv -x timepoint -y vocalisation --hue Feed -o results/wolkes_vocalisation_box.svg">
   <data key="d6">39ea603d-0e16-41d0-879f-e5b7ad9c7ec8</data>
-</edge>
-<edge source="build_database.graphml::74aa7521-feec-4bf1-a785-ac5c2decb24e" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">3db3236b-90a9-45aa-bcca-cc1177b70b70</data>
 </edge>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
   <data key="d6">5114d125-a31b-4960-a560-69aed8f77b4c</data>
@@ -897,23 +903,8 @@ done</data>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="92024ec7-33d5-4507-976e-8eec7faadc0e"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="7a113732-6455-4f0d-b805-fc6095b40ca3"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="16251459-1dc8-4168-bbff-cf463d8537aa"/>
-<edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">0d4f6ea0-ef25-4931-8d27-8fb406f98823</data>
-</edge>
 <edge source="analysis.graphml::5e2b056b-286f-491e-ac96-9db3c3403aa4" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d6">fddab9f2-9b4a-4f73-9f7d-23863f458916</data>
-</edge>
-<edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">8f34cd69-c532-4794-abba-eae5121a2d07</data>
-</edge>
-<edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">a1a06af1-8a89-48ae-bde5-b4093105fd44</data>
-</edge>
-<edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">3ec696b4-1324-44e1-9f9b-694976d611f4</data>
-</edge>
-<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">b5023b4e-c975-46c1-a907-e19c84a59e2c</data>
 </edge>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d6">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
@@ -924,48 +915,13 @@ done</data>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
   <data key="d6">d47ed25e-0306-44a6-96cf-a0ff8e1703bf</data>
 </edge>
-<edge source="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">55b3247d-ed7c-49c7-9a23-f9e6f109eefb</data>
-</edge>
-<edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">90750aec-f153-4998-8329-810c03d8a0d5</data>
-</edge>
 <edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="9780f658-26ff-4a9b-a03f-a57be3e04748"/>
-<edge source="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">a028a5be-e6fe-4e50-a47c-2dc7520bc33f</data>
-</edge>
-<edge source="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">d6a7acae-8e12-4932-a854-3e88a52ccadb</data>
-</edge>
-<edge source="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">f66b45aa-5f97-4d2e-96c4-24cd8353b18a</data>
-</edge>
-<edge source="build_database.graphml::5c1c37f2-4b00-4e6b-937d-d8cf348aa63f" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">a56ed91b-0042-410d-81c1-44c51c33a5ff</data>
-</edge>
-<edge source="build_database.graphml::7576a182-fecc-4d14-b02d-3bceb3d18783" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">a1f27dba-9575-4ea0-b33d-b7e902231373</data>
-</edge>
-<edge source="build_database.graphml::3231bf1e-9cbc-4cf2-bc21-74ab8531f86c" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">2d1659c5-81ed-4f07-95f8-079f3bd206b0</data>
-</edge>
-<edge source="build_database.graphml::c6a23125-3842-489c-8bc0-3449d7ddfdd9" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">89ce156f-0adf-4579-97a0-46b5cee7530a</data>
-</edge>
-<edge source="build_database.graphml::8a22f8f7-4868-4738-b19d-08060da598c8" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">cd9e47ba-ee57-4de6-a75f-b8020d06411c</data>
-</edge>
-<edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">71c4c9bb-26c5-4fc0-a984-4f90c1a44521</data>
-</edge>
-<edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="de95f326-8227-4628-b6c2-af8206095052"/>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed">
   <data key="d6">35f6f931-f1bf-4d02-9db4-b8c32bd0b667</data>
 </edge>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="d4e4b648-4abc-47b1-b072-7227e8023ead">
   <data key="d6">b50ae894-d083-4589-8570-97dbe3281c08</data>
 </edge>
-<edge source="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73" target="de95f326-8227-4628-b6c2-af8206095052"/>
 <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d6">4d55fbaa-af27-45d3-8bf0-da50b534bdb9</data>
 </edge>
@@ -975,9 +931,6 @@ done</data>
 </edge>
 <edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d6">2075305e-f444-4eb5-8402-8012fd99d75f</data>
-</edge>
-<edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="de95f326-8227-4628-b6c2-af8206095052">
-  <data key="d6">756d9a1a-f1c0-4d9b-99ae-e829e5bccb93</data>
 </edge>
 <edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d6">fb337fd2-4079-4caa-99e4-2098f6e21c6c</data>
@@ -1029,6 +982,7 @@ done</data>
 <edge source="node85" target="node86"/>
 <edge source="node86" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="node86" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
+<edge source="node86" target="3fe70ddb-eafb-4c69-b42c-a66e787c1376"/>
 <edge source="f8f4ce11-30d4-4565-8ab5-5637788a6c85" target="24d20861-ab82-40ac-b0ba-ade66d21eba1"/>
 <edge source="3f937e85-4948-4547-aab4-064645c1c719" target="f8f4ce11-30d4-4565-8ab5-5637788a6c85"/>
 <edge source="a18113a5-e437-49bf-87d2-2bdc636ece37" target="2906aa99-36d9-4e63-b7be-a7e69d53ea0e"/>
@@ -1072,12 +1026,10 @@ done</data>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="3548e4aa-0daf-4e68-8761-4c5913c3b4c9"/>
-<edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="de95f326-8227-4628-b6c2-af8206095052"/>
 <edge source="24dc9ae9-dae8-4ff3-a633-d2f9d423e86e" target="3548e4aa-0daf-4e68-8761-4c5913c3b4c9"/>
 <edge source="7a113732-6455-4f0d-b805-fc6095b40ca3" target="a191959b-1acd-4594-8819-65c36f01f33c"/>
 <edge source="d067cb6d-c39b-470f-a95f-1e3376b4485f" target="87b776a3-432a-49ae-83c0-08282250f680"/>
 <edge source="3d58235e-84f0-46c0-99bc-5efd0d9837fa" target="4815ffa3-964e-4cf2-bb86-ad017eda51f0"/>
-<edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="de95f326-8227-4628-b6c2-af8206095052"/>
 <edge source="8d8cf11c-7205-4a8e-9d70-af073634b2f6" target="d067cb6d-c39b-470f-a95f-1e3376b4485f"/>
 <edge source="8d8cf11c-7205-4a8e-9d70-af073634b2f6" target="c9e7aa36-1f16-4915-8a57-79777c653d79"/>
 <edge source="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" target="8d8cf11c-7205-4a8e-9d70-af073634b2f6"/>
@@ -1089,4 +1041,5 @@ done</data>
 <edge source="381804b5-2751-4bfa-a604-3ed6ac4a0093" target="02588c90-b35b-45a0-8efc-4df8344bbf8a"/>
 <edge source="381804b5-2751-4bfa-a604-3ed6ac4a0093" target="8b2a39a7-67e8-4468-9de1-9ea87df0f4f9"/>
 <edge source="c9e7aa36-1f16-4915-8a57-79777c653d79" target="49a148e5-9b57-4d77-9bf9-8cb5e2815fed"/>
+<edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="40e9c175-101b-461c-af80-d42f2eb6adf7"/>
 </graph></graphml>

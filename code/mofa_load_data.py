@@ -13,8 +13,8 @@ parser.add_argument('--t1-dir', default='results/timepoints/yr1',
                     help='Directory containing T1 (baseline) data files')
 #parser.add_argument('--t2-dir', default='results/timepoints/yr2',
 #                    help='Directory containing T2 (after refeeding) data files')
-parser.add_argument('--notp-dir', default='results/timepoints/notp',
-                    help='Directory containing data with no timepoint info (optional)')
+#parser.add_argument('--notp-dir', default='results/timepoints/notp',
+#                    help='Directory containing data with no timepoint info (optional)')
 parser.add_argument('--meta-file', default='results/filtered/meta.tsv')
 parser.add_argument('--output', default='results/mofa/mdata.h5mu')
 args = parser.parse_args()
@@ -43,7 +43,7 @@ def load_timepoint_data(tp_name, tp_dir):
 
 mods.update(load_timepoint_data('t1', args.t1_dir))
 #mods.update(load_timepoint_data('t2', args.t2_dir))
-mods.update(load_timepoint_data('notp', args.notp_dir))
+#mods.update(load_timepoint_data('notp', args.notp_dir))
 
 # Merge into MuData
 mdata = mu.MuData(mods)
