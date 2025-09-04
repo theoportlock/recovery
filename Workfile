@@ -859,11 +859,16 @@ mofa_microbiome.sh</data>
   <data key="d3">-223.74999999999994</data>
   <data key="d4">7.5</data>
 </node>
-<node id="40e9c175-101b-461c-af80-d42f2eb6adf7">
+<node id="fdf3bffb-4faa-4e02-9648-6fcb003a022c">
   <data key="d2">merge_all.py</data>
-  <data key="d3">2275.0</data>
-  <data key="d4">-1526.6666666666667</data>
+  <data key="d3">2306.666666666667</data>
+  <data key="d4">-1511.6666666666667</data>
   <data key="d5">ran</data>
+</node>
+<node id="d5fab4a7-7727-412e-8f4b-68b5f2c55bde">
+  <data key="d2">predict.py</data>
+  <data key="d3">2535.0</data>
+  <data key="d4">-1480.0</data>
 </node>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
@@ -1041,5 +1046,6 @@ mofa_microbiome.sh</data>
 <edge source="381804b5-2751-4bfa-a604-3ed6ac4a0093" target="02588c90-b35b-45a0-8efc-4df8344bbf8a"/>
 <edge source="381804b5-2751-4bfa-a604-3ed6ac4a0093" target="8b2a39a7-67e8-4468-9de1-9ea87df0f4f9"/>
 <edge source="c9e7aa36-1f16-4915-8a57-79777c653d79" target="49a148e5-9b57-4d77-9bf9-8cb5e2815fed"/>
-<edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="40e9c175-101b-461c-af80-d42f2eb6adf7"/>
+<edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="fdf3bffb-4faa-4e02-9648-6fcb003a022c"/>
+<edge source="fdf3bffb-4faa-4e02-9648-6fcb003a022c" target="d5fab4a7-7727-412e-8f4b-68b5f2c55bde"/>
 </graph></graphml>
