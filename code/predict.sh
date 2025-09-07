@@ -6,9 +6,12 @@ set +e
 
 source env.sh
 
-data=results/merged_dataset.tsv
+#data=results/merged_dataset.tsv
+data=results/timepoints/notp/surveillance.tsv
 meta=results/timepoints/yr2/anthro.tsv
 output=results/prediction
+
+rm -r $output
 
 test_train_split.py \
 	--input $data \
@@ -49,8 +52,13 @@ plot_network.py \
 
 shap_plots.sh
 
+plot_regression_residuals.py \
+	--model $output/dataset_rf.pkl \
+	--input $output/dataset_split \
+	--output $output/plots
+
 arrange_svgs.py \
-	$output/shap_plots_test_data/* \
+	$output/plots/* \
 	--cols 2 \
 	--output $output/shap_plots_merged.svg
 
