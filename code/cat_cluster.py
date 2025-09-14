@@ -291,3 +291,11 @@ def create_full_clustermap(
 
 
 create_full_clustermap(df, meta, top_n_features=10, output="results/clustermap_with_metadata.svg")
+
+
+
+
+# For polar plot export
+odf = plotdf.groupby(['Cat_cluster', 'PRS']).mean()
+oodf = odf.unstack().xs('Score_z', axis=1)
+oodf.to_csv('results/polardata.tsv', sep='\t')
