@@ -222,7 +222,8 @@
   -o results/distance/{}.tsv \
   &lt; conf/timedatasets.txt</data>
   <data key="d3">1305.2357596851853</data>
-  <data key="d4">20.211747684521924</data>
+  <data key="d4">21.461747684521907</data>
+  <data key="d5">running</data>
 </node>
 <node id="analysis.graphml::a0f1352f-177b-4fd8-bd04-c84af0af1bc7">
   <data key="d2">heatmap_alltimedata.py -d conf/timedatasets.txt</data>
