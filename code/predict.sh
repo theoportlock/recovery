@@ -6,9 +6,7 @@ set +e
 
 source env.sh
 
-#data=results/merged_dataset.tsv
-data=results/timepoints/notp/surveillance.tsv
-meta=results/timepoints/yr2/anthro.tsv
+data=results/merged_dataset.tsv
 output=results/prediction
 
 rm -r $output

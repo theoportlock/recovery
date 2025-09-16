@@ -1,0 +1,4 @@
+FROM gpt-oss:20b
+PARAMETER temperature 0
+PARAMETER seed 42
+
