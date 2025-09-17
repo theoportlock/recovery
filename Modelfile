@@ -1,4 +1,4 @@
-FROM gpt-oss:20b
+FROM llama2
 PARAMETER temperature 0
 PARAMETER seed 42
 

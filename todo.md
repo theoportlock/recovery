@@ -1,8 +1,3 @@
-Figure 1 - Recovery
-    Delayed recovery
-Figure 2 - What influenced recovery
-    Preict recovery from baseline factors
-    sum abs SHAP for factors
 update to maaslin3
 Have to wait for humann download as the server is still down
 premature microbiome maturation
