@@ -93,8 +93,8 @@
 </node>
 <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
   <data key="d2">format_surveillance.py</data>
-  <data key="d3">-710.7318621160962</data>
-  <data key="d4">417.4755223532221</data>
+  <data key="d3">-724.4818621160962</data>
+  <data key="d4">427.4755223532222</data>
 </node>
 <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d2">merge.py \
@@ -119,13 +119,13 @@
 </node>
 <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
   <data key="d2">format_aa.py</data>
-  <data key="d3">-710.1193751147589</data>
-  <data key="d4">-518.0815270971474</data>
+  <data key="d3">-715.1193751147588</data>
+  <data key="d4">-518.0815270971473</data>
 </node>
 <node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
   <data key="d2">format_lipids.py</data>
-  <data key="d3">-709.949818507987</data>
-  <data key="d4">-487.45441527517283</data>
+  <data key="d3">-712.449818507987</data>
+  <data key="d4">-468.70441527517283</data>
 </node>
 <node id="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec">
   <data key="d2">format_fcis.py</data>
@@ -174,13 +174,13 @@
 </node>
 <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d2">format_humann.py</data>
-  <data key="d3">-708.545666400431</data>
-  <data key="d4">198.46863635442253</data>
+  <data key="d3">-719.7956664004312</data>
+  <data key="d4">197.21863635442253</data>
 </node>
 <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
   <data key="d2">format_metaphlan.py</data>
-  <data key="d3">-706.6877426713477</data>
-  <data key="d4">237.57790547825732</data>
+  <data key="d3">-714.1877426713478</data>
+  <data key="d4">242.57790547825735</data>
 </node>
 <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
   <data key="d2">format_kneaddata.py</data>
@@ -716,8 +716,8 @@ mefisto_load.py \
     results/cleaned/{}.tsv \
     -o results/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation</data>
-  <data key="d3">-506.6666666666667</data>
-  <data key="d4">356.66666666666674</data>
+  <data key="d3">-479.16666666666686</data>
+  <data key="d4">351.66666666666674</data>
 </node>
 <node id="8d8cf11c-7205-4a8e-9d70-af073634b2f6">
   <data key="d2"># Extract the first and second TP
@@ -884,9 +884,12 @@ mofa_microbiome.sh</data>
   <data key="d3">2732.5000000000005</data>
   <data key="d4">-1507.5000000000002</data>
 </node>
+<edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::ace6fac4-b2cc-4166-bf01-caf15f9fb091" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
 </edge>
+<edge source="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="format_headers.R results/mergedall.tsv results/">
   <data key="d6">74c915fe-4d3a-42d5-abbf-f37e97558611</data>
 </edge>
@@ -896,6 +899,7 @@ mofa_microbiome.sh</data>
 <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="box.py results/filtered/wolkes.tsv --meta results/timemeta.tsv -x timepoint -y vocalisation --hue Feed -o results/wolkes_vocalisation_box.svg">
   <data key="d6">39ea603d-0e16-41d0-879f-e5b7ad9c7ec8</data>
 </edge>
+<edge source="build_database.graphml::74aa7521-feec-4bf1-a785-ac5c2decb24e" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
   <data key="d6">5114d125-a31b-4960-a560-69aed8f77b4c</data>
 </edge>
@@ -922,9 +926,14 @@ mofa_microbiome.sh</data>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="92024ec7-33d5-4507-976e-8eec7faadc0e"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="7a113732-6455-4f0d-b805-fc6095b40ca3"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="16251459-1dc8-4168-bbff-cf463d8537aa"/>
+<edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::5e2b056b-286f-491e-ac96-9db3c3403aa4" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d6">fddab9f2-9b4a-4f73-9f7d-23863f458916</data>
 </edge>
+<edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d6">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
 </edge>
@@ -934,13 +943,26 @@ mofa_microbiome.sh</data>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
   <data key="d6">d47ed25e-0306-44a6-96cf-a0ff8e1703bf</data>
 </edge>
+<edge source="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="9780f658-26ff-4a9b-a03f-a57be3e04748"/>
+<edge source="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::5c1c37f2-4b00-4e6b-937d-d8cf348aa63f" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::7576a182-fecc-4d14-b02d-3bceb3d18783" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::3231bf1e-9cbc-4cf2-bc21-74ab8531f86c" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::c6a23125-3842-489c-8bc0-3449d7ddfdd9" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::8a22f8f7-4868-4738-b19d-08060da598c8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed">
   <data key="d6">35f6f931-f1bf-4d02-9db4-b8c32bd0b667</data>
 </edge>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="d4e4b648-4abc-47b1-b072-7227e8023ead">
   <data key="d6">b50ae894-d083-4589-8570-97dbe3281c08</data>
 </edge>
+<edge source="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d6">4d55fbaa-af27-45d3-8bf0-da50b534bdb9</data>
 </edge>
@@ -951,6 +973,7 @@ mofa_microbiome.sh</data>
 <edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d6">2075305e-f444-4eb5-8402-8012fd99d75f</data>
 </edge>
+<edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
   <data key="d6">fb337fd2-4079-4caa-99e4-2098f6e21c6c</data>
 </edge>
@@ -1045,10 +1068,12 @@ mofa_microbiome.sh</data>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="3548e4aa-0daf-4e68-8761-4c5913c3b4c9"/>
+<edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="24dc9ae9-dae8-4ff3-a633-d2f9d423e86e" target="3548e4aa-0daf-4e68-8761-4c5913c3b4c9"/>
 <edge source="7a113732-6455-4f0d-b805-fc6095b40ca3" target="a191959b-1acd-4594-8819-65c36f01f33c"/>
 <edge source="d067cb6d-c39b-470f-a95f-1e3376b4485f" target="87b776a3-432a-49ae-83c0-08282250f680"/>
 <edge source="3d58235e-84f0-46c0-99bc-5efd0d9837fa" target="4815ffa3-964e-4cf2-bb86-ad017eda51f0"/>
+<edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="8d8cf11c-7205-4a8e-9d70-af073634b2f6" target="d067cb6d-c39b-470f-a95f-1e3376b4485f"/>
 <edge source="8d8cf11c-7205-4a8e-9d70-af073634b2f6" target="c9e7aa36-1f16-4915-8a57-79777c653d79"/>
 <edge source="3548e4aa-0daf-4e68-8761-4c5913c3b4c9" target="8d8cf11c-7205-4a8e-9d70-af073634b2f6"/>
@@ -1061,6 +1086,7 @@ mofa_microbiome.sh</data>
 <edge source="381804b5-2751-4bfa-a604-3ed6ac4a0093" target="8b2a39a7-67e8-4468-9de1-9ea87df0f4f9"/>
 <edge source="c9e7aa36-1f16-4915-8a57-79777c653d79" target="49a148e5-9b57-4d77-9bf9-8cb5e2815fed"/>
 <edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="fdf3bffb-4faa-4e02-9648-6fcb003a022c"/>
+<edge source="433eced6-1e2d-43f9-924d-1f0853c388c5" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
 <edge source="fdf3bffb-4faa-4e02-9648-6fcb003a022c" target="d5fab4a7-7727-412e-8f4b-68b5f2c55bde"/>
 <edge source="d5fab4a7-7727-412e-8f4b-68b5f2c55bde" target="de8a1456-a712-476e-a226-4392529e88eb"/>
 </graph></graphml>
