@@ -39,8 +39,8 @@
     results/filtered/meta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-  <data key="d3">296.07589349129444</data>
-  <data key="d4">15.456597490231161</data>
+  <data key="d3">346.0758934912945</data>
+  <data key="d4">18.31374034737402</data>
   <data key="d5">ran</data>
 </node>
 <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
@@ -204,8 +204,8 @@ anthrotime.py</data>
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv</data>
-  <data key="d3">60.251372648706905</data>
-  <data key="d4">17.740565700407913</data>
+  <data key="d3">91.6799440772783</data>
+  <data key="d4">17.740565700407924</data>
   <data key="d5">ran</data>
 </node>
 <node id="bdb970b1-d724-4f80-a997-d993292f69fd">
@@ -580,13 +580,31 @@ mofa_microbiome.sh</data>
   <data key="d4">-1658.8571428571438</data>
 </node>
 <node id="433eced6-1e2d-43f9-924d-1f0853c388c5">
-  <data key="d2">parallel -j1 \
+  <data key="d2"># Remove 3yr control
+parallel -j1 \
+filter.py \
+  -q "~subjectID.str.startswith\(\'LCC3\'\)" \
+  results/cleaned/{}.tsv \
+  -o results/filtered/{}.tsv \
+&lt; conf/notimedatasets.txt
+
+parallel -j1 \
+filter.py \
+  -q "~sampleID.str.startswith\(\'LCC3\'\)" \
+  results/cleaned/{}.tsv \
+  -o results/filtered/{}.tsv \
+&lt; conf/timedatasets.txt
+
+filter.py \
+  -q "~subjectID.str.startswith('LCC3')" \
+  results/cleaned/meta.tsv \
+  -o results/filtered/{}.tsvparallel -j1 \
     remove_3yr_control.py \
         results/cleaned/{}.tsv \
         -o results/filtered/{}.tsv \
     &lt; conf/all_datasets.txt</data>
-  <data key="d3">-172.95000000000005</data>
-  <data key="d4">7.7000000000000455</data>
+  <data key="d3">-218.6642857142858</data>
+  <data key="d4">-156.58571428571423</data>
   <data key="d5">ran</data>
 </node>
 <node id="fdf3bffb-4faa-4e02-9648-6fcb003a022c">
@@ -630,14 +648,6 @@ importance_pie.py \
   <data key="d4">26.83116883116878</data>
   <data key="d5">ran</data>
 </node>
-<node id="83b7c831-62b4-4983-afce-ad4d81924460">
-  <data key="d2">remove_3yr_control.py \
-  results/cleaned/meta.tsv \
-  -o results/filtered/meta.tsv</data>
-  <data key="d3">-175.71428571428572</data>
-  <data key="d4">178.57142857142856</data>
-  <data key="d5">ran</data>
-</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
@@ -676,7 +686,6 @@ importance_pie.py \
 <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="83b7c831-62b4-4983-afce-ad4d81924460"/>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d6">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
 </edge>
@@ -781,5 +790,4 @@ importance_pie.py \
 <edge source="d5fab4a7-7727-412e-8f4b-68b5f2c55bde" target="de8a1456-a712-476e-a226-4392529e88eb"/>
 <edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4"/>
 <edge source="694c1739-f526-421a-a8ec-99152294abf4" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="83b7c831-62b4-4983-afce-ad4d81924460" target="3a9d83fc-9062-4367-a6e3-510564bf386b"/>
 </graph></graphml>
