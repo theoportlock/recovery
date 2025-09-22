@@ -26,5 +26,8 @@ joined = pd.concat(dfs, join='outer', axis=1).T.groupby(level=0).max().T
 #joined = joined.apply(zscore) Just removed this
 joined.index.name = 'subjectID'
 
+# Drop the EF score as not right
+joined = joined.drop(['EF_PRS'], axis=1)
+
 # Save
 joined.to_csv('results/cleaned/genetics.tsv', sep='\t')
