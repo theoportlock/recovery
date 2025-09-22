@@ -627,12 +627,12 @@ importance_pie.py \
 </node>
 <node id="694c1739-f526-421a-a8ec-99152294abf4">
   <data key="d2">alpha_diversity.py \
-  results/filtered/metaphlan.tsv \
+  results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
-  -o results/filtered/alpha_diversity.tsv</data>
+  -o results/cleaned/alpha_diversity.tsv</data>
   <data key="d3">40.753246753246714</data>
   <data key="d4">211.1168831168831</data>
-  <data key="d5">fail</data>
+  <data key="d5">ran</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
