@@ -26,13 +26,6 @@
   <data key="d3">1087.4215464214294</data>
   <data key="d4">29.752525629617423</data>
 </node>
-<node id="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed">
-  <data key="d2">calculate_diversity.sh \
-  results/cleaned/metaphlan.tsv \
-  results/cleaned/alpha_diversity.tsv</data>
-  <data key="d3">-590.0050428743714</data>
-  <data key="d4">50.802540940427434</data>
-</node>
 <node id="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d2">merge.py results/deltas/*.tsv \
   $(sed "s|^|filtered/|" conf/notimedatasets.txt) \
@@ -48,6 +41,7 @@
     -o results/filtered/timemeta.tsv</data>
   <data key="d3">296.07589349129444</data>
   <data key="d4">15.456597490231161</data>
+  <data key="d5">ran</data>
 </node>
 <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
   <data key="d2"># FIGURE 1B
@@ -189,8 +183,8 @@ anthrotime.py</data>
   --keep-parent \
   -l 't__' \
   -o results/cleaned/species.tsv</data>
-  <data key="d3">-592.3391675394967</data>
-  <data key="d4">132.21047504324645</data>
+  <data key="d3">-570.9105961109253</data>
+  <data key="d4">170.78190361467503</data>
 </node>
 <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
   <data key="d2">format_deliverysupp.py</data>
@@ -212,6 +206,7 @@ anthrotime.py</data>
   -o results/filtered/mapping.tsv</data>
   <data key="d3">60.251372648706905</data>
   <data key="d4">17.740565700407913</data>
+  <data key="d5">ran</data>
 </node>
 <node id="bdb970b1-d724-4f80-a997-d993292f69fd">
   <data key="d2">filter.py timemeta \
@@ -293,8 +288,9 @@ heatmap_alltimedata.py -d conf/timedatasets.txt</data>
 <node id="create_table1.py">
   <data key="d2"># TABLE 1
 create_table1.py results/refeed_summary.docx</data>
-  <data key="d3">719.827904665166</data>
-  <data key="d4">-2748.004249883547</data>
+  <data key="d3">817.327904665166</data>
+  <data key="d4">-2745.5042498835464</data>
+  <data key="d5">ran</data>
 </node>
 <node id="multiline.py --subject results/filtered/bayley.tsv --meta results/timemeta.tsv --x timepoint --y expressive_communication_score --hue Feed --id subjectID --output results/bayley_multiline.svg">
   <data key="d2">multiline.py \
@@ -621,8 +617,8 @@ importance_pie.py \
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
   <data key="d2">wget -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
-  <data key="d3">-656.0</data>
-  <data key="d4">958.0</data>
+  <data key="d3">-1566.0000000000002</data>
+  <data key="d4">616.5714285714284</data>
   <data key="d5">ran</data>
 </node>
 <node id="694c1739-f526-421a-a8ec-99152294abf4">
@@ -630,15 +626,22 @@ importance_pie.py \
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv</data>
-  <data key="d3">40.753246753246714</data>
-  <data key="d4">211.1168831168831</data>
+  <data key="d3">-507.81818181818187</data>
+  <data key="d4">26.83116883116878</data>
+  <data key="d5">ran</data>
+</node>
+<node id="83b7c831-62b4-4983-afce-ad4d81924460">
+  <data key="d2">remove_3yr_control.py \
+  results/cleaned/meta.tsv \
+  -o results/filtered/meta.tsv</data>
+  <data key="d3">-175.71428571428572</data>
+  <data key="d4">178.57142857142856</data>
   <data key="d5">ran</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
 </edge>
-<edge source="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40" target="format_headers.R results/mergedall.tsv results/">
   <data key="d6">74c915fe-4d3a-42d5-abbf-f37e97558611</data>
 </edge>
@@ -673,7 +676,7 @@ importance_pie.py \
 <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="83b7c831-62b4-4983-afce-ad4d81924460"/>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d6">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
 </edge>
@@ -694,27 +697,17 @@ importance_pie.py \
 <edge source="build_database.graphml::8a22f8f7-4868-4738-b19d-08060da598c8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="analysis.graphml::bda7daca-db68-4b6d-b7ad-4de89e60ebed">
-  <data key="d6">35f6f931-f1bf-4d02-9db4-b8c32bd0b667</data>
-</edge>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="d4e4b648-4abc-47b1-b072-7227e8023ead">
   <data key="d6">b50ae894-d083-4589-8570-97dbe3281c08</data>
 </edge>
+<edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="694c1739-f526-421a-a8ec-99152294abf4"/>
 <edge source="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-  <data key="d6">4d55fbaa-af27-45d3-8bf0-da50b534bdb9</data>
-</edge>
 <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="9fcf4732-486d-49fa-b99c-2e90a7bc15e9"/>
-<edge source="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-  <data key="d6">761a8484-4c71-4a67-95b1-5725d80fda2e</data>
-</edge>
-<edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-  <data key="d6">2075305e-f444-4eb5-8402-8012fd99d75f</data>
-</edge>
+<edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
+<edge source="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
+<edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
 <edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-  <data key="d6">fb337fd2-4079-4caa-99e4-2098f6e21c6c</data>
-</edge>
+<edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
 <edge source="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48" target="c22c2993-fbfb-461c-b462-80a4bd61e58e">
   <data key="d6">57f01424-2c84-4e51-9082-be85907deeef</data>
 </edge>
@@ -784,8 +777,9 @@ importance_pie.py \
 <edge source="1f6da997-a398-46b8-8875-223ebb4382a2" target="7a113732-6455-4f0d-b805-fc6095b40ca3"/>
 <edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="fdf3bffb-4faa-4e02-9648-6fcb003a022c"/>
 <edge source="433eced6-1e2d-43f9-924d-1f0853c388c5" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
-<edge source="433eced6-1e2d-43f9-924d-1f0853c388c5" target="694c1739-f526-421a-a8ec-99152294abf4"/>
 <edge source="fdf3bffb-4faa-4e02-9648-6fcb003a022c" target="d5fab4a7-7727-412e-8f4b-68b5f2c55bde"/>
 <edge source="d5fab4a7-7727-412e-8f4b-68b5f2c55bde" target="de8a1456-a712-476e-a226-4392529e88eb"/>
 <edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4"/>
+<edge source="694c1739-f526-421a-a8ec-99152294abf4" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="83b7c831-62b4-4983-afce-ad4d81924460" target="3a9d83fc-9062-4367-a6e3-510564bf386b"/>
 </graph></graphml>
