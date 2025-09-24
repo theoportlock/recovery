@@ -1,0 +1,3 @@
+name	metadata	formula	reference	cores	small_random_effects	normalization	transform	augment	standardize	max_significance	max_pngs	min_abundance	min_prevalence
+species	results/filtered/timemeta_MAM.tsv	~ timepoint * Feed * Recovery + (1|subjectID)	"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"	1	TRUE	TSS	LOG	TRUE	TRUE	0.1	50	0.001	0.1
+pathways	results/filtered/timemeta_MAM.tsv	~ timepoint * Feed * Recovery + (1|subjectID)	"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"	1	TRUE	TSS	LOG	TRUE	TRUE	0.1	50	0.001	0.1

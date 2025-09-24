@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="148.922812pt"
+   height="290.052187pt"
+   viewBox="0 0 148.922812 290.052187"
+   version="1.1"
+   id="svg97"
+   sodipodi:docname="tmp.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview97"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="2.0866935"
+     inkscape:cx="134.18358"
+     inkscape:cy="210.14107"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text_12" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2025-09-23T15:55:31.753827</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matplotlib v3.10.5, https://matplotlib.org/</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+  </defs>
+  <g
+     id="figure_1">
+    <g
+       id="patch_1">
+      <path
+         d="M 0 290.052187  L 148.922812 290.052187  L 148.922812 0  L 0 0  L 0 290.052187  z "
+         style="fill: none"
+         id="path1" />
+    </g>
+    <g
+       id="axes_1"
+       transform="translate(-0.50829707,-17.2821)">
+      <g
+         id="LineCollection_1">
+        <path
+           d="m 20.954,72.827294 h -0.540353 v 9.598118 H 20.954"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path2" />
+        <path
+           d="m 20.954,63.229176 h -2.07025 v 14.397177 h 1.529897"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path3" />
+        <path
+           d="M 20.954,53.631059 H 18.292596 V 70.427765 H 18.88375"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path4" />
+        <path
+           d="m 20.954,101.62165 h -0.328723 v 9.59811 H 20.954"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path5" />
+        <path
+           d="m 20.954,92.023529 h -0.81787 v 14.397181 h 0.489147"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path6" />
+        <path
+           d="M 20.954,120.81788 H 20.133963 V 130.416 H 20.954"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path7" />
+        <path
+           d="m 20.13613,99.222118 h -1.013382 v 26.394822 h 1.011215"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path8" />
+        <path
+           d="m 20.954,140.01412 h -1.78929 v 9.59811 H 20.954"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path9" />
+        <path
+           d="m 20.954,159.21035 h -0.776955 v 9.59812 H 20.954"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path10" />
+        <path
+           d="m 20.954,197.60282 h -0.308191 v 9.59812 H 20.954"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path11" />
+        <path
+           d="m 20.954,188.00471 h -0.480751 v 14.39717 h 0.17256"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path12" />
+        <path
+           d="m 20.954,178.40659 h -1.2979 v 16.7967 h 0.817149"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path13" />
+        <path
+           d="m 20.177045,164.00941 h -1.537271 v 22.79553 H 19.6561"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path14" />
+        <path
+           d="m 19.16471,144.81318 h -2.129493 v 30.594 h 1.604557"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path15" />
+        <path
+           d="m 19.122748,112.41953 h -5.078825 v 47.69065 h 2.991294"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path16" />
+        <path
+           d="m 18.292596,62.029412 h -7.009072 v 74.235438 h 2.760399"
+           clip-path="url(#p855521ca23)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path17" />
+      </g>
+    </g>
+    <g
+       id="axes_2">
+      <g
+         id="LineCollection_2" />
+    </g>
+    <g
+       id="axes_3">
+      <g
+         id="patch_2"
+         transform="translate(-0.50829707,-17.2821)">
+        <path
+           d="M 21.074,212 H 61.69 V 48.832 H 21.074 Z"
+           style="fill:none"
+           id="path20" />
+      </g>
+      <g
+         id="QuadMesh_1"
+         transform="translate(-0.50829707,-17.2821)">
+        <path
+           d="m 21.074,48.832 h 13.538667 v 9.598118 H 21.074 V 48.832"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#536edd"
+           id="path21" />
+        <path
+           d="m 34.612667,48.832 h 13.538666 v 9.598118 H 34.612667 V 48.832"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#3b4cc0"
+           id="path22" />
+        <path
+           d="M 48.151333,48.832 H 61.69 v 9.598118 H 48.151333 V 48.832"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#3b4cc0"
+           id="path23" />
+        <path
+           d="m 21.074,58.430118 h 13.538667 v 9.598117 H 21.074 v -9.598117"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#779af7"
+           id="path24" />
+        <path
+           d="m 34.612667,58.430118 h 13.538666 v 9.598117 H 34.612667 v -9.598117"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#688aef"
+           id="path25" />
+        <path
+           d="M 48.151333,58.430118 H 61.69 v 9.598117 H 48.151333 v -9.598117"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#a1c0ff"
+           id="path26" />
+        <path
+           d="m 21.074,68.028235 h 13.538667 v 9.598118 H 21.074 v -9.598118"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#465ecf"
+           id="path27" />
+        <path
+           d="m 34.612667,68.028235 h 13.538666 v 9.598118 H 34.612667 v -9.598118"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#688aef"
+           id="path28" />
+        <path
+           d="M 48.151333,68.028235 H 61.69 v 9.598118 H 48.151333 v -9.598118"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#688aef"
+           id="path29" />
+        <path
+           d="m 21.074,77.626353 h 13.538667 v 9.598118 H 21.074 v -9.598118"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#5673e0"
+           id="path30" />
+        <path
+           d="m 34.612667,77.626353 h 13.538666 v 9.598118 H 34.612667 v -9.598118"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#688aef"
+           id="path31" />
+        <path
+           d="M 48.151333,77.626353 H 61.69 v 9.598118 H 48.151333 v -9.598118"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#688aef"
+           id="path32" />
+        <path
+           d="m 21.074,87.224471 h 13.538667 v 9.598117 H 21.074 v -9.598117"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d95847"
+           id="path33" />
+        <path
+           d="m 34.612667,87.224471 h 13.538666 v 9.598117 H 34.612667 v -9.598117"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d85646"
+           id="path34" />
+        <path
+           d="M 48.151333,87.224471 H 61.69 v 9.598117 H 48.151333 v -9.598117"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d85646"
+           id="path35" />
+        <path
+           d="m 21.074,96.822588 h 13.538667 v 9.598122 H 21.074 v -9.598122"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d75445"
+           id="path36" />
+        <path
+           d="m 34.612667,96.822588 h 13.538666 v 9.598122 H 34.612667 v -9.598122"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e9785d"
+           id="path37" />
+        <path
+           d="M 48.151333,96.822588 H 61.69 v 9.598122 H 48.151333 v -9.598122"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e9785d"
+           id="path38" />
+        <path
+           d="m 21.074,106.42071 h 13.538667 v 9.59811 H 21.074 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#dd5f4b"
+           id="path39" />
+        <path
+           d="m 34.612667,106.42071 h 13.538666 v 9.59811 H 34.612667 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e57058"
+           id="path40" />
+        <path
+           d="M 48.151333,106.42071 H 61.69 v 9.59811 H 48.151333 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e57058"
+           id="path41" />
+        <path
+           d="m 21.074,116.01882 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d24b40"
+           id="path42" />
+        <path
+           d="m 34.612667,116.01882 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#b40426"
+           id="path43" />
+        <path
+           d="M 48.151333,116.01882 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#b40426"
+           id="path44" />
+        <path
+           d="m 21.074,125.61694 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c53334"
+           id="path45" />
+        <path
+           d="m 34.612667,125.61694 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c53334"
+           id="path46" />
+        <path
+           d="M 48.151333,125.61694 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c53334"
+           id="path47" />
+        <path
+           d="m 21.074,135.21506 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f7b497"
+           id="path48" />
+        <path
+           d="m 34.612667,135.21506 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f7ba9f"
+           id="path49" />
+        <path
+           d="M 48.151333,135.21506 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f7ba9f"
+           id="path50" />
+        <path
+           d="m 21.074,144.81318 h 13.538667 v 9.59811 H 21.074 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#ebd3c6"
+           id="path51" />
+        <path
+           d="m 34.612667,144.81318 h 13.538666 v 9.59811 H 34.612667 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f49a7b"
+           id="path52" />
+        <path
+           d="M 48.151333,144.81318 H 61.69 v 9.59811 H 48.151333 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f49a7b"
+           id="path53" />
+        <path
+           d="m 21.074,154.41129 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e2dad5"
+           id="path54" />
+        <path
+           d="m 34.612667,154.41129 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e5d8d1"
+           id="path55" />
+        <path
+           d="M 48.151333,154.41129 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e5d8d1"
+           id="path56" />
+        <path
+           d="m 21.074,164.00941 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#e4d9d2"
+           id="path57" />
+        <path
+           d="m 34.612667,164.00941 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f0cdbb"
+           id="path58" />
+        <path
+           d="M 48.151333,164.00941 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#f0cdbb"
+           id="path59" />
+        <path
+           d="m 21.074,173.60753 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d6dce4"
+           id="path60" />
+        <path
+           d="m 34.612667,173.60753 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d5dbe5"
+           id="path61" />
+        <path
+           d="M 48.151333,173.60753 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#d5dbe5"
+           id="path62" />
+        <path
+           d="m 21.074,183.20565 h 13.538667 v 9.59811 H 21.074 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c1d4f4"
+           id="path63" />
+        <path
+           d="m 34.612667,183.20565 h 13.538666 v 9.59811 H 34.612667 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#bfd3f6"
+           id="path64" />
+        <path
+           d="M 48.151333,183.20565 H 61.69 v 9.59811 H 48.151333 v -9.59811"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#bfd3f6"
+           id="path65" />
+        <path
+           d="m 21.074,192.80376 h 13.538667 v 9.59812 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#bbd1f8"
+           id="path66" />
+        <path
+           d="m 34.612667,192.80376 h 13.538666 v 9.59812 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c7d7f0"
+           id="path67" />
+        <path
+           d="M 48.151333,192.80376 H 61.69 v 9.59812 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c7d7f0"
+           id="path68" />
+        <path
+           d="M 21.074,202.40188 H 34.612667 V 212 H 21.074 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#b2ccfb"
+           id="path69" />
+        <path
+           d="M 34.612667,202.40188 H 48.151333 V 212 H 34.612667 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c4d5f3"
+           id="path70" />
+        <path
+           d="M 48.151333,202.40188 H 61.69 V 212 H 48.151333 v -9.59812"
+           clip-path="url(#pc787ccead4)"
+           style="fill:#c4d5f3"
+           id="path71" />
+      </g>
+      <g
+         id="matplotlib.axis_1"
+         transform="translate(-0.50829707,-17.2821)">
+        <g
+           id="xtick_1">
+          <g
+             id="line2d_1">
+            <defs
+               id="defs71">
+              <path
+                 id="mbc14023192"
+                 d="M 0,0 V 2"
+                 style="stroke:#000000;stroke-width:0.4" />
+            </defs>
+            <g
+               id="g71">
+              <use
+                 xlink:href="#mbc14023192"
+                 x="27.843332"
+                 y="212"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use71" />
+            </g>
+          </g>
+          <g
+             id="text_1">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif"
+               transform="rotate(-90,156.12401,126.72818)"
+               id="text71">Rice-Lentil RUSF (100g)</text>
+          </g>
+        </g>
+        <g
+           id="xtick_2">
+          <g
+             id="line2d_2">
+            <g
+               id="g72">
+              <use
+                 xlink:href="#mbc14023192"
+                 x="41.382"
+                 y="212"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use72" />
+            </g>
+          </g>
+          <g
+             id="text_2">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif"
+               transform="rotate(-90,157.39303,114.45853)"
+               id="text72">Plumpy™Nut (100g)</text>
+          </g>
+        </g>
+        <g
+           id="xtick_3">
+          <g
+             id="line2d_3">
+            <g
+               id="g73">
+              <use
+                 xlink:href="#mbc14023192"
+                 x="54.920666"
+                 y="212"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use73" />
+            </g>
+          </g>
+          <g
+             id="text_3">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif"
+               transform="rotate(-90,156.15705,99.683885)"
+               id="text73">eRUTF (100g)</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="matplotlib.axis_2">
+        <g
+           id="ytick_1"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_4">
+            <defs
+               id="defs73">
+              <path
+                 id="m86b67471b7"
+                 d="M 0,0 H 2"
+                 style="stroke:#000000;stroke-width:0.4" />
+            </defs>
+            <g
+               id="g74">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="53.631058"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use74" />
+            </g>
+          </g>
+          <g
+             id="text_4">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="55.814964"
+               id="text74">Vitamin B1 (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_2"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_5">
+            <g
+               id="g75">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="63.229176"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use75" />
+            </g>
+          </g>
+          <g
+             id="text_5">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="65.413086"
+               id="text75">Total fibers (g)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_3"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_6">
+            <g
+               id="g76">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="72.827293"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use76" />
+            </g>
+          </g>
+          <g
+             id="text_6">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="75.0112"
+               id="text76">Copper (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_4"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_7">
+            <g
+               id="g77">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="82.425415"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use77" />
+            </g>
+          </g>
+          <g
+             id="text_7">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="84.609322"
+               id="text77">Vitamin B2 (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_5"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_8">
+            <g
+               id="g78">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="92.023529"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use78" />
+            </g>
+          </g>
+          <g
+             id="text_8">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="94.207436"
+               id="text78">Total energy (kcal)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_6"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_9">
+            <g
+               id="g79">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="101.62165"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use79" />
+            </g>
+          </g>
+          <g
+             id="text_9">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="103.80555"
+               id="text79">Calcium (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_7"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_10">
+            <g
+               id="g80">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="111.21976"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use80" />
+            </g>
+          </g>
+          <g
+             id="text_10">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="113.40367"
+               id="text80">Phosphorus (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_8"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_11">
+            <g
+               id="g81">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="120.81788"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use81" />
+            </g>
+          </g>
+          <g
+             id="text_11">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="123.00179"
+               id="text81">Potassium (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_9">
+          <g
+             id="line2d_12"
+             transform="translate(-0.50829707,-17.2821)">
+            <g
+               id="g82">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="130.416"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use82" />
+            </g>
+          </g>
+          <g
+             id="text_12">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="66.681702"
+               y="115.83297"
+               id="text82">Vitamin A / Retinol (µg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_10"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_13">
+            <g
+               id="g83">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="140.01411"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use83" />
+            </g>
+          </g>
+          <g
+             id="text_13">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="142.19803"
+               id="text83">Magnesium (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_11"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_14">
+            <g
+               id="g84">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="149.61223"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use84" />
+            </g>
+          </g>
+          <g
+             id="text_14">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="151.79614"
+               id="text84">Sodium (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_12"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_15">
+            <g
+               id="g85">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="159.21036"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use85" />
+            </g>
+          </g>
+          <g
+             id="text_15">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="161.39426"
+               id="text85">Lipids (g)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_13"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_16">
+            <g
+               id="g86">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="168.80847"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use86" />
+            </g>
+          </g>
+          <g
+             id="text_16">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="170.99237"
+               id="text86">Vitamin C (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_14"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_17">
+            <g
+               id="g87">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="178.40659"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use87" />
+            </g>
+          </g>
+          <g
+             id="text_17">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="180.5905"
+               id="text87">Vitamin E (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_15"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_18">
+            <g
+               id="g88">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="188.0047"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use88" />
+            </g>
+          </g>
+          <g
+             id="text_18">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="190.18861"
+               id="text88">Iron (mg)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_16"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_19">
+            <g
+               id="g89">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="197.60283"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use89" />
+            </g>
+          </g>
+          <g
+             id="text_19">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="199.78673"
+               id="text89">Proteins (g)</text>
+          </g>
+        </g>
+        <g
+           id="ytick_17"
+           transform="translate(-0.50829707,-17.2821)">
+          <g
+             id="line2d_20">
+            <g
+               id="g90">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="61.689999"
+                 y="207.20094"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use90" />
+            </g>
+          </g>
+          <g
+             id="text_20">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="67.190002"
+               y="209.38484"
+               id="text90">Zinc (mg)</text>
+          </g>
+        </g>
+        <g
+           id="text_21"
+           transform="translate(-0.50829707,-17.2821)">
+          <text
+             style="font-size:6px;font-family:Arial, sans-serif;text-anchor:middle"
+             x="140.53032"
+             y="130.416"
+             transform="rotate(-90,140.53031,130.416)"
+             id="text91">Nutrient</text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="axes_4"
+       transform="translate(70.297503,195.85414)">
+      <g
+         id="patch_3">
+        <path
+           d="m 7.2,59.04 h 7.2 V 7.2 H 7.2 Z"
+           style="fill:none"
+           id="path91" />
+      </g>
+      <image
+         xlink:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADwAAAGwCAYAAAD1+QZlAAADgUlEQVR4nO2ai23EMAzF7EBbdYUO3b2ujbtFApDkBDHeR7Lv9tf3z1kirrc/4GlmX64zz77229/wKC5511qzt+vMrtOuMszHN5auLM2msURHN5Z0Le067RJa2qfwJRtLWZpOCtPR7dJZms5c7dJsZm9XhistOilMR3c9dJ12CTOsO7DQ0rJNy6ew7efSfmqhU2nR0S0eupYWWrrSYiMsrSzNRmfpFKbTHKbTLk2nDNPxjSXZebM0nhSm0wMAHZ2lhQq7BO56iKfrIR3d4jGy/5YKLV1pwdEtHrrV0mfprodwepemo1s8Rvb/8CyNR6iw7Mi6Fw+Zvt2W+OgU1r14ZGk6PoVlEe5NC0+lRUdYWrIDCy0tO7LsuGWYj+5dWjeHjZZ++xOeJYXptGnR0Vnap7Bt8cjSdFKYTqVFx2fpvc/b3/AoPoUrLTg+S6cwnLkaS2x0GdYd2Gdp26blU3gv11iqtOhUWnR0TzyVFp25ZHPYp7Atw7qW9lm6TQtO10M6Qks3lti0S9PRtXSlRUe3afkUtt2WsjSdxhIdXYazNJ2xndh2Xl+GdS2dpekIFZZlOEvT0Vnap3A/tcDRtXSlRSeF6egU1rV0lqaTwnR0B87SdIwK329/w6O0adGZfVIYjW4szT6uls7SdIQKl2E2ugxnaTo6SwsVlt2WKi06lRYdXYZ1LS20tOwh3qfwkmVY19I+S7dpwdFlWNfSWZqOUeEyjGaWLMOVFp12aTrG0srSaHSWNirsynCbFh2dpX0K2zLcHKbTLk1n1u3KcHOYTmOJTmOJji7DugP7LF1pwWmXpiO0dGOJjS7DupY2WjqF0VRadLI0HaPCrgzPurM0Gp2lhQq3eLDRLR6VFp0WDzpzZBnO0nQaS3TmyHZp3Wrps3TXQzi6DOtaWmjpdmk2XQ/p+Czd9RDOnDLMRndbmiO7PGRpOj6FbWOpTYuOztJGhV0Z7gGAju5NS6iwLMNdHujoLG1U2JXh3rToNJboNJbo6BTWzeEsTceosCvDWZqO7u/DPoUrLThZmo5RYVeGdQc2WrrSQqPL8Nx/rgMbLV1podGVVgrT0R3YaOnGEhpdhtul6egsbVTYNZayNJ3GEh1dhnUtLbR0pcVGN5Z0LZ2l6fgUPn8tHmh0LV1p0WmXpjP3r0vhOR/XgbM0HZ/CtgxnaTpzPl0P0egyrGtpnaX/AaucWUp+u5raAAAAAElFTkSuQmCC"
+         id="imagedcb1110877"
+         transform="matrix(1,0,0,-1,0,51.84)"
+         x="7.1999998"
+         y="-7.1999998"
+         width="7.1999998"
+         height="51.84" />
+      <g
+         id="matplotlib.axis_3" />
+      <g
+         id="matplotlib.axis_4">
+        <g
+           id="ytick_18">
+          <g
+             id="line2d_21">
+            <g
+               id="g91">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="14.4"
+                 y="54.458073"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use91" />
+            </g>
+          </g>
+          <g
+             id="text_22">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="19.9"
+               y="56.605415"
+               id="text92">0</text>
+          </g>
+        </g>
+        <g
+           id="ytick_19">
+          <g
+             id="line2d_22">
+            <g
+               id="g92">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="14.4"
+                 y="41.237427"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use92" />
+            </g>
+          </g>
+          <g
+             id="text_23">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="19.9"
+               y="43.384769"
+               id="text93">2</text>
+          </g>
+        </g>
+        <g
+           id="ytick_20">
+          <g
+             id="line2d_23">
+            <g
+               id="g93">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="14.4"
+                 y="28.016779"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use93" />
+            </g>
+          </g>
+          <g
+             id="text_24">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="19.9"
+               y="30.164122"
+               id="text94">4</text>
+          </g>
+        </g>
+        <g
+           id="ytick_21">
+          <g
+             id="line2d_24">
+            <g
+               id="g94">
+              <use
+                 xlink:href="#m86b67471b7"
+                 x="14.4"
+                 y="14.796132"
+                 style="stroke:#000000;stroke-width:0.4"
+                 id="use94" />
+            </g>
+          </g>
+          <g
+             id="text_25">
+            <text
+               style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start"
+               x="19.9"
+               y="16.943476"
+               id="text95">6</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="LineCollection_3" />
+      <g
+         id="patch_4">
+        <path
+           d="m 7.2,59.04 h 3.6 3.6 V 7.2 H 10.8 7.2 Z"
+           style="fill:none"
+           id="path95" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:6px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#0e232e;stroke-width:0.4;stroke-dashoffset:9.31138"
+       x="134.27431"
+       y="231.43675"
+       id="text97"><tspan
+         sodipodi:role="line"
+         id="tspan97"
+         style="font-size:6px;stroke-width:0.4"
+         x="134.27431"
+         y="231.43675">Log2(amount)</tspan></text>
+  </g>
+  <defs
+     id="defs97">
+    <clipPath
+       id="p855521ca23">
+      <rect
+         x="10.8"
+         y="48.832"
+         width="10.154"
+         height="163.168"
+         id="rect95" />
+    </clipPath>
+    <clipPath
+       id="p82192ab156">
+      <rect
+         x="21.074"
+         y="7.92"
+         width="40.616"
+         height="40.792"
+         id="rect96" />
+    </clipPath>
+    <clipPath
+       id="pc787ccead4">
+      <rect
+         x="21.074"
+         y="48.832"
+         width="40.616"
+         height="163.168"
+         id="rect97" />
+    </clipPath>
+  </defs>
+</svg>
