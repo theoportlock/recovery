@@ -333,73 +333,8 @@ create_table1.py results/refeed_summary.docx</data>
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
   --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
-  <data key="d3">1579.6432323431977</data>
-  <data key="d4">-1126.8064436206798</data>
-</node>
-<node id="node87">
-  <data key="d2">docker run -it \
-  -v "$(pwd)":/work \
-  -w /work \
-  maaslin3-cli \
-  results/filtered/species.tsv \
-  results/timemeta_yr1_yr2.tsv \
-  results/maaslin/species_m3 \
-  --formula='~ timepoint * Feed * Recovery + (1|subjectID)' \
-  --reference='Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1' \
-  --cores 1 \
-  --small_random_effects TRUE \
-  --normalization='TSS' \
-  --transform='LOG' \
-  --augment TRUE \
-  --standardize TRUE \
-  --max_significance 0.1 \
-  --max_pngs 100 \
-  --min_abundance 0.001 \
-  --min_prevalence 0.1</data>
-  <data key="d3">2623.313590257646</data>
-  <data key="d4">-619.5818369329103</data>
-</node>
-<node id="f8f4ce11-30d4-4565-8ab5-5637788a6c85">
-  <data key="d2">docker run -it \
-  -v "$(pwd)":/work \
-  -w /work \
-  maaslin3-cli \
-  results/filtered/pathways.tsv \
-  results/timemeta_yr1_yr2.tsv \
-  results/maaslin/pathways_m3 \
-  --formula='~ timepoint * Feed * Recovery + (1|subjectID)' \
-  --reference='Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1' \
-  --cores 1 \
-  --small_random_effects TRUE \
-  --normalization='TSS' \
-  --transform='LOG' \
-  --augment TRUE \
-  --standardize TRUE \
-  --max_significance 0.2 \
-  --max_pngs 100</data>
-  <data key="d3">3731.908651133046</data>
-  <data key="d4">-581.4056101176254</data>
-</node>
-<node id="0753278f-dd3f-4038-b368-456f21eab748">
-  <data key="d2">docker run -it \
-  -v "$(pwd)":/work \
-  -w /work \
-  maaslin3-cli \
-  results/filtered/alpha_diversity.tsv \
-  results/timemeta_yr1_yr2.tsv \
-  results/maaslin/alpha_diversity_m3 \
-  --formula '~ timepoint * Feed * Recovery + (1|subjectID)' \
-  --reference 'Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1' \
-  --cores 1 \
-  --small_random_effects TRUE \
-  --normalization=TSS \
-  --transform=LOG \
-  --augment TRUE \
-  --standardize TRUE \
-  --max_significance 0.2 \
-  --max_pngs 100</data>
-  <data key="d3">3186.0044061697204</data>
-  <data key="d4">-586.7491526138258</data>
+  <data key="d3">1799.6432323431977</data>
+  <data key="d4">-1366.8064436206798</data>
 </node>
 <node id="0023bd01-aafc-415b-8548-ec81bebf1f23">
   <data key="d2">for f in $(cat conf/timedatasets.txt); do
@@ -503,8 +438,8 @@ for f in $(cat conf/all_datasets.txt); do
     results/filtered/${f}.tsv \
     -o results/scaled/${f}.tsv
 done</data>
-  <data key="d3">1631.1169771360562</data>
-  <data key="d4">-1436.884359468676</data>
+  <data key="d3">1809.1169771360562</data>
+  <data key="d4">-1002.8843594686759</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
   <data key="d2">scale.py log \
