@@ -1,23 +1,32 @@
-update to maaslin3
-Have to wait for humann download as the server is still down
-premature microbiome maturation
-Mixed model for WLZ as per https://www.science.org/doi/epdf/10.1126/scitranslmed.adn2366
-Recovery time
+# Throughout
+Maaslin3 for all datasets - baseline, delta, yr2 and longitudinal - sigsummary
+Supp tables include
+Are the baseline predictors more likely to be changing towards a healthy direction?
+Check with other paper from Chucks group
+    Mixed model for WLZ as per https://www.science.org/doi/epdf/10.1126/scitranslmed.adn2366
     Multivariable Cox proportional hazard analysis was conducted to assess the association between time to recovery and the type of therapeutic food, controlling for the confounding variables.
     https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-023-04168-x?utm_source=chatgpt.com
     The confounding variables include socio-demographic variables (age, sex, and residence of the child), the presenting symptoms, comorbid illnesses, immunization status, medications and nutritional supplements. A full examination, including the grade of edema, dehydration status, skin changes, and vital signs (respiratory rate, pulse rate, and temperature) was performed by the data collectors. Stool examination and hematocrit count were checked from the laboratory report in the medical history sheet.
-Make Figure 3
-Fix Figure 4 so it's readable
-Figure 5 needs the proper anthroplot timelines
-    with the gamma waves
-newplotbar plotbar - merge
-plotrecover - simplify with polar.py
-simplecorr - consider removing
-Sort out sustainedrecovery.py and timetorecovery.py
-sigsummary
-Stuart Mcnaughton nad vincent ward - EEG and christopher Erb
-multiprediction based on baseline only, all timepoints, and deltas
-other datasets: 04 LEAP mother enromlent info, Eligibility - Language Difficulty or Delay in q8d - also depression - some flaws in this
-SHAP insensitive to model choice, check
+
+0. patient demographics
 Use pandoc on tables to make pdf
-Rerun the Nextflow pipeline with a longer Humann database download - start with download on liggins and transfer
+
+1. Recovery stats
+
+2. Baseline influences of recovery - forcasting
+SHAP insensitive to model choice, check
+
+3. Are the changes moving more healthy?
+Premature microbiome maturation
+Remake polar and check approach
+Need to include the multiline plots to confirm here
+
+4. Twins
+How do the factors in earlier part correlate (compare polars)
+
+# other
+Not going to remake the humann4
+newplotbar plotbar - merge
+simplecorr - consider removing
+other datasets: 04 LEAP mother enromlent info, Eligibility - Language Difficulty or Delay in q8d - also depression - some flaws in this
+

@@ -1,3 +1,23 @@
-name	metadata	formula	reference	cores	small_random_effects	normalization	transform	augment	standardize	max_significance	max_pngs	min_abundance	min_prevalence
-species	results/filtered/timemeta_MAM.tsv	~ timepoint * Feed * Recovery + (1|subjectID)	"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"	1	TRUE	TSS	LOG	TRUE	TRUE	0.1	50	0.001	0.1
-pathways	results/filtered/timemeta_MAM.tsv	~ timepoint * Feed * Recovery + (1|subjectID)	"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"	1	TRUE	TSS	LOG	TRUE	TRUE	0.1	50	0.001	0.1
+data	metadata	formula	fixed_effects	reference	random_effects	group_effects	ordered_effects	strata_effects	feature_specific_covariate	feature_specific_covariate_name	feature_specific_covariate_record	min_abundance	min_prevalence	zero_threshold	min_variance	max_significance	normalization	transform	correction	standardize	unscaled_abundance	median_comparison_abundance	median_comparison_prevalence	median_comparison_abundance_threshold	median_comparison_prevalence_threshold	subtract_median	warn_prevalence	small_random_effects	augment	evaluate_only	plot_summary_plot	summary_plot_first_n	coef_plot_vars	heatmap_vars	plot_associations	max_pngs	cores	save_models	save_plots_rds	summary_plot_balanced
+economics	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+education	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+family	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+genetics	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+household	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+media_consumption	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+pots	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+surveillance	meta_MAM	~ Feed + Recovery		"Feed,Local RUSF (A);Recovery,No recovery"								0	0			0.1	NONE	NONE									FALSE			abundance						100	1			
+aa	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+alpha_diversity	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+anthro	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+fcis	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+glitter	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+head	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+lipids	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+pathways	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	TSS	LOG									FALSE	TRUE								100	1			
+pci	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+pss	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+sleep	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+species	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0.2			0.1	TSS	LOG									FALSE	TRUE								100	1			
+vitamin	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			
+wolkes	timemeta_MAM_0_52tp	~ timepoint*(Feed + Recovery) + (1|subjectID)		"Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"								0	0			0.1	NONE	NONE									FALSE	TRUE		abundance						100	1			

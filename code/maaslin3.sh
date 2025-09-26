@@ -19,11 +19,14 @@ tail -n +2 "$CONFIG_TSV" | while IFS=$'\t' read -r \
 do
   echo ">>> Running MaAsLin3 for dataset: $name"
   echo $INPUT_DIR/$name
+  mkdir -p $OUTPUT_DIR/$name
 
-  docker run \
-    -v "$(pwd)":/work \
-    -w /work \
-    maaslin3-cli \
+  #docker run \
+  #  -v "$(pwd)":/work \
+  #  -w /work \
+  #  maaslin3-cli \
+
+  Rscript maaslin3/R/maaslin3.R \
     $INPUT_DIR/$name.tsv \
     $metadata \
     $OUTPUT_DIR/$name \

@@ -55,18 +55,6 @@ anthrotime.py</data>
   <data key="d3">-789.3262081601235</data>
   <data key="d4">-185.39155479003466</data>
 </node>
-<node id="analysis.graphml::5e2b056b-286f-491e-ac96-9db3c3403aa4">
-  <data key="d2">parallel -j1 'Maaslin2.R \
-  results/filtered/{}.tsv \
-  results/timemeta_MAM.tsv \
-  results/maaslin/{} \
-  -f "timepoint,Recovery,Feed" \
-  -r "subjectID" \
-  -d "Recovery,No recovery;Feed,Local RUSF (A)"' \
-  &lt; conf/timedatasets.txt</data>
-  <data key="d3">1602.225959408823</data>
-  <data key="d4">-611.4320916483358</data>
-</node>
 <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
   <data key="d2">format_sleep.py</data>
   <data key="d3">-788.8331697097194</data>
@@ -90,8 +78,8 @@ anthrotime.py</data>
   results/cleaned/bfpob.tsv \
   -j outer \
   -o results/cleaned/meta.tsv</data>
-  <data key="d3">-422.2739533522197</data>
-  <data key="d4">424.14292012973897</data>
+  <data key="d3">-365.6072866855531</data>
+  <data key="d4">425.8095867964056</data>
 </node>
 <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
   <data key="d2">format_microbiome_samplesheet.py</data>
@@ -130,8 +118,8 @@ anthrotime.py</data>
 </node>
 <node id="build_database.graphml::5c1c37f2-4b00-4e6b-937d-d8cf348aa63f">
   <data key="d2">format_pots.py</data>
-  <data key="d3">-789.1871899682549</data>
-  <data key="d4">-68.9085787783655</data>
+  <data key="d3">-782.5205233015884</data>
+  <data key="d4">151.09142122163453</data>
 </node>
 <node id="build_database.graphml::7576a182-fecc-4d14-b02d-3bceb3d18783">
   <data key="d2">format_bayley.py</data>
@@ -150,8 +138,8 @@ anthrotime.py</data>
 </node>
 <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d2">format_humann.py</data>
-  <data key="d3">-795.7956664004312</data>
-  <data key="d4">28.21863635442253</data>
+  <data key="d3">-797.4623330670977</data>
+  <data key="d4">21.551969687755843</data>
 </node>
 <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
   <data key="d2">format_metaphlan.py</data>
@@ -160,13 +148,14 @@ anthrotime.py</data>
 </node>
 <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
   <data key="d2">format_kneaddata.py</data>
-  <data key="d3">-795.7182493769656</data>
-  <data key="d4">-9.890262331367694</data>
+  <data key="d3">-800.7182493769658</data>
+  <data key="d4">-21.556928998034362</data>
 </node>
 <node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
   <data key="d2">format_ses.py</data>
   <data key="d3">-662.2235590714874</data>
   <data key="d4">440.48285821277886</data>
+  <data key="d5">ran</data>
 </node>
 <node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
   <data key="d2">format_feedsandrecovery.py</data>
@@ -184,8 +173,8 @@ anthrotime.py</data>
   --keep-parent \
   -l 't__' \
   -o results/cleaned/species.tsv</data>
-  <data key="d3">-509.5469597472889</data>
-  <data key="d4">127.60008543285693</data>
+  <data key="d3">-502.88029308062204</data>
+  <data key="d4">-124.06658123380976</data>
 </node>
 <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
   <data key="d2">format_deliverysupp.py</data>
@@ -217,25 +206,14 @@ anthrotime.py</data>
   <data key="d4">-510.41984160222705</data>
   <data key="d5">ran</data>
 </node>
-<node id="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt">
-  <data key="d2">parallel -j1 'Maaslin2.R \
-  results/filtered/{}.tsv \
-  results/meta_MAM.tsv \
-  results/maaslin/{} \
-  -f "Recovery,Feed" \
-  -r "subjectID" \
-  -d "Recovery,No recovery;Feed,Local RUSF (A)"' \
-  &lt; conf/notimedatasets.txt</data>
-  <data key="d3">1605.7646052891198</data>
-  <data key="d4">-426.01002676664837</data>
-</node>
 <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d2">parallel -j1 \
   cp results/maaslin/{}/all_results.tsv \
   results/change/{} \
   &lt; conf/alldatasets.txt</data>
-  <data key="d3">1956.150817236164</data>
-  <data key="d4">-470.31163776216</data>
+  <data key="d3">2090.484150569497</data>
+  <data key="d4">-452.9783044288267</data>
+  <data key="d5">fail</data>
 </node>
 <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
   <data key="d2">parallel -j1 pcoa.py \
@@ -257,8 +235,9 @@ spindle.py
   -o allchange \
   --append \
   --add-filename</data>
-  <data key="d3">2308.01400899903</data>
-  <data key="d4">-469.0491124792804</data>
+  <data key="d3">2434.01400899903</data>
+  <data key="d4">-475.04911247928044</data>
+  <data key="d5">fail</data>
 </node>
 <node id="28e36837-7b64-46b7-8612-251d72825bd1">
   <data key="d2">mkdir -p \
@@ -325,16 +304,17 @@ create_table1.py results/refeed_summary.docx</data>
   -q 'Condition == "MAM"' \
   -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
   -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
-  <data key="d3">1008.6462161622438</data>
-  <data key="d4">-1236.7894160330616</data>
+  <data key="d3">930.3128828289106</data>
+  <data key="d4">-1110.122749366395</data>
+  <data key="d5">ran</data>
 </node>
 <node id="node86">
   <data key="d2">replace.py \
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
   --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
-  <data key="d3">1799.6432323431977</data>
-  <data key="d4">-1366.8064436206798</data>
+  <data key="d3">1837.6432323431977</data>
+  <data key="d4">-1350.8064436206798</data>
 </node>
 <node id="0023bd01-aafc-415b-8548-ec81bebf1f23">
   <data key="d2">for f in $(cat conf/timedatasets.txt); do
@@ -345,8 +325,8 @@ create_table1.py results/refeed_summary.docx</data>
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d3">2159.1179467219395</data>
-  <data key="d4">-1169.1126135667246</data>
+  <data key="d3">2107.6179467219395</data>
+  <data key="d4">-1204.6126135667248</data>
 </node>
 <node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
   <data key="d2">for tp in yr1 yr2; do
@@ -359,8 +339,8 @@ done</data>
         -o results/rda/${tp}/${f}.tsv
     done
 done</data>
-  <data key="d3">2637.4726195598414</data>
-  <data key="d4">-1337.5075625643694</data>
+  <data key="d3">2575.4726195598414</data>
+  <data key="d4">-1369.5075625643694</data>
 </node>
 <node id="8213bd4f-8cf5-4af0-b058-3e4e2f810e78">
   <data key="d2">for f in $(cat conf/notimedatasets.txt); do \
@@ -371,8 +351,8 @@ done</data>
     -f 'Sex,Ethnicity,Feed,Recovery,Delivery_Mode,Supplementation,BF,PoB' \
     -o results/rda/notp/${f}.tsv
 done</data>
-  <data key="d3">2637.221710468926</data>
-  <data key="d4">-1069.7073763825538</data>
+  <data key="d3">2547.221710468926</data>
+  <data key="d4">-1055.7073763825538</data>
 </node>
 <node id="8727268b-1b5b-4c92-9768-cbe389f6984f">
   <data key="d2">for set in yr1 yr2 notp ; do \
@@ -438,15 +418,15 @@ for f in $(cat conf/all_datasets.txt); do
     results/filtered/${f}.tsv \
     -o results/scaled/${f}.tsv
 done</data>
-  <data key="d3">1809.1169771360562</data>
-  <data key="d4">-1002.8843594686759</data>
+  <data key="d3">1815.1169771360562</data>
+  <data key="d4">-974.8843594686759</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
   <data key="d2">scale.py log \
   results/cleaned/unlogged_lipids.tsv \
   -o results/cleaned/lipids.tsv</data>
-  <data key="d3">-735.2195969161698</data>
-  <data key="d4">-573.611235501736</data>
+  <data key="d3">-505.21959691616985</data>
+  <data key="d4">-280.2779021684028</data>
 </node>
 <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
   <data key="d2">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
@@ -487,10 +467,13 @@ box.py \
   <data key="d2">parallel -j1 \
   onehot.py \
     results/cleaned/{}.tsv \
+    --min-prevalence 0.1 \
+    --drop-onehot-values 'No' \
     -o results/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation</data>
-  <data key="d3">-601.6666666666667</data>
-  <data key="d4">274.16666666666674</data>
+  <data key="d3">-570.0</data>
+  <data key="d4">232.5</data>
+  <data key="d5">ran</data>
 </node>
 <node id="246364a8-29bd-49c2-a045-ceb068383c79">
   <data key="d2">cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt</data>
@@ -519,34 +502,6 @@ box.py \
 mofa_microbiome.sh</data>
   <data key="d3">2194.1714285714284</data>
   <data key="d4">-1705.0714285714296</data>
-</node>
-<node id="433eced6-1e2d-43f9-924d-1f0853c388c5">
-  <data key="d2"># Remove 3yr control
-parallel -j1 \
-filter.py \
-  -q "~subjectID.str.startswith\(\'LCC3\'\)" \
-  results/cleaned/{}.tsv \
-  -o results/filtered/{}.tsv \
-&lt; conf/notimedatasets.txt
-
-parallel -j1 \
-filter.py \
-  -q "~sampleID.str.startswith\(\'LCC3\'\)" \
-  results/cleaned/{}.tsv \
-  -o results/filtered/{}.tsv \
-&lt; conf/timedatasets.txt
-
-filter.py \
-  -q "~subjectID.str.startswith('LCC3')" \
-  results/cleaned/meta.tsv \
-  -o results/filtered/{}.tsvparallel -j1 \
-    remove_3yr_control.py \
-        results/cleaned/{}.tsv \
-        -o results/filtered/{}.tsv \
-    &lt; conf/all_datasets.txt</data>
-  <data key="d3">-119.49761904761914</data>
-  <data key="d4">-201.5857142857142</data>
-  <data key="d5">ran</data>
 </node>
 <node id="fdf3bffb-4faa-4e02-9648-6fcb003a022c">
   <data key="d2">merge_all.py</data>
@@ -585,8 +540,8 @@ importance_pie.py \
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv</data>
-  <data key="d3">-507.81818181818187</data>
-  <data key="d4">26.83116883116878</data>
+  <data key="d3">-502.8181818181819</data>
+  <data key="d4">-3.1688311688312374</data>
   <data key="d5">ran</data>
 </node>
 <node id="d70e3fbb-0052-4bc1-9c96-ff35f0ecca36">
@@ -595,7 +550,67 @@ importance_pie.py \
   <data key="d3">3216.4</data>
   <data key="d4">732.6</data>
 </node>
-<edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<node id="486f98d9-a4eb-4f6e-97c6-dbe5db8f4ac3">
+  <data key="d2">maaslin3.py \
+  -c conf/maaslin_config.tsv \
+  -i results/filtered \
+  -o results/maaslin</data>
+  <data key="d3">1755.1666666666667</data>
+  <data key="d4">-488.50000000000006</data>
+  <data key="d5">fail</data>
+</node>
+<node id="99a1770b-1153-428d-8172-e783bf221b38">
+  <data key="d2">parallel -j1 \
+filter.py \
+  -q "~subjectID.str.startswith\(\'LCC3\'\)" \
+  results/cleaned/{}.tsv \
+  -o results/filtered/{}.tsv \
+&lt; conf/notimedatasets.txt</data>
+  <data key="d3">-103.33333333333334</data>
+  <data key="d4">51.66666666666667</data>
+  <data key="d5">ran</data>
+</node>
+<node id="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d2">parallel -j1 \
+filter.py \
+  -q "~sampleID.str.startswith\(\'LCC3\'\)" \
+  results/cleaned/{}.tsv \
+  -o results/filtered/{}.tsv \
+&lt; conf/timedatasets.txt</data>
+  <data key="d3">-101.66666666666667</data>
+  <data key="d4">-98.33333333333326</data>
+</node>
+<node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
+  <data key="d2">filter.py \
+  -q "~subjectID.str.startswith('LCC3')" \
+  results/cleaned/meta.tsv \
+  -o results/filtered/{}.tsvparallel -j1 \
+    remove_3yr_control.py \
+        results/cleaned/{}.tsv \
+        -o results/filtered/{}.tsv \
+    &lt; conf/all_datasets.txt</data>
+  <data key="d3">-105.0</data>
+  <data key="d4">191.66666666666669</data>
+</node>
+<node id="5ff2c377-ab35-43a3-b69b-8deb86468256">
+  <data key="d2"># Remove 3yr controls</data>
+  <data key="d3">-103.33333333333334</data>
+  <data key="d4">-146.66666666666669</data>
+</node>
+<node id="14b716fa-cb0b-4379-9727-7769f1510a88">
+  <data key="d2">multiline.py \
+  --subject results/maaslin/species/features/data_transformed.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --x timepoint \
+  --y 'Bifidobacterium_longum|SGB17248' \
+  --hue Feed \
+  --id subjectID \
+  --output results/species_multiline2.svg</data>
+  <data key="d3">1930.0</data>
+  <data key="d4">-680.0</data>
+  <data key="d5">ran</data>
+</node>
+<edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
 </edge>
@@ -626,14 +641,11 @@ importance_pie.py \
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="16251459-1dc8-4168-bbff-cf463d8537aa"/>
 <edge source="5c9b9837-c3c7-43d8-9322-b3d650f6b75b" target="92024ec7-33d5-4507-976e-8eec7faadc0e"/>
-<edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="analysis.graphml::5e2b056b-286f-491e-ac96-9db3c3403aa4" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
-  <data key="d6">fddab9f2-9b4a-4f73-9f7d-23863f458916</data>
-</edge>
-<edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="99a1770b-1153-428d-8172-e783bf221b38"/>
+<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="67d6bf85-2665-4c80-b457-43e490d6fe20"/>
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
   <data key="d6">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
 </edge>
@@ -643,27 +655,26 @@ importance_pie.py \
 <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
   <data key="d6">d47ed25e-0306-44a6-96cf-a0ff8e1703bf</data>
 </edge>
-<edge source="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="9780f658-26ff-4a9b-a03f-a57be3e04748"/>
-<edge source="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::5c1c37f2-4b00-4e6b-937d-d8cf348aa63f" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::7576a182-fecc-4d14-b02d-3bceb3d18783" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::8a22f8f7-4868-4738-b19d-08060da598c8" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
-<edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::5c1c37f2-4b00-4e6b-937d-d8cf348aa63f" target="99a1770b-1153-428d-8172-e783bf221b38"/>
+<edge source="build_database.graphml::7576a182-fecc-4d14-b02d-3bceb3d18783" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::8a22f8f7-4868-4738-b19d-08060da598c8" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="d4e4b648-4abc-47b1-b072-7227e8023ead">
   <data key="d6">b50ae894-d083-4589-8570-97dbe3281c08</data>
 </edge>
 <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="694c1739-f526-421a-a8ec-99152294abf4"/>
-<edge source="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
 <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="9fcf4732-486d-49fa-b99c-2e90a7bc15e9"/>
 <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
 <edge source="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
 <edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
-<edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee"/>
 <edge source="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48" target="c22c2993-fbfb-461c-b462-80a4bd61e58e">
   <data key="d6">57f01424-2c84-4e51-9082-be85907deeef</data>
@@ -671,22 +682,19 @@ importance_pie.py \
 <edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="3a9d83fc-9062-4367-a6e3-510564bf386b">
   <data key="d6">4612be57-1345-4017-af9c-49a1afe4cf6d</data>
 </edge>
-<edge source="bdb970b1-d724-4f80-a997-d993292f69fd" target="analysis.graphml::5e2b056b-286f-491e-ac96-9db3c3403aa4"/>
-<edge source="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
-  <data key="d6">4b376add-ea99-458c-84ca-5cfd7045e72c</data>
-</edge>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
   <data key="d6">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
 </edge>
 <edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
   <data key="d6">555f455e-ed7f-4309-a889-9e26ef93e756</data>
 </edge>
-<edge source="28e36837-7b64-46b7-8612-251d72825bd1" target="bdb970b1-d724-4f80-a997-d993292f69fd"/>
 <edge source="28e36837-7b64-46b7-8612-251d72825bd1" target="filter.py meta -q 'Condition == &quot;MAM&quot; and (Recovery == &quot;No recovery&quot; or Recovery == &quot;Recovered&quot;)' -o meta_MAM"/>
+<edge source="28e36837-7b64-46b7-8612-251d72825bd1" target="node85"/>
 <edge source="e0c5398f-26da-4779-b36e-deab73e090da" target="a76b67db-25de-4e73-8c39-8ec47a727352"/>
-<edge source="filter.py meta -q 'Condition == &quot;MAM&quot; and (Recovery == &quot;No recovery&quot; or Recovery == &quot;Recovered&quot;)' -o meta_MAM" target="parallel -j1 'Maaslin2.R results/filtered/{}.tsv results/timemeta_MAM.tsv results/maaslin/{}change -f &quot;timepoint,Recovery,Feed&quot; -r &quot;subjectID&quot; -d &quot;Recovery,No recovery;Feed,Local RUSF (A)&quot;' &lt; conf/timedatasets.txt"/>
+<edge source="filter.py meta -q 'Condition == &quot;MAM&quot; and (Recovery == &quot;No recovery&quot; or Recovery == &quot;Recovered&quot;)' -o meta_MAM" target="486f98d9-a4eb-4f6e-97c6-dbe5db8f4ac3"/>
 <edge source="box.py results/filtered/wolkes.tsv --meta results/timemeta.tsv -x timepoint -y vocalisation --hue Feed -o results/wolkes_vocalisation_box.svg" target="d70e3fbb-0052-4bc1-9c96-ff35f0ecca36"/>
 <edge source="node85" target="node86"/>
+<edge source="node85" target="486f98d9-a4eb-4f6e-97c6-dbe5db8f4ac3"/>
 <edge source="node86" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="node86" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
 <edge source="node86" target="3fe70ddb-eafb-4c69-b42c-a66e787c1376"/>
@@ -712,11 +720,11 @@ importance_pie.py \
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::ae43e88d-2c75-4f51-9028-04c2ee703e06"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::19e1aa91-0c34-40d1-826b-fa5146b1a386"/>
-<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="e01d74fd-8601-460e-858c-2f6b0be61422"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="3a43cff2-d4a9-4809-8fe3-f3ec751051f8"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::adb2814d-8fb1-481e-b301-36caa53efcec"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="9b629faa-9494-44b8-9167-ac7b172d5af8"/>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b"/>
 <edge source="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
   <data key="d7">to_run</data>
 </edge>
@@ -724,16 +732,19 @@ importance_pie.py \
 <edge source="df4dc09e-4408-4798-ae04-b10e3339f1e9" target="5656487b-7e9b-4945-b26e-5d344660740c"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
-<edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="7a113732-6455-4f0d-b805-fc6095b40ca3" target="a191959b-1acd-4594-8819-65c36f01f33c"/>
-<edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="246364a8-29bd-49c2-a045-ceb068383c79" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8"/>
 <edge source="16251459-1dc8-4168-bbff-cf463d8537aa" target="1f6da997-a398-46b8-8875-223ebb4382a2"/>
 <edge source="1f6da997-a398-46b8-8875-223ebb4382a2" target="7a113732-6455-4f0d-b805-fc6095b40ca3"/>
 <edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="fdf3bffb-4faa-4e02-9648-6fcb003a022c"/>
-<edge source="433eced6-1e2d-43f9-924d-1f0853c388c5" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
 <edge source="fdf3bffb-4faa-4e02-9648-6fcb003a022c" target="d5fab4a7-7727-412e-8f4b-68b5f2c55bde"/>
 <edge source="d5fab4a7-7727-412e-8f4b-68b5f2c55bde" target="de8a1456-a712-476e-a226-4392529e88eb"/>
 <edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4"/>
-<edge source="694c1739-f526-421a-a8ec-99152294abf4" target="433eced6-1e2d-43f9-924d-1f0853c388c5"/>
+<edge source="694c1739-f526-421a-a8ec-99152294abf4" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
+<edge source="486f98d9-a4eb-4f6e-97c6-dbe5db8f4ac3" target="445f4183-2221-42ae-80fe-cfa8e3da2000"/>
+<edge source="99a1770b-1153-428d-8172-e783bf221b38" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
+<edge source="9430f225-f079-4a7f-bfd9-a272b950617f" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
+<edge source="67d6bf85-2665-4c80-b457-43e490d6fe20" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
 </graph></graphml>

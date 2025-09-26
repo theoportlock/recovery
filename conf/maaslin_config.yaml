@@ -1,0 +1,360 @@
+datasets:
+  - name: economics
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: education
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: family
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: genetics
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: household
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: media_consumption
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: pots
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: sanitation
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: surveillance
+    metadata: results/filtered/meta_MAM.tsv
+    formula: "~ Feed * Recovery"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: aa
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: alpha_diversity
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: anthro
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: fcis
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: glitter
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: head
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: lipids
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: pathways
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: pci
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: pss
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: sleep
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: species
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: vitamin
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: wolkes
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0
+
+  - name: wolkes
+    metadata: results/filtered/timemeta_MAM.tsv
+    formula: "~ timepoint * Feed * Recovery + (1|subjectID)"
+    reference: "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1"
+    cores: 1
+    small_random_effects: TRUE
+    normalization: NONE
+    transform: NONE
+    augment: TRUE
+    standardize: TRUE
+    max_significance: 0.1
+    max_pngs: 100
+    min_abundance: 0
+    min_prevalence: 0

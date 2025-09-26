@@ -95,6 +95,10 @@ educationcols = [
     'Family_owns_the_home_they_live_in'
 ]
 edf = df.loc[:, educationcols]
+edf.Fathers_occupation = edf.Fathers_occupation.str.replace(r' \(.*','', regex=True)
+edf.Fathers_occupation= edf.Fathers_occupation.str.replace(r' \/.*','', regex=True)
+edf.Mothers_occupation = edf.Mothers_occupation.str.replace(r' \(.*','', regex=True)
+edf.Mothers_occupation= edf.Mothers_occupation.str.replace(r' \/.*','', regex=True)
 edf.to_csv('results/cleaned/education.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(educationcols)]
 
