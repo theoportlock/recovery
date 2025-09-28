@@ -188,6 +188,7 @@ anthrotime.py</data>
   &lt; conf/timedatasets.txt</data>
   <data key="d3">1121.7357596851853</data>
   <data key="d4">-6.038252315478104</data>
+  <data key="d5">running</data>
 </node>
 <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
   <data key="d2">create_mapping.py \
@@ -211,8 +212,8 @@ anthrotime.py</data>
   cp results/maaslin/{}/all_results.tsv \
   results/change/{} \
   &lt; conf/alldatasets.txt</data>
-  <data key="d3">2090.484150569497</data>
-  <data key="d4">-452.9783044288267</data>
+  <data key="d3">2142.484150569497</data>
+  <data key="d4">-446.97830442882673</data>
   <data key="d5">fail</data>
 </node>
 <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
@@ -235,8 +236,8 @@ spindle.py
   -o allchange \
   --append \
   --add-filename</data>
-  <data key="d3">2434.01400899903</data>
-  <data key="d4">-475.04911247928044</data>
+  <data key="d3">2542.01400899903</data>
+  <data key="d4">-523.0491124792804</data>
   <data key="d5">fail</data>
 </node>
 <node id="28e36837-7b64-46b7-8612-251d72825bd1">
@@ -488,6 +489,7 @@ box.py \
   -o results/recovery/timemeta_52.tsv</data>
   <data key="d3">1299.965656565656</data>
   <data key="d4">-2046.9161616161605</data>
+  <data key="d5">ran</data>
 </node>
 <node id="1f6da997-a398-46b8-8875-223ebb4382a2">
   <data key="d2">stratify.py results/filtered/anthro.tsv \
@@ -496,6 +498,7 @@ box.py \
   -o results/recovery/anthro_52.tsv</data>
   <data key="d3">1656.5212121212116</data>
   <data key="d4">-2048.7494949494944</data>
+  <data key="d5">ran</data>
 </node>
 <node id="3fe70ddb-eafb-4c69-b42c-a66e787c1376">
   <data key="d2">mofa_metabolome.sh
@@ -610,6 +613,57 @@ filter.py \
   <data key="d4">-680.0</data>
   <data key="d5">ran</data>
 </node>
+<node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
+  <data key="d2">group.py \
+  results/filtered/genetics_standard.tsv \
+  --meta results/filtered/meta.tsv \
+  --func mean --group_by 'Recovery' \
+  -o results/filtered/genetics_mean.tsv
+  </data>
+  <data key="d3">2573.333333333334</data>
+  <data key="d4">-1586.6666666666667</data>
+  <data key="d5">ran</data>
+</node>
+<node id="1da8a511-5367-4a80-8510-06464399deb8">
+  <data key="d2">polar.py \
+  results/filtered/genetics_mean_sort.tsv \
+  -o results/genetics_recovery.svg</data>
+  <data key="d3">3231.666666666667</data>
+  <data key="d4">-1573.3333333333335</data>
+  <data key="d5">ran</data>
+</node>
+<node id="6d46e087-86b7-44f4-8268-e04ad35f3275">
+  <data key="d2">sort.py \
+  results/filtered/genetics_mean.tsv \
+  --ascending \
+  -o results/filtered/genetics_mean_sort.tsv</data>
+  <data key="d3">2876.666666666667</data>
+  <data key="d4">-1578.3333333333335</data>
+  <data key="d5">ran</data>
+</node>
+<node id="6cd59c60-d8fe-4449-be43-29f53856493e">
+  <data key="d2">scale.py standard \
+  results/filtered/genetics.tsv \
+  -o results/filtered/genetics_standard.tsv</data>
+  <data key="d3">2223.3333333333335</data>
+  <data key="d4">-1521.6666666666667</data>
+  <data key="d5">ran</data>
+</node>
+<node id="ddda3b3f-7609-4dd8-88db-c4f521d8a127">
+  <data key="d2">sort.py \
+  results/polardata.tsv \
+  -o results/polardata_sort.tsv</data>
+  <data key="d3">2771.666666666667</data>
+  <data key="d4">1163.3333333333335</data>
+  <data key="d5">ran</data>
+</node>
+<node id="6ecc57c1-07b4-4096-b3b2-4daffb488260">
+  <data key="d2">polar.py results/polardata_sort.tsv \
+ -o results/catcluster_polar.svg</data>
+  <data key="d3">3085.0</data>
+  <data key="d4">1171.666666666667</data>
+  <data key="d5">ran</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
@@ -698,6 +752,7 @@ filter.py \
 <edge source="node86" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="node86" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
 <edge source="node86" target="3fe70ddb-eafb-4c69-b42c-a66e787c1376"/>
+<edge source="node86" target="6cd59c60-d8fe-4449-be43-29f53856493e"/>
 <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0"/>
 <edge source="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" target="8727268b-1b5b-4c92-9768-cbe389f6984f"/>
 <edge source="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" target="8727268b-1b5b-4c92-9768-cbe389f6984f"/>
@@ -741,10 +796,15 @@ filter.py \
 <edge source="3fe70ddb-eafb-4c69-b42c-a66e787c1376" target="fdf3bffb-4faa-4e02-9648-6fcb003a022c"/>
 <edge source="fdf3bffb-4faa-4e02-9648-6fcb003a022c" target="d5fab4a7-7727-412e-8f4b-68b5f2c55bde"/>
 <edge source="d5fab4a7-7727-412e-8f4b-68b5f2c55bde" target="de8a1456-a712-476e-a226-4392529e88eb"/>
+<edge source="a76b67db-25de-4e73-8c39-8ec47a727352" target="ddda3b3f-7609-4dd8-88db-c4f521d8a127"/>
 <edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4"/>
 <edge source="694c1739-f526-421a-a8ec-99152294abf4" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="486f98d9-a4eb-4f6e-97c6-dbe5db8f4ac3" target="445f4183-2221-42ae-80fe-cfa8e3da2000"/>
 <edge source="99a1770b-1153-428d-8172-e783bf221b38" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
 <edge source="9430f225-f079-4a7f-bfd9-a272b950617f" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
 <edge source="67d6bf85-2665-4c80-b457-43e490d6fe20" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
+<edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275"/>
+<edge source="6d46e087-86b7-44f4-8268-e04ad35f3275" target="1da8a511-5367-4a80-8510-06464399deb8"/>
+<edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655"/>
+<edge source="ddda3b3f-7609-4dd8-88db-c4f521d8a127" target="6ecc57c1-07b4-4096-b3b2-4daffb488260"/>
 </graph></graphml>
