@@ -142,10 +142,42 @@ plt.show()
 
 
 
+# pairwise analysis
+import pandas as pd
+import itertools
+from scipy.stats import mannwhitneyu
+
+def pairwise_mwu(df, cluster_col="Cat_cluster", prs_col="PRS", score_col="Score_z"):
+    results = []
+
+    # loop over each PRS separately
+    for prs, subdf in df.groupby(prs_col):
+        clusters = subdf[cluster_col].unique()
+        clusters = sorted(clusters)
+
+        # all pairwise comparisons
+        for c1, c2 in itertools.combinations(clusters, 2):
+            vals1 = subdf.loc[subdf[cluster_col] == c1, score_col]
+            vals2 = subdf.loc[subdf[cluster_col] == c2, score_col]
+
+            # mann-whitney u test
+            stat, p = mannwhitneyu(vals1, vals2, alternative="two-sided")
+
+            results.append({
+                "PRS": prs,
+                "Cluster1": c1,
+                "Cluster2": c2,
+                "U_stat": stat,
+                "p_value": p,
+                "n1": len(vals1),
+                "n2": len(vals2)
+            })
+
+    return pd.DataFrame(results)
 
 
-
-
+results_df = pairwise_mwu(plotdf)
+print(results_df.head())
 
 
 

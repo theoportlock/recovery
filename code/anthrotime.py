@@ -15,8 +15,16 @@ df.loc[df.Condition == 'Well-nourished', 'Recovery'] = 'Healthy'
 df.loc[df.Condition == 'Well-nourished', 'Feed'] = 'Healthy'
 
 # Define custom color palette
-palette = {'Healthy':'magenta','Recovered': 'orange', 'No recovery': 'red'}
+#palette = {'Healthy':'magenta','Recovered': 'orange', 'No recovery': 'red'}
 #palette = {'Healthy':'magenta','ERUSF (B)': 'blue', 'Local RUSF (A)': 'red'}
+palette = {
+    'Healthy': 'magenta',
+    'ERUSF (B)': 'blue',
+    'Local RUSF (A)': 'red',
+    'Recovered': 'green',
+    'No recovery': 'orange'
+}
+
 
 # Drop all after 52 weeks
 df = df.loc[df.timepoint <= 52]
@@ -55,3 +63,33 @@ line(df, 'timepoint', 'Weight', 'Recovery', axs[2])
 plt.subplots_adjust(wspace=0.4)
 plt.tight_layout()
 plt.savefig('results/anthro_time.svg')
+
+
+'''
+
+# --- Compute weight gain deltas per subject ---
+# Sort by subject and time
+df = df.sort_values(["subjectID", "timepoint"])
+
+# Compute simple week-to-week delta in grams
+df["delta_weight"] = df.groupby("subjectID")["Weight"].diff()
+
+# Optionally: compute velocity (g/kg/day) which is standard in malnutrition recovery
+# (using average weight between visits for scaling)
+mean_weight = (df["Weight"] + df.groupby("subjectID")["Weight"].shift()) / 2
+days = (df["timepoint"] - df.groupby("subjectID")["timepoint"].shift()) * 7
+df["g_per_kg_per_day"] = df["delta_weight"] / (mean_weight * days)
+
+# Optional smoothing: 2-point rolling mean per subject
+df["delta_weight_smooth"] = (
+    df.groupby("subjectID")["delta_weight"].transform(lambda x: x.rolling(2, min_periods=1).mean())
+)
+
+# Example: plot raw weekly weight delta
+fig, ax = plt.subplots(figsize=(4, 2.5))
+var = "g_per_kg_per_day"
+line(df, "timepoint", var, "Recovery", ax)
+ax.set_ylabel(var)
+plt.savefig("results/weight_deltas.svg")
+
+'''
