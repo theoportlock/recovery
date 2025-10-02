@@ -10,6 +10,7 @@ Check with other paper from Chucks group
 
 0. patient demographics
 Use pandoc on tables to make pdf
+Check other paper for their version first - is the microbiome filtered version much different?
 
 1. Recovery stats
 

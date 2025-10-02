@@ -51,6 +51,7 @@ def main():
     config = pd.read_csv(args.config_tsv, sep="\t")
 
     for _, row in config.iterrows():
+        breakpoint()
         run_maaslin3(row, args.input_dir, args.output_dir)
 
 
