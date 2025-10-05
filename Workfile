@@ -82,6 +82,7 @@ anthrotime.py</data>
   -o results/cleaned/meta.tsv</data>
   <data key="d3">-365.6072866855531</data>
   <data key="d4">425.8095867964056</data>
+  <data key="d5">ran</data>
 </node>
 <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
   <data key="d2">format_microbiome_samplesheet.py</data>
@@ -169,11 +170,13 @@ anthrotime.py</data>
   <data key="d2">format_feedsandrecovery.py</data>
   <data key="d3">-660.8296240417478</data>
   <data key="d4">510.51982929277744</data>
+  <data key="d5">ran</data>
 </node>
 <node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
   <data key="d2">format_bfpob.py</data>
   <data key="d3">-661.4341474459316</data>
   <data key="d4">475.66701617194144</data>
+  <data key="d5">ran</data>
 </node>
 <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
   <data key="d2">extract_taxa.py \
@@ -188,6 +191,7 @@ anthrotime.py</data>
   <data key="d2">format_deliverysupp.py</data>
   <data key="d3">-660.5299623755859</data>
   <data key="d4">551.8865266805366</data>
+  <data key="d5">ran</data>
 </node>
 <node id="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
   <data key="d2">parallel -j1 distance.py \
@@ -596,13 +600,10 @@ filter.py \
   <data key="d2">filter.py \
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/meta.tsv \
-  -o results/filtered/{}.tsvparallel -j1 \
-    remove_3yr_control.py \
-        results/cleaned/{}.tsv \
-        -o results/filtered/{}.tsv \
-    &lt; conf/all_datasets.txt</data>
+  -o results/filtered/meta.tsv</data>
   <data key="d3">-105.0</data>
   <data key="d4">191.66666666666669</data>
+  <data key="d5">ran</data>
 </node>
 <node id="5ff2c377-ab35-43a3-b69b-8deb86468256">
   <data key="d2"># Remove 3yr controls</data>

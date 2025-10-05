@@ -120,6 +120,8 @@ ecdf.columns = ecdf.columns.str.replace('_(taka)','').str.replace('(','').str.re
 
 # Drop the other columns as they are not commonly used
 ecdf = ecdf.loc[:, ecdf.columns[~ecdf.columns.str.contains('Other')]]
+# Calculate Fathers income
+ecdf['Fathers_income'] = ecdf['Total_monthly_income'].sub(ecdf['Mothers_income'])
 ecdf.to_csv('results/cleaned/economics.tsv', sep='\t')
 df = df.loc[:, ~df.columns.isin(economiccols)]
 
