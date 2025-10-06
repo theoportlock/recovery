@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Create an improved study timeline subplot as an SVG/PNG
+
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
 from matplotlib.lines import Line2D
@@ -74,9 +75,6 @@ ax.text(4.8, 5.29, "• Polygenic risk scores (PRS)", fontsize=8, va='top')
 ax.text(9.8, 0.2, "Covariates: Sex, Delivery mode, Place of birth", ha='right', fontsize=8)
 
 # Save
-svg_path = "results/study_timeline_subplot.svg"
-png_path = "results/study_timeline_subplot.png"
+svg_path = "results/figure1/study_timeline_subplot.svg"
 fig.savefig(svg_path, bbox_inches="tight")
-fig.savefig(png_path, bbox_inches="tight")
-svg_path, png_path
 

@@ -25,7 +25,6 @@ palette = {
     'No recovery': 'orange'
 }
 
-
 # Drop all after 52 weeks
 df = df.loc[df.timepoint <= 52]
 
@@ -62,7 +61,7 @@ line(df, 'timepoint', 'Weight', 'Recovery', axs[2])
 # Layout tweaks
 plt.subplots_adjust(wspace=0.4)
 plt.tight_layout()
-plt.savefig('results/anthro_time.svg')
+plt.savefig('results/figure1/anthro_time.svg')
 
 
 '''
