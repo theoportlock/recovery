@@ -16,6 +16,8 @@ Description:
     - Continuous variables: mean (SD)
     - Binary variables: show n (%) with a clean label (no ", 1")
     - Categorical variables: show all levels as n (%)
+
+At some point convert this to proportion.py and groupby changes
 """
 
 import pandas as pd

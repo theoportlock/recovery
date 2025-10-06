@@ -79,18 +79,73 @@ for file in results/table1/work/formatted/{Demographics,Parental_Education_and_E
 done
 
 # Stats
+# Add condition and feed
+select.py \
+	results/filtered/meta.tsv \
+	-c 'Condition,Feed' \
+	-o results/table1/work/meta.tsv
+
+onehot.py \
+	results/table1/work/meta.tsv \
+	--drop-onehot-values 'Well-nourished,Local RUSF (A)' \
+	--prefix-sep ', ' \
+	--dtype bool \
+	-o results/table1/work/meta_oh.tsv
+
 merge.py \
 	results/table1/work/formatted/Demographics.tsv \
 	results/table1/work/formatted/Parental_Education_and_Economics.tsv \
 	results/table1/work/formatted/Family_Structure.tsv \
 	results/table1/work/formatted/Household_characteristics.tsv \
 	results/table1/work/formatted/Other.tsv \
-	-o results/table1/work/all_data_merged.tsv
+	-o results/table1/work/data.tsv
 
-# TODO
+merge.py \
+	results/table1/work/meta_oh.tsv \
+	results/table1/work/data.tsv \
+	-o results/table1/work/all_data_merged.tsv
+	
 descriptive_stats.sh \
 	results/table1/work/all_data_merged.tsv \
-	results/table1/work/stats
+	results/table1/work/all_stats
+
+filter.py \
+	results/table1/work/all_stats/merged_stats.tsv \
+	-q 'source == "Condition, MAM"' \
+	-o results/table1/work/all_stats/merged_stats_MAMstats.tsv
+
+select.py \
+	results/table1/work/all_stats/merged_stats_MAMstats.tsv \
+	-c 'target,p_value' \
+	--drop-index \
+	-o results/table1/work/all_stats/merged_stats_MAMstats_vals.tsv
+
+# Just Feed stats
+filter.py \
+	results/table1/work/meta_oh.tsv \
+	-q '`Condition, MAM` == True' \
+	-o results/table1/work/meta_oh_MAM.tsv
+
+merge.py \
+	results/table1/work/meta_oh_MAM.tsv \
+	results/table1/work/data.tsv \
+	-o results/table1/work/MAM_data_merged.tsv
+
+descriptive_stats.sh \
+	results/table1/work/MAM_data_merged.tsv \
+	results/table1/work/MAM_stats
+
+filter.py \
+	results/table1/work/MAM_stats/merged_stats.tsv \
+	-q 'source == "Feed, ERUSF (B)"' \
+	--drop \
+	-o results/table1/work/MAM_stats/merged_stats_Feedstats.tsv
+	
+select.py \
+	results/table1/work/MAM_stats/merged_stats_Feedstats.tsv \
+	-c 'target,p_value' \
+	--drop-index \
+	-o results/table1/work/MAM_stats/merged_stats_Feedstats_vals.tsv
 
 # Merge
 merge.py \
@@ -103,3 +158,9 @@ merge.py \
 	--add-filename \
 	--filename-format base \
 	-o results/table1/work/merged.tsv
+
+merge.py \
+	results/table1/work/merged.tsv \
+	results/table1/work/MAM_stats/merged_stats_Feedstats_vals.tsv \
+	results/table1/work/all_stats/merged_stats_MAMstats_vals.tsv \
+	-o results/table1/work/merged_stats.tsv
