@@ -1,3 +1,6 @@
+# Check gnthro
+recovery was defined as at least one tp where it crosses -1 SD within THREE MONTHS - however, seems like 15 weeks
+
 # Throughout
 Maaslin3 for all datasets - baseline, delta, yr2 and longitudinal - sigsummary
 Supp tables include

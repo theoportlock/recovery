@@ -4,36 +4,21 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('results/timepoints/yr2/anthro.tsv', sep='\t', index_col=0)
+df = pd.read_csv('results/filtered/recovery_status.tsv', sep='\t', index_col=0)
 meta = pd.read_csv('results/filtered/meta.tsv', sep='\t', index_col=0)
  
-# Just filter MAM
-meta = meta.loc[meta.Condition == 'MAM']
-df = df.loc[meta.index]
-
-# Recovered at yr2
-yr2_recovered = df['WLZ_WHZ'].gt(-1)
-
-# Define categories
-meta['Recovery_status'] = 'No recovery'  # default
-
-# Recovery (sustained recovery at yr2)
-meta.loc[(meta.Recovery == 'Recovered') & yr2_recovered, 'Recovery_status'] = 'Sustained recovery'
-
-# Unsustained recovery (recovered before 15mo, but not at yr2)
-meta.loc[(meta.Recovery == 'Recovered') & (~yr2_recovered), 'Recovery_status'] = 'Unsustained recovery'
-
-# Delayed recovery (not recovered before 15mo, but recovered at yr2)
-meta.loc[(meta.Recovery != 'Recovered') & yr2_recovered, 'Recovery_status'] = 'Delayed recovery'
+meta = meta.join(df)
 
 # --- Count and percentage calculation ---
 status_order = ['No recovery', 'Unsustained recovery', 'Delayed recovery', 'Sustained recovery']
+
 colors = {
-    'Sustained recovery': '#0571b0',
-    'No recovery': '#d73027',
-    'Unsustained recovery': '#fc8d59',
-    'Delayed recovery': '#2ca25f'
+    'No recovery': '#f4a582',         # soft coral / light salmon (warm for failure)
+    'Unsustained recovery': '#92c5de', # light sky blue
+    'Delayed recovery': '#74add1',     # gentle teal-blue
+    'Sustained recovery': '#4393c3'    # deeper pastel blue
 }
+
 
 counts = (
     meta.groupby(['Feed', 'Recovery_status'])
@@ -76,6 +61,6 @@ ax.set_xlabel('Feed')
 ax.set_ylim(0, 100)
 ax.legend(title='Recovery status', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-plt.savefig('results/stacked_bar_recovery.svg')
-# plt.show()
+plt.savefig('results/figure1/stacked_bar_recovery.svg')
+#plt.show()
 
