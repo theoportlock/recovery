@@ -1,5 +1,21 @@
 #!/usr/bin/env bash
+source env.sh
 set -euo pipefail
+
+filter.py results/filtered/timemeta.tsv -q 'timepoint == 0 or timepoint == 52' -o results/filtered/timemeta_0_52tp.tsv
+fillna.py -i results/filtered/timemeta_0_52tp.tsv -c Feed,Recovery -v 'Well-nourished' -o results/filtered/timemeta_0_52tp_filled.tsv
+
+# Test first here
+maaslin3.R results/filtered/species.tsv results/filtered/timemeta_0_52tp_filled.tsv results/maaslin/healthy/species --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" --reference "Feed,Well-nourished;Recovery,Well-nourished;timepoint,yr1" --min_abundance 0 --min_prevalence 0.2 --max_significance 0.1 --normalization TSS --transform LOG --warn_prevalence False --small_random_effects True --max_pngs 100 --cores 1
+
+pointplot.py \
+  results/filtered/bayley.tsv \
+  --meta results/filtered/timemeta_0_52tp_filled.tsv \
+  -x timepoint \
+  -y 'expressive_communication_score' \
+  --hue 'Recovery' \
+  --id subjectID \
+  -o results/testpoint2.svg
 
 maaslin3.R results/filtered/economics.tsv results/filtered/meta_MAM.tsv results/maaslin/economics --formula "~ Feed + Recovery" --reference "Feed,Local RUSF (A);Recovery,No recovery" --min_abundance 0 --min_prevalence 0.0 --max_significance 0.1 --normalization NONE --transform NONE --warn_prevalence False --evaluate_only abundance --max_pngs 100 --cores 1
 maaslin3.R results/filtered/education.tsv results/filtered/meta_MAM.tsv results/maaslin/education --formula "~ Feed + Recovery" --reference "Feed,Local RUSF (A);Recovery,No recovery" --min_abundance 0 --min_prevalence 0.0 --max_significance 0.1 --normalization NONE --transform NONE --warn_prevalence False --evaluate_only abundance --max_pngs 100 --cores 1

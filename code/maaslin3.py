@@ -35,7 +35,8 @@ def run_maaslin3(row, input_dir, output_dir):
 
     print(f"\n>>> Running MaAsLin3 for dataset: {name}")
     print("Command:", " ".join(map(str, cmd)))
-    subprocess.run(cmd, check=True)
+    #subprocess.run(cmd, check=True)
+    print(cmd)
     print(f">>> Finished dataset: {name}\n")
 
 
@@ -51,8 +52,9 @@ def main():
     config = pd.read_csv(args.config_tsv, sep="\t")
 
     for _, row in config.iterrows():
-        breakpoint()
+        #if row.name == 'species': breakpoint()
         run_maaslin3(row, args.input_dir, args.output_dir)
+        #print(row, args.input_dir, args.output_dir)
 
 
 if __name__ == "__main__":
