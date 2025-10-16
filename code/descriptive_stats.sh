@@ -3,6 +3,8 @@ source env.sh
 
 #input=results/table1/work/all_data_merged.tsv
 #output=results/table1/work/stats
+input=results/table2/work/data_merged.tsv \
+output=results/table2/work/MAM_recovery_stats
 input=$1
 output=$2
 
@@ -19,15 +21,18 @@ filter.py $input \
 
 corr.py \
 	$output/numbers.tsv \
+	--dropna \
 	-o $output/corr.tsv
 
 mannwhitneyu.py \
 	$output/numbers.tsv \
 	$output/categories.tsv \
+	--dropna \
 	-o $output/mwu.tsv
 
 fisher.py \
 	$output/categories.tsv \
+	--dropna \
 	-o $output/fisher.tsv
 
 merge.py \
@@ -38,12 +43,3 @@ merge.py \
 	--add-filename \
 	--filename-format base \
 	-o $output/merged_stats.tsv
-
-filter.py \
-	$output/merged_stats.tsv \
-	-q 'p_value < 0.05' \
-	-o $output/merged_stats_filtered.tsv
-
-create_network.py \
-	--edges $output/merged_stats_filtered.tsv \
-	--output $output/merged_stats_filtered_network.graphml

@@ -80,3 +80,6 @@ sns.clustermap(fdf, cmap='coolwarm', figsize=(1.37,4), yticklabels=True, row_clu
 plt.savefig(f'{output}/{var}.svg')
 plt.show()
 
+# Save
+df.to_csv('results/recipe.tsv')
+

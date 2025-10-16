@@ -1,4 +1,4 @@
-# Check gnthro
+# Check anthro
 recovery was defined as at least one tp where it crosses -1 SD within THREE MONTHS - however, seems like 15 weeks
 
 # Throughout
@@ -33,7 +33,6 @@ Not going to remake the humann4
 newplotbar plotbar - merge
 simplecorr - consider removing
 other datasets: 04 LEAP mother enromlent info, Eligibility - Language Difficulty or Delay in q8d - also depression - some flaws in this
-
 
 # Questions
 How well is recovery predicted from baseline?

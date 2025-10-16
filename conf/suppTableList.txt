@@ -1,11 +1,3 @@
-patientinfo
-diversitychange
-specieschange
-pathwayschange
-bayleyschange
-wolkeschange
-eegchange
-lipidchange
-lipidclasschange
-shaps
-correlations
+recipe
+baselinechange
+timechange

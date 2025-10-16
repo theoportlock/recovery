@@ -53,6 +53,11 @@ meta.loc[
 # --- Optional: Check category counts ---
 print(meta['Recovery_status'].value_counts())
 
+# Add any recovered
+meta.loc[:, 'Recovered'] = (meta.Recovery_status != 'No recovery')
+meta.loc[meta.Recovered == 1 , 'Recovered'] = 'Recovered'
+meta.loc[meta.Recovered == 0, 'Recovered'] = 'No recovery'
+
 # Save
-meta.Recovery_status.to_frame().to_csv('results/filtered/recovery_status.tsv', sep='\t')
+meta[['Recovered','Recovery_status']].to_csv('results/filtered/recovery_status.tsv', sep='\t')
 
