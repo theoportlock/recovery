@@ -1,30 +1,30 @@
 id	name	class
-aa	Plasma amino acids	Blood
-alpha_diversity	Gut microbiome alpha diversity	Fecal Microbiome
-anthro	Body measurements	Anthropometrics
 bayley	Bayley Scales of Infant and Toddler Development (BSID4) 	Behaviour
+wolkes	Wolkes test	Behaviour
+sleep	Infant sleep	Behaviour
+fcis	Functioning in Chronic Illness Scale	Behaviour
+glitter	Glitter wand test	Behaviour
+pci	Parent Child Interaction (PCI)	Behaviour
+pss	Perceived Stress Scale (PSS)	Behaviour
+head	Head measurements	Anthropometrics
+anthro	Body measurements	Anthropometrics
+aa	Plasma amino acids	Blood
+lipids	Plasma lipids	Blood
+vitamin	Plasma water soluble vitamins	Blood
+alpha_diversity	Gut microbiome alpha diversity	Fecal Microbiome
+species	Gut microbiome species	Fecal Microbiome
+pathways	Gut microbiome gene pathways	Fecal Microbiome
 economics	Parent Economics	Environment
 education	Parent Education	Enrivonment
 family	Family characteristics	Environment
-fcis	Functioning in Chronic Illness Scale	Behaviour
 fnirs	Functional Near-Infrared Spectroscopy (fNIRS)	Brain
 genetics	Polygenetic Risk Scores (PRS)	Genetics
-glitter	Glitter wand test	Behaviour
-head	Head measurements	Anthropometrics
 household	Household Characteristics	Environment
-lipids	Plasma lipids	Blood
 media_consumption	Family media consumption	Environment
 meta	Metadata	Metadata
 micro	Electroencephalography (EEG) microstates	Brain
-pathways	Gut microbiome gene pathways	Fecal Microbiome
-pci	Parent Child Interaction (PCI)	Behaviour
 pots	Spin the pots test	Behaviour
 psd	Electroencephalography (EEG) Power Spectral Density (PSD)	Brain
-pss	Perceived Stress Scale (PSS)	Behaviour
 sanitation	Household sanitation practices	Environment
 surveillance	Surveillance of child during visits	Surveillance
-sleep	Infant sleep	Behaviour
-species	Gut microbiome species	Fecal Microbiome
 vep	Electroencephalography (EEG) Visual Evoked Potential (VEP)	Brain
-vitamin	Plasma water soluble vitamins	Blood
-wolkes	Wolkes test	Behaviour

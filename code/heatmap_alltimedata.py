@@ -22,8 +22,8 @@ def load_datasets(dataset_file):
 def prepare_heatmap_data(data):
     """Prepare data for heatmap plotting."""
     ndf = (~data.isna())
-    ndf = ndf.groupby(level=0, axis=1).any()
-    ndf = ndf.groupby(level=1).sum()
+    ndf = ndf.groupby(level=0, axis=1,sort=False).any()
+    ndf = ndf.groupby(level=1, sort=False).sum()
     ndf = ndf.loc[ndf.nunique(axis=1).gt(2)]
     plotdf = ndf.T
 
@@ -37,7 +37,7 @@ def main():
     args = parse_arguments()
     
     # Load data
-    meta = pd.read_csv('results/timemeta.tsv', sep='\t', index_col=0)
+    meta = pd.read_csv('results/filtered/timemeta.tsv', sep='\t', index_col=0)
     dataset_names = load_datasets(args.datasets_file)
     datasets = {data: pd.read_csv(f'results/filtered/{data}.tsv', sep='\t', index_col=0) for data in dataset_names}
     

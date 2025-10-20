@@ -73,7 +73,7 @@ plt.legend(
 )
 
 # Save plot
-output = "results/clustermap_with_metadata.svg"
+output = "results/Figures4_clustermap_with_metadata.svg"
 plt.savefig(output, bbox_inches='tight')
 print(f"Saved to {output}")
 

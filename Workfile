@@ -206,11 +206,12 @@ anthrotime.py</data>
 </node>
 <node id="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
   <data key="d2">parallel -j1 distance.py \
-  results/filtered/{}.tsv 
+  results/filtered/{}.tsv \
   -o results/distance/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-  <data key="d3">2589.7357596851853</data>
-  <data key="d4">-272.0382523154783</data>
+  <data key="d3">2345.7357596851853</data>
+  <data key="d4">-138.0382523154784</data>
+  <data key="d5">fail</data>
 </node>
 <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
   <data key="d2">create_mapping.py \
@@ -235,15 +236,9 @@ done</data>
   -i results/distance/{}.tsv \
   -o results/pcoa/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-  <data key="d3">2591.745405522941</data>
-  <data key="d4">-130.5906900363194</data>
-</node>
-<node id="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
-  <data key="d2"># FIGURE 3
-spindle.py
-# THIS NEEDS TO BE POLAR</data>
-  <data key="d3">2588.11966778226</data>
-  <data key="d4">8.99003586436379</data>
+  <data key="d3">2621.745405522941</data>
+  <data key="d4">-137.73354717917658</data>
+  <data key="d5">fail</data>
 </node>
 <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
   <data key="d2">merge.py results/maaslin/baseline/change/*.tsv \
@@ -258,8 +253,9 @@ spindle.py
   <data key="d2"># FIGURE S1
 heatmap_allnontimedata.py -d conf/notimedatasets.txt
 heatmap_alltimedata.py -d conf/timedatasets.txt</data>
-  <data key="d3">1156.9220227611609</data>
+  <data key="d3">1158.5886894278276</data>
   <data key="d4">831.2773730594992</data>
+  <data key="d5">ran</data>
 </node>
 <node id="format_headers.R results/mergedall.tsv results/">
   <data key="d2">format_headers.R \
@@ -501,6 +497,7 @@ box.py \
 mofa_microbiome.sh</data>
   <data key="d3">3757.504761904762</data>
   <data key="d4">-1693.7380952380963</data>
+  <data key="d5">fail</data>
 </node>
 <node id="fdf3bffb-4faa-4e02-9648-6fcb003a022c">
   <data key="d2">merge_all.py</data>
@@ -583,8 +580,8 @@ filter.py \
   --hue Feed \
   --id subjectID \
   --output results/species_multiline2.svg</data>
-  <data key="d3">3844.833333333334</data>
-  <data key="d4">-580.4166666666667</data>
+  <data key="d3">5514.633333333334</data>
+  <data key="d4">-846.6166666666668</data>
 </node>
 <node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
   <data key="d2">group.py \
@@ -723,6 +720,26 @@ done</data>
   <data key="d4">-2805.0</data>
   <data key="d5">ran</data>
 </node>
+<node id="066b6d9a-3d80-439f-ae79-34ba08a9898f">
+  <data key="d2">parallel -j1 spindle.py \
+results/pcoa/{}.tsv \
+--meta results/filtered/timemeta.tsv \
+--group-col timepoint \
+-o results/spindle/{}.pdf \
+&lt; conf/timedatasets.txt</data>
+  <data key="d3">2902.0</data>
+  <data key="d4">-154.57142857142864</data>
+  <data key="d5">fail</data>
+</node>
+<node id="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c">
+  <data key="d2">arrange_svgs.py \
+  results/spindle/* \
+  --rows 3 \
+  -o results/all_spindle.svg</data>
+  <data key="d3">3222.857142857143</data>
+  <data key="d4">-138.57142857142858</data>
+  <data key="d5">ran</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
@@ -749,6 +766,7 @@ done</data>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="f3f51679-47bd-4d95-b166-0773770b99c8"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="node85"/>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="168f33a5-4532-4581-b5e8-0cf6de606325"/>
 <edge source="build_database.graphml::144516e8-af90-4214-9b0d-af0411988282" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
@@ -793,9 +811,7 @@ done</data>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
   <data key="d6">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
 </edge>
-<edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="82b0a6ca-f0ae-4bac-9df3-1731300fb96a">
-  <data key="d6">555f455e-ed7f-4309-a889-9e26ef93e756</data>
-</edge>
+<edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="066b6d9a-3d80-439f-ae79-34ba08a9898f"/>
 <edge source="e0c5398f-26da-4779-b36e-deab73e090da" target="a76b67db-25de-4e73-8c39-8ec47a727352"/>
 <edge source="node85" target="node86"/>
 <edge source="node85" target="926989e3-4fb3-4348-8185-838470b98d88"/>
@@ -864,4 +880,5 @@ done</data>
 <edge source="69c740d1-a5bd-40aa-a82c-bc90d7d60e31" target="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64"/>
 <edge source="b9e51f29-7332-42a9-be8b-fa6f59d43632" target="445f4183-2221-42ae-80fe-cfa8e3da2000"/>
 <edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8"/>
+<edge source="066b6d9a-3d80-439f-ae79-34ba08a9898f" target="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c"/>
 </graph></graphml>

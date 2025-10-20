@@ -35,9 +35,9 @@ def main():
     args = parse_arguments()
     
     # Load data
-    meta = pd.read_csv('results/meta.tsv', sep='\t', index_col=0)
+    meta = pd.read_csv('results/filtered/meta.tsv', sep='\t', index_col=0)
     dataset_names = load_datasets(args.datasets_file)
-    datasets = {name: pd.read_csv(f'results/{name}.tsv', sep='\t', index_col=0) for name in dataset_names}
+    datasets = {name: pd.read_csv(f'results/filtered/{name}.tsv', sep='\t', index_col=0) for name in dataset_names}
     
     df = pd.concat(datasets, axis=1)
     
