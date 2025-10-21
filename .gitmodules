@@ -4,3 +4,6 @@
 [submodule "maaslin3"]
 	path = maaslin3
 	url = https://github.com/biobakery/maaslin3.git
+[submodule "digital_twin"]
+	path = digital_twin
+	url = https://github.com/Catriona-Miller/digital_twin.git
