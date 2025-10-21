@@ -1,4 +1,6 @@
 # USER DEFINED
+.Rhistory
+writing/manuscript/output/
 data/
 results/
 reading/
