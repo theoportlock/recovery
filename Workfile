@@ -769,6 +769,12 @@ results/pcoa/{}.tsv \
   <data key="d3">5352.857142857143</data>
   <data key="d4">-2127.1428571428573</data>
 </node>
+<node id="a444b7b3-9751-4381-850e-23be98713972">
+  <data key="d2">pwd</data>
+  <data key="d3">475.0</data>
+  <data key="d4">282.0</data>
+  <data key="d5">ran</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="analysis.graphml::3ff0e97e-59cb-453f-8be6-56a5547b6dfe" target="analysis.graphml::8ed5d518-ce3a-4a47-b591-c53f725eac40">
   <data key="d6">9ee443a0-7da7-4586-81d1-03d4383eb83c</data>
