@@ -11,14 +11,8 @@ filenames = [
     'results/mofa_metabolome/extract/sample_factors.tsv',
     'results/timepoints/yr1/alpha_diversity.tsv',
     'results/timepoints/yr1/anthro.tsv',
-    'results/timepoints/yr1/fcis.tsv',
-    'results/timepoints/yr1/glitter.tsv',
     'results/timepoints/yr1/head.tsv',
-    'results/timepoints/yr1/pci.tsv',
-    'results/timepoints/yr1/pss.tsv',
     'results/timepoints/yr1/sleep.tsv',
-    'results/timepoints/yr1/bayley.tsv',
-    'results/timepoints/yr1/wolkes.tsv'
 ]
 files = filenames + notp_files
 
