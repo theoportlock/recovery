@@ -4,6 +4,5 @@ family
 genetics
 household
 media_consumption
-pots
 sanitation
 surveillance
