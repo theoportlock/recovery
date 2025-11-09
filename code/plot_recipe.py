@@ -44,7 +44,8 @@ fdf = fdf.loc[fdf.median(axis=1).sort_values(ascending=False).index]
 # Plot
 sns.clustermap(fdf, cmap='coolwarm', figsize=(1.32,4), yticklabels=True, row_cluster=False)
 plt.savefig(f'{output}/{var}.svg')
-plt.show()
+#plt.show()
+plt.clf()
 
 var = 'RUTF'
 df = pd.read_excel(input_file, index_col=0, sheet_name=var)
@@ -78,7 +79,8 @@ fdf = fdf.loc[fdf.median(axis=1).sort_values(ascending=False).index]
 # Plot
 sns.clustermap(fdf, cmap='coolwarm', figsize=(1.37,4), yticklabels=True, row_cluster=False)
 plt.savefig(f'{output}/{var}.svg')
-plt.show()
+#plt.show()
+plt.clf()
 
 # Save
 df.to_csv('results/recipe.tsv')

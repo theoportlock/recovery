@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 source env.sh
+
+input=
+timemeta=results/filtered/timemeta.tsv
+output=results/figure2/maaslin/baseline
+
+## CARRY ON FROM HERE
 
 filter.py \
     results/filtered/timemeta.tsv \
