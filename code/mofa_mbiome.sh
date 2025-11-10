@@ -5,8 +5,11 @@ source env.sh
 data_dir=results/filtered/
 output_dir=results/mofa_mbiome
 
-scale.py CLR $data_dir/species.tsv --output results/mofa_mbiome/data/species_CLR.tsv
-scale.py CLR $data_dir/pathways.tsv --output results/mofa_mbiome/data/pathways_CLR.tsv
+rm -rf $output_dir
+mkdir $output_dir
+
+scale.py CLR $data_dir/species.tsv --output $output_dir/data/species_CLR.tsv
+scale.py CLR $data_dir/pathways.tsv --output $output_dir/data/pathways_CLR.tsv
 
 for f in $(cat conf/mbiomdatasets.txt); do
     splitter.py \
@@ -28,6 +31,8 @@ mofa_run.py \
 	--output $output_dir/mofa_model.hdf5
 
 mofa_export.R \
-	--model results/mofa_mbiome/mofa_model.hdf5 \
-	--outdir results/mofa_mbiome/extract
+	--model $output_dir/mofa_model.hdf5 \
+	--outdir $output_dir/extract
 
+cp $output_dir/extract/sample_factors.tsv \
+	$output_dir/mofa_mbiome.tsv

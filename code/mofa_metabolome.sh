@@ -34,3 +34,5 @@ mofa_export.R \
 	--model $output_dir/mofa_model.hdf5 \
 	--outdir $output_dir/extract
 
+cp $output_dir/extract/sample_factors.tsv \
+	$output_dir/mofa_metabolome.tsv

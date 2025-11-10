@@ -5,10 +5,10 @@
 set -e
 source env.sh
 
-input=results/merged_dataset.tsv
-output=results/prediction
-#input=$1
-#output=$2
+#input=results/merged_dataset.tsv
+#output=results/prediction
+input=$1
+output=$2
 
 rm -rf $output
 mkdir -p $output
@@ -18,28 +18,30 @@ test_train_split.py \
 	--y_col WLZ_WHZ \
 	--y_file results/timepoints/yr2/anthro.tsv \
 	--scaler none \
+	--keepna \
 	--output_dir $output/dataset_split
 
+#xgboost_model.py \
 random_forest.py \
 	--input_dir $output/dataset_split/ \
 	--task regression \
-	--output_model $output/dataset_rf.pkl
+	--output_model $output/model.pkl
 
 evaluate_model.py \
-	--model $output/dataset_rf.pkl \
+	--model $output/model.pkl \
 	--input_dir $output/dataset_split/ \
 	--task regression \
-	--report_file $output/dataset_report_rf.tsv
+	--report_file $output/model_report.tsv
 
 shap_interpret.py \
-	--model $output/dataset_rf.pkl \
+	--model $output/model.pkl \
 	--input_dir $output/dataset_split/ \
 	--shap_val \
 	--shap_interact \
-	--output_dir $output/dataset_rf_shap 
+	--output_dir $output/model_shap 
 
 create_network.py \
-	--edges $output/dataset_rf_shap/mean_abs_shap_interaction_train.tsv \
+	--edges $output/model_shap/mean_abs_shap_interaction_train.tsv \
 	--output $output/network.graphml
 
 plot_network.py \
@@ -51,11 +53,11 @@ plot_network.py \
 	--output $output/network2.svg
 
 shap_plots.sh \
-	$output/dataset_rf_shap/shap_values_test.joblib \
+	$output/model_shap/shap_values_test.joblib \
 	$output/plots
 
 plot_regression_residuals.py \
-	--model $output/dataset_rf.pkl \
+	--model $output/model.pkl \
 	--input $output/dataset_split \
 	--output $output/plots
 

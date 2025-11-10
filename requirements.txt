@@ -1,5 +1,6 @@
 anndata
 muon
+xgboost
 git+https://github.com/ayaandroid/mofapy2.git@fix-np-inf
 imbalanced-learn
 ipdb
