@@ -8,6 +8,7 @@ export data="/mnt/d/fellowship/m4efad/recovery/data"
 export PATH="code/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"
 export PATH="maaslin3/R/:$PATH"
+export PATH="digital_twin/scripts/:$PATH"
 
 # Activate Python virtual environment
 if [ -f venv/bin/activate ]; then
