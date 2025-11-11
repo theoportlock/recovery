@@ -3,30 +3,36 @@
 set -euo pipefail
 source env.sh
 
-input=
+input=$1
+timemeta=$2
+output=$3
+input=results/filtered/
 timemeta=results/filtered/timemeta.tsv
-output=results/figure2/maaslin/baseline
+output=results/figure3/maaslin/healthy
 
-## CARRY ON FROM HERE
+# Consider dropping Recovery category
+rm -rf $output
+mkdir $output
 
 filter.py \
-    results/filtered/timemeta.tsv \
+    $timemeta \
     -q 'timepoint == 0 or timepoint == 52' \
-    -o results/filtered/timemeta_0_52tp.tsv
+    -o $output/timemeta_0_52tp.tsv
 
 fillna.py \
-    -i results/filtered/timemeta_0_52tp.tsv \
+    -i $output/timemeta_0_52tp.tsv \
     -c Feed,Recovery \
     -v 'Well-nourished' \
-    -o results/filtered/timemeta_0_52tp_filled.tsv
+    -o $output/timemeta_0_52tp_filled.tsv
 
-# Test first here
+replace.py \
+    $output/timemeta_0_52tp_filled.tsv \
+    --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
+    --output $output/timemeta_0_52tp_filled_formatted.tsv
+
 maaslin3.R \
-    results/filtered/species.tsv \
-    results/filtered/timemeta_0_52tp_filled.tsv \
-    results/maaslin/time/species \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Well-nourished;Recovery,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + (1|subjectID)" \
+    --reference "Feed,Well-nourished;timepoint,yr1" \
     --min_abundance 0 \
     --min_prevalence 0.2 \
     --max_significance 0.1 \
@@ -35,14 +41,14 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --max_pngs 100 \
-    --cores 1
+    --cores 1 \
+    $input/species.tsv \
+    $output/timemeta_0_52tp_filled_formatted.tsv \
+    $output/species \
 
 maaslin3.R \
-    results/filtered/aa.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/aa \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
+    --formula "~ timepoint * Feed + (1|subjectID)" \
+    --reference "Feed,Well-nourished;timepoint,yr1" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -52,14 +58,14 @@ maaslin3.R \
     --small_random_effects True \
     --evaluate_only abundance \
     --max_pngs 100 \
-    --cores 1
+    --cores 1 \
+    $input/alpha_diversity.tsv \
+    $output/timemeta_0_52tp_filled_formatted.tsv \
+    $output/alpha_diversity
 
 maaslin3.R \
-    results/filtered/alpha_diversity.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/alpha_diversity \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
+    --formula "~ timepoint * Feed + (1|subjectID)" \
+    --reference "Feed,Well-nourished;timepoint,yr1" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -69,14 +75,14 @@ maaslin3.R \
     --small_random_effects True \
     --evaluate_only abundance \
     --max_pngs 100 \
-    --cores 1
+    --cores 1 \
+    $input/anthro.tsv \
+    $output/timemeta_0_52tp_filled_formatted.tsv \
+    $output/anthro
 
 maaslin3.R \
-    results/filtered/anthro.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/anthro \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
+    --formula "~ timepoint * Feed + (1|subjectID)" \
+    --reference "Feed,Well-nourished;timepoint,yr1" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -86,82 +92,14 @@ maaslin3.R \
     --small_random_effects True \
     --evaluate_only abundance \
     --max_pngs 100 \
-    --cores 1
+    --cores 1 \
+    $input/head.tsv \
+    $output/timemeta_0_52tp_filled_formatted.tsv \
+    $output/head
 
 maaslin3.R \
-    results/filtered/fcis.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/fcis \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization NONE \
-    --transform NONE \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --evaluate_only abundance \
-    --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/glitter.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/glitter \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization NONE \
-    --transform NONE \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --evaluate_only abundance \
-    --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/head.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/head \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization NONE \
-    --transform NONE \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --evaluate_only abundance \
-    --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/lipids.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/lipids \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization NONE \
-    --transform NONE \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --evaluate_only abundance \
-    --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/pathways.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/pathways \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
+    --formula "~ timepoint * Feed + (1|subjectID)" \
+    --reference "Feed,Well-nourished;timepoint,yr1" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -170,14 +108,14 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --max_pngs 100 \
-    --cores 1
+    --cores 1 \
+    $input/pathways.tsv \
+    $output/timemeta_0_52tp_filled_formatted.tsv \
+    $output/pathways
 
 maaslin3.R \
-    results/filtered/pci.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/pci \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
+    --formula "~ timepoint * Feed + (1|subjectID)" \
+    --reference "Feed,Well-nourished;timepoint,yr1" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -187,55 +125,7 @@ maaslin3.R \
     --small_random_effects True \
     --evaluate_only abundance \
     --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/pss.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/pss \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization NONE \
-    --transform NONE \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --evaluate_only abundance \
-    --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/sleep.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/sleep \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization NONE \
-    --transform NONE \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --evaluate_only abundance \
-    --max_pngs 100 \
-    --cores 1
-
-maaslin3.R \
-    results/filtered/species.tsv \
-    results/filtered/timemeta_MAM_0_52tp.tsv \
-    results/maaslin/species \
-    --formula "~ timepoint*(Feed + Recovery) + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);Recovery,No recovery;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.2 \
-    --max_significance 0.1 \
-    --normalization TSS \
-    --transform LOG \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --max_pngs 100 \
-    --cores 1
-
+    --cores 1 \
+    $input/sleep.tsv \
+    $output/timemeta_0_52tp_filled_formatted.tsv \
+    $output/sleep

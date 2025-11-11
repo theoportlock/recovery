@@ -167,8 +167,8 @@ anthrotime.py</data>
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/maaslin/baseline/change/$name.tsv"
 done</data>
-  <data key="d3">3776.448436283784</data>
-  <data key="d4">-1094.8949710954937</data>
+  <data key="d3">3778.1151029504504</data>
+  <data key="d4">-1088.228304428827</data>
 </node>
 <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
   <data key="d2">parallel -j1 pcoa.py \
@@ -228,8 +228,8 @@ filter.py results/filtered/timemeta.tsv \
     --outdir results/scaled/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d3">2655.596518150511</data>
-  <data key="d4">-280.7346914888029</data>
+  <data key="d3">3908.446518150512</data>
+  <data key="d4">-298.48469148880304</data>
   <data key="d5">ran</data>
 </node>
 <node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
@@ -243,8 +243,8 @@ done</data>
         -o results/rda/${tp}/${f}.tsv
     done
 done</data>
-  <data key="d3">3122.4983771355996</data>
-  <data key="d4">-319.35907771588495</data>
+  <data key="d3">4375.3483771356005</data>
+  <data key="d4">-337.1090777158852</data>
   <data key="d5">ran</data>
 </node>
 <node id="8213bd4f-8cf5-4af0-b058-3e4e2f810e78">
@@ -256,8 +256,8 @@ done</data>
     -f 'Sex,Ethnicity,Feed,Recovery,Delivery_Mode,Supplementation,BF,PoB' \
     -o results/rda/notp/${f}.tsv
 done</data>
-  <data key="d3">3126.8046109018264</data>
-  <data key="d4">-48.53616426134246</data>
+  <data key="d3">4379.654610901827</data>
+  <data key="d4">-66.28616426134272</data>
   <data key="d5">ran</data>
 </node>
 <node id="8727268b-1b5b-4c92-9768-cbe389f6984f">
@@ -268,8 +268,8 @@ done</data>
   --add-filename \
   -o results/rda/${set}_rda.tsv
 done</data>
-  <data key="d3">3786.722702221645</data>
-  <data key="d4">-210.49639758885968</data>
+  <data key="d3">5039.572702221645</data>
+  <data key="d4">-228.24639758885996</data>
   <data key="d5">ran</data>
 </node>
 <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
@@ -289,8 +289,8 @@ done</data>
     -rf "^(?!Total_Constrained_R2|Adjusted_Full_Model)" \
     -o results/rda/${set}_rda_filtered.tsv
 done</data>
-  <data key="d3">4067.2011864973724</data>
-  <data key="d4">-198.65124728893483</data>
+  <data key="d3">5320.051186497372</data>
+  <data key="d4">-216.4012472889351</data>
   <data key="d5">ran</data>
 </node>
 <node id="5656487b-7e9b-4945-b26e-5d344660740c">
@@ -301,8 +301,9 @@ arrange_svgs.py \
   results/rda/notp_rda_bar.svg \
   --rows 2 \
   -o results/rda/merged.svg</data>
-  <data key="d3">4866.576363164031</data>
-  <data key="d4">-217.0681234794111</data>
+  <data key="d3">6119.4263631640315</data>
+  <data key="d4">-234.81812347941127</data>
+  <data key="d5">ran</data>
 </node>
 <node id="df4dc09e-4408-4798-ae04-b10e3339f1e9">
   <data key="d2">for set in yr1 yr2 notp; do \
@@ -317,8 +318,9 @@ arrange_svgs.py \
     --max 0.15 \
     -o results/rda/${set}_rda_bar.svg
 done</data>
-  <data key="d3">4504.255321259285</data>
-  <data key="d4">-254.30244966988897</data>
+  <data key="d3">5757.105321259285</data>
+  <data key="d4">-272.05244966988926</data>
+  <data key="d5">ran</data>
 </node>
 <node id="67a1314f-c27c-4ce3-b00a-e4fa939150fd">
   <data key="d2"># Standard scale all datasets
@@ -327,8 +329,8 @@ for f in $(cat conf/all_datasets.txt); do
     results/filtered/${f}.tsv \
     -o results/scaled/${f}.tsv
 done</data>
-  <data key="d3">2346.956371075451</data>
-  <data key="d4">-254.5107663950834</data>
+  <data key="d3">3599.806371075452</data>
+  <data key="d4">-272.2607663950837</data>
   <data key="d5">ran</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
@@ -532,14 +534,15 @@ mkdir -p results/figure1</data>
 </node>
 <node id="a92b7548-e188-4cb2-a3bf-7c3c46d70f28">
   <data key="d2">maaslin3_healthy.sh</data>
-  <data key="d3">3547.527777777778</data>
-  <data key="d4">-1153.5277777777785</data>
+  <data key="d3">3487.527777777778</data>
+  <data key="d4">-1153.5277777777787</data>
 </node>
 <node id="926989e3-4fb3-4348-8185-838470b98d88">
   <data key="d2">rm -rf results/figure2/maaslin
 mkdir -p results/figure2/maaslin/{time,baseline}/change</data>
-  <data key="d3">2863.9880952380954</data>
-  <data key="d4">-1141.1309523809527</data>
+  <data key="d3">2907.3214285714284</data>
+  <data key="d4">-1017.7976190476197</data>
+  <data key="d5">ran</data>
 </node>
 <node id="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
   <data key="d2"># TABLE 2
@@ -557,24 +560,26 @@ table3_recovery.sh</data>
 </node>
 <node id="b9e51f29-7332-42a9-be8b-fa6f59d43632">
   <data key="d2">maaslin3_baseline.sh</data>
-  <data key="d3">3541.416666666667</data>
-  <data key="d4">-1083.7500000000002</data>
+  <data key="d3">3481.416666666667</data>
+  <data key="d4">-1083.7500000000005</data>
 </node>
 <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
-  <data key="d2">for d in results/maaslin/time/*/; do
+  <data key="d2">for d in results/figure3/maaslin/healthy/*/; do
     name=$(basename "$d")
-    cp "$d/all_results.tsv" "results/maaslin/time/change/$name.tsv"
+    cp "$d/all_results.tsv" "results/figure3/maaslin/healthy/change/$name.tsv"
 done</data>
-  <data key="d3">3773.0833333333335</data>
-  <data key="d4">-1222.0833333333337</data>
+  <data key="d3">3774.75</data>
+  <data key="d4">-1220.4166666666672</data>
+  <data key="d5">ran</data>
 </node>
 <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
-  <data key="d2">merge.py results/maaslin/time/change/*.tsv \
+  <data key="d2">merge.py results/figure3/maaslin/healthy/change/*.tsv \
   --append \
   --add-filename \
-  -o results/timechange.tsv</data>
+  -o results/figure3/timechange.tsv</data>
   <data key="d3">4313.083333333334</data>
   <data key="d4">-1227.0833333333342</data>
+  <data key="d5">ran</data>
 </node>
 <node id="168f33a5-4532-4581-b5e8-0cf6de606325">
   <data key="d2">plot_recipe.py</data>
@@ -610,26 +615,14 @@ results/pcoa/{}.tsv \
   <data key="d3">5628.321428571427</data>
   <data key="d4">-1095.1785714285718</data>
 </node>
-<node id="de37be08-99cd-463c-a70e-db80cce2460d">
-  <data key="d2">filter.py \
-  results/timechange.tsv \
-  -q 'name == "timepoint:RecoveryRecovered"' \
-  -o results/timechange_recovery.tsv</data>
-  <data key="d3">4745.464285714286</data>
-  <data key="d4">-1222.3214285714291</data>
-</node>
-<node id="05083ed8-1508-47b0-b3b4-c26377de9a0e">
-  <data key="d2">filter.py \
-  results/baselinechange.tsv \
-  -q 'name == "RecoveryRecovered"' \
-  -o results/baselinechange_recovery.tsv</data>
-  <data key="d3">4745.464285714286</data>
-  <data key="d4">-1076.607142857143</data>
-</node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
-  <data key="d2">sig_summary results/timechange_recovery.tsv</data>
-  <data key="d3">5127.607142857143</data>
-  <data key="d4">-1127.7500000000002</data>
+  <data key="d2">sig_summary.py \
+  -i results/figure3/timechange_feed.tsv \
+  -p 0.1 \
+  -o results/figure3/timechange_feed_sig.tsv</data>
+  <data key="d3">5122.607142857143</data>
+  <data key="d4">-1171.0833333333335</data>
+  <data key="d5">fail</data>
 </node>
 <node id="33d300dc-659b-413b-92d8-d1c10e4840aa">
   <data key="d2">sig_summary results/baselinechange_recovery.tsv
@@ -736,13 +729,13 @@ merge.py \
   <data key="d4">706.8181818181818</data>
 </node>
 <node id="1686254d-828f-418d-939c-56bee4889dc4">
-  <data key="d2">merge.py results/rda/*rda_filtered.tsv \
+  <data key="d2">merge.py results/rda/*rda_filtered_renamed.tsv \
   -a \
   --add-filename \
-  --filename-format path \
+  --filename-format base \
   -o results/rda/merged.tsv</data>
-  <data key="d3">4111.785714285715</data>
-  <data key="d4">51.07142857142851</data>
+  <data key="d3">5457.135714285716</data>
+  <data key="d4">94.57142857142821</data>
   <data key="d5">ran</data>
 </node>
 <node id="5873548a-2a45-4177-91c1-1448ccb48d59">
@@ -751,16 +744,62 @@ merge.py \
   --labels adj_R2 \
   --axis 1 \
   --outfile results/rda/merged_dropped.tsv</data>
-  <data key="d3">4398.928571428572</data>
-  <data key="d4">49.64285714285709</data>
+  <data key="d3">5853.028571428573</data>
+  <data key="d4">93.14285714285688</data>
   <data key="d5">ran</data>
 </node>
 <node id="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4">
   <data key="d2"># FIGURE S2
 rm -rf results/figureS2
 mkdir results/figureS2</data>
-  <data key="d3">2017.5</data>
-  <data key="d4">-240.0</data>
+  <data key="d3">3270.350000000001</data>
+  <data key="d4">-257.7500000000002</data>
+</node>
+<node id="d4860758-e29e-4882-a5c7-64084e0276d4">
+  <data key="d2">for set in yr1 yr2 notp; do \
+rename_regex.py \
+  results/rda/${set}_rda_filtered.tsv \
+  --match filename \
+  --replace dataset \
+  --axis columns \
+  -o results/rda/${set}_rda_filtered_renamed.tsv
+done</data>
+  <data key="d3">5040.35</data>
+  <data key="d4">34.74999999999977</data>
+  <data key="d5">ran</data>
+</node>
+<node id="ce6b111f-bf9d-4c19-848f-b87f6c9363cb">
+  <data key="d2">replace.py results/rda/merged_dropped.tsv \
+  --to_replace "_rda_filtered_renamed" \
+  --value "" \
+  --regex \
+  -o results/rda/rda.tsv</data>
+  <data key="d3">6229.1</data>
+  <data key="d4">69.74999999999977</data>
+  <data key="d5">ran</data>
+</node>
+<node id="50daab08-2e35-4393-809a-aabc9f1dbd30">
+  <data key="d2">for d in sleep species pathways alpha_diversity head anthro
+do
+  overall_recovery.py "$d"
+done</data>
+  <data key="d3">1580.0000000000002</data>
+  <data key="d4">113.33333333333336</data>
+  <data key="d5">ran</data>
+</node>
+<node id="69d46b2e-7d27-4ec3-a821-092c7ed87e50">
+  <data key="d2">rm -rf results/figure3
+mkdir results/figure3</data>
+  <data key="d3">1198.3333333333335</data>
+  <data key="d4">68.33333333333334</data>
+  <data key="d5">ran</data>
+</node>
+<node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
+  <data key="d2">rm -rf results/figure3/maaslin/healthy/change
+mkdir -p results/figure3/maaslin/healthy/change</data>
+  <data key="d3">2833.3333333333335</data>
+  <data key="d4">-1191.666666666667</data>
+  <data key="d5">ran</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
@@ -810,7 +849,8 @@ mkdir results/figureS2</data>
   <data key="d6">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
 </edge>
 <edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="066b6d9a-3d80-439f-ae79-34ba08a9898f"/>
-<edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="05083ed8-1508-47b0-b3b4-c26377de9a0e"/>
+<edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="33d300dc-659b-413b-92d8-d1c10e4840aa"/>
+<edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="9a55d674-5bb9-4a2b-81b5-acd2da8e2533"/>
 <edge source="node85" target="e066b0ad-7643-4e5c-b6f8-063b7be3e023"/>
 <edge source="node85" target="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4"/>
 <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0"/>
@@ -835,7 +875,7 @@ mkdir results/figureS2</data>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="54aa994b-162d-49c0-a6ab-94a10c646e86"/>
 <edge source="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8"/>
 <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="df4dc09e-4408-4798-ae04-b10e3339f1e9"/>
-<edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="1686254d-828f-418d-939c-56bee4889dc4"/>
+<edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="d4860758-e29e-4882-a5c7-64084e0276d4"/>
 <edge source="df4dc09e-4408-4798-ae04-b10e3339f1e9" target="5656487b-7e9b-4945-b26e-5d344660740c"/>
 <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
 <edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
@@ -858,22 +898,20 @@ mkdir results/figureS2</data>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="a191959b-1acd-4594-8819-65c36f01f33c"/>
 <edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="6eaccd10-48fb-45f8-bf1d-07831d27c76a"/>
 <edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="node85"/>
+<edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="69d46b2e-7d27-4ec3-a821-092c7ed87e50"/>
 <edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>
-<edge source="926989e3-4fb3-4348-8185-838470b98d88" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28"/>
 <edge source="926989e3-4fb3-4348-8185-838470b98d88" target="b9e51f29-7332-42a9-be8b-fa6f59d43632"/>
 <edge source="69c740d1-a5bd-40aa-a82c-bc90d7d60e31" target="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64"/>
 <edge source="b9e51f29-7332-42a9-be8b-fa6f59d43632" target="445f4183-2221-42ae-80fe-cfa8e3da2000"/>
 <edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8"/>
-<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="de37be08-99cd-463c-a70e-db80cce2460d"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88"/>
 <edge source="066b6d9a-3d80-439f-ae79-34ba08a9898f" target="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c"/>
-<edge source="de37be08-99cd-463c-a70e-db80cce2460d" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9"/>
-<edge source="de37be08-99cd-463c-a70e-db80cce2460d" target="14b716fa-cb0b-4379-9727-7769f1510a88"/>
-<edge source="05083ed8-1508-47b0-b3b4-c26377de9a0e" target="33d300dc-659b-413b-92d8-d1c10e4840aa"/>
-<edge source="05083ed8-1508-47b0-b3b4-c26377de9a0e" target="9a55d674-5bb9-4a2b-81b5-acd2da8e2533"/>
 <edge source="54aa994b-162d-49c0-a6ab-94a10c646e86" target="e01d74fd-8601-460e-858c-2f6b0be61422"/>
 <edge source="54aa994b-162d-49c0-a6ab-94a10c646e86" target="3a43cff2-d4a9-4809-8fe3-f3ec751051f8"/>
-<edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="926989e3-4fb3-4348-8185-838470b98d88"/>
 <edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="c27b93c1-8f27-467a-8d25-1ad31ccb6c77"/>
+<edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="926989e3-4fb3-4348-8185-838470b98d88"/>
+<edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="08584b44-c135-4c3f-b26b-f2ac8df4e824"/>
 <edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="49657f96-8f43-4c5b-abc7-95c75b9c3e3d"/>
 <edge source="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1" target="6cd59c60-d8fe-4449-be43-29f53856493e"/>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1"/>
@@ -884,5 +922,9 @@ mkdir results/figureS2</data>
 <edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="0d7d08bc-6be0-44ca-be4f-feeabb2375c8"/>
 <edge source="a61eeb91-b3f3-499f-a53a-5dd4b29e506d" target="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb"/>
 <edge source="1686254d-828f-418d-939c-56bee4889dc4" target="5873548a-2a45-4177-91c1-1448ccb48d59"/>
+<edge source="5873548a-2a45-4177-91c1-1448ccb48d59" target="ce6b111f-bf9d-4c19-848f-b87f6c9363cb"/>
 <edge source="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd"/>
+<edge source="d4860758-e29e-4882-a5c7-64084e0276d4" target="1686254d-828f-418d-939c-56bee4889dc4"/>
+<edge source="69d46b2e-7d27-4ec3-a821-092c7ed87e50" target="50daab08-2e35-4393-809a-aabc9f1dbd30"/>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28"/>
 </graph></graphml>

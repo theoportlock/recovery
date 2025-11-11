@@ -11,7 +11,7 @@ if ! docker image inspect "$IMAGE" &>/dev/null; then
 fi
 
 # Custom paths for scripts
-CUSTOM_PATH="/workspace/code:/workspace/metatoolkit/metatoolkit:/workspace/metaphlan/metaphlan/utils:$PATH"
+CUSTOM_PATH="/workspace/code:/workspace/metatoolkit/metatoolkit:$PATH"
 
 # Run the container
 docker run --rm -it \
