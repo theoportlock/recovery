@@ -18,7 +18,21 @@ out = out.dropna(axis=1, thresh=300).dropna()
 out = out.loc[out.index.str[3] != '7']
 out = out.loc[out.index.str[-4] != '1']
 out.index = out.index.str.replace('3301','000')
-out.index = out.index.str.replace('3302','012')
+
+# LCC1###3302 → LCC1###012
+out.index = out.index.str.replace(
+    r'^(LCC1\d{3})3302',
+    r'\g<1>012',
+    regex=True
+)
+
+# LCC2###3302 → LCC2###052
+out.index = out.index.str.replace(
+    r'^(LCC2\d{3})3302',
+    r'\g<1>052',
+    regex=True
+)
+
 out.index = out.index.str.replace('3303','052')
 out = out.astype(float)
 out = out.loc[out.index.str[2] != 'M'] # lose 10 samples to mothers

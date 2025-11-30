@@ -40,9 +40,9 @@ sns.barplot(
 )
 
 # <-- Add symlog here!
-plt.xscale("symlog", linthresh=5)
+plt.xscale("log")
 
-plt.xlabel('Improvement (%) (symlog scale)')
+plt.xlabel('Improvement (%)')
 plt.ylabel('')
 plt.title('Microbiome Functional Improvement Toward Healthy')
 plt.legend(title='Feed', bbox_to_anchor=(1.02, 1), loc='upper left')

@@ -6,9 +6,9 @@ source env.sh
 input=results/filtered
 timemeta=results/filtered/timemeta_MAM_0_52tp.tsv
 output=results/figure2/maaslin/baseline
-input=$1
-timemeta=$2
-output=$3
+#input=$1
+#timemeta=$2
+#output=$3
 
 rm -rf $output
 mkdir $output
@@ -24,9 +24,13 @@ filter.py \
 	-q 'timepoint == 0' \
 	-o $output/timemetaMAM_0tp_filled.tsv
 
+cp \
+	$input/meta_MAM.tsv \
+	$output/meta_MAM.tsv
+
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -43,8 +47,8 @@ maaslin3.R \
 	$output/anthro
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -61,8 +65,8 @@ maaslin3.R \
 	$output/vitamin
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -74,67 +78,31 @@ maaslin3.R \
 	--evaluate_only abundance \
 	--max_pngs 100 \
 	--cores 1 \
-	$input/wolkes.tsv \
-	$output/timemetaMAM_0tp_filled.tsv \
-	$output/wolkes
-
-maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
-	--min_abundance -100 \
-	--min_variance 0 \
-	--zero-threshold -100 \
-	--min_prevalence 0 \
-	--max_significance 1 \
-	--normalization NONE \
-	--transform NONE \
-	--warn_prevalence False \
-	--evaluate_only abundance \
-	--max_pngs 100 \
-	--cores 1 \
-	$input/genetics.tsv
-	$output/meta_MAM.tsv
+	$input/genetics.tsv \
+	$output/meta_MAM.tsv \
 	$output/genetics
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
 	--min_prevalence 0 \
-	--max_significance 1 \
+	--max_significance 0.1 \
 	--normalization NONE \
 	--transform NONE \
 	--warn_prevalence False \
 	--evaluate_only abundance \
 	--max_pngs 100 \
 	--cores 1 \
-	$input/pots.tsv \
-	$output/meta_MAM.tsv \
-	$output/pots
-
-maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
-	--min_abundance -100 \
-	--min_variance 0 \
-	--zero-threshold -100 \
-	--min_prevalence 0 \
-	--max_significance 1 \
-	--normalization NONE \
-	--transform NONE \
-	--warn_prevalence False \
-	--evaluate_only abundance \
-	--max_pngs 100 \
-	--cores 1 \
-	$input/surveillance.tsv \
+	$input/surveillance_minus_catchup.tsv \
 	$output/meta_MAM.tsv \
 	$output/surveillance
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -151,8 +119,8 @@ maaslin3.R \
 	$output/aa
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -169,44 +137,8 @@ maaslin3.R \
 	$output/alpha_diversity
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
-	--min_abundance -100 \
-	--min_variance 0 \
-	--zero-threshold -100 \
-	--min_prevalence 0 \
-	--max_significance 1 \
-	--normalization NONE \
-	--transform NONE \
-	--warn_prevalence False \
-	--evaluate_only abundance \
-	--max_pngs 100 \
-	--cores 1 \
-	$input/fcis.tsv \
-	$output/timemetaMAM_0tp_filled.tsv \
-	$output/fcis
-
-maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
-	--min_abundance -100 \
-	--min_variance 0 \
-	--zero-threshold -100 \
-	--min_prevalence 0 \
-	--max_significance 1 \
-	--normalization NONE \
-	--transform NONE \
-	--warn_prevalence False \
-	--evaluate_only abundance \
-	--max_pngs 100 \
-	--cores 1 \
-	$input/glitter.tsv \
-	$output/timemetaMAM_0tp_filled.tsv \
-	$output/glitter
-
-maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -223,8 +155,8 @@ maaslin3.R \
 	$output/head
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -241,8 +173,8 @@ maaslin3.R \
 	$output/lipids
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -259,8 +191,8 @@ maaslin3.R \
 	$output/pathways
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -277,9 +209,9 @@ maaslin3.R \
 	$output/sleep
 
 maaslin3.R \
-	--formula "~ Recovery + Sex" \
-	--reference "Recovery,No recovery;Sex,Male" \
-	--max_significance 0.9 \
+	--formula "~ Recovery" \
+	--reference "Recovery,No recovery" \
+	--max_significance 1\
 	--warn_prevalence False \
 	--max_pngs 100 \
 	--cores 1 \

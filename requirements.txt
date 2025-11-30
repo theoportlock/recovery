@@ -20,3 +20,4 @@ shap
 statsmodels
 workforce
 adjustText
+lightning
