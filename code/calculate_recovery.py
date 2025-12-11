@@ -14,7 +14,8 @@ allvars = timemeta.join(df[['WLZ_WHZ']]).dropna(subset=['WLZ_WHZ'])
 
 # --- Define recovery booleans ---
 # Recovered = WLZ_WHZ > -1
-allvars['Recovered'] = allvars['WLZ_WHZ'] > -1
+thresh = -2
+allvars['Recovered'] = allvars['WLZ_WHZ'] > thresh
 
 # Year 1 recovery (≤15 months)
 filt = allvars.query('timepoint <= 15').copy()

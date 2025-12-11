@@ -403,12 +403,6 @@ box.py \
   <data key="d4">-54.333333333333385</data>
   <data key="d5">ran</data>
 </node>
-<node id="a76b67db-25de-4e73-8c39-8ec47a727352">
-  <data key="d2"># FOR CATS CLUSTER
-cluster_compare.py</data>
-  <data key="d3">1399.274891774892</data>
-  <data key="d4">946.163419913419</data>
-</node>
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
   <data key="d2">wget -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
@@ -504,14 +498,14 @@ filter.py \
   <data key="d2">sort.py \
   results/polardata.tsv \
   -o results/polardata_sort.tsv</data>
-  <data key="d3">1671.297619047619</data>
-  <data key="d4">928.7619047619047</data>
+  <data key="d3">2955.2976190476193</data>
+  <data key="d4">880.7619047619047</data>
 </node>
 <node id="6ecc57c1-07b4-4096-b3b2-4daffb488260">
   <data key="d2">polar.py results/polardata_sort.tsv \
  -o results/catcluster_polar.svg</data>
-  <data key="d3">1984.630952380952</data>
-  <data key="d4">937.0952380952382</data>
+  <data key="d3">3264.059523809524</data>
+  <data key="d4">889.0952380952382</data>
 </node>
 <node id="f3f51679-47bd-4d95-b166-0773770b99c8">
   <data key="d2"># TABLE 1
@@ -838,6 +832,125 @@ mkdir results/figure4</data>
   <data key="d3">2374.0</data>
   <data key="d4">-440.0</data>
 </node>
+<node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
+  <data key="d2">filter.py \
+  -q "~subjectID.str.startswith('LCC3')" \
+  results/cleaned/mothers.tsv \
+  -o results/filtered/mothers.tsv</data>
+  <data key="d3">-97.0</data>
+  <data key="d4">313.0</data>
+  <data key="d5">ran</data>
+</node>
+<node id="403c9095-7c10-40b5-b31a-e570ddec6c56">
+  <data key="d2">format_mothers.py</data>
+  <data key="d3">-761.0</data>
+  <data key="d4">602.0</data>
+</node>
+<node id="78c8d135-ef42-4645-bc41-820a809c493c">
+  <data key="d2">mixedlm.py \
+  -i results/filtered/mothers.tsv \
+  -m results/filtered/meta.tsv \
+  -o results/mothers_modelout.tsv</data>
+  <data key="d3">1155.0</data>
+  <data key="d4">1556.6666666666667</data>
+  <data key="d5">ran</data>
+</node>
+<node id="be560393-d428-4755-8f8c-096cc59441f0">
+  <data key="d2"> box.py \
+  results/filtered/mothers.tsv \
+  -x Recovery \
+  -y maternal_bmi \
+  --meta results/filtered/meta.tsv \
+  -o results/recovery_MAMatbirth_box.svg</data>
+  <data key="d3">1481.6666666666667</data>
+  <data key="d4">1388.3333333333335</data>
+  <data key="d5">ran</data>
+</node>
+<node id="70e0aeb0-3e97-4874-9263-fcf71b811409">
+  <data key="d2">descriptive_stats.sh \
+  results/cat_cluster_analysis/cat_cluster_merge.tsv \
+  results/cat_cluster_analysis/cat_cluster_descriptive</data>
+  <data key="d3">2638.285714285714</data>
+  <data key="d4">1136.8571428571431</data>
+  <data key="d5">ran</data>
+</node>
+<node id="454010a3-9ea2-4cd6-a88e-977f182fb381">
+  <data key="d2">onehot.py \
+  results/filtered/meta.tsv \
+  --dtype bool \
+  -o results/filtered/meta_oh.tsv</data>
+  <data key="d3">1935.9999999999998</data>
+  <data key="d4">1082.0</data>
+  <data key="d5">ran</data>
+</node>
+<node id="4128631c-6e54-4e3e-93a6-3ba0663df355">
+  <data key="d2">merge.py \
+  results/filtered/meta_oh.tsv \
+  results/filtered/mothers.tsv \
+  results/cat_cluster_analysis/clusters_oh.tsv \
+  -j inner \
+  -o results/cat_cluster_analysis/cat_cluster_merge.tsv</data>
+  <data key="d3">2232.0</data>
+  <data key="d4">1088.2857142857142</data>
+  <data key="d5">ran</data>
+</node>
+<node id="2886f3fc-11bf-4e5f-b235-5040294a5acc">
+  <data key="d2">replace.py \
+  digital_twin/outcomes/subject_cluster_assignments_small.tsv  \
+  --to_replace '{"1": "one", "2": "two"}'  \
+  -o results/cat_cluster_analysis/clusters.tsv</data>
+  <data key="d3">1464.5714285714284</data>
+  <data key="d4">850.8571428571428</data>
+  <data key="d5">ran</data>
+</node>
+<node id="00b9797d-859c-46e5-babc-b9d2d4743fda">
+  <data key="d2">onehot.py \
+  results/cat_cluster_analysis/clusters.tsv \
+  --dtype bool \
+  -o results/cat_cluster_analysis/clusters_oh.tsv</data>
+  <data key="d3">2001.4285714285716</data>
+  <data key="d4">931.4285714285714</data>
+  <data key="d5">ran</data>
+</node>
+<node id="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa">
+  <data key="d2">filter.py \
+  results/cat_cluster_analysis/cat_cluster_descriptive/merged_stats.tsv \
+  -q 'target == "cluster_id.one"' \
+  -o results/cat_cluster_analysis/merged_filtered.tsv</data>
+  <data key="d3">2638.571428571429</data>
+  <data key="d4">1224.2857142857144</data>
+  <data key="d5">ran</data>
+</node>
+<node id="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725">
+  <data key="d2">assign.py \
+  results/cat_cluster_analysis/merged_filtered.tsv  \
+  --assign "directional = -np.log(df['p_value']) * np.sign(df['statistic'])" \
+  -o results/cat_cluster_analysis/directional.tsv</data>
+  <data key="d3">2660.0</data>
+  <data key="d4">1334.2857142857144</data>
+  <data key="d5">ran</data>
+</node>
+<node id="a70bbf43-a2c2-4210-a15c-03aedc4258f4">
+  <data key="d2">drop.py\
+  --infile results/cat_cluster_analysis/directional.tsv \
+  --labels cluster_id.two \
+  --axis 0 \
+  --outfile results/cat_cluster_analysis/directional_nocluster2.tsv</data>
+  <data key="d3">2692.8571428571436</data>
+  <data key="d4">1438.5714285714287</data>
+</node>
+<node id="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa">
+  <data key="d2">hbar.py results/cat_cluster_analysis/directional_nocluster2.tsv \
+    --coef-col directional \
+    --index-col source \
+    --hue-col filename \
+    --xlabel "Directional –log(p)" \
+    --ylabel "Variable" \
+    --title "Directional Association with cluster_id.one" \
+    -o results/cat_cluster_analysis/directional_hbar.svg</data>
+  <data key="d3">2695.714285714286</data>
+  <data key="d4">1570.0</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
   <data key="d6">77e00512-2bac-4449-aaec-89cf7e81c0f7</data>
@@ -846,8 +959,8 @@ mkdir results/figure4</data>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="168f33a5-4532-4581-b5e8-0cf6de606325"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="e0c5398f-26da-4779-b36e-deab73e090da"/>
-<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="a76b67db-25de-4e73-8c39-8ec47a727352"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="a61eeb91-b3f3-499f-a53a-5dd4b29e506d"/>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="78c8d135-ef42-4645-bc41-820a809c493c"/>
 <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="99a1770b-1153-428d-8172-e783bf221b38"/>
@@ -918,7 +1031,6 @@ mkdir results/figure4</data>
 <edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="246364a8-29bd-49c2-a045-ceb068383c79" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8"/>
-<edge source="a76b67db-25de-4e73-8c39-8ec47a727352" target="ddda3b3f-7609-4dd8-88db-c4f521d8a127"/>
 <edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4"/>
 <edge source="694c1739-f526-421a-a8ec-99152294abf4" target="9430f225-f079-4a7f-bfd9-a272b950617f"/>
 <edge source="99a1770b-1153-428d-8172-e783bf221b38" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
@@ -958,6 +1070,8 @@ mkdir results/figure4</data>
 <edge source="f6085713-a056-44ed-8e7c-edf2454f3dce" target="325fd8ad-c462-4b83-9960-2ff4a64cfc89"/>
 <edge source="325fd8ad-c462-4b83-9960-2ff4a64cfc89" target="e8d9fb25-0b39-43e4-88f3-d784ffc87959"/>
 <edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="0d7d08bc-6be0-44ca-be4f-feeabb2375c8"/>
+<edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="ddda3b3f-7609-4dd8-88db-c4f521d8a127"/>
+<edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="2886f3fc-11bf-4e5f-b235-5040294a5acc"/>
 <edge source="a61eeb91-b3f3-499f-a53a-5dd4b29e506d" target="e93d007f-df16-43f4-a11e-5cd323cc56ce"/>
 <edge source="1686254d-828f-418d-939c-56bee4889dc4" target="5873548a-2a45-4177-91c1-1448ccb48d59"/>
 <edge source="5873548a-2a45-4177-91c1-1448ccb48d59" target="ce6b111f-bf9d-4c19-848f-b87f6c9363cb"/>
@@ -968,4 +1082,16 @@ mkdir results/figure4</data>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28"/>
 <edge source="e93d007f-df16-43f4-a11e-5cd323cc56ce" target="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb"/>
 <edge source="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8" target="91b62e34-3e4f-4498-a6f6-1a34a060520a"/>
+<edge source="67aba30b-09d2-4052-94cd-9de174d0cdd3" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83"/>
+<edge source="403c9095-7c10-40b5-b31a-e570ddec6c56" target="67aba30b-09d2-4052-94cd-9de174d0cdd3"/>
+<edge source="78c8d135-ef42-4645-bc41-820a809c493c" target="be560393-d428-4755-8f8c-096cc59441f0"/>
+<edge source="70e0aeb0-3e97-4874-9263-fcf71b811409" target="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa"/>
+<edge source="454010a3-9ea2-4cd6-a88e-977f182fb381" target="4128631c-6e54-4e3e-93a6-3ba0663df355"/>
+<edge source="4128631c-6e54-4e3e-93a6-3ba0663df355" target="70e0aeb0-3e97-4874-9263-fcf71b811409"/>
+<edge source="2886f3fc-11bf-4e5f-b235-5040294a5acc" target="00b9797d-859c-46e5-babc-b9d2d4743fda"/>
+<edge source="2886f3fc-11bf-4e5f-b235-5040294a5acc" target="454010a3-9ea2-4cd6-a88e-977f182fb381"/>
+<edge source="00b9797d-859c-46e5-babc-b9d2d4743fda" target="4128631c-6e54-4e3e-93a6-3ba0663df355"/>
+<edge source="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa" target="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725"/>
+<edge source="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725" target="a70bbf43-a2c2-4210-a15c-03aedc4258f4"/>
+<edge source="a70bbf43-a2c2-4210-a15c-03aedc4258f4" target="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa"/>
 </graph></graphml>

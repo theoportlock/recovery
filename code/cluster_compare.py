@@ -4,7 +4,8 @@ from sklearn.metrics import adjusted_rand_score
 
 # ---- Load data ----
 meta = pd.read_csv('results/filtered/meta.tsv', index_col=0, sep='\t')
-clusters = pd.read_csv('data/subject_cluster_assignments.tsv', index_col=0, sep='\t')
+clusters = pd.read_csv('digital_twin/outcomes/subject_cluster_assignments_small.tsv', index_col=0, sep='\t')
+mothers_meta = pd.read_csv('results/filtered/mothers.tsv', index_col=0, sep='\t')
 
 # Drop BF column if present
 if 'BF' in meta.columns:
@@ -14,7 +15,7 @@ if 'BF' in meta.columns:
 meta = meta.loc[clusters.index]
 
 # ---- Fill NaNs with "healthy" ----
-meta = meta.fillna('healthy')
+#meta = meta.fillna('healthy')
 
 # ---- Compute ARI for each column ----
 ari_results = {}
@@ -30,15 +31,7 @@ ari_df.to_csv('results/adjusted_rand_results.tsv', sep='\t')
 
 print(ari_df)
 
+outdf = pd.concat([meta,clusters,mothers_meta], axis=1, join='inner')
 
 
-# Correlation time
-'''
-metaonehot = pd.read_csv('results/filtered/metaonehot.tsv', index_col=0, sep='\t')
-df = metaonehot.join(clusters).dropna()
-df = df.drop(['Condition_MAM','Condition_Well-nourished'], axis=1)
-
-cor = df.corr().dropna()
-
-cor.cluster_id.sort_values().plot.barh()
-'''
+outdf.to_csv('results/cat_clusters.tsv', sep='\t')
