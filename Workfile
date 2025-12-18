@@ -276,14 +276,15 @@ done</data>
 </node>
 <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
   <data key="d2">mkdir -p results/cleaned</data>
-  <data key="d3">-1460.9640425682621</data>
-  <data key="d4">56.55906460583219</data>
+  <data key="d3">-1501.964042568262</data>
+  <data key="d4">63.55906460583219</data>
   <data key="d5">ran</data>
 </node>
 <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
   <data key="d2">rsync -aurvP $data .</data>
   <data key="d3">-1735.218211052124</data>
   <data key="d4">51.17631872516699</data>
+  <data key="d5">ran</data>
 </node>
 <node id="8a1d54be-d18d-494a-8d21-2fc840762f32">
   <data key="d2">for set in yr1 yr2 notp; do \
@@ -339,8 +340,8 @@ done</data>
   <data key="d2">scale.py log \
   results/cleaned/unlogged_lipids.tsv \
   -o results/cleaned/lipids.tsv</data>
-  <data key="d3">-505.21959691616985</data>
-  <data key="d4">-280.2779021684028</data>
+  <data key="d3">-570.2195969161698</data>
+  <data key="d4">-497.27790216840276</data>
   <data key="d5">ran</data>
 </node>
 <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
@@ -951,6 +952,14 @@ mkdir results/figure4</data>
   <data key="d3">2695.714285714286</data>
   <data key="d4">1570.0</data>
 </node>
+<node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
+  <data key="d2">unzip \
+  -d results/aaunzipped \
+  data/RE_\ M4EFaD\ amino\ acid\ measurements.zip</data>
+  <data key="d3">-1313.0</data>
+  <data key="d4">-358.0</data>
+  <data key="d5">ran</data>
+</node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38"/>
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
   <data key="d6">77e00512-2bac-4449-aaec-89cf7e81c0f7</data>
@@ -1023,6 +1032,7 @@ mkdir results/figure4</data>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="9b629faa-9494-44b8-9167-ac7b172d5af8"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b"/>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="54aa994b-162d-49c0-a6ab-94a10c646e86"/>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="beaa0972-99c9-41ec-8d3f-0571fa49cb04"/>
 <edge source="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8"/>
 <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="df4dc09e-4408-4798-ae04-b10e3339f1e9"/>
 <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="d4860758-e29e-4882-a5c7-64084e0276d4"/>
@@ -1094,4 +1104,5 @@ mkdir results/figure4</data>
 <edge source="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa" target="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725"/>
 <edge source="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725" target="a70bbf43-a2c2-4210-a15c-03aedc4258f4"/>
 <edge source="a70bbf43-a2c2-4210-a15c-03aedc4258f4" target="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa"/>
+<edge source="beaa0972-99c9-41ec-8d3f-0571fa49cb04" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5"/>
 </graph></graphml>

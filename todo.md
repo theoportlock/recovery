@@ -1,3 +1,10 @@
+Update amino acid and vitamin lists for Figure S1
+Check RDA stats in supp and give table number
+Add RDA methods section
+Check maaslin results throughout manuscript and add pathway diff to supps
+Check that all subplots of the figure are included in text
+mixed modelling for recovery stats
+
 # Throughout
 Recovery definition
 Maaslin3 for all datasets - baseline, delta, yr2 and longitudinal - sigsummary
