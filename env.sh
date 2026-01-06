@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Environment setup for fellowship project
 
+cd /home/tpor598/recovery
+
 # Data path
 export data="/mnt/d/fellowship/m4efad/recovery/data"
 
