@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Environment setup for fellowship project
 
-cd /home/tpor598/recovery
-
 # Data path
 export data="/mnt/d/fellowship/m4efad/recovery/data"
 
@@ -12,10 +10,12 @@ export PATH="metatoolkit/metatoolkit/:$PATH"
 export PATH="maaslin3/R/:$PATH"
 export PATH="digital_twin/scripts/:$PATH"
 
-# Activate Python virtual environment
-if [ -f venv/bin/activate ]; then
-    . venv/bin/activate
-else
-    echo "No venv found at venv/bin/activate"
-fi
+# Activate environment
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate metatoolkit
 
+#bash -lc "\
+#  source ~/miniconda3/etc/profile.d/conda.sh &&\
+#  conda activate metatoolkit && \
+#  {} \
+#  "

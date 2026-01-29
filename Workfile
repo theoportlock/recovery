@@ -132,13 +132,13 @@ STDERR:</data>
     </node>
     <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
       <data key="d3">format_anthro.py</data>
-      <data key="d4">-783.1944622743677</data>
-      <data key="d5">191.3685303483328</data>
+      <data key="d13">-783.1944622743677</data>
+      <data key="d14">191.3685303483328</data>
       <data key="d6">ran</data>
       <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_anthro.py'</data>
       <data key="d8" />
       <data key="d9" />
-      <data key="d10">66034</data>
+      <data key="d10">47860</data>
       <data key="d11">0</data>
     </node>
     <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
@@ -434,8 +434,8 @@ done</data>
     </node>
     <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
       <data key="d3">rsync -aurvP $data .</data>
-      <data key="d13">-1735.218211052124</data>
-      <data key="d14">51.17631872516699</data>
+      <data key="d13">-1741.8848777187904</data>
+      <data key="d14">68.95409650294475</data>
       <data key="d6" />
       <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rsync -aurvP $data .'</data>
       <data key="d8">sending incremental file list

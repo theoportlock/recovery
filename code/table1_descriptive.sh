@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source env.sh
-
 rm -rf results/table1
 mkdir -p results/table1/work/{selected,formatted,descriptive}
 
