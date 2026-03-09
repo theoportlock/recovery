@@ -186,11 +186,11 @@ merge.py \
 fdr.py \
 	results/table1/work/merged_stats.tsv \
 	-p pval_feed \
-	--replace \
+	--colname qval_feed \
 	-o results/table1/work/merged_stats_fdr.tsv
 
 fdr.py \
 	results/table1/work/merged_stats_fdr.tsv \
 	-p pval_mam \
-	--replace \
+	--colname qval_mam \
 	-o results/table1/work/merged_stats_fdr_2.tsv
