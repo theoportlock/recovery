@@ -1,350 +1,337 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d16" for="edge" attr.name="status" attr.type="string" />
-  <key id="d15" for="edge" attr.name="id" attr.type="string" />
-  <key id="d14" for="node" attr.name="y" attr.type="string" />
-  <key id="d13" for="node" attr.name="x" attr.type="string" />
-  <key id="d12" for="node" attr.name="log" attr.type="string" />
-  <key id="d11" for="node" attr.name="error_code" attr.type="string" />
-  <key id="d10" for="node" attr.name="pid" attr.type="string" />
-  <key id="d9" for="node" attr.name="stderr" attr.type="string" />
-  <key id="d8" for="node" attr.name="stdout" attr.type="string" />
-  <key id="d7" for="node" attr.name="command" attr.type="string" />
-  <key id="d6" for="node" attr.name="status" attr.type="string" />
-  <key id="d5" for="node" attr.name="y" attr.type="double" />
-  <key id="d4" for="node" attr.name="x" attr.type="double" />
-  <key id="d3" for="node" attr.name="label" attr.type="string" />
-  <key id="d2" for="graph" attr.name="wrapper" attr.type="string" />
-  <key id="d1" for="graph" attr.name="suffix" attr.type="string" />
-  <key id="d0" for="graph" attr.name="prefix" attr.type="string" />
-  <graph edgedefault="directed">
-    <node id="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8">
-      <data key="d3">format_genetics.py</data>
-      <data key="d4">-785.5568894274099</data>
-      <data key="d5">303.1540114103807</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_genetics.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66089</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
-      <data key="d3">join.py results/filtered/mapping.tsv \
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d16" for="edge" attr.name="status" attr.type="string"/>
+<key id="d15" for="edge" attr.name="id" attr.type="string"/>
+<key id="d14" for="node" attr.name="y" attr.type="string"/>
+<key id="d13" for="node" attr.name="x" attr.type="string"/>
+<key id="d12" for="node" attr.name="log" attr.type="string"/>
+<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d10" for="node" attr.name="pid" attr.type="string"/>
+<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d7" for="node" attr.name="command" attr.type="string"/>
+<key id="d6" for="node" attr.name="status" attr.type="string"/>
+<key id="d5" for="node" attr.name="y" attr.type="double"/>
+<key id="d4" for="node" attr.name="x" attr.type="double"/>
+<key id="d3" for="node" attr.name="label" attr.type="string"/>
+<key id="d2" for="graph" attr.name="wrapper" attr.type="string"/>
+<key id="d1" for="graph" attr.name="suffix" attr.type="string"/>
+<key id="d0" for="graph" attr.name="prefix" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">bash -c '. env.sh 
+</data>
+<data key="d1">'
+
+</data>
+<data key="d2">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; {}'</data>
+<node id="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8">
+  <data key="d3">format_genetics.py</data>
+  <data key="d4">-785.5568894274099</data>
+  <data key="d5">303.1540114103807</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_genetics.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66089</data>
+  <data key="d11">0</data>
+</node>
+<node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
+  <data key="d3">join.py results/filtered/mapping.tsv \
     results/filtered/meta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-      <data key="d4">575.1235125389135</data>
-      <data key="d5">-0.7122336786001036</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
-    results/filtered/meta.tsv \
-    --on subjectID \
-    -o results/filtered/timemeta.tsv'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">67798</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
-      <data key="d3"># FIGURE 1B
+  <data key="d4">575.1235125389135</data>
+  <data key="d5">-0.7122336786001036</data>
+  <data key="d6"></data>
+</node>
+<node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
+  <data key="d3"># FIGURE 1B
 anthrotime.py</data>
-      <data key="d4">2117.8126149075774</data>
-      <data key="d5">-2959.336674081823</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1B
+  <data key="d4">2117.8126149075774</data>
+  <data key="d5">-2959.336674081823</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1B
 anthrotime.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">68220</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
-      <data key="d3">format_sleep.py</data>
-      <data key="d4">-788.8331697097194</data>
-      <data key="d5">-295.2674368139692</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_sleep.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66242</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
-      <data key="d3">format_head.py</data>
-      <data key="d4">-782.9809274846621</data>
-      <data key="d5">226.6955115170424</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_head.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66054</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
-      <data key="d3">format_surveillance.py</data>
-      <data key="d4">-785.0273166615507</data>
-      <data key="d5">265.5664314441313</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_surveillance.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66078</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-      <data key="d3">merge.py \
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">68220</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
+  <data key="d3">format_sleep.py</data>
+  <data key="d4">-788.8331697097194</data>
+  <data key="d5">-295.2674368139692</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_sleep.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66242</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
+  <data key="d3">format_head.py</data>
+  <data key="d4">-782.9809274846621</data>
+  <data key="d5">226.6955115170424</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_head.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66054</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
+  <data key="d3">format_surveillance.py</data>
+  <data key="d4">-785.0273166615507</data>
+  <data key="d5">265.5664314441313</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_surveillance.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66078</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
+  <data key="d3">merge.py \
   results/cleaned/premeta.tsv \
   results/cleaned/feedandrecovery.tsv \
   results/cleaned/deliverysupp.tsv \
   results/cleaned/bfpob.tsv \
   -j outer \
   -o results/cleaned/meta.tsv</data>
-      <data key="d4">-365.6072866855531</data>
-      <data key="d5">425.8095867964056</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; merge.py \
+  <data key="d4">-365.6072866855531</data>
+  <data key="d5">425.8095867964056</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; merge.py \
   results/cleaned/premeta.tsv \
   results/cleaned/feedandrecovery.tsv \
   results/cleaned/deliverysupp.tsv \
   results/cleaned/bfpob.tsv \
   -j outer \
   -o results/cleaned/meta.tsv'</data>
-      <data key="d8">💾 Saved 309 rows × 9 columns to results/cleaned/meta.tsv
+  <data key="d8">💾 Saved 309 rows × 9 columns to results/cleaned/meta.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">66744</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
-      <data key="d3">format_microbiome_samplesheet.py</data>
-      <data key="d4">-1134.9742080087212</data>
-      <data key="d5">31.04340788007832</data>
-      <data key="d6">ran</data>
-      <data key="d12">STDOUT:
+  <data key="d9"></data>
+  <data key="d10">66744</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
+  <data key="d3">format_microbiome_samplesheet.py</data>
+  <data key="d4">-1134.9742080087212</data>
+  <data key="d5">31.04340788007832</data>
+  <data key="d6">ran</data>
+  <data key="d12">STDOUT:
 
 STDERR:</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_microbiome_samplesheet.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66008</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
-      <data key="d3">format_anthro.py</data>
-      <data key="d13">-783.1944622743677</data>
-      <data key="d14">191.3685303483328</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_anthro.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">47860</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
-      <data key="d3">format_aa.py</data>
-      <data key="d4">-792.9375569329408</data>
-      <data key="d5">-381.53607255169277</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_aa.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66600</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
-      <data key="d3">format_lipids.py</data>
-      <data key="d4">-803.1770912352598</data>
-      <data key="d5">-481.1589607297183</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_lipids.py'</data>
-      <data key="d8" />
-      <data key="d9">/home/tpor598/recovery/code/format_lipids.py:115: SyntaxWarning: invalid escape sequence '\d'
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_microbiome_samplesheet.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66008</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
+  <data key="d3">format_anthro.py</data>
+  <data key="d13">-783.1944622743677</data>
+  <data key="d14">191.3685303483328</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_anthro.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">47860</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
+  <data key="d3">format_aa.py</data>
+  <data key="d4">-792.9375569329408</data>
+  <data key="d5">-381.53607255169277</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_aa.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66600</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
+  <data key="d3">format_lipids.py</data>
+  <data key="d4">-803.1770912352598</data>
+  <data key="d5">-481.1589607297183</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_lipids.py'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/code/format_lipids.py:115: SyntaxWarning: invalid escape sequence '\d'
   metabid['Liggins sample'] = metabid['Liggins sample'].str.extract('(\d+)').astype(int)
 /home/tpor598/recovery/code/format_lipids.py:127: SyntaxWarning: invalid escape sequence '\:'
   df = df.loc[:, df.columns.str.contains('\:')]
 /home/tpor598/recovery/code/format_lipids.py:37: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   dataset1.replace({'': np.nan}, inplace=True)
 </data>
-      <data key="d10">66286</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
-      <data key="d3">format_vitamin.py</data>
-      <data key="d4">-792.6420285903208</data>
-      <data key="d5">-422.8749046460773</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_vitamin.py'</data>
-      <data key="d8" />
-      <data key="d9">/home/tpor598/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  <data key="d10">66286</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
+  <data key="d3">format_vitamin.py</data>
+  <data key="d4">-792.6420285903208</data>
+  <data key="d5">-422.8749046460773</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_vitamin.py'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   out = out.replace('NF', np.nan)
 </data>
-      <data key="d10">66219</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
-      <data key="d3">format_humann.py</data>
-      <data key="d4">-797.4623330670977</data>
-      <data key="d5">21.551969687755843</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_humann.py'</data>
-      <data key="d8" />
-      <data key="d9">/home/tpor598/recovery/code/format_humann.py:31: SyntaxWarning: invalid escape sequence '\|'
+  <data key="d10">66219</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
+  <data key="d3">format_humann.py</data>
+  <data key="d4">-797.4623330670977</data>
+  <data key="d5">21.551969687755843</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_humann.py'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/code/format_humann.py:31: SyntaxWarning: invalid escape sequence '\|'
   df = pathways.loc[:, ~pathways.columns.str.contains('\|')]
 </data>
-      <data key="d10">66628</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
-      <data key="d3">format_metaphlan.py</data>
-      <data key="d4">-798.1877426713477</data>
-      <data key="d5">68.57790547825732</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_metaphlan.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66652</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
-      <data key="d3">format_kneaddata.py</data>
-      <data key="d4">-800.7182493769658</data>
-      <data key="d5">-21.556928998034362</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_kneaddata.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66679</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
-      <data key="d3">format_ses.py</data>
-      <data key="d4">-777.9378447857731</data>
-      <data key="d5">434.7685724984932</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_ses.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66144</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
-      <data key="d3">format_feedsandrecovery.py</data>
-      <data key="d4">-776.5439097560335</data>
-      <data key="d5">504.8055435784918</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_feedsandrecovery.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66170</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
-      <data key="d3">format_bfpob.py</data>
-      <data key="d4">-777.1484331602172</data>
-      <data key="d5">469.9527304576558</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_bfpob.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66124</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
-      <data key="d3">extract_taxa.py \
+  <data key="d10">66628</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
+  <data key="d3">format_metaphlan.py</data>
+  <data key="d4">-798.1877426713477</data>
+  <data key="d5">68.57790547825732</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_metaphlan.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66652</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
+  <data key="d3">format_kneaddata.py</data>
+  <data key="d4">-800.7182493769658</data>
+  <data key="d5">-21.556928998034362</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_kneaddata.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66679</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
+  <data key="d3">format_ses.py</data>
+  <data key="d4">-777.9378447857731</data>
+  <data key="d5">434.7685724984932</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_ses.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66144</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
+  <data key="d3">format_feedsandrecovery.py</data>
+  <data key="d4">-776.5439097560335</data>
+  <data key="d5">504.8055435784918</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_feedsandrecovery.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66170</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
+  <data key="d3">format_bfpob.py</data>
+  <data key="d4">-777.1484331602172</data>
+  <data key="d5">469.9527304576558</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_bfpob.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66124</data>
+  <data key="d11">0</data>
+</node>
+<node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
+  <data key="d3">extract_taxa.py \
   results/cleaned/metaphlan.tsv \
   --keep-parent \
   -l 't__' \
   -o results/cleaned/species.tsv</data>
-      <data key="d4">-502.88029308062204</data>
-      <data key="d5">-124.06658123380976</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; extract_taxa.py \
+  <data key="d4">-502.88029308062204</data>
+  <data key="d5">-124.06658123380976</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; extract_taxa.py \
   results/cleaned/metaphlan.tsv \
   --keep-parent \
   -l '\''t__'\'' \
   -o results/cleaned/species.tsv'</data>
-      <data key="d8">Saved: results/cleaned/species.tsv
+  <data key="d8">Saved: results/cleaned/species.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">67066</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
-      <data key="d3">format_deliverysupp.py</data>
-      <data key="d4">-776.2442480898716</data>
-      <data key="d5">546.1722409662509</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_deliverysupp.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66195</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
-      <data key="d3">parallel -j1 distance.py \
+  <data key="d9"></data>
+  <data key="d10">67066</data>
+  <data key="d11">0</data>
+</node>
+<node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
+  <data key="d3">format_deliverysupp.py</data>
+  <data key="d4">-776.2442480898716</data>
+  <data key="d5">546.1722409662509</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_deliverysupp.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66195</data>
+  <data key="d11">0</data>
+</node>
+<node id="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
+  <data key="d3">parallel -j1 distance.py \
   results/filtered/{}.tsv \
   -o results/distance/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-      <data key="d4">1988.4171233215493</data>
-      <data key="d5">396.08992950270334</data>
-      <data key="d6" />
-    </node>
-    <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
-      <data key="d3">create_mapping.py \
+  <data key="d4">1988.4171233215493</data>
+  <data key="d5">396.08992950270334</data>
+  <data key="d6"></data>
+</node>
+<node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
+  <data key="d3">create_mapping.py \
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv</data>
-      <data key="d4">233.34661074394492</data>
-      <data key="d5">-4.1641962043540355</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; create_mapping.py \
-  -d results/filtered/ \
-  -i conf/timedatasets.txt \
-  -o results/filtered/mapping.tsv'</data>
-      <data key="d8">Saved combined mapping to results/filtered/mapping.tsv
-</data>
-      <data key="d9" />
-      <data key="d10">67755</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
-      <data key="d3">for d in results/figure2/maaslin/baseline/*/; do
+  <data key="d4">233.34661074394492</data>
+  <data key="d5">-4.1641962043540355</data>
+  <data key="d6"></data>
+</node>
+<node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
+  <data key="d3">for d in results/figure2/maaslin/baseline/*/; do
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/figure2/maaslin/change/$name.tsv"
 done</data>
-      <data key="d4">3804.98010295045</data>
-      <data key="d5">-2285.476637762161</data>
-      <data key="d6" />
-    </node>
-    <node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
-      <data key="d3">parallel -j1 pcoa.py \
+  <data key="d4">3804.98010295045</data>
+  <data key="d5">-2285.476637762161</data>
+  <data key="d6"></data>
+</node>
+<node id="c22c2993-fbfb-461c-b462-80a4bd61e58e">
+  <data key="d3">parallel -j1 pcoa.py \
   -i results/distance/{}.tsv \
   -o results/pcoa/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-      <data key="d4">2264.426769159305</data>
-      <data key="d5">396.3946346390051</data>
-      <data key="d6" />
-    </node>
-    <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
-      <data key="d3">merge.py results/figure2/maaslin/change/*.tsv \
+  <data key="d4">2264.426769159305</data>
+  <data key="d5">396.3946346390051</data>
+  <data key="d6"></data>
+</node>
+<node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
+  <data key="d3">merge.py results/figure2/maaslin/change/*.tsv \
   --append \
   --add-filename \
   -o results/figure2/maaslin/baselinechange.tsv</data>
-      <data key="d4">4605.557580427603</data>
-      <data key="d5">-2285.642683907852</data>
-      <data key="d6" />
-    </node>
-    <node id="e0c5398f-26da-4779-b36e-deab73e090da">
-      <data key="d3"># FIGURE S1
+  <data key="d4">4605.557580427603</data>
+  <data key="d5">-2285.642683907852</data>
+  <data key="d6"></data>
+</node>
+<node id="e0c5398f-26da-4779-b36e-deab73e090da">
+  <data key="d3"># FIGURE S1
 heatmap_allnontimedata.py -d conf/notimedatasets.txt
 heatmap_alltimedata.py -d conf/timedatasets.txt</data>
-      <data key="d4">1513.76464180878</data>
-      <data key="d5">1101.682611154737</data>
-      <data key="d6" />
-    </node>
-    <node id="node85">
-      <data key="d3"># Just looking at MAM kids
+  <data key="d4">1513.76464180878</data>
+  <data key="d5">1101.682611154737</data>
+  <data key="d6"></data>
+</node>
+<node id="node85">
+  <data key="d3"># Just looking at MAM kids
 filter.py results/filtered/timemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -q 'Condition == "MAM"' \
@@ -364,12 +351,12 @@ filter.py results/filtered/meta.tsv \
 filter.py results/filtered/timemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -o results/filtered/timemeta_0_52tp.tsv</data>
-      <data key="d4">1504.717803463831</data>
-      <data key="d5">-622.1452890489353</data>
-      <data key="d6" />
-    </node>
-    <node id="0023bd01-aafc-415b-8548-ec81bebf1f23">
-      <data key="d3">for f in $(cat conf/timedatasets.txt); do
+  <data key="d4">1504.717803463831</data>
+  <data key="d5">-622.1452890489353</data>
+  <data key="d6"></data>
+</node>
+<node id="0023bd01-aafc-415b-8548-ec81bebf1f23">
+  <data key="d3">for f in $(cat conf/timedatasets.txt); do
   splitter.py \
     results/scaled/${f}.tsv \
     -m results/filtered/timemeta_MAM_yr1_yr2.tsv \
@@ -377,12 +364,12 @@ filter.py results/filtered/timemeta.tsv \
     --outdir results/scaled/timepoints \
     --reindex subjectID 
 done</data>
-      <data key="d4">3719.6815181505112</data>
-      <data key="d5">-509.75469148880313</data>
-      <data key="d6" />
-    </node>
-    <node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
-      <data key="d3">for tp in yr1 yr2; do
+  <data key="d4">3719.6815181505112</data>
+  <data key="d5">-509.75469148880313</data>
+  <data key="d6"></data>
+</node>
+<node id="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0">
+  <data key="d3">for tp in yr1 yr2; do
     mkdir -p results/rda/${tp}
     for f in $(cat conf/timedatasets.txt); do
         rda.R \
@@ -392,12 +379,12 @@ done</data>
         -o results/rda/${tp}/${f}.tsv
     done
 done</data>
-      <data key="d4">4226.583377135599</data>
-      <data key="d5">-558.3790777158854</data>
-      <data key="d6" />
-    </node>
-    <node id="8213bd4f-8cf5-4af0-b058-3e4e2f810e78">
-      <data key="d3">for f in $(cat conf/notimedatasets.txt); do \
+  <data key="d4">4226.583377135599</data>
+  <data key="d5">-558.3790777158854</data>
+  <data key="d6"></data>
+</node>
+<node id="8213bd4f-8cf5-4af0-b058-3e4e2f810e78">
+  <data key="d3">for f in $(cat conf/notimedatasets.txt); do \
   mkdir -p results/rda/notp
   rda.R \
     -y results/filtered/${f}.tsv \
@@ -405,74 +392,74 @@ done</data>
     -f 'Sex,Ethnicity,Feed,Recovery,Delivery_Mode,Supplementation,BF,PoB' \
     -o results/rda/notp/${f}.tsv
 done</data>
-      <data key="d4">4230.889610901826</data>
-      <data key="d5">-287.55616426134293</data>
-      <data key="d6" />
-    </node>
-    <node id="8727268b-1b5b-4c92-9768-cbe389f6984f">
-      <data key="d3">for set in yr1 yr2 notp ; do \
+  <data key="d4">4230.889610901826</data>
+  <data key="d5">-287.55616426134293</data>
+  <data key="d6"></data>
+</node>
+<node id="8727268b-1b5b-4c92-9768-cbe389f6984f">
+  <data key="d3">for set in yr1 yr2 notp ; do \
   merge.py \
   results/rda/${set}/*.tsv \
   --append \
   --add-filename \
   -o results/rda/${set}_rda.tsv
 done</data>
-      <data key="d4">4905.807702221644</data>
-      <data key="d5">-449.51639758886023</data>
-      <data key="d6" />
-    </node>
-    <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
-      <data key="d3">mkdir -p results/cleaned</data>
-      <data key="d4">-1501.964042568262</data>
-      <data key="d5">63.55906460583219</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; mkdir -p results/cleaned'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">65945</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
-      <data key="d3">rsync -aurvP $data .</data>
-      <data key="d13">-1741.8848777187904</data>
-      <data key="d14">68.95409650294475</data>
-      <data key="d6" />
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rsync -aurvP $data .'</data>
-      <data key="d8">sending incremental file list
+  <data key="d4">4905.807702221644</data>
+  <data key="d5">-449.51639758886023</data>
+  <data key="d6"></data>
+</node>
+<node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
+  <data key="d3">mkdir -p results/cleaned</data>
+  <data key="d4">-1501.964042568262</data>
+  <data key="d5">63.55906460583219</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; mkdir -p results/cleaned'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">65945</data>
+  <data key="d11">0</data>
+</node>
+<node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
+  <data key="d3">rsync -aurvP $data .</data>
+  <data key="d13">-1741.8848777187904</data>
+  <data key="d14">68.95409650294475</data>
+  <data key="d6"></data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rsync -aurvP $data .'</data>
+  <data key="d8">sending incremental file list
 
 sent 19 bytes  received 12 bytes  62.00 bytes/sec
 total size is 0  speedup is 0.00
 </data>
-      <data key="d9">rsync: [sender] change_dir "/mnt/d/fellowship/m4efad/recovery" failed: No such file or directory (2)
+  <data key="d9">rsync: [sender] change_dir "/mnt/d/fellowship/m4efad/recovery" failed: No such file or directory (2)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1338) [sender=3.2.7]
 </data>
-      <data key="d10">62963</data>
-      <data key="d11">23</data>
-    </node>
-    <node id="8a1d54be-d18d-494a-8d21-2fc840762f32">
-      <data key="d3">for set in yr1 yr2 notp; do \
+  <data key="d10">62963</data>
+  <data key="d11">23</data>
+</node>
+<node id="8a1d54be-d18d-494a-8d21-2fc840762f32">
+  <data key="d3">for set in yr1 yr2 notp; do \
   filter.py results/rda/${set}_rda.tsv \
     -rf "^(?!Total_Constrained_R2|Adjusted_Full_Model)" \
     -o results/rda/${set}_rda_filtered.tsv
 done</data>
-      <data key="d4">5236.286186497371</data>
-      <data key="d5">-437.67124728893543</data>
-      <data key="d6" />
-    </node>
-    <node id="5656487b-7e9b-4945-b26e-5d344660740c">
-      <data key="d3"># FIGURE S2
+  <data key="d4">5236.286186497371</data>
+  <data key="d5">-437.67124728893543</data>
+  <data key="d6"></data>
+</node>
+<node id="5656487b-7e9b-4945-b26e-5d344660740c">
+  <data key="d3"># FIGURE S2
 arrange_svgs.py \
   results/rda/yr1_rda_bar.svg \
   results/rda/yr2_rda_bar.svg \
   results/rda/notp_rda_bar.svg \
   --rows 2 \
   -o results/rda/merged.svg</data>
-      <data key="d4">6150.66136316403</data>
-      <data key="d5">-466.0881234794116</data>
-      <data key="d6" />
-    </node>
-    <node id="df4dc09e-4408-4798-ae04-b10e3339f1e9">
-      <data key="d3">for set in yr1 yr2 notp; do \
+  <data key="d4">6150.66136316403</data>
+  <data key="d5">-466.0881234794116</data>
+  <data key="d6"></data>
+</node>
+<node id="df4dc09e-4408-4798-ae04-b10e3339f1e9">
+  <data key="d3">for set in yr1 yr2 notp; do \
   stacked_bar.py \
     results/rda/${set}_rda_filtered.tsv \
     --horizontal \
@@ -484,32 +471,32 @@ arrange_svgs.py \
     --max 0.15 \
     -o results/rda/${set}_rda_bar.svg
 done</data>
-      <data key="d4">5788.340321259284</data>
-      <data key="d5">-503.3224496698896</data>
-      <data key="d6" />
-    </node>
-    <node id="67a1314f-c27c-4ce3-b00a-e4fa939150fd">
-      <data key="d3"># Standard scale all datasets
+  <data key="d4">5788.340321259284</data>
+  <data key="d5">-503.3224496698896</data>
+  <data key="d6"></data>
+</node>
+<node id="67a1314f-c27c-4ce3-b00a-e4fa939150fd">
+  <data key="d3"># Standard scale all datasets
 for f in $(cat conf/all_datasets.txt); do
   scale.py standard \
     results/filtered/${f}.tsv \
     -o results/scaled/${f}.tsv
 done</data>
-      <data key="d4">3276.0413710754515</data>
-      <data key="d5">-488.53076639508373</data>
-      <data key="d6" />
-    </node>
-    <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
-      <data key="d3">scale.py log \
+  <data key="d4">3276.0413710754515</data>
+  <data key="d5">-488.53076639508373</data>
+  <data key="d6"></data>
+</node>
+<node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
+  <data key="d3">scale.py log \
   results/cleaned/unlogged_lipids.tsv \
   -o results/cleaned/lipids.tsv</data>
-      <data key="d4">-570.2195969161698</data>
-      <data key="d5">-497.27790216840276</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; scale.py log \
+  <data key="d4">-570.2195969161698</data>
+  <data key="d5">-497.27790216840276</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; scale.py log \
   results/cleaned/unlogged_lipids.tsv \
   -o results/cleaned/lipids.tsv'</data>
-      <data key="d8">            ba_24:1;o3;t  ba_24:1;o4;g;s  ...   tg_62:2    tg_62:3
+  <data key="d8">            ba_24:1;o3;t  ba_24:1;o4;g;s  ...   tg_62:2    tg_62:3
 sampleID                                  ...                     
 LCC1001_0       6.231768       14.011900  ...  7.542754  11.684978
 LCC1001_12      9.600926       10.546330  ...  4.769978   6.782352
@@ -525,70 +512,70 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
 
 [626 rows x 413 columns]
 </data>
-      <data key="d9" />
-      <data key="d10">67352</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
-      <data key="d3">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
+  <data key="d9"></data>
+  <data key="d10">67352</data>
+  <data key="d11">0</data>
+</node>
+<node id="e01d74fd-8601-460e-858c-2f6b0be61422">
+  <data key="d3">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
  -O results/census/census.xlsx</data>
-      <data key="d4">-1428.6555060070727</data>
-      <data key="d5">747.1092190437203</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
+  <data key="d4">-1428.6555060070727</data>
+  <data key="d5">747.1092190437203</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
  -O results/census/census.xlsx'</data>
-      <data key="d8" />
-      <data key="d9">
+  <data key="d8"></data>
+  <data key="d9">
 Redirecting output to ‘wget-log.4’.
 </data>
-      <data key="d10">66556</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
-      <data key="d3">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
+  <data key="d10">66556</data>
+  <data key="d11">0</data>
+</node>
+<node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
+  <data key="d3">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
   -O results/census/census_labels.xlsx</data>
-      <data key="d4">-1425.9282332798005</data>
-      <data key="d5">814.1546735891758</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
+  <data key="d4">-1425.9282332798005</data>
+  <data key="d5">814.1546735891758</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
   -O results/census/census_labels.xlsx'</data>
-      <data key="d8" />
-      <data key="d9">
+  <data key="d8"></data>
+  <data key="d9">
 Redirecting output to ‘wget-log.5’.
 </data>
-      <data key="d10">66571</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
-      <data key="d3"># FIGURE 1A
+  <data key="d10">66571</data>
+  <data key="d11">0</data>
+</node>
+<node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
+  <data key="d3"># FIGURE 1A
 schematic.py</data>
-      <data key="d4">2113.6834271284265</data>
-      <data key="d5">-3032.9590043290054</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1A
+  <data key="d4">2113.6834271284265</data>
+  <data key="d5">-3032.9590043290054</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1A
 schematic.py'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">68211</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
-      <data key="d3"># FIGURE 1C
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">68211</data>
+  <data key="d11">0</data>
+</node>
+<node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
+  <data key="d3"># FIGURE 1C
 recovery_barplot.py</data>
-      <data key="d4">2116.748255411254</data>
-      <data key="d5">-2895.01087878788</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1C
+  <data key="d4">2116.748255411254</data>
+  <data key="d5">-2895.01087878788</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1C
 recovery_barplot.py'</data>
-      <data key="d8" />
-      <data key="d9">/home/tpor598/recovery/code/recovery_barplot.py:49: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/code/recovery_barplot.py:49: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   y_pos = (bottom[i] if bottom is not None else 0) + pct / 2
 </data>
-      <data key="d10">68235</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="a191959b-1acd-4594-8819-65c36f01f33c">
-      <data key="d3"># FIGURE 1D
+  <data key="d10">68235</data>
+  <data key="d11">0</data>
+</node>
+<node id="a191959b-1acd-4594-8819-65c36f01f33c">
+  <data key="d3"># FIGURE 1D
 box.py \
   results/filtered/surveillance.tsv \
   --meta results/filtered/meta.tsv \
@@ -596,10 +583,10 @@ box.py \
   -y days_of_catchup \
   --figsize 2.7,2.7 \
   -o results/figure1/days_of_catchup_box.svg</data>
-      <data key="d4">2120.719709956709</data>
-      <data key="d5">-2825.861207792209</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
+  <data key="d4">2120.719709956709</data>
+  <data key="d5">-2825.861207792209</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
 box.py \
   results/filtered/surveillance.tsv \
   --meta results/filtered/meta.tsv \
@@ -607,7 +594,7 @@ box.py \
   -y days_of_catchup \
   --figsize 2.7,2.7 \
   -o results/figure1/days_of_catchup_box.svg'</data>
-      <data key="d8">Index(['days_of_catchup', 'base_temp', 'fever', 'diarrhoea', 'cough', 'rash',
+  <data key="d8">Index(['days_of_catchup', 'base_temp', 'fever', 'diarrhoea', 'cough', 'rash',
        'antibiotic', 'ors', 'zinc', 'comp_khichuri', 'comp_suji', 'comp_halwa',
        'comp_cookies.ruti.bread', 'comp_rice.and.curry',
        'comp_tea.drinks.juice', 'comp_others', 'comp_none',
@@ -618,12 +605,12 @@ box.py \
        'Supplementation', 'BF', 'PoB'],
       dtype='object')
 </data>
-      <data key="d9" />
-      <data key="d10">68292</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
-      <data key="d3">parallel -j1 \
+  <data key="d9"></data>
+  <data key="d10">68292</data>
+  <data key="d11">0</data>
+</node>
+<node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
+  <data key="d3">parallel -j1 \
   onehot.py \
     results/cleaned/{}.tsv \
     --min-prevalence 0.1 \
@@ -631,10 +618,10 @@ box.py \
     --dtype 'bool' \
     -o results/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation</data>
-      <data key="d4">-570.0</data>
-      <data key="d5">232.5</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
+  <data key="d4">-570.0</data>
+  <data key="d5">232.5</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
   onehot.py \
     results/cleaned/{}.tsv \
     --min-prevalence 0.1 \
@@ -642,153 +629,295 @@ box.py \
     --dtype '\''bool'\'' \
     -o results/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66717</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="246364a8-29bd-49c2-a045-ceb068383c79">
-      <data key="d3">cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt</data>
-      <data key="d4">-1896.5151515151515</data>
-      <data key="d5">-54.333333333333385</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">65915</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
-      <data key="d3">wget -O results/mpa.nwk \
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66717</data>
+  <data key="d11">0</data>
+</node>
+<node id="246364a8-29bd-49c2-a045-ceb068383c79">
+  <data key="d3">cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt</data>
+  <data key="d4">-1896.5151515151515</data>
+  <data key="d5">-54.333333333333385</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">65915</data>
+  <data key="d11">0</data>
+</node>
+<node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
+  <data key="d3">wget -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
-      <data key="d4">-1544.7500000000002</data>
-      <data key="d5">359.0714285714284</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget -O results/mpa.nwk \
+  <data key="d4">-1544.7500000000002</data>
+  <data key="d5">359.0714285714284</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk'</data>
-      <data key="d8" />
-      <data key="d9">
+  <data key="d8"></data>
+  <data key="d9">
 Redirecting output to ‘wget-log.3’.
 </data>
-      <data key="d10">66262</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="694c1739-f526-421a-a8ec-99152294abf4">
-      <data key="d3">alpha_diversity.py \
+  <data key="d10">66262</data>
+  <data key="d11">0</data>
+</node>
+<node id="694c1739-f526-421a-a8ec-99152294abf4">
+  <data key="d3">alpha_diversity.py \
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv</data>
-      <data key="d4">-502.81818181818187</data>
-      <data key="d5">-6.025974025974068</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; alpha_diversity.py \
+  <data key="d4">-502.81818181818187</data>
+  <data key="d5">-6.025974025974068</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; alpha_diversity.py \
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv'</data>
-      <data key="d8">Dropping taxa not found in tree: {'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '19827_group', '8255_group', '44267_group', '5763_group', '17130_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '6927_group', '8180_group', '1536_group', '4425_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '17137_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '4540_group', '17244_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '9434_group', '9737_group', '8059_group', '7298_group', '5825_group', '5803_group', '7703_group', '3926_group', '17158_group', '15309_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', '14824_group', '49305_group', '9467_group', '19351_group', '16971_group', '14985_group', '3922_group', '14816_group', '6686_group', '8007_group', '8235_group', '17132_group', '14535_group', '19793_group', '17167_group', '4494_group', '8028_group', '11742_group', '19893_group', '6036_group', '8239_group', '1990_group', '6028_group', '7285_group', '5989_group', '7088_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '17163_group', '19860_group', '14764_group', '8047_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '9663_group', '19290_group', '5266_group', '4553_group', '7121_group'}
+  <data key="d8">Dropping taxa not found in tree: {'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '19827_group', '8255_group', '44267_group', '5763_group', '17130_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '6927_group', '8180_group', '1536_group', '4425_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '17137_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '4540_group', '17244_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '9434_group', '9737_group', '8059_group', '7298_group', '5825_group', '5803_group', '7703_group', '3926_group', '17158_group', '15309_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', '14824_group', '49305_group', '9467_group', '19351_group', '16971_group', '14985_group', '3922_group', '14816_group', '6686_group', '8007_group', '8235_group', '17132_group', '14535_group', '19793_group', '17167_group', '4494_group', '8028_group', '11742_group', '19893_group', '6036_group', '8239_group', '1990_group', '6028_group', '7285_group', '5989_group', '7088_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '17163_group', '19860_group', '14764_group', '8047_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '9663_group', '19290_group', '5266_group', '4553_group', '7121_group'}
 Alpha diversity table saved to: results/cleaned/alpha_diversity.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">67090</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="99a1770b-1153-428d-8172-e783bf221b38">
-      <data key="d3">parallel -j1 \
+  <data key="d9"></data>
+  <data key="d10">67090</data>
+  <data key="d11">0</data>
+</node>
+<node id="99a1770b-1153-428d-8172-e783bf221b38">
+  <data key="d3">parallel -j1 \
 filter.py \
   -q "~subjectID.str.startswith\(\'LCC3\'\)" \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/notimedatasets.txt</data>
-      <data key="d4">-103.33333333333334</data>
-      <data key="d5">51.66666666666667</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
+  <data key="d4">-103.33333333333334</data>
+  <data key="d5">51.66666666666667</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
 filter.py \
   -q "~subjectID.str.startswith\(\'\''LCC3\'\''\)" \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/notimedatasets.txt'</data>
-      <data key="d8">[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
+  <data key="d8">[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 230/305
+[filter] Saved filtered output to: results/filtered/genetics.tsv
+[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/economics.tsv
 [filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/education.tsv
 [filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/family.tsv
-[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 230/305
-[filter] Saved filtered output to: results/filtered/genetics.tsv
+[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 151/151
+[filter] Saved filtered output to: results/filtered/surveillance.tsv
 [filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/household.tsv
 [filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
-[filter] Saved filtered output to: results/filtered/media_consumption.tsv
-[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/sanitation.tsv
-[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 151/151
-[filter] Saved filtered output to: results/filtered/surveillance.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">67142</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d3">parallel -j1 \
+  <data key="d9"></data>
+  <data key="d10">29985</data>
+  <data key="d11">0</data>
+</node>
+<node id="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d3">parallel -j1 \
 filter.py \
   -q "~sampleID.str.startswith\(\'LCC3\'\)" \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/timedatasets.txt</data>
-      <data key="d4">-101.66666666666667</data>
-      <data key="d5">-98.33333333333326</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
+  <data key="d13">-101.66666666666667</data>
+  <data key="d14">-98.33333333333326</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
 filter.py \
   -q "~sampleID.str.startswith\(\'\''LCC3\'\''\)" \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/timedatasets.txt'</data>
-      <data key="d8">[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 412/412
-[filter] Saved filtered output to: results/filtered/sleep.tsv
+  <data key="d8">[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 542/614
+[filter] Saved filtered output to: results/filtered/aa.tsv
 [filter] Query '(~sampleID.str.startswith('LCC3'))': kept 492/559
 [filter] Saved filtered output to: results/filtered/head.tsv
 [filter] Query '(~sampleID.str.startswith('LCC3'))': kept 2851/2851
 [filter] Saved filtered output to: results/filtered/anthro.tsv
-[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 542/614
-[filter] Saved filtered output to: results/filtered/aa.tsv
-[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 554/626
-[filter] Saved filtered output to: results/filtered/lipids.tsv
+[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 412/412
+[filter] Saved filtered output to: results/filtered/sleep.tsv
 [filter] Query '(~sampleID.str.startswith('LCC3'))': kept 538/610
 [filter] Saved filtered output to: results/filtered/vitamin.tsv
-[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 585/659
-[filter] Saved filtered output to: results/filtered/alpha_diversity.tsv
-[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 585/659
-[filter] Saved filtered output to: results/filtered/species.tsv
-[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 586/660
-[filter] Saved filtered output to: results/filtered/pathways.tsv
+[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 554/626
+[filter] Saved filtered output to: results/filtered/lipids.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">67578</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
-      <data key="d3">filter.py \
+  <data key="d9">Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 158, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 142, in main
+    df = load(args.input)
+         ^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 17, in load
+    return pd.read_csv(path, sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/glitter.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 158, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 142, in main
+    df = load(args.input)
+         ^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 17, in load
+    return pd.read_csv(path, sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/fcis.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 158, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 142, in main
+    df = load(args.input)
+         ^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 17, in load
+    return pd.read_csv(path, sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/pss.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 158, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 142, in main
+    df = load(args.input)
+         ^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 17, in load
+    return pd.read_csv(path, sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/wolkes.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 158, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 142, in main
+    df = load(args.input)
+         ^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 17, in load
+    return pd.read_csv(path, sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/bayley.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 158, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 142, in main
+    df = load(args.input)
+         ^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/filter.py", line 17, in load
+    return pd.read_csv(path, sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/miniconda3/envs/metatoolkit/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/psd.tsv'
+</data>
+  <data key="d10">29920</data>
+  <data key="d11">6</data>
+</node>
+<node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
+  <data key="d3">filter.py \
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/meta.tsv \
   -o results/filtered/meta.tsv</data>
-      <data key="d4">-105.0</data>
-      <data key="d5">190.23809523809527</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
+  <data key="d13">-102.14285714285715</data>
+  <data key="d14">187.3809523809524</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
   -q "~subjectID.str.startswith('\''LCC3'\'')" \
   results/cleaned/meta.tsv \
   -o results/filtered/meta.tsv'</data>
-      <data key="d8">[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
+  <data key="d8">[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/meta.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">66931</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="14b716fa-cb0b-4379-9727-7769f1510a88">
-      <data key="d3">multiline.py \
+  <data key="d9"></data>
+  <data key="d10">29940</data>
+  <data key="d11">0</data>
+</node>
+<node id="14b716fa-cb0b-4379-9727-7769f1510a88">
+  <data key="d3">multiline.py \
   --subject results/maaslin/time/species/features/data_transformed.tsv \
   --meta results/filtered/timemeta.tsv \
   --x timepoint \
@@ -796,70 +925,70 @@ filter.py \
   --hue Recovery \
   --id subjectID \
   --output results/tmp2.svg</data>
-      <data key="d4">5279.093809523807</data>
-      <data key="d5">-1102.7666666666662</data>
-      <data key="d6" />
-    </node>
-    <node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
-      <data key="d3">group.py \
+  <data key="d4">5279.093809523807</data>
+  <data key="d5">-1102.7666666666662</data>
+  <data key="d6"></data>
+</node>
+<node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
+  <data key="d3">group.py \
   results/filtered/genetics_standard.tsv \
   --meta results/filtered/meta.tsv \
   --func mean \
   --group_by 'Recovery' \
   -o results/filtered/genetics_mean.tsv</data>
-      <data key="d4">4605.131428571431</data>
-      <data key="d5">-1998.154047619047</data>
-      <data key="d6" />
-    </node>
-    <node id="1da8a511-5367-4a80-8510-06464399deb8">
-      <data key="d3">polar.py \
+  <data key="d4">4605.131428571431</data>
+  <data key="d5">-1998.154047619047</data>
+  <data key="d6"></data>
+</node>
+<node id="1da8a511-5367-4a80-8510-06464399deb8">
+  <data key="d3">polar.py \
   results/filtered/genetics_mean_sort.tsv \
   -o results/genetics_recovery.svg</data>
-      <data key="d4">5489.464761904763</data>
-      <data key="d5">-1974.8207142857136</data>
-      <data key="d6" />
-    </node>
-    <node id="6d46e087-86b7-44f4-8268-e04ad35f3275">
-      <data key="d3">sort.py \
+  <data key="d4">5489.464761904763</data>
+  <data key="d5">-1974.8207142857136</data>
+  <data key="d6"></data>
+</node>
+<node id="6d46e087-86b7-44f4-8268-e04ad35f3275">
+  <data key="d3">sort.py \
   results/filtered/genetics_mean.tsv \
   --ascending \
   -o results/filtered/genetics_mean_sort.tsv</data>
-      <data key="d4">5034.464761904763</data>
-      <data key="d5">-1979.8207142857136</data>
-      <data key="d6" />
-    </node>
-    <node id="6cd59c60-d8fe-4449-be43-29f53856493e">
-      <data key="d3">scale.py standard \
+  <data key="d4">5034.464761904763</data>
+  <data key="d5">-1979.8207142857136</data>
+  <data key="d6"></data>
+</node>
+<node id="6cd59c60-d8fe-4449-be43-29f53856493e">
+  <data key="d3">scale.py standard \
   results/filtered/genetics.tsv \
   -o results/filtered/genetics_standard.tsv</data>
-      <data key="d4">4190.131428571431</data>
-      <data key="d5">-1962.154047619047</data>
-      <data key="d6" />
-    </node>
-    <node id="ddda3b3f-7609-4dd8-88db-c4f521d8a127">
-      <data key="d3">sort.py \
+  <data key="d4">4190.131428571431</data>
+  <data key="d5">-1962.154047619047</data>
+  <data key="d6"></data>
+</node>
+<node id="ddda3b3f-7609-4dd8-88db-c4f521d8a127">
+  <data key="d3">sort.py \
   results/polardata.tsv \
   -o results/polardata_sort.tsv</data>
-      <data key="d4">3618.5276190476193</data>
-      <data key="d5">549.9819047619044</data>
-      <data key="d6" />
-    </node>
-    <node id="6ecc57c1-07b4-4096-b3b2-4daffb488260">
-      <data key="d3">polar.py results/polardata_sort.tsv \
+  <data key="d4">3618.5276190476193</data>
+  <data key="d5">549.9819047619044</data>
+  <data key="d6"></data>
+</node>
+<node id="6ecc57c1-07b4-4096-b3b2-4daffb488260">
+  <data key="d3">polar.py results/polardata_sort.tsv \
  -o results/catcluster_polar.svg</data>
-      <data key="d4">3927.289523809524</data>
-      <data key="d5">558.3152380952379</data>
-      <data key="d6" />
-    </node>
-    <node id="f3f51679-47bd-4d95-b166-0773770b99c8">
-      <data key="d3"># TABLE 1
+  <data key="d4">3927.289523809524</data>
+  <data key="d5">558.3152380952379</data>
+  <data key="d6"></data>
+</node>
+<node id="f3f51679-47bd-4d95-b166-0773770b99c8">
+  <data key="d3"># TABLE 1
 table1_descriptive.sh</data>
-      <data key="d4">1844.2883333333334</data>
-      <data key="d5">-3287.31</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 1
+  <data key="d4">1844.2883333333334</data>
+  <data key="d5">-3287.31</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 1
 table1_descriptive.sh'</data>
-      <data key="d8">✅ Filled missing values in columns Feed with 'Well-nourished (C)' → results/table1/work/meta.tsv
+  <data key="d8">✅ Filled missing values in columns Feed with 'Well-nourished (C)' → results/table1/work/meta.tsv
 Saved 234 rows × 2 columns to results/table1/work/selected/Demographics.tsv (index kept)
 Saved 234 rows × 2 columns to results/table1/work/selected/Parental_Education.tsv (index kept)
 Saved 234 rows × 4 columns to results/table1/work/selected/Economics.tsv (index kept)
@@ -902,7 +1031,7 @@ Saved 19 rows × 2 columns to results/table1/work/all_stats/merged_stats_MAMstat
 💾 Saved 18 rows × 4 columns to results/table1/work/merged.tsv
 💾 Saved 18 rows × 5 columns to results/table1/work/merged_stats.tsv
 </data>
-      <data key="d9">usage: filter.py [-h] [-o OUTPUT] [-fdf FILTER_DF] [-fdfx FILTER_DF_AXIS]
+  <data key="d9">usage: filter.py [-h] [-o OUTPUT] [-fdf FILTER_DF] [-fdfx FILTER_DF_AXIS]
                  [--column COLUMN] [-rf ROWFILT] [-cf COLFILT] [-p PREVAIL]
                  [-a ABUND] [--nonzero] [--min_nonzero_rows MIN_NONZERO_ROWS]
                  [--min_nonzero_cols MIN_NONZERO_COLS] [--numeric_only]
@@ -936,53 +1065,53 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'results/table1/work/MAM_stats/merged_stats_Feedstats.tsv'
 ⚠️ No files matched: results/table1/work/MAM_stats/merged_stats_Feedstats_vals.tsv
 </data>
-      <data key="d10">68154</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="6eaccd10-48fb-45f8-bf1d-07831d27c76a">
-      <data key="d3"># FIGURE 1
+  <data key="d10">68154</data>
+  <data key="d11">0</data>
+</node>
+<node id="6eaccd10-48fb-45f8-bf1d-07831d27c76a">
+  <data key="d3"># FIGURE 1
 rm -rf results/figure1
 mkdir -p results/figure1</data>
-      <data key="d4">1845.621666666667</data>
-      <data key="d5">-2778.087777777778</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1
+  <data key="d4">1845.621666666667</data>
+  <data key="d5">-2778.087777777778</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1
 rm -rf results/figure1
 mkdir -p results/figure1'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">68142</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee">
-      <data key="d3"># minus one recovery definition
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">68142</data>
+  <data key="d11">0</data>
+</node>
+<node id="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee">
+  <data key="d3"># minus one recovery definition
 calculate_recovery.py -1</data>
-      <data key="d4">949.5526695526695</data>
-      <data key="d5">-247.24242424242448</data>
-      <data key="d6" />
-    </node>
-    <node id="a92b7548-e188-4cb2-a3bf-7c3c46d70f28">
-      <data key="d3">maaslin3_healthy.sh</data>
-      <data key="d4">3896.9568686868683</data>
-      <data key="d5">-1260.9277777777784</data>
-      <data key="d6" />
-    </node>
-    <node id="926989e3-4fb3-4348-8185-838470b98d88">
-      <data key="d3">rm -rf results/figure2/maaslin/{baseline,change}
+  <data key="d4">949.5526695526695</data>
+  <data key="d5">-247.24242424242448</data>
+  <data key="d6"></data>
+</node>
+<node id="a92b7548-e188-4cb2-a3bf-7c3c46d70f28">
+  <data key="d3">maaslin3_healthy.sh</data>
+  <data key="d4">3896.9568686868683</data>
+  <data key="d5">-1260.9277777777784</data>
+  <data key="d6"></data>
+</node>
+<node id="926989e3-4fb3-4348-8185-838470b98d88">
+  <data key="d3">rm -rf results/figure2/maaslin/{baseline,change}
 mkdir -p results/figure2/maaslin/{baseline,change}</data>
-      <data key="d4">2902.368246753246</data>
-      <data key="d5">-2283.6823160173167</data>
-      <data key="d6" />
-    </node>
-    <node id="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
-      <data key="d3"># TABLE 2
+  <data key="d4">2902.368246753246</data>
+  <data key="d5">-2283.6823160173167</data>
+  <data key="d6"></data>
+</node>
+<node id="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
+  <data key="d3"># TABLE 2
 table2_refeed_recovery.sh</data>
-      <data key="d4">2145.1549999999997</data>
-      <data key="d5">-3285.0433333333344</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 2
+  <data key="d4">2145.1549999999997</data>
+  <data key="d5">-3285.0433333333344</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 2
 table2_refeed_recovery.sh'</data>
-      <data key="d8">Saved 151 rows × 2 columns to results/table2/work/formatted/surveillance.tsv (index kept)
+  <data key="d8">Saved 151 rows × 2 columns to results/table2/work/formatted/surveillance.tsv (index kept)
 Saved 151 rows × 1 columns to results/table2/work/selected/meta_MAM.tsv (index kept)
 ✅ Table 1 saved to results/table2/work/descriptive/meta_MAM_oh.tsv
 ✅ Table 1 saved to results/table2/work/descriptive/recovery_status_oh.tsv
@@ -1003,7 +1132,7 @@ Saved 151 rows × 1 columns to results/table2/work/selected/meta_MAM.tsv (index 
 ✅ Saved renamed DataFrame → results/table2/work/descriptive/surveillance_fixed.tsv
 💾 Saved 7 rows × 3 columns to results/table2/work/merged_stats.tsv
 </data>
-      <data key="d9">⚠️ No files matched: results/table2/work/descriptive/surveillance_fixed.tsv
+  <data key="d9">⚠️ No files matched: results/table2/work/descriptive/surveillance_fixed.tsv
 usage: filter.py [-h] [-o OUTPUT] [-fdf FILTER_DF] [-fdfx FILTER_DF_AXIS]
                  [--column COLUMN] [-rf ROWFILT] [-cf COLFILT] [-p PREVAIL]
                  [-a ABUND] [--nonzero] [--min_nonzero_rows MIN_NONZERO_ROWS]
@@ -1039,18 +1168,18 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/table2/work/MAM
 ⚠️ No files matched: results/table2/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
 ⚠️ No files matched: results/table2/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
 </data>
-      <data key="d10">69052</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
-      <data key="d3"># TABLE 3
+  <data key="d10">69052</data>
+  <data key="d11">0</data>
+</node>
+<node id="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
+  <data key="d3"># TABLE 3
 table3_recovery.sh</data>
-      <data key="d4">2533.4883333333337</data>
-      <data key="d5">-3281.710000000001</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 3
+  <data key="d4">2533.4883333333337</data>
+  <data key="d5">-3281.710000000001</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 3
 table3_recovery.sh'</data>
-      <data key="d8">Saved 159 rows × 1 columns to results/table3/work/recovery.tsv (index kept)
+  <data key="d8">Saved 159 rows × 1 columns to results/table3/work/recovery.tsv (index kept)
 ✅ Table 1 saved to results/table3/work/descriptive/Demographics.tsv
 ✅ Table 1 saved to results/table3/work/descriptive/Parental_Education_and_Economics.tsv
 ✅ Table 1 saved to results/table3/work/descriptive/Family_Structure.tsv
@@ -1069,7 +1198,7 @@ table3_recovery.sh'</data>
 💾 Saved 438 rows × 4 columns to results/table3/work/MAM_recovery_stats/merged_stats.tsv
 💾 Saved 18 rows × 3 columns to results/table3/work/merged_stats.tsv
 </data>
-      <data key="d9">usage: filter.py [-h] [-o OUTPUT] [-fdf FILTER_DF] [-fdfx FILTER_DF_AXIS]
+  <data key="d9">usage: filter.py [-h] [-o OUTPUT] [-fdf FILTER_DF] [-fdfx FILTER_DF_AXIS]
                  [--column COLUMN] [-rf ROWFILT] [-cf COLFILT] [-p PREVAIL]
                  [-a ABUND] [--nonzero] [--min_nonzero_rows MIN_NONZERO_ROWS]
                  [--min_nonzero_cols MIN_NONZERO_COLS] [--numeric_only]
@@ -1103,113 +1232,113 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'results/table3/work/MAM_recovery_stats/merged_stats_Recoverstats.tsv'
 ⚠️ No files matched: results/table3/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
 </data>
-      <data key="d10">69728</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="b9e51f29-7332-42a9-be8b-fa6f59d43632">
-      <data key="d3">maaslin3_baseline.sh</data>
-      <data key="d4">3421.9180303030303</data>
-      <data key="d5">-2271.9074242424244</data>
-      <data key="d6" />
-    </node>
-    <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
-      <data key="d3">for d in results/figure3/maaslin/healthy/*/; do
+  <data key="d10">69728</data>
+  <data key="d11">0</data>
+</node>
+<node id="b9e51f29-7332-42a9-be8b-fa6f59d43632">
+  <data key="d3">maaslin3_baseline.sh</data>
+  <data key="d4">3421.9180303030303</data>
+  <data key="d5">-2271.9074242424244</data>
+  <data key="d6"></data>
+</node>
+<node id="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d3">for d in results/figure3/maaslin/healthy/*/; do
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/figure3/maaslin/healthy/change/$name.tsv"
 done</data>
-      <data key="d4">4243.2699999999995</data>
-      <data key="d5">-1302.816666666667</data>
-      <data key="d6" />
-    </node>
-    <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
-      <data key="d3">merge.py results/figure3/maaslin/healthy/change/*.tsv \
+  <data key="d4">4243.2699999999995</data>
+  <data key="d5">-1302.816666666667</data>
+  <data key="d6"></data>
+</node>
+<node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
+  <data key="d3">merge.py results/figure3/maaslin/healthy/change/*.tsv \
   --append \
   --add-filename \
   -o results/figure3/timechange.tsv</data>
-      <data key="d4">5045.353333333334</data>
-      <data key="d5">-1304.4833333333338</data>
-      <data key="d6" />
-    </node>
-    <node id="168f33a5-4532-4581-b5e8-0cf6de606325">
-      <data key="d3">plot_recipe.py</data>
-      <data key="d4">1430.257121212122</data>
-      <data key="d5">1282.264545454546</data>
-      <data key="d6" />
-    </node>
-    <node id="066b6d9a-3d80-439f-ae79-34ba08a9898f">
-      <data key="d3">parallel -j1 spindle.py \
+  <data key="d4">5045.353333333334</data>
+  <data key="d5">-1304.4833333333338</data>
+  <data key="d6"></data>
+</node>
+<node id="168f33a5-4532-4581-b5e8-0cf6de606325">
+  <data key="d3">plot_recipe.py</data>
+  <data key="d4">1430.257121212122</data>
+  <data key="d5">1282.264545454546</data>
+  <data key="d6"></data>
+</node>
+<node id="066b6d9a-3d80-439f-ae79-34ba08a9898f">
+  <data key="d3">parallel -j1 spindle.py \
 results/pcoa/{}.tsv \
 --meta results/filtered/timemeta.tsv \
 --group-col timepoint \
 -o results/spindle/{}.pdf \
 &lt; conf/timedatasets.txt</data>
-      <data key="d4">2544.681363636364</data>
-      <data key="d5">379.5567532467531</data>
-      <data key="d6" />
-    </node>
-    <node id="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c">
-      <data key="d3">arrange_svgs.py \
+  <data key="d4">2544.681363636364</data>
+  <data key="d5">379.5567532467531</data>
+  <data key="d6"></data>
+</node>
+<node id="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c">
+  <data key="d3">arrange_svgs.py \
   results/spindle/* \
   --rows 3 \
   -o results/all_spindle.svg</data>
-      <data key="d4">2865.538506493507</data>
-      <data key="d5">395.5567532467532</data>
-      <data key="d6" />
-    </node>
-    <node id="9a55d674-5bb9-4a2b-81b5-acd2da8e2533">
-      <data key="d3">box.py \
+  <data key="d4">2865.538506493507</data>
+  <data key="d5">395.5567532467532</data>
+  <data key="d6"></data>
+</node>
+<node id="9a55d674-5bb9-4a2b-81b5-acd2da8e2533">
+  <data key="d3">box.py \
    results/maaslin/baseline/aa/features/data_transformed.tsv \
   --meta results/filtered/timemeta.tsv \
   -x Recovery \
   -y 'aspartic_acid' \
   --output results/tmp.svg</data>
-      <data key="d4">6136.514761904758</data>
-      <data key="d5">-2322.6019047619056</data>
-      <data key="d6" />
-    </node>
-    <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
-      <data key="d3">sig_summary.py \
+  <data key="d4">6136.514761904758</data>
+  <data key="d5">-2322.6019047619056</data>
+  <data key="d6"></data>
+</node>
+<node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
+  <data key="d3">sig_summary.py \
   -i results/figure3/timechange.tsv \
   -p 0.1 \
   -s qval_joint \
   -o results/figure3/timechange_summary.tsv</data>
-      <data key="d4">5935.7104761904775</data>
-      <data key="d5">-1161.3166666666664</data>
-      <data key="d6" />
-    </node>
-    <node id="33d300dc-659b-413b-92d8-d1c10e4840aa">
-      <data key="d3">sig_summary.py \
+  <data key="d4">5935.7104761904775</data>
+  <data key="d5">-1161.3166666666664</data>
+  <data key="d6"></data>
+</node>
+<node id="33d300dc-659b-413b-92d8-d1c10e4840aa">
+  <data key="d3">sig_summary.py \
   -i results/figure2/maaslin/baselinechange.tsv \
   -p 0.1 \
   -s qval_joint \
   -o results/figure2/maaslin/baselinechange_summary.tsv</data>
-      <data key="d4">5351.653809523808</data>
-      <data key="d5">-2527.6795238095247</data>
-      <data key="d6" />
-    </node>
-    <node id="54aa994b-162d-49c0-a6ab-94a10c646e86">
-      <data key="d3">rm -rf results/census
+  <data key="d4">5351.653809523808</data>
+  <data key="d5">-2527.6795238095247</data>
+  <data key="d6"></data>
+</node>
+<node id="54aa994b-162d-49c0-a6ab-94a10c646e86">
+  <data key="d3">rm -rf results/census
 mkdir results/census</data>
-      <data key="d4">-1377.1428571428573</data>
-      <data key="d5">578.5714285714286</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rm -rf results/census
+  <data key="d4">-1377.1428571428573</data>
+  <data key="d5">578.5714285714286</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rm -rf results/census
 mkdir results/census'</data>
-      <data key="d8" />
-      <data key="d9" />
-      <data key="d10">66314</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="49657f96-8f43-4c5b-abc7-95c75b9c3e3d">
-      <data key="d3"># FIGURE 2
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">66314</data>
+  <data key="d11">0</data>
+</node>
+<node id="49657f96-8f43-4c5b-abc7-95c75b9c3e3d">
+  <data key="d3"># FIGURE 2
 rm -rf results/figure2
 mkdir -p results/figure2</data>
-      <data key="d4">2329.170714285714</data>
-      <data key="d5">-1403.0328571428572</data>
-      <data key="d6" />
-    </node>
-    <node id="e066b0ad-7643-4e5c-b6f8-063b7be3e023">
-      <data key="d3">for f in $(cat conf/timedatasets.txt); do
+  <data key="d4">2329.170714285714</data>
+  <data key="d5">-1403.0328571428572</data>
+  <data key="d6"></data>
+</node>
+<node id="e066b0ad-7643-4e5c-b6f8-063b7be3e023">
+  <data key="d3">for f in $(cat conf/timedatasets.txt); do
   splitter.py \
     results/cleaned/${f}.tsv \
     -m results/filtered/timemeta.tsv \
@@ -1217,12 +1346,12 @@ mkdir -p results/figure2</data>
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-      <data key="d4">2038.1214285714286</data>
-      <data key="d5">-1072.6092857142867</data>
-      <data key="d6" />
-    </node>
-    <node id="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1">
-      <data key="d3">#results/filtered/household.tsv \
+  <data key="d4">2038.1214285714286</data>
+  <data key="d5">-1072.6092857142867</data>
+  <data key="d6"></data>
+</node>
+<node id="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1">
+  <data key="d3">#results/filtered/household.tsv \
 #results/filtered/media_consumption.tsv \
 #results/filtered/sanitation.tsv \
 #results/filtered/education.tsv \
@@ -1242,97 +1371,97 @@ merge.py \
   --sep ":" \
   -j outer \
   -o results/merged_dataset.tsv</data>
-      <data key="d4">3599.0599999999995</data>
-      <data key="d5">-2129.285</data>
-      <data key="d6" />
-    </node>
-    <node id="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
-      <data key="d3">drop.py \
+  <data key="d4">3599.0599999999995</data>
+  <data key="d5">-2129.285</data>
+  <data key="d6"></data>
+</node>
+<node id="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
+  <data key="d3">drop.py \
   --infile results/filtered/surveillance.tsv \
   --labels days_of_catchup \
   --axis 1 \
   --outfile results/filtered/surveillance_minus_catchup.tsv </data>
-      <data key="d4">3016.809999999999</data>
-      <data key="d5">-1997.2849999999994</data>
-      <data key="d6" />
-    </node>
-    <node id="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb">
-      <data key="d3">cd digital_twin
+  <data key="d4">3016.809999999999</data>
+  <data key="d5">-1997.2849999999994</data>
+  <data key="d6"></data>
+</node>
+<node id="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb">
+  <data key="d3">cd digital_twin
 save_microbiome.py</data>
-      <data key="d13">2332.0904545454546</data>
-      <data key="d14">705.7645454545456</data>
-      <data key="d6" />
-    </node>
-    <node id="597f6053-03e9-4024-b29d-d0b99c11b538">
-      <data key="d3">cd digital_twin
+  <data key="d13">2332.0904545454546</data>
+  <data key="d14">705.7645454545456</data>
+  <data key="d6"></data>
+</node>
+<node id="597f6053-03e9-4024-b29d-d0b99c11b538">
+  <data key="d3">cd digital_twin
 format_matrix_og.py</data>
-      <data key="d13">2564.0904545454546</data>
-      <data key="d14">717.0978787878788</data>
-      <data key="d6" />
-    </node>
-    <node id="f6085713-a056-44ed-8e7c-edf2454f3dce">
-      <data key="d3">cd digital_twin
+  <data key="d13">2564.0904545454546</data>
+  <data key="d14">717.0978787878788</data>
+  <data key="d6"></data>
+</node>
+<node id="f6085713-a056-44ed-8e7c-edf2454f3dce">
+  <data key="d3">cd digital_twin
 vae.py</data>
-      <data key="d13">2799.0904545454546</data>
-      <data key="d14">715.0978787878789</data>
-      <data key="d6" />
-    </node>
-    <node id="325fd8ad-c462-4b83-9960-2ff4a64cfc89">
-      <data key="d3">cd digital_twin
+  <data key="d13">2799.0904545454546</data>
+  <data key="d14">715.0978787878789</data>
+  <data key="d6"></data>
+</node>
+<node id="325fd8ad-c462-4b83-9960-2ff4a64cfc89">
+  <data key="d3">cd digital_twin
 outcome_heads_nobrain.py</data>
-      <data key="d13">2974.0904545454546</data>
-      <data key="d14">715.4312121212122</data>
-      <data key="d6" />
-    </node>
-    <node id="e8d9fb25-0b39-43e4-88f3-d784ffc87959">
-      <data key="d3">cd digital_twin
+  <data key="d13">2974.0904545454546</data>
+  <data key="d14">715.4312121212122</data>
+  <data key="d6"></data>
+</node>
+<node id="e8d9fb25-0b39-43e4-88f3-d784ffc87959">
+  <data key="d3">cd digital_twin
 what_if_counterfactuals.py</data>
-      <data key="d13">3260.0904545454546</data>
-      <data key="d14">713.4312121212122</data>
-      <data key="d6" />
-    </node>
-    <node id="0d7d08bc-6be0-44ca-be4f-feeabb2375c8">
-      <data key="d3">make_figs.py</data>
-      <data key="d4">3605.7571212121215</data>
-      <data key="d5">715.4312121212122</data>
-      <data key="d6" />
-    </node>
-    <node id="a61eeb91-b3f3-499f-a53a-5dd4b29e506d">
-      <data key="d3">extract_genus.py</data>
-      <data key="d4">1723.9086363636363</data>
-      <data key="d5">720.1281818181819</data>
-      <data key="d6" />
-    </node>
-    <node id="1686254d-828f-418d-939c-56bee4889dc4">
-      <data key="d3">merge.py results/rda/*rda_filtered_renamed.tsv \
+  <data key="d13">3260.0904545454546</data>
+  <data key="d14">713.4312121212122</data>
+  <data key="d6"></data>
+</node>
+<node id="0d7d08bc-6be0-44ca-be4f-feeabb2375c8">
+  <data key="d3">make_figs.py</data>
+  <data key="d4">3605.7571212121215</data>
+  <data key="d5">715.4312121212122</data>
+  <data key="d6"></data>
+</node>
+<node id="a61eeb91-b3f3-499f-a53a-5dd4b29e506d">
+  <data key="d3">extract_genus.py</data>
+  <data key="d4">1723.9086363636363</data>
+  <data key="d5">720.1281818181819</data>
+  <data key="d6"></data>
+</node>
+<node id="1686254d-828f-418d-939c-56bee4889dc4">
+  <data key="d3">merge.py results/rda/*rda_filtered_renamed.tsv \
   -a \
   --add-filename \
   --filename-format base \
   -o results/rda/merged.tsv</data>
-      <data key="d4">5863.370714285715</data>
-      <data key="d5">-131.69857142857222</data>
-      <data key="d6" />
-    </node>
-    <node id="5873548a-2a45-4177-91c1-1448ccb48d59">
-      <data key="d3">drop.py \
+  <data key="d4">5863.370714285715</data>
+  <data key="d5">-131.69857142857222</data>
+  <data key="d6"></data>
+</node>
+<node id="5873548a-2a45-4177-91c1-1448ccb48d59">
+  <data key="d3">drop.py \
   --infile results/rda/merged.tsv \
   --labels adj_R2 \
   --axis 1 \
   --outfile results/rda/merged_dropped.tsv</data>
-      <data key="d4">6259.263571428572</data>
-      <data key="d5">-133.12714285714355</data>
-      <data key="d6" />
-    </node>
-    <node id="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4">
-      <data key="d3"># FIGURE S2
+  <data key="d4">6259.263571428572</data>
+  <data key="d5">-133.12714285714355</data>
+  <data key="d6"></data>
+</node>
+<node id="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4">
+  <data key="d3"># FIGURE S2
 rm -rf results/figureS2
 mkdir results/figureS2</data>
-      <data key="d4">2946.5850000000005</data>
-      <data key="d5">-474.02000000000027</data>
-      <data key="d6" />
-    </node>
-    <node id="d4860758-e29e-4882-a5c7-64084e0276d4">
-      <data key="d3">for set in yr1 yr2 notp; do \
+  <data key="d4">2946.5850000000005</data>
+  <data key="d5">-474.02000000000027</data>
+  <data key="d6"></data>
+</node>
+<node id="d4860758-e29e-4882-a5c7-64084e0276d4">
+  <data key="d3">for set in yr1 yr2 notp; do \
 rename_regex.py \
   results/rda/${set}_rda.tsv \
   --match filename \
@@ -1340,71 +1469,71 @@ rename_regex.py \
   --axis columns \
   -o results/rda/${set}_rda_filtered_renamed.tsv
 done</data>
-      <data key="d4">5331.584999999999</data>
-      <data key="d5">-181.52000000000066</data>
-      <data key="d6" />
-    </node>
-    <node id="ce6b111f-bf9d-4c19-848f-b87f6c9363cb">
-      <data key="d3">replace.py results/rda/merged_dropped.tsv \
+  <data key="d4">5331.584999999999</data>
+  <data key="d5">-181.52000000000066</data>
+  <data key="d6"></data>
+</node>
+<node id="ce6b111f-bf9d-4c19-848f-b87f6c9363cb">
+  <data key="d3">replace.py results/rda/merged_dropped.tsv \
   --to_replace "_rda_filtered_renamed" \
   --value "" \
   --regex \
   -o results/rda/rda.tsv</data>
-      <data key="d4">6635.334999999999</data>
-      <data key="d5">-156.52000000000066</data>
-      <data key="d6" />
-    </node>
-    <node id="50daab08-2e35-4393-809a-aabc9f1dbd30">
-      <data key="d3">for d in sleep species pathways alpha_diversity head anthro aa vitamin
+  <data key="d4">6635.334999999999</data>
+  <data key="d5">-156.52000000000066</data>
+  <data key="d6"></data>
+</node>
+<node id="50daab08-2e35-4393-809a-aabc9f1dbd30">
+  <data key="d3">for d in sleep species pathways alpha_diversity head anthro aa vitamin
 do
   overall_recovery.py "$d"
 done</data>
-      <data key="d4">2595.3490909090906</data>
-      <data key="d5">-27.237575757575428</data>
-      <data key="d6" />
-    </node>
-    <node id="69d46b2e-7d27-4ec3-a821-092c7ed87e50">
-      <data key="d3">rm -rf results/figure3
+  <data key="d4">2595.3490909090906</data>
+  <data key="d5">-27.237575757575428</data>
+  <data key="d6"></data>
+</node>
+<node id="69d46b2e-7d27-4ec3-a821-092c7ed87e50">
+  <data key="d3">rm -rf results/figure3
 mkdir results/figure3</data>
-      <data key="d4">2268.6824242424245</data>
-      <data key="d5">-12.237575757575371</data>
-      <data key="d6" />
-    </node>
-    <node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
-      <data key="d3">rm -rf results/figure3/maaslin/healthy/change
+  <data key="d4">2268.6824242424245</data>
+  <data key="d5">-12.237575757575371</data>
+  <data key="d6"></data>
+</node>
+<node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
+  <data key="d3">rm -rf results/figure3/maaslin/healthy/change
 mkdir -p results/figure3/maaslin/healthy/change</data>
-      <data key="d4">3317.762424242424</data>
-      <data key="d5">-1271.7939393939398</data>
-      <data key="d6" />
-    </node>
-    <node id="91b62e34-3e4f-4498-a6f6-1a34a060520a">
-      <data key="d3">hbar_fig3.py</data>
-      <data key="d4">3402.7524242424242</data>
-      <data key="d5">0.4057575757576899</data>
-      <data key="d6" />
-    </node>
-    <node id="e93d007f-df16-43f4-a11e-5cd323cc56ce">
-      <data key="d3">rm -rf results/figure4
+  <data key="d4">3317.762424242424</data>
+  <data key="d5">-1271.7939393939398</data>
+  <data key="d6"></data>
+</node>
+<node id="91b62e34-3e4f-4498-a6f6-1a34a060520a">
+  <data key="d3">hbar_fig3.py</data>
+  <data key="d4">3402.7524242424242</data>
+  <data key="d5">0.4057575757576899</data>
+  <data key="d6"></data>
+</node>
+<node id="e93d007f-df16-43f4-a11e-5cd323cc56ce">
+  <data key="d3">rm -rf results/figure4
 mkdir results/figure4</data>
-      <data key="d4">2018.545</data>
-      <data key="d5">703.3100000000001</data>
-      <data key="d6" />
-    </node>
-    <node id="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8">
-      <data key="d3">merge.py \
+  <data key="d4">2018.545</data>
+  <data key="d5">703.3100000000001</data>
+  <data key="d6"></data>
+</node>
+<node id="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8">
+  <data key="d3">merge.py \
   results/figure3/*recovery.tsv \
   -a \
   -o results/figure3/rec_merged.tsv</data>
-      <data key="d4">3081.4190909090903</data>
-      <data key="d5">-31.260909090908996</data>
-      <data key="d6" />
-    </node>
-    <node id="4f9b94df-d3d5-47e5-99d9-7e5b9c271974">
-      <data key="d3">terrence_request.sh</data>
-      <data key="d4">2458.175</data>
-      <data key="d5">-1005.6750000000009</data>
-      <data key="d6" />
-      <data key="d12">STDOUT:
+  <data key="d4">3081.4190909090903</data>
+  <data key="d5">-31.260909090908996</data>
+  <data key="d6"></data>
+</node>
+<node id="4f9b94df-d3d5-47e5-99d9-7e5b9c271974">
+  <data key="d3">terrence_request.sh</data>
+  <data key="d4">2458.175</data>
+  <data key="d5">-1005.6750000000009</data>
+  <data key="d6"></data>
+  <data key="d12">STDOUT:
 [filter] Query '(timepoint == 52)': kept 151/302
 [filter] Saved filtered output to: results/figure2/maaslin/baseline/timemetaMAM_52tp_filled.tsv
 Saved split: /home/tpor598/recovery/results/feedbl/Local RUSF (A)/sleep.tsv
@@ -1463,34 +1592,34 @@ Saved split: /home/tpor598/recovery/results/feedyr2/ERUSF (B)/pathways.tsv
 Split files saved to subfolders in: /home/tpor598/recovery/results/feedyr2
 
 STDERR:</data>
-    </node>
-    <node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
-      <data key="d3">filter.py \
+</node>
+<node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
+  <data key="d3">filter.py \
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/mothers.tsv \
   -o results/filtered/mothers.tsv</data>
-      <data key="d13">80.50000000000011</data>
-      <data key="d14">480.49999999999983</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
+  <data key="d13">80.50000000000011</data>
+  <data key="d14">480.49999999999983</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
   -q "~subjectID.str.startswith('\''LCC3'\'')" \
   results/cleaned/mothers.tsv \
   -o results/filtered/mothers.tsv'</data>
-      <data key="d8">[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
+  <data key="d8">[filter] Query '(~subjectID.str.startswith('LCC3'))': kept 234/309
 [filter] Saved filtered output to: results/filtered/mothers.tsv
 </data>
-      <data key="d9" />
-      <data key="d10">66786</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="403c9095-7c10-40b5-b31a-e570ddec6c56">
-      <data key="d3">format_mothers.py</data>
-      <data key="d4">-761.0</data>
-      <data key="d5">602.0</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_mothers.py'</data>
-      <data key="d8" />
-      <data key="d9">/home/tpor598/recovery/code/format_mothers.py:41: SettingWithCopyWarning: 
+  <data key="d9"></data>
+  <data key="d10">29960</data>
+  <data key="d11">0</data>
+</node>
+<node id="403c9095-7c10-40b5-b31a-e570ddec6c56">
+  <data key="d3">format_mothers.py</data>
+  <data key="d4">-761.0</data>
+  <data key="d5">602.0</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_mothers.py'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/code/format_mothers.py:41: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1794,105 +1923,105 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
 </data>
-      <data key="d10">66345</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="78c8d135-ef42-4645-bc41-820a809c493c">
-      <data key="d3">mixedlm.py \
+  <data key="d10">66345</data>
+  <data key="d11">0</data>
+</node>
+<node id="78c8d135-ef42-4645-bc41-820a809c493c">
+  <data key="d3">mixedlm.py \
   -i results/filtered/mothers.tsv \
   -m results/filtered/meta.tsv \
   -o results/mothers_modelout.tsv</data>
-      <data key="d4">1414.545</data>
-      <data key="d5">1569.976666666667</data>
-      <data key="d6" />
-    </node>
-    <node id="be560393-d428-4755-8f8c-096cc59441f0">
-      <data key="d3"> box.py \
+  <data key="d4">1414.545</data>
+  <data key="d5">1569.976666666667</data>
+  <data key="d6"></data>
+</node>
+<node id="be560393-d428-4755-8f8c-096cc59441f0">
+  <data key="d3"> box.py \
   results/filtered/mothers.tsv \
   -x Recovery \
   -y maternal_bmi \
   --meta results/filtered/meta.tsv \
   -o results/recovery_MAMatbirth_box.svg</data>
-      <data key="d4">1811.2116666666668</data>
-      <data key="d5">1556.6433333333334</data>
-      <data key="d6" />
-    </node>
-    <node id="70e0aeb0-3e97-4874-9263-fcf71b811409">
-      <data key="d3">descriptive_stats.sh \
+  <data key="d4">1811.2116666666668</data>
+  <data key="d5">1556.6433333333334</data>
+  <data key="d6"></data>
+</node>
+<node id="70e0aeb0-3e97-4874-9263-fcf71b811409">
+  <data key="d3">descriptive_stats.sh \
   results/cat_cluster_analysis/cat_cluster_merge.tsv \
   results/cat_cluster_analysis/cat_cluster_descriptive</data>
-      <data key="d4">4991.885714285713</data>
-      <data key="d5">1005.7271428571429</data>
-      <data key="d6" />
-    </node>
-    <node id="454010a3-9ea2-4cd6-a88e-977f182fb381">
-      <data key="d3">onehot.py \
+  <data key="d4">4991.885714285713</data>
+  <data key="d5">1005.7271428571429</data>
+  <data key="d6"></data>
+</node>
+<node id="454010a3-9ea2-4cd6-a88e-977f182fb381">
+  <data key="d3">onehot.py \
   results/filtered/meta.tsv \
   --dtype bool \
   -o results/filtered/meta_oh.tsv</data>
-      <data key="d4">4116.57</data>
-      <data key="d5">950.8699999999998</data>
-      <data key="d6" />
-    </node>
-    <node id="4128631c-6e54-4e3e-93a6-3ba0663df355">
-      <data key="d3">merge.py \
+  <data key="d4">4116.57</data>
+  <data key="d5">950.8699999999998</data>
+  <data key="d6"></data>
+</node>
+<node id="4128631c-6e54-4e3e-93a6-3ba0663df355">
+  <data key="d3">merge.py \
   results/filtered/meta_oh.tsv \
   results/filtered/mothers.tsv \
   results/cat_cluster_analysis/clusters_oh.tsv \
   -j inner \
   -o results/cat_cluster_analysis/cat_cluster_merge.tsv</data>
-      <data key="d4">4585.599999999999</data>
-      <data key="d5">957.155714285714</data>
-      <data key="d6" />
-    </node>
-    <node id="2886f3fc-11bf-4e5f-b235-5040294a5acc">
-      <data key="d3">replace.py \
+  <data key="d4">4585.599999999999</data>
+  <data key="d5">957.155714285714</data>
+  <data key="d6"></data>
+</node>
+<node id="2886f3fc-11bf-4e5f-b235-5040294a5acc">
+  <data key="d3">replace.py \
   digital_twin/outcomes/subject_cluster_assignments_small.tsv  \
   --to_replace '{"1": "one", "2": "two"}'  \
   -o results/cat_cluster_analysis/clusters.tsv</data>
-      <data key="d4">3618.5214285714283</data>
-      <data key="d5">846.1721428571428</data>
-      <data key="d6" />
-    </node>
-    <node id="00b9797d-859c-46e5-babc-b9d2d4743fda">
-      <data key="d3">onehot.py \
+  <data key="d4">3618.5214285714283</data>
+  <data key="d5">846.1721428571428</data>
+  <data key="d6"></data>
+</node>
+<node id="00b9797d-859c-46e5-babc-b9d2d4743fda">
+  <data key="d3">onehot.py \
   results/cat_cluster_analysis/clusters.tsv \
   --dtype bool \
   -o results/cat_cluster_analysis/clusters_oh.tsv</data>
-      <data key="d4">4181.998571428571</data>
-      <data key="d5">800.2985714285713</data>
-      <data key="d6" />
-    </node>
-    <node id="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa">
-      <data key="d3">filter.py \
+  <data key="d4">4181.998571428571</data>
+  <data key="d5">800.2985714285713</data>
+  <data key="d6"></data>
+</node>
+<node id="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa">
+  <data key="d3">filter.py \
   results/cat_cluster_analysis/cat_cluster_descriptive/merged_stats.tsv \
   -q 'target == "cluster_id.one"' \
   -o results/cat_cluster_analysis/merged_filtered.tsv</data>
-      <data key="d4">4992.171428571429</data>
-      <data key="d5">1093.1557142857146</data>
-      <data key="d6" />
-    </node>
-    <node id="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725">
-      <data key="d3">assign.py \
+  <data key="d4">4992.171428571429</data>
+  <data key="d5">1093.1557142857146</data>
+  <data key="d6"></data>
+</node>
+<node id="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725">
+  <data key="d3">assign.py \
   results/cat_cluster_analysis/merged_filtered.tsv  \
   --assign "directional = -np.log(df['p_value']) * np.sign(df['statistic'])" \
   -o results/cat_cluster_analysis/directional.tsv</data>
-      <data key="d4">5013.599999999999</data>
-      <data key="d5">1203.1557142857146</data>
-      <data key="d6" />
-    </node>
-    <node id="a70bbf43-a2c2-4210-a15c-03aedc4258f4">
-      <data key="d3">drop.py\
+  <data key="d4">5013.599999999999</data>
+  <data key="d5">1203.1557142857146</data>
+  <data key="d6"></data>
+</node>
+<node id="a70bbf43-a2c2-4210-a15c-03aedc4258f4">
+  <data key="d3">drop.py\
   --infile results/cat_cluster_analysis/directional.tsv \
   --labels cluster_id.two \
   --axis 0 \
   --outfile results/cat_cluster_analysis/directional_nocluster2.tsv</data>
-      <data key="d4">5046.457142857143</data>
-      <data key="d5">1307.4414285714288</data>
-      <data key="d6" />
-    </node>
-    <node id="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa">
-      <data key="d3">hbar.py results/cat_cluster_analysis/directional_nocluster2.tsv \
+  <data key="d4">5046.457142857143</data>
+  <data key="d5">1307.4414285714288</data>
+  <data key="d6"></data>
+</node>
+<node id="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa">
+  <data key="d3">hbar.py results/cat_cluster_analysis/directional_nocluster2.tsv \
     --coef-col directional \
     --index-col source \
     --hue-col filename \
@@ -1900,30 +2029,30 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     --ylabel "Variable" \
     --title "Directional Association with cluster_id.one" \
     -o results/cat_cluster_analysis/directional_hbar.svg</data>
-      <data key="d4">5049.314285714286</data>
-      <data key="d5">1438.87</data>
-      <data key="d6" />
-    </node>
-    <node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
-      <data key="d3">unzip -o \
+  <data key="d4">5049.314285714286</data>
+  <data key="d5">1438.87</data>
+  <data key="d6"></data>
+</node>
+<node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
+  <data key="d3">unzip -o \
   -d results/aaunzipped \
   data/RE_\ M4EFaD\ amino\ acid\ measurements.zip</data>
-      <data key="d13">-1313.0</data>
-      <data key="d14">-358.0</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; unzip -o \
+  <data key="d13">-1313.0</data>
+  <data key="d14">-358.0</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; unzip -o \
   -d results/aaunzipped \
   data/RE_\ M4EFaD\ amino\ acid\ measurements.zip'</data>
-      <data key="d8">Archive:  data/RE_ M4EFaD amino acid measurements.zip
+  <data key="d8">Archive:  data/RE_ M4EFaD amino acid measurements.zip
  extracting: results/aaunzipped/Results-UPLC_AA_LEAP_Plasma_Jan 2024.xlsx  
  extracting: results/aaunzipped/Results-UPLC_AA_LEAP_Plasma_Oct 2023.xlsx  
 </data>
-      <data key="d9" />
-      <data key="d10">66325</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
-      <data key="d3"># FIGURE 1D
+  <data key="d9"></data>
+  <data key="d10">66325</data>
+  <data key="d11">0</data>
+</node>
+<node id="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
+  <data key="d3"># FIGURE 1D
 box.py \
   results/filtered/recovery_status.tsv \
   --meta results/filtered/meta.tsv \
@@ -1933,10 +2062,10 @@ box.py \
   --ymin 0 \
   --ymax 50 \
   -o results/figure1/days_to_recovery_box.svg</data>
-      <data key="d4">2093.3216666666667</data>
-      <data key="d5">-2589.543333333334</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
+  <data key="d4">2093.3216666666667</data>
+  <data key="d5">-2589.543333333334</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
 box.py \
   results/filtered/recovery_status.tsv \
   --meta results/filtered/meta.tsv \
@@ -1946,21 +2075,21 @@ box.py \
   --ymin 0 \
   --ymax 50 \
   -o results/figure1/days_to_recovery_box.svg'</data>
-      <data key="d8">Index(['Recovered', 'Recovery_status', 'Days_to_recovery', 'Sex', 'Ethnicity',
+  <data key="d8">Index(['Recovered', 'Recovery_status', 'Days_to_recovery', 'Sex', 'Ethnicity',
        'Condition', 'Feed', 'Recovery', 'Delivery_Mode', 'Supplementation',
        'BF', 'PoB'],
       dtype='object')
 </data>
-      <data key="d9" />
-      <data key="d10">68304</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="ce5ca375-de80-45f9-9b57-4a9031407eae">
-      <data key="d3">table2_who_refeed_recovery.sh</data>
-      <data key="d4">2159.988333333333</data>
-      <data key="d5">-3164.543333333334</data>
-      <data key="d6">ran</data>
-      <data key="d12">STDOUT:
+  <data key="d9"></data>
+  <data key="d10">68304</data>
+  <data key="d11">0</data>
+</node>
+<node id="ce5ca375-de80-45f9-9b57-4a9031407eae">
+  <data key="d3">table2_who_refeed_recovery.sh</data>
+  <data key="d4">2159.988333333333</data>
+  <data key="d5">-3164.543333333334</data>
+  <data key="d6">ran</data>
+  <data key="d12">STDOUT:
 Saved 151 rows × 2 columns to results/table2_plus/formatted/surveillance.tsv (index kept)
 Saved 151 rows × 1 columns to results/table2_plus/selected/meta_MAM.tsv (index kept)
 ✅ Table 1 saved to results/table2_plus/work/descriptive/meta_MAM_oh.tsv
@@ -2032,8 +2161,8 @@ Traceback (most recent call last):
     handle = open(
              ^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_plus/descriptive/surveillance_fixed.tsv.tsv'</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; table2_who_refeed_recovery.sh'</data>
-      <data key="d8">Saved 151 rows × 2 columns to results/table2_plus/formatted/surveillance.tsv (index kept)
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; table2_who_refeed_recovery.sh'</data>
+  <data key="d8">Saved 151 rows × 2 columns to results/table2_plus/formatted/surveillance.tsv (index kept)
 Saved 151 rows × 1 columns to results/table2_plus/selected/meta_MAM.tsv (index kept)
 ✅ Table 1 saved to results/table2_plus/work/descriptive/meta_MAM_oh.tsv
 ✅ Table 1 saved to results/table2_plus/work/descriptive/recovery_status_oh.tsv
@@ -2055,7 +2184,7 @@ Saved 10 rows × 2 columns to results/table2_plus/MAM_recovery_stats/merged_stat
 💾 Saved 10 rows × 1 columns to results/table2_plus/merged_stats.tsv
 💾 Saved 7 rows × 4 columns to results/table2_plus/merged_stats.tsv
 </data>
-      <data key="d9">⚠️ No files matched: results/table2_plus/work/descriptive/surveillance_fixed.tsv
+  <data key="d9">⚠️ No files matched: results/table2_plus/work/descriptive/surveillance_fixed.tsv
 ⚠️ No files matched: results/table2_plus/work/merged.tsv
 Traceback (most recent call last):
   File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 80, in &lt;module&gt;
@@ -2104,384 +2233,377 @@ Traceback (most recent call last):
              ^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_plus/descriptive/surveillance_fixed.tsv.tsv'
 </data>
-      <data key="d10">69061</data>
-      <data key="d11">0</data>
-    </node>
-    <node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
-      <data key="d3">hbar_fig3.py</data>
-      <data key="d4">6616.17</data>
-      <data key="d5">-1269.335</data>
-      <data key="d6" />
-    </node>
-    <node id="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a">
-      <data key="d3">filter.py \
+  <data key="d10">69061</data>
+  <data key="d11">0</data>
+</node>
+<node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
+  <data key="d3">hbar_fig3.py</data>
+  <data key="d4">6616.17</data>
+  <data key="d5">-1269.335</data>
+  <data key="d6"></data>
+</node>
+<node id="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a">
+  <data key="d3">filter.py \
   results/figure3/timechange.tsv \
   -q "error.isna()" \
   -o results/figure3/timechange_filter.tsv</data>
-      <data key="d4">5654.999999999999</data>
-      <data key="d5">-1391.2499999999998</data>
-      <data key="d6" />
-    </node>
-    <node id="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab">
-      <data key="d3">fdr.py \
+  <data key="d4">5654.999999999999</data>
+  <data key="d5">-1391.2499999999998</data>
+  <data key="d6"></data>
+</node>
+<node id="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab">
+  <data key="d3">fdr.py \
   results/rda/rda.tsv \
   -o results/rda/rda_fdr.tsv</data>
-      <data key="d4">7030.0</data>
-      <data key="d5">-142.22222222222223</data>
-      <data key="d6" />
-    </node>
-    <node id="0504db0f-969a-4bad-b6cc-f7608733ce7f">
-      <data key="d3">edit.py code/calculate_recovery.py</data>
-      <data key="d13">1095.0500000000009</data>
-      <data key="d14">-102.28333333333285</data>
-      <data key="d6">ran</data>
-      <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; edit.py code/calculate_recovery.py'</data>
-      <data key="d8">✔ Sent calculate_recovery.py to a new window with environment loaded.
+  <data key="d4">7030.0</data>
+  <data key="d5">-142.22222222222223</data>
+  <data key="d6"></data>
+</node>
+<node id="0504db0f-969a-4bad-b6cc-f7608733ce7f">
+  <data key="d3">edit.py code/calculate_recovery.py</data>
+  <data key="d13">1095.0500000000009</data>
+  <data key="d14">-102.28333333333285</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; edit.py code/calculate_recovery.py'</data>
+  <data key="d8">✔ Sent calculate_recovery.py to a new window with environment loaded.
 </data>
-      <data key="d9" />
-      <data key="d10">72988</data>
-      <data key="d11">0</data>
-    </node>
-    <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
-      <data key="d15">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
-      <data key="d16" />
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
-      <data key="d15">77e00512-2bac-4449-aaec-89cf7e81c0f7</data>
-      <data key="d16" />
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="f3f51679-47bd-4d95-b166-0773770b99c8">
-      <data key="d15">7ded9cb4-d830-4af6-b282-e47ea5c47164</data>
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee">
-      <data key="d15">e39affcc-db55-4426-96e4-d8b1e67c152c</data>
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="168f33a5-4532-4581-b5e8-0cf6de606325">
-      <data key="d15">f56c7347-02b8-4c11-8611-c592a7dbc727</data>
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="e0c5398f-26da-4779-b36e-deab73e090da">
-      <data key="d15">89972daa-0970-4072-869c-ced76fd89e7a</data>
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="a61eeb91-b3f3-499f-a53a-5dd4b29e506d">
-      <data key="d15">40713f58-423c-4fe3-9dab-4d53f5e1e39c</data>
-    </edge>
-    <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="78c8d135-ef42-4645-bc41-820a809c493c">
-      <data key="d15">4591dd97-c339-4c21-b881-80ce9ee5da1f</data>
-    </edge>
-    <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">29fa658f-2d26-4a9b-bcb3-a63f429341e6</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">59275492-091d-42c6-910f-b4612dd94263</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="99a1770b-1153-428d-8172-e783bf221b38">
-      <data key="d15">fa4edeb0-0786-467c-9b3a-96f1a64ff465</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="67d6bf85-2665-4c80-b457-43e490d6fe20">
-      <data key="d15">52072a3b-6bb8-43a7-be3a-d348730a0f3c</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
-      <data key="d15">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
-      <data key="d15">a41a32cd-38eb-4bef-89ca-d813d229a113</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
-      <data key="d15">d47ed25e-0306-44a6-96cf-a0ff8e1703bf</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">f24ab42c-7e94-4fc8-b276-23bd6b9f2b70</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">2fcd8285-c350-445f-99ef-7fe883b7a7a2</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="9780f658-26ff-4a9b-a03f-a57be3e04748">
-      <data key="d15">9bc74a43-a370-4d4f-84bc-bf4d7641d399</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">f483365b-054c-4b82-81a2-0d35deebfdb1</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">4aefbf5c-7556-40b0-a92c-9d64bd95ed25</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="d4e4b648-4abc-47b1-b072-7227e8023ead">
-      <data key="d15">b50ae894-d083-4589-8570-97dbe3281c08</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="694c1739-f526-421a-a8ec-99152294abf4">
-      <data key="d15">c529f347-0047-46f1-b87a-4c08dafdcfed</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
-      <data key="d15">12adda23-0572-4590-b1fa-33b57315248e</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-      <data key="d15">ace08a5e-79c1-4627-a3e9-915b2438a123</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-      <data key="d15">e7c4636c-d085-47c9-a398-cc1a1bcddb7c</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-      <data key="d15">1d2a6c35-9a12-4c1c-b200-50ff300c757f</data>
-      <data key="d16" />
-    </edge>
-    <edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">0dffd4c7-c983-427f-9a8a-2ca2e1636b59</data>
-      <data key="d16" />
-    </edge>
-    <edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
-      <data key="d15">fdfc6835-7b55-46f0-94d3-33d226263349</data>
-      <data key="d16" />
-    </edge>
-    <edge source="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48" target="c22c2993-fbfb-461c-b462-80a4bd61e58e">
-      <data key="d15">57f01424-2c84-4e51-9082-be85907deeef</data>
-      <data key="d16" />
-    </edge>
-    <edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="3a9d83fc-9062-4367-a6e3-510564bf386b">
-      <data key="d15">4612be57-1345-4017-af9c-49a1afe4cf6d</data>
-      <data key="d16" />
-    </edge>
-    <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
-      <data key="d15">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
-      <data key="d16" />
-    </edge>
-    <edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="066b6d9a-3d80-439f-ae79-34ba08a9898f" />
-    <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="33d300dc-659b-413b-92d8-d1c10e4840aa" />
-    <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="9a55d674-5bb9-4a2b-81b5-acd2da8e2533" />
-    <edge source="node85" target="e066b0ad-7643-4e5c-b6f8-063b7be3e023" />
-    <edge source="node85" target="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4" />
-    <edge source="node85" target="69d46b2e-7d27-4ec3-a821-092c7ed87e50" />
-    <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" />
-    <edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" />
-    <edge source="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" target="8727268b-1b5b-4c92-9768-cbe389f6984f" />
-    <edge source="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" target="8727268b-1b5b-4c92-9768-cbe389f6984f" />
-    <edge source="8727268b-1b5b-4c92-9768-cbe389f6984f" target="8a1d54be-d18d-494a-8d21-2fc840762f32" />
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
-      <data key="d15">204cfb0e-da8b-45be-87e4-e23f67bfa454</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
-      <data key="d15">f0a632a6-65b0-4c90-8012-33657f3aae1c</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
-      <data key="d15">579647c2-5b49-424b-a47c-8362bca0dc40</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
-      <data key="d15">09b3b38d-6e00-439f-874f-665f2d5744c0</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8">
-      <data key="d15">e8a6ba03-6d53-43d4-b2d1-4e8badba14aa</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
-      <data key="d15">d59f208b-8404-4793-8737-67a9fa15e002</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
-      <data key="d15">d54b9120-075d-489e-89b3-0c19be51e81f</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
-      <data key="d15">f0eeca9c-acc4-49dc-90a7-b77288c456a5</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
-      <data key="d15">a47ea18e-5b7c-4afd-a086-2a96e96d2550</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
-      <data key="d15">ab908f3d-e8bb-4896-8ee0-df3b6dc3178e</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
-      <data key="d15">2b30c038-c4a8-4e30-81eb-e5e12ee55a6e</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
-      <data key="d15">75abc385-d008-4886-aa0a-daa67cb5b9ac</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="9b629faa-9494-44b8-9167-ac7b172d5af8">
-      <data key="d15">9d9b9c6f-197f-4339-9a5a-0f5a8388c4e7</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
-      <data key="d15">7a20c1a3-eba5-4b09-addc-89df6d87beea</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="54aa994b-162d-49c0-a6ab-94a10c646e86">
-      <data key="d15">1e8632f5-1354-447d-b860-8b0440213aaa</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
-      <data key="d15">ea465acb-fb24-4888-98ff-8879cc705bd2</data>
-      <data key="d16" />
-    </edge>
-    <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="403c9095-7c10-40b5-b31a-e570ddec6c56">
-      <data key="d15">edbcdd55-befc-403b-840e-df5642dbe8d5</data>
-      <data key="d16" />
-    </edge>
-    <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="df4dc09e-4408-4798-ae04-b10e3339f1e9" />
-    <edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="d4860758-e29e-4882-a5c7-64084e0276d4" />
-    <edge source="df4dc09e-4408-4798-ae04-b10e3339f1e9" target="5656487b-7e9b-4945-b26e-5d344660740c" />
-    <edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23" />
-    <edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">99d00f4d-617e-4870-bdf9-c5835630d11a</data>
-      <data key="d16" />
-    </edge>
-    <edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="99a1770b-1153-428d-8172-e783bf221b38">
-      <data key="d15">188bdf34-a52d-4af7-adaa-64a0ac2741f9</data>
-      <data key="d16" />
-    </edge>
-    <edge source="246364a8-29bd-49c2-a045-ceb068383c79" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
-      <data key="d15">efb7fff0-3139-4d09-b0e7-921109483fb6</data>
-      <data key="d16" />
-    </edge>
-    <edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4">
-      <data key="d15">dd4423c4-135c-47de-861c-6dce652b6d4d</data>
-      <data key="d16" />
-    </edge>
-    <edge source="694c1739-f526-421a-a8ec-99152294abf4" target="9430f225-f079-4a7f-bfd9-a272b950617f">
-      <data key="d15">26f7b000-3723-40bb-9032-857f0128cf0b</data>
-      <data key="d16" />
-    </edge>
-    <edge source="99a1770b-1153-428d-8172-e783bf221b38" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
-      <data key="d15">c282e5d5-07fa-48e4-9342-04802b557c5a</data>
-      <data key="d16" />
-    </edge>
-    <edge source="9430f225-f079-4a7f-bfd9-a272b950617f" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
-      <data key="d15">972ec798-970d-4bf3-9dec-86d1727dbfe0</data>
-      <data key="d16" />
-    </edge>
-    <edge source="67d6bf85-2665-4c80-b457-43e490d6fe20" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
-      <data key="d15">4c7aeb83-25d1-41eb-bc63-c6d802335bca</data>
-      <data key="d16" />
-    </edge>
-    <edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275" />
-    <edge source="6d46e087-86b7-44f4-8268-e04ad35f3275" target="1da8a511-5367-4a80-8510-06464399deb8" />
-    <edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655" />
-    <edge source="ddda3b3f-7609-4dd8-88db-c4f521d8a127" target="6ecc57c1-07b4-4096-b3b2-4daffb488260" />
-    <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
-      <data key="d15">b09f1c79-7341-48ff-ba82-f4d341fc3569</data>
-      <data key="d16" />
-    </edge>
-    <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="ce5ca375-de80-45f9-9b57-4a9031407eae">
-      <data key="d15">8be7e369-8b65-409c-b408-b331e5b4df7a</data>
-      <data key="d16" />
-    </edge>
-    <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
-      <data key="d15">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
-      <data key="d16" />
-    </edge>
-    <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
-      <data key="d15">cb09b1c5-b3d4-4233-8723-bf4d5cab452b</data>
-      <data key="d16" />
-    </edge>
-    <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="7a113732-6455-4f0d-b805-fc6095b40ca3">
-      <data key="d15">15eb8994-2a70-4724-9cca-a28e314a02bc</data>
-      <data key="d16" />
-    </edge>
-    <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="a191959b-1acd-4594-8819-65c36f01f33c">
-      <data key="d15">1c767b49-cc6f-48fb-8e6a-eafdfa150517</data>
-      <data key="d16" />
-    </edge>
-    <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
-      <data key="d15">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
-      <data key="d16" />
-    </edge>
-    <edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="6eaccd10-48fb-45f8-bf1d-07831d27c76a" />
-    <edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="node85" />
-    <edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349" />
-    <edge source="926989e3-4fb3-4348-8185-838470b98d88" target="b9e51f29-7332-42a9-be8b-fa6f59d43632" />
-    <edge source="69c740d1-a5bd-40aa-a82c-bc90d7d60e31" target="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
-      <data key="d15">96b04ed6-5e94-45fa-9fbc-fff7f0219a3b</data>
-      <data key="d16" />
-    </edge>
-    <edge source="b9e51f29-7332-42a9-be8b-fa6f59d43632" target="445f4183-2221-42ae-80fe-cfa8e3da2000" />
-    <edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" />
-    <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9" />
-    <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88" />
-    <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1" />
-    <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a" />
-    <edge source="066b6d9a-3d80-439f-ae79-34ba08a9898f" target="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c" />
-    <edge source="54aa994b-162d-49c0-a6ab-94a10c646e86" target="e01d74fd-8601-460e-858c-2f6b0be61422">
-      <data key="d15">ba1e1c72-dbcf-4d62-9bf6-a7b35ce609c0</data>
-      <data key="d16" />
-    </edge>
-    <edge source="54aa994b-162d-49c0-a6ab-94a10c646e86" target="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
-      <data key="d15">037c7d68-769d-47da-bffe-de804a728d39</data>
-      <data key="d16" />
-    </edge>
-    <edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" />
-    <edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="926989e3-4fb3-4348-8185-838470b98d88" />
-    <edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="08584b44-c135-4c3f-b26b-f2ac8df4e824" />
-    <edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" />
-    <edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="4f9b94df-d3d5-47e5-99d9-7e5b9c271974" />
-    <edge source="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1" target="6cd59c60-d8fe-4449-be43-29f53856493e" />
-    <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1" />
-    <edge source="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb" target="597f6053-03e9-4024-b29d-d0b99c11b538" />
-    <edge source="597f6053-03e9-4024-b29d-d0b99c11b538" target="f6085713-a056-44ed-8e7c-edf2454f3dce" />
-    <edge source="f6085713-a056-44ed-8e7c-edf2454f3dce" target="325fd8ad-c462-4b83-9960-2ff4a64cfc89" />
-    <edge source="325fd8ad-c462-4b83-9960-2ff4a64cfc89" target="e8d9fb25-0b39-43e4-88f3-d784ffc87959" />
-    <edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="0d7d08bc-6be0-44ca-be4f-feeabb2375c8" />
-    <edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="ddda3b3f-7609-4dd8-88db-c4f521d8a127" />
-    <edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="2886f3fc-11bf-4e5f-b235-5040294a5acc" />
-    <edge source="a61eeb91-b3f3-499f-a53a-5dd4b29e506d" target="e93d007f-df16-43f4-a11e-5cd323cc56ce" />
-    <edge source="1686254d-828f-418d-939c-56bee4889dc4" target="5873548a-2a45-4177-91c1-1448ccb48d59" />
-    <edge source="5873548a-2a45-4177-91c1-1448ccb48d59" target="ce6b111f-bf9d-4c19-848f-b87f6c9363cb" />
-    <edge source="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd" />
-    <edge source="d4860758-e29e-4882-a5c7-64084e0276d4" target="1686254d-828f-418d-939c-56bee4889dc4" />
-    <edge source="ce6b111f-bf9d-4c19-848f-b87f6c9363cb" target="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab" />
-    <edge source="50daab08-2e35-4393-809a-aabc9f1dbd30" target="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8" />
-    <edge source="69d46b2e-7d27-4ec3-a821-092c7ed87e50" target="50daab08-2e35-4393-809a-aabc9f1dbd30" />
-    <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" />
-    <edge source="e93d007f-df16-43f4-a11e-5cd323cc56ce" target="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb" />
-    <edge source="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8" target="91b62e34-3e4f-4498-a6f6-1a34a060520a" />
-    <edge source="67aba30b-09d2-4052-94cd-9de174d0cdd3" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
-      <data key="d15">09ec0165-5124-46c8-8969-a3f1888fda9a</data>
-      <data key="d16" />
-    </edge>
-    <edge source="403c9095-7c10-40b5-b31a-e570ddec6c56" target="67aba30b-09d2-4052-94cd-9de174d0cdd3">
-      <data key="d15">1955efef-1b0e-41c4-87e4-bd60e0ed7bdd</data>
-      <data key="d16" />
-    </edge>
-    <edge source="78c8d135-ef42-4645-bc41-820a809c493c" target="be560393-d428-4755-8f8c-096cc59441f0" />
-    <edge source="70e0aeb0-3e97-4874-9263-fcf71b811409" target="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa" />
-    <edge source="454010a3-9ea2-4cd6-a88e-977f182fb381" target="4128631c-6e54-4e3e-93a6-3ba0663df355" />
-    <edge source="4128631c-6e54-4e3e-93a6-3ba0663df355" target="70e0aeb0-3e97-4874-9263-fcf71b811409" />
-    <edge source="2886f3fc-11bf-4e5f-b235-5040294a5acc" target="00b9797d-859c-46e5-babc-b9d2d4743fda" />
-    <edge source="2886f3fc-11bf-4e5f-b235-5040294a5acc" target="454010a3-9ea2-4cd6-a88e-977f182fb381" />
-    <edge source="00b9797d-859c-46e5-babc-b9d2d4743fda" target="4128631c-6e54-4e3e-93a6-3ba0663df355" />
-    <edge source="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa" target="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725" />
-    <edge source="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725" target="a70bbf43-a2c2-4210-a15c-03aedc4258f4" />
-    <edge source="a70bbf43-a2c2-4210-a15c-03aedc4258f4" target="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa" />
-    <edge source="beaa0972-99c9-41ec-8d3f-0571fa49cb04" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
-      <data key="d15">80b23ade-508a-4604-a71f-a826f04758d0</data>
-      <data key="d16" />
-    </edge>
-    <data key="d0">bash -c '. env.sh 
-</data>
-    <data key="d1">'
-
-</data>
-    <data key="d2">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; {}'</data>
-  </graph>
-</graphml>
+  <data key="d9"></data>
+  <data key="d10">72988</data>
+  <data key="d11">0</data>
+</node>
+<edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
+  <data key="d15">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
+  <data key="d16"></data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48">
+  <data key="d15">77e00512-2bac-4449-aaec-89cf7e81c0f7</data>
+  <data key="d16"></data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="f3f51679-47bd-4d95-b166-0773770b99c8">
+  <data key="d15">7ded9cb4-d830-4af6-b282-e47ea5c47164</data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee">
+  <data key="d15">e39affcc-db55-4426-96e4-d8b1e67c152c</data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="168f33a5-4532-4581-b5e8-0cf6de606325">
+  <data key="d15">f56c7347-02b8-4c11-8611-c592a7dbc727</data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="e0c5398f-26da-4779-b36e-deab73e090da">
+  <data key="d15">89972daa-0970-4072-869c-ced76fd89e7a</data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="a61eeb91-b3f3-499f-a53a-5dd4b29e506d">
+  <data key="d15">40713f58-423c-4fe3-9dab-4d53f5e1e39c</data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="78c8d135-ef42-4645-bc41-820a809c493c">
+  <data key="d15">4591dd97-c339-4c21-b881-80ce9ee5da1f</data>
+</edge>
+<edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">29fa658f-2d26-4a9b-bcb3-a63f429341e6</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">59275492-091d-42c6-910f-b4612dd94263</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e" target="99a1770b-1153-428d-8172-e783bf221b38">
+  <data key="d15">fa4edeb0-0786-467c-9b3a-96f1a64ff465</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee" target="67d6bf85-2665-4c80-b457-43e490d6fe20">
+  <data key="d15">52072a3b-6bb8-43a7-be3a-d348730a0f3c</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
+  <data key="d15">4c5ebd4b-763f-4763-b6bd-bbd04125ee3b</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
+  <data key="d15">a41a32cd-38eb-4bef-89ca-d813d229a113</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed" target="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
+  <data key="d15">d47ed25e-0306-44a6-96cf-a0ff8e1703bf</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">f24ab42c-7e94-4fc8-b276-23bd6b9f2b70</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">2fcd8285-c350-445f-99ef-7fe883b7a7a2</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b" target="9780f658-26ff-4a9b-a03f-a57be3e04748">
+  <data key="d15">9bc74a43-a370-4d4f-84bc-bf4d7641d399</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">f483365b-054c-4b82-81a2-0d35deebfdb1</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">4aefbf5c-7556-40b0-a92c-9d64bd95ed25</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="d4e4b648-4abc-47b1-b072-7227e8023ead">
+  <data key="d15">b50ae894-d083-4589-8570-97dbe3281c08</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524" target="694c1739-f526-421a-a8ec-99152294abf4">
+  <data key="d15">c529f347-0047-46f1-b87a-4c08dafdcfed</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
+  <data key="d15">12adda23-0572-4590-b1fa-33b57315248e</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
+  <data key="d15">ace08a5e-79c1-4627-a3e9-915b2438a123</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
+  <data key="d15">e7c4636c-d085-47c9-a398-cc1a1bcddb7c</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
+  <data key="d15">1d2a6c35-9a12-4c1c-b200-50ff300c757f</data>
+  <data key="d16"></data>
+</edge>
+<edge source="d4e4b648-4abc-47b1-b072-7227e8023ead" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">0dffd4c7-c983-427f-9a8a-2ca2e1636b59</data>
+  <data key="d16"></data>
+</edge>
+<edge source="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850" target="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
+  <data key="d15">fdfc6835-7b55-46f0-94d3-33d226263349</data>
+  <data key="d16"></data>
+</edge>
+<edge source="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48" target="c22c2993-fbfb-461c-b462-80a4bd61e58e">
+  <data key="d15">57f01424-2c84-4e51-9082-be85907deeef</data>
+  <data key="d16"></data>
+</edge>
+<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="3a9d83fc-9062-4367-a6e3-510564bf386b">
+  <data key="d15">4612be57-1345-4017-af9c-49a1afe4cf6d</data>
+  <data key="d16"></data>
+</edge>
+<edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
+  <data key="d15">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
+  <data key="d16"></data>
+</edge>
+<edge source="c22c2993-fbfb-461c-b462-80a4bd61e58e" target="066b6d9a-3d80-439f-ae79-34ba08a9898f"/>
+<edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="33d300dc-659b-413b-92d8-d1c10e4840aa"/>
+<edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="9a55d674-5bb9-4a2b-81b5-acd2da8e2533"/>
+<edge source="node85" target="e066b0ad-7643-4e5c-b6f8-063b7be3e023"/>
+<edge source="node85" target="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4"/>
+<edge source="node85" target="69d46b2e-7d27-4ec3-a821-092c7ed87e50"/>
+<edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0"/>
+<edge source="0023bd01-aafc-415b-8548-ec81bebf1f23" target="8213bd4f-8cf5-4af0-b058-3e4e2f810e78"/>
+<edge source="e4d30a26-ca5b-4709-93ca-2a7b3607cbc0" target="8727268b-1b5b-4c92-9768-cbe389f6984f"/>
+<edge source="8213bd4f-8cf5-4af0-b058-3e4e2f810e78" target="8727268b-1b5b-4c92-9768-cbe389f6984f"/>
+<edge source="8727268b-1b5b-4c92-9768-cbe389f6984f" target="8a1d54be-d18d-494a-8d21-2fc840762f32"/>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
+  <data key="d15">204cfb0e-da8b-45be-87e4-e23f67bfa454</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
+  <data key="d15">f0a632a6-65b0-4c90-8012-33657f3aae1c</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
+  <data key="d15">579647c2-5b49-424b-a47c-8362bca0dc40</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
+  <data key="d15">09b3b38d-6e00-439f-874f-665f2d5744c0</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8">
+  <data key="d15">e8a6ba03-6d53-43d4-b2d1-4e8badba14aa</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
+  <data key="d15">d59f208b-8404-4793-8737-67a9fa15e002</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
+  <data key="d15">d54b9120-075d-489e-89b3-0c19be51e81f</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
+  <data key="d15">f0eeca9c-acc4-49dc-90a7-b77288c456a5</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
+  <data key="d15">a47ea18e-5b7c-4afd-a086-2a96e96d2550</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
+  <data key="d15">ab908f3d-e8bb-4896-8ee0-df3b6dc3178e</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
+  <data key="d15">2b30c038-c4a8-4e30-81eb-e5e12ee55a6e</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
+  <data key="d15">75abc385-d008-4886-aa0a-daa67cb5b9ac</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="9b629faa-9494-44b8-9167-ac7b172d5af8">
+  <data key="d15">9d9b9c6f-197f-4339-9a5a-0f5a8388c4e7</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
+  <data key="d15">7a20c1a3-eba5-4b09-addc-89df6d87beea</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="54aa994b-162d-49c0-a6ab-94a10c646e86">
+  <data key="d15">1e8632f5-1354-447d-b860-8b0440213aaa</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
+  <data key="d15">ea465acb-fb24-4888-98ff-8879cc705bd2</data>
+  <data key="d16"></data>
+</edge>
+<edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="403c9095-7c10-40b5-b31a-e570ddec6c56">
+  <data key="d15">edbcdd55-befc-403b-840e-df5642dbe8d5</data>
+  <data key="d16"></data>
+</edge>
+<edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="df4dc09e-4408-4798-ae04-b10e3339f1e9"/>
+<edge source="8a1d54be-d18d-494a-8d21-2fc840762f32" target="d4860758-e29e-4882-a5c7-64084e0276d4"/>
+<edge source="df4dc09e-4408-4798-ae04-b10e3339f1e9" target="5656487b-7e9b-4945-b26e-5d344660740c"/>
+<edge source="67a1314f-c27c-4ce3-b00a-e4fa939150fd" target="0023bd01-aafc-415b-8548-ec81bebf1f23"/>
+<edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">99d00f4d-617e-4870-bdf9-c5835630d11a</data>
+  <data key="d16"></data>
+</edge>
+<edge source="9fcf4732-486d-49fa-b99c-2e90a7bc15e9" target="99a1770b-1153-428d-8172-e783bf221b38">
+  <data key="d15">188bdf34-a52d-4af7-adaa-64a0ac2741f9</data>
+  <data key="d16"></data>
+</edge>
+<edge source="246364a8-29bd-49c2-a045-ceb068383c79" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
+  <data key="d15">efb7fff0-3139-4d09-b0e7-921109483fb6</data>
+  <data key="d16"></data>
+</edge>
+<edge source="9b629faa-9494-44b8-9167-ac7b172d5af8" target="694c1739-f526-421a-a8ec-99152294abf4">
+  <data key="d15">dd4423c4-135c-47de-861c-6dce652b6d4d</data>
+  <data key="d16"></data>
+</edge>
+<edge source="694c1739-f526-421a-a8ec-99152294abf4" target="9430f225-f079-4a7f-bfd9-a272b950617f">
+  <data key="d15">26f7b000-3723-40bb-9032-857f0128cf0b</data>
+  <data key="d16"></data>
+</edge>
+<edge source="99a1770b-1153-428d-8172-e783bf221b38" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
+  <data key="d15">c282e5d5-07fa-48e4-9342-04802b557c5a</data>
+  <data key="d16">to_run</data>
+</edge>
+<edge source="9430f225-f079-4a7f-bfd9-a272b950617f" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
+  <data key="d15">972ec798-970d-4bf3-9dec-86d1727dbfe0</data>
+  <data key="d16"></data>
+</edge>
+<edge source="67d6bf85-2665-4c80-b457-43e490d6fe20" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
+  <data key="d15">4c7aeb83-25d1-41eb-bc63-c6d802335bca</data>
+  <data key="d16">to_run</data>
+</edge>
+<edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275"/>
+<edge source="6d46e087-86b7-44f4-8268-e04ad35f3275" target="1da8a511-5367-4a80-8510-06464399deb8"/>
+<edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655"/>
+<edge source="ddda3b3f-7609-4dd8-88db-c4f521d8a127" target="6ecc57c1-07b4-4096-b3b2-4daffb488260"/>
+<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
+  <data key="d15">b09f1c79-7341-48ff-ba82-f4d341fc3569</data>
+  <data key="d16"></data>
+</edge>
+<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="ce5ca375-de80-45f9-9b57-4a9031407eae">
+  <data key="d15">8be7e369-8b65-409c-b408-b331e5b4df7a</data>
+  <data key="d16"></data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
+  <data key="d15">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
+  <data key="d16"></data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
+  <data key="d15">cb09b1c5-b3d4-4233-8723-bf4d5cab452b</data>
+  <data key="d16"></data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="7a113732-6455-4f0d-b805-fc6095b40ca3">
+  <data key="d15">15eb8994-2a70-4724-9cca-a28e314a02bc</data>
+  <data key="d16"></data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="a191959b-1acd-4594-8819-65c36f01f33c">
+  <data key="d15">1c767b49-cc6f-48fb-8e6a-eafdfa150517</data>
+  <data key="d16"></data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
+  <data key="d15">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
+  <data key="d16"></data>
+</edge>
+<edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="6eaccd10-48fb-45f8-bf1d-07831d27c76a"/>
+<edge source="4d775648-d3ac-4f7a-a0f0-9d3a624f33ee" target="node85"/>
+<edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>
+<edge source="926989e3-4fb3-4348-8185-838470b98d88" target="b9e51f29-7332-42a9-be8b-fa6f59d43632"/>
+<edge source="69c740d1-a5bd-40aa-a82c-bc90d7d60e31" target="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
+  <data key="d15">96b04ed6-5e94-45fa-9fbc-fff7f0219a3b</data>
+  <data key="d16"></data>
+</edge>
+<edge source="b9e51f29-7332-42a9-be8b-fa6f59d43632" target="445f4183-2221-42ae-80fe-cfa8e3da2000"/>
+<edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a"/>
+<edge source="066b6d9a-3d80-439f-ae79-34ba08a9898f" target="e0d2b7f1-2c9f-4d2f-b59d-6ef4f15d8c5c"/>
+<edge source="54aa994b-162d-49c0-a6ab-94a10c646e86" target="e01d74fd-8601-460e-858c-2f6b0be61422">
+  <data key="d15">ba1e1c72-dbcf-4d62-9bf6-a7b35ce609c0</data>
+  <data key="d16"></data>
+</edge>
+<edge source="54aa994b-162d-49c0-a6ab-94a10c646e86" target="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
+  <data key="d15">037c7d68-769d-47da-bffe-de804a728d39</data>
+  <data key="d16"></data>
+</edge>
+<edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="c27b93c1-8f27-467a-8d25-1ad31ccb6c77"/>
+<edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="926989e3-4fb3-4348-8185-838470b98d88"/>
+<edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="08584b44-c135-4c3f-b26b-f2ac8df4e824"/>
+<edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="49657f96-8f43-4c5b-abc7-95c75b9c3e3d"/>
+<edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="4f9b94df-d3d5-47e5-99d9-7e5b9c271974"/>
+<edge source="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1" target="6cd59c60-d8fe-4449-be43-29f53856493e"/>
+<edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1"/>
+<edge source="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb" target="597f6053-03e9-4024-b29d-d0b99c11b538"/>
+<edge source="597f6053-03e9-4024-b29d-d0b99c11b538" target="f6085713-a056-44ed-8e7c-edf2454f3dce"/>
+<edge source="f6085713-a056-44ed-8e7c-edf2454f3dce" target="325fd8ad-c462-4b83-9960-2ff4a64cfc89"/>
+<edge source="325fd8ad-c462-4b83-9960-2ff4a64cfc89" target="e8d9fb25-0b39-43e4-88f3-d784ffc87959"/>
+<edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="0d7d08bc-6be0-44ca-be4f-feeabb2375c8"/>
+<edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="ddda3b3f-7609-4dd8-88db-c4f521d8a127"/>
+<edge source="e8d9fb25-0b39-43e4-88f3-d784ffc87959" target="2886f3fc-11bf-4e5f-b235-5040294a5acc"/>
+<edge source="a61eeb91-b3f3-499f-a53a-5dd4b29e506d" target="e93d007f-df16-43f4-a11e-5cd323cc56ce"/>
+<edge source="1686254d-828f-418d-939c-56bee4889dc4" target="5873548a-2a45-4177-91c1-1448ccb48d59"/>
+<edge source="5873548a-2a45-4177-91c1-1448ccb48d59" target="ce6b111f-bf9d-4c19-848f-b87f6c9363cb"/>
+<edge source="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4" target="67a1314f-c27c-4ce3-b00a-e4fa939150fd"/>
+<edge source="d4860758-e29e-4882-a5c7-64084e0276d4" target="1686254d-828f-418d-939c-56bee4889dc4"/>
+<edge source="ce6b111f-bf9d-4c19-848f-b87f6c9363cb" target="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab"/>
+<edge source="50daab08-2e35-4393-809a-aabc9f1dbd30" target="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8"/>
+<edge source="69d46b2e-7d27-4ec3-a821-092c7ed87e50" target="50daab08-2e35-4393-809a-aabc9f1dbd30"/>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28"/>
+<edge source="e93d007f-df16-43f4-a11e-5cd323cc56ce" target="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb"/>
+<edge source="ed3d3d06-60ad-4d97-8108-858b5a6fe9d8" target="91b62e34-3e4f-4498-a6f6-1a34a060520a"/>
+<edge source="67aba30b-09d2-4052-94cd-9de174d0cdd3" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
+  <data key="d15">09ec0165-5124-46c8-8969-a3f1888fda9a</data>
+  <data key="d16">to_run</data>
+</edge>
+<edge source="403c9095-7c10-40b5-b31a-e570ddec6c56" target="67aba30b-09d2-4052-94cd-9de174d0cdd3">
+  <data key="d15">1955efef-1b0e-41c4-87e4-bd60e0ed7bdd</data>
+  <data key="d16"></data>
+</edge>
+<edge source="78c8d135-ef42-4645-bc41-820a809c493c" target="be560393-d428-4755-8f8c-096cc59441f0"/>
+<edge source="70e0aeb0-3e97-4874-9263-fcf71b811409" target="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa"/>
+<edge source="454010a3-9ea2-4cd6-a88e-977f182fb381" target="4128631c-6e54-4e3e-93a6-3ba0663df355"/>
+<edge source="4128631c-6e54-4e3e-93a6-3ba0663df355" target="70e0aeb0-3e97-4874-9263-fcf71b811409"/>
+<edge source="2886f3fc-11bf-4e5f-b235-5040294a5acc" target="00b9797d-859c-46e5-babc-b9d2d4743fda"/>
+<edge source="2886f3fc-11bf-4e5f-b235-5040294a5acc" target="454010a3-9ea2-4cd6-a88e-977f182fb381"/>
+<edge source="00b9797d-859c-46e5-babc-b9d2d4743fda" target="4128631c-6e54-4e3e-93a6-3ba0663df355"/>
+<edge source="b88aeaaf-175b-4cbb-bf34-bb745cf10ffa" target="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725"/>
+<edge source="eaf66cd2-8fe6-4e9f-a674-cd850a1dd725" target="a70bbf43-a2c2-4210-a15c-03aedc4258f4"/>
+<edge source="a70bbf43-a2c2-4210-a15c-03aedc4258f4" target="4055e9e6-c024-4a8c-b54e-0315d9bcbcfa"/>
+<edge source="beaa0972-99c9-41ec-8d3f-0571fa49cb04" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
+  <data key="d15">80b23ade-508a-4604-a71f-a826f04758d0</data>
+  <data key="d16"></data>
+</edge>
+</graph></graphml>

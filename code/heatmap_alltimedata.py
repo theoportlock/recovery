@@ -22,7 +22,7 @@ def load_datasets(dataset_file):
 def prepare_heatmap_data(data):
     """Prepare data for heatmap plotting."""
     ndf = (~data.isna())
-    ndf = ndf.groupby(level=0, axis=1,sort=False).any()
+    ndf = ndf.T.groupby(level=0, sort=False).any().T
     ndf = ndf.groupby(level=1, sort=False).sum()
     ndf = ndf.loc[ndf.nunique(axis=1).gt(2)]
     plotdf = ndf.T
