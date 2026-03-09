@@ -10,7 +10,7 @@ fillna.py \
 	-o results/table1/work/meta.tsv
 
 # Demographics
-select.py \
+select_features.py \
 	results/table1/work/meta.tsv \
 	-c 'Sex,Delivery_Mode' \
 	-o results/table1/work/selected/Demographics.tsv
@@ -23,12 +23,12 @@ onehot.py \
 	-o results/table1/work/formatted/Demographics.tsv
 
 # Parental Education and Economics
-select.py \
+select_features.py \
 	results/filtered/education.tsv \
 	-c 'Years_of_fathers_education,Years_of_mothers_education' \
 	-o results/table1/work/selected/Parental_Education.tsv
 
-select.py \
+select_features.py \
 	results/filtered/economics.tsv \
 	-c 'Mothers_income,Fathers_income,Total_monthly_income,Monthly_total_expenditure' \
 	-o results/table1/work/selected/Economics.tsv
@@ -39,13 +39,13 @@ merge.py \
 	-o results/table1/work/formatted/Parental_Education_and_Economics.tsv
 
 # Family Structure
-select.py \
+select_features.py \
 	results/filtered/family.tsv \
 	-c 'Number_of_living_children,Number_of_children_under_five_years,Family_type.Nuclear' \
 	-o results/table1/work/formatted/Family_Structure.tsv
 
 # Household Characterics
-select.py \
+select_features.py \
 	results/filtered/household.tsv \
 	-c '
 		Members_in_household
@@ -57,7 +57,7 @@ select.py \
 	-o results/table1/work/formatted/Household_characteristics.tsv
 
 # Other Characteristics
-select.py \
+select_features.py \
 	results/table1/work/meta.tsv \
 	-c 'BF,PoB' \
 	-o results/table1/work/selected/Other.tsv
@@ -68,7 +68,14 @@ onehot.py \
 	--prefix-sep ', ' \
 	-o results/table1/work/formatted/Other.tsv
 
-for file in results/table1/work/formatted/{Demographics,Parental_Education_and_Economics,Family_Structure,Household_characteristics,Other}.tsv; do
+# Anthropometrics
+select_features.py \
+	results/timepoints/0/anthro.tsv \
+	-c 'WLZ_WHZ,Weight,MUAC,HC' \
+	-o results/table1/work/formatted/Anthro.tsv
+
+# Descriptive
+for file in results/table1/work/formatted/{Demographics,Parental_Education_and_Economics,Family_Structure,Household_characteristics,Other,Anthro}.tsv; do
     descriptive.py \
         -i "$file" \
         --meta results/table1/work/meta.tsv \
@@ -78,7 +85,7 @@ done
 
 # Stats
 # Add condition and feed
-select.py \
+select_features.py \
 	results/filtered/meta.tsv \
 	-c 'Condition,Feed' \
 	-o results/table1/work/meta.tsv
@@ -96,6 +103,7 @@ merge.py \
 	results/table1/work/formatted/Family_Structure.tsv \
 	results/table1/work/formatted/Household_characteristics.tsv \
 	results/table1/work/formatted/Other.tsv \
+	results/table1/work/formatted/Anthro.tsv \
 	-o results/table1/work/data.tsv
 
 merge.py \
@@ -112,9 +120,15 @@ filter.py \
 	-q 'source == "Condition, MAM"' \
 	-o results/table1/work/all_stats/merged_stats_MAMstats.tsv
 
-select.py \
+rename_regex.py \
 	results/table1/work/all_stats/merged_stats_MAMstats.tsv \
-	-c 'target,p_value' \
+	--match 'p_value' \
+	--replace 'pval_mam' \
+	--o results/table1/work/all_stats/merged_stats_MAMstats_rename.tsv
+
+select_features.py \
+	results/table1/work/all_stats/merged_stats_MAMstats_rename.tsv \
+	-c 'target,pval_mam' \
 	--drop-index \
 	-o results/table1/work/all_stats/merged_stats_MAMstats_vals.tsv
 
@@ -136,12 +150,17 @@ descriptive_stats.sh \
 filter.py \
 	results/table1/work/MAM_stats/merged_stats.tsv \
 	-q 'source == "Feed, ERUSF (B)"' \
-	--drop \
 	-o results/table1/work/MAM_stats/merged_stats_Feedstats.tsv
-	
-select.py \
+
+rename_regex.py \
 	results/table1/work/MAM_stats/merged_stats_Feedstats.tsv \
-	-c 'target,p_value' \
+	--match 'p_value' \
+	--replace 'pval_feed' \
+	--o results/table1/work/MAM_stats/merged_stats_Feedstats_rename.tsv
+	
+select_features.py \
+	results/table1/work/MAM_stats/merged_stats_Feedstats_rename.tsv \
+	-c 'target,pval_feed' \
 	--drop-index \
 	-o results/table1/work/MAM_stats/merged_stats_Feedstats_vals.tsv
 
@@ -152,6 +171,7 @@ merge.py \
 	results/table1/work/descriptive/Family_Structure.tsv \
 	results/table1/work/descriptive/Household_characteristics.tsv \
 	results/table1/work/descriptive/Other.tsv \
+	results/table1/work/descriptive/Anthro.tsv \
 	-a \
 	--add-filename \
 	--filename-format base \
@@ -162,3 +182,15 @@ merge.py \
 	results/table1/work/MAM_stats/merged_stats_Feedstats_vals.tsv \
 	results/table1/work/all_stats/merged_stats_MAMstats_vals.tsv \
 	-o results/table1/work/merged_stats.tsv
+
+fdr.py \
+	results/table1/work/merged_stats.tsv \
+	-p pval_feed \
+	--replace \
+	-o results/table1/work/merged_stats_fdr.tsv
+
+fdr.py \
+	results/table1/work/merged_stats_fdr.tsv \
+	-p pval_mam \
+	--replace \
+	-o results/table1/work/merged_stats_fdr_2.tsv

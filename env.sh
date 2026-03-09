@@ -11,11 +11,13 @@ export PATH="maaslin3/R/:$PATH"
 export PATH="digital_twin/scripts/:$PATH"
 
 # Activate environment
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate metatoolkit
+#source ~/miniconda3/etc/profile.d/conda.sh
+#conda activate metatoolkit
 
 #bash -lc "\
 #  source ~/miniconda3/etc/profile.d/conda.sh &&\
 #  conda activate metatoolkit && \
 #  {} \
 #  "
+
+source venv/bin/activate

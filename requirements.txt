@@ -1,17 +1,12 @@
 anndata
-muon
-xgboost
-git+https://github.com/ayaandroid/mofapy2.git@fix-np-inf
 imbalanced-learn
 ipdb
 ipython
 matplotlib
-mofax
 numpy
 openpyxl
 pandas
 python-docx
-scanpy
 scikit-bio
 scikit-learn
 scipy
@@ -20,4 +15,3 @@ shap
 statsmodels
 workforce
 adjustText
-lightning
