@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d16" for="edge" attr.name="status" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d17" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d16" for="edge" attr.name="status" attr.type="string"/>
 <key id="d15" for="edge" attr.name="id" attr.type="string"/>
 <key id="d14" for="node" attr.name="y" attr.type="string"/>
 <key id="d13" for="node" attr.name="x" attr.type="string"/>
@@ -2062,8 +2063,8 @@ box.py \
   --ymin 0 \
   --ymax 50 \
   -o results/figure1/days_to_recovery_box.svg</data>
-  <data key="d4">2093.3216666666667</data>
-  <data key="d5">-2589.543333333334</data>
+  <data key="d13">2145.3216666666667</data>
+  <data key="d14">-2521.543333333334</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
 box.py \
@@ -2259,17 +2260,22 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
   <data key="d5">-142.22222222222223</data>
   <data key="d6"></data>
 </node>
-<node id="0504db0f-969a-4bad-b6cc-f7608733ce7f">
-  <data key="d3">edit.py code/calculate_recovery.py</data>
-  <data key="d13">1095.0500000000009</data>
-  <data key="d14">-102.28333333333285</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; edit.py code/calculate_recovery.py'</data>
-  <data key="d8">✔ Sent calculate_recovery.py to a new window with environment loaded.
-</data>
-  <data key="d9"></data>
-  <data key="d10">72988</data>
-  <data key="d11">0</data>
+<node id="878b893b-99fd-4851-b801-462de074d72b">
+  <data key="d3"># quality</data>
+  <data key="d13">1957.0</data>
+  <data key="d14">-3489.0</data>
+  <data key="d6"></data>
+</node>
+<node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+  <data key="d3">group.py \
+  results/cleaned/quality.tsv \
+  --group_by Feed timepoint \
+  --func mean std \
+  --meta results/filtered/timemeta.tsv \
+  --output results/quality_group.tsv</data>
+  <data key="d13">2196.6666666666665</data>
+  <data key="d14">-3545.0000000000005</data>
+  <data key="d6"></data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
   <data key="d15">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
@@ -2516,6 +2522,10 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
   <data key="d15">8be7e369-8b65-409c-b408-b331e5b4df7a</data>
   <data key="d16"></data>
 </edge>
+<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="878b893b-99fd-4851-b801-462de074d72b">
+  <data key="d15">cd0cada5-32c9-4d4d-89c8-1ddc66616ced</data>
+  <data key="d17">blocking</data>
+</edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d15">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
   <data key="d16"></data>
@@ -2605,5 +2615,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
 <edge source="beaa0972-99c9-41ec-8d3f-0571fa49cb04" target="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
   <data key="d15">80b23ade-508a-4604-a71f-a826f04758d0</data>
   <data key="d16"></data>
+</edge>
+<edge source="878b893b-99fd-4851-b801-462de074d72b" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+  <data key="d15">bdd72f3e-0515-4b00-823e-121dce82c673</data>
+  <data key="d17">blocking</data>
 </edge>
 </graph></graphml>
