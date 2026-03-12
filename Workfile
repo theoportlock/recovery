@@ -984,8 +984,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/cleaned/psd.tsv
 <node id="f3f51679-47bd-4d95-b166-0773770b99c8">
   <data key="d3"># TABLE 1
 table1_descriptive.sh</data>
-  <data key="d4">1844.2883333333334</data>
-  <data key="d5">-3287.31</data>
+  <data key="d13">1842.2883333333334</data>
+  <data key="d14">-3519.31</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 1
 table1_descriptive.sh'</data>
@@ -1107,8 +1107,8 @@ mkdir -p results/figure2/maaslin/{baseline,change}</data>
 <node id="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
   <data key="d3"># TABLE 2
 table2_refeed_recovery.sh</data>
-  <data key="d4">2145.1549999999997</data>
-  <data key="d5">-3285.0433333333344</data>
+  <data key="d13">2143.1549999999997</data>
+  <data key="d14">-3517.0433333333344</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 2
 table2_refeed_recovery.sh'</data>
@@ -1175,8 +1175,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/table2/work/MAM
 <node id="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
   <data key="d3"># TABLE 3
 table3_recovery.sh</data>
-  <data key="d4">2533.4883333333337</data>
-  <data key="d5">-3281.710000000001</data>
+  <data key="d13">2531.4883333333337</data>
+  <data key="d14">-3513.710000000001</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 3
 table3_recovery.sh'</data>
@@ -2087,8 +2087,8 @@ box.py \
 </node>
 <node id="ce5ca375-de80-45f9-9b57-4a9031407eae">
   <data key="d3">table2_who_refeed_recovery.sh</data>
-  <data key="d4">2159.988333333333</data>
-  <data key="d5">-3164.543333333334</data>
+  <data key="d13">2157.988333333333</data>
+  <data key="d14">-3396.543333333334</data>
   <data key="d6">ran</data>
   <data key="d12">STDOUT:
 Saved 151 rows × 2 columns to results/table2_plus/formatted/surveillance.tsv (index kept)
@@ -2262,8 +2262,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
 </node>
 <node id="878b893b-99fd-4851-b801-462de074d72b">
   <data key="d3"># quality</data>
-  <data key="d13">1957.0</data>
-  <data key="d14">-3489.0</data>
+  <data key="d13">1955.0</data>
+  <data key="d14">-3721.0</data>
   <data key="d6"></data>
 </node>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
@@ -2273,9 +2273,104 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
   --func mean std \
   --meta results/filtered/timemeta.tsv \
   --output results/quality_group.tsv</data>
-  <data key="d13">2196.6666666666665</data>
-  <data key="d14">-3545.0000000000005</data>
+  <data key="d13">2194.6666666666665</data>
+  <data key="d14">-3777.0000000000005</data>
   <data key="d6"></data>
+</node>
+<node id="ce6f43ed-b2d2-4717-a27e-f5a1c9982b05">
+  <data key="d3"># Kaplan meyer analysis
+assign.py results/filtered/anthro.tsv \
+  -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
+  -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
+  -o results/filtered/anthro_recovery.tsv</data>
+  <data key="d13">2169.0</data>
+  <data key="d14">-3299.0</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # Kaplan meyer analysis
+assign.py results/filtered/anthro.tsv \
+  -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
+  -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
+  -o results/filtered/anthro_recovery.tsv'</data>
+  <data key="d8">    sampleID  Weight  Length  MUAC    HC  WLZ_WHZ  recover_1sd  recover_2sd
+0  LCC1001_0    7.13    72.0  12.5  42.6    -2.75            0            0
+1  LCC1001_3    7.38    72.2  12.6   NaN    -2.36            0            0
+2  LCC1001_4    7.45    72.3  12.7   NaN    -2.27            0            0
+3  LCC1001_5    7.44    72.4  12.7   NaN    -2.32            0            0
+4  LCC1001_6    7.46    72.5  12.8   NaN    -2.32            0            0
+</data>
+  <data key="d9"></data>
+  <data key="d10">20508</data>
+  <data key="d11">0</data>
+</node>
+<node id="91c360b7-efcc-43f7-8a08-6dd664a32a1f">
+  <data key="d3">km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed \
+  --output results/table2/recovery_2sd.svg</data>
+  <data key="d13">2545.6666666666665</data>
+  <data key="d14">-3374.111111111111</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed \
+  --output results/table2/recovery_2sd.svg'</data>
+  <data key="d8">Log-Rank Test (Local RUSF (A) vs ERUSF (B)): p-value = 0.0000
+File saved: results/table2/recovery_2sd.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">26161</data>
+  <data key="d11">0</data>
+</node>
+<node id="05dd5002-f37e-4c44-a27e-0dbc5417d732">
+  <data key="d3">km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --group Feed \
+  --output results/table2/recovery_1sd.svg</data>
+  <data key="d13">2545.6666666666665</data>
+  <data key="d14">-3210.7777777777774</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --group Feed \
+  --output results/table2/recovery_1sd.svg'</data>
+  <data key="d8">Log-Rank Test (Local RUSF (A) vs ERUSF (B)): p-value = 0.0000
+File saved: results/table2/recovery_1sd.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">26157</data>
+  <data key="d11">0</data>
+</node>
+<node id="f71e9f25-96da-4733-a6c0-0cb33b890be5">
+  <data key="d3">arrange_svgs.py \
+  results/table2/recovery_2sd.svg \
+  results/table2/recovery_1sd.svg \
+  --cols 2 \
+  -o results/table2/recovery_km.svg</data>
+  <data key="d13">2932.333333333333</data>
+  <data key="d14">-3287.4444444444443</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; arrange_svgs.py \
+  results/table2/recovery_2sd.svg \
+  results/table2/recovery_1sd.svg \
+  --cols 2 \
+  -o results/table2/recovery_km.svg'</data>
+  <data key="d8">Output written to results/table2/recovery_km.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">26280</data>
+  <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
   <data key="d15">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
@@ -2526,6 +2621,10 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
   <data key="d15">cd0cada5-32c9-4d4d-89c8-1ddc66616ced</data>
   <data key="d17">blocking</data>
 </edge>
+<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="ce6f43ed-b2d2-4717-a27e-f5a1c9982b05">
+  <data key="d15">931e0de9-dac2-499e-8b8e-1dc1d8619f81</data>
+  <data key="d17">blocking</data>
+</edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d15">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
   <data key="d16"></data>
@@ -2619,5 +2718,23 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
 <edge source="878b893b-99fd-4851-b801-462de074d72b" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
   <data key="d15">bdd72f3e-0515-4b00-823e-121dce82c673</data>
   <data key="d17">blocking</data>
+</edge>
+<edge source="ce6f43ed-b2d2-4717-a27e-f5a1c9982b05" target="91c360b7-efcc-43f7-8a08-6dd664a32a1f">
+  <data key="d15">e07d16e2-54c9-4d4c-bbd1-6a652c014566</data>
+  <data key="d17">blocking</data>
+</edge>
+<edge source="ce6f43ed-b2d2-4717-a27e-f5a1c9982b05" target="05dd5002-f37e-4c44-a27e-0dbc5417d732">
+  <data key="d15">64061f89-0db1-4f63-adc2-abd46684ed4f</data>
+  <data key="d17">blocking</data>
+</edge>
+<edge source="91c360b7-efcc-43f7-8a08-6dd664a32a1f" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">
+  <data key="d15">228056f8-8295-4389-b157-791cffab6fed</data>
+  <data key="d17">blocking</data>
+  <data key="d16"></data>
+</edge>
+<edge source="05dd5002-f37e-4c44-a27e-0dbc5417d732" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">
+  <data key="d15">f53c3ddd-4417-4bc8-b946-1545936ea404</data>
+  <data key="d17">blocking</data>
+  <data key="d16"></data>
 </edge>
 </graph></graphml>
