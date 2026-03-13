@@ -2,75 +2,124 @@
 # -*- coding: utf-8 -*-
 
 import pandas as pd
-import sys
+import argparse
 
-# --- Load data ---
-df = pd.read_csv('results/filtered/anthro.tsv', sep='\t', index_col=0)
-meta = pd.read_csv('results/filtered/meta.tsv', sep='\t', index_col=0)
-timemeta = pd.read_csv('results/filtered/timemeta.tsv', sep='\t', index_col=0)
-surveil = pd.read_csv('results/filtered/surveillance.tsv', sep='\t', index_col=0)
 
-# --- Merge anthropometry with time metadata ---
-allvars = timemeta.join(df[['WLZ_WHZ']]).dropna(subset=['WLZ_WHZ'])
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Determine recovery status and days-to-recovery from anthropometry data."
+    )
 
-# --- Define recovery booleans ---
-#thresh = -2
-thresh = float(sys.argv[1])
-allvars['Recovered'] = allvars['WLZ_WHZ'] > thresh
+    parser.add_argument(
+        "--anthro",
+        default="results/filtered/anthro.tsv",
+        help="Anthropometry table (default: %(default)s)",
+    )
 
-# Year 1 recovery (≤15 months)
-filt = allvars.query('timepoint <= 15').copy()
-yr1_recovered = filt.groupby('subjectID')['Recovered'].any().astype(bool)
+    parser.add_argument(
+        "--meta",
+        default="results/filtered/meta.tsv",
+        help="Participant metadata (default: %(default)s)",
+    )
 
-# Year 2 recovery (52 weeks)
-filt = allvars.query('timepoint == 52').copy()
-yr2_recovered = filt.groupby('subjectID')['Recovered'].any().astype(bool)
+    parser.add_argument(
+        "--timemeta",
+        default="results/filtered/timemeta.tsv",
+        help="Timepoint metadata (default: %(default)s)",
+    )
 
-# --- Focus on MAM participants ---
-meta = meta.loc[meta['Condition'] == 'MAM'].copy()
-# meta is already indexed by subjectID; no need to reassign index
+    parser.add_argument(
+        "--surveillance",
+        default="results/filtered/surveillance.tsv",
+        help="Surveillance table (default: %(default)s)",
+    )
 
-# --- Define Recovery_status categories ---
-meta['Recovery_status'] = 'No recovery'  # default
+    parser.add_argument(
+        "-t", "--threshold",
+        type=float,
+        default=-2,
+        help="WLZ/WAZ threshold defining recovery (default: %(default)s)",
+    )
 
-# Sustained recovery
-sustained = yr1_recovered & yr2_recovered
-meta.loc[meta.index.isin(sustained[sustained].index), 'Recovery_status'] = 'Sustained recovery'
+    parser.add_argument(
+        "-o", "--output",
+        default="results/filtered/recovery_status.tsv",
+        help="Output TSV file (default: %(default)s)",
+    )
 
-# Unsustained recovery
-unsustained = yr1_recovered & ~yr2_recovered
-meta.loc[meta.index.isin(unsustained[unsustained].index), 'Recovery_status'] = 'Unsustained recovery'
+    return parser.parse_args()
 
-# Delayed recovery
-delayed = ~yr1_recovered & yr2_recovered
-meta.loc[meta.index.isin(delayed[delayed].index), 'Recovery_status'] = 'Delayed recovery'
 
-# --- Optional: Check category counts ---
-print(meta['Recovery_status'].value_counts())
+def main():
 
-# --- Days to recovery (first day WLZ_WHZ > thresh) ---
-# Ensure index is string
-df = df.copy()
-idx = df.index.to_series().astype(str)
+    args = parse_args()
 
-# Split sampleID into ID and Day
-split_index = idx.str.split('_', expand=True)
-df['ID'] = split_index[0]
-df['Day'] = split_index[1].astype(int)
+    # --- Load data ---
+    df = pd.read_csv(args.anthro, sep="\t", index_col=0)
+    meta = pd.read_csv(args.meta, sep="\t", index_col=0)
+    timemeta = pd.read_csv(args.timemeta, sep="\t", index_col=0)
+    surveil = pd.read_csv(args.surveillance, sep="\t", index_col=0)
 
-# Boolean recovered column
-df['Recovered_bool'] = df['WLZ_WHZ'] > thresh
+    thresh = args.threshold
 
-# First day of recovery per subject
-first_day = df[df['Recovered_bool']].groupby('ID')['Day'].min()
-meta['Days_to_recovery'] = meta.index.map(first_day)
+    # --- Merge anthropometry with time metadata ---
+    allvars = timemeta.join(df[["WLZ_WHZ"]]).dropna(subset=["WLZ_WHZ"])
 
-# Recovered flag for meta
-meta['Recovered'] = meta['Days_to_recovery'].notna().map({True: 'Recovered', False: 'No recovery'})
+    # --- Define recovery booleans ---
+    allvars["Recovered"] = allvars["WLZ_WHZ"] > thresh
 
-# --- Select output columns ---
-outmeta = meta[['Recovered', 'Recovery_status', 'Days_to_recovery']]
+    # Year 1 recovery (≤15 months)
+    filt = allvars.query("timepoint <= 15").copy()
+    yr1_recovered = filt.groupby("subjectID")["Recovered"].any().astype(bool)
 
-# --- Save ---
-outmeta.to_csv('results/filtered/recovery_status.tsv', sep='\t')
+    # Year 2 recovery (52 weeks)
+    filt = allvars.query("timepoint == 52").copy()
+    yr2_recovered = filt.groupby("subjectID")["Recovered"].any().astype(bool)
 
+    # --- Focus on MAM participants ---
+    meta = meta.loc[meta["Condition"] == "MAM"].copy()
+
+    # --- Define Recovery_status categories ---
+    meta["Recovery_status"] = "No recovery"
+
+    sustained = yr1_recovered & yr2_recovered
+    meta.loc[meta.index.isin(sustained[sustained].index),
+             "Recovery_status"] = "Sustained recovery"
+
+    unsustained = yr1_recovered & ~yr2_recovered
+    meta.loc[meta.index.isin(unsustained[unsustained].index),
+             "Recovery_status"] = "Unsustained recovery"
+
+    delayed = ~yr1_recovered & yr2_recovered
+    meta.loc[meta.index.isin(delayed[delayed].index),
+             "Recovery_status"] = "Delayed recovery"
+
+    # --- Optional: Check category counts ---
+    print(meta["Recovery_status"].value_counts())
+
+    # --- Days to recovery (first day WLZ_WHZ > thresh) ---
+    df = df.copy()
+    idx = df.index.to_series().astype(str)
+
+    split_index = idx.str.split("_", expand=True)
+    df["ID"] = split_index[0]
+    df["Day"] = split_index[1].astype(int)
+
+    df["Recovered_bool"] = df["WLZ_WHZ"] > thresh
+
+    first_day = df[df["Recovered_bool"]].groupby("ID")["Day"].min()
+    meta["Days_to_recovery"] = meta.index.map(first_day)
+
+    meta["Recovered"] = meta["Days_to_recovery"].notna().map(
+        {True: "Recovered", False: "No recovery"}
+    )
+
+    # --- Select output columns ---
+    outmeta = meta[["Recovered", "Recovery_status", "Days_to_recovery"]]
+
+    # --- Save ---
+    outmeta.to_csv(args.output, sep="\t")
+
+
+if __name__ == "__main__":
+    main()
