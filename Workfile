@@ -352,8 +352,8 @@ filter.py results/filtered/meta.tsv \
 filter.py results/filtered/timemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -o results/filtered/timemeta_0_52tp.tsv</data>
-  <data key="d4">1504.717803463831</data>
-  <data key="d5">-622.1452890489353</data>
+  <data key="d13">1504.717803463831</data>
+  <data key="d14">-622.1452890489353</data>
   <data key="d6"></data>
 </node>
 <node id="0023bd01-aafc-415b-8548-ec81bebf1f23">
@@ -1347,8 +1347,8 @@ mkdir -p results/figure2</data>
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d4">2038.1214285714286</data>
-  <data key="d5">-1072.6092857142867</data>
+  <data key="d13">2039.3714285714286</data>
+  <data key="d14">-1071.3592857142867</data>
   <data key="d6"></data>
 </node>
 <node id="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1">
@@ -2283,8 +2283,8 @@ assign.py results/filtered/anthro.tsv \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o results/filtered/anthro_recovery.tsv</data>
-  <data key="d13">2169.0</data>
-  <data key="d14">-3299.0</data>
+  <data key="d13">2539.0</data>
+  <data key="d14">-3267.0</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # Kaplan meyer analysis
 assign.py results/filtered/anthro.tsv \
@@ -2310,8 +2310,8 @@ assign.py results/filtered/anthro.tsv \
   --event recover_2sd \
   --group Feed \
   --output results/table2/recovery_2sd.svg</data>
-  <data key="d13">2545.6666666666665</data>
-  <data key="d14">-3374.111111111111</data>
+  <data key="d13">2915.6666666666665</data>
+  <data key="d14">-3342.111111111111</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; km_plot.py \
   --input results/filtered/anthro_recovery.tsv \
@@ -2335,8 +2335,8 @@ File saved: results/table2/recovery_2sd.svg
   --event recover_1sd \
   --group Feed \
   --output results/table2/recovery_1sd.svg</data>
-  <data key="d13">2545.6666666666665</data>
-  <data key="d14">-3210.7777777777774</data>
+  <data key="d13">2915.6666666666665</data>
+  <data key="d14">-3178.7777777777774</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; km_plot.py \
   --input results/filtered/anthro_recovery.tsv \
@@ -2358,8 +2358,8 @@ File saved: results/table2/recovery_1sd.svg
   results/table2/recovery_1sd.svg \
   --cols 2 \
   -o results/table2/recovery_km.svg</data>
-  <data key="d13">2932.333333333333</data>
-  <data key="d14">-3287.4444444444443</data>
+  <data key="d13">3302.333333333333</data>
+  <data key="d14">-3255.4444444444443</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; arrange_svgs.py \
   results/table2/recovery_2sd.svg \
@@ -2371,6 +2371,79 @@ File saved: results/table2/recovery_1sd.svg
   <data key="d9"></data>
   <data key="d10">26280</data>
   <data key="d11">0</data>
+</node>
+<node id="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
+  <data key="d3">cox_model.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --covariates Feed baseline_WHZ Sex BF Delivery_Mode PoB\
+  --output results/table2/recovery_1sd.svg</data>
+  <data key="d13">2954.8344155844156</data>
+  <data key="d14">-2990.6439393939395</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; cox_model.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --group Feed \
+  --output results/table2/recovery_1sd.svg'</data>
+  <data key="d8"></data>
+  <data key="d9">usage: cox_model.py [-h] --input INPUT --meta META [--index INDEX]
+                    [--subject SUBJECT] --time TIME --event EVENT --covariates
+                    COVARIATES [COVARIATES ...] [--output OUTPUT]
+cox_model.py: error: the following arguments are required: --covariates
+</data>
+  <data key="d10">64784</data>
+  <data key="d11">2</data>
+</node>
+<node id="a3f88c5a-1948-422c-b253-63a0610497c7">
+  <data key="d3"># Just looking at MAM kids
+filter.py results/filtered/timemeta.tsv \
+  -q 'Condition == "MAM"' \
+  -o results/filtered/timemeta_MAM.tsv</data>
+  <data key="d13">2519.254978354978</data>
+  <data key="d14">-3077.518073593072</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # Just looking at MAM kids
+filter.py results/filtered/timemeta.tsv \
+  -q '\''Condition == "MAM"'\'' \
+  -o results/filtered/timemeta_MAM.tsv'</data>
+  <data key="d8">[filter] Query '(Condition == "MAM")': kept 2374/2960
+[filter] Saved filtered output to: results/filtered/timemeta_MAM.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">64728</data>
+  <data key="d11">0</data>
+</node>
+<node id="cdfb6fc2-c48d-41fb-9a56-72bf0956e42f">
+  <data key="d3">logrank.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed Sex \
+  --output out.tsv</data>
+  <data key="d13">2676.363636363635</data>
+  <data key="d14">-2768.8939393939395</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; logrank.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed Sex \
+  --output out.tsv'</data>
+  <data key="d8"></data>
+  <data key="d9">usage: logrank.py [-h] --input INPUT --meta META [--index INDEX]
+                  [--subject SUBJECT] --time TIME --event EVENT --group GROUP
+                  [--output OUTPUT]
+logrank.py: error: unrecognized arguments: Sex
+</data>
+  <data key="d10">9781</data>
+  <data key="d11">2</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
   <data key="d15">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
@@ -2673,6 +2746,10 @@ File saved: results/table2/recovery_1sd.svg
 <edge source="49657f96-8f43-4c5b-abc7-95c75b9c3e3d" target="08584b44-c135-4c3f-b26b-f2ac8df4e824"/>
 <edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="49657f96-8f43-4c5b-abc7-95c75b9c3e3d"/>
 <edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="4f9b94df-d3d5-47e5-99d9-7e5b9c271974"/>
+<edge source="e066b0ad-7643-4e5c-b6f8-063b7be3e023" target="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
+  <data key="d15">4d48e3c6-c694-4191-8c59-63c89730a216</data>
+  <data key="d17">blocking</data>
+</edge>
 <edge source="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1" target="6cd59c60-d8fe-4449-be43-29f53856493e"/>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1"/>
 <edge source="d69fe98a-c2eb-4f0e-8a27-35419d9da9eb" target="597f6053-03e9-4024-b29d-d0b99c11b538"/>
@@ -2727,6 +2804,10 @@ File saved: results/table2/recovery_1sd.svg
   <data key="d15">64061f89-0db1-4f63-adc2-abd46684ed4f</data>
   <data key="d17">blocking</data>
 </edge>
+<edge source="ce6f43ed-b2d2-4717-a27e-f5a1c9982b05" target="a3f88c5a-1948-422c-b253-63a0610497c7">
+  <data key="d15">48ef61e7-4076-4269-9cee-460fb15c5188</data>
+  <data key="d17">blocking</data>
+</edge>
 <edge source="91c360b7-efcc-43f7-8a08-6dd664a32a1f" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">
   <data key="d15">228056f8-8295-4389-b157-791cffab6fed</data>
   <data key="d17">blocking</data>
@@ -2736,5 +2817,9 @@ File saved: results/table2/recovery_1sd.svg
   <data key="d15">f53c3ddd-4417-4bc8-b946-1545936ea404</data>
   <data key="d17">blocking</data>
   <data key="d16"></data>
+</edge>
+<edge source="a3f88c5a-1948-422c-b253-63a0610497c7" target="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
+  <data key="d15">3d0a2187-c1b3-4f6b-a62b-d49296e7ae68</data>
+  <data key="d17">blocking</data>
 </edge>
 </graph></graphml>
