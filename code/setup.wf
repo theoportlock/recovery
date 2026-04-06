@@ -1576,8 +1576,8 @@ Split files saved to subfolders in: /home/theo/recovery/results/timepoints
   <data key="d3">filter.py results/filtered/meta.tsv \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
   -o results/filtered/meta_MAM.tsv</data>
-  <data key="d12">1415.0731792867498</data>
-  <data key="d13">812.0153483418542</data>
+  <data key="d12">1445.4288116861692</data>
+  <data key="d13">762.7142974361975</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/meta.tsv \
   -q '\''Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")'\'' \
@@ -1684,6 +1684,23 @@ filter.py results/filtered/timemeta.tsv \
 </data>
   <data key="d9"></data>
   <data key="d10">90058</data>
+  <data key="d11">0</data>
+</node>
+<node id="0c0e8e80-3923-4963-86bf-7d9e926490b2">
+  <data key="d3">filter.py results/filtered/timemeta.tsv \
+  -q 'Condition == "MAM"' \
+  -o results/filtered/timemeta_MAM.tsv</data>
+  <data key="d12">1449.3306861591109</data>
+  <data key="d13">832.5586340272592</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/timemeta.tsv \
+  -q '\''Condition == "MAM"'\'' \
+  -o results/filtered/timemeta_MAM.tsv'</data>
+  <data key="d8">[filter] Query '(Condition == "MAM")': kept 2374/2960
+[filter] Saved filtered output to: results/filtered/timemeta_MAM.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">3878</data>
   <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
@@ -1959,6 +1976,10 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d14">f3183fce-9096-4e74-9e1f-46b80e99d921</data>
   <data key="d16">blocking</data>
   <data key="d15"></data>
+</edge>
+<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="0c0e8e80-3923-4963-86bf-7d9e926490b2">
+  <data key="d14">32ef7f86-d79f-43c3-b760-3ae6e7a6a343</data>
+  <data key="d16">blocking</data>
 </edge>
 <edge source="f6f5fff9-cc43-4b25-a85e-d9da28978a18" target="119af91b-e955-43de-b714-34e8800c43f6">
   <data key="d14">4e353ba8-139c-4e5c-ac03-8bbdf3c05deb</data>

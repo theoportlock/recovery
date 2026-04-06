@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="status" attr.type="string"/>
+<key id="d13" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d12" for="edge" attr.name="id" attr.type="string"/>
+<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d10" for="node" attr.name="pid" attr.type="string"/>
+<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d7" for="node" attr.name="command" attr.type="string"/>
+<key id="d6" for="node" attr.name="status" attr.type="string"/>
+<key id="d5" for="node" attr.name="y" attr.type="string"/>
+<key id="d4" for="node" attr.name="x" attr.type="string"/>
+<key id="d3" for="node" attr.name="label" attr.type="string"/>
+<key id="d2" for="graph" attr.name="wrapper" attr.type="string"/>
+<key id="d1" for="graph" attr.name="suffix" attr.type="string"/>
+<key id="d0" for="graph" attr.name="prefix" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">bash -c '. env.sh 
+</data>
+<data key="d1">'
+
+</data>
+<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
+<node id="91c360b7-efcc-43f7-8a08-6dd664a32a1f">
+  <data key="d3">km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed \
+  --output results/survival/recovery_2sd.svg</data>
+  <data key="d4">737.3865165287659</data>
+  <data key="d5">-180.2448524635232</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed \
+  --output results/survival/recovery_2sd.svg'</data>
+  <data key="d8">Log-Rank Test (Local RUSF (A) vs ERUSF (B)): p-value = 0.0000
+File saved: results/survival/recovery_2sd.svg
+</data>
+  <data key="d9">Fontconfig warning: using without calling FcInit()
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+</data>
+  <data key="d10">3456</data>
+  <data key="d11">0</data>
+</node>
+<node id="05dd5002-f37e-4c44-a27e-0dbc5417d732">
+  <data key="d3">km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --group Feed \
+  --output results/survival/recovery_1sd.svg</data>
+  <data key="d4">742.5192190209718</data>
+  <data key="d5">20.909953731590093</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; km_plot.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --group Feed \
+  --output results/survival/recovery_1sd.svg'</data>
+  <data key="d8">Log-Rank Test (Local RUSF (A) vs ERUSF (B)): p-value = 0.0000
+File saved: results/survival/recovery_1sd.svg
+</data>
+  <data key="d9">Fontconfig warning: using without calling FcInit()
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+</data>
+  <data key="d10">3454</data>
+  <data key="d11">0</data>
+</node>
+<node id="f71e9f25-96da-4733-a6c0-0cb33b890be5">
+  <data key="d3">arrange_svgs.py \
+  results/survival/recovery_2sd.svg \
+  results/survival/recovery_1sd.svg \
+  --cols 2 \
+  -o results/survival/recovery_km.svg</data>
+  <data key="d4">1316.5436761597182</data>
+  <data key="d5">-79.26388817296682</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; arrange_svgs.py \
+  results/survival/recovery_2sd.svg \
+  results/survival/recovery_1sd.svg \
+  --cols 2 \
+  -o results/survival/recovery_km.svg'</data>
+  <data key="d8">Output written to results/survival/recovery_km.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">3684</data>
+  <data key="d11">0</data>
+</node>
+<node id="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
+  <data key="d3">cox_model.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --covariates Feed baseline_WLZ Sex BF Delivery_Mode PoB\
+  --output results/survival/recovery_2sd.tsv</data>
+  <data key="d4">1038.8877075965756</data>
+  <data key="d5">364.8492411242654</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; cox_model.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --covariates Feed baseline_WLZ Sex BF Delivery_Mode PoB\
+  --output results/survival/recovery_2sd.tsv'</data>
+  <data key="d8">
+--- Cox Proportional Hazards Model Summary ---
+&lt;lifelines.CoxPHFitter: fitted with 159 total observations, 12 right-censored observations&gt;
+             duration col = 'duration'
+                event col = 'event'
+      baseline estimation = breslow
+   number of observations = 159
+number of events observed = 147
+   partial log-likelihood = -618.30
+         time fit was run = 2026-04-06 17:29:54 UTC
+
+---
+                       coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
+covariate                                                                                                              
+baseline_WLZ           1.47      4.34      0.35            0.77            2.16                2.17                8.71
+BF                     0.10      1.11      0.06           -0.02            0.22                0.98                1.25
+Feed_Local RUSF (A)    0.00      1.00      0.17           -0.33            0.33                0.72                1.39
+Sex_Male               0.13      1.14      0.17           -0.20            0.46                0.82                1.59
+Delivery_Mode_Vaginal -0.28      0.76      0.22           -0.70            0.15                0.49                1.16
+PoB_Home               0.09      1.09      0.21           -0.33            0.51                0.72                1.66
+
+                       cmp to     z      p  -log2(p)
+covariate                                           
+baseline_WLZ             0.00  4.14 &lt;0.005     14.81
+BF                       0.00  1.70   0.09      3.50
+Feed_Local RUSF (A)      0.00  0.01   0.99      0.01
+Sex_Male                 0.00  0.78   0.44      1.19
+Delivery_Mode_Vaginal    0.00 -1.27   0.20      2.30
+PoB_Home                 0.00  0.41   0.68      0.55
+---
+Concordance = 0.71
+Partial AIC = 1248.59
+log-likelihood ratio test = 24.25 on 6 df
+-log2(p) of ll-ratio test = 11.06
+
+
+Results saved to results/survival/recovery_2sd.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">3950</data>
+  <data key="d11">0</data>
+</node>
+<node id="cdfb6fc2-c48d-41fb-9a56-72bf0956e42f">
+  <data key="d3">logrank.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed\
+  --output results/survival/logrank_2sd.tsv</data>
+  <data key="d4">1040.7098823168012</data>
+  <data key="d5">516.8508623090337</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; logrank.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_2sd \
+  --group Feed\
+  --output results/survival/logrank_2sd.tsv'</data>
+  <data key="d8"></data>
+  <data key="d9">[metatoolkit] log-rank test
+Subjects: 159
+Groups: 2
+</data>
+  <data key="d10">3952</data>
+  <data key="d11">0</data>
+</node>
+<node id="5caa1422-36a2-4e53-8929-7b6111e5dded">
+  <data key="d3">cox_model.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --covariates Feed baseline_WLZ Sex BF Delivery_Mode PoB\
+  --output results/survival/recovery_1sd.tsv</data>
+  <data key="d4">1045.9771039596744</data>
+  <data key="d5">687.5402390414619</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; cox_model.py \
+  --input results/filtered/anthro_recovery.tsv \
+  --meta results/filtered/timemeta_MAM.tsv \
+  --time timepoint \
+  --event recover_1sd \
+  --covariates Feed baseline_WLZ Sex BF Delivery_Mode PoB\
+  --output results/survival/recovery_1sd.tsv'</data>
+  <data key="d8">
+--- Cox Proportional Hazards Model Summary ---
+&lt;lifelines.CoxPHFitter: fitted with 159 total observations, 84 right-censored observations&gt;
+             duration col = 'duration'
+                event col = 'event'
+      baseline estimation = breslow
+   number of observations = 159
+number of events observed = 75
+   partial log-likelihood = -350.52
+         time fit was run = 2026-04-06 17:29:54 UTC
+
+---
+                       coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
+covariate                                                                                                              
+baseline_WLZ           1.92      6.83      0.58            0.78            3.07                2.17               21.49
+BF                     0.09      1.10      0.08           -0.07            0.26                0.93                1.29
+Feed_Local RUSF (A)   -0.08      0.92      0.23           -0.54            0.38                0.58                1.46
+Sex_Male               0.39      1.48      0.24           -0.07            0.86                0.93                2.37
+Delivery_Mode_Vaginal -0.26      0.77      0.30           -0.85            0.33                0.43                1.39
+PoB_Home               0.01      1.01      0.31           -0.59            0.61                0.55                1.84
+
+                       cmp to     z      p  -log2(p)
+covariate                                           
+baseline_WLZ             0.00  3.29 &lt;0.005      9.94
+BF                       0.00  1.11   0.27      1.90
+Feed_Local RUSF (A)      0.00 -0.35   0.72      0.47
+Sex_Male                 0.00  1.66   0.10      3.36
+Delivery_Mode_Vaginal    0.00 -0.86   0.39      1.36
+PoB_Home                 0.00  0.03   0.97      0.04
+---
+Concordance = 0.64
+Partial AIC = 713.03
+log-likelihood ratio test = 17.14 on 6 df
+-log2(p) of ll-ratio test = 6.83
+
+
+Results saved to results/survival/recovery_1sd.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">3954</data>
+  <data key="d11">0</data>
+</node>
+<node id="46347093-b1c8-4351-a34f-ddf2f546df7f">
+  <data key="d3">rm -rf results/survival
+mkdir results/survival</data>
+  <data key="d4">199.40950366928524</data>
+  <data key="d5">180</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/survival
+mkdir results/survival'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">3150</data>
+  <data key="d11">0</data>
+</node>
+<edge source="91c360b7-efcc-43f7-8a08-6dd664a32a1f" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">
+  <data key="d12">228056f8-8295-4389-b157-791cffab6fed</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="05dd5002-f37e-4c44-a27e-0dbc5417d732" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">
+  <data key="d12">f53c3ddd-4417-4bc8-b946-1545936ea404</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="46347093-b1c8-4351-a34f-ddf2f546df7f" target="05dd5002-f37e-4c44-a27e-0dbc5417d732">
+  <data key="d12">690b1204-8f20-49aa-8a6a-0b955fd5a6dd</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="46347093-b1c8-4351-a34f-ddf2f546df7f" target="91c360b7-efcc-43f7-8a08-6dd664a32a1f">
+  <data key="d12">ece369da-8ea0-418f-8e29-a6a7095dc6e4</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="46347093-b1c8-4351-a34f-ddf2f546df7f" target="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
+  <data key="d12">7e3e60a6-6417-4885-8add-30415621011d</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="46347093-b1c8-4351-a34f-ddf2f546df7f" target="cdfb6fc2-c48d-41fb-9a56-72bf0956e42f">
+  <data key="d12">c483d407-0f86-4a63-ba58-bfacc7bbd012</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="46347093-b1c8-4351-a34f-ddf2f546df7f" target="5caa1422-36a2-4e53-8929-7b6111e5dded">
+  <data key="d12">ba191b98-b718-425f-a9a2-34237739013b</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+</graph></graphml>
