@@ -77,7 +77,7 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
 findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
 findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
 </data>
-  <data key="d10">3456</data>
+  <data key="d10">11869</data>
   <data key="d11">0</data>
 </node>
 <node id="05dd5002-f37e-4c44-a27e-0dbc5417d732">
@@ -139,7 +139,7 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
 findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
 findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
 </data>
-  <data key="d10">3454</data>
+  <data key="d10">11861</data>
   <data key="d11">0</data>
 </node>
 <node id="f71e9f25-96da-4733-a6c0-0cb33b890be5">
@@ -159,7 +159,7 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d8">Output written to results/survival/recovery_km.svg
 </data>
   <data key="d9"></data>
-  <data key="d10">3684</data>
+  <data key="d10">12101</data>
   <data key="d11">0</data>
 </node>
 <node id="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
@@ -189,7 +189,7 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
    number of observations = 159
 number of events observed = 147
    partial log-likelihood = -618.30
-         time fit was run = 2026-04-06 17:29:54 UTC
+         time fit was run = 2026-04-06 18:30:50 UTC
 
 ---
                        coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
@@ -219,7 +219,7 @@ log-likelihood ratio test = 24.25 on 6 df
 Results saved to results/survival/recovery_2sd.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">3950</data>
+  <data key="d10">11877</data>
   <data key="d11">0</data>
 </node>
 <node id="cdfb6fc2-c48d-41fb-9a56-72bf0956e42f">
@@ -245,7 +245,7 @@ Results saved to results/survival/recovery_2sd.tsv
 Subjects: 159
 Groups: 2
 </data>
-  <data key="d10">3952</data>
+  <data key="d10">11885</data>
   <data key="d11">0</data>
 </node>
 <node id="5caa1422-36a2-4e53-8929-7b6111e5dded">
@@ -275,7 +275,7 @@ Groups: 2
    number of observations = 159
 number of events observed = 75
    partial log-likelihood = -350.52
-         time fit was run = 2026-04-06 17:29:54 UTC
+         time fit was run = 2026-04-06 18:30:50 UTC
 
 ---
                        coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
@@ -305,7 +305,7 @@ log-likelihood ratio test = 17.14 on 6 df
 Results saved to results/survival/recovery_1sd.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">3954</data>
+  <data key="d10">11893</data>
   <data key="d11">0</data>
 </node>
 <node id="46347093-b1c8-4351-a34f-ddf2f546df7f">
@@ -318,7 +318,7 @@ mkdir results/survival</data>
 mkdir results/survival'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">3150</data>
+  <data key="d10">11838</data>
   <data key="d11">0</data>
 </node>
 <edge source="91c360b7-efcc-43f7-8a08-6dd664a32a1f" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">

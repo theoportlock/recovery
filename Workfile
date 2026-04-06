@@ -219,10 +219,9 @@ done</data>
   <data key="d6"></data>
 </node>
 <node id="f3f51679-47bd-4d95-b166-0773770b99c8">
-  <data key="d3"># TABLE 1
-table1_descriptive.sh</data>
-  <data key="d4">2307.9835249602693</data>
-  <data key="d5">-2280.6452485324803</data>
+  <data key="d3">workforce code/characteristics.wf</data>
+  <data key="d4">401.7518179554821</data>
+  <data key="d5">-654.6154830417742</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 1
 table1_descriptive.sh'</data>
@@ -300,8 +299,8 @@ mkdir -p results/figure2/maaslin/{baseline,change}</data>
 <node id="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
   <data key="d3"># TABLE 2
 table2_refeed_recovery.sh</data>
-  <data key="d4">2608.8501916269356</data>
-  <data key="d5">-2278.378581865815</data>
+  <data key="d4">824.68365329545</data>
+  <data key="d5">-671.2039006023904</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 2
 table2_refeed_recovery.sh'</data>
@@ -460,8 +459,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2/
 <node id="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
   <data key="d3"># TABLE 3
 table3_recovery.sh</data>
-  <data key="d4">2997.1835249602696</data>
-  <data key="d5">-2275.0452485324813</data>
+  <data key="d4">1144.0950853289614</data>
+  <data key="d5">-889.5693497834852</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 3
 table3_recovery.sh'</data>
@@ -879,8 +878,8 @@ mkdir -p results/figure3/maaslin/healthy/change</data>
 </node>
 <node id="ce5ca375-de80-45f9-9b57-4a9031407eae">
   <data key="d3">table2_who_refeed_recovery.sh</data>
-  <data key="d4">2739.334062450156</data>
-  <data key="d5">-2352.398954855406</data>
+  <data key="d4">831.1081017789903</data>
+  <data key="d5">-907.190741646564</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; table2_who_refeed_recovery.sh'</data>
   <data key="d8">✅ Table 1 saved to results/table2_plus/work/descriptive/recovery_status_oh.tsv
@@ -1317,7 +1316,12 @@ done (c8ef17dd-f825-46cb-a537-0c32e66b7a2f)
   <data key="d3">workforce code/survival.wf</data>
   <data key="d4">405.9767729227151</data>
   <data key="d5">-566.4033509431463</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; workforce code/survival.wf'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">11811</data>
+  <data key="d11">0</data>
 </node>
 <edge source="analysis.graphml::c3e489b0-20d8-4fae-b2ff-3310041d0d48" target="c22c2993-fbfb-461c-b462-80a4bd61e58e">
   <data key="d14">57f01424-2c84-4e51-9082-be85907deeef</data>
