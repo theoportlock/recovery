@@ -1571,30 +1571,21 @@ Split files saved to subfolders in: /home/theo/recovery/results/timepoints
   <data key="d11">0</data>
 </node>
 <node id="3213ed29-410e-427a-b65c-8b3210baf978">
-  <data key="d3">#Need to clean this
-# Just looking at MAM kids
-filter.py results/filtered/timemeta.tsv \
-  -q 'timepoint == 0 or timepoint == 52' \
-  -q 'Condition == "MAM"' \
-  -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
-  -o results/filtered/timemeta_MAM_0_52tp.tsv
-
-replace.py \
-  results/filtered/timemeta_MAM_0_52tp.tsv \
-  --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
-  --output results/filtered/timemeta_MAM_yr1_yr2.tsv
-
-filter.py results/filtered/meta.tsv \
+  <data key="d3">filter.py results/filtered/meta.tsv \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
-  -o results/filtered/meta_MAM.tsv
-
-# All kids
-filter.py results/filtered/timemeta.tsv \
-  -q 'timepoint == 0 or timepoint == 52' \
-  -o results/filtered/timemeta_0_52tp.tsv</data>
-  <data key="d12">1402.3124267475273</data>
-  <data key="d13">613.9034965769465</data>
-  <data key="d6"></data>
+  -o results/filtered/meta_MAM.tsv</data>
+  <data key="d12">1415.0731792867498</data>
+  <data key="d13">812.0153483418542</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/meta.tsv \
+  -q '\''Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")'\'' \
+  -o results/filtered/meta_MAM.tsv'</data>
+  <data key="d8">[filter] Query '(Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered"))': kept 151/234
+[filter] Saved filtered output to: results/filtered/meta_MAM.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">87958</data>
+  <data key="d11">0</data>
 </node>
 <node id="2a750bc5-2baa-4258-8bb4-54c5615529cb">
   <data key="d3">join.py results/filtered/mapping.tsv \
@@ -1615,6 +1606,82 @@ df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
   <data key="d10">86679</data>
+  <data key="d11">0</data>
+</node>
+<node id="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
+  <data key="d3"># All kids
+filter.py results/filtered/timemeta.tsv \
+  -q 'timepoint == 0 or timepoint == 52' \
+  -o results/filtered/timemeta_0_52tp.tsv</data>
+  <data key="d12">1398.2491076823114</data>
+  <data key="d13">1103.646083855374</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; # All kids
+filter.py results/filtered/timemeta.tsv \
+  -q '\''timepoint == 0 or timepoint == 52'\'' \
+  -o results/filtered/timemeta_0_52tp.tsv'</data>
+  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52)': kept 468/2960
+[filter] Saved filtered output to: results/filtered/timemeta_0_52tp.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">88015</data>
+  <data key="d11">0</data>
+</node>
+<node id="119af91b-e955-43de-b714-34e8800c43f6">
+  <data key="d3">replace.py \
+  results/filtered/timemeta_MAM_0_52tp.tsv \
+  --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
+  --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
+  <data key="d12">1852.980805306332</data>
+  <data key="d13">1107.1520104378687</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; replace.py \
+  results/filtered/timemeta_MAM_0_52tp.tsv \
+  --to_replace '\''{"timepoint": {"0": "yr1", "52": "yr2"}}'\'' \
+  --output results/filtered/timemeta_MAM_yr1_yr2.tsv'</data>
+  <data key="d8">           subjectID timepoint     Sex  ...  MUAC     HC baseline_WLZ
+sampleID                                ...                          
+LCC1001_0    LCC1001       yr1    Male  ...  12.5   42.6        -2.75
+LCC1001_52   LCC1001       yr2    Male  ...  12.5   42.6        -2.75
+LCC1002_0    LCC1002       yr1    Male  ...  13.0   44.0        -2.37
+LCC1002_52   LCC1002       yr2    Male  ...  13.0   44.0        -2.37
+LCC1003_0    LCC1003       yr1  Female  ...  13.5   42.9        -2.13
+...              ...       ...     ...  ...   ...    ...          ...
+LCC1054_0    LCC1054       yr1  Female  ...  12.5  43.85        -2.24
+LCC1054_52   LCC1054       yr2  Female  ...  12.5  43.85        -2.24
+LCC1056_52   LCC1056       yr2  Female  ...  12.5   43.0        -2.01
+LCC1098_52   LCC1098       yr2    Male  ...  12.5   43.5        -2.08
+LCC1108_52   LCC1108       yr2    Male  ...  13.0   45.0        -2.29
+
+[302 rows x 16 columns]
+</data>
+  <data key="d9"></data>
+  <data key="d10">88155</data>
+  <data key="d11">0</data>
+</node>
+<node id="edebf298-55ce-4634-b555-05629109188c">
+  <data key="d3"># Just looking at MAM kids
+filter.py results/filtered/timemeta.tsv \
+  -q 'timepoint == 0 or timepoint == 52' \
+  -q 'Condition == "MAM"' \
+  -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
+  -o results/filtered/timemeta_MAM_0_52tp.tsv
+</data>
+  <data key="d12">1401.5384793269047</data>
+  <data key="d13">958.8174846879938</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; # Just looking at MAM kids
+filter.py results/filtered/timemeta.tsv \
+  -q '\''timepoint == 0 or timepoint == 52'\'' \
+  -q '\''Condition == "MAM"'\'' \
+  -q '\''Recovery == "No recovery" or Recovery == "Recovered"'\'' \
+  -o results/filtered/timemeta_MAM_0_52tp.tsv
+'</data>
+  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52) &amp; (Condition == "MAM") &amp; (Recovery == "No recovery" or Recovery == "Recovered")': kept 302/2960
+[filter] Saved filtered output to: results/filtered/timemeta_MAM_0_52tp.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">88014</data>
   <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
@@ -1875,6 +1942,18 @@ df2: 0 / 234 rows lost (0.00%)
 </edge>
 <edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="3213ed29-410e-427a-b65c-8b3210baf978">
   <data key="d14">1aa6ea2f-7c75-4409-bf99-5941de13db45</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="edebf298-55ce-4634-b555-05629109188c">
+  <data key="d14">832a00cc-0bbc-45b5-bcf5-255ded30e8a7</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
+  <data key="d14">f3183fce-9096-4e74-9e1f-46b80e99d921</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="f6f5fff9-cc43-4b25-a85e-d9da28978a18" target="119af91b-e955-43de-b714-34e8800c43f6">
+  <data key="d14">4e353ba8-139c-4e5c-ac03-8bbdf3c05deb</data>
   <data key="d16">blocking</data>
 </edge>
 </graph></graphml>
