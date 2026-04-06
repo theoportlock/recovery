@@ -38,10 +38,10 @@
     results/filtered/covmeta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-  <data key="d12">2022.9351291803243</data>
-  <data key="d13">385.4747037571832</data>
+  <data key="d12">2580.22794640101</data>
+  <data key="d13">527.9001740324165</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
+  <data key="d7">bash -c '. env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
     results/filtered/covmeta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv'</data>
@@ -51,7 +51,7 @@ df1: 0 / 2960 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">31661</data>
+  <data key="d10">87382</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
@@ -1318,10 +1318,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d12">2389.347330927125</data>
-  <data key="d13">348.4845564834022</data>
+  <data key="d12">2946.6401481478106</data>
+  <data key="d13">490.91002675863564</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
+  <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
   splitter.py \
     results/cleaned/${f}.tsv \
     -m results/filtered/timemeta.tsv \
@@ -1329,46 +1329,46 @@ done</data>
     --outdir results/timepoints \
     --reindex subjectID 
 done'</data>
-  <data key="d8">Saved split: /home/tpor598/recovery/results/timepoints/0/aa.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/52/aa.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/4/aa.tsv
-Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
-Saved split: /home/tpor598/recovery/results/timepoints/0/head.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/52/head.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/4/head.tsv
-Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
-Saved split: /home/tpor598/recovery/results/timepoints/0/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/52/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/4/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/3/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/5/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/6/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/7/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/8/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/9/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/10/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/11/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/12/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/13/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/14/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/15/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/26/anthro.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/39/anthro.tsv
-Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
-Saved split: /home/tpor598/recovery/results/timepoints/0/sleep.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/52/sleep.tsv
-Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
-Saved split: /home/tpor598/recovery/results/timepoints/0/vitamin.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/52/vitamin.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/12/vitamin.tsv
-Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
-Saved split: /home/tpor598/recovery/results/timepoints/0/lipids.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/52/lipids.tsv
-Saved split: /home/tpor598/recovery/results/timepoints/12/lipids.tsv
-Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+  <data key="d8">Saved split: /home/theo/recovery/results/timepoints/0/aa.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/aa.tsv
+Saved split: /home/theo/recovery/results/timepoints/4/aa.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/head.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/head.tsv
+Saved split: /home/theo/recovery/results/timepoints/4/head.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/4/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/3/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/5/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/6/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/7/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/8/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/9/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/10/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/11/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/13/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/14/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/15/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/26/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/39/anthro.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/sleep.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/sleep.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/vitamin.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/vitamin.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/vitamin.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/lipids.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/lipids.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/lipids.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
 </data>
   <data key="d9"></data>
-  <data key="d10">18252</data>
+  <data key="d10">87447</data>
   <data key="d11">0</data>
 </node>
 <node id="59608939-75a1-465d-8553-fd4809c332ef">
@@ -1376,8 +1376,8 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o results/filtered/anthro_recovery.tsv</data>
-  <data key="d12">429.15487612198433</data>
-  <data key="d13">-239.18667926234005</data>
+  <data key="d12">1199.2458005566205</data>
+  <data key="d13">-195.66802751296257</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; assign.py results/filtered/anthro.tsv \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
@@ -1391,7 +1391,7 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
 4  LCC1001_6    7.46    72.5  12.8   NaN    -2.32            0            0
 </data>
   <data key="d9"></data>
-  <data key="d10">11135</data>
+  <data key="d10">86730</data>
   <data key="d11">0</data>
 </node>
 <node id="917e5a89-29df-410c-beab-58d165fb20cd">
@@ -1401,49 +1401,25 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
   --timemeta results/filtered/timemeta.tsv \
   -t -2 \
   -o results/filtered/recovery_status_2sd.tsv</data>
-  <data key="d12">831.7668060747244</data>
-  <data key="d13">-321.6792654366441</data>
-  <data key="d6">fail</data>
+  <data key="d12">1601.8577305093604</data>
+  <data key="d13">-278.1606136872666</data>
+  <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
   --meta results/filtered/meta.tsv \
   --timemeta results/filtered/timemeta.tsv \
   -t -2 \
   -o results/filtered/recovery_status_2sd.tsv'</data>
-  <data key="d8"></data>
-  <data key="d9">Traceback (most recent call last):
-  File "/home/theo/recovery/code/calculate_recovery.py", line 125, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/code/calculate_recovery.py", line 60, in main
-    timemeta = pd.read_csv(args.timemeta, sep="\t", index_col=0)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+  <data key="d8">Recovery_status
+Sustained recovery      91
+Unsustained recovery    43
+No recovery             22
+Delayed recovery         3
+Name: count, dtype: int64
 </data>
-  <data key="d10">11199</data>
-  <data key="d11">1</data>
+  <data key="d9"></data>
+  <data key="d10">86764</data>
+  <data key="d11">0</data>
 </node>
 <node id="c37322cc-afdd-467c-8196-b63a5fa7541a">
   <data key="d3">calculate_recovery.py \
@@ -1452,109 +1428,46 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timeme
   --timemeta results/filtered/timemeta.tsv \
   -t -1 \
   -o results/filtered/recovery_status_1sd.tsv</data>
-  <data key="d12">838.8371289996604</data>
-  <data key="d13">-179.82713827689787</data>
-  <data key="d6">fail</data>
+  <data key="d12">1608.9280534342965</data>
+  <data key="d13">-136.3084865275204</data>
+  <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
   --meta results/filtered/meta.tsv \
   --timemeta results/filtered/timemeta.tsv \
   -t -1 \
   -o results/filtered/recovery_status_1sd.tsv'</data>
-  <data key="d8"></data>
-  <data key="d9">Traceback (most recent call last):
-  File "/home/theo/recovery/code/calculate_recovery.py", line 125, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/code/calculate_recovery.py", line 60, in main
-    timemeta = pd.read_csv(args.timemeta, sep="\t", index_col=0)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+  <data key="d8">Recovery_status
+No recovery             94
+Unsustained recovery    45
+Sustained recovery      17
+Delayed recovery         3
+Name: count, dtype: int64
 </data>
-  <data key="d10">11225</data>
-  <data key="d11">1</data>
+  <data key="d9"></data>
+  <data key="d10">86772</data>
+  <data key="d11">0</data>
 </node>
 <node id="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
   <data key="d3">join.py \
   results/filtered/meta.tsv \
   results/timepoints/0/anthro.tsv \
   -o results/filtered/covmeta_norename.tsv</data>
-  <data key="d12">1174.0893268637583</data>
-  <data key="d13">192.74146736082918</data>
-  <data key="d6">fail</data>
+  <data key="d12">1731.382144084444</data>
+  <data key="d13">335.16693763606264</data>
+  <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py \
   results/filtered/meta.tsv \
   results/timepoints/0/anthro.tsv \
   -o results/filtered/covmeta_norename.tsv'</data>
-  <data key="d8"></data>
-  <data key="d9">Traceback (most recent call last):
-  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 164, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 147, in main
-    merged_df, stats = join_dataframes(
-                       ~~~~~~~~~~~~~~~^
-        file1=args.file1,
-        ^^^^^^^^^^^^^^^^^
-    ...&lt;5 lines&gt;...
-        suffixes=suffixes
-        ^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 68, in join_dataframes
-    df2 = load(file2)
-  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 18, in load
-    return pd.read_csv(f'results/{filepath}.tsv', sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoints/0/anthro.tsv.tsv'
+  <data key="d8">Join summary
+------------
+df1: 0 / 234 rows lost (0.00%)
+df2: 0 / 234 rows lost (0.00%)
 </data>
-  <data key="d10">11268</data>
-  <data key="d11">1</data>
+  <data key="d9"></data>
+  <data key="d10">87314</data>
+  <data key="d11">0</data>
 </node>
 <node id="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
   <data key="d3">rename_regex.py \
@@ -1562,10 +1475,10 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoi
   --match 'WLZ_WHZ' \
   --replace 'baseline_WLZ' \
   -o results/filtered/covmeta.tsv</data>
-  <data key="d12">1556.058321756678</data>
-  <data key="d13">265.1915169031331</data>
+  <data key="d12">2113.3511389773635</data>
+  <data key="d13">407.61698717836657</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rename_regex.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; rename_regex.py \
   results/filtered/covmeta_norename.tsv \
   --match '\''WLZ_WHZ'\'' \
   --replace '\''baseline_WLZ'\'' \
@@ -1573,7 +1486,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoi
   <data key="d8">✅ Saved renamed DataFrame → results/filtered/covmeta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">31559</data>
+  <data key="d10">87348</data>
   <data key="d11">0</data>
 </node>
 <node id="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
@@ -1581,10 +1494,10 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoi
   results/filtered/covmeta.tsv \
   -q "Condition == 'MAM'" \
   -o results/filtered/covmeta_MAM.tsv</data>
-  <data key="d12">2031.3628741983398</data>
-  <data key="d13">240.27488657830946</data>
+  <data key="d12">2588.6556914190255</data>
+  <data key="d13">382.7003568535429</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   results/filtered/covmeta.tsv \
   -q "Condition == '\''MAM'\''" \
   -o results/filtered/covmeta_MAM.tsv'</data>
@@ -1592,7 +1505,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoi
 [filter] Saved filtered output to: results/filtered/covmeta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">39113</data>
+  <data key="d10">87390</data>
   <data key="d11">0</data>
 </node>
 <node id="b8683318-306c-481f-bd22-c488428579c8">
@@ -1604,9 +1517,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoi
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d12">781.2999917828053</data>
-  <data key="d13">60.595702444062326</data>
-  <data key="d6">fail</data>
+  <data key="d12">1351.4099270449249</data>
+  <data key="d13">337.6009121543524</data>
+  <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
   splitter.py \
     results/cleaned/${f}.tsv \
@@ -1615,214 +1528,47 @@ done</data>
     --outdir results/timepoints \
     --reindex subjectID 
 done'</data>
-  <data key="d8"></data>
-  <data key="d9">Traceback (most recent call last):
-  File "/home/theo/recovery/metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/metatoolkit/metatoolkit/splitter.py", line 85, in main
-    df2 = load(args.df2) if args.df2 else None
-          ~~~~^^^^^^^^^^
-  File "/home/theo/recovery/metatoolkit/metatoolkit/splitter.py", line 11, in load
-    return pd.read_csv(path, sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
-Traceback (most recent call last):
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
-    df2 = load(args.df2) if args.df2 else None
-          ~~~~^^^^^^^^^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
-    return pd.read_csv(path, sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
-Traceback (most recent call last):
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
-    df2 = load(args.df2) if args.df2 else None
-          ~~~~^^^^^^^^^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
-    return pd.read_csv(path, sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
-Traceback (most recent call last):
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
-    df2 = load(args.df2) if args.df2 else None
-          ~~~~^^^^^^^^^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
-    return pd.read_csv(path, sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
-Traceback (most recent call last):
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
-    df2 = load(args.df2) if args.df2 else None
-          ~~~~^^^^^^^^^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
-    return pd.read_csv(path, sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
-Traceback (most recent call last):
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
-    main()
-    ~~~~^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
-    df2 = load(args.df2) if args.df2 else None
-          ~~~~^^^^^^^^^^
-  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
-    return pd.read_csv(path, sep='\t', index_col=0)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ~~~~~~~~~~^
-        f,
-        ^^
-    ...&lt;6 lines&gt;...
-        storage_options=self.options.get("storage_options", None),
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-        handle,
-    ...&lt;3 lines&gt;...
-        newline="",
-    )
-FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+  <data key="d8">Saved split: /home/theo/recovery/results/timepoints/0/aa.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/aa.tsv
+Saved split: /home/theo/recovery/results/timepoints/4/aa.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/head.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/head.tsv
+Saved split: /home/theo/recovery/results/timepoints/4/head.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/4/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/3/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/5/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/6/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/7/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/8/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/9/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/10/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/11/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/13/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/14/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/15/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/26/anthro.tsv
+Saved split: /home/theo/recovery/results/timepoints/39/anthro.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/sleep.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/sleep.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/vitamin.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/vitamin.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/vitamin.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/lipids.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/lipids.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/lipids.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
 </data>
-  <data key="d10">78013</data>
-  <data key="d11">1</data>
+  <data key="d9"></data>
+  <data key="d10">87198</data>
+  <data key="d11">0</data>
 </node>
 <node id="3213ed29-410e-427a-b65c-8b3210baf978">
   <data key="d3">#Need to clean this
@@ -1846,9 +1592,30 @@ filter.py results/filtered/meta.tsv \
 filter.py results/filtered/timemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -o results/filtered/timemeta_0_52tp.tsv</data>
-  <data key="d12">845.0196095268417</data>
-  <data key="d13">471.478026301713</data>
+  <data key="d12">1402.3124267475273</data>
+  <data key="d13">613.9034965769465</data>
   <data key="d6"></data>
+</node>
+<node id="2a750bc5-2baa-4258-8bb4-54c5615529cb">
+  <data key="d3">join.py results/filtered/mapping.tsv \
+    results/filtered/meta.tsv \
+    --on subjectID \
+    -o results/filtered/timemeta.tsv</data>
+  <data key="d12">805.9278799500515</data>
+  <data key="d13">80.2366194570665</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
+    results/filtered/meta.tsv \
+    --on subjectID \
+    -o results/filtered/timemeta.tsv'</data>
+  <data key="d8">Join summary
+------------
+df1: 0 / 2960 rows lost (0.00%)
+df2: 0 / 234 rows lost (0.00%)
+</data>
+  <data key="d9"></data>
+  <data key="d10">86679</data>
+  <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
   <data key="d14">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
@@ -1857,6 +1624,7 @@ filter.py results/filtered/timemeta.tsv \
 <edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="c8ef17dd-f825-46cb-a537-0c32e66b7a2f">
   <data key="d14">41fe360f-80a8-4010-bd49-931e32f5a5d7</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f">
   <data key="d14">29fa658f-2d26-4a9b-bcb3-a63f429341e6</data>
@@ -1938,12 +1706,8 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d14">fdfc6835-7b55-46f0-94d3-33d226263349</data>
   <data key="d15"></data>
 </edge>
-<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="b8683318-306c-481f-bd22-c488428579c8">
-  <data key="d14">7b8f8813-908d-42f3-b476-8f3605dca875</data>
-  <data key="d16">blocking</data>
-</edge>
-<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="3213ed29-410e-427a-b65c-8b3210baf978">
-  <data key="d14">73bb56f6-a152-40ad-8e29-0c0f987ae1b1</data>
+<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="2a750bc5-2baa-4258-8bb4-54c5615529cb">
+  <data key="d14">9befd632-fb49-4ed4-b377-12aae6914c39</data>
   <data key="d16">blocking</data>
 </edge>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
@@ -2047,11 +1811,6 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d14">972ec798-970d-4bf3-9dec-86d1727dbfe0</data>
   <data key="d15"></data>
 </edge>
-<edge source="9430f225-f079-4a7f-bfd9-a272b950617f" target="59608939-75a1-465d-8553-fd4809c332ef">
-  <data key="d14">34070e4b-4585-4ead-9de4-3eba182b5081</data>
-  <data key="d16">blocking</data>
-  <data key="d15"></data>
-</edge>
 <edge source="67d6bf85-2665-4c80-b457-43e490d6fe20" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
   <data key="d14">4c7aeb83-25d1-41eb-bc63-c6d802335bca</data>
   <data key="d15"></data>
@@ -2089,17 +1848,33 @@ filter.py results/filtered/timemeta.tsv \
 <edge source="ede9a0cc-c58b-4784-93e4-54a3a68f0825" target="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
   <data key="d14">4794e2b0-d976-4dbc-95ed-f8ca4e1339c1</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="956e9a61-fae1-4e44-aef5-5cbd2df9f378" target="3a9d83fc-9062-4367-a6e3-510564bf386b">
   <data key="d14">700edfa4-23fd-4142-8b0e-bd218a2a7df7</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="956e9a61-fae1-4e44-aef5-5cbd2df9f378" target="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
   <data key="d14">9ad07ecb-233e-4461-933b-e5226f0788dd</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="b8683318-306c-481f-bd22-c488428579c8" target="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
   <data key="d14">3e172a3f-2ffa-4ae4-8784-6ae97d61c9bf</data>
+  <data key="d16">blocking</data>
+  <data key="d15"></data>
+</edge>
+<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="59608939-75a1-465d-8553-fd4809c332ef">
+  <data key="d14">11e56e9d-c9b1-4e34-b221-6ed59214f8ab</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="b8683318-306c-481f-bd22-c488428579c8">
+  <data key="d14">acb55a11-0dcb-41dd-9271-c90e3073939a</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="3213ed29-410e-427a-b65c-8b3210baf978">
+  <data key="d14">1aa6ea2f-7c75-4409-bf99-5941de13db45</data>
   <data key="d16">blocking</data>
 </edge>
 </graph></graphml>
