@@ -1054,16 +1054,11 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_
   <data key="d6"></data>
 </node>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
-  <data key="d3">group.py \
-  results/cleaned/quality.tsv \
-  --group_by Feed timepoint \
-  --func mean std \
-  --meta results/filtered/timemeta.tsv \
-  --output results/quality_group.tsv</data>
-  <data key="d4">1490.6082370861573</data>
-  <data key="d5">-3457.427379481188</data>
+  <data key="d3">workforce code/quality.wf</data>
+  <data key="d4">908.3106269018062</data>
+  <data key="d5">-928.6832247626787</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; group.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
   results/cleaned/quality.tsv \
   --group_by Feed timepoint \
   --func mean std \
@@ -1081,7 +1076,7 @@ Local RUSF (A) 0                                 39.541742  ...            0.0
 [6 rows x 4 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">29580</data>
+  <data key="d10">92232</data>
   <data key="d11">0</data>
 </node>
 <node id="91c360b7-efcc-43f7-8a08-6dd664a32a1f">
@@ -1512,7 +1507,7 @@ Results saved to results/table2/recovery_1sd.tsv
   <data key="d11">0</data>
 </node>
 <node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
-  <data key="d3">workforce code/figure1.wf</data>
+  <data key="d3">workforce code/recovery_rates.wf</data>
   <data key="d4">920.0170985929389</data>
   <data key="d5">-814.6229907304726</data>
   <data key="d6"></data>
@@ -1547,10 +1542,6 @@ Results saved to results/table2/recovery_1sd.tsv
 <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="ce5ca375-de80-45f9-9b57-4a9031407eae">
   <data key="d14">8be7e369-8b65-409c-b408-b331e5b4df7a</data>
   <data key="d15"></data>
-</edge>
-<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
-  <data key="d14">3c454310-b0f6-49de-b90b-bbaf29e6a31a</data>
-  <data key="d16">blocking</data>
 </edge>
 <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="91c360b7-efcc-43f7-8a08-6dd664a32a1f">
   <data key="d14">70feab49-3abc-4658-bb25-af73deb09138</data>
@@ -1649,6 +1640,10 @@ Results saved to results/table2/recovery_1sd.tsv
 </edge>
 <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="9dd43b82-c33a-41d9-aa1e-cf01add8f9f4">
   <data key="d14">dff6e84e-6236-4fdb-adcf-a52e299424ee</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+  <data key="d14">9085fcdd-3fe1-4696-9137-06583f279c6f</data>
   <data key="d16">blocking</data>
 </edge>
 </graph></graphml>

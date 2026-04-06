@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d16" for="edge" attr.name="status" attr.type="string"/>
+<key id="d15" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d14" for="edge" attr.name="id" attr.type="string"/>
+<key id="d13" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d12" for="node" attr.name="pid" attr.type="string"/>
+<key id="d11" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d10" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d9" for="node" attr.name="command" attr.type="string"/>
+<key id="d8" for="node" attr.name="y" attr.type="string"/>
+<key id="d7" for="node" attr.name="x" attr.type="string"/>
+<key id="d6" for="node" attr.name="status" attr.type="string"/>
+<key id="d5" for="node" attr.name="y" attr.type="double"/>
+<key id="d4" for="node" attr.name="x" attr.type="double"/>
+<key id="d3" for="node" attr.name="label" attr.type="string"/>
+<key id="d2" for="graph" attr.name="wrapper" attr.type="string"/>
+<key id="d1" for="graph" attr.name="suffix" attr.type="string"/>
+<key id="d0" for="graph" attr.name="prefix" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">bash -c '. env.sh 
+</data>
+<data key="d1">'
+
+</data>
+<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
+<node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
+  <data key="d3">sig_summary.py \
+  -i results/figure3/timechange.tsv \
+  -p 0.1 \
+  -s qval_joint \
+  -o results/figure3/timechange_summary.tsv</data>
+  <data key="d4">5935.7104761904775</data>
+  <data key="d5">-1161.3166666666664</data>
+  <data key="d6"></data>
+</node>
+<node id="ce6b111f-bf9d-4c19-848f-b87f6c9363cb">
+  <data key="d3">replace.py results/rda/merged_dropped.tsv \
+  --to_replace "_rda_filtered_renamed" \
+  --value "" \
+  --regex \
+  -o results/rda/rda.tsv</data>
+  <data key="d7">6025.63426285901</data>
+  <data key="d8">-363.3666817675852</data>
+  <data key="d6"></data>
+</node>
+<node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
+  <data key="d3">hbar_fig3.py</data>
+  <data key="d4">6616.17</data>
+  <data key="d5">-1269.335</data>
+  <data key="d6"></data>
+</node>
+<node id="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab">
+  <data key="d3">fdr.py \
+  results/rda/rda.tsv \
+  -o results/rda/rda_fdr.tsv</data>
+  <data key="d7">6420.299262859012</data>
+  <data key="d8">-349.0689039898068</data>
+  <data key="d6"></data>
+</node>
+<node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+  <data key="d3">group.py \
+  results/cleaned/quality.tsv \
+  --group_by Feed timepoint \
+  --func mean std \
+  --meta results/filtered/timemeta.tsv \
+  --output results/quality/quality_group.tsv</data>
+  <data key="d7">9.862249344869355</data>
+  <data key="d8">-147.52590086283587</data>
+  <data key="d6">ran</data>
+  <data key="d9">bash -c '. env.sh &amp;&amp; group.py \
+  results/cleaned/quality.tsv \
+  --group_by Feed timepoint \
+  --func mean std \
+  --meta results/filtered/timemeta.tsv \
+  --output results/quality/quality_group.tsv'</data>
+  <data key="d10">                          hq_read_depth_million_reads_mean  ...  timepoint_std
+Feed           timepoint                                    ...               
+ERUSF (B)      0                                 41.304808  ...            0.0
+               12                                40.696358  ...            0.0
+               52                                46.906099  ...            0.0
+Local RUSF (A) 0                                 39.541742  ...            0.0
+               12                                41.825206  ...            0.0
+               52                                44.704357  ...            0.0
+
+[6 rows x 4 columns]
+</data>
+  <data key="d11"></data>
+  <data key="d12">92940</data>
+  <data key="d13">0</data>
+</node>
+<node id="8f43b81b-3379-4e7e-97ec-fbebb271f13d">
+  <data key="d3">rm -rf results/quality
+mkdir results/quality</data>
+  <data key="d7">-209.64296103218408</data>
+  <data key="d8">-116.11604342511231</data>
+  <data key="d6">ran</data>
+  <data key="d9">bash -c '. env.sh &amp;&amp; rm -rf results/quality
+mkdir results/quality'</data>
+  <data key="d10"></data>
+  <data key="d11"></data>
+  <data key="d12">92920</data>
+  <data key="d13">0</data>
+</node>
+<edge source="ce6b111f-bf9d-4c19-848f-b87f6c9363cb" target="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab"/>
+<edge source="8f43b81b-3379-4e7e-97ec-fbebb271f13d" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+  <data key="d14">da68611b-4c04-4307-8d28-144b45f41e6c</data>
+  <data key="d15">blocking</data>
+  <data key="d16"></data>
+</edge>
+</graph></graphml>
