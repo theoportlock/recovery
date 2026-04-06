@@ -13,5 +13,4 @@ scipy
 seaborn
 shap
 statsmodels
-workforce
 adjustText

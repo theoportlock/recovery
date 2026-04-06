@@ -21,16 +21,16 @@
 <data key="d1">'
 
 </data>
-<data key="d2">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; {}'</data>
+<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8">
   <data key="d3">format_genetics.py</data>
   <data key="d4">-785.5568894274099</data>
   <data key="d5">303.1540114103807</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_genetics.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_genetics.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16763</data>
+  <data key="d10">8680</data>
   <data key="d11">0</data>
 </node>
 <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
@@ -38,8 +38,8 @@
     results/filtered/covmeta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-  <data key="d12">1090.3616077770089</data>
-  <data key="d13">342.85919489282855</data>
+  <data key="d12">2022.9351291803243</data>
+  <data key="d13">385.4747037571832</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
     results/filtered/covmeta.tsv \
@@ -59,10 +59,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-788.8331697097194</data>
   <data key="d5">-295.2674368139692</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_sleep.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_sleep.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16905</data>
+  <data key="d10">8818</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
@@ -70,10 +70,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-782.9809274846621</data>
   <data key="d5">226.6955115170424</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_head.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_head.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16743</data>
+  <data key="d10">8634</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
@@ -81,10 +81,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-785.0273166615507</data>
   <data key="d5">265.5664314441313</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_surveillance.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_surveillance.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16752</data>
+  <data key="d10">8657</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
@@ -95,10 +95,10 @@ df2: 0 / 234 rows lost (0.00%)
   results/cleaned/bfpob.tsv \
   -j outer \
   -o results/cleaned/meta.tsv</data>
-  <data key="d4">-365.6072866855531</data>
-  <data key="d5">425.8095867964056</data>
+  <data key="d12">-447.0035463324136</data>
+  <data key="d13">429.8793997787486</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; merge.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py \
   results/cleaned/premeta.tsv \
   results/cleaned/feedandrecovery.tsv \
   results/cleaned/deliverysupp.tsv \
@@ -108,7 +108,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved 309 rows × 9 columns to results/cleaned/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17341</data>
+  <data key="d10">9128</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
@@ -116,10 +116,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-1134.9742080087212</data>
   <data key="d5">31.04340788007832</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_microbiome_samplesheet.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_microbiome_samplesheet.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16719</data>
+  <data key="d10">8603</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
@@ -127,10 +127,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d12">-783.1944622743677</data>
   <data key="d13">191.3685303483328</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_anthro.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_anthro.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16730</data>
+  <data key="d10">8611</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
@@ -138,10 +138,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-792.9375569329408</data>
   <data key="d5">-381.53607255169277</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_aa.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_aa.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">17210</data>
+  <data key="d10">9067</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
@@ -149,16 +149,16 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-803.1770912352598</data>
   <data key="d5">-481.1589607297183</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_lipids.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_lipids.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/tpor598/recovery/code/format_lipids.py:115: SyntaxWarning: invalid escape sequence '\d'
+  <data key="d9">/home/theo/recovery/code/format_lipids.py:115: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
   metabid['Liggins sample'] = metabid['Liggins sample'].str.extract('(\d+)').astype(int)
-/home/tpor598/recovery/code/format_lipids.py:127: SyntaxWarning: invalid escape sequence '\:'
+/home/theo/recovery/code/format_lipids.py:127: SyntaxWarning: "\:" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\:"? A raw string is also an option.
   df = df.loc[:, df.columns.str.contains('\:')]
-/home/tpor598/recovery/code/format_lipids.py:37: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+/home/theo/recovery/code/format_lipids.py:37: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   dataset1.replace({'': np.nan}, inplace=True)
 </data>
-  <data key="d10">16928</data>
+  <data key="d10">8864</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
@@ -166,12 +166,12 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-792.6420285903208</data>
   <data key="d5">-422.8749046460773</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_vitamin.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_vitamin.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/tpor598/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  <data key="d9">/home/theo/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   out = out.replace('NF', np.nan)
 </data>
-  <data key="d10">16899</data>
+  <data key="d10">8796</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
@@ -179,12 +179,12 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-797.4623330670977</data>
   <data key="d5">21.551969687755843</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_humann.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_humann.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/tpor598/recovery/code/format_humann.py:31: SyntaxWarning: invalid escape sequence '\|'
+  <data key="d9">/home/theo/recovery/code/format_humann.py:31: SyntaxWarning: "\|" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\|"? A raw string is also an option.
   df = pathways.loc[:, ~pathways.columns.str.contains('\|')]
 </data>
-  <data key="d10">17444</data>
+  <data key="d10">9199</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
@@ -192,10 +192,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-798.1877426713477</data>
   <data key="d5">68.57790547825732</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_metaphlan.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_metaphlan.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">17450</data>
+  <data key="d10">9209</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
@@ -203,10 +203,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-800.7182493769658</data>
   <data key="d5">-21.556928998034362</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_kneaddata.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_kneaddata.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">17474</data>
+  <data key="d10">9263</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
@@ -214,10 +214,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-777.9378447857731</data>
   <data key="d5">434.7685724984932</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_ses.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_ses.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16811</data>
+  <data key="d10">8727</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
@@ -225,10 +225,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-776.5439097560335</data>
   <data key="d5">504.8055435784918</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_feedsandrecovery.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_feedsandrecovery.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16831</data>
+  <data key="d10">8734</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
@@ -236,10 +236,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-777.1484331602172</data>
   <data key="d5">469.9527304576558</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_bfpob.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_bfpob.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16774</data>
+  <data key="d10">8701</data>
   <data key="d11">0</data>
 </node>
 <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
@@ -251,7 +251,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d12">-502.88029308062204</data>
   <data key="d13">-124.06658123380976</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; extract_taxa.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; extract_taxa.py \
   results/cleaned/metaphlan.tsv \
   --keep-parent \
   -l "t__" \
@@ -259,7 +259,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved: results/cleaned/species.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17721</data>
+  <data key="d10">9472</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
@@ -267,10 +267,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d4">-776.2442480898716</data>
   <data key="d5">546.1722409662509</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_deliverysupp.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_deliverysupp.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16840</data>
+  <data key="d10">8757</data>
   <data key="d11">0</data>
 </node>
 <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
@@ -278,42 +278,46 @@ df2: 0 / 234 rows lost (0.00%)
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv</data>
-  <data key="d12">407.6323250296591</data>
-  <data key="d13">7.264375224217416</data>
+  <data key="d12">443.8703297894325</data>
+  <data key="d13">9.735148276020155</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; create_mapping.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; create_mapping.py \
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv'</data>
   <data key="d8">Saved combined mapping to results/filtered/mapping.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">18172</data>
+  <data key="d10">11127</data>
   <data key="d11">0</data>
 </node>
 <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
   <data key="d3">mkdir -p results/cleaned</data>
-  <data key="d4">-1501.964042568262</data>
-  <data key="d5">63.55906460583219</data>
+  <data key="d12">-1839.7580677261233</data>
+  <data key="d13">39.807922211920044</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; mkdir -p results/cleaned'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; mkdir -p results/cleaned'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16659</data>
+  <data key="d10">8570</data>
   <data key="d11">0</data>
 </node>
 <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
-  <data key="d3">#rsync -aurvP $data .
+  <data key="d3">rsync -aurvP $data .
 echo setup</data>
-  <data key="d12">-1774.1070999410126</data>
-  <data key="d13">76.73187428072254</data>
+  <data key="d12">-2207.9909005305635</data>
+  <data key="d13">53.74586900768341</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; #rsync -aurvP $data .
+  <data key="d7">bash -c '. env.sh &amp;&amp; rsync -aurvP $data .
 echo setup'</data>
-  <data key="d8">setup
+  <data key="d8">sending incremental file list
+
+sent 5,375 bytes  received 17 bytes  10,784.00 bytes/sec
+total size is 272,325,748  speedup is 50,505.52
+setup
 </data>
   <data key="d9"></data>
-  <data key="d10">16608</data>
+  <data key="d10">8534</data>
   <data key="d11">0</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
@@ -323,7 +327,7 @@ echo setup'</data>
   <data key="d4">-570.2195969161698</data>
   <data key="d5">-497.27790216840276</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; scale.py log \
+  <data key="d7">bash -c '. env.sh &amp;&amp; scale.py log \
   results/cleaned/unlogged_lipids.tsv \
   -o results/cleaned/lipids.tsv'</data>
   <data key="d8">[scale] log1p 'ba_24:1;o3;t': transformed 626/626 (100.0%) non-zero values
@@ -756,37 +760,33 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
 [626 rows x 413 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">17956</data>
+  <data key="d10">9715</data>
   <data key="d11">0</data>
 </node>
 <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
-  <data key="d3">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
+  <data key="d3">wget -q https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
  -O results/census/census.xlsx</data>
-  <data key="d4">-1428.6555060070727</data>
-  <data key="d5">747.1092190437203</data>
+  <data key="d12">-1053.0440229563237</data>
+  <data key="d13">735.7565272830132</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
+  <data key="d7">bash -c '. env.sh &amp;&amp; wget -q https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
  -O results/census/census.xlsx'</data>
   <data key="d8"></data>
-  <data key="d9">
-Redirecting output to ‘wget-log.7’.
-</data>
-  <data key="d10">17169</data>
+  <data key="d9"></data>
+  <data key="d10">72929</data>
   <data key="d11">0</data>
 </node>
 <node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
-  <data key="d3">wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
+  <data key="d3">wget -q https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
   -O results/census/census_labels.xlsx</data>
-  <data key="d4">-1425.9282332798005</data>
-  <data key="d5">814.1546735891758</data>
+  <data key="d12">-1051.2894051764638</data>
+  <data key="d13">802.8019818284687</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
+  <data key="d7">bash -c '. env.sh &amp;&amp; wget -q https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
   -O results/census/census_labels.xlsx'</data>
   <data key="d8"></data>
-  <data key="d9">
-Redirecting output to ‘wget-log.8’.
-</data>
-  <data key="d10">17180</data>
+  <data key="d9"></data>
+  <data key="d10">72930</data>
   <data key="d11">0</data>
 </node>
 <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
@@ -798,10 +798,10 @@ Redirecting output to ‘wget-log.8’.
     --dtype "bool" \
     -o results/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation</data>
-  <data key="d12">-570.0</data>
-  <data key="d13">232.5</data>
+  <data key="d12">-558.6473082392928</data>
+  <data key="d13">264.6659599886703</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
+  <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
   onehot.py \
     results/cleaned/{}.tsv \
     --min-prevalence 0.1 \
@@ -811,33 +811,31 @@ Redirecting output to ‘wget-log.8’.
   ::: education household media_consumption family sanitation'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">17324</data>
+  <data key="d10">9117</data>
   <data key="d11">0</data>
 </node>
 <node id="246364a8-29bd-49c2-a045-ceb068383c79">
   <data key="d3">cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt</data>
-  <data key="d4">-1896.5151515151515</data>
-  <data key="d5">-54.333333333333385</data>
+  <data key="d12">-2483.456457548162</data>
+  <data key="d13">-76.58935246361503</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16611</data>
+  <data key="d10">8535</data>
   <data key="d11">0</data>
 </node>
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
-  <data key="d3">wget -O results/mpa.nwk \
+  <data key="d3">wget -q -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
-  <data key="d4">-1544.7500000000002</data>
-  <data key="d5">359.0714285714284</data>
+  <data key="d12">-1585.4481298234305</data>
+  <data key="d13">292.59781652649235</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; wget -O results/mpa.nwk \
+  <data key="d7">bash -c '. env.sh &amp;&amp; wget -q -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk'</data>
   <data key="d8"></data>
-  <data key="d9">
-Redirecting output to ‘wget-log.6’.
-</data>
-  <data key="d10">16901</data>
+  <data key="d9"></data>
+  <data key="d10">72892</data>
   <data key="d11">0</data>
 </node>
 <node id="694c1739-f526-421a-a8ec-99152294abf4">
@@ -848,16 +846,16 @@ Redirecting output to ‘wget-log.6’.
   <data key="d4">-502.81818181818187</data>
   <data key="d5">-6.025974025974068</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; alpha_diversity.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; alpha_diversity.py \
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv'</data>
-  <data key="d8">Dropping taxa not found in tree: {'5825_group', '17132_group', '14535_group', '5989_group', '17163_group', '6036_group', '9434_group', '5803_group', '9663_group', '14764_group', '17167_group', '15309_group', '7298_group', '19793_group', '8028_group', '6686_group', '7703_group', '14985_group', '11742_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '17244_group', '6927_group', '3926_group', '8059_group', '4553_group', '49305_group', '6028_group', '17158_group', '9737_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '4425_group', '3922_group', '19860_group', '44267_group', '8007_group', '5266_group', '5763_group', '9467_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '8235_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', '17137_group', '17130_group', '14816_group', '1990_group', '4494_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '1536_group', '7088_group', '16971_group', '7121_group', '19290_group', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '4540_group', '8255_group', '19893_group', '8180_group', '8239_group', '7285_group', '14824_group', '19827_group', '19351_group', '8047_group'}
+  <data key="d8">Dropping taxa not found in tree: {'4540_group', '8180_group', '9467_group', '8047_group', '7285_group', '19793_group', '4494_group', '7088_group', '5803_group', '7703_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', '9663_group', '5266_group', '14816_group', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '8059_group', '19290_group', '3922_group', '9737_group', '6927_group', '17244_group', '8255_group', '11742_group', '8235_group', '14764_group', '19860_group', '44267_group', '17158_group', '1536_group', '19893_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '17137_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '8239_group', '4553_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '17132_group', '17163_group', '3926_group', '49305_group', '19351_group', '4425_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '7298_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '15309_group', '17130_group', '5763_group', '5989_group', '5825_group', '14824_group', '16971_group', '6028_group', '17167_group', '9434_group', '1990_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '8028_group', '6036_group', '19827_group', '8007_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', '6686_group', '14985_group', '7121_group', '14535_group'}
 len(common_taxa): 1747
 Alpha diversity table saved to: results/cleaned/alpha_diversity.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17734</data>
+  <data key="d10">9496</data>
   <data key="d11">0</data>
 </node>
 <node id="99a1770b-1153-428d-8172-e783bf221b38">
@@ -867,10 +865,10 @@ filter.py \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/notimedatasets.txt</data>
-  <data key="d12">-107.61904761904759</data>
-  <data key="d13">24.523809523809554</data>
+  <data key="d12">-29.507161417963687</data>
+  <data key="d13">31.556759731610782</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
+  <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
 filter.py \
   -q "~subjectID.str.startswith\(\'\''LCC3\'\''\)" \
   results/cleaned/{}.tsv \
@@ -892,7 +890,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/sanitation.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17818</data>
+  <data key="d10">9558</data>
   <data key="d11">0</data>
 </node>
 <node id="9430f225-f079-4a7f-bfd9-a272b950617f">
@@ -902,10 +900,10 @@ filter.py \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/timedatasets.txt</data>
-  <data key="d12">-103.09523809523813</data>
+  <data key="d12">-42.04804336009278</data>
   <data key="d13">-131.1904761904761</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; parallel -j1 \
+  <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
 filter.py \
   -q "~sampleID.str.startswith\(\'\''LCC3\'\''\)" \
   results/cleaned/{}.tsv \
@@ -925,7 +923,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/lipids.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">18054</data>
+  <data key="d10">10917</data>
   <data key="d11">0</data>
 </node>
 <node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
@@ -933,10 +931,10 @@ filter.py \
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/meta.tsv \
   -o results/filtered/meta.tsv</data>
-  <data key="d12">-102.14285714285715</data>
-  <data key="d13">187.3809523809524</data>
+  <data key="d12">-14.606048299395042</data>
+  <data key="d13">223.61672535196567</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   -q "~subjectID.str.startswith('\''LCC3'\'')" \
   results/cleaned/meta.tsv \
   -o results/filtered/meta.tsv'</data>
@@ -944,20 +942,20 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17557</data>
+  <data key="d10">9331</data>
   <data key="d11">0</data>
 </node>
 <node id="54aa994b-162d-49c0-a6ab-94a10c646e86">
   <data key="d3">rm -rf results/census
 mkdir results/census</data>
-  <data key="d4">-1377.1428571428573</data>
-  <data key="d5">578.5714285714286</data>
+  <data key="d12">-1387.6034346404854</data>
+  <data key="d13">620.4137385619408</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rm -rf results/census
+  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/census
 mkdir results/census'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">16966</data>
+  <data key="d10">8872</data>
   <data key="d11">0</data>
 </node>
 <node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
@@ -965,10 +963,10 @@ mkdir results/census'</data>
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/mothers.tsv \
   -o results/filtered/mothers.tsv</data>
-  <data key="d12">-4.499999999999886</data>
-  <data key="d13">437.1666666666665</data>
+  <data key="d12">-65.84560841103874</data>
+  <data key="d13">551.9247983386248</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   -q "~subjectID.str.startswith('\''LCC3'\'')" \
   results/cleaned/mothers.tsv \
   -o results/filtered/mothers.tsv'</data>
@@ -976,7 +974,7 @@ mkdir results/census'</data>
 [filter] Saved filtered output to: results/filtered/mothers.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17352</data>
+  <data key="d10">9159</data>
   <data key="d11">0</data>
 </node>
 <node id="403c9095-7c10-40b5-b31a-e570ddec6c56">
@@ -984,15 +982,15 @@ mkdir results/census'</data>
   <data key="d4">-761.0</data>
   <data key="d5">602.0</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; format_mothers.py'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; format_mothers.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/tpor598/recovery/code/format_mothers.py:41: SettingWithCopyWarning: 
+  <data key="d9">/home/theo/recovery/code/format_mothers.py:41: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   outdf.loc[:, 'maternal_bmi'] = outdf['Weight'] / ((outdf['Height'] / 100) ** 2)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False  True  True
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False  True  True
   True  True  True  True False False False  True False  True False False
  False  True False False  True False False False  True False False  True
  False False  True False False False False  True False  True  True False
@@ -1019,7 +1017,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True  True False False  True False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True  True  True  True  True  True  True False  True False  True
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True  True  True  True  True  True  True False  True False  True
   True False False  True False False  True  True  True False False  True
  False False  True False  True  True  True  True  True  True  True  True
   True False  True False  True False False  True  True False False  True
@@ -1046,7 +1044,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False  True False  True  True  True  True  True  True  True  True False
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False False False
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False False False
  False False False False False False  True False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -1073,7 +1071,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False False False False False False False False False False
  False False False False False False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True False False  True  True  True  True False False False  True
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True False False  True  True  True  True False False False  True
  False False False False False False  True  True  True False False False
  False False False False  True  True  True False  True  True False  True
   True False False False False False False False False False False  True
@@ -1100,7 +1098,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False  True False False False False False False  True  True False False
   True False False False  True  True  True False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True False  True  True  True  True  True  True  True  True
@@ -1127,7 +1125,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True False  True  True  True  True  True  True  True  True
@@ -1154,7 +1152,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
  False False False False  True  True  True False  True False False False
  False False  True False False  True  True False False False False False
   True  True  True False False  True  True False  True False False False
@@ -1181,7 +1179,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True False False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
  False False False False  True  True False False  True False False False
  False False  True False False  True  True False False False False False
   True  True False False False  True  True False  True False False False
@@ -1208,7 +1206,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True False False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
  False False False False False False False False  True False False False
  False False  True False False  True  True False False False False False
   True  True False False False  True  True False  True False False False
@@ -1235,7 +1233,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True  True False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False False False False False False
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False False False False False False
  False False False False False False False False  True False False False
  False False  True False False  True  True False False False False  True
   True  True False False False  True  True False  True False False False
@@ -1262,7 +1260,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True  True False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True False False  True False  True
+/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True False False  True False  True
   True  True False  True False False False  True False  True  True  True
  False  True False  True  True  True  True  True  True  True False  True
   True  True  True  True  True False  True  True  True  True  True  True
@@ -1290,17 +1288,17 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
 </data>
-  <data key="d10">17000</data>
+  <data key="d10">8908</data>
   <data key="d11">0</data>
 </node>
 <node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
   <data key="d3">unzip -o \
   -d results/aaunzipped \
   data/RE_\ M4EFaD\ amino\ acid\ measurements.zip</data>
-  <data key="d12">-1313.0</data>
-  <data key="d13">-358.0</data>
+  <data key="d12">-1458.1458701850186</data>
+  <data key="d13">-373.8340949292748</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; unzip -o \
+  <data key="d7">bash -c '. env.sh &amp;&amp; unzip -o \
   -d results/aaunzipped \
   data/RE_\ M4EFaD\ amino\ acid\ measurements.zip'</data>
   <data key="d8">Archive:  data/RE_ M4EFaD amino acid measurements.zip
@@ -1308,7 +1306,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  extracting: results/aaunzipped/Results-UPLC_AA_LEAP_Plasma_Oct 2023.xlsx  
 </data>
   <data key="d9"></data>
-  <data key="d10">16985</data>
+  <data key="d10">8898</data>
   <data key="d11">0</data>
 </node>
 <node id="c8ef17dd-f825-46cb-a537-0c32e66b7a2f">
@@ -1320,8 +1318,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d12">1456.7738095238096</data>
-  <data key="d13">305.86904761904754</data>
+  <data key="d12">2389.347330927125</data>
+  <data key="d13">348.4845564834022</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
   splitter.py \
@@ -1378,10 +1376,10 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o results/filtered/anthro_recovery.tsv</data>
-  <data key="d12">369.46428571428646</data>
-  <data key="d13">-149.65079365079328</data>
+  <data key="d12">429.15487612198433</data>
+  <data key="d13">-239.18667926234005</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; assign.py results/filtered/anthro.tsv \
+  <data key="d7">bash -c '. env.sh &amp;&amp; assign.py results/filtered/anthro.tsv \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o results/filtered/anthro_recovery.tsv'</data>
@@ -1393,7 +1391,7 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
 4  LCC1001_6    7.46    72.5  12.8   NaN    -2.32            0            0
 </data>
   <data key="d9"></data>
-  <data key="d10">18523</data>
+  <data key="d10">11135</data>
   <data key="d11">0</data>
 </node>
 <node id="917e5a89-29df-410c-beab-58d165fb20cd">
@@ -1403,25 +1401,49 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
   --timemeta results/filtered/timemeta.tsv \
   -t -2 \
   -o results/filtered/recovery_status_2sd.tsv</data>
-  <data key="d12">831.4339826839841</data>
-  <data key="d13">-372.3856421356422</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; calculate_recovery.py \
+  <data key="d12">831.7668060747244</data>
+  <data key="d13">-321.6792654366441</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
   --meta results/filtered/meta.tsv \
   --timemeta results/filtered/timemeta.tsv \
   -t -2 \
   -o results/filtered/recovery_status_2sd.tsv'</data>
-  <data key="d8">Recovery_status
-Sustained recovery      91
-Unsustained recovery    43
-No recovery             22
-Delayed recovery         3
-Name: count, dtype: int64
+  <data key="d8"></data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/theo/recovery/code/calculate_recovery.py", line 125, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/code/calculate_recovery.py", line 60, in main
+    timemeta = pd.read_csv(args.timemeta, sep="\t", index_col=0)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
 </data>
-  <data key="d9"></data>
-  <data key="d10">19859</data>
-  <data key="d11">0</data>
+  <data key="d10">11199</data>
+  <data key="d11">1</data>
 </node>
 <node id="c37322cc-afdd-467c-8196-b63a5fa7541a">
   <data key="d3">calculate_recovery.py \
@@ -1430,46 +1452,109 @@ Name: count, dtype: int64
   --timemeta results/filtered/timemeta.tsv \
   -t -1 \
   -o results/filtered/recovery_status_1sd.tsv</data>
-  <data key="d12">834.7673160173175</data>
-  <data key="d13">-212.38564213564217</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; calculate_recovery.py \
+  <data key="d12">838.8371289996604</data>
+  <data key="d13">-179.82713827689787</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
   --meta results/filtered/meta.tsv \
   --timemeta results/filtered/timemeta.tsv \
   -t -1 \
   -o results/filtered/recovery_status_1sd.tsv'</data>
-  <data key="d8">Recovery_status
-No recovery             94
-Unsustained recovery    45
-Sustained recovery      17
-Delayed recovery         3
-Name: count, dtype: int64
+  <data key="d8"></data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/theo/recovery/code/calculate_recovery.py", line 125, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/code/calculate_recovery.py", line 60, in main
+    timemeta = pd.read_csv(args.timemeta, sep="\t", index_col=0)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
 </data>
-  <data key="d9"></data>
-  <data key="d10">19934</data>
-  <data key="d11">0</data>
+  <data key="d10">11225</data>
+  <data key="d11">1</data>
 </node>
 <node id="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
   <data key="d3">join.py \
   results/filtered/meta.tsv \
   results/timepoints/0/anthro.tsv \
   -o results/filtered/covmeta_norename.tsv</data>
-  <data key="d12">761.4339826839844</data>
-  <data key="d13">50.94769119769114</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; join.py \
+  <data key="d12">1174.0893268637583</data>
+  <data key="d13">192.74146736082918</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; join.py \
   results/filtered/meta.tsv \
   results/timepoints/0/anthro.tsv \
   -o results/filtered/covmeta_norename.tsv'</data>
-  <data key="d8">Join summary
-------------
-df1: 0 / 234 rows lost (0.00%)
-df2: 0 / 234 rows lost (0.00%)
+  <data key="d8"></data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 164, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 147, in main
+    merged_df, stats = join_dataframes(
+                       ~~~~~~~~~~~~~~~^
+        file1=args.file1,
+        ^^^^^^^^^^^^^^^^^
+    ...&lt;5 lines&gt;...
+        suffixes=suffixes
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 68, in join_dataframes
+    df2 = load(file2)
+  File "/home/theo/recovery/metatoolkit/metatoolkit/join.py", line 18, in load
+    return pd.read_csv(f'results/{filepath}.tsv', sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/results/timepoints/0/anthro.tsv.tsv'
 </data>
-  <data key="d9"></data>
-  <data key="d10">31499</data>
-  <data key="d11">0</data>
+  <data key="d10">11268</data>
+  <data key="d11">1</data>
 </node>
 <node id="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
   <data key="d3">rename_regex.py \
@@ -1477,8 +1562,8 @@ df2: 0 / 234 rows lost (0.00%)
   --match 'WLZ_WHZ' \
   --replace 'baseline_WLZ' \
   -o results/filtered/covmeta.tsv</data>
-  <data key="d12">931.4339826839844</data>
-  <data key="d13">185.94769119769123</data>
+  <data key="d12">1556.058321756678</data>
+  <data key="d13">265.1915169031331</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; rename_regex.py \
   results/filtered/covmeta_norename.tsv \
@@ -1496,8 +1581,8 @@ df2: 0 / 234 rows lost (0.00%)
   results/filtered/covmeta.tsv \
   -q "Condition == 'MAM'" \
   -o results/filtered/covmeta_MAM.tsv</data>
-  <data key="d12">1459.6461038961056</data>
-  <data key="d13">142.03860028860012</data>
+  <data key="d12">2031.3628741983398</data>
+  <data key="d13">240.27488657830946</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; filter.py \
   results/filtered/covmeta.tsv \
@@ -1509,6 +1594,261 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d9"></data>
   <data key="d10">39113</data>
   <data key="d11">0</data>
+</node>
+<node id="b8683318-306c-481f-bd22-c488428579c8">
+  <data key="d3">for f in $(cat conf/timedatasets.txt); do
+  splitter.py \
+    results/cleaned/${f}.tsv \
+    -m results/filtered/timemeta.tsv \
+    -col timepoint \
+    --outdir results/timepoints \
+    --reindex subjectID 
+done</data>
+  <data key="d12">781.2999917828053</data>
+  <data key="d13">60.595702444062326</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
+  splitter.py \
+    results/cleaned/${f}.tsv \
+    -m results/filtered/timemeta.tsv \
+    -col timepoint \
+    --outdir results/timepoints \
+    --reindex subjectID 
+done'</data>
+  <data key="d8"></data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/theo/recovery/metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/metatoolkit/metatoolkit/splitter.py", line 85, in main
+    df2 = load(args.df2) if args.df2 else None
+          ~~~~^^^^^^^^^^
+  File "/home/theo/recovery/metatoolkit/metatoolkit/splitter.py", line 11, in load
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+Traceback (most recent call last):
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
+    df2 = load(args.df2) if args.df2 else None
+          ~~~~^^^^^^^^^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+Traceback (most recent call last):
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
+    df2 = load(args.df2) if args.df2 else None
+          ~~~~^^^^^^^^^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+Traceback (most recent call last):
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
+    df2 = load(args.df2) if args.df2 else None
+          ~~~~^^^^^^^^^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+Traceback (most recent call last):
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
+    df2 = load(args.df2) if args.df2 else None
+          ~~~~^^^^^^^^^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+Traceback (most recent call last):
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 99, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 85, in main
+    df2 = load(args.df2) if args.df2 else None
+          ~~~~^^^^^^^^^^
+  File "/home/theo/recovery/./metatoolkit/metatoolkit/splitter.py", line 11, in load
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...&lt;6 lines&gt;...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/theo/recovery/venv/lib/python3.14/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...&lt;3 lines&gt;...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'results/filtered/timemeta.tsv'
+</data>
+  <data key="d10">78013</data>
+  <data key="d11">1</data>
+</node>
+<node id="3213ed29-410e-427a-b65c-8b3210baf978">
+  <data key="d3">#Need to clean this
+# Just looking at MAM kids
+filter.py results/filtered/timemeta.tsv \
+  -q 'timepoint == 0 or timepoint == 52' \
+  -q 'Condition == "MAM"' \
+  -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
+  -o results/filtered/timemeta_MAM_0_52tp.tsv
+
+replace.py \
+  results/filtered/timemeta_MAM_0_52tp.tsv \
+  --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
+  --output results/filtered/timemeta_MAM_yr1_yr2.tsv
+
+filter.py results/filtered/meta.tsv \
+  -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
+  -o results/filtered/meta_MAM.tsv
+
+# All kids
+filter.py results/filtered/timemeta.tsv \
+  -q 'timepoint == 0 or timepoint == 52' \
+  -o results/filtered/timemeta_0_52tp.tsv</data>
+  <data key="d12">845.0196095268417</data>
+  <data key="d13">471.478026301713</data>
+  <data key="d6"></data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
   <data key="d14">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
@@ -1598,8 +1938,12 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d14">fdfc6835-7b55-46f0-94d3-33d226263349</data>
   <data key="d15"></data>
 </edge>
-<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
-  <data key="d14">f6063aff-dbc4-483b-a273-d619c5977ef1</data>
+<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="b8683318-306c-481f-bd22-c488428579c8">
+  <data key="d14">7b8f8813-908d-42f3-b476-8f3605dca875</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83" target="3213ed29-410e-427a-b65c-8b3210baf978">
+  <data key="d14">73bb56f6-a152-40ad-8e29-0c0f987ae1b1</data>
   <data key="d16">blocking</data>
 </edge>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
@@ -1706,6 +2050,7 @@ df2: 0 / 234 rows lost (0.00%)
 <edge source="9430f225-f079-4a7f-bfd9-a272b950617f" target="59608939-75a1-465d-8553-fd4809c332ef">
   <data key="d14">34070e4b-4585-4ead-9de4-3eba182b5081</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="67d6bf85-2665-4c80-b457-43e490d6fe20" target="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
   <data key="d14">4c7aeb83-25d1-41eb-bc63-c6d802335bca</data>
@@ -1734,10 +2079,12 @@ df2: 0 / 234 rows lost (0.00%)
 <edge source="59608939-75a1-465d-8553-fd4809c332ef" target="917e5a89-29df-410c-beab-58d165fb20cd">
   <data key="d14">390a2492-96fa-4319-90e0-b5c1d9850024</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="59608939-75a1-465d-8553-fd4809c332ef" target="c37322cc-afdd-467c-8196-b63a5fa7541a">
   <data key="d14">b60ec0cd-2491-4e47-9137-ee0ab55a7569</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="ede9a0cc-c58b-4784-93e4-54a3a68f0825" target="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
   <data key="d14">4794e2b0-d976-4dbc-95ed-f8ca4e1339c1</data>
@@ -1749,6 +2096,10 @@ df2: 0 / 234 rows lost (0.00%)
 </edge>
 <edge source="956e9a61-fae1-4e44-aef5-5cbd2df9f378" target="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
   <data key="d14">9ad07ecb-233e-4461-933b-e5226f0788dd</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="b8683318-306c-481f-bd22-c488428579c8" target="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
+  <data key="d14">3e172a3f-2ffa-4ae4-8784-6ae97d61c9bf</data>
   <data key="d16">blocking</data>
 </edge>
 </graph></graphml>

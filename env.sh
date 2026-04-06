@@ -2,13 +2,13 @@
 # Environment setup for fellowship project
 
 # Data path
-export data="/mnt/d/fellowship/m4efad/recovery/data"
+#export data="/mnt/d/fellowship/m4efad/recovery/data"
+export data="/run/media/theo/maindrive/fellowship/m4efad/recovery/data"
 
 # Add project paths to PATH
 export PATH="code/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"
 export PATH="maaslin3/R/:$PATH"
-export PATH="digital_twin/scripts/:$PATH"
 
 # Activate environment
 #source ~/miniconda3/etc/profile.d/conda.sh
