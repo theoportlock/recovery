@@ -61,7 +61,7 @@ line(df, 'timepoint', 'Weight', 'Recovery', axs[2])
 # Layout tweaks
 plt.subplots_adjust(wspace=0.4)
 plt.tight_layout()
-plt.savefig('results/figure1/anthro_time.svg')
+plt.savefig('results/recovery_rates/anthro_time.svg')
 
 
 '''

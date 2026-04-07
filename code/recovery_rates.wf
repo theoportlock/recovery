@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="status" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d13" for="edge" attr.name="status" attr.type="string"/>
 <key id="d12" for="edge" attr.name="id" attr.type="string"/>
 <key id="d11" for="node" attr.name="error_code" attr.type="string"/>
 <key id="d10" for="node" attr.name="pid" attr.type="string"/>
@@ -96,11 +97,10 @@ box.py \
   <data key="d11">0</data>
 </node>
 <node id="6eaccd10-48fb-45f8-bf1d-07831d27c76a">
-  <data key="d3"># FIGURE 1
-rm -rf results/figure1
-mkdir -p results/figure1</data>
-  <data key="d4">-405.7703065352385</data>
-  <data key="d5">113.51671931665464</data>
+  <data key="d3">rm -rf results/recovery_rates
+mkdir -p results/recovery_rates</data>
+  <data key="d4">-519.491443679945</data>
+  <data key="d5">77.90707031174657</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1
 rm -rf results/figure1
@@ -143,6 +143,18 @@ box.py \
   <data key="d10">20125</data>
   <data key="d11">0</data>
 </node>
+<node id="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
+  <data key="d3">table2_who_refeed_recovery.sh</data>
+  <data key="d4">-239.7400969107104</data>
+  <data key="d5">223.02996935764455</data>
+  <data key="d6"></data>
+</node>
+<node id="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
+  <data key="d3">table2_refeed_recovery.sh</data>
+  <data key="d4">-180.21915550401866</data>
+  <data key="d5">298.3159305646946</data>
+  <data key="d6"></data>
+</node>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d12">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
   <data key="d13"></data>
@@ -162,5 +174,13 @@ box.py \
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
   <data key="d12">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
   <data key="d13"></data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
+  <data key="d12">3e46d63d-47f2-4822-b853-845a66df87e1</data>
+  <data key="d14">blocking</data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
+  <data key="d12">efa7f1b2-1fd5-4e49-8a1b-8acee9077e2c</data>
+  <data key="d14">blocking</data>
 </edge>
 </graph></graphml>

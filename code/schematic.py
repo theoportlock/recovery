@@ -75,6 +75,6 @@ ax.text(4.8, 5.29, "• Polygenic risk scores (PRS)", fontsize=8, va='top')
 ax.text(9.8, 0.2, "Covariates: Sex, Delivery mode, Place of birth", ha='right', fontsize=8)
 
 # Save
-svg_path = "results/figure1/study_timeline_subplot.svg"
+svg_path = "results/recovery_rates/study_timeline_subplot.svg"
 fig.savefig(svg_path, bbox_inches="tight")
 

@@ -296,171 +296,11 @@ mkdir -p results/figure2/maaslin/{baseline,change}</data>
   <data key="d5">-1999.0629508677494</data>
   <data key="d6"></data>
 </node>
-<node id="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
-  <data key="d3"># TABLE 2
-table2_refeed_recovery.sh</data>
-  <data key="d4">824.68365329545</data>
-  <data key="d5">-671.2039006023904</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 2
-table2_refeed_recovery.sh'</data>
-  <data key="d8">✅ Table 1 saved to results/table2/work/descriptive/recovery_status_oh.tsv
-Saved 7 rows × 3 columns to results/table2/work/merged.tsv
-Saved 159 rows × 7 columns to results/table2/work/data_merged.tsv
-[filter] Dtype 'bool' columns: kept 6/7
-[filter] Saved filtered output to: results/table2/work/MAM_recovery_stats/categories.tsv
-[filter] Dtype 'number' columns: kept 1/7
-[filter] Saved filtered output to: results/table2/work/MAM_recovery_stats/numbers.tsv
-No valid correlations found.
-[INFO] Dropped 85 rows with missing values (159 → 74).
-[INFO] Generated 8 test results.
-[INFO] Dropped 0 rows with missing values (159 → 159).
-[INFO] Generated 30 Fisher tests.
-Saved 38 rows × 4 columns to results/table2/work/MAM_recovery_stats/merged_stats.tsv
-Saved 22 rows × 4 columns to results/table2/work/merged_stats.tsv
-Saved 7 rows × 3 columns to results/table2/work/merged_stats.tsv
-</data>
-  <data key="d9">code/table2_refeed_recovery.sh: line 15: select.py: command not found
-code/table2_refeed_recovery.sh: line 20: select.py: command not found
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/onehot.py", line 146, in &lt;module&gt;
-    main()
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/onehot.py", line 109, in main
-    df = load(args.subject)
-         ^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/onehot.py", line 15, in load
-    return pd.read_csv(f"results/{subject}.tsv", sep="\t", index_col=0)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2/work/selected/meta_MAM.tsv.tsv'
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/code/descriptive.py", line 142, in &lt;module&gt;
-    main()
-  File "/home/tpor598/recovery/code/descriptive.py", line 123, in main
-    df = pd.read_csv(args.input, sep="\t", index_col=0)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/table2/work/formatted/meta_MAM_oh.tsv'
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/./code/descriptive.py", line 142, in &lt;module&gt;
-    main()
-  File "/home/tpor598/recovery/./code/descriptive.py", line 123, in main
-    df = pd.read_csv(args.input, sep="\t", index_col=0)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/table2/work/formatted/surveillance.tsv'
-⚠️ No files matched: results/table2/work/descriptive/surveillance_fixed.tsv
-⚠️ No files matched: results/table2/work/formatted/meta_MAM_oh.tsv
-⚠️ No files matched: results/table2/work/formatted/surveillance.tsv
-⚠️ No files matched: results/table2/work/MAM_recovery_stats/corr.tsv
-usage: filter.py [-h] [-o OUTPUT] [-fdf FILTER_DF] [-fdfx FILTER_DF_AXIS]
-                 [--column COLUMN] [-rf ROWFILT] [-cf COLFILT] [-p PREVAIL]
-                 [-a ABUND] [--dropna {rows,cols,both}] [--nonzero]
-                 [--min_nonzero_rows MIN_NONZERO_ROWS]
-                 [--min_nonzero_cols MIN_NONZERO_COLS] [--numeric_only]
-                 [--dtype DTYPE] [-q QUERY]
-                 input
-filter.py: error: argument --dropna: expected one argument
-code/table2_refeed_recovery.sh: line 64: select.py: command not found
-⚠️ No files matched: results/table2/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 80, in &lt;module&gt;
-    df = load_dataframe(args.subject)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 50, in load_dataframe
-    return pd.read_csv(path, sep="\t", index_col=0)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2/work/descriptive/surveillance.tsv.tsv'
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/rename_regex.py", line 80, in &lt;module&gt;
-    df = load_dataframe(args.subject)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/rename_regex.py", line 50, in load_dataframe
-    return pd.read_csv(path, sep="\t", index_col=0)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2/work/descriptive/surveillance_fixed.tsv.tsv'
-⚠️ No files matched: results/table2/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
-</data>
-  <data key="d10">29644</data>
-  <data key="d11">0</data>
-</node>
 <node id="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
   <data key="d3"># TABLE 3
 table3_recovery.sh</data>
-  <data key="d4">1144.0950853289614</data>
-  <data key="d5">-889.5693497834852</data>
+  <data key="d4">753.5376446299692</data>
+  <data key="d5">-586.3129840642675</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 3
 table3_recovery.sh'</data>
@@ -687,8 +527,8 @@ results/pcoa/{}.tsv \
   -x Recovery \
   -y 'aspartic_acid' \
   --output results/tmp.svg</data>
-  <data key="d4">5287.649988651662</data>
-  <data key="d5">-1963.0827066782415</data>
+  <data key="d4">5256.448089120366</data>
+  <data key="d5">-1949.5166634037646</data>
   <data key="d6"></data>
 </node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
@@ -875,159 +715,6 @@ mkdir -p results/figure3/maaslin/healthy/change</data>
   <data key="d4">1212.4616666666668</data>
   <data key="d5">794.6433333333334</data>
   <data key="d6"></data>
-</node>
-<node id="ce5ca375-de80-45f9-9b57-4a9031407eae">
-  <data key="d3">table2_who_refeed_recovery.sh</data>
-  <data key="d4">831.1081017789903</data>
-  <data key="d5">-907.190741646564</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; table2_who_refeed_recovery.sh'</data>
-  <data key="d8">✅ Table 1 saved to results/table2_plus/work/descriptive/recovery_status_oh.tsv
-Saved 7 rows × 3 columns to results/table2_plus/merged.tsv
-Saved 159 rows × 7 columns to results/table2_plus/data_merged.tsv
-[filter] Dtype 'bool' columns: kept 6/7
-[filter] Saved filtered output to: results/table2_plus/MAM_recovery_stats/categories.tsv
-[filter] Dtype 'number' columns: kept 1/7
-[filter] Saved filtered output to: results/table2_plus/MAM_recovery_stats/numbers.tsv
-No valid correlations found.
-[INFO] Dropped 85 rows with missing values (159 → 74).
-[INFO] Generated 8 test results.
-[INFO] Dropped 0 rows with missing values (159 → 159).
-[INFO] Generated 30 Fisher tests.
-Saved 38 rows × 4 columns to results/table2_plus/MAM_recovery_stats/merged_stats.tsv
-[filter] Query '(source == "Feed, ERUSF (B)")': kept 0/38
-[filter] All rows and columns filtered out.
-Saved 7 rows × 3 columns to results/table2_plus/merged_stats.tsv
-</data>
-  <data key="d9">code/table2_who_refeed_recovery.sh: line 16: select.py: command not found
-code/table2_who_refeed_recovery.sh: line 21: select.py: command not found
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/onehot.py", line 146, in &lt;module&gt;
-    main()
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/onehot.py", line 109, in main
-    df = load(args.subject)
-         ^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/onehot.py", line 15, in load
-    return pd.read_csv(f"results/{subject}.tsv", sep="\t", index_col=0)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2/work/selected/meta_MAM.tsv.tsv'
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/code/descriptive.py", line 142, in &lt;module&gt;
-    main()
-  File "/home/tpor598/recovery/code/descriptive.py", line 123, in main
-    df = pd.read_csv(args.input, sep="\t", index_col=0)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/table2_plus/formatted/meta_MAM_oh.tsv'
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/./code/descriptive.py", line 142, in &lt;module&gt;
-    main()
-  File "/home/tpor598/recovery/./code/descriptive.py", line 123, in main
-    df = pd.read_csv(args.input, sep="\t", index_col=0)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/table2_plus/formatted/surveillance.tsv'
-⚠️ No files matched: results/table2_plus/work/descriptive/surveillance_fixed.tsv
-⚠️ No files matched: results/table2_plus/formatted/meta_MAM_oh.tsv
-⚠️ No files matched: results/table2_plus/formatted/surveillance.tsv
-⚠️ No files matched: results/table2_plus/MAM_recovery_stats/corr.tsv
-code/table2_who_refeed_recovery.sh: line 64: select.py: command not found
-⚠️ No files matched: results/table2_plus/work/merged.tsv
-⚠️ No files matched: results/table2_plus/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
-❌ No valid input files found.
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 80, in &lt;module&gt;
-    df = load_dataframe(args.subject)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 50, in load_dataframe
-    return pd.read_csv(path, sep="\t", index_col=0)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_plus/descriptive/surveillance.tsv.tsv'
-Traceback (most recent call last):
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/rename_regex.py", line 80, in &lt;module&gt;
-    df = load_dataframe(args.subject)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/./metatoolkit/metatoolkit/rename_regex.py", line 50, in load_dataframe
-    return pd.read_csv(path, sep="\t", index_col=0)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/results/table2_plus/descriptive/surveillance_fixed.tsv.tsv'
-⚠️ No files matched: results/table2_plus/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
-</data>
-  <data key="d10">29641</data>
-  <data key="d11">0</data>
 </node>
 <node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
   <data key="d3">hbar_fig3.py</data>
@@ -1346,20 +1033,12 @@ done (c8ef17dd-f825-46cb-a537-0c32e66b7a2f)
 <edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275"/>
 <edge source="6d46e087-86b7-44f4-8268-e04ad35f3275" target="1da8a511-5367-4a80-8510-06464399deb8"/>
 <edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655"/>
-<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="69c740d1-a5bd-40aa-a82c-bc90d7d60e31">
-  <data key="d14">b09f1c79-7341-48ff-ba82-f4d341fc3569</data>
-  <data key="d15"></data>
-</edge>
-<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="ce5ca375-de80-45f9-9b57-4a9031407eae">
-  <data key="d14">8be7e369-8b65-409c-b408-b331e5b4df7a</data>
-  <data key="d15"></data>
+<edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
+  <data key="d14">7a7985ce-6fda-45c7-b81e-483dc97e37d8</data>
+  <data key="d16">blocking</data>
 </edge>
 <edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>
 <edge source="926989e3-4fb3-4348-8185-838470b98d88" target="b9e51f29-7332-42a9-be8b-fa6f59d43632"/>
-<edge source="69c740d1-a5bd-40aa-a82c-bc90d7d60e31" target="3ba3228e-4e20-41bb-bd3d-f5d95e54ea64">
-  <data key="d14">96b04ed6-5e94-45fa-9fbc-fff7f0219a3b</data>
-  <data key="d15"></data>
-</edge>
 <edge source="b9e51f29-7332-42a9-be8b-fa6f59d43632" target="445f4183-2221-42ae-80fe-cfa8e3da2000"/>
 <edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8"/>
 <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9"/>
