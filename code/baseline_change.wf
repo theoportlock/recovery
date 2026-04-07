@@ -15,21 +15,21 @@
 </data>
 <data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
-  <data key="d3">for d in results/figure2/maaslin/baseline/*/; do
+  <data key="d3">for d in results/baseline_change/maaslin/baseline/*/; do
     name=$(basename "$d")
-    cp "$d/all_results.tsv" "results/figure2/maaslin/change/$name.tsv"
+    cp "$d/all_results.tsv" "results/baseline_change/maaslin/change/$name.tsv"
 done</data>
-  <data key="d4">1643.084097731004</data>
-  <data key="d5">-112.87849787681807</data>
+  <data key="d4">1562.0509814463112</data>
+  <data key="d5">-94.1785479649659</data>
   <data key="d6"></data>
 </node>
 <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
-  <data key="d3">merge.py results/figure2/maaslin/change/*.tsv \
+  <data key="d3">merge.py results/baseline_change/maaslin/change/*.tsv \
   --append \
   --add-filename \
-  -o results/figure2/maaslin/baselinechange.tsv</data>
-  <data key="d4">2443.661575208157</data>
-  <data key="d5">-113.0445440225094</data>
+  -o results/baseline_change/maaslin/baselinechange.tsv</data>
+  <data key="d4">2362.628458923464</data>
+  <data key="d5">-94.34459411065723</data>
   <data key="d6"></data>
 </node>
 <node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
@@ -39,16 +39,16 @@ done</data>
   --func mean \
   --group_by 'Recovery' \
   -o results/filtered/genetics_mean.tsv</data>
-  <data key="d4">2214.980550839493</data>
-  <data key="d5">888.4053883911703</data>
+  <data key="d4">2314.9601581918914</data>
+  <data key="d5">362.4257149285519</data>
   <data key="d6"></data>
 </node>
 <node id="1da8a511-5367-4a80-8510-06464399deb8">
   <data key="d3">polar.py \
   results/filtered/genetics_mean_sort.tsv \
   -o results/genetics_recovery.svg</data>
-  <data key="d4">3134.0893997736594</data>
-  <data key="d5">933.473418975025</data>
+  <data key="d4">3234.069007126058</data>
+  <data key="d5">407.4937455124066</data>
   <data key="d6"></data>
 </node>
 <node id="6d46e087-86b7-44f4-8268-e04ad35f3275">
@@ -56,16 +56,16 @@ done</data>
   results/filtered/genetics_mean.tsv \
   --ascending \
   -o results/filtered/genetics_mean_sort.tsv</data>
-  <data key="d4">2644.313884172825</data>
-  <data key="d5">906.7387217245038</data>
+  <data key="d4">2744.2934915252235</data>
+  <data key="d5">380.75904826188537</data>
   <data key="d6"></data>
 </node>
 <node id="6cd59c60-d8fe-4449-be43-29f53856493e">
   <data key="d3">scale.py standard \
   results/filtered/genetics.tsv \
   -o results/filtered/genetics_standard.tsv</data>
-  <data key="d4">1799.9805508394932</data>
-  <data key="d5">924.4053883911703</data>
+  <data key="d4">1899.9601581918919</data>
+  <data key="d5">398.4257149285519</data>
   <data key="d6"></data>
 </node>
 <node id="926989e3-4fb3-4348-8185-838470b98d88">
@@ -77,29 +77,30 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}</data>
 </node>
 <node id="b9e51f29-7332-42a9-be8b-fa6f59d43632">
   <data key="d3">maaslin3_baseline.sh</data>
-  <data key="d4">1260.0220250835841</data>
-  <data key="d5">-99.30928435708165</data>
+  <data key="d4">1276.3012770129565</data>
+  <data key="d5">-88.45644973750015</data>
   <data key="d6"></data>
 </node>
 <node id="9a55d674-5bb9-4a2b-81b5-acd2da8e2533">
-  <data key="d3">box.py \
-   results/maaslin/baseline/aa/features/data_transformed.tsv \
+  <data key="d3">echoneed to fix
+#box.py \
+   results//aa/features/data_transformed.tsv \
   --meta results/filtered/timemeta.tsv \
   -x Recovery \
   -y 'aspartic_acid' \
   --output results/tmp.svg</data>
-  <data key="d4">3019.652250966823</data>
-  <data key="d5">-61.53788866798914</data>
+  <data key="d4">2938.61913468213</data>
+  <data key="d5">-42.837938756136936</data>
   <data key="d6"></data>
 </node>
 <node id="33d300dc-659b-413b-92d8-d1c10e4840aa">
   <data key="d3">sig_summary.py \
-  -i results/figure2/maaslin/baselinechange.tsv \
+  -i results/baseline_change/maaslin/baselinechange.tsv \
   -p 0.1 \
   -s qval_joint \
-  -o results/figure2/maaslin/baselinechange_summary.tsv</data>
-  <data key="d4">3049.9447828273815</data>
-  <data key="d5">-320.1281285549367</data>
+  -o results/baseline_change/maaslin/baselinechange_summary.tsv</data>
+  <data key="d4">2968.9116665426886</data>
+  <data key="d5">-301.4281786430845</data>
   <data key="d6"></data>
 </node>
 <node id="49657f96-8f43-4c5b-abc7-95c75b9c3e3d">
@@ -130,8 +131,8 @@ merge.py \
   --sep ":" \
   -j outer \
   -o results/merged_dataset.tsv</data>
-  <data key="d4">1219.4651855542454</data>
-  <data key="d5">810.0547524411337</data>
+  <data key="d4">1327.7117415366506</data>
+  <data key="d5">245.69281748205515</data>
   <data key="d6"></data>
 </node>
 <node id="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
@@ -140,8 +141,8 @@ merge.py \
   --labels days_of_catchup \
   --axis 1 \
   --outfile results/filtered/surveillance_minus_catchup.tsv </data>
-  <data key="d4">626.6591222680615</data>
-  <data key="d5">889.274436010218</data>
+  <data key="d4">726.6387296204601</data>
+  <data key="d5">363.2947625475996</data>
   <data key="d6"></data>
 </node>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
