@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d8" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d7" for="edge" attr.name="id" attr.type="string"/>
+<key id="d6" for="node" attr.name="status" attr.type="string"/>
+<key id="d5" for="node" attr.name="y" attr.type="string"/>
+<key id="d4" for="node" attr.name="x" attr.type="string"/>
+<key id="d3" for="node" attr.name="label" attr.type="string"/>
+<key id="d2" for="graph" attr.name="wrapper" attr.type="string"/>
+<key id="d1" for="graph" attr.name="suffix" attr.type="string"/>
+<key id="d0" for="graph" attr.name="prefix" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">bash -c '. env.sh 
+</data>
+<data key="d1">'
+
+</data>
+<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
+<node id="14b716fa-cb0b-4379-9727-7769f1510a88">
+  <data key="d3">multiline.py \
+  --subject results/maaslin/time/species/features/data_transformed.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --x timepoint \
+  --y 'Allisonella_histaminiformans|SGB5843' \
+  --hue Recovery \
+  --id subjectID \
+  --output results/tmp2.svg</data>
+  <data key="d4">2831.456848743881</data>
+  <data key="d5">380.76754765817</data>
+  <data key="d6"></data>
+</node>
+<node id="a92b7548-e188-4cb2-a3bf-7c3c46d70f28">
+  <data key="d3">maaslin3_healthy.sh</data>
+  <data key="d4">1024.4383606380684</data>
+  <data key="d5">135.51891443604666</data>
+  <data key="d6"></data>
+</node>
+<node id="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d3">for d in results/figure3/maaslin/healthy/*/; do
+    name=$(basename "$d")
+    cp "$d/all_results.tsv" "results/figure3/maaslin/healthy/change/$name.tsv"
+done</data>
+  <data key="d4">1370.7514919511996</data>
+  <data key="d5">93.63002554715797</data>
+  <data key="d6"></data>
+</node>
+<node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
+  <data key="d3">merge.py results/figure3/maaslin/healthy/change/*.tsv \
+  --append \
+  --add-filename \
+  -o results/figure3/timechange.tsv</data>
+  <data key="d4">2172.8348252845344</data>
+  <data key="d5">91.963358880491</data>
+  <data key="d6"></data>
+</node>
+<node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
+  <data key="d3">sig_summary.py \
+  -i results/figure3/timechange.tsv \
+  -p 0.1 \
+  -s qval_joint \
+  -o results/figure3/timechange_summary.tsv</data>
+  <data key="d4">3063.1919681416775</data>
+  <data key="d5">235.13002554715843</data>
+  <data key="d6"></data>
+</node>
+<node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
+  <data key="d3">rm -rf results/healthy_change/maaslin/healthy/change
+mkdir -p results/healthy_change/maaslin/healthy/change</data>
+  <data key="d4">405.9023906976413</data>
+  <data key="d5">127.36596147478042</data>
+  <data key="d6"></data>
+</node>
+<node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
+  <data key="d3">hbar_fig3.py</data>
+  <data key="d4">2987.441527506595</data>
+  <data key="d5">136.72453074490048</data>
+  <data key="d6"></data>
+</node>
+<node id="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a">
+  <data key="d3">filter.py \
+  results/figure3/timechange.tsv \
+  -q "error.isna()" \
+  -o results/figure3/timechange_filter.tsv</data>
+  <data key="d4">2782.481491951199</data>
+  <data key="d5">5.196692213825031</data>
+  <data key="d6"></data>
+</node>
+<node id="dd6c7194-194c-40ae-90f3-cc8c22c608b2">
+  <data key="d3">for d in sleep species pathways alpha_diversity head anthro aa vitamin
+do
+  overall_recovery.py "$d"
+done</data>
+  <data key="d4">909.5040632551355</data>
+  <data key="d5">380.77744046225627</data>
+  <data key="d6"></data>
+</node>
+<node id="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
+  <data key="d3">merge.py \
+  results/figure3/*recovery.tsv \
+  -a \
+  -o results/figure3/rec_merged.tsv</data>
+  <data key="d4">1556.6043274476783</data>
+  <data key="d5">387.56046209949477</data>
+  <data key="d6"></data>
+</node>
+<node id="05b34ebc-bb72-4db1-835f-78a960acfc33">
+  <data key="d3">hbar_fig3.py</data>
+  <data key="d4">1903.8950352742763</data>
+  <data key="d5">405.19631835631355</data>
+  <data key="d6"></data>
+</node>
+<edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>
+<edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1"/>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a"/>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28"/>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="dd6c7194-194c-40ae-90f3-cc8c22c608b2">
+  <data key="d7">dbb8a4ae-8b49-486a-ba9a-0af8e8964845</data>
+  <data key="d8">blocking</data>
+</edge>
+<edge source="dd6c7194-194c-40ae-90f3-cc8c22c608b2" target="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
+  <data key="d7">0f4662a5-f1b2-4e3d-9816-578663383ce4</data>
+  <data key="d8">blocking</data>
+</edge>
+<edge source="5defd7d3-4b19-4373-b1a3-f86d754e39ce" target="05b34ebc-bb72-4db1-835f-78a960acfc33">
+  <data key="d7">5ec4fadc-7ce9-4500-9775-a87dadc6bd8c</data>
+  <data key="d8">blocking</data>
+</edge>
+</graph></graphml>

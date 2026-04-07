@@ -1667,8 +1667,7 @@ filter.py results/filtered/timemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -q 'Condition == "MAM"' \
   -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
-  -o results/filtered/timemeta_MAM_0_52tp.tsv
-</data>
+  -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
   <data key="d12">1401.5384793269047</data>
   <data key="d13">958.8174846879938</data>
   <data key="d6">ran</data>
@@ -1701,6 +1700,45 @@ filter.py results/filtered/timemeta.tsv \
 </data>
   <data key="d9"></data>
   <data key="d10">3878</data>
+  <data key="d11">0</data>
+</node>
+<node id="dbadb780-4ac4-4f97-a957-6ccfdff72a53">
+  <data key="d3">filter.py \
+	results/filtered/timemetaMAM_0_52tp_filled.tsv \
+	-q 'timepoint == 0' \
+	-o results/filtered/timemetaMAM_0tp_filled.tsv</data>
+  <data key="d12">2397.933176002863</data>
+  <data key="d13">965.772092891393</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
+	results/filtered/timemetaMAM_0_52tp_filled.tsv \
+	-q '\''timepoint == 0'\'' \
+	-o results/filtered/timemetaMAM_0tp_filled.tsv'</data>
+  <data key="d8">[filter] Query '(timepoint == 0)': kept 151/302
+[filter] Saved filtered output to: results/filtered/timemetaMAM_0tp_filled.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">7376</data>
+  <data key="d11">0</data>
+</node>
+<node id="1ad890ad-0576-4bc3-b9b8-cfa32cce730f">
+  <data key="d3">fillna.py \
+	-i results/filtered/timemeta_MAM_0_52tp.tsv \
+	-c Feed,Recovery \
+	-v 'Well-nourished (C)' \
+	-o results/filtered/timemetaMAM_0_52tp_filled.tsv</data>
+  <data key="d12">1982.0605253105136</data>
+  <data key="d13">960.5779037237326</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; fillna.py \
+	-i results/filtered/timemeta_MAM_0_52tp.tsv \
+	-c Feed,Recovery \
+	-v '\''Well-nourished (C)'\'' \
+	-o results/filtered/timemetaMAM_0_52tp_filled.tsv'</data>
+  <data key="d8">✅ Filled missing values in columns Feed, Recovery with 'Well-nourished (C)' → results/filtered/timemetaMAM_0_52tp_filled.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">7225</data>
   <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
@@ -1985,5 +2023,13 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d14">4e353ba8-139c-4e5c-ac03-8bbdf3c05deb</data>
   <data key="d16">blocking</data>
   <data key="d15"></data>
+</edge>
+<edge source="edebf298-55ce-4634-b555-05629109188c" target="1ad890ad-0576-4bc3-b9b8-cfa32cce730f">
+  <data key="d14">78968357-0423-4c64-acdc-55192443ede0</data>
+  <data key="d16">blocking</data>
+</edge>
+<edge source="1ad890ad-0576-4bc3-b9b8-cfa32cce730f" target="dbadb780-4ac4-4f97-a957-6ccfdff72a53">
+  <data key="d14">4c4cc5fa-8384-43e7-b6dd-23ea54d36771</data>
+  <data key="d16">blocking</data>
 </edge>
 </graph></graphml>
