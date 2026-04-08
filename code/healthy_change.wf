@@ -88,8 +88,8 @@ mkdir -p results/healthy_change/maaslin/healthy/change</data>
 do
   overall_recovery.py "$d"
 done</data>
-  <data key="d4">909.5040632551355</data>
-  <data key="d5">380.77744046225627</data>
+  <data key="d4">1079.3308773041354</data>
+  <data key="d5">331.11110805169966</data>
   <data key="d6"></data>
 </node>
 <node id="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
@@ -97,14 +97,52 @@ done</data>
   results/figure3/*recovery.tsv \
   -a \
   -o results/figure3/rec_merged.tsv</data>
-  <data key="d4">1556.6043274476783</data>
-  <data key="d5">387.56046209949477</data>
+  <data key="d4">1726.4311414966783</data>
+  <data key="d5">337.89412968893816</data>
   <data key="d6"></data>
 </node>
 <node id="05b34ebc-bb72-4db1-835f-78a960acfc33">
   <data key="d3">hbar_fig3.py</data>
-  <data key="d4">1903.8950352742763</data>
-  <data key="d5">405.19631835631355</data>
+  <data key="d4">2073.7218493232763</data>
+  <data key="d5">355.52998594575695</data>
+  <data key="d6"></data>
+</node>
+<node id="efff9afc-b0ea-4937-a15d-319ee982992b">
+  <data key="d3">parallel -j1 distance.py \
+  results/filtered/{}.tsv \
+  -o results/distance/{}.tsv \
+  &lt; conf/timedatasets.txt</data>
+  <data key="d4">973.8751550215381</data>
+  <data key="d5">560.3151739836899</data>
+  <data key="d6"></data>
+</node>
+<node id="e852a3bc-1df2-4249-9855-9c943d20b037">
+  <data key="d3">parallel -j1 pcoa.py \
+  -i results/distance/{}.tsv \
+  -o results/pcoa/{}.tsv \
+  &lt; conf/timedatasets.txt</data>
+  <data key="d4">1344.7297525379722</data>
+  <data key="d5">584.9126727985554</data>
+  <data key="d6"></data>
+</node>
+<node id="b2979940-9977-4efd-a449-7cf18486839a">
+  <data key="d3">parallel -j1 spindle.py \
+results/pcoa/{}.tsv \
+--meta results/filtered/timemeta.tsv \
+--group-col timepoint \
+-o results/spindle/{}.pdf \
+&lt; conf/timedatasets.txt</data>
+  <data key="d4">1690.9868512395406</data>
+  <data key="d5">581.128442211653</data>
+  <data key="d6"></data>
+</node>
+<node id="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
+  <data key="d3">arrange_svgs.py \
+  results/spindle/* \
+  --rows 3 \
+  -o results/all_spindle.svg</data>
+  <data key="d4">2065.625679342877</data>
+  <data key="d5">598.1574798527137</data>
   <data key="d6"></data>
 </node>
 <edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>
@@ -118,12 +156,28 @@ done</data>
   <data key="d7">dbb8a4ae-8b49-486a-ba9a-0af8e8964845</data>
   <data key="d8">blocking</data>
 </edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="efff9afc-b0ea-4937-a15d-319ee982992b">
+  <data key="d7">d766b58c-d717-49d5-99b4-b75b1135e478</data>
+  <data key="d8">blocking</data>
+</edge>
 <edge source="dd6c7194-194c-40ae-90f3-cc8c22c608b2" target="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
   <data key="d7">0f4662a5-f1b2-4e3d-9816-578663383ce4</data>
   <data key="d8">blocking</data>
 </edge>
 <edge source="5defd7d3-4b19-4373-b1a3-f86d754e39ce" target="05b34ebc-bb72-4db1-835f-78a960acfc33">
   <data key="d7">5ec4fadc-7ce9-4500-9775-a87dadc6bd8c</data>
+  <data key="d8">blocking</data>
+</edge>
+<edge source="efff9afc-b0ea-4937-a15d-319ee982992b" target="e852a3bc-1df2-4249-9855-9c943d20b037">
+  <data key="d7">629468d1-52c7-482c-848b-33d3a3998cdd</data>
+  <data key="d8">blocking</data>
+</edge>
+<edge source="e852a3bc-1df2-4249-9855-9c943d20b037" target="b2979940-9977-4efd-a449-7cf18486839a">
+  <data key="d7">ff375b22-641e-459f-ba12-cea9db9dc637</data>
+  <data key="d8">blocking</data>
+</edge>
+<edge source="b2979940-9977-4efd-a449-7cf18486839a" target="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
+  <data key="d7">d56b6aac-0660-4853-a2a6-4abe8136f6ed</data>
   <data key="d8">blocking</data>
 </edge>
 </graph></graphml>
