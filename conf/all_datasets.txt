@@ -11,3 +11,5 @@ anthro
 sleep
 vitamin
 lipids
+alpha_diversity
+species

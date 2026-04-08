@@ -30,28 +30,28 @@
   <data key="d7">bash -c '. env.sh &amp;&amp; format_genetics.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88577</data>
+  <data key="d10">9766</data>
   <data key="d11">0</data>
 </node>
 <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
   <data key="d3">join.py results/filtered/mapping.tsv \
     results/filtered/covmeta.tsv \
     --on subjectID \
-    -o results/filtered/timemeta.tsv</data>
-  <data key="d12">2580.22794640101</data>
-  <data key="d13">527.9001740324165</data>
+    -o results/filtered/covtimemeta.tsv</data>
+  <data key="d12">2030.0579625050514</data>
+  <data key="d13">331.50810967745747</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
     results/filtered/covmeta.tsv \
     --on subjectID \
-    -o results/filtered/timemeta.tsv'</data>
+    -o results/filtered/covtimemeta.tsv'</data>
   <data key="d8">Join summary
 ------------
 df1: 0 / 2960 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">90416</data>
+  <data key="d10">12926</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
@@ -62,7 +62,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_sleep.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88717</data>
+  <data key="d10">9889</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
@@ -73,7 +73,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_head.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88557</data>
+  <data key="d10">9705</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
@@ -84,7 +84,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_surveillance.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88570</data>
+  <data key="d10">9728</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
@@ -108,7 +108,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved 309 rows × 9 columns to results/cleaned/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89047</data>
+  <data key="d10">10205</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
@@ -119,7 +119,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_microbiome_samplesheet.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88515</data>
+  <data key="d10">9674</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
@@ -130,7 +130,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_anthro.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88523</data>
+  <data key="d10">9682</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
@@ -141,7 +141,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_aa.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88989</data>
+  <data key="d10">10125</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
@@ -158,7 +158,7 @@ df2: 0 / 234 rows lost (0.00%)
 /home/theo/recovery/code/format_lipids.py:37: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   dataset1.replace({'': np.nan}, inplace=True)
 </data>
-  <data key="d10">88778</data>
+  <data key="d10">9935</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
@@ -171,7 +171,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d9">/home/theo/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   out = out.replace('NF', np.nan)
 </data>
-  <data key="d10">88709</data>
+  <data key="d10">9882</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
@@ -184,7 +184,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d9">/home/theo/recovery/code/format_humann.py:31: SyntaxWarning: "\|" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\|"? A raw string is also an option.
   df = pathways.loc[:, ~pathways.columns.str.contains('\|')]
 </data>
-  <data key="d10">89088</data>
+  <data key="d10">10265</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
@@ -195,7 +195,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_metaphlan.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">89116</data>
+  <data key="d10">10303</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
@@ -206,29 +206,29 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_kneaddata.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">89140</data>
+  <data key="d10">10311</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
   <data key="d3">format_ses.py</data>
-  <data key="d4">-777.9378447857731</data>
-  <data key="d5">434.7685724984932</data>
+  <data key="d12">-777.9378447857731</data>
+  <data key="d13">431.32247743350206</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; format_ses.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88623</data>
+  <data key="d10">9797</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
   <data key="d3">format_feedsandrecovery.py</data>
-  <data key="d4">-776.5439097560335</data>
-  <data key="d5">504.8055435784918</data>
+  <data key="d12">-777.6926081110305</data>
+  <data key="d13">508.2516386434828</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; format_feedsandrecovery.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88678</data>
+  <data key="d10">9835</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
@@ -239,7 +239,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_bfpob.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88616</data>
+  <data key="d10">9789</data>
   <data key="d11">0</data>
 </node>
 <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
@@ -259,7 +259,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved: results/cleaned/species.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89364</data>
+  <data key="d10">15121</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
@@ -270,7 +270,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_deliverysupp.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88701</data>
+  <data key="d10">9843</data>
   <data key="d11">0</data>
 </node>
 <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
@@ -278,8 +278,8 @@ df2: 0 / 234 rows lost (0.00%)
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv</data>
-  <data key="d12">443.8703297894325</data>
-  <data key="d13">9.735148276020155</data>
+  <data key="d12">445.0190281444296</data>
+  <data key="d13">10.883846631017207</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; create_mapping.py \
   -d results/filtered/ \
@@ -288,7 +288,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved combined mapping to results/filtered/mapping.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89929</data>
+  <data key="d10">18247</data>
   <data key="d11">0</data>
 </node>
 <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
@@ -299,7 +299,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; mkdir -p results/cleaned'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88482</data>
+  <data key="d10">9641</data>
   <data key="d11">0</data>
 </node>
 <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
@@ -313,7 +313,7 @@ echo setup'</data>
   <data key="d8">setup
 </data>
   <data key="d9"></data>
-  <data key="d10">88450</data>
+  <data key="d10">9609</data>
   <data key="d11">0</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
@@ -756,7 +756,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
 [626 rows x 413 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">89624</data>
+  <data key="d10">10755</data>
   <data key="d11">0</data>
 </node>
 <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
@@ -769,7 +769,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
  -O results/census/census.xlsx'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88966</data>
+  <data key="d10">10094</data>
   <data key="d11">0</data>
 </node>
 <node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
@@ -782,7 +782,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   -O results/census/census_labels.xlsx'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88974</data>
+  <data key="d10">10106</data>
   <data key="d11">0</data>
 </node>
 <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
@@ -807,7 +807,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   ::: education household media_consumption family sanitation'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">89036</data>
+  <data key="d10">10183</data>
   <data key="d11">0</data>
 </node>
 <node id="246364a8-29bd-49c2-a045-ceb068383c79">
@@ -824,7 +824,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   &gt; conf/all_datasets.txt'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88452</data>
+  <data key="d10">15034</data>
   <data key="d11">0</data>
 </node>
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
@@ -837,7 +837,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88755</data>
+  <data key="d10">9912</data>
   <data key="d11">0</data>
 </node>
 <node id="694c1739-f526-421a-a8ec-99152294abf4">
@@ -852,12 +852,12 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv'</data>
-  <data key="d8">Dropping taxa not found in tree: {'5803_group', '8028_group', '19893_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '9434_group', '17163_group', '19351_group', '14824_group', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '15309_group', '17137_group', '4494_group', '17244_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '16971_group', '17158_group', '14535_group', '9467_group', '14764_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '11742_group', '17167_group', '14985_group', '8255_group', '8059_group', '44267_group', '19827_group', '49305_group', '3922_group', '5989_group', '17130_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', '8047_group', '19290_group', '8007_group', '6686_group', '9737_group', '5266_group', '19860_group', '4540_group', '6036_group', '8235_group', '4553_group', '8180_group', '7121_group', '6927_group', '7088_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '19793_group', '5763_group', '6028_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '9663_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '7285_group', '17132_group', '5825_group', '3926_group', '7703_group', '14816_group', '4425_group', '1990_group', '7298_group', '8239_group', '1536_group'}
+  <data key="d8">Dropping taxa not found in tree: {'15309_group', '5989_group', '6927_group', '4425_group', '3922_group', '19893_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '5825_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '7285_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '8028_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '49305_group', '5763_group', '17167_group', '17158_group', '8239_group', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '19351_group', '8235_group', '19827_group', '7088_group', '17132_group', '4553_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', '4540_group', '7121_group', '17130_group', '3926_group', '9737_group', '7298_group', '9663_group', '14985_group', '5803_group', '17137_group', '16971_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '19793_group', '8059_group', '14764_group', '17244_group', '6028_group', '1990_group', '4494_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', '8007_group', '8180_group', '19860_group', '14816_group', '8255_group', '14824_group', '6686_group', '17163_group', '11742_group', '5266_group', '19290_group', '7703_group', '14535_group', '44267_group', '1536_group', '9467_group', '8047_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '6036_group', '9434_group'}
 len(common_taxa): 1747
 Alpha diversity table saved to: results/cleaned/alpha_diversity.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89373</data>
+  <data key="d10">10532</data>
   <data key="d11">0</data>
 </node>
 <node id="99a1770b-1153-428d-8172-e783bf221b38">
@@ -892,7 +892,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/sanitation.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89450</data>
+  <data key="d10">17904</data>
   <data key="d11">0</data>
 </node>
 <node id="9430f225-f079-4a7f-bfd9-a272b950617f">
@@ -923,9 +923,15 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/vitamin.tsv
 [filter] Query '(~sampleID.str.startswith('LCC3'))': kept 554/626
 [filter] Saved filtered output to: results/filtered/lipids.tsv
+[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 585/659
+[filter] Saved filtered output to: results/filtered/alpha_diversity.tsv
+[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 585/659
+[filter] Saved filtered output to: results/filtered/species.tsv
+[filter] Query '(~sampleID.str.startswith('LCC3'))': kept 586/660
+[filter] Saved filtered output to: results/filtered/pathways.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89798</data>
+  <data key="d10">17914</data>
   <data key="d11">0</data>
 </node>
 <node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
@@ -944,7 +950,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89231</data>
+  <data key="d10">17903</data>
   <data key="d11">0</data>
 </node>
 <node id="54aa994b-162d-49c0-a6ab-94a10c646e86">
@@ -957,7 +963,7 @@ mkdir results/census</data>
 mkdir results/census'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">88801</data>
+  <data key="d10">9943</data>
   <data key="d11">0</data>
 </node>
 <node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
@@ -976,7 +982,7 @@ mkdir results/census'</data>
 [filter] Saved filtered output to: results/filtered/mothers.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">89076</data>
+  <data key="d10">10241</data>
   <data key="d11">0</data>
 </node>
 <node id="403c9095-7c10-40b5-b31a-e570ddec6c56">
@@ -1290,7 +1296,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
 </data>
-  <data key="d10">88822</data>
+  <data key="d10">9978</data>
   <data key="d11">0</data>
 </node>
 <node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
@@ -1308,69 +1314,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  extracting: results/aaunzipped/Results-UPLC_AA_LEAP_Plasma_Oct 2023.xlsx  
 </data>
   <data key="d9"></data>
-  <data key="d10">88812</data>
-  <data key="d11">0</data>
-</node>
-<node id="c8ef17dd-f825-46cb-a537-0c32e66b7a2f">
-  <data key="d3">for f in $(cat conf/timedatasets.txt); do
-  splitter.py \
-    results/cleaned/${f}.tsv \
-    -m results/filtered/timemeta.tsv \
-    -col timepoint \
-    --outdir results/timepoints \
-    --reindex subjectID 
-done</data>
-  <data key="d12">2946.6401481478106</data>
-  <data key="d13">490.91002675863564</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
-  splitter.py \
-    results/cleaned/${f}.tsv \
-    -m results/filtered/timemeta.tsv \
-    -col timepoint \
-    --outdir results/timepoints \
-    --reindex subjectID 
-done'</data>
-  <data key="d8">Saved split: /home/theo/recovery/results/timepoints/0/aa.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/aa.tsv
-Saved split: /home/theo/recovery/results/timepoints/4/aa.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/head.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/head.tsv
-Saved split: /home/theo/recovery/results/timepoints/4/head.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/4/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/3/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/5/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/6/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/7/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/8/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/9/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/10/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/11/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/13/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/14/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/15/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/26/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/39/anthro.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/sleep.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/sleep.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/vitamin.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/vitamin.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/vitamin.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/lipids.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/lipids.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/lipids.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-</data>
-  <data key="d9"></data>
-  <data key="d10">90481</data>
+  <data key="d10">9969</data>
   <data key="d11">0</data>
 </node>
 <node id="59608939-75a1-465d-8553-fd4809c332ef">
@@ -1393,7 +1337,7 @@ Split files saved to subfolders in: /home/theo/recovery/results/timepoints
 4  LCC1001_6    7.46    72.5  12.8   NaN    -2.32            0            0
 </data>
   <data key="d9"></data>
-  <data key="d10">90002</data>
+  <data key="d10">18315</data>
   <data key="d11">0</data>
 </node>
 <node id="917e5a89-29df-410c-beab-58d165fb20cd">
@@ -1420,7 +1364,7 @@ Delayed recovery         3
 Name: count, dtype: int64
 </data>
   <data key="d9"></data>
-  <data key="d10">90162</data>
+  <data key="d10">11252</data>
   <data key="d11">0</data>
 </node>
 <node id="c37322cc-afdd-467c-8196-b63a5fa7541a">
@@ -1447,7 +1391,7 @@ Delayed recovery         3
 Name: count, dtype: int64
 </data>
   <data key="d9"></data>
-  <data key="d10">90191</data>
+  <data key="d10">11278</data>
   <data key="d11">0</data>
 </node>
 <node id="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
@@ -1455,8 +1399,8 @@ Name: count, dtype: int64
   results/filtered/meta.tsv \
   results/timepoints/0/anthro.tsv \
   -o results/filtered/covmeta_norename.tsv</data>
-  <data key="d12">1731.382144084444</data>
-  <data key="d13">335.16693763606264</data>
+  <data key="d12">1612.6264321148833</data>
+  <data key="d13">216.41122566650182</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py \
   results/filtered/meta.tsv \
@@ -1468,7 +1412,7 @@ df1: 0 / 234 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">90348</data>
+  <data key="d10">12855</data>
   <data key="d11">0</data>
 </node>
 <node id="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
@@ -1477,8 +1421,8 @@ df2: 0 / 234 rows lost (0.00%)
   --match 'WLZ_WHZ' \
   --replace 'baseline_WLZ' \
   -o results/filtered/covmeta.tsv</data>
-  <data key="d12">2113.3511389773635</data>
-  <data key="d13">407.61698717836657</data>
+  <data key="d12">2012.103216061224</data>
+  <data key="d13">218.83011899512104</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; rename_regex.py \
   results/filtered/covmeta_norename.tsv \
@@ -1488,7 +1432,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">✅ Saved renamed DataFrame → results/filtered/covmeta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">90382</data>
+  <data key="d10">12889</data>
   <data key="d11">0</data>
 </node>
 <node id="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
@@ -1496,8 +1440,8 @@ df2: 0 / 234 rows lost (0.00%)
   results/filtered/covmeta.tsv \
   -q "Condition == 'MAM'" \
   -o results/filtered/covmeta_MAM.tsv</data>
-  <data key="d12">2588.6556914190255</data>
-  <data key="d13">382.7003568535429</data>
+  <data key="d12">2461.146084922754</data>
+  <data key="d13">3.2731189774889344</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   results/filtered/covmeta.tsv \
@@ -1507,7 +1451,7 @@ df2: 0 / 234 rows lost (0.00%)
 [filter] Saved filtered output to: results/filtered/covmeta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">90424</data>
+  <data key="d10">12934</data>
   <data key="d11">0</data>
 </node>
 <node id="b8683318-306c-481f-bd22-c488428579c8">
@@ -1519,8 +1463,8 @@ df2: 0 / 234 rows lost (0.00%)
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d12">1351.4099270449249</data>
-  <data key="d13">337.6009121543524</data>
+  <data key="d12">1227.227797765573</data>
+  <data key="d13">207.99236556521015</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
   splitter.py \
@@ -1567,26 +1511,38 @@ Saved split: /home/theo/recovery/results/timepoints/0/lipids.tsv
 Saved split: /home/theo/recovery/results/timepoints/52/lipids.tsv
 Saved split: /home/theo/recovery/results/timepoints/12/lipids.tsv
 Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/alpha_diversity.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/alpha_diversity.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/alpha_diversity.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/species.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/species.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/species.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+Saved split: /home/theo/recovery/results/timepoints/0/pathways.tsv
+Saved split: /home/theo/recovery/results/timepoints/52/pathways.tsv
+Saved split: /home/theo/recovery/results/timepoints/12/pathways.tsv
+Split files saved to subfolders in: /home/theo/recovery/results/timepoints
 </data>
   <data key="d9"></data>
-  <data key="d10">90010</data>
+  <data key="d10">18323</data>
   <data key="d11">0</data>
 </node>
 <node id="3213ed29-410e-427a-b65c-8b3210baf978">
-  <data key="d3">filter.py results/filtered/meta.tsv \
+  <data key="d3">filter.py results/filtered/covmeta.tsv \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
   -o results/filtered/meta_MAM.tsv</data>
-  <data key="d12">1445.4288116861692</data>
-  <data key="d13">762.7142974361975</data>
+  <data key="d12">2546.434725587417</data>
+  <data key="d13">209.96401693810185</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/meta.tsv \
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/covmeta.tsv \
   -q '\''Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")'\'' \
   -o results/filtered/meta_MAM.tsv'</data>
   <data key="d8">[filter] Query '(Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered"))': kept 151/234
 [filter] Saved filtered output to: results/filtered/meta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">90035</data>
+  <data key="d10">12957</data>
   <data key="d11">0</data>
 </node>
 <node id="2a750bc5-2baa-4258-8bb4-54c5615529cb">
@@ -1594,8 +1550,8 @@ Split files saved to subfolders in: /home/theo/recovery/results/timepoints
     results/filtered/meta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-  <data key="d12">805.9278799500515</data>
-  <data key="d13">80.2366194570665</data>
+  <data key="d12">809.2222440191218</data>
+  <data key="d13">70.3535272498556</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
     results/filtered/meta.tsv \
@@ -1603,30 +1559,30 @@ Split files saved to subfolders in: /home/theo/recovery/results/timepoints
     -o results/filtered/timemeta.tsv'</data>
   <data key="d8">Join summary
 ------------
-df1: 0 / 2960 rows lost (0.00%)
+df1: 0 / 2961 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">89965</data>
+  <data key="d10">18281</data>
   <data key="d11">0</data>
 </node>
 <node id="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
   <data key="d3"># All kids
-filter.py results/filtered/timemeta.tsv \
+filter.py results/filtered/covtimemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -o results/filtered/timemeta_0_52tp.tsv</data>
-  <data key="d12">1398.2491076823114</data>
-  <data key="d13">1103.646083855374</data>
+  <data key="d12">2500.403719938556</data>
+  <data key="d13">550.8958033572783</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; # All kids
-filter.py results/filtered/timemeta.tsv \
+filter.py results/filtered/covtimemeta.tsv \
   -q '\''timepoint == 0 or timepoint == 52'\'' \
   -o results/filtered/timemeta_0_52tp.tsv'</data>
   <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52)': kept 468/2960
 [filter] Saved filtered output to: results/filtered/timemeta_0_52tp.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">90066</data>
+  <data key="d10">13054</data>
   <data key="d11">0</data>
 </node>
 <node id="119af91b-e955-43de-b714-34e8800c43f6">
@@ -1634,72 +1590,71 @@ filter.py results/filtered/timemeta.tsv \
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
   --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
-  <data key="d12">1852.980805306332</data>
-  <data key="d13">1107.1520104378687</data>
+  <data key="d12">2955.135417562577</data>
+  <data key="d13">554.4017299397731</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; replace.py \
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '\''{"timepoint": {"0": "yr1", "52": "yr2"}}'\'' \
   --output results/filtered/timemeta_MAM_yr1_yr2.tsv'</data>
-  <data key="d8">           subjectID timepoint     Sex  ... Supplementation BF     PoB
-sampleID                                ...                           
-LCC1001_0    LCC1001       yr1    Male  ...            True  3  Clinic
-LCC1001_52   LCC1001       yr2    Male  ...            True  3  Clinic
-LCC1002_0    LCC1002       yr1    Male  ...           False  6  Clinic
-LCC1002_52   LCC1002       yr2    Male  ...           False  6  Clinic
-LCC1003_0    LCC1003       yr1  Female  ...            True  3  Clinic
-...              ...       ...     ...  ...             ... ..     ...
-LCC1054_0    LCC1054       yr1  Female  ...            True  6    Home
-LCC1054_52   LCC1054       yr2  Female  ...            True  6    Home
-LCC1056_52   LCC1056       yr2  Female  ...            True  4    Home
-LCC1098_52   LCC1098       yr2    Male  ...            True  6    Home
-LCC1108_52   LCC1108       yr2    Male  ...            True  6  Clinic
+  <data key="d8">           subjectID timepoint     Sex  ...  MUAC     HC baseline_WLZ
+sampleID                                ...                          
+LCC1001_0    LCC1001       yr1    Male  ...  12.5   42.6        -2.75
+LCC1001_52   LCC1001       yr2    Male  ...  12.5   42.6        -2.75
+LCC1002_0    LCC1002       yr1    Male  ...  13.0   44.0        -2.37
+LCC1002_52   LCC1002       yr2    Male  ...  13.0   44.0        -2.37
+LCC1003_0    LCC1003       yr1  Female  ...  13.5   42.9        -2.13
+...              ...       ...     ...  ...   ...    ...          ...
+LCC1054_0    LCC1054       yr1  Female  ...  12.5  43.85        -2.24
+LCC1054_52   LCC1054       yr2  Female  ...  12.5  43.85        -2.24
+LCC1056_52   LCC1056       yr2  Female  ...  12.5   43.0        -2.01
+LCC1098_52   LCC1098       yr2    Male  ...  12.5   43.5        -2.08
+LCC1108_52   LCC1108       yr2    Male  ...  13.0   45.0        -2.29
 
-[302 rows x 11 columns]
+[302 rows x 16 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">90227</data>
+  <data key="d10">13146</data>
   <data key="d11">0</data>
 </node>
 <node id="edebf298-55ce-4634-b555-05629109188c">
   <data key="d3"># Just looking at MAM kids
-filter.py results/filtered/timemeta.tsv \
+filter.py results/filtered/covtimemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -q 'Condition == "MAM"' \
   -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
   -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
-  <data key="d12">1401.5384793269047</data>
-  <data key="d13">958.8174846879938</data>
+  <data key="d12">2503.6930915831495</data>
+  <data key="d13">406.0672041898981</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; # Just looking at MAM kids
-filter.py results/filtered/timemeta.tsv \
+filter.py results/filtered/covtimemeta.tsv \
   -q '\''timepoint == 0 or timepoint == 52'\'' \
   -q '\''Condition == "MAM"'\'' \
   -q '\''Recovery == "No recovery" or Recovery == "Recovered"'\'' \
-  -o results/filtered/timemeta_MAM_0_52tp.tsv
-'</data>
+  -o results/filtered/timemeta_MAM_0_52tp.tsv'</data>
   <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52) &amp; (Condition == "MAM") &amp; (Recovery == "No recovery" or Recovery == "Recovered")': kept 302/2960
 [filter] Saved filtered output to: results/filtered/timemeta_MAM_0_52tp.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">90058</data>
+  <data key="d10">13031</data>
   <data key="d11">0</data>
 </node>
 <node id="0c0e8e80-3923-4963-86bf-7d9e926490b2">
-  <data key="d3">filter.py results/filtered/timemeta.tsv \
+  <data key="d3">filter.py results/filtered/covtimemeta.tsv \
   -q 'Condition == "MAM"' \
   -o results/filtered/timemeta_MAM.tsv</data>
-  <data key="d12">1449.3306861591109</data>
-  <data key="d13">832.5586340272592</data>
+  <data key="d12">2551.4852984153554</data>
+  <data key="d13">279.8083535291636</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/timemeta.tsv \
+  <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/covtimemeta.tsv \
   -q '\''Condition == "MAM"'\'' \
   -o results/filtered/timemeta_MAM.tsv'</data>
   <data key="d8">[filter] Query '(Condition == "MAM")': kept 2374/2960
 [filter] Saved filtered output to: results/filtered/timemeta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">3878</data>
+  <data key="d10">13023</data>
   <data key="d11">0</data>
 </node>
 <node id="dbadb780-4ac4-4f97-a957-6ccfdff72a53">
@@ -1707,8 +1662,8 @@ filter.py results/filtered/timemeta.tsv \
 	results/filtered/timemetaMAM_0_52tp_filled.tsv \
 	-q 'timepoint == 0' \
 	-o results/filtered/timemetaMAM_0tp_filled.tsv</data>
-  <data key="d12">2397.933176002863</data>
-  <data key="d13">965.772092891393</data>
+  <data key="d12">3500.087788259108</data>
+  <data key="d13">413.0218123932973</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
 	results/filtered/timemetaMAM_0_52tp_filled.tsv \
@@ -1718,7 +1673,7 @@ filter.py results/filtered/timemeta.tsv \
 [filter] Saved filtered output to: results/filtered/timemetaMAM_0tp_filled.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">7376</data>
+  <data key="d10">13181</data>
   <data key="d11">0</data>
 </node>
 <node id="1ad890ad-0576-4bc3-b9b8-cfa32cce730f">
@@ -1727,8 +1682,8 @@ filter.py results/filtered/timemeta.tsv \
 	-c Feed,Recovery \
 	-v 'Well-nourished (C)' \
 	-o results/filtered/timemetaMAM_0_52tp_filled.tsv</data>
-  <data key="d12">1982.0605253105136</data>
-  <data key="d13">960.5779037237326</data>
+  <data key="d12">3084.2151375667586</data>
+  <data key="d13">407.8276232256369</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; fillna.py \
 	-i results/filtered/timemeta_MAM_0_52tp.tsv \
@@ -1738,15 +1693,25 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d8">✅ Filled missing values in columns Feed, Recovery with 'Well-nourished (C)' → results/filtered/timemetaMAM_0_52tp_filled.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">7225</data>
+  <data key="d10">13118</data>
   <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
   <data key="d14">aebab5eb-bdb8-4526-993f-ce9c0fa9ea39</data>
   <data key="d15"></data>
 </edge>
-<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="c8ef17dd-f825-46cb-a537-0c32e66b7a2f">
-  <data key="d14">41fe360f-80a8-4010-bd49-931e32f5a5d7</data>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="0c0e8e80-3923-4963-86bf-7d9e926490b2">
+  <data key="d14">ad1e166b-7829-47ff-815b-c138b073ba70</data>
+  <data key="d16">blocking</data>
+  <data key="d15"></data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="edebf298-55ce-4634-b555-05629109188c">
+  <data key="d14">88ecc783-6d9b-4685-a82d-5b398ebd3a51</data>
+  <data key="d16">blocking</data>
+  <data key="d15"></data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
+  <data key="d14">9e591ccf-15b5-4578-a275-5530823d2145</data>
   <data key="d16">blocking</data>
   <data key="d15"></data>
 </edge>
@@ -1985,6 +1950,11 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d16">blocking</data>
   <data key="d15"></data>
 </edge>
+<edge source="956e9a61-fae1-4e44-aef5-5cbd2df9f378" target="3213ed29-410e-427a-b65c-8b3210baf978">
+  <data key="d14">c528f78a-ec6b-4f44-8b37-f68204b8011d</data>
+  <data key="d16">blocking</data>
+  <data key="d15"></data>
+</edge>
 <edge source="b8683318-306c-481f-bd22-c488428579c8" target="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
   <data key="d14">3e172a3f-2ffa-4ae4-8784-6ae97d61c9bf</data>
   <data key="d16">blocking</data>
@@ -2000,25 +1970,6 @@ filter.py results/filtered/timemeta.tsv \
   <data key="d16">blocking</data>
   <data key="d15"></data>
 </edge>
-<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="3213ed29-410e-427a-b65c-8b3210baf978">
-  <data key="d14">1aa6ea2f-7c75-4409-bf99-5941de13db45</data>
-  <data key="d16">blocking</data>
-  <data key="d15"></data>
-</edge>
-<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="edebf298-55ce-4634-b555-05629109188c">
-  <data key="d14">832a00cc-0bbc-45b5-bcf5-255ded30e8a7</data>
-  <data key="d16">blocking</data>
-  <data key="d15"></data>
-</edge>
-<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
-  <data key="d14">f3183fce-9096-4e74-9e1f-46b80e99d921</data>
-  <data key="d16">blocking</data>
-  <data key="d15"></data>
-</edge>
-<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="0c0e8e80-3923-4963-86bf-7d9e926490b2">
-  <data key="d14">32ef7f86-d79f-43c3-b760-3ae6e7a6a343</data>
-  <data key="d16">blocking</data>
-</edge>
 <edge source="f6f5fff9-cc43-4b25-a85e-d9da28978a18" target="119af91b-e955-43de-b714-34e8800c43f6">
   <data key="d14">4e353ba8-139c-4e5c-ac03-8bbdf3c05deb</data>
   <data key="d16">blocking</data>
@@ -2027,9 +1978,11 @@ filter.py results/filtered/timemeta.tsv \
 <edge source="edebf298-55ce-4634-b555-05629109188c" target="1ad890ad-0576-4bc3-b9b8-cfa32cce730f">
   <data key="d14">78968357-0423-4c64-acdc-55192443ede0</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="1ad890ad-0576-4bc3-b9b8-cfa32cce730f" target="dbadb780-4ac4-4f97-a957-6ccfdff72a53">
   <data key="d14">4c4cc5fa-8384-43e7-b6dd-23ea54d36771</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 </graph></graphml>
