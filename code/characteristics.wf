@@ -24,7 +24,7 @@
   <data key="d3">rm -rf results/characteristics
 mkdir -p results/characteristics/work/{selected,formatted,descriptive}
 </data>
-  <data key="d4">155.43047614410904</data>
+  <data key="d4">-3.0898968454817464</data>
   <data key="d5">204.6615811354557</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/characteristics
@@ -32,7 +32,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
 '</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9595</data>
+  <data key="d10">11137</data>
   <data key="d11">0</data>
 </node>
 <node id="648469a0-beae-4f62-83bd-8142f5756d71">
@@ -41,8 +41,8 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
 	-v 'Well-nourished (C)' \
 	-c 'Feed' \
 	-o results/characteristics/work/meta.tsv</data>
-  <data key="d4">850.9629459517306</data>
-  <data key="d5">-310.7460302887767</data>
+  <data key="d4">846.3681525317426</data>
+  <data key="d5">-329.12520396872924</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; fillna.py \
 	-i results/filtered/meta.tsv \
@@ -52,7 +52,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">✅ Filled missing values in columns Feed with 'Well-nourished (C)' → results/characteristics/work/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">9620</data>
+  <data key="d10">11166</data>
   <data key="d11">0</data>
 </node>
 <node id="076eda25-d8fc-444d-836d-b29104432372">
@@ -60,7 +60,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
 	results/characteristics/work/meta.tsv \
 	-c 'Sex,Delivery_Mode' \
 	-o results/characteristics/work/selected/Demographics.tsv</data>
-  <data key="d4">1252.9876233926043</data>
+  <data key="d4">1261.0285118775837</data>
   <data key="d5">-320.9690401569404</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; select_features.py \
@@ -70,7 +70,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 2 columns to results/characteristics/work/selected/Demographics.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9833</data>
+  <data key="d10">11437</data>
   <data key="d11">0</data>
 </node>
 <node id="4730d833-d0e5-438b-b4e7-f94208487149">
@@ -80,8 +80,8 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
 	--prefix-sep ', ' \
 	--dtype bool \
 	-o results/characteristics/work/formatted/Demographics.tsv</data>
-  <data key="d4">1761.5755226263732</data>
-  <data key="d5">-348.76848711802694</data>
+  <data key="d4">1776.5086012413344</data>
+  <data key="d5">-337.2815035680566</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; onehot.py \
 	results/characteristics/work/selected/Demographics.tsv \
@@ -91,7 +91,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
 	-o results/characteristics/work/formatted/Demographics.tsv'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9934</data>
+  <data key="d10">11520</data>
   <data key="d11">0</data>
 </node>
 <node id="6ba48050-312e-418b-874a-774b9538deac">
@@ -109,7 +109,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 2 columns to results/characteristics/work/selected/Parental_Education.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9628</data>
+  <data key="d10">11175</data>
   <data key="d11">0</data>
 </node>
 <node id="2af13dad-0266-4b5a-ad29-888dc6194249">
@@ -127,7 +127,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 4 columns to results/characteristics/work/selected/Economics.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9636</data>
+  <data key="d10">11182</data>
   <data key="d11">0</data>
 </node>
 <node id="1dbff117-0167-4600-9d77-8098ec92beca">
@@ -145,7 +145,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 6 columns to results/characteristics/work/formatted/Parental_Education_and_Economics.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">9864</data>
+  <data key="d10">11429</data>
   <data key="d11">0</data>
 </node>
 <node id="3bc5f738-8436-41ae-bfb0-60821985d9df">
@@ -163,7 +163,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 2 columns to results/characteristics/work/formatted/Family_Structure.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9659</data>
+  <data key="d10">11190</data>
   <data key="d11">0</data>
 </node>
 <node id="8ae5234e-a93d-4e36-8149-ed3254541e3d">
@@ -193,25 +193,25 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 6 columns to results/characteristics/work/formatted/Household_characteristics.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9683</data>
+  <data key="d10">11198</data>
   <data key="d11">0</data>
 </node>
 <node id="8d4e9837-14ac-4cf7-bed2-e4d9d7352749">
   <data key="d3">select_features.py \
-  results/characteristics/work/meta.tsv \
+  results/filtered/meta.tsv \
   -c 'BF,PoB' \
   -o results/characteristics/work/selected/Other.tsv</data>
   <data key="d4">896.2511177353648</data>
   <data key="d5">532.2448501861724</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; select_features.py \
-  results/characteristics/work/meta.tsv \
+  results/filtered/meta.tsv \
   -c '\''BF,PoB'\'' \
   -o results/characteristics/work/selected/Other.tsv'</data>
   <data key="d8">Saved 234 rows × 2 columns to results/characteristics/work/selected/Other.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9705</data>
+  <data key="d10">11634</data>
   <data key="d11">0</data>
 </node>
 <node id="3cd7721a-7f4a-4b56-8272-866b82f02ecd">
@@ -230,7 +230,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   -o results/characteristics/work/formatted/Other.tsv'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9885</data>
+  <data key="d10">11664</data>
   <data key="d11">0</data>
 </node>
 <node id="1a6148c4-c06c-4a40-a25a-502b19bf0555">
@@ -248,7 +248,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 4 columns to results/characteristics/work/formatted/Anthro.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">9713</data>
+  <data key="d10">11239</data>
   <data key="d11">0</data>
 </node>
 <node id="c8392659-52d0-4726-a793-7ec6eed4993f">
@@ -262,7 +262,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Data formatted
 </data>
   <data key="d9"></data>
-  <data key="d10">9987</data>
+  <data key="d10">11699</data>
   <data key="d11">0</data>
 </node>
 <node id="a3a3c4d3-4d0f-4876-9804-8c3ea04e0d88">
@@ -280,7 +280,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   <data key="d8">Saved 234 rows × 2 columns to results/characteristics/work/meta.tsv (index kept)
 </data>
   <data key="d9"></data>
-  <data key="d10">10024</data>
+  <data key="d10">11735</data>
   <data key="d11">0</data>
 </node>
 <node id="ebc6e1db-855f-48fd-80f3-e5f945183d4b">
@@ -301,7 +301,7 @@ mkdir -p results/characteristics/work/{selected,formatted,descriptive}
   -o results/characteristics/work/meta_oh.tsv'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10120</data>
+  <data key="d10">11816</data>
   <data key="d11">0</data>
 </node>
 <node id="2ab6e488-f8c5-45ef-908a-0a0247af69a2">
@@ -318,8 +318,8 @@ Anthro}.tsv; do
         -g 'Feed' \
         -o "results/characteristics/work/descriptive/$(basename "$file")"
 done</data>
-  <data key="d4">3548.2308454151203</data>
-  <data key="d5">-773.8839260219961</data>
+  <data key="d4">3558.7869087013037</data>
+  <data key="d5">-779.1619576650877</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for file in results/characteristics/work/formatted/{\
 Demographics,\
@@ -342,7 +342,7 @@ done'</data>
 ✅ Table 1 saved to results/characteristics/work/descriptive/Anthro.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10012</data>
+  <data key="d10">11719</data>
   <data key="d11">0</data>
 </node>
 <node id="dba66cb2-7b86-472d-846b-6ce69b5d489c">
@@ -368,7 +368,7 @@ done'</data>
   <data key="d8">Saved 234 rows × 22 columns to results/characteristics/work/data.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10013</data>
+  <data key="d10">11727</data>
   <data key="d11">0</data>
 </node>
 <node id="7bedcaa4-7614-4a96-9ec8-fb3af7f5858b">
@@ -386,7 +386,7 @@ done'</data>
   <data key="d8">Saved 234 rows × 24 columns to results/characteristics/work/all_data_merged.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10172</data>
+  <data key="d10">11861</data>
   <data key="d11">0</data>
 </node>
 <node id="65aa3646-7f53-4ce2-9b5b-18b6602d5533">
@@ -404,7 +404,7 @@ done'</data>
   <data key="d8">Saved 159 rows × 24 columns to results/characteristics/work/MAM_data_merged.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10259</data>
+  <data key="d10">11956</data>
   <data key="d11">0</data>
 </node>
 <node id="2481d681-868d-451e-a558-307b619d7b00">
@@ -424,7 +424,7 @@ done'</data>
   <data key="d8">Saved 23 rows × 2 columns to results/characteristics/work/all_stats/merged_stats_MAMstats_vals.tsv (index dropped)
 </data>
   <data key="d9"></data>
-  <data key="d10">10894</data>
+  <data key="d10">12390</data>
   <data key="d11">0</data>
 </node>
 <node id="6218315e-f053-4982-a15b-99d2ad8b5b9b">
@@ -441,15 +441,14 @@ done'</data>
 [filter] Saved filtered output to: results/characteristics/work/all_stats/categories.tsv
 [filter] Dtype 'number' columns: kept 16/24
 [filter] Saved filtered output to: results/characteristics/work/all_stats/numbers.tsv
-Results saved to results/characteristics/work/all_stats/corr.tsv
 [INFO] Dropped 0 rows with missing values (234 → 234).
 [INFO] Generated 256 test results.
 [INFO] Dropped 0 rows with missing values (234 → 234).
 [INFO] Generated 56 Fisher tests.
-Saved 432 rows × 4 columns to results/characteristics/work/all_stats/merged_stats.tsv
+Saved 552 rows × 4 columns to results/characteristics/work/all_stats/merged_stats.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10266</data>
+  <data key="d10">11928</data>
   <data key="d11">0</data>
 </node>
 <node id="c2a2f142-fef8-4637-b3f4-107b8dd284c7">
@@ -464,11 +463,11 @@ Saved 432 rows × 4 columns to results/characteristics/work/all_stats/merged_sta
   results/characteristics/work/all_stats/merged_stats.tsv \
   -q '\''source == "Condition, MAM"'\'' \
   -o results/characteristics/work/all_stats/merged_stats_MAMstats.tsv'</data>
-  <data key="d8">[filter] Query '(source == "Condition, MAM")': kept 23/432
+  <data key="d8">[filter] Query '(source == "Condition, MAM")': kept 23/552
 [filter] Saved filtered output to: results/characteristics/work/all_stats/merged_stats_MAMstats.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10758</data>
+  <data key="d10">12269</data>
   <data key="d11">0</data>
 </node>
 <node id="a5677d73-1cbc-4f51-b1f4-33ab7fae6ef8">
@@ -487,7 +486,7 @@ Saved 432 rows × 4 columns to results/characteristics/work/all_stats/merged_sta
 [filter] Saved filtered output to: results/characteristics/work/meta_oh_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10180</data>
+  <data key="d10">11868</data>
   <data key="d11">0</data>
 </node>
 <node id="b4204505-10e6-4508-8f18-fd77bb22eb26">
@@ -507,7 +506,7 @@ Saved 432 rows × 4 columns to results/characteristics/work/all_stats/merged_sta
   <data key="d8">✅ Saved renamed DataFrame → results/characteristics/work/all_stats/merged_stats_MAMstats_rename.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10826</data>
+  <data key="d10">12329</data>
   <data key="d11">0</data>
 </node>
 <node id="f151b962-5abd-4e55-8d80-0c6d2bd5fd55">
@@ -524,15 +523,14 @@ Saved 432 rows × 4 columns to results/characteristics/work/all_stats/merged_sta
 [filter] Saved filtered output to: results/characteristics/work/MAM_stats/categories.tsv
 [filter] Dtype 'number' columns: kept 16/24
 [filter] Saved filtered output to: results/characteristics/work/MAM_stats/numbers.tsv
-Results saved to results/characteristics/work/MAM_stats/corr.tsv
 [INFO] Dropped 0 rows with missing values (159 → 159).
 [INFO] Generated 224 test results.
 [INFO] Dropped 0 rows with missing values (159 → 159).
 [INFO] Generated 56 Fisher tests.
-Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_stats.tsv
+Saved 520 rows × 4 columns to results/characteristics/work/MAM_stats/merged_stats.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10355</data>
+  <data key="d10">12025</data>
   <data key="d11">0</data>
 </node>
 <node id="a91bcb45-b6e8-438d-bfa5-683fe3af699d">
@@ -552,7 +550,7 @@ Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_sta
   <data key="d8">Saved 23 rows × 2 columns to results/characteristics/work/MAM_stats/merged_stats_Feedstats_vals.tsv (index dropped)
 </data>
   <data key="d9"></data>
-  <data key="d10">10928</data>
+  <data key="d10">12420</data>
   <data key="d11">0</data>
 </node>
 <node id="3c646afa-3458-4f68-bc77-93ccdf5a34c8">
@@ -572,7 +570,7 @@ Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_sta
   <data key="d8">✅ Saved renamed DataFrame → results/characteristics/work/MAM_stats/merged_stats_Feedstats_rename.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10860</data>
+  <data key="d10">12359</data>
   <data key="d11">0</data>
 </node>
 <node id="a2f6492e-a4de-421e-a7a9-8071befdf393">
@@ -587,11 +585,11 @@ Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_sta
   results/characteristics/work/MAM_stats/merged_stats.tsv \
   -q '\''source == "Feed, ERUSF (B)"'\'' \
   -o results/characteristics/work/MAM_stats/merged_stats_Feedstats.tsv'</data>
-  <data key="d8">[filter] Query '(source == "Feed, ERUSF (B)")': kept 23/400
+  <data key="d8">[filter] Query '(source == "Feed, ERUSF (B)")': kept 23/520
 [filter] Saved filtered output to: results/characteristics/work/MAM_stats/merged_stats_Feedstats.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10792</data>
+  <data key="d10">12299</data>
   <data key="d11">0</data>
 </node>
 <node id="b43eaf30-d7ec-4b65-be69-0e8a3b66bf15">
@@ -611,7 +609,7 @@ Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_sta
   <data key="d8">Saved 22 rows × 5 columns to results/characteristics/work/merged_stats.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10971</data>
+  <data key="d10">12460</data>
   <data key="d11">0</data>
 </node>
 <node id="7beb5794-773f-4f5a-84c7-d1ea3f38dac0">
@@ -643,7 +641,7 @@ Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_sta
   <data key="d8">Saved 22 rows × 3 columns to results/characteristics/work/merged.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10442</data>
+  <data key="d10">12058</data>
   <data key="d11">0</data>
 </node>
 <node id="168616e2-03e6-40c9-ad84-13e2be2a4b29">
@@ -664,7 +662,7 @@ Saved 400 rows × 4 columns to results/characteristics/work/MAM_stats/merged_sta
 Saved results to: results/characteristics/work/merged_stats_fdr.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">11005</data>
+  <data key="d10">12490</data>
   <data key="d11">0</data>
 </node>
 <node id="9e522180-5712-4b68-9b81-3fda30b2a551">
@@ -685,7 +683,48 @@ Saved results to: results/characteristics/work/merged_stats_fdr.tsv
 Saved results to: results/characteristics/characteristics.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">11376</data>
+  <data key="d10">12531</data>
+  <data key="d11">0</data>
+</node>
+<node id="68f1b10a-85e5-4604-be45-74b2c1981da5">
+  <data key="d3">heatmap_allnontimedata.py \
+  -d conf/notimedatasets.txt</data>
+  <data key="d4">856.3052732990016</data>
+  <data key="d5">921.1854010235837</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; heatmap_allnontimedata.py \
+  -d conf/notimedatasets.txt'</data>
+  <data key="d8">Saved combined heatmap to results/characteristics/combined_nontime_heatmap_splitmam.svg
+</data>
+  <data key="d9">/home/tpor598/recovery/code/heatmap_allnontimedata.py:110: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+</data>
+  <data key="d10">11244</data>
+  <data key="d11">0</data>
+</node>
+<node id="07e65b0d-f571-4ff0-af6b-4acf015e4285">
+  <data key="d3">heatmap_alltimedata.py \
+  -d conf/timedatasets.txt</data>
+  <data key="d4">860.8524229985328</data>
+  <data key="d5">987.8769299500411</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; heatmap_alltimedata.py \
+  -d conf/timedatasets.txt'</data>
+  <data key="d8">Saved combined heatmap to results/characteristics/combined_heatmap.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">11274</data>
+  <data key="d11">0</data>
+</node>
+<node id="86c02c2d-a791-49d1-8a12-fe762bb09ceb">
+  <data key="d3">plot_recipe.py</data>
+  <data key="d4">875.9999999999989</data>
+  <data key="d5">1095.9999999999982</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; plot_recipe.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">11304</data>
   <data key="d11">0</data>
 </node>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="648469a0-beae-4f62-83bd-8142f5756d71">
@@ -720,6 +759,21 @@ Saved results to: results/characteristics/characteristics.tsv
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="1a6148c4-c06c-4a40-a25a-502b19bf0555">
   <data key="d12">2fc72da3-6d20-4fd4-a6c8-ff23651873de</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="68f1b10a-85e5-4604-be45-74b2c1981da5">
+  <data key="d12">e7daef18-2784-4ef4-8fc5-43eb660748bb</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="07e65b0d-f571-4ff0-af6b-4acf015e4285">
+  <data key="d12">0de638da-dee9-43a9-97e1-e2eef1ba54c1</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
+</edge>
+<edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="86c02c2d-a791-49d1-8a12-fe762bb09ceb">
+  <data key="d12">fb9437ce-fd87-4807-8f57-605b03c2cf48</data>
   <data key="d13">blocking</data>
   <data key="d14"></data>
 </edge>

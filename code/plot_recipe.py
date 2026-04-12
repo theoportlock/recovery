@@ -83,5 +83,5 @@ plt.savefig(f'{output}/{var}.svg')
 plt.clf()
 
 # Save
-df.to_csv('results/recipe.tsv')
+df.to_csv('results/characteristics/recipe.tsv', sep='\t')
 

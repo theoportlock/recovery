@@ -109,7 +109,7 @@ def main():
     plt.gca().set_facecolor("white")
     plt.tight_layout()
 
-    output_file = Path('results/combined_nontime_heatmap_splitmam.svg')
+    output_file = Path('results/characteristics/combined_nontime_heatmap_splitmam.svg')
     plt.savefig(output_file)
     plt.close()
     print(f"Saved combined heatmap to {output_file}")

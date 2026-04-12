@@ -1,4 +1,5 @@
-results/recipe.tsv
-results/rda/rda.tsv
-results/baselinechange_recovery.tsv
-results/timechange_recovery.tsv
+results/characteristics/recipe.tsv
+results/baseline_change/maaslin/baselinechange.tsv
+results/healthy_change/rec_merged.tsv
+results/healthy_change/maaslin/healthychange.tsv
+conf/maaslin_config.tsv

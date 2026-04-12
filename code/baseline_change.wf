@@ -34,7 +34,7 @@ done</data>
 done'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">20455</data>
+  <data key="d10">7981</data>
   <data key="d11">0</data>
 </node>
 <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
@@ -52,7 +52,7 @@ done'</data>
   <data key="d8">Saved 12870 rows × 15 columns to results/baseline_change/maaslin/baselinechange.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">20497</data>
+  <data key="d10">8022</data>
   <data key="d11">0</data>
 </node>
 <node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
@@ -79,7 +79,7 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
 [2 rows x 8 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">22704</data>
+  <data key="d10">7761</data>
   <data key="d11">0</data>
 </node>
 <node id="1da8a511-5367-4a80-8510-06464399deb8">
@@ -94,63 +94,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   -o results/baseline_change/genetics_recovery.svg'</data>
   <data key="d8">✔ Polar plot saved to results/baseline_change/genetics_recovery.svg
 </data>
-  <data key="d9">Fontconfig warning: using without calling FcInit()
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-</data>
-  <data key="d10">22967</data>
+  <data key="d9"></data>
+  <data key="d10">7822</data>
   <data key="d11">0</data>
 </node>
 <node id="6d46e087-86b7-44f4-8268-e04ad35f3275">
@@ -173,7 +118,7 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
 [2 rows x 8 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">22738</data>
+  <data key="d10">7791</data>
   <data key="d11">0</data>
 </node>
 <node id="6cd59c60-d8fe-4449-be43-29f53856493e">
@@ -188,22 +133,22 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   -o results/filtered/genetics_standard.tsv'</data>
   <data key="d8">           ADHD_PRS   BMI_PRS    EA_PRS  ...  IBD_UC_PRS  Intelligent_PRS  NAFLD_PRS
 subjectID                                ...                                        
-LCC1009   -0.008949  0.201291  0.969422  ...    1.422500         1.366492  -0.063145
-LCC1019   -1.681983 -0.348303  1.670144  ...   -1.432725        -1.096837   1.072700
-LCC1112    0.165991 -1.447237  0.955417  ...   -0.491228        -0.342828  -0.129936
-LCC1111   -0.579977  1.128969  0.340799  ...    0.426133        -0.104717   1.246445
-LCC1110    0.769481 -0.756623 -1.223101  ...   -0.056688        -1.233456  -0.611233
+LCC2001   -0.481840 -2.317999  0.387886  ...    0.480999         0.461558  -1.238688
+LCC2002   -0.199114  1.219171 -1.339324  ...   -0.616321         0.112808  -0.899310
+LCC2003   -1.505612 -1.035105  1.118306  ...   -0.497811         0.757864   0.507366
+LCC2004    1.917017  1.853122  0.592331  ...    2.056755         1.334701  -1.405789
+LCC2005    0.149603  0.184267  1.325290  ...   -1.349338        -0.348629  -0.330663
 ...             ...       ...       ...  ...         ...              ...        ...
-LCC2070   -0.205271 -0.984795  0.925307  ...    1.124028         0.667990   0.546956
-LCC2071    1.351249  1.309627 -0.091001  ...   -1.753150         0.216197  -0.743373
-LCC2072   -0.038356  1.243563 -0.945274  ...    0.584147         0.685964  -0.987119
-LCC2074   -0.755790  1.273800 -0.533835  ...    0.327374        -0.478800  -0.330663
-LCC2075    0.875692 -0.473568  0.560524  ...    1.110860        -2.075718  -0.330663
+LCC1085   -0.739377  0.155809  0.387033  ...   -0.388079         0.750039  -1.007555
+LCC1081    0.239303  0.579375  0.190650  ...   -0.140085        -0.504796  -1.393176
+LCC1098   -1.012406  0.019872  0.910880  ...    0.757523         2.159153  -0.741509
+LCC1100    0.065891  1.007769 -1.100091  ...   -1.151810        -1.154187  -0.203269
+LCC1116    1.057056 -0.277666  0.317044  ...   -0.227870         0.438168  -1.539841
 
 [230 rows x 8 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">22636</data>
+  <data key="d10">7611</data>
   <data key="d11">0</data>
 </node>
 <node id="926989e3-4fb3-4348-8185-838470b98d88">
@@ -212,11 +157,11 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}</data>
   <data key="d4">-2021.0887310907583</data>
   <data key="d5">-38.61938137135533</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; #rm -rf results/baseline_change/maaslin/{baseline,change}
+  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">4980</data>
+  <data key="d10">7404</data>
   <data key="d11">0</data>
 </node>
 <node id="9a55d674-5bb9-4a2b-81b5-acd2da8e2533">
@@ -244,51 +189,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
        'Weight', 'Length', 'MUAC', 'HC', 'baseline_WLZ'],
       dtype='object')
 </data>
-  <data key="d9">Fontconfig warning: using without calling FcInit()
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-</data>
-  <data key="d10">21297</data>
+  <data key="d9"></data>
+  <data key="d10">8052</data>
   <data key="d11">0</data>
 </node>
 <node id="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
@@ -300,17 +202,15 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d4">-1520.2992807267694</data>
   <data key="d5">-64.99614335742996</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; asdfasdfasdf
-drop.py \
+  <data key="d7">bash -c '. env.sh &amp;&amp; drop.py \
   --infile results/filtered/surveillance.tsv \
   --labels days_of_catchup \
   --axis 1 \
   --outfile results/filtered/surveillance_minus_catchup.tsv '</data>
   <data key="d8">Dropped 1 item(s) along axis 1 and saved to results/filtered/surveillance_minus_catchup.tsv
 </data>
-  <data key="d9">bash: line 1: asdfasdfasdf: command not found
-</data>
-  <data key="d10">14014</data>
+  <data key="d9"></data>
+  <data key="d10">7424</data>
   <data key="d11">0</data>
 </node>
 <node id="4266ecc1-fceb-4453-9979-d627d61efa22">
@@ -326,32 +226,33 @@ drop.py \
   <data key="d5">611.4799329185282</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/species.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/species | tail'</data>
-  <data key="d8">2026-04-09 11:40:16.281064 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/species/fits/fitted_logistic.rds
-2026-04-09 11:40:16.283022 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/species/fits/fitted_logistic.rds
-2026-04-09 11:40:16.379478 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:22:07.066072 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/species/fits/fitted_logistic.rds
+2026-04-13 10:22:07.203183 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/species/all_results.tsv
-2026-04-09 11:40:16.407986 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/species/significant_results.tsv
-2026-04-09 11:40:16.437654 INFO::Writing summary plot of significant
+2026-04-13 10:22:07.240615 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/species/significant_results.tsv
+2026-04-13 10:22:07.296067 INFO::Creating output figures folder
+2026-04-13 10:22:07.304182 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/species/figures/summary_plot.pdf
-2026-04-09 11:40:20.936333 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/species/figures
-2026-04-09 11:40:20.999305 INFO::All associations had errors 
+2026-04-13 10:22:12.608286 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/species/figures
+2026-04-13 10:22:12.674056 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"logistic_error"` instead of `.data$logistic_error`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"logistic_error"` instead of `.data$logistic_error` 
 </data>
-  <data key="d10">20080</data>
+  <data key="d10">7585</data>
   <data key="d11">0</data>
 </node>
 <node id="cee743f6-e644-4c4a-a0b1-e7d3fe9236de">
@@ -367,32 +268,33 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">763.7832491282144</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/pathways.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/pathways | tail'</data>
-  <data key="d8">2026-04-09 11:40:16.260733 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/pathways/fits/fitted_logistic.rds
-2026-04-09 11:40:16.26216 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/pathways/fits/fitted_logistic.rds
-2026-04-09 11:40:16.339457 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:22:07.523042 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/pathways/fits/fitted_logistic.rds
+2026-04-13 10:22:07.632114 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/pathways/all_results.tsv
-2026-04-09 11:40:16.365689 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/pathways/significant_results.tsv
-2026-04-09 11:40:16.391873 INFO::Writing summary plot of significant
+2026-04-13 10:22:07.669799 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/pathways/significant_results.tsv
+2026-04-13 10:22:07.701509 INFO::Creating output figures folder
+2026-04-13 10:22:07.706105 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/pathways/figures/summary_plot.pdf
-2026-04-09 11:40:20.875671 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/pathways/figures
-2026-04-09 11:40:20.933794 INFO::All associations had errors 
+2026-04-13 10:22:12.914404 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/pathways/figures
+2026-04-13 10:22:12.978016 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"logistic_error"` instead of `.data$logistic_error`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"logistic_error"` instead of `.data$logistic_error` 
 </data>
-  <data key="d10">20086</data>
+  <data key="d10">7600</data>
   <data key="d11">0</data>
 </node>
 <node id="1641d7e7-1b62-4672-b0d5-4a9c87148296">
@@ -415,7 +317,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">56.513783640372935</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -429,23 +331,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/lipids.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/lipids | tail'</data>
-  <data key="d8">2026-04-09 11:40:10.400293 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/lipids/fits/fitted_linear.rds
-2026-04-09 11:40:10.401926 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/lipids/fits/fitted_linear.rds
-2026-04-09 11:40:10.444846 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:59.18359 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/lipids/fits/fitted_linear.rds
+2026-04-13 10:21:59.265001 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/lipids/all_results.tsv
-2026-04-09 11:40:10.45927 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/lipids/significant_results.tsv
-2026-04-09 11:40:10.484814 INFO::Writing summary plot of significant
+2026-04-13 10:21:59.288711 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/lipids/significant_results.tsv
+2026-04-13 10:21:59.320658 INFO::Creating output figures folder
+2026-04-13 10:21:59.323933 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/lipids/figures/summary_plot.pdf
-2026-04-09 11:40:14.853524 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/lipids/figures
-2026-04-09 11:40:14.931345 INFO::All associations had errors 
+2026-04-13 10:22:04.730228 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/lipids/figures
+2026-04-13 10:22:04.826909 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20090</data>
+  <data key="d10">7555</data>
   <data key="d11">0</data>
 </node>
 <node id="e42dd40e-e4a0-45af-bb26-0619cf5b0537">
@@ -468,7 +371,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">-227.70849077087473</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -482,23 +385,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/filtered/surveillance_minus_catchup.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/surveillance | tail'</data>
-  <data key="d8">2026-04-09 11:39:55.524258 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/surveillance/fits/fitted_linear.rds
-2026-04-09 11:39:55.525876 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/surveillance/fits/fitted_linear.rds
-2026-04-09 11:39:55.569717 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:34.648189 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/surveillance/fits/fitted_linear.rds
+2026-04-13 10:21:34.778859 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/surveillance/all_results.tsv
-2026-04-09 11:39:55.573252 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/surveillance/significant_results.tsv
-2026-04-09 11:39:55.61926 INFO::Writing summary plot of significant
+2026-04-13 10:21:34.784936 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/surveillance/significant_results.tsv
+2026-04-13 10:21:34.878581 INFO::Creating output figures folder
+2026-04-13 10:21:34.882305 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/surveillance/figures/summary_plot.pdf
-2026-04-09 11:40:02.837454 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/surveillance/figures
-2026-04-09 11:40:02.95352 INFO::All associations had errors 
+2026-04-13 10:21:50.915998 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/surveillance/figures
+2026-04-13 10:21:51.034218 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20091</data>
+  <data key="d10">7472</data>
   <data key="d11">0</data>
 </node>
 <node id="c9a3b889-c10c-440e-9439-ba5e6b62bc88">
@@ -521,7 +425,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">41.4281921813656</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -535,23 +439,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/filtered/genetics.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/genetics | tail'</data>
-  <data key="d8">2026-04-09 11:39:51.940552 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/genetics/fits/fitted_linear.rds
-2026-04-09 11:39:51.942426 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/genetics/fits/fitted_linear.rds
-2026-04-09 11:39:51.987452 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:33.926108 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/genetics/fits/fitted_linear.rds
+2026-04-13 10:21:34.004905 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/genetics/all_results.tsv
-2026-04-09 11:39:51.990519 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/genetics/significant_results.tsv
-2026-04-09 11:39:52.037573 INFO::Writing summary plot of significant
+2026-04-13 10:21:34.009811 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/genetics/significant_results.tsv
+2026-04-13 10:21:34.120178 INFO::Creating output figures folder
+2026-04-13 10:21:34.123582 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/genetics/figures/summary_plot.pdf
-2026-04-09 11:39:58.865201 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/genetics/figures
-2026-04-09 11:39:58.99097 INFO::All associations had errors 
+2026-04-13 10:21:50.580332 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/genetics/figures
+2026-04-13 10:21:50.762086 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20113</data>
+  <data key="d10">7480</data>
   <data key="d11">0</data>
 </node>
 <node id="ed1a047c-4ee4-44c2-856b-b8c1afa35d7c">
@@ -574,7 +479,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">323.73081248325184</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -588,23 +493,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/vitamin.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/vitamin | tail'</data>
-  <data key="d8">2026-04-09 11:39:56.181893 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/vitamin/fits/fitted_linear.rds
-2026-04-09 11:39:56.184636 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/vitamin/fits/fitted_linear.rds
-2026-04-09 11:39:56.242172 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:32.895669 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/vitamin/fits/fitted_linear.rds
+2026-04-13 10:21:33.007917 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/vitamin/all_results.tsv
-2026-04-09 11:39:56.246572 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/vitamin/significant_results.tsv
-2026-04-09 11:39:56.319756 INFO::Writing summary plot of significant
+2026-04-13 10:21:33.013661 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/vitamin/significant_results.tsv
+2026-04-13 10:21:33.109069 INFO::Creating output figures folder
+2026-04-13 10:21:33.112235 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/vitamin/figures/summary_plot.pdf
-2026-04-09 11:40:04.96607 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/vitamin/figures
-2026-04-09 11:40:05.040742 INFO::All associations had errors 
+2026-04-13 10:21:49.773182 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/vitamin/figures
+2026-04-13 10:21:50.063052 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20135</data>
+  <data key="d10">7488</data>
   <data key="d11">0</data>
 </node>
 <node id="7d64dcb5-8253-4d80-9436-436ecdf13890">
@@ -627,7 +533,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">601.6937111352677</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -641,23 +547,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/anthro.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/anthro | tail'</data>
-  <data key="d8">2026-04-09 11:39:52.276851 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/anthro/fits/fitted_linear.rds
-2026-04-09 11:39:52.278664 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/anthro/fits/fitted_linear.rds
-2026-04-09 11:39:52.32354 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:33.300486 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/anthro/fits/fitted_linear.rds
+2026-04-13 10:21:33.382506 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/anthro/all_results.tsv
-2026-04-09 11:39:52.326677 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/anthro/significant_results.tsv
-2026-04-09 11:39:52.373537 INFO::Writing summary plot of significant
+2026-04-13 10:21:33.397578 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/anthro/significant_results.tsv
+2026-04-13 10:21:33.511638 INFO::Creating output figures folder
+2026-04-13 10:21:33.51762 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/anthro/figures/summary_plot.pdf
-2026-04-09 11:40:01.650609 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/anthro/figures
-2026-04-09 11:40:01.763904 INFO::All associations had errors 
+2026-04-13 10:21:49.111135 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/anthro/figures
+2026-04-13 10:21:49.371484 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20157</data>
+  <data key="d10">7507</data>
   <data key="d11">0</data>
 </node>
 <node id="6a1a27fd-5551-42c0-b828-c751e3bcd7e1">
@@ -680,7 +587,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">-483.564515369874</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -694,23 +601,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/sleep.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/sleep | tail'</data>
-  <data key="d8">2026-04-09 11:39:52.871017 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/sleep/fits/fitted_linear.rds
-2026-04-09 11:39:52.872877 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/sleep/fits/fitted_linear.rds
-2026-04-09 11:39:52.918747 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:33.915355 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/sleep/fits/fitted_linear.rds
+2026-04-13 10:21:33.992966 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/sleep/all_results.tsv
-2026-04-09 11:39:52.921773 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/sleep/significant_results.tsv
-2026-04-09 11:39:52.966203 INFO::Writing summary plot of significant
+2026-04-13 10:21:33.997736 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/sleep/significant_results.tsv
+2026-04-13 10:21:34.093503 INFO::Creating output figures folder
+2026-04-13 10:21:34.099291 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/sleep/figures/summary_plot.pdf
-2026-04-09 11:40:00.28169 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/sleep/figures
-2026-04-09 11:40:00.386853 INFO::All associations had errors 
+2026-04-13 10:21:49.8044 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/sleep/figures
+2026-04-13 10:21:50.080952 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20172</data>
+  <data key="d10">7565</data>
   <data key="d11">0</data>
 </node>
 <node id="d5190bf3-5dfe-44a1-bf10-f4d9c27c53c2">
@@ -733,7 +641,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">-218.3351463388982</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -747,23 +655,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/head.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/head | tail'</data>
-  <data key="d8">2026-04-09 11:39:56.082766 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/head/fits/fitted_linear.rds
-2026-04-09 11:39:56.086262 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/head/fits/fitted_linear.rds
-2026-04-09 11:39:56.162016 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:33.173343 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/head/fits/fitted_linear.rds
+2026-04-13 10:21:33.280924 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/head/all_results.tsv
-2026-04-09 11:39:56.166498 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/head/significant_results.tsv
-2026-04-09 11:39:56.236233 INFO::Writing summary plot of significant
+2026-04-13 10:21:33.288648 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/head/significant_results.tsv
+2026-04-13 10:21:33.383268 INFO::Creating output figures folder
+2026-04-13 10:21:33.39185 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/head/figures/summary_plot.pdf
-2026-04-09 11:40:04.592791 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/head/figures
-2026-04-09 11:40:04.678859 INFO::All associations had errors 
+2026-04-13 10:21:49.62467 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/head/figures
+2026-04-13 10:21:49.877142 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20185</data>
+  <data key="d10">7535</data>
   <data key="d11">0</data>
 </node>
 <node id="addd9bb9-20f5-45c4-af24-32217cedff2e">
@@ -786,7 +695,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">341.3630344954357</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -800,23 +709,24 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/alpha_diversity.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/alpha_diversity | tail'</data>
-  <data key="d8">2026-04-09 11:39:56.88428 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/alpha_diversity/fits/fitted_linear.rds
-2026-04-09 11:39:56.886892 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/alpha_diversity/fits/fitted_linear.rds
-2026-04-09 11:39:56.938868 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 10:21:33.866832 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/alpha_diversity/fits/fitted_linear.rds
+2026-04-13 10:21:33.945257 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/alpha_diversity/all_results.tsv
-2026-04-09 11:39:56.942825 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/alpha_diversity/significant_results.tsv
-2026-04-09 11:39:57.024724 INFO::Writing summary plot of significant
+2026-04-13 10:21:33.95054 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/alpha_diversity/significant_results.tsv
+2026-04-13 10:21:34.049349 INFO::Creating output figures folder
+2026-04-13 10:21:34.052508 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/alpha_diversity/figures/summary_plot.pdf
-2026-04-09 11:40:04.040011 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/alpha_diversity/figures
-2026-04-09 11:40:04.138035 INFO::All associations had errors 
+2026-04-13 10:21:50.168902 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/alpha_diversity/figures
+2026-04-13 10:21:50.351117 INFO::All associations had errors 
                                 or were insignificant.
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
+  <data key="d9">Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">20202</data>
+  <data key="d10">7525</data>
   <data key="d11">0</data>
 </node>
 <node id="6f87e711-bac9-4082-b06f-2fc6ed83d75a">
@@ -853,15 +763,27 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/aa.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/aa | tail'</data>
-  <data key="d8">2026-04-12 15:28:52.890221 INFO::Writing function arguments to log file
-2026-04-12 15:28:52.928822 INFO::Verifying options selected are valid
+  <data key="d8">2026-04-13 10:21:35.076967 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/all_results.tsv
+2026-04-13 10:21:35.083107 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/significant_results.tsv
+2026-04-13 10:21:35.172413 INFO::Creating output figures folder
+2026-04-13 10:21:35.175775 INFO::Writing summary plot of significant
+                        results to file: results/baseline_change/maaslin/baseline/aa/figures/summary_plot.pdf
+2026-04-13 10:21:51.01809 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/aa/figures
+2026-04-13 10:21:51.132708 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-04-13 10:21:51.199656 INFO::Creating box plot for categorical data (linear), 
+                        Recovery vs aspartic_acid
 </data>
-  <data key="d9">Error in maaslin_read_data(input_data, input_metadata, feature_specific_covariate,  : 
-  object 'metadata' not found
-Calls: maaslin3 -&gt; maaslin_read_data
+  <data key="d9">Error in if ("linear" == model_name) { : argument is of length zero
+Calls: maaslin3 ... tryCatchList -&gt; withCallingHandlers -&gt; maaslin3_association_plots
+In addition: Warning messages:
+1: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
 Execution halted
 </data>
-  <data key="d10">5024</data>
+  <data key="d10">7464</data>
   <data key="d11">0</data>
 </node>
 <node id="15768015-3b3b-4959-853d-9e4ffb088a2e">
@@ -952,7 +874,7 @@ Delivery_ModeCaesarean         vitamin  abundance       5.0    0.0       0.0    
 Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">21557</data>
+  <data key="d10">8060</data>
   <data key="d11">0</data>
 </node>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
@@ -961,10 +883,12 @@ Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
 </edge>
 <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="9a55d674-5bb9-4a2b-81b5-acd2da8e2533">
   <data key="d12">36746f2e-a45a-42f0-933e-f4916f270efe</data>
+  <data key="d13"></data>
 </edge>
 <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="15768015-3b3b-4959-853d-9e4ffb088a2e">
   <data key="d12">9530098c-79f2-4552-8fec-40975d4343c2</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275">
   <data key="d12">fd394148-b65a-420e-b89d-2e07997c88cb</data>
@@ -976,6 +900,7 @@ Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
 </edge>
 <edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
   <data key="d12">34ed9bf1-e204-4a17-ba93-dfd54e4827b6</data>
+  <data key="d13"></data>
 </edge>
 <edge source="926989e3-4fb3-4348-8185-838470b98d88" target="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
   <data key="d12">e6949040-6804-4f26-96b3-68183d193231</data>
@@ -985,93 +910,116 @@ Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="6f87e711-bac9-4082-b06f-2fc6ed83d75a">
   <data key="d12">ae07aed6-9d0e-4ead-ba8e-eec212ba4027</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="e42dd40e-e4a0-45af-bb26-0619cf5b0537">
   <data key="d12">4a9f38b1-d610-40b3-8bdd-7a4c9cc54054</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="c9a3b889-c10c-440e-9439-ba5e6b62bc88">
   <data key="d12">dc77ec00-cbf0-48e3-8232-f2d532ff5efd</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="ed1a047c-4ee4-44c2-856b-b8c1afa35d7c">
   <data key="d12">86fece6a-293c-4a6c-8dcf-a94d99e758cc</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="7d64dcb5-8253-4d80-9436-436ecdf13890">
   <data key="d12">612d4510-cc15-48eb-9f98-f522465da4e1</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="addd9bb9-20f5-45c4-af24-32217cedff2e">
   <data key="d12">47eebd84-fbfe-4797-b69d-3d78f20684b6</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="d5190bf3-5dfe-44a1-bf10-f4d9c27c53c2">
   <data key="d12">dbc896ad-6a4f-4543-a80a-d8a60ea15bfe</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="1641d7e7-1b62-4672-b0d5-4a9c87148296">
   <data key="d12">d5c7f25a-a478-451c-9327-a378dd26a89f</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="6a1a27fd-5551-42c0-b828-c751e3bcd7e1">
   <data key="d12">f6d39892-1746-4afc-8d01-18fb5565af49</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="4266ecc1-fceb-4453-9979-d627d61efa22">
   <data key="d12">74e270c0-bad9-4b1a-b1db-5685cab3acf8</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="cee743f6-e644-4c4a-a0b1-e7d3fe9236de">
   <data key="d12">82d416ae-aa1c-4bcb-979c-1d279ab0161a</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="6cd59c60-d8fe-4449-be43-29f53856493e">
   <data key="d12">02f46611-85fd-404f-927d-657dc82fb945</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="4266ecc1-fceb-4453-9979-d627d61efa22" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">259c2c8c-7864-4ec6-b347-f6ddecfc9722</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="cee743f6-e644-4c4a-a0b1-e7d3fe9236de" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">702a0107-ac26-448b-9612-470a192d6987</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="1641d7e7-1b62-4672-b0d5-4a9c87148296" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">2fdba20c-13ae-4d80-ba5e-b307e88b6e05</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="e42dd40e-e4a0-45af-bb26-0619cf5b0537" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">ed9c687d-24e9-4c8c-a5aa-c3846a174587</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c9a3b889-c10c-440e-9439-ba5e6b62bc88" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">8d205b5e-8128-4c3a-b9ce-1f372ff8a336</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="ed1a047c-4ee4-44c2-856b-b8c1afa35d7c" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">d0ed49ac-9876-49bd-9912-0964a1a1740f</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="7d64dcb5-8253-4d80-9436-436ecdf13890" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">b915ee54-e1a0-4ae6-aa10-46db12f0bd13</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6a1a27fd-5551-42c0-b828-c751e3bcd7e1" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">4a8236df-4612-4ec0-8b54-37fb10d0948c</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="d5190bf3-5dfe-44a1-bf10-f4d9c27c53c2" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">cb38c8b8-233e-4319-b3d2-c66e011e34cf</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="addd9bb9-20f5-45c4-af24-32217cedff2e" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">9fd33f6a-1506-4ead-8172-0dbd5102adaf</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6f87e711-bac9-4082-b06f-2fc6ed83d75a" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">928f987b-cf0c-4ff9-a852-da93ec44592c</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 </graph></graphml>

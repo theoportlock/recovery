@@ -69,9 +69,9 @@ box.py \
   -x Feed \
   -y days_of_catchup \
   --figsize 2.7,2.7 \
-  -o results/figure1/days_of_catchup_box.svg</data>
-  <data key="d4">101.58040362425953</data>
-  <data key="d5">-150.8611482391491</data>
+  -o results/recovery_rates/days_of_catchup_box.svg</data>
+  <data key="d4">66.75838109241454</data>
+  <data key="d5">-196.12977753054756</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
 box.py \
@@ -120,9 +120,9 @@ box.py \
   --figsize 2.7,2.7 \
   --ymin 0 \
   --ymax 50 \
-  -o results/figure1/days_to_recovery_box.svg</data>
-  <data key="d4">103.84282696784584</data>
-  <data key="d5">24.67500922061572</data>
+  -o results/recovery_rates/days_to_recovery_box.svg</data>
+  <data key="d4">64.66805161952021</data>
+  <data key="d5">-28.42857514044786</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
 box.py \
@@ -155,6 +155,12 @@ box.py \
   <data key="d5">298.3159305646946</data>
   <data key="d6"></data>
 </node>
+<node id="89c86cb9-843c-4d42-91ee-c5f022db7f44">
+  <data key="d3">table3_recovery.sh</data>
+  <data key="d4">-54.20076448246829</data>
+  <data key="d5">362.81561829218606</data>
+  <data key="d6"></data>
+</node>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d12">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
   <data key="d13"></data>
@@ -181,6 +187,10 @@ box.py \
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
   <data key="d12">efa7f1b2-1fd5-4e49-8a1b-8acee9077e2c</data>
+  <data key="d14">blocking</data>
+</edge>
+<edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="89c86cb9-843c-4d42-91ee-c5f022db7f44">
+  <data key="d12">081bbe28-1e93-4067-a19e-914c05747061</data>
   <data key="d14">blocking</data>
 </edge>
 </graph></graphml>
