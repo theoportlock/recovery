@@ -23,14 +23,14 @@
   --hue Recovery \
   --id subjectID \
   --output results/tmp2.svg</data>
-  <data key="d4">2831.456848743881</data>
-  <data key="d5">380.76754765817</data>
+  <data key="d4">3422.586309682937</data>
+  <data key="d5">86.71853375515258</data>
   <data key="d6"></data>
 </node>
 <node id="a92b7548-e188-4cb2-a3bf-7c3c46d70f28">
   <data key="d3">maaslin3_healthy.sh</data>
-  <data key="d4">1024.4383606380684</data>
-  <data key="d5">135.51891443604666</data>
+  <data key="d4">1092.0355901654639</data>
+  <data key="d5">-152.87000367353397</data>
   <data key="d6"></data>
 </node>
 <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
@@ -38,8 +38,8 @@
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/figure3/maaslin/healthy/change/$name.tsv"
 done</data>
-  <data key="d4">1370.7514919511996</data>
-  <data key="d5">93.63002554715797</data>
+  <data key="d4">1961.880952890256</data>
+  <data key="d5">-200.4189883558594</data>
   <data key="d6"></data>
 </node>
 <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
@@ -47,8 +47,8 @@ done</data>
   --append \
   --add-filename \
   -o results/figure3/timechange.tsv</data>
-  <data key="d4">2172.8348252845344</data>
-  <data key="d5">91.963358880491</data>
+  <data key="d4">2763.9642862235905</data>
+  <data key="d5">-202.08565502252637</data>
   <data key="d6"></data>
 </node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
@@ -57,21 +57,21 @@ done</data>
   -p 0.1 \
   -s qval_joint \
   -o results/figure3/timechange_summary.tsv</data>
-  <data key="d4">3063.1919681416775</data>
-  <data key="d5">235.13002554715843</data>
+  <data key="d4">3760.4215887364617</data>
+  <data key="d5">-55.88755522283815</data>
   <data key="d6"></data>
 </node>
 <node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
   <data key="d3">rm -rf results/healthy_change/maaslin/healthy/change
 mkdir -p results/healthy_change/maaslin/healthy/change</data>
-  <data key="d4">405.9023906976413</data>
-  <data key="d5">127.36596147478042</data>
+  <data key="d4">384.79026412527503</data>
+  <data key="d5">126.04645356400752</data>
   <data key="d6"></data>
 </node>
 <node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
   <data key="d3">hbar_fig3.py</data>
-  <data key="d4">2987.441527506595</data>
-  <data key="d5">136.72453074490048</data>
+  <data key="d4">3684.671148101379</data>
+  <data key="d5">-154.2930500250961</data>
   <data key="d6"></data>
 </node>
 <node id="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a">
@@ -79,8 +79,8 @@ mkdir -p results/healthy_change/maaslin/healthy/change</data>
   results/figure3/timechange.tsv \
   -q "error.isna()" \
   -o results/figure3/timechange_filter.tsv</data>
-  <data key="d4">2782.481491951199</data>
-  <data key="d5">5.196692213825031</data>
+  <data key="d4">3373.6109528902552</data>
+  <data key="d5">-288.8523216891923</data>
   <data key="d6"></data>
 </node>
 <node id="dd6c7194-194c-40ae-90f3-cc8c22c608b2">
@@ -88,8 +88,8 @@ mkdir -p results/healthy_change/maaslin/healthy/change</data>
 do
   overall_recovery.py "$d"
 done</data>
-  <data key="d4">1079.3308773041354</data>
-  <data key="d5">331.11110805169966</data>
+  <data key="d4">1370.3484580741324</data>
+  <data key="d5">894.957670793568</data>
   <data key="d6"></data>
 </node>
 <node id="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
@@ -97,14 +97,14 @@ done</data>
   results/figure3/*recovery.tsv \
   -a \
   -o results/figure3/rec_merged.tsv</data>
-  <data key="d4">1726.4311414966783</data>
-  <data key="d5">337.89412968893816</data>
+  <data key="d4">2017.4487222666753</data>
+  <data key="d5">901.7406924308066</data>
   <data key="d6"></data>
 </node>
 <node id="05b34ebc-bb72-4db1-835f-78a960acfc33">
   <data key="d3">hbar_fig3.py</data>
-  <data key="d4">2073.7218493232763</data>
-  <data key="d5">355.52998594575695</data>
+  <data key="d4">2364.7394300932733</data>
+  <data key="d5">919.3765486876252</data>
   <data key="d6"></data>
 </node>
 <node id="efff9afc-b0ea-4937-a15d-319ee982992b">
@@ -112,8 +112,8 @@ done</data>
   results/filtered/{}.tsv \
   -o results/distance/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-  <data key="d4">973.8751550215381</data>
-  <data key="d5">560.3151739836899</data>
+  <data key="d4">1264.892735791535</data>
+  <data key="d5">1124.1617367255583</data>
   <data key="d6"></data>
 </node>
 <node id="e852a3bc-1df2-4249-9855-9c943d20b037">
@@ -121,8 +121,8 @@ done</data>
   -i results/distance/{}.tsv \
   -o results/pcoa/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-  <data key="d4">1344.7297525379722</data>
-  <data key="d5">584.9126727985554</data>
+  <data key="d4">1635.7473333079693</data>
+  <data key="d5">1148.7592355404238</data>
   <data key="d6"></data>
 </node>
 <node id="b2979940-9977-4efd-a449-7cf18486839a">
@@ -132,8 +132,8 @@ results/pcoa/{}.tsv \
 --group-col timepoint \
 -o results/spindle/{}.pdf \
 &lt; conf/timedatasets.txt</data>
-  <data key="d4">1690.9868512395406</data>
-  <data key="d5">581.128442211653</data>
+  <data key="d4">1982.0044320095376</data>
+  <data key="d5">1144.9750049535214</data>
   <data key="d6"></data>
 </node>
 <node id="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
@@ -141,8 +141,8 @@ results/pcoa/{}.tsv \
   results/spindle/* \
   --rows 3 \
   -o results/all_spindle.svg</data>
-  <data key="d4">2065.625679342877</data>
-  <data key="d5">598.1574798527137</data>
+  <data key="d4">2356.643260112874</data>
+  <data key="d5">1162.004042594582</data>
   <data key="d6"></data>
 </node>
 <edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>

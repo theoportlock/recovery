@@ -97,11 +97,11 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}</data>
   <data key="d4">867.1022605163748</data>
   <data key="d5">-226.31964947406732</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/baseline_change/maaslin/{baseline,change}
+  <data key="d7">bash -c '. env.sh &amp;&amp; #rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">13994</data>
+  <data key="d10">4980</data>
   <data key="d11">0</data>
 </node>
 <node id="9a55d674-5bb9-4a2b-81b5-acd2da8e2533">
@@ -232,8 +232,8 @@ drop.py \
 	results/timepoints/0/species.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/species | tail</data>
-  <data key="d4">2829.129918532084</data>
-  <data key="d5">424.2875715054686</data>
+  <data key="d4">2822.1655140257153</data>
+  <data key="d5">417.3231669990996</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -273,8 +273,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/pathways.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/pathways | tail</data>
-  <data key="d4">2828.711139106812</data>
-  <data key="d5">583.7010882335655</data>
+  <data key="d4">2823.4878357270354</data>
+  <data key="d5">578.4777848537889</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -692,8 +692,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/alpha_diversity.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/alpha_diversity | tail</data>
-  <data key="d4">2825.0117679396303</data>
-  <data key="d5">-692.9814393101386</data>
+  <data key="d4">2833.7172735725912</data>
+  <data key="d5">-680.7937314239929</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -731,7 +731,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="6f87e711-bac9-4082-b06f-2fc6ed83d75a">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -749,7 +749,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
   <data key="d5">-691.4367903195904</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -763,26 +763,15 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/aa.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/aa | tail'</data>
-  <data key="d8">2026-04-09 11:39:52.347217 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/aa/fits/fitted_linear.rds
-2026-04-09 11:39:52.393552 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/all_results.tsv
-2026-04-09 11:39:52.397203 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/significant_results.tsv
-2026-04-09 11:39:52.442175 INFO::Writing summary plot of significant
-                        results to file: results/baseline_change/maaslin/baseline/aa/figures/summary_plot.pdf
-2026-04-09 11:39:59.528867 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/aa/figures
-2026-04-09 11:39:59.628919 INFO::Plotting associations from most to least significant, grouped by metadata
-2026-04-09 11:39:59.691375 INFO::Creating box plot for categorical data (linear), 
-                        Recovery vs aspartic_acid
+  <data key="d8">2026-04-12 15:28:52.890221 INFO::Writing function arguments to log file
+2026-04-12 15:28:52.928822 INFO::Verifying options selected are valid
 </data>
-  <data key="d9">Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"pval"` instead of `.data$pval`
-Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
-ℹ Please use `"qval"` instead of `.data$qval`
-Error in if ("linear" == model_name) { : argument is of length zero
-Calls: maaslin3 ... tryCatchList -&gt; withCallingHandlers -&gt; maaslin3_association_plots
+  <data key="d9">Error in maaslin_read_data(input_data, input_metadata, feature_specific_covariate,  : 
+  object 'metadata' not found
+Calls: maaslin3 -&gt; maaslin_read_data
 Execution halted
 </data>
-  <data key="d10">20217</data>
+  <data key="d10">5024</data>
   <data key="d11">0</data>
 </node>
 <node id="15768015-3b3b-4959-853d-9e4ffb088a2e">
@@ -887,6 +876,10 @@ Execution halted
 </edge>
 <edge source="ed1a047c-4ee4-44c2-856b-b8c1afa35d7c" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d12">d0ed49ac-9876-49bd-9912-0964a1a1740f</data>
+  <data key="d14">blocking</data>
+</edge>
+<edge source="7d64dcb5-8253-4d80-9436-436ecdf13890" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
+  <data key="d12">b915ee54-e1a0-4ae6-aa10-46db12f0bd13</data>
   <data key="d14">blocking</data>
 </edge>
 <edge source="6a1a27fd-5551-42c0-b828-c751e3bcd7e1" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
