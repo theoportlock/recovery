@@ -13,7 +13,8 @@ import sys
 #subject = 'sleep'
 #subject = 'aa'
 subject = sys.argv[1]
-dataset = pd.read_csv(f'results/filtered/{subject}.tsv', sep='\t', index_col=0)
+outfile = sys.argv[2]
+dataset = pd.read_csv(subject, sep='\t', index_col=0)
 dataset = dataset.loc[:, ~dataset.isna().sum().div(dataset.shape[0]).gt(0.5)]
 dataset = dataset.dropna()
 print(subject)
@@ -78,5 +79,5 @@ t1ysig = PERMANOVA(pd.concat([Ct1, Mt1Y]))
 output = pd.DataFrame([x, y, t1xsig, t1ysig, t2xsig,t2ysig], columns=[subject], index=['A_improvement(%)', 'B_improvement(%)', 'A_t1_pval', 'B_t1_pval', 'A_t2_pval', 'B_t2_pval']).T
 print(output)
 
-output.to_csv(f'results/figure3/{subject}recovery.tsv', sep='\t')
+output.to_csv(outfile, sep='\t')
 

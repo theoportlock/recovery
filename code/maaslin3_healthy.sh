@@ -1,38 +1,17 @@
-#!/usr/bin/env bash
-
-set -euo pipefail
-source env.sh
-
-input=$1
-timemeta=$2
-output=$3
-input=results/filtered/
-timemeta=results/filtered/timemeta.tsv
-output=results/figure3/maaslin/healthy
-
-# Consider dropping Recovery category
-rm -rf $output
-mkdir $output
-
-filter.py \
-    $timemeta \
-    -q 'timepoint == 0 or timepoint == 52' \
-    -o $output/timemeta_0_52tp.tsv
-
-fillna.py \
-    -i $output/timemeta_0_52tp.tsv \
-    -c Feed,Recovery \
-    -v 'Well-nourished' \
-    -o $output/timemeta_0_52tp_filled.tsv
-
-replace.py \
-    $output/timemeta_0_52tp_filled.tsv \
-    --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
-    --output $output/timemeta_0_52tp_filled_formatted.tsv
+maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/species.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/species
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.2 \
     --max_significance 0.1 \
@@ -40,15 +19,15 @@ maaslin3.R \
     --transform LOG \
     --warn_prevalence False \
     --small_random_effects True \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/species.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/species \
+    results/filtered/pathways.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/pathways
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -58,15 +37,15 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --evaluate_only abundance \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/alpha_diversity.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/alpha_diversity
+    results/filtered/alpha_diversity.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/alpha_diversity
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -75,15 +54,15 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --evaluate_only abundance \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/anthro.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/anthro
+    results/filtered/anthro.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/anthro
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -92,31 +71,15 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --evaluate_only abundance \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/head.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/head
+    results/filtered/head.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/head
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
-    --min_abundance 0 \
-    --min_prevalence 0.0 \
-    --max_significance 0.1 \
-    --normalization TSS \
-    --transform LOG \
-    --warn_prevalence False \
-    --small_random_effects True \
-    --max_pngs 100 \
-    --cores 1 \
-    $input/pathways.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/pathways
-
-maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -125,15 +88,15 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --evaluate_only abundance \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/sleep.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/sleep
+    results/filtered/sleep.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/sleep
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -142,15 +105,15 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --evaluate_only abundance \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/aa.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/aa
+    results/filtered/aa.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/aa
 
 maaslin3.R \
-    --formula "~ timepoint * Feed + (1|subjectID)" \
-    --reference "Feed,Well-nourished;timepoint,yr1" \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -159,8 +122,8 @@ maaslin3.R \
     --warn_prevalence False \
     --small_random_effects True \
     --evaluate_only abundance \
-    --max_pngs 100 \
+    --max_pngs 0 \
     --cores 1 \
-    $input/vitamin.tsv \
-    $output/timemeta_0_52tp_filled_formatted.tsv \
-    $output/vitamin
+    results/filtered/vitamin.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/vitamin

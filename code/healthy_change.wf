@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d8" for="edge" attr.name="edge_type" attr.type="string"/>
-<key id="d7" for="edge" attr.name="id" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d12" for="edge" attr.name="id" attr.type="string"/>
+<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d10" for="node" attr.name="pid" attr.type="string"/>
+<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d7" for="node" attr.name="command" attr.type="string"/>
 <key id="d6" for="node" attr.name="status" attr.type="string"/>
 <key id="d5" for="node" attr.name="y" attr.type="string"/>
 <key id="d4" for="node" attr.name="x" attr.type="string"/>
@@ -16,104 +21,180 @@
 <data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="14b716fa-cb0b-4379-9727-7769f1510a88">
   <data key="d3">multiline.py \
-  --subject results/maaslin/time/species/features/data_transformed.tsv \
+  --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
   --meta results/filtered/timemeta.tsv \
   --x timepoint \
   --y 'Allisonella_histaminiformans|SGB5843' \
   --hue Recovery \
   --id subjectID \
-  --output results/tmp2.svg</data>
-  <data key="d4">3422.586309682937</data>
-  <data key="d5">86.71853375515258</data>
-  <data key="d6"></data>
-</node>
-<node id="a92b7548-e188-4cb2-a3bf-7c3c46d70f28">
-  <data key="d3">maaslin3_healthy.sh</data>
-  <data key="d4">1092.0355901654639</data>
-  <data key="d5">-152.87000367353397</data>
+  --output results/healthy_change/allis_multiline.svg</data>
+  <data key="d4">3678.520445226949</data>
+  <data key="d5">-140.1551478387505</data>
   <data key="d6"></data>
 </node>
 <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
-  <data key="d3">for d in results/figure3/maaslin/healthy/*/; do
+  <data key="d3">for d in results/healthy_change/maaslin/*/; do
     name=$(basename "$d")
-    cp "$d/all_results.tsv" "results/figure3/maaslin/healthy/change/$name.tsv"
+    cp "$d/all_results.tsv" "results/healthy_change/change/$name.tsv"
 done</data>
-  <data key="d4">1961.880952890256</data>
-  <data key="d5">-200.4189883558594</data>
-  <data key="d6"></data>
+  <data key="d4">2466.895597974934</data>
+  <data key="d5">-287.53114242254384</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/healthy/*/; do
+    name=$(basename "$d")
+    cp "$d/all_results.tsv" "results/healthy_change/maaslin/change/$name.tsv"
+done'</data>
+  <data key="d8"></data>
+  <data key="d9">cp: cannot stat 'results/healthy_change/maaslin/healthy/pathways//all_results.tsv': No such file or directory
+</data>
+  <data key="d10">43409</data>
+  <data key="d11">0</data>
 </node>
 <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
-  <data key="d3">merge.py results/figure3/maaslin/healthy/change/*.tsv \
+  <data key="d3">merge.py results/healthy_change/change/*.tsv \
   --append \
   --add-filename \
-  -o results/figure3/timechange.tsv</data>
-  <data key="d4">2763.9642862235905</data>
-  <data key="d5">-202.08565502252637</data>
-  <data key="d6"></data>
+  -o results/healthy_change/healthychange.tsv</data>
+  <data key="d4">3137.255144409433</data>
+  <data key="d5">-282.3715305472375</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/maaslin/change/*.tsv \
+  --append \
+  --add-filename \
+  -o results/healthy_change/maaslin/healthychange.tsv'</data>
+  <data key="d8">Saved 1719 rows × 15 columns to results/healthy_change/maaslin/healthychange.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">43465</data>
+  <data key="d11">0</data>
 </node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
-  <data key="d3">sig_summary.py \
-  -i results/figure3/timechange.tsv \
+  <data key="d3">maaslin_sig_summary.py \
+  results/healthy_change/healthychange.tsv \
   -p 0.1 \
-  -s qval_joint \
-  -o results/figure3/timechange_summary.tsv</data>
-  <data key="d4">3760.4215887364617</data>
-  <data key="d5">-55.88755522283815</data>
-  <data key="d6"></data>
+  -c coef \
+  -s qval_individual \
+  -g name filename model \
+  -o results/healthy_change/healthychange_summary.tsv</data>
+  <data key="d4">3771.802459045507</data>
+  <data key="d5">-358.978527867248</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
+  results/healthy_change/maaslin/healthychange.tsv \
+  -p 0.1 \
+  -c coef \
+  -s qval_individual \
+  -g name filename model \
+  -o results/healthy_change/maaslin/healthychange_summary.tsv'</data>
+  <data key="d8">                           name        filename      model  n_tested  n_sig  n_sig_up  n_sig_down    pct_sig  pct_sig_up  pct_sig_down
+                             BF              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                             BF alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                             BF          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                             BF            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                             BF           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                             BF         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+         Delivery_ModeCaesarean              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+         Delivery_ModeCaesarean alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+         Delivery_ModeCaesarean          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+         Delivery_ModeCaesarean            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+         Delivery_ModeCaesarean           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+         Delivery_ModeCaesarean         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B)              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B) alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B)          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B)            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B)           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B)         species  abundance     139.0    3.0       1.0         2.0   2.158273    0.719424      1.438849
+                  FeedERUSF (B)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                  FeedERUSF (B)         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+             FeedLocal RUSF (A)         species  abundance     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+             FeedLocal RUSF (A)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                      SexFemale              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                      SexFemale alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                      SexFemale          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                      SexFemale            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                      SexFemale           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                      SexFemale         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   baseline_WLZ              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   baseline_WLZ alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   baseline_WLZ          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   baseline_WLZ            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   baseline_WLZ           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   baseline_WLZ         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   timepointyr2              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   timepointyr2 alpha_diversity  abundance       4.0    4.0       4.0         0.0 100.000000  100.000000      0.000000
+                   timepointyr2          anthro  abundance       4.0    1.0       1.0         0.0  25.000000   25.000000      0.000000
+                   timepointyr2            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   timepointyr2           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+                   timepointyr2         species  abundance     139.0   17.0       7.0        10.0  12.230216    5.035971      7.194245
+                   timepointyr2         species prevalence     139.0   79.0      69.0        10.0  56.834532   49.640288      7.194245
+                   timepointyr2         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+     timepointyr2:FeedERUSF (B)              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+     timepointyr2:FeedERUSF (B) alpha_diversity  abundance       4.0    1.0       0.0         1.0  25.000000    0.000000     25.000000
+     timepointyr2:FeedERUSF (B)          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+     timepointyr2:FeedERUSF (B)            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+     timepointyr2:FeedERUSF (B)           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+     timepointyr2:FeedERUSF (B)         species  abundance     139.0    1.0       1.0         0.0   0.719424    0.719424      0.000000
+     timepointyr2:FeedERUSF (B)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+     timepointyr2:FeedERUSF (B)         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+timepointyr2:FeedLocal RUSF (A)         species  abundance     139.0    1.0       0.0         1.0   0.719424    0.000000      0.719424
+timepointyr2:FeedLocal RUSF (A)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+
+Summary written to: results/healthy_change/maaslin/healthychange_summary.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">43513</data>
+  <data key="d11">0</data>
 </node>
 <node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
-  <data key="d3">rm -rf results/healthy_change/maaslin/healthy/change
-mkdir -p results/healthy_change/maaslin/healthy/change</data>
-  <data key="d4">384.79026412527503</data>
-  <data key="d5">126.04645356400752</data>
-  <data key="d6"></data>
-</node>
-<node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
-  <data key="d3">hbar_fig3.py</data>
-  <data key="d4">3684.671148101379</data>
-  <data key="d5">-154.2930500250961</data>
-  <data key="d6"></data>
-</node>
-<node id="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a">
-  <data key="d3">filter.py \
-  results/figure3/timechange.tsv \
-  -q "error.isna()" \
-  -o results/figure3/timechange_filter.tsv</data>
-  <data key="d4">3373.6109528902552</data>
-  <data key="d5">-288.8523216891923</data>
-  <data key="d6"></data>
-</node>
-<node id="dd6c7194-194c-40ae-90f3-cc8c22c608b2">
-  <data key="d3">for d in sleep species pathways alpha_diversity head anthro aa vitamin
-do
-  overall_recovery.py "$d"
-done</data>
-  <data key="d4">1370.3484580741324</data>
-  <data key="d5">894.957670793568</data>
-  <data key="d6"></data>
+  <data key="d3">rm -rf results/healthy_change/{maaslin,change,overall}
+mkdir -p results/healthy_change/{maaslin,change,overall}</data>
+  <data key="d4">-242.21639441002958</data>
+  <data key="d5">150.29791862817385</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/healthy_change/maaslin/{healthy,change}
+mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">5900</data>
+  <data key="d11">0</data>
 </node>
 <node id="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
   <data key="d3">merge.py \
-  results/figure3/*recovery.tsv \
+  results/healthy_change/overall/*.tsv \
   -a \
-  -o results/figure3/rec_merged.tsv</data>
-  <data key="d4">2017.4487222666753</data>
-  <data key="d5">901.7406924308066</data>
-  <data key="d6"></data>
+  -o results/healthy_change/rec_merged.tsv</data>
+  <data key="d4">1563.5380009608011</data>
+  <data key="d5">738.8795697782234</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py \
+  results/healthy_change/overall/*.tsv \
+  -a \
+  -o results/healthy_change/rec_merged.tsv'</data>
+  <data key="d8">Saved 8 rows × 6 columns to results/healthy_change/rec_merged.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">48007</data>
+  <data key="d11">0</data>
 </node>
 <node id="05b34ebc-bb72-4db1-835f-78a960acfc33">
   <data key="d3">hbar_fig3.py</data>
-  <data key="d4">2364.7394300932733</data>
-  <data key="d5">919.3765486876252</data>
-  <data key="d6"></data>
+  <data key="d4">2031.8352370855605</data>
+  <data key="d5">769.6863767645249</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; hbar_fig3.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">48126</data>
+  <data key="d11">0</data>
 </node>
 <node id="efff9afc-b0ea-4937-a15d-319ee982992b">
   <data key="d3">parallel -j1 distance.py \
   results/filtered/{}.tsv \
   -o results/distance/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-  <data key="d4">1264.892735791535</data>
-  <data key="d5">1124.1617367255583</data>
+  <data key="d4">810.9820144856608</data>
+  <data key="d5">960.5427557897199</data>
   <data key="d6"></data>
 </node>
 <node id="e852a3bc-1df2-4249-9855-9c943d20b037">
@@ -121,8 +202,8 @@ done</data>
   -i results/distance/{}.tsv \
   -o results/pcoa/{}.tsv \
   &lt; conf/timedatasets.txt</data>
-  <data key="d4">1635.7473333079693</data>
-  <data key="d5">1148.7592355404238</data>
+  <data key="d4">1181.836612002095</data>
+  <data key="d5">985.1402546045854</data>
   <data key="d6"></data>
 </node>
 <node id="b2979940-9977-4efd-a449-7cf18486839a">
@@ -132,8 +213,8 @@ results/pcoa/{}.tsv \
 --group-col timepoint \
 -o results/spindle/{}.pdf \
 &lt; conf/timedatasets.txt</data>
-  <data key="d4">1982.0044320095376</data>
-  <data key="d5">1144.9750049535214</data>
+  <data key="d4">1528.0937107036634</data>
+  <data key="d5">981.356024017683</data>
   <data key="d6"></data>
 </node>
 <node id="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
@@ -141,43 +222,1213 @@ results/pcoa/{}.tsv \
   results/spindle/* \
   --rows 3 \
   -o results/all_spindle.svg</data>
-  <data key="d4">2356.643260112874</data>
-  <data key="d5">1162.004042594582</data>
+  <data key="d4">1902.7325388069999</data>
+  <data key="d5">998.3850616587436</data>
   <data key="d6"></data>
 </node>
-<edge source="a92b7548-e188-4cb2-a3bf-7c3c46d70f28" target="11811fc1-17fa-48e0-bd62-673d78fee349"/>
-<edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8"/>
-<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9"/>
-<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88"/>
-<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1"/>
-<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="5eb524d3-56a3-430d-ac4c-41cd64a3cb8a"/>
-<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a92b7548-e188-4cb2-a3bf-7c3c46d70f28"/>
-<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="dd6c7194-194c-40ae-90f3-cc8c22c608b2">
-  <data key="d7">dbb8a4ae-8b49-486a-ba9a-0af8e8964845</data>
-  <data key="d8">blocking</data>
+<node id="7a04012c-d2a4-492a-99c7-ad1876374d62">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/pathways.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/pathways | tail</data>
+  <data key="d4">1435.880540030689</data>
+  <data key="d5">159.42051909840706</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/pathways.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/pathways | tail'</data>
+  <data key="d8">2026-04-12 19:19:10.637385 INFO::Fitting model to feature number 490, THRESYN-PWY
+2026-04-12 19:19:10.639285 INFO::Fitting model to feature number 491, TRNA-CHARGING-PWY
+2026-04-12 19:19:10.641404 INFO::Fitting model to feature number 492, TYRFUMCAT-PWY
+2026-04-12 19:19:10.687557 INFO::Fitting model to feature number 493, UBISYN-PWY
+2026-04-12 19:19:10.733273 INFO::Fitting model to feature number 494, UDPNACETYLGALSYN-PWY
+2026-04-12 19:19:10.780778 INFO::Fitting model to feature number 495, UDPNAGSYN-PWY
+2026-04-12 19:19:10.782902 INFO::Fitting model to feature number 496, URDEGR-PWY
+2026-04-12 19:19:10.835569 INFO::Fitting model to feature number 497, URSIN-PWY
+2026-04-12 19:19:10.879391 INFO::Fitting model to feature number 498, VALSYN-PWY
+2026-04-12 19:19:14.612994 INFO::Counting total values for each feature
+</data>
+  <data key="d9">boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature PWY-3781 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 7.2e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature PWY-5178 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.3e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature PWY-6138 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.4e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature PWY-7279 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 7.9e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature PWY-8173 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 9.6e-11
+
+Feature PWY-8174 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 9.6e-11
+
+Feature PWY-8175 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 9.6e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Error in add_joint_signif(fit_data_abundance, fit_data_prevalence, NULL,  : 
+  Merged significance tables have different associations.
+                This is likely a MaAsLin 3 issue 
+                due to unexpected data or models.
+Calls: maaslin3 -&gt; maaslin_fit -&gt; add_joint_signif
+In addition: Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: the ‘nobars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+3: In formula.character(object, env = baseenv()) :
+  Using formula(x) is deprecated when x is a character vector of length &gt; 1.
+  Consider formula(paste(x, collapse = " ")) instead.
+Execution halted
+</data>
+  <data key="d10">43012</data>
+  <data key="d11">0</data>
+</node>
+<node id="f7d638a8-1deb-4697-8cda-8b6759ccfc30">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --median_comparison_abundance False \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/alpha_diversity.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/alpha_diversity | tail</data>
+  <data key="d4">1439.3317546068422</data>
+  <data key="d5">-326.2764650443031</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --median_comparison_abundance False \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/alpha_diversity.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/alpha_diversity | tail'</data>
+  <data key="d8">2026-04-12 19:18:03.217462 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/alpha_diversity/fits/ranef_linear.rds
+2026-04-12 19:18:03.267187 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/healthy/alpha_diversity/all_results.tsv
+2026-04-12 19:18:03.273448 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/alpha_diversity/significant_results.tsv
+2026-04-12 19:18:03.332904 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/healthy/alpha_diversity/figures/summary_plot.pdf
+2026-04-12 19:18:09.225432 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/alpha_diversity/figures
+2026-04-12 19:18:09.363204 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-04-12 19:18:09.436922 INFO::Creating box plot for categorical data (linear), 
+                        timepoint vs Faiths_PD
+</data>
+  <data key="d9">Error in if ("linear" == model_name) { : argument is of length zero
+Calls: maaslin3 ... tryCatchList -&gt; withCallingHandlers -&gt; maaslin3_association_plots
+In addition: Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+Execution halted
+</data>
+  <data key="d10">43067</data>
+  <data key="d11">0</data>
+</node>
+<node id="a2accc77-f2eb-452c-a4d1-f1d19196f0ec">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/anthro.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/anthro | tail</data>
+  <data key="d4">716.9884431058172</data>
+  <data key="d5">-765.1026757532335</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/anthro.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/anthro | tail'</data>
+  <data key="d8">2026-04-12 19:18:07.026536 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/anthro/fits/ranef_linear.rds
+2026-04-12 19:18:07.053806 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/healthy/anthro/all_results.tsv
+2026-04-12 19:18:07.05714 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/anthro/significant_results.tsv
+2026-04-12 19:18:07.098076 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/healthy/anthro/figures/summary_plot.pdf
+2026-04-12 19:18:12.756063 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/anthro/figures
+2026-04-12 19:18:12.840679 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-04-12 19:18:12.907037 INFO::Creating box plot for categorical data (linear), 
+                        timepoint vs Length
+</data>
+  <data key="d9">Error in if ("linear" == model_name) { : argument is of length zero
+Calls: maaslin3 ... tryCatchList -&gt; withCallingHandlers -&gt; maaslin3_association_plots
+In addition: Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+Execution halted
+</data>
+  <data key="d10">43055</data>
+  <data key="d11">0</data>
+</node>
+<node id="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/head.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/head | tail</data>
+  <data key="d4">714.6689986055624</data>
+  <data key="d5">-483.63515067433406</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/head.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/head | tail'</data>
+  <data key="d8">2026-04-12 19:18:06.817713 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/head/fits/ranef_linear.rds
+2026-04-12 19:18:06.821031 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/head/fits/ranef_linear.rds
+2026-04-12 19:18:06.853189 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/healthy/head/all_results.tsv
+2026-04-12 19:18:06.857684 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/head/significant_results.tsv
+2026-04-12 19:18:06.900112 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/healthy/head/figures/summary_plot.pdf
+2026-04-12 19:18:12.761767 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/head/figures
+2026-04-12 19:18:12.845091 INFO::All associations had errors 
+                                or were insignificant.
+</data>
+  <data key="d9">Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+</data>
+  <data key="d10">43013</data>
+  <data key="d11">0</data>
+</node>
+<node id="d33c52f3-7c41-4d42-b1e8-48e37630fd34">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/species.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/species | tail</data>
+  <data key="d4">1437.2836723163578</data>
+  <data key="d5">-28.976208662625822</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/species.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/species | tail'</data>
+  <data key="d8">2026-04-12 19:20:18.963681 INFO::Fitting model to feature number 1026, Butyricicoccus_sp_AM29_23AC|SGB14991
+2026-04-12 19:20:19.01031 INFO::Fitting model to feature number 1027, Aeromonas_jandaei|SGB9949
+2026-04-12 19:20:19.056047 INFO::Fitting model to feature number 1028, GGB71292_SGB97395|SGB97395
+2026-04-12 19:20:19.103551 INFO::Fitting model to feature number 1029, Clostridium_sp_AM49_4BH|SGB4652
+2026-04-12 19:20:19.152076 INFO::Fitting model to feature number 1030, GGB53985_SGB6367|SGB6367
+2026-04-12 19:20:19.198236 INFO::Fitting model to feature number 1031, Arachnia_SGB15899|SGB15899
+2026-04-12 19:20:19.247486 INFO::Fitting model to feature number 1032, Parvimonas_sp_oral_taxon_110|SGB6654
+2026-04-12 19:20:19.293308 INFO::Fitting model to feature number 1033, GGB1456_SGB2019|SGB2019
+2026-04-12 19:20:19.340347 INFO::Fitting model to feature number 1034, Extibacter_sp_GGCC_0201|SGB74335
+2026-04-12 19:20:26.664305 INFO::Counting total values for each feature
+</data>
+  <data key="d9">boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Waltera_intestinalis|SGB4910 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 5.5e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Parabacteroides_massiliensis|SGB1945 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.7e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB33928_SGB15225|SGB15225 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.0e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Clostridium_sp_1001270J_160509_D11|SGB6139 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.9e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Lactococcus_petauri|SGB7980 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.4e-11
+
+Feature Lactobacillus_delbrueckii|SGB7020 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.1e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Hungatella_hathewayi|SGB4614 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Raoultibacter_timonensis|SGB33550 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.4e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Blautia_SGB4815|SGB4815 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.8e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature GGB48538_SGB66596|SGB66596 : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature GGB48538_SGB66596|SGB66596 : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature GGB48538_SGB66596|SGB66596 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 8.8e-11
+
+boundary (singular) fit: see help('isSingular')
+Feature Actinomyces_sp_ICM47|SGB17167_group : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 5.9e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Peptostreptococcus_stomatis|SGB748 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.0e-11
+
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature Faecalibacillus_intestinalis|SGB6754 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 6.0e-11
+
+Feature GGB3828_SGB5197|SGB5197 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.7e-09
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Faecalibacterium_prausnitzii|SGB15333 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 9.2e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature GGB79916_SGB4587|SGB4587 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 6.5e-11
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature GGB18384_SGB14372|SGB14372 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.0e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Clostridiaceae_bacterium_Marseille_Q4145|SGB4769 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 6.5e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+Feature Streptococcus_thermophilus|SGB8002 : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature Streptococcus_thermophilus|SGB8002 : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+Feature Streptococcus_thermophilus|SGB8002 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: -4.3e-13
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Clostridiaceae_bacterium|SGB4269 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 6.4e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Haemophilus_SGB5071|SGB5071 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.5e-10
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Rheinheimera_SGB14999|SGB14999 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.6e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB55957_SGB77276|SGB77276 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.0e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Faecalibacterium_prausnitzii|SGB15332 : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature Faecalibacterium_prausnitzii|SGB15332 : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+Feature Faecalibacterium_prausnitzii|SGB15332 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.5e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Roseburia_intestinalis|SGB4951 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.0e-11
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+Feature Clostridioides_difficile|SGB6136 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 7.2e-11
+
+Feature Anaerostipes_caccae|SGB4529 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.7e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Prevotella_timonensis|SGB1507 : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature Prevotella_timonensis|SGB1507 : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Prevotella_timonensis|SGB1507 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.8e-10
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Lautropia_mirabilis|SGB13165 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.2e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Victivallis_vadensis|SGB9202 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 8.2e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB80011_SGB15265|SGB15265 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.5e-11
+
+Feature Alistipes_senegalensis|SGB2296 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.8e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Hydrogenoanaerobacterium_saccharovorans|SGB15350 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.4e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB4773_SGB6607|SGB6607 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.3e-10
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB77437_SGB9391|SGB9391 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.5e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+Feature Aeromonas_caviae|SGB9955 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.0e-11
+
+boundary (singular) fit: see help('isSingular')
+Feature Butyricicoccus_SGB14990|SGB14990 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.2e-10
+
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature Fusobacterium_nucleatum|SGB6013 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+boundary (singular) fit: see help('isSingular')
+Feature Clostridium_neonatale|SGB6169 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 4.9e-11
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB6518_SGB9205|SGB9205 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.8e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Erysipelotrichaceae_bacterium_7770_A6|SGB6836 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 5.0e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB9819_SGB15460|SGB15460 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.7e-10
+
+Feature Eubacterium_ventriosum|SGB5045 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.8e-10
+
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB1147_SGB1473|SGB1473 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.5e-10
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature Faecalicatena_contorta|SGB4613 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.5e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB51441_SGB71759|SGB71759 : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature GGB51441_SGB71759|SGB71759 : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature GGB51441_SGB71759|SGB71759 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 2.5e-10
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Aggregatibacter_segnis|SGB9737_group : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature Aggregatibacter_segnis|SGB9737_group : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+Feature Aggregatibacter_segnis|SGB9737_group : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.0e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Fusobacterium_pseudoperiodonticum|SGB5989_group : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+Feature GGB6579_SGB9299|SGB9299 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.3e-11
+
+Feature Streptococcus_gallolyticus|SGB97147 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.7e-10
+
+Feature Actinomyces_sp_HMSC035G02|SGB17158_group : simpleWarning in (function (fn, par, lower = rep.int(-Inf, n), upper = rep.int(Inf, : failure to converge in 100000 evaluations
+
+Feature Actinomyces_sp_HMSC035G02|SGB17158_group : simpleWarning in optwrap(optimizer, devfun, start, lower = lower, upper = upper, : convergence code 4 from Nelder_Mead: failure to converge in 100000 evaluations
+
+Feature Actinomyces_sp_HMSC035G02|SGB17158_group : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 3.5e-11
+
+Feature Streptococcus_oralis|SGB8130 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.2e-10
+
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature Bacteroides_finegoldii|SGB1862 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+Feature Lachnospira_sp_NSJ_43|SGB5087 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 8.9e-11
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Enterococcus_cecorum|SGB7961 : simpleWarning in as_lmerModLT(model, devfun): Model may not have converged with 1 eigenvalue close to zero: 1.7e-10
+
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+Feature Campylobacter_hyointestinalis|SGB19463 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature Acetobacter_indonesiensis|SGB1203 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Feature Parabacteroides_johnsonii|SGB1948 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+Feature Prevotella_melaninogenica|SGB1552 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 4 columns / coefficients
+Feature Candida_tropicalis|EUK5482 : simpleWarning in vcov.merMod(model): Computed variance-covariance matrix problem: not a positive definite matrix (and positive semidefiniteness is not checked);
+returning NA matrix
+
+Error in add_joint_signif(fit_data_abundance, fit_data_prevalence, NULL,  : 
+  Merged significance tables have different associations.
+                This is likely a MaAsLin 3 issue 
+                due to unexpected data or models.
+Calls: maaslin3 -&gt; maaslin_fit -&gt; add_joint_signif
+In addition: Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: the ‘nobars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+3: In formula.character(object, env = baseenv()) :
+  Using formula(x) is deprecated when x is a character vector of length &gt; 1.
+  Consider formula(paste(x, collapse = " ")) instead.
+Execution halted
+</data>
+  <data key="d10">43022</data>
+  <data key="d11">0</data>
+</node>
+<node id="e0c1750d-21ff-4acf-a27e-40142ecbb8ab">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/sleep.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/sleep | tail</data>
+  <data key="d4">714.2616804987921</data>
+  <data key="d5">-200.86880969279736</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/sleep.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/sleep | tail'</data>
+  <data key="d8">2026-04-12 19:18:07.20471 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/sleep/fits/ranef_linear.rds
+2026-04-12 19:18:07.20703 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/sleep/fits/ranef_linear.rds
+2026-04-12 19:18:07.240101 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/healthy/sleep/all_results.tsv
+2026-04-12 19:18:07.243424 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/sleep/significant_results.tsv
+2026-04-12 19:18:07.280231 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/healthy/sleep/figures/summary_plot.pdf
+2026-04-12 19:18:13.056772 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/sleep/figures
+2026-04-12 19:18:13.137996 INFO::All associations had errors 
+                                or were insignificant.
+</data>
+  <data key="d9">Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+</data>
+  <data key="d10">43030</data>
+  <data key="d11">0</data>
+</node>
+<node id="c9db0d50-0061-454a-9fa7-03b0866e57e5">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/vitamin.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/vitamin | tail</data>
+  <data key="d4">1436.7453754831608</data>
+  <data key="d5">-607.5152306013554</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/vitamin.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/vitamin | tail
+'</data>
+  <data key="d8">2026-04-12 19:18:06.801324 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/vitamin/fits/ranef_linear.rds
+2026-04-12 19:18:06.803996 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/vitamin/fits/ranef_linear.rds
+2026-04-12 19:18:06.841495 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/healthy/vitamin/all_results.tsv
+2026-04-12 19:18:06.845142 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/vitamin/significant_results.tsv
+2026-04-12 19:18:06.884525 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/healthy/vitamin/figures/summary_plot.pdf
+2026-04-12 19:18:12.677965 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/vitamin/figures
+2026-04-12 19:18:12.74668 INFO::All associations had errors 
+                                or were insignificant.
+</data>
+  <data key="d9">Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+</data>
+  <data key="d10">43089</data>
+  <data key="d11">0</data>
+</node>
+<node id="692231b5-9a65-44e7-8c3b-8f6129db6d5e">
+  <data key="d3">maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/aa.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/aa | tail</data>
+  <data key="d4">711.0215015780078</data>
+  <data key="d5">85.01143886220405</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
+    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --min_abundance 0 \
+    --min_prevalence 0.0 \
+    --max_significance 0.1 \
+    --normalization NONE \
+    --transform NONE \
+    --warn_prevalence False \
+    --small_random_effects True \
+    --evaluate_only abundance \
+    --max_pngs 0 \
+    --cores 1 \
+    results/filtered/aa.tsv \
+    results/filtered/timemeta_MAM_yr1_yr2.tsv \
+    results/healthy_change/maaslin/healthy/aa | tail'</data>
+  <data key="d8">2026-04-12 19:18:10.45664 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/aa/fits/ranef_linear.rds
+2026-04-12 19:18:10.459488 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/aa/fits/ranef_linear.rds
+2026-04-12 19:18:10.498165 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/healthy/aa/all_results.tsv
+2026-04-12 19:18:10.502476 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/aa/significant_results.tsv
+2026-04-12 19:18:10.544391 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/healthy/aa/figures/summary_plot.pdf
+2026-04-12 19:18:14.63619 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/aa/figures
+2026-04-12 19:18:14.69097 INFO::All associations had errors 
+                                or were insignificant.
+</data>
+  <data key="d9">Warning messages:
+1: the ‘findbars’ function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainer to do so.
+This warning is displayed once per session. 
+2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"pval"` instead of `.data$pval` 
+3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+ℹ Please use `"qval"` instead of `.data$qval` 
+</data>
+  <data key="d10">43009</data>
+  <data key="d11">0</data>
+</node>
+<node id="4a4564e6-ece6-49ad-8e78-f6806f22ef27">
+  <data key="d3">grep -v '^lipids$' conf/timedatasets.txt | parallel -j 1 \
+  overall_recovery.py \
+  results/filtered/{}.tsv \
+  results/healthy_change/overall/{}.tsv</data>
+  <data key="d4">983.389716388219</data>
+  <data key="d5">649.4350018842644</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; grep -v '\''^lipids$'\'' conf/timedatasets.txt | parallel -j 1 \
+  overall_recovery.py \
+  results/filtered/{}.tsv \
+  results/healthy_change/overall/{}.tsv'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">48227</data>
+  <data key="d11"></data>
+</node>
+<edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
+  <data key="d12">ba4db628-915a-4dcb-b138-d940c943292f</data>
+</edge>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
+  <data key="d12">dd9b7db1-8ca0-46e9-8aab-2e8d7caab366</data>
+</edge>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88">
+  <data key="d12">31f8cfda-685d-4f6c-884a-b388e3b73a3e</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="efff9afc-b0ea-4937-a15d-319ee982992b">
-  <data key="d7">d766b58c-d717-49d5-99b4-b75b1135e478</data>
-  <data key="d8">blocking</data>
+  <data key="d12">d766b58c-d717-49d5-99b4-b75b1135e478</data>
+  <data key="d13">blocking</data>
 </edge>
-<edge source="dd6c7194-194c-40ae-90f3-cc8c22c608b2" target="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
-  <data key="d7">0f4662a5-f1b2-4e3d-9816-578663383ce4</data>
-  <data key="d8">blocking</data>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="692231b5-9a65-44e7-8c3b-8f6129db6d5e">
+  <data key="d12">835e9fe5-864c-47a8-850f-5cbb8d5cf856</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="e0c1750d-21ff-4acf-a27e-40142ecbb8ab">
+  <data key="d12">7b916b7c-d93d-43fe-905a-ffecbd7ed3eb</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b">
+  <data key="d12">98e2be2b-8242-4fdf-b258-3953e7216c69</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a2accc77-f2eb-452c-a4d1-f1d19196f0ec">
+  <data key="d12">b6738345-df9a-4a4e-92c6-08ea0fefb026</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="c9db0d50-0061-454a-9fa7-03b0866e57e5">
+  <data key="d12">89abe1e7-ecf0-4c73-92e4-834909cb1b34</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="f7d638a8-1deb-4697-8cda-8b6759ccfc30">
+  <data key="d12">a1fb117e-23f3-4e21-8dc2-c1a18f19eae4</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="d33c52f3-7c41-4d42-b1e8-48e37630fd34">
+  <data key="d12">14693600-fca7-47e0-a560-b71a8b04d0b4</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="7a04012c-d2a4-492a-99c7-ad1876374d62">
+  <data key="d12">26270889-d64b-4d58-8c9c-82639a3878da</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="4a4564e6-ece6-49ad-8e78-f6806f22ef27">
+  <data key="d12">44da314f-e800-490e-8ff8-65236d83c097</data>
+  <data key="d13">blocking</data>
 </edge>
 <edge source="5defd7d3-4b19-4373-b1a3-f86d754e39ce" target="05b34ebc-bb72-4db1-835f-78a960acfc33">
-  <data key="d7">5ec4fadc-7ce9-4500-9775-a87dadc6bd8c</data>
-  <data key="d8">blocking</data>
+  <data key="d12">5ec4fadc-7ce9-4500-9775-a87dadc6bd8c</data>
+  <data key="d13">blocking</data>
 </edge>
 <edge source="efff9afc-b0ea-4937-a15d-319ee982992b" target="e852a3bc-1df2-4249-9855-9c943d20b037">
-  <data key="d7">629468d1-52c7-482c-848b-33d3a3998cdd</data>
-  <data key="d8">blocking</data>
+  <data key="d12">629468d1-52c7-482c-848b-33d3a3998cdd</data>
+  <data key="d13">blocking</data>
 </edge>
 <edge source="e852a3bc-1df2-4249-9855-9c943d20b037" target="b2979940-9977-4efd-a449-7cf18486839a">
-  <data key="d7">ff375b22-641e-459f-ba12-cea9db9dc637</data>
-  <data key="d8">blocking</data>
+  <data key="d12">ff375b22-641e-459f-ba12-cea9db9dc637</data>
+  <data key="d13">blocking</data>
 </edge>
 <edge source="b2979940-9977-4efd-a449-7cf18486839a" target="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
-  <data key="d7">d56b6aac-0660-4853-a2a6-4abe8136f6ed</data>
-  <data key="d8">blocking</data>
+  <data key="d12">d56b6aac-0660-4853-a2a6-4abe8136f6ed</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="7a04012c-d2a4-492a-99c7-ad1876374d62" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">d814df60-a423-408e-8f85-aac58c357ead</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="f7d638a8-1deb-4697-8cda-8b6759ccfc30" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">8566d274-cb18-49c7-a6cc-451f45d25a75</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="a2accc77-f2eb-452c-a4d1-f1d19196f0ec" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">7c4aec21-7cfc-4867-9511-0d32587118f5</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">cc707509-7e41-48b9-809a-f904b6a037bf</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="d33c52f3-7c41-4d42-b1e8-48e37630fd34" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">44edda47-4676-40d0-abda-fb4992a28f59</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="e0c1750d-21ff-4acf-a27e-40142ecbb8ab" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">bc86dd63-d70c-48ac-b364-f8462387476d</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="c9db0d50-0061-454a-9fa7-03b0866e57e5" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">d9d2c0be-b036-4c96-a359-62041089eaef</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="692231b5-9a65-44e7-8c3b-8f6129db6d5e" target="11811fc1-17fa-48e0-bd62-673d78fee349">
+  <data key="d12">71f4bf83-97ec-45a1-af7e-829dfb37ad09</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="4a4564e6-ece6-49ad-8e78-f6806f22ef27" target="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
+  <data key="d12">782d7c76-9318-4805-ae73-6c96d0c64b37</data>
+  <data key="d13">blocking</data>
 </edge>
 </graph></graphml>

@@ -30,7 +30,7 @@
   <data key="d7">bash -c '. env.sh &amp;&amp; format_genetics.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9766</data>
+  <data key="d10">6198</data>
   <data key="d11">0</data>
 </node>
 <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
@@ -47,11 +47,11 @@
     -o results/filtered/covtimemeta.tsv'</data>
   <data key="d8">Join summary
 ------------
-df1: 0 / 2960 rows lost (0.00%)
+df1: 0 / 2961 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">12926</data>
+  <data key="d10">7744</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
@@ -62,7 +62,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_sleep.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9889</data>
+  <data key="d10">6334</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2">
@@ -73,7 +73,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_head.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9705</data>
+  <data key="d10">6182</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e">
@@ -84,7 +84,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_surveillance.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9728</data>
+  <data key="d10">6190</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
@@ -108,7 +108,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved 309 rows × 9 columns to results/cleaned/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10205</data>
+  <data key="d10">6643</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed">
@@ -119,7 +119,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_microbiome_samplesheet.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9674</data>
+  <data key="d10">6166</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd">
@@ -130,7 +130,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_anthro.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9682</data>
+  <data key="d10">6174</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5">
@@ -141,7 +141,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_aa.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10125</data>
+  <data key="d10">6543</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b">
@@ -151,14 +151,14 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; format_lipids.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/theo/recovery/code/format_lipids.py:115: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+  <data key="d9">/home/tpor598/recovery/code/format_lipids.py:115: SyntaxWarning: invalid escape sequence '\d'
   metabid['Liggins sample'] = metabid['Liggins sample'].str.extract('(\d+)').astype(int)
-/home/theo/recovery/code/format_lipids.py:127: SyntaxWarning: "\:" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\:"? A raw string is also an option.
+/home/tpor598/recovery/code/format_lipids.py:127: SyntaxWarning: invalid escape sequence '\:'
   df = df.loc[:, df.columns.str.contains('\:')]
-/home/theo/recovery/code/format_lipids.py:37: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+/home/tpor598/recovery/code/format_lipids.py:37: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   dataset1.replace({'': np.nan}, inplace=True)
 </data>
-  <data key="d10">9935</data>
+  <data key="d10">6361</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983">
@@ -168,10 +168,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; format_vitamin.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/theo/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  <data key="d9">/home/tpor598/recovery/code/format_vitamin.py:16: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   out = out.replace('NF', np.nan)
 </data>
-  <data key="d10">9882</data>
+  <data key="d10">6316</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db">
@@ -181,10 +181,10 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; format_humann.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/theo/recovery/code/format_humann.py:31: SyntaxWarning: "\|" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\|"? A raw string is also an option.
+  <data key="d9">/home/tpor598/recovery/code/format_humann.py:31: SyntaxWarning: invalid escape sequence '\|'
   df = pathways.loc[:, ~pathways.columns.str.contains('\|')]
 </data>
-  <data key="d10">10265</data>
+  <data key="d10">6684</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::00668448-144c-4299-9b79-bcf595c13524">
@@ -195,7 +195,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_metaphlan.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10303</data>
+  <data key="d10">6692</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73">
@@ -206,7 +206,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_kneaddata.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10311</data>
+  <data key="d10">6700</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3">
@@ -217,7 +217,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_ses.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9797</data>
+  <data key="d10">6236</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067">
@@ -228,7 +228,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_feedsandrecovery.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9835</data>
+  <data key="d10">6256</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e">
@@ -239,7 +239,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_bfpob.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9789</data>
+  <data key="d10">6233</data>
   <data key="d11">0</data>
 </node>
 <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
@@ -259,7 +259,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved: results/cleaned/species.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">15121</data>
+  <data key="d10">6908</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850">
@@ -270,7 +270,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; format_deliverysupp.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9843</data>
+  <data key="d10">6274</data>
   <data key="d11">0</data>
 </node>
 <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
@@ -288,7 +288,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">Saved combined mapping to results/filtered/mapping.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">18247</data>
+  <data key="d10">7324</data>
   <data key="d11">0</data>
 </node>
 <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
@@ -299,7 +299,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d7">bash -c '. env.sh &amp;&amp; mkdir -p results/cleaned'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9641</data>
+  <data key="d10">6132</data>
   <data key="d11">0</data>
 </node>
 <node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
@@ -313,7 +313,7 @@ echo setup'</data>
   <data key="d8">setup
 </data>
   <data key="d9"></data>
-  <data key="d10">9609</data>
+  <data key="d10">6098</data>
   <data key="d11">0</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
@@ -756,7 +756,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
 [626 rows x 413 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">10755</data>
+  <data key="d10">7110</data>
   <data key="d11">0</data>
 </node>
 <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
@@ -769,7 +769,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
  -O results/census/census.xlsx'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10094</data>
+  <data key="d10">6505</data>
   <data key="d11">0</data>
 </node>
 <node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
@@ -782,7 +782,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   -O results/census/census_labels.xlsx'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10106</data>
+  <data key="d10">6517</data>
   <data key="d11">0</data>
 </node>
 <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
@@ -807,7 +807,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   ::: education household media_consumption family sanitation'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">10183</data>
+  <data key="d10">6621</data>
   <data key="d11">0</data>
 </node>
 <node id="246364a8-29bd-49c2-a045-ceb068383c79">
@@ -824,7 +824,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   &gt; conf/all_datasets.txt'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">15034</data>
+  <data key="d10">6102</data>
   <data key="d11">0</data>
 </node>
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
@@ -837,7 +837,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9912</data>
+  <data key="d10">6342</data>
   <data key="d11">0</data>
 </node>
 <node id="694c1739-f526-421a-a8ec-99152294abf4">
@@ -852,12 +852,12 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv'</data>
-  <data key="d8">Dropping taxa not found in tree: {'15309_group', '5989_group', '6927_group', '4425_group', '3922_group', '19893_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '5825_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '7285_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '8028_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '49305_group', '5763_group', '17167_group', '17158_group', '8239_group', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '19351_group', '8235_group', '19827_group', '7088_group', '17132_group', '4553_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', '4540_group', '7121_group', '17130_group', '3926_group', '9737_group', '7298_group', '9663_group', '14985_group', '5803_group', '17137_group', '16971_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', '19793_group', '8059_group', '14764_group', '17244_group', '6028_group', '1990_group', '4494_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', '8007_group', '8180_group', '19860_group', '14816_group', '8255_group', '14824_group', '6686_group', '17163_group', '11742_group', '5266_group', '19290_group', '7703_group', '14535_group', '44267_group', '1536_group', '9467_group', '8047_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '6036_group', '9434_group'}
+  <data key="d8">Dropping taxa not found in tree: {'5989_group', '17137_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_hominis|t__EUK237895', '9467_group', '8028_group', '17132_group', '7121_group', '14824_group', '16971_group', '7285_group', '8180_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_albicans|t__EUK5476', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Hexamitidae|g__Giardia|s__Giardia_intestinalis|t__EUK5741', '19290_group', '3922_group', '8239_group', '8059_group', '49305_group', '4425_group', '6686_group', '11742_group', '3926_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Entamoebidae|g__Entamoeba|s__Entamoeba_dispar|t__EUK46681', '4553_group', '7298_group', '9663_group', 'k__Eukaryota|p__Eukaryota_unclassified|c__Eukaryota_unclassified|o__Eukaryota_unclassified|f__Eukaryota_unclassified|g__Blastocystis|s__Blastocystis_sp_subtype_1|t__EUK944036', '17130_group', '17163_group', '4494_group', 'k__Eukaryota|p__Apicomplexa|c__Conoidasida|o__Eucoccidiorida|f__Cryptosporidiidae|g__Cryptosporidium|s__Cryptosporidium_parvum|t__EUK5807', '19893_group', '14535_group', '14985_group', '19860_group', '8007_group', '5763_group', '8235_group', '5803_group', '17167_group', '5266_group', '17244_group', '9434_group', '1990_group', '19351_group', '14764_group', '14816_group', '6036_group', '19793_group', 'k__Eukaryota|p__Basidiomycota|c__Tremellomycetes|o__Tremellales|f__Cryptococcaceae|g__Cryptococcus|s__Cryptococcus_neoformans|t__EUK5207', '1536_group', '4540_group', '7703_group', '5825_group', '44267_group', '19827_group', '6927_group', '6028_group', '8255_group', '15309_group', '9737_group', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Debaryomycetaceae|g__Candida|s__Candida_tropicalis|t__EUK5482', 'k__Eukaryota|p__Ascomycota|c__Saccharomycetes|o__Saccharomycetales|f__Saccharomycetaceae|g__Saccharomyces|s__Saccharomyces_cerevisiae|t__EUK4932', '8047_group', '17158_group', '7088_group'}
 len(common_taxa): 1747
 Alpha diversity table saved to: results/cleaned/alpha_diversity.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10532</data>
+  <data key="d10">6917</data>
   <data key="d11">0</data>
 </node>
 <node id="99a1770b-1153-428d-8172-e783bf221b38">
@@ -892,7 +892,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/sanitation.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17904</data>
+  <data key="d10">6983</data>
   <data key="d11">0</data>
 </node>
 <node id="9430f225-f079-4a7f-bfd9-a272b950617f">
@@ -931,7 +931,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/pathways.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17914</data>
+  <data key="d10">7183</data>
   <data key="d11">0</data>
 </node>
 <node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
@@ -950,7 +950,7 @@ filter.py \
 [filter] Saved filtered output to: results/filtered/meta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">17903</data>
+  <data key="d10">6799</data>
   <data key="d11">0</data>
 </node>
 <node id="54aa994b-162d-49c0-a6ab-94a10c646e86">
@@ -963,7 +963,7 @@ mkdir results/census</data>
 mkdir results/census'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">9943</data>
+  <data key="d10">6392</data>
   <data key="d11">0</data>
 </node>
 <node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
@@ -982,7 +982,7 @@ mkdir results/census'</data>
 [filter] Saved filtered output to: results/filtered/mothers.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">10241</data>
+  <data key="d10">6611</data>
   <data key="d11">0</data>
 </node>
 <node id="403c9095-7c10-40b5-b31a-e570ddec6c56">
@@ -992,13 +992,13 @@ mkdir results/census'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; format_mothers.py'</data>
   <data key="d8"></data>
-  <data key="d9">/home/theo/recovery/code/format_mothers.py:41: SettingWithCopyWarning: 
+  <data key="d9">/home/tpor598/recovery/code/format_mothers.py:41: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   outdf.loc[:, 'maternal_bmi'] = outdf['Weight'] / ((outdf['Height'] / 100) ** 2)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False  True  True
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False  True  True
   True  True  True  True False False False  True False  True False False
  False  True False False  True False False False  True False False  True
  False False  True False False False False  True False  True  True False
@@ -1025,7 +1025,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True  True False False  True False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True  True  True  True  True  True  True False  True False  True
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True  True  True  True  True  True  True False  True False  True
   True False False  True False False  True  True  True False False  True
  False False  True False  True  True  True  True  True  True  True  True
   True False  True False  True False False  True  True False False  True
@@ -1052,7 +1052,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False  True False  True  True  True  True  True  True  True  True False
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False False False
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False False False False False False False False False False
  False False False False False False  True False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -1079,7 +1079,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False False False False False False False False False False
  False False False False False False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True False False  True  True  True  True False False False  True
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True  True False False  True  True  True  True False False False  True
  False False False False False False  True  True  True False False False
  False False False False  True  True  True False  True  True False  True
   True False False False False False False False False False False  True
@@ -1106,7 +1106,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False  True False False False False False False  True  True False False
   True False False False  True  True  True False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True False  True  True  True  True  True  True  True  True
@@ -1133,7 +1133,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True  True False  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True False  True  True  True  True  True  True  True  True
@@ -1160,7 +1160,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True  True  True  True
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
  False False False False  True  True  True False  True False False False
  False False  True False False  True  True False False False False False
   True  True  True False False  True  True False  True False False False
@@ -1187,7 +1187,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True False False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
  False False False False  True  True False False  True False False False
  False False  True False False  True  True False False False False False
   True  True False False False  True  True False  True False False False
@@ -1214,7 +1214,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True False False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False  True False False False False
  False False False False False False False False  True False False False
  False False  True False False  True  True False False False False False
   True  True False False False  True  True False  True False False False
@@ -1241,7 +1241,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True  True False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False False False False False False
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[False False False  True  True False False False False False False False
  False False False False False False False False  True False False False
  False False  True False False  True  True False False False False  True
   True  True False False False  True  True False  True False False False
@@ -1268,7 +1268,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  False False False  True False  True False False  True  True False  True
  False False  True  True  True False False False False]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
-/home/theo/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True False False  True False  True
+/home/tpor598/recovery/code/format_mothers.py:67: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '[ True False  True  True  True  True  True False False  True False  True
   True  True False  True False False False  True False  True  True  True
  False  True False  True  True  True  True  True  True  True False  True
   True  True  True  True  True False  True  True  True  True  True  True
@@ -1296,7 +1296,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   True  True  True  True  True  True  True  True  True]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
   outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
 </data>
-  <data key="d10">9978</data>
+  <data key="d10">6407</data>
   <data key="d11">0</data>
 </node>
 <node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
@@ -1314,7 +1314,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  extracting: results/aaunzipped/Results-UPLC_AA_LEAP_Plasma_Oct 2023.xlsx  
 </data>
   <data key="d9"></data>
-  <data key="d10">9969</data>
+  <data key="d10">6399</data>
   <data key="d11">0</data>
 </node>
 <node id="59608939-75a1-465d-8553-fd4809c332ef">
@@ -1337,7 +1337,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 4  LCC1001_6    7.46    72.5  12.8   NaN    -2.32            0            0
 </data>
   <data key="d9"></data>
-  <data key="d10">18315</data>
+  <data key="d10">7385</data>
   <data key="d11">0</data>
 </node>
 <node id="917e5a89-29df-410c-beab-58d165fb20cd">
@@ -1364,7 +1364,7 @@ Delayed recovery         3
 Name: count, dtype: int64
 </data>
   <data key="d9"></data>
-  <data key="d10">11252</data>
+  <data key="d10">7487</data>
   <data key="d11">0</data>
 </node>
 <node id="c37322cc-afdd-467c-8196-b63a5fa7541a">
@@ -1391,7 +1391,7 @@ Delayed recovery         3
 Name: count, dtype: int64
 </data>
   <data key="d9"></data>
-  <data key="d10">11278</data>
+  <data key="d10">7495</data>
   <data key="d11">0</data>
 </node>
 <node id="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
@@ -1412,7 +1412,7 @@ df1: 0 / 234 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">12855</data>
+  <data key="d10">7683</data>
   <data key="d11">0</data>
 </node>
 <node id="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
@@ -1432,7 +1432,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">✅ Saved renamed DataFrame → results/filtered/covmeta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">12889</data>
+  <data key="d10">7713</data>
   <data key="d11">0</data>
 </node>
 <node id="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
@@ -1451,7 +1451,7 @@ df2: 0 / 234 rows lost (0.00%)
 [filter] Saved filtered output to: results/filtered/covmeta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">12934</data>
+  <data key="d10">7752</data>
   <data key="d11">0</data>
 </node>
 <node id="b8683318-306c-481f-bd22-c488428579c8">
@@ -1474,58 +1474,58 @@ done</data>
     --outdir results/timepoints \
     --reindex subjectID 
 done'</data>
-  <data key="d8">Saved split: /home/theo/recovery/results/timepoints/0/aa.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/aa.tsv
-Saved split: /home/theo/recovery/results/timepoints/4/aa.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/head.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/head.tsv
-Saved split: /home/theo/recovery/results/timepoints/4/head.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/4/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/3/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/5/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/6/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/7/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/8/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/9/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/10/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/11/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/13/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/14/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/15/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/26/anthro.tsv
-Saved split: /home/theo/recovery/results/timepoints/39/anthro.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/sleep.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/sleep.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/vitamin.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/vitamin.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/vitamin.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/lipids.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/lipids.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/lipids.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/alpha_diversity.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/alpha_diversity.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/alpha_diversity.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/species.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/species.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/species.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
-Saved split: /home/theo/recovery/results/timepoints/0/pathways.tsv
-Saved split: /home/theo/recovery/results/timepoints/52/pathways.tsv
-Saved split: /home/theo/recovery/results/timepoints/12/pathways.tsv
-Split files saved to subfolders in: /home/theo/recovery/results/timepoints
+  <data key="d8">Saved split: /home/tpor598/recovery/results/timepoints/0/aa.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/aa.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/4/aa.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/head.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/head.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/4/head.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/4/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/3/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/5/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/6/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/7/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/8/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/9/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/10/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/11/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/12/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/13/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/14/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/15/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/26/anthro.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/39/anthro.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/sleep.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/sleep.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/vitamin.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/vitamin.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/12/vitamin.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/lipids.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/lipids.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/12/lipids.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/alpha_diversity.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/alpha_diversity.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/12/alpha_diversity.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/species.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/species.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/12/species.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
+Saved split: /home/tpor598/recovery/results/timepoints/0/pathways.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/52/pathways.tsv
+Saved split: /home/tpor598/recovery/results/timepoints/12/pathways.tsv
+Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
 </data>
   <data key="d9"></data>
-  <data key="d10">18323</data>
+  <data key="d10">7393</data>
   <data key="d11">0</data>
 </node>
 <node id="3213ed29-410e-427a-b65c-8b3210baf978">
@@ -1542,7 +1542,7 @@ Split files saved to subfolders in: /home/theo/recovery/results/timepoints
 [filter] Saved filtered output to: results/filtered/meta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">12957</data>
+  <data key="d10">7760</data>
   <data key="d11">0</data>
 </node>
 <node id="2a750bc5-2baa-4258-8bb4-54c5615529cb">
@@ -1563,7 +1563,7 @@ df1: 0 / 2961 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">18281</data>
+  <data key="d10">7354</data>
   <data key="d11">0</data>
 </node>
 <node id="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
@@ -1578,11 +1578,11 @@ filter.py results/filtered/covtimemeta.tsv \
 filter.py results/filtered/covtimemeta.tsv \
   -q '\''timepoint == 0 or timepoint == 52'\'' \
   -o results/filtered/timemeta_0_52tp.tsv'</data>
-  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52)': kept 468/2960
+  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52)': kept 468/2961
 [filter] Saved filtered output to: results/filtered/timemeta_0_52tp.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">13054</data>
+  <data key="d10">7846</data>
   <data key="d11">0</data>
 </node>
 <node id="119af91b-e955-43de-b714-34e8800c43f6">
@@ -1614,7 +1614,7 @@ LCC1108_52   LCC1108       yr2    Male  ...  13.0   45.0        -2.29
 [302 rows x 16 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">13146</data>
+  <data key="d10">7926</data>
   <data key="d11">0</data>
 </node>
 <node id="edebf298-55ce-4634-b555-05629109188c">
@@ -1633,11 +1633,11 @@ filter.py results/filtered/covtimemeta.tsv \
   -q '\''Condition == "MAM"'\'' \
   -q '\''Recovery == "No recovery" or Recovery == "Recovered"'\'' \
   -o results/filtered/timemeta_MAM_0_52tp.tsv'</data>
-  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52) &amp; (Condition == "MAM") &amp; (Recovery == "No recovery" or Recovery == "Recovered")': kept 302/2960
+  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52) &amp; (Condition == "MAM") &amp; (Recovery == "No recovery" or Recovery == "Recovered")': kept 302/2961
 [filter] Saved filtered output to: results/filtered/timemeta_MAM_0_52tp.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">13031</data>
+  <data key="d10">7838</data>
   <data key="d11">0</data>
 </node>
 <node id="0c0e8e80-3923-4963-86bf-7d9e926490b2">
@@ -1650,11 +1650,11 @@ filter.py results/filtered/covtimemeta.tsv \
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/covtimemeta.tsv \
   -q '\''Condition == "MAM"'\'' \
   -o results/filtered/timemeta_MAM.tsv'</data>
-  <data key="d8">[filter] Query '(Condition == "MAM")': kept 2374/2960
+  <data key="d8">[filter] Query '(Condition == "MAM")': kept 2375/2961
 [filter] Saved filtered output to: results/filtered/timemeta_MAM.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">13023</data>
+  <data key="d10">7831</data>
   <data key="d11">0</data>
 </node>
 <node id="dbadb780-4ac4-4f97-a957-6ccfdff72a53">
@@ -1673,7 +1673,7 @@ filter.py results/filtered/covtimemeta.tsv \
 [filter] Saved filtered output to: results/filtered/timemetaMAM_0tp_filled.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">13181</data>
+  <data key="d10">7968</data>
   <data key="d11">0</data>
 </node>
 <node id="1ad890ad-0576-4bc3-b9b8-cfa32cce730f">
@@ -1693,7 +1693,7 @@ filter.py results/filtered/covtimemeta.tsv \
   <data key="d8">✅ Filled missing values in columns Feed, Recovery with 'Well-nourished (C)' → results/filtered/timemetaMAM_0_52tp_filled.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">13118</data>
+  <data key="d10">7913</data>
   <data key="d11">0</data>
 </node>
 <node id="ee80ad05-11e8-43ee-959d-567a3ce0bb85">
@@ -1725,7 +1725,7 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
 [468 rows x 16 columns]
 </data>
   <data key="d9"></data>
-  <data key="d10">4727</data>
+  <data key="d10">33655</data>
   <data key="d11">0</data>
 </node>
 <node id="94047242-c353-4943-b2d0-1190b09cc5c8">
@@ -1745,26 +1745,26 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
   <data key="d8">✅ Filled missing values in columns Feed, Recovery with 'Well-nourished' → results/filtered/timemeta_0_52tp_filled.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">4556</data>
+  <data key="d10">33625</data>
   <data key="d11">0</data>
 </node>
 <node id="95e0fd20-f2fa-4b0d-96f1-bfd665064606">
   <data key="d3">filter.py \
-    results/filtered/timemeta.tsv \
+    results/filtered/covtimemeta.tsv \
     -q 'timepoint == 0 or timepoint == 52' \
     -o results/filtered/timemeta_0_52tp.tsv</data>
   <data key="d12">2527.312164135769</data>
   <data key="d13">728.4448060679726</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
-    results/filtered/timemeta.tsv \
+    results/filtered/covtimemeta.tsv \
     -q '\''timepoint == 0 or timepoint == 52'\'' \
     -o results/filtered/timemeta_0_52tp.tsv'</data>
-  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52)': kept 468/2960
+  <data key="d8">[filter] Query '(timepoint == 0 or timepoint == 52)': kept 468/2961
 [filter] Saved filtered output to: results/filtered/timemeta_0_52tp.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">4392</data>
+  <data key="d10">33595</data>
   <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
@@ -1785,6 +1785,10 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
   <data key="d14">9e591ccf-15b5-4578-a275-5530823d2145</data>
   <data key="d16">blocking</data>
   <data key="d15"></data>
+</edge>
+<edge source="3a9d83fc-9062-4367-a6e3-510564bf386b" target="95e0fd20-f2fa-4b0d-96f1-bfd665064606">
+  <data key="d14">6a557486-4bcb-4948-b810-8528b0057ecf</data>
+  <data key="d16">blocking</data>
 </edge>
 <edge source="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3" target="9430f225-f079-4a7f-bfd9-a272b950617f">
   <data key="d14">29fa658f-2d26-4a9b-bcb3-a63f429341e6</data>
@@ -2041,10 +2045,6 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
   <data key="d16">blocking</data>
   <data key="d15"></data>
 </edge>
-<edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="95e0fd20-f2fa-4b0d-96f1-bfd665064606">
-  <data key="d14">bf666b1b-1a7a-4771-98b5-3e6284ea0970</data>
-  <data key="d16">blocking</data>
-</edge>
 <edge source="f6f5fff9-cc43-4b25-a85e-d9da28978a18" target="119af91b-e955-43de-b714-34e8800c43f6">
   <data key="d14">4e353ba8-139c-4e5c-ac03-8bbdf3c05deb</data>
   <data key="d16">blocking</data>
@@ -2063,9 +2063,11 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
 <edge source="94047242-c353-4943-b2d0-1190b09cc5c8" target="ee80ad05-11e8-43ee-959d-567a3ce0bb85">
   <data key="d14">34f21283-c39b-443c-9952-1177392e2867</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 <edge source="95e0fd20-f2fa-4b0d-96f1-bfd665064606" target="94047242-c353-4943-b2d0-1190b09cc5c8">
   <data key="d14">52160f64-048c-45c6-bdef-7c9ec0453131</data>
   <data key="d16">blocking</data>
+  <data key="d15"></data>
 </edge>
 </graph></graphml>

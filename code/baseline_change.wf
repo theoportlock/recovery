@@ -25,8 +25,8 @@
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/baseline_change/maaslin/change/$name.tsv"
 done</data>
-  <data key="d4">3531.4367083705038</data>
-  <data key="d5">-314.89552316730226</data>
+  <data key="d4">665.9688673690227</data>
+  <data key="d5">-120.73875724787365</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/baseline_change/maaslin/baseline/*/; do
     name=$(basename "$d")
@@ -42,8 +42,8 @@ done'</data>
   --append \
   --add-filename \
   -o results/baseline_change/maaslin/baselinechange.tsv</data>
-  <data key="d4">4165.368449055197</data>
-  <data key="d5">-318.4785221434556</data>
+  <data key="d4">1300.9006080537158</data>
+  <data key="d5">-123.32175622402701</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/baseline_change/maaslin/change/*.tsv \
   --append \
@@ -62,8 +62,8 @@ done'</data>
   --func mean \
   --group_by 'Recovery' \
   -o results/filtered/genetics_mean.tsv</data>
-  <data key="d4">2755.8736694120194</data>
-  <data key="d5">901.136855950116</data>
+  <data key="d4">-419.51017212288184</data>
+  <data key="d5">1102.2580263759135</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
   results/filtered/genetics_standard.tsv \
@@ -86,8 +86,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   <data key="d3">polar.py \
   results/filtered/genetics_mean_sort.tsv \
   -o results/baseline_change/genetics_recovery.svg</data>
-  <data key="d4">3584.160984260527</data>
-  <data key="d5">926.6074625556358</data>
+  <data key="d4">408.77714272562594</data>
+  <data key="d5">1127.7286329814335</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; polar.py \
   results/filtered/genetics_mean_sort.tsv \
@@ -158,8 +158,8 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   results/filtered/genetics_mean.tsv \
   --ascending \
   -o results/filtered/genetics_mean_sort.tsv</data>
-  <data key="d4">3149.256812169778</data>
-  <data key="d5">917.5780739899982</data>
+  <data key="d4">-26.127029365123008</data>
+  <data key="d5">1118.6992444157956</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; sort.py \
   results/filtered/genetics_mean.tsv \
@@ -180,8 +180,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   <data key="d3">scale.py standard \
   results/filtered/genetics.tsv \
   -o results/filtered/genetics_standard.tsv</data>
-  <data key="d4">2350.3342458792763</data>
-  <data key="d5">927.67627948286</data>
+  <data key="d4">-828.5317979088093</data>
+  <data key="d5">986.0271575280935</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; scale.py standard \
   results/filtered/genetics.tsv \
@@ -209,8 +209,8 @@ LCC2075    0.875692 -0.473568  0.560524  ...    1.110860        -2.075718  -0.33
 <node id="926989e3-4fb3-4348-8185-838470b98d88">
   <data key="d3">rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}</data>
-  <data key="d4">846.676506620717</data>
-  <data key="d5">-235.0735440007779</data>
+  <data key="d4">-2021.0887310907583</data>
+  <data key="d5">-38.61938137135533</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; #rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
@@ -226,8 +226,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   -x Recovery \
   -y 'aspartic_acid' \
   -o results/baseline_change/maaslin/aspartic.svg</data>
-  <data key="d4">4709.195570873946</data>
-  <data key="d5">-224.4700276540446</data>
+  <data key="d4">1913.1955708739447</data>
+  <data key="d5">3.5299723459554713</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; box.py \
   results/timepoints/0/aa.tsv \
@@ -297,8 +297,8 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   --labels days_of_catchup \
   --axis 1 \
   --outfile results/filtered/surveillance_minus_catchup.tsv </data>
-  <data key="d4">1345.1685602747116</data>
-  <data key="d5">-259.1529092768585</data>
+  <data key="d4">-1520.2992807267694</data>
+  <data key="d5">-64.99614335742996</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; asdfasdfasdf
 drop.py \
@@ -315,15 +315,15 @@ drop.py \
 </node>
 <node id="4266ecc1-fceb-4453-9979-d627d61efa22">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/species.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/species | tail</data>
-  <data key="d4">2822.1655140257153</data>
-  <data key="d5">417.3231669990996</data>
+  <data key="d4">-43.30232697576571</data>
+  <data key="d5">611.4799329185282</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -356,15 +356,15 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="cee743f6-e644-4c4a-a0b1-e7d3fe9236de">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/pathways.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/pathways | tail</data>
-  <data key="d4">2823.4878357270354</data>
-  <data key="d5">578.4777848537889</data>
+  <data key="d4">-41.9800052744456</data>
+  <data key="d5">763.7832491282144</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -397,7 +397,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="1641d7e7-1b62-4672-b0d5-4a9c87148296">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -411,8 +411,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/lipids.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/lipids | tail</data>
-  <data key="d4">2828.361772069699</data>
-  <data key="d5">-137.64298227905562</data>
+  <data key="d4">-37.10606893178215</data>
+  <data key="d5">56.513783640372935</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -450,7 +450,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="e42dd40e-e4a0-45af-bb26-0619cf5b0537">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -464,8 +464,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/filtered/surveillance_minus_catchup.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/surveillance | tail</data>
-  <data key="d4">2276.0552820528283</data>
-  <data key="d5">-421.8652566903033</data>
+  <data key="d4">-589.4125589486528</data>
+  <data key="d5">-227.70849077087473</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -503,7 +503,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="c9a3b889-c10c-440e-9439-ba5e6b62bc88">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -517,8 +517,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/filtered/genetics.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/genetics | tail</data>
-  <data key="d4">2280.4369726979417</data>
-  <data key="d5">-152.72857373806295</data>
+  <data key="d4">-585.0308683035394</data>
+  <data key="d5">41.4281921813656</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -556,7 +556,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="ed1a047c-4ee4-44c2-856b-b8c1afa35d7c">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -570,8 +570,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/vitamin.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/vitamin | tail</data>
-  <data key="d4">2274.9422055841464</data>
-  <data key="d5">129.5740465638233</data>
+  <data key="d4">-590.5256354173346</data>
+  <data key="d5">323.73081248325184</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -609,7 +609,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="7d64dcb5-8253-4d80-9436-436ecdf13890">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -623,8 +623,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/anthro.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/anthro | tail</data>
-  <data key="d4">2285.7237325539722</data>
-  <data key="d5">405.5369452158392</data>
+  <data key="d4">-591.7441084475088</data>
+  <data key="d5">601.6937111352677</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -662,7 +662,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="6a1a27fd-5551-42c0-b828-c751e3bcd7e1">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -676,8 +676,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/sleep.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/sleep | tail</data>
-  <data key="d4">2822.060306013578</data>
-  <data key="d5">146.27871871069738</data>
+  <data key="d4">-33.407534987902864</data>
+  <data key="d5">-483.564515369874</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -715,7 +715,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="d5190bf3-5dfe-44a1-bf10-f4d9c27c53c2">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -729,8 +729,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/head.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/head | tail</data>
-  <data key="d4">2832.2736841109977</data>
-  <data key="d5">-412.4919122583268</data>
+  <data key="d4">-33.19415689048333</data>
+  <data key="d5">-218.3351463388982</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -768,7 +768,7 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 </node>
 <node id="addd9bb9-20f5-45c4-af24-32217cedff2e">
   <data key="d3">maaslin3.R \
-	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
+	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
 	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
@@ -782,8 +782,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/alpha_diversity.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/alpha_diversity | tail</data>
-  <data key="d4">2833.7172735725912</data>
-  <data key="d5">-680.7937314239929</data>
+  <data key="d4">-41.75056742888978</data>
+  <data key="d5">341.3630344954357</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula " Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -835,8 +835,8 @@ Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2
 	results/timepoints/0/aa.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/aa | tail</data>
-  <data key="d4">2279.099630289695</data>
-  <data key="d5">-691.4367903195904</data>
+  <data key="d4">-586.3682107117859</data>
+  <data key="d5">-497.2800244001618</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -872,8 +872,8 @@ Execution halted
   -s qval_individual \
   -g name filename model \
   -o results/baseline_change/maaslin/baselinechange_summary.tsv</data>
-  <data key="d4">4690.261869683454</data>
-  <data key="d5">-413.41757019147434</data>
+  <data key="d4">1922.1194877089288</data>
+  <data key="d5">-241.13280624242617</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
   results/baseline_change/maaslin/baselinechange.tsv \
