@@ -62,40 +62,155 @@ done'</data>
   --func mean \
   --group_by 'Recovery' \
   -o results/filtered/genetics_mean.tsv</data>
-  <data key="d4">3132.646729851051</data>
-  <data key="d5">1154.9991924044637</data>
-  <data key="d6"></data>
+  <data key="d4">2755.8736694120194</data>
+  <data key="d5">901.136855950116</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
+  results/filtered/genetics_standard.tsv \
+  --meta results/filtered/meta.tsv \
+  --func mean \
+  --group_by '\''Recovery'\'' \
+  -o results/filtered/genetics_mean.tsv'</data>
+  <data key="d8">             ADHD_PRS_mean  BMI_PRS_mean  ...  Intelligent_PRS_mean  NAFLD_PRS_mean
+Recovery                                  ...                                      
+No recovery       0.031351      0.017528  ...             -0.044204        0.122165
+Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012157
+
+[2 rows x 8 columns]
+</data>
+  <data key="d9"></data>
+  <data key="d10">22704</data>
+  <data key="d11">0</data>
 </node>
 <node id="1da8a511-5367-4a80-8510-06464399deb8">
   <data key="d3">polar.py \
   results/filtered/genetics_mean_sort.tsv \
-  -o results/genetics_recovery.svg</data>
-  <data key="d4">3960.934044699559</data>
-  <data key="d5">1173.5776088800012</data>
-  <data key="d6"></data>
+  -o results/baseline_change/genetics_recovery.svg</data>
+  <data key="d4">3584.160984260527</data>
+  <data key="d5">926.6074625556358</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; polar.py \
+  results/filtered/genetics_mean_sort.tsv \
+  -o results/baseline_change/genetics_recovery.svg'</data>
+  <data key="d8">✔ Polar plot saved to results/baseline_change/genetics_recovery.svg
+</data>
+  <data key="d9">Fontconfig warning: using without calling FcInit()
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
+</data>
+  <data key="d10">22967</data>
+  <data key="d11">0</data>
 </node>
 <node id="6d46e087-86b7-44f4-8268-e04ad35f3275">
   <data key="d3">sort.py \
   results/filtered/genetics_mean.tsv \
   --ascending \
   -o results/filtered/genetics_mean_sort.tsv</data>
-  <data key="d4">3526.02987260881</data>
-  <data key="d5">1171.4404104443458</data>
-  <data key="d6"></data>
+  <data key="d4">3149.256812169778</data>
+  <data key="d5">917.5780739899982</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; sort.py \
+  results/filtered/genetics_mean.tsv \
+  --ascending \
+  -o results/filtered/genetics_mean_sort.tsv'</data>
+  <data key="d8">             ADHD_PRS_mean  BMI_PRS_mean  ...  Intelligent_PRS_mean  NAFLD_PRS_mean
+Recovery                                  ...                                      
+No recovery       0.031351      0.017528  ...             -0.044204        0.122165
+Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012157
+
+[2 rows x 8 columns]
+</data>
+  <data key="d9"></data>
+  <data key="d10">22738</data>
+  <data key="d11">0</data>
 </node>
 <node id="6cd59c60-d8fe-4449-be43-29f53856493e">
   <data key="d3">scale.py standard \
   results/filtered/genetics.tsv \
   -o results/filtered/genetics_standard.tsv</data>
-  <data key="d4">2727.107306318308</data>
-  <data key="d5">1181.5386159372076</data>
-  <data key="d6"></data>
+  <data key="d4">2350.3342458792763</data>
+  <data key="d5">927.67627948286</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; scale.py standard \
+  results/filtered/genetics.tsv \
+  -o results/filtered/genetics_standard.tsv'</data>
+  <data key="d8">           ADHD_PRS   BMI_PRS    EA_PRS  ...  IBD_UC_PRS  Intelligent_PRS  NAFLD_PRS
+subjectID                                ...                                        
+LCC1009   -0.008949  0.201291  0.969422  ...    1.422500         1.366492  -0.063145
+LCC1019   -1.681983 -0.348303  1.670144  ...   -1.432725        -1.096837   1.072700
+LCC1112    0.165991 -1.447237  0.955417  ...   -0.491228        -0.342828  -0.129936
+LCC1111   -0.579977  1.128969  0.340799  ...    0.426133        -0.104717   1.246445
+LCC1110    0.769481 -0.756623 -1.223101  ...   -0.056688        -1.233456  -0.611233
+...             ...       ...       ...  ...         ...              ...        ...
+LCC2070   -0.205271 -0.984795  0.925307  ...    1.124028         0.667990   0.546956
+LCC2071    1.351249  1.309627 -0.091001  ...   -1.753150         0.216197  -0.743373
+LCC2072   -0.038356  1.243563 -0.945274  ...    0.584147         0.685964  -0.987119
+LCC2074   -0.755790  1.273800 -0.533835  ...    0.327374        -0.478800  -0.330663
+LCC2075    0.875692 -0.473568  0.560524  ...    1.110860        -2.075718  -0.330663
+
+[230 rows x 8 columns]
+</data>
+  <data key="d9"></data>
+  <data key="d10">22636</data>
+  <data key="d11">0</data>
 </node>
 <node id="926989e3-4fb3-4348-8185-838470b98d88">
   <data key="d3">rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}</data>
-  <data key="d4">867.1022605163748</data>
-  <data key="d5">-226.31964947406732</data>
+  <data key="d4">846.676506620717</data>
+  <data key="d5">-235.0735440007779</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
@@ -175,31 +290,6 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
 </data>
   <data key="d10">21297</data>
   <data key="d11">0</data>
-</node>
-<node id="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1">
-  <data key="d3">#results/filtered/household.tsv \
-#results/filtered/media_consumption.tsv \
-#results/filtered/sanitation.tsv \
-#results/filtered/education.tsv \
-#results/filtered/family.tsv \
-
-merge.py \
-  results/timepoints/yr1/sleep.tsv \
-  results/timepoints/yr1/head.tsv \
-  results/timepoints/yr1/anthro.tsv \
-  results/timepoints/yr1/alpha_diversity.tsv \
-  results/mofa_mbiome/mofa_mbiome.tsv \
-  results/mofa_metabolome/mofa_metabolome.tsv \
-  results/filtered/economics.tsv \
-  results/filtered/genetics.tsv \
-  results/filtered/surveillance_minus_catchup.tsv \
-  --add-prefix \
-  --sep ":" \
-  -j outer \
-  -o results/merged_dataset.tsv</data>
-  <data key="d4">2270.2779225635904</data>
-  <data key="d5">1036.3741796645156</data>
-  <data key="d6"></data>
 </node>
 <node id="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
   <data key="d3">drop.py \
@@ -795,7 +885,86 @@ Execution halted
   -o results/baseline_change/maaslin/baselinechange_summary.tsv</data>
   <data key="d4">4690.261869683454</data>
   <data key="d5">-413.41757019147434</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
+  results/baseline_change/maaslin/baselinechange.tsv \
+  -p 0.1 \
+  -c coef \
+  -s qval_individual \
+  -g name filename model \
+  -o results/baseline_change/maaslin/baselinechange_summary.tsv'</data>
+  <data key="d8">                  name        filename      model  n_tested  n_sig  n_sig_up  n_sig_down  pct_sig  pct_sig_up  pct_sig_down
+                    BF              aa  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF alpha_diversity  abundance       4.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF          anthro  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF        genetics  abundance       8.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF            head  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF          lipids  abundance     413.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF        pathways  abundance     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF        pathways prevalence     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF           sleep  abundance       6.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF         species  abundance     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF         species prevalence     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF    surveillance  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+                    BF         vitamin  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean              aa  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean alpha_diversity  abundance       4.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean          anthro  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean        genetics  abundance       8.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean            head  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean          lipids  abundance     413.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean        pathways  abundance     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean        pathways prevalence     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean           sleep  abundance       6.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean         species  abundance     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean         species prevalence     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean    surveillance  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+Delivery_ModeCaesarean         vitamin  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered              aa  abundance      23.0    1.0       0.0         1.0 4.347826         0.0      4.347826
+     RecoveryRecovered alpha_diversity  abundance       4.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered          anthro  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered        genetics  abundance       8.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered            head  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered          lipids  abundance     413.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered        pathways  abundance     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered        pathways prevalence     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered           sleep  abundance       6.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered         species  abundance     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered         species prevalence     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered    surveillance  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+     RecoveryRecovered         vitamin  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale              aa  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale alpha_diversity  abundance       4.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale          anthro  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale        genetics  abundance       8.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale            head  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale          lipids  abundance     413.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale        pathways  abundance     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale        pathways prevalence     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale           sleep  abundance       6.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale         species  abundance     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale         species prevalence     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale    surveillance  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+             SexFemale         vitamin  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ              aa  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ alpha_diversity  abundance       4.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ          anthro  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ        genetics  abundance       8.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ            head  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ          lipids  abundance     413.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ        pathways  abundance     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ        pathways prevalence     491.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ           sleep  abundance       6.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ         species  abundance     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ         species prevalence     550.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ    surveillance  abundance      23.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+          baseline_WLZ         vitamin  abundance       5.0    0.0       0.0         0.0 0.000000         0.0      0.000000
+
+Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">21557</data>
+  <data key="d11">0</data>
 </node>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
   <data key="d12">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
@@ -808,18 +977,21 @@ Execution halted
   <data key="d12">9530098c-79f2-4552-8fec-40975d4343c2</data>
   <data key="d14">blocking</data>
 </edge>
-<edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275"/>
-<edge source="6d46e087-86b7-44f4-8268-e04ad35f3275" target="1da8a511-5367-4a80-8510-06464399deb8"/>
-<edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655"/>
+<edge source="6b92ce8e-5a01-4280-83f8-f3edf8d36655" target="6d46e087-86b7-44f4-8268-e04ad35f3275">
+  <data key="d12">fd394148-b65a-420e-b89d-2e07997c88cb</data>
+  <data key="d13"></data>
+</edge>
+<edge source="6d46e087-86b7-44f4-8268-e04ad35f3275" target="1da8a511-5367-4a80-8510-06464399deb8">
+  <data key="d12">a21c99df-ffa6-48b3-b701-f18166dee773</data>
+  <data key="d13"></data>
+</edge>
+<edge source="6cd59c60-d8fe-4449-be43-29f53856493e" target="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
+  <data key="d12">34ed9bf1-e204-4a17-ba93-dfd54e4827b6</data>
+</edge>
 <edge source="926989e3-4fb3-4348-8185-838470b98d88" target="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
   <data key="d12">e6949040-6804-4f26-96b3-68183d193231</data>
   <data key="d14">blocking</data>
   <data key="d13"></data>
-</edge>
-<edge source="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1" target="6cd59c60-d8fe-4449-be43-29f53856493e"/>
-<edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="7b48c8f1-12f8-4c9a-98f3-3fa0321216e1">
-  <data key="d12">d1987299-5d91-4005-b548-eba58dec4fd7</data>
-  <data key="d14">blocking</data>
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="6f87e711-bac9-4082-b06f-2fc6ed83d75a">
   <data key="d12">ae07aed6-9d0e-4ead-ba8e-eec212ba4027</data>
@@ -863,6 +1035,10 @@ Execution halted
 </edge>
 <edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="cee743f6-e644-4c4a-a0b1-e7d3fe9236de">
   <data key="d12">82d416ae-aa1c-4bcb-979c-1d279ab0161a</data>
+  <data key="d14">blocking</data>
+</edge>
+<edge source="c27b93c1-8f27-467a-8d25-1ad31ccb6c77" target="6cd59c60-d8fe-4449-be43-29f53856493e">
+  <data key="d12">02f46611-85fd-404f-927d-657dc82fb945</data>
   <data key="d14">blocking</data>
 </edge>
 <edge source="4266ecc1-fceb-4453-9979-d627d61efa22" target="445f4183-2221-42ae-80fe-cfa8e3da2000">
