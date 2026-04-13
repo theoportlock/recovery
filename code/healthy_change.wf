@@ -217,42 +217,151 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
   <data key="d11">0</data>
 </node>
 <node id="efff9afc-b0ea-4937-a15d-319ee982992b">
-  <data key="d3">parallel -j1 distance.py \
+  <data key="d3">parallel -j1 \
+  'distance.py \
   results/filtered/{}.tsv \
-  -o results/distance/{}.tsv \
-  &lt; conf/timedatasets.txt</data>
-  <data key="d4">810.9820144856608</data>
+  -o results/healthy_change/distance/{}.tsv' \
+:::: conf/timedatasets.txt</data>
+  <data key="d4">812.4977310521712</data>
   <data key="d5">960.5427557897199</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
+  '\''distance.py \
+  results/filtered/{}.tsv \
+  -o results/healthy_change/distance/{}.tsv'\'' \
+:::: conf/timedatasets.txt'</data>
+  <data key="d8">Distance edgelist saved to: results/healthy_change/distance/aa.tsv
+Rows: 293764 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/head.tsv
+Rows: 242064 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/anthro.tsv
+Rows: 109453 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/sleep.tsv
+Rows: 169744 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/vitamin.tsv
+Rows: 289444 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/lipids.tsv
+Rows: 306916 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/alpha_diversity.tsv
+Rows: 342225 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/species.tsv
+Rows: 342225 (includes duplicates and self-distances)
+Distance edgelist saved to: results/healthy_change/distance/pathways.tsv
+Rows: 343396 (includes duplicates and self-distances)
+</data>
+  <data key="d9"></data>
+  <data key="d10">37482</data>
+  <data key="d11">0</data>
 </node>
 <node id="e852a3bc-1df2-4249-9855-9c943d20b037">
   <data key="d3">parallel -j1 pcoa.py \
-  -i results/distance/{}.tsv \
-  -o results/pcoa/{}.tsv \
-  &lt; conf/timedatasets.txt</data>
-  <data key="d4">1181.836612002095</data>
-  <data key="d5">985.1402546045854</data>
-  <data key="d6"></data>
+  results/healthy_change/distance/{}.tsv \
+  --distance-col distance \
+  -o results/healthy_change/pcoa/{}.tsv \
+:::: conf/timedatasets.txt</data>
+  <data key="d4">1183.3523285686056</data>
+  <data key="d5">979.8352466217992</data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 pcoa.py \
+  results/healthy_change/distance/{}.tsv \
+  --distance-col distance \
+  -o results/healthy_change/pcoa/{}.tsv \
+:::: conf/timedatasets.txt'</data>
+  <data key="d8">PCoA results saved to: results/healthy_change/pcoa/aa.tsv
+PCoA results saved to: results/healthy_change/pcoa/head.tsv
+PCoA results saved to: results/healthy_change/pcoa/sleep.tsv
+PCoA results saved to: results/healthy_change/pcoa/vitamin.tsv
+PCoA results saved to: results/healthy_change/pcoa/lipids.tsv
+PCoA results saved to: results/healthy_change/pcoa/alpha_diversity.tsv
+PCoA results saved to: results/healthy_change/pcoa/species.tsv
+PCoA results saved to: results/healthy_change/pcoa/pathways.tsv
+</data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit//pcoa.py", line 155, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit//pcoa.py", line 135, in main
+    df = load_edge_list(
+         ^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit//pcoa.py", line 103, in load_edge_list
+    raise ValueError(
+ValueError: Distance matrix contains 8018748 missing values. Edge list does not define all pairwise distances.
+</data>
+  <data key="d10">37725</data>
+  <data key="d11">1</data>
 </node>
 <node id="b2979940-9977-4efd-a449-7cf18486839a">
   <data key="d3">parallel -j1 spindle.py \
-results/pcoa/{}.tsv \
---meta results/filtered/timemeta.tsv \
---group-col timepoint \
--o results/spindle/{}.pdf \
-&lt; conf/timedatasets.txt</data>
-  <data key="d4">1528.0937107036634</data>
+  results/healthy_change/pcoa/{}.tsv \
+  --title-from-subject \
+  --meta results/filtered/timemeta.tsv \
+  --group-col timepoint \
+  -o results/healthy_change/spindle/{}.svg \
+:::: conf/timedatasets.txt</data>
+  <data key="d4">1533.0937107036634</data>
   <data key="d5">981.356024017683</data>
-  <data key="d6"></data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 spindle.py \
+  results/healthy_change/pcoa/{}.tsv \
+  --title-from-subject \
+  --meta results/filtered/timemeta.tsv \
+  --group-col timepoint \
+  -o results/healthy_change/spindle/{}.svg \
+:::: conf/timedatasets.txt'</data>
+  <data key="d8">Saved to results/healthy_change/spindle/aa.svg
+Saved to results/healthy_change/spindle/head.svg
+Saved to results/healthy_change/spindle/sleep.svg
+Saved to results/healthy_change/spindle/vitamin.svg
+Saved to results/healthy_change/spindle/lipids.svg
+Saved to results/healthy_change/spindle/alpha_diversity.svg
+Saved to results/healthy_change/spindle/species.svg
+Saved to results/healthy_change/spindle/pathways.svg
+</data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit//spindle.py", line 238, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit//spindle.py", line 195, in main
+    df = load_tsv(args.subject)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit//spindle.py", line 57, in load_tsv
+    return pd.read_csv(path, sep='\t', index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/pcoa/anthro.tsv'
+</data>
+  <data key="d10">39859</data>
+  <data key="d11">1</data>
 </node>
 <node id="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
   <data key="d3">arrange_svgs.py \
-  results/spindle/* \
+  results/healthy_change/spindle/*.svg \
   --rows 3 \
-  -o results/all_spindle.svg</data>
+  -o results/healthy_change/all_spindle.svg</data>
   <data key="d4">1902.7325388069999</data>
   <data key="d5">998.3850616587436</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; arrange_svgs.py \
+  results/healthy_change/spindle/*.svg \
+  --rows 3 \
+  -o results/healthy_change/all_spindle.svg'</data>
+  <data key="d8">Output written to results/healthy_change/all_spindle.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">40132</data>
+  <data key="d11">0</data>
 </node>
 <node id="7a04012c-d2a4-492a-99c7-ad1876374d62">
   <data key="d3">maaslin3.R \
@@ -428,7 +537,7 @@ Execution halted
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/alpha_diversity | tail</data>
   <data key="d4">1439.3317546068422</data>
-  <data key="d5">-326.2764650443031</data>
+  <data key="d5">-334.2764650443031</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -489,8 +598,8 @@ Execution halted
     results/filtered/anthro.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/anthro | tail</data>
-  <data key="d4">716.9884431058172</data>
-  <data key="d5">-765.1026757532335</data>
+  <data key="d4">713.0299193734986</data>
+  <data key="d5">-774.3392311286437</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -550,8 +659,8 @@ Execution halted
     results/filtered/head.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/head | tail</data>
-  <data key="d4">714.6689986055624</data>
-  <data key="d5">-483.63515067433406</data>
+  <data key="d4">712.0299827840167</data>
+  <data key="d5">-492.8717060497443</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -603,7 +712,7 @@ This warning is displayed once per session.
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/species | tail</data>
   <data key="d4">1437.2836723163578</data>
-  <data key="d5">-28.976208662625822</data>
+  <data key="d5">-34.976208662625794</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1183,8 +1292,8 @@ Execution halted
     results/filtered/sleep.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/sleep | tail</data>
-  <data key="d4">714.2616804987921</data>
-  <data key="d5">-200.86880969279736</data>
+  <data key="d4">710.3031567664733</data>
+  <data key="d5">-207.46634924666182</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1241,8 +1350,8 @@ This warning is displayed once per session.
     results/filtered/vitamin.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/vitamin | tail</data>
-  <data key="d4">1436.7453754831608</data>
-  <data key="d5">-607.5152306013554</data>
+  <data key="d4">1438.7453754831608</data>
+  <data key="d5">-623.5152306013554</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1473,6 +1582,7 @@ results/filtered/pathways.tsv      13033.258967  ...      0.616
 <edge source="efff9afc-b0ea-4937-a15d-319ee982992b" target="e852a3bc-1df2-4249-9855-9c943d20b037">
   <data key="d12">629468d1-52c7-482c-848b-33d3a3998cdd</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="e852a3bc-1df2-4249-9855-9c943d20b037" target="b2979940-9977-4efd-a449-7cf18486839a">
   <data key="d12">ff375b22-641e-459f-ba12-cea9db9dc637</data>
@@ -1481,6 +1591,7 @@ results/filtered/pathways.tsv      13033.258967  ...      0.616
 <edge source="b2979940-9977-4efd-a449-7cf18486839a" target="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
   <data key="d12">d56b6aac-0660-4853-a2a6-4abe8136f6ed</data>
   <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="7a04012c-d2a4-492a-99c7-ad1876374d62" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">d814df60-a423-408e-8f85-aac58c357ead</data>
