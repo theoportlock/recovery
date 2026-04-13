@@ -1,5 +1,7 @@
 results/characteristics/recipe.tsv
+results/baseline_change/maaslin/baselinechange_summary.tsv
 results/baseline_change/maaslin/baselinechange.tsv
 results/healthy_change/rec_merged.tsv
+results/healthy_change/maaslin/healthychange_summary.tsv
 results/healthy_change/maaslin/healthychange.tsv
 conf/maaslin_config.tsv

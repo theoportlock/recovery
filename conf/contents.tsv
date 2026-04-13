@@ -1,4 +1,7 @@
 Sheet	Name	Description
-Data_1	Supplementary Data 1	Recipe
-Data_2	Supplementary Data 2	Mixed modelling changes to baseline datasets
-Data_3	Supplementary Data 3	Longitudinal Mixed modelling changes to timeseries datasets
+Glossary	Glossary	Glossary of terms
+recipe	Table S1	Recipe
+baselinechange	Table S2	Mixed modelling changes to baseline datasets
+rec_merged	Table S3	PERMANOVA based measure of recovery
+helathychange	Table S4	Longitudinal Mixed modelling changes to timeseries datasets
+maaslin_config	Table S5	Configuration for all mixed models

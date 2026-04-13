@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="edge_type" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d13" for="edge" attr.name="status" attr.type="string"/>
 <key id="d12" for="edge" attr.name="id" attr.type="string"/>
 <key id="d11" for="node" attr.name="error_code" attr.type="string"/>
 <key id="d10" for="node" attr.name="pid" attr.type="string"/>
@@ -30,7 +31,41 @@
   --output results/healthy_change/allis_multiline.svg</data>
   <data key="d4">3678.520445226949</data>
   <data key="d5">-140.1551478387505</data>
-  <data key="d6"></data>
+  <data key="d6">fail</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; multiline.py \
+  --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
+  --meta results/filtered/timemeta.tsv \
+  --x timepoint \
+  --y '\''Allisonella_histaminiformans|SGB5843'\'' \
+  --hue Recovery \
+  --id subjectID \
+  --output results/healthy_change/allis_multiline.svg'</data>
+  <data key="d8"></data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/multiline.py", line 94, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/multiline.py", line 81, in main
+    df_subject = pd.read_csv(args.subject, sep="\t", index_col=0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/maaslin/change/species/features/data_transformed.tsv'
+</data>
+  <data key="d10">32094</data>
+  <data key="d11">1</data>
 </node>
 <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d3">for d in results/healthy_change/maaslin/*/; do
@@ -40,14 +75,17 @@ done</data>
   <data key="d4">2466.895597974934</data>
   <data key="d5">-287.53114242254384</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/healthy/*/; do
+  <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/*/; do
     name=$(basename "$d")
-    cp "$d/all_results.tsv" "results/healthy_change/maaslin/change/$name.tsv"
+    cp "$d/all_results.tsv" "results/healthy_change/change/$name.tsv"
 done'</data>
   <data key="d8"></data>
-  <data key="d9">cp: cannot stat 'results/healthy_change/maaslin/healthy/pathways//all_results.tsv': No such file or directory
+  <data key="d9">cp: cannot stat 'results/healthy_change/maaslin/change//all_results.tsv': No such file or directory
+cp: cannot stat 'results/healthy_change/maaslin/healthy//all_results.tsv': No such file or directory
+cp: cannot stat 'results/healthy_change/maaslin/pathways//all_results.tsv': No such file or directory
+cp: cannot stat 'results/healthy_change/maaslin/species//all_results.tsv': No such file or directory
 </data>
-  <data key="d10">43409</data>
+  <data key="d10">31991</data>
   <data key="d11">0</data>
 </node>
 <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
@@ -58,14 +96,14 @@ done'</data>
   <data key="d4">3137.255144409433</data>
   <data key="d5">-282.3715305472375</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/maaslin/change/*.tsv \
+  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/change/*.tsv \
   --append \
   --add-filename \
-  -o results/healthy_change/maaslin/healthychange.tsv'</data>
-  <data key="d8">Saved 1719 rows × 15 columns to results/healthy_change/maaslin/healthychange.tsv
+  -o results/healthy_change/healthychange.tsv'</data>
+  <data key="d8">Saved 329 rows × 15 columns to results/healthy_change/healthychange.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">43465</data>
+  <data key="d10">32040</data>
   <data key="d11">0</data>
 </node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
@@ -80,70 +118,60 @@ done'</data>
   <data key="d5">-358.978527867248</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
-  results/healthy_change/maaslin/healthychange.tsv \
+  results/healthy_change/healthychange.tsv \
   -p 0.1 \
   -c coef \
   -s qval_individual \
   -g name filename model \
-  -o results/healthy_change/maaslin/healthychange_summary.tsv'</data>
-  <data key="d8">                           name        filename      model  n_tested  n_sig  n_sig_up  n_sig_down    pct_sig  pct_sig_up  pct_sig_down
-                             BF              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                             BF alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                             BF          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                             BF            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                             BF           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                             BF         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-         Delivery_ModeCaesarean              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-         Delivery_ModeCaesarean alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-         Delivery_ModeCaesarean          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-         Delivery_ModeCaesarean            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-         Delivery_ModeCaesarean           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-         Delivery_ModeCaesarean         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B)              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B) alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B)          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B)            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B)           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B)         species  abundance     139.0    3.0       1.0         2.0   2.158273    0.719424      1.438849
-                  FeedERUSF (B)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                  FeedERUSF (B)         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-             FeedLocal RUSF (A)         species  abundance     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-             FeedLocal RUSF (A)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                      SexFemale              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                      SexFemale alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                      SexFemale          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                      SexFemale            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                      SexFemale           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                      SexFemale         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   baseline_WLZ              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   baseline_WLZ alpha_diversity  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   baseline_WLZ          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   baseline_WLZ            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   baseline_WLZ           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   baseline_WLZ         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   timepointyr2              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   timepointyr2 alpha_diversity  abundance       4.0    4.0       4.0         0.0 100.000000  100.000000      0.000000
-                   timepointyr2          anthro  abundance       4.0    1.0       1.0         0.0  25.000000   25.000000      0.000000
-                   timepointyr2            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   timepointyr2           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-                   timepointyr2         species  abundance     139.0   17.0       7.0        10.0  12.230216    5.035971      7.194245
-                   timepointyr2         species prevalence     139.0   79.0      69.0        10.0  56.834532   49.640288      7.194245
-                   timepointyr2         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-     timepointyr2:FeedERUSF (B)              aa  abundance      23.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-     timepointyr2:FeedERUSF (B) alpha_diversity  abundance       4.0    1.0       0.0         1.0  25.000000    0.000000     25.000000
-     timepointyr2:FeedERUSF (B)          anthro  abundance       4.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-     timepointyr2:FeedERUSF (B)            head  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-     timepointyr2:FeedERUSF (B)           sleep  abundance       6.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-     timepointyr2:FeedERUSF (B)         species  abundance     139.0    1.0       1.0         0.0   0.719424    0.719424      0.000000
-     timepointyr2:FeedERUSF (B)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-     timepointyr2:FeedERUSF (B)         vitamin  abundance       5.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
-timepointyr2:FeedLocal RUSF (A)         species  abundance     139.0    1.0       0.0         1.0   0.719424    0.000000      0.719424
-timepointyr2:FeedLocal RUSF (A)         species prevalence     139.0    0.0       0.0         0.0   0.000000    0.000000      0.000000
+  -o results/healthy_change/healthychange_summary.tsv'</data>
+  <data key="d8">                      name        filename     model  n_tested  n_sig  n_sig_up  n_sig_down  pct_sig  pct_sig_up  pct_sig_down
+                        BF              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+                        BF alpha_diversity abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+                        BF          anthro abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+                        BF            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+                        BF           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+                        BF         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+    Delivery_ModeCaesarean              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+    Delivery_ModeCaesarean alpha_diversity abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+    Delivery_ModeCaesarean          anthro abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+    Delivery_ModeCaesarean            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+    Delivery_ModeCaesarean           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+    Delivery_ModeCaesarean         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+             FeedERUSF (B)              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+             FeedERUSF (B) alpha_diversity abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+             FeedERUSF (B)          anthro abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+             FeedERUSF (B)            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+             FeedERUSF (B)           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+             FeedERUSF (B)         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+                 SexFemale              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+                 SexFemale alpha_diversity abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+                 SexFemale          anthro abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+                 SexFemale            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+                 SexFemale           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+                 SexFemale         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+              baseline_WLZ              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+              baseline_WLZ alpha_diversity abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+              baseline_WLZ          anthro abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+              baseline_WLZ            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+              baseline_WLZ           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+              baseline_WLZ         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+              timepointyr2              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+              timepointyr2 alpha_diversity abundance       4.0    4.0       4.0         0.0    100.0       100.0           0.0
+              timepointyr2          anthro abundance       4.0    1.0       1.0         0.0     25.0        25.0           0.0
+              timepointyr2            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+              timepointyr2           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+              timepointyr2         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+timepointyr2:FeedERUSF (B)              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
+timepointyr2:FeedERUSF (B) alpha_diversity abundance       4.0    1.0       0.0         1.0     25.0         0.0          25.0
+timepointyr2:FeedERUSF (B)          anthro abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
+timepointyr2:FeedERUSF (B)            head abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
+timepointyr2:FeedERUSF (B)           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
+timepointyr2:FeedERUSF (B)         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
 
-Summary written to: results/healthy_change/maaslin/healthychange_summary.tsv
+Summary written to: results/healthy_change/healthychange_summary.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">43513</data>
+  <data key="d10">32083</data>
   <data key="d11">0</data>
 </node>
 <node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
@@ -174,7 +202,7 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
   <data key="d8">Saved 8 rows × 6 columns to results/healthy_change/rec_merged.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">48007</data>
+  <data key="d10">32552</data>
   <data key="d11">0</data>
 </node>
 <node id="05b34ebc-bb72-4db1-835f-78a960acfc33">
@@ -185,7 +213,7 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; hbar_fig3.py'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">48126</data>
+  <data key="d10">32582</data>
   <data key="d11">0</data>
 </node>
 <node id="efff9afc-b0ea-4937-a15d-319ee982992b">
@@ -229,7 +257,7 @@ results/pcoa/{}.tsv \
 <node id="7a04012c-d2a4-492a-99c7-ad1876374d62">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --warn_prevalence False \
     --small_random_effects True \
     --max_pngs 0 \
@@ -242,24 +270,24 @@ results/pcoa/{}.tsv \
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --warn_prevalence False \
     --small_random_effects True \
     --max_pngs 0 \
     --cores 1 \
     results/filtered/pathways.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/pathways | tail'</data>
-  <data key="d8">2026-04-12 19:19:10.637385 INFO::Fitting model to feature number 490, THRESYN-PWY
-2026-04-12 19:19:10.639285 INFO::Fitting model to feature number 491, TRNA-CHARGING-PWY
-2026-04-12 19:19:10.641404 INFO::Fitting model to feature number 492, TYRFUMCAT-PWY
-2026-04-12 19:19:10.687557 INFO::Fitting model to feature number 493, UBISYN-PWY
-2026-04-12 19:19:10.733273 INFO::Fitting model to feature number 494, UDPNACETYLGALSYN-PWY
-2026-04-12 19:19:10.780778 INFO::Fitting model to feature number 495, UDPNAGSYN-PWY
-2026-04-12 19:19:10.782902 INFO::Fitting model to feature number 496, URDEGR-PWY
-2026-04-12 19:19:10.835569 INFO::Fitting model to feature number 497, URSIN-PWY
-2026-04-12 19:19:10.879391 INFO::Fitting model to feature number 498, VALSYN-PWY
-2026-04-12 19:19:14.612994 INFO::Counting total values for each feature
+    results/healthy_change/maaslin/pathways | tail'</data>
+  <data key="d8">2026-04-13 17:00:32.324046 INFO::Fitting model to feature number 490, THRESYN-PWY
+2026-04-13 17:00:32.327344 INFO::Fitting model to feature number 491, TRNA-CHARGING-PWY
+2026-04-13 17:00:32.337643 INFO::Fitting model to feature number 492, TYRFUMCAT-PWY
+2026-04-13 17:00:32.512077 INFO::Fitting model to feature number 493, UBISYN-PWY
+2026-04-13 17:00:32.649349 INFO::Fitting model to feature number 494, UDPNACETYLGALSYN-PWY
+2026-04-13 17:00:32.817619 INFO::Fitting model to feature number 495, UDPNAGSYN-PWY
+2026-04-13 17:00:32.821984 INFO::Fitting model to feature number 496, URDEGR-PWY
+2026-04-13 17:00:33.008745 INFO::Fitting model to feature number 497, URSIN-PWY
+2026-04-13 17:00:33.179281 INFO::Fitting model to feature number 498, VALSYN-PWY
+2026-04-13 17:00:43.356281 INFO::Counting total values for each feature
 </data>
   <data key="d9">boundary (singular) fit: see help('isSingular')
 boundary (singular) fit: see help('isSingular')
@@ -378,13 +406,13 @@ This warning is displayed once per session.
   Consider formula(paste(x, collapse = " ")) instead.
 Execution halted
 </data>
-  <data key="d10">43012</data>
+  <data key="d10">31245</data>
   <data key="d11">0</data>
 </node>
 <node id="f7d638a8-1deb-4697-8cda-8b6759ccfc30">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -404,7 +432,7 @@ Execution halted
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -418,16 +446,16 @@ Execution halted
     --cores 1 \
     results/filtered/alpha_diversity.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/alpha_diversity | tail'</data>
-  <data key="d8">2026-04-12 19:18:03.217462 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/alpha_diversity/fits/ranef_linear.rds
-2026-04-12 19:18:03.267187 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/healthy/alpha_diversity/all_results.tsv
-2026-04-12 19:18:03.273448 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/alpha_diversity/significant_results.tsv
-2026-04-12 19:18:03.332904 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/healthy/alpha_diversity/figures/summary_plot.pdf
-2026-04-12 19:18:09.225432 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/alpha_diversity/figures
-2026-04-12 19:18:09.363204 INFO::Plotting associations from most to least significant, grouped by metadata
-2026-04-12 19:18:09.436922 INFO::Creating box plot for categorical data (linear), 
+    results/healthy_change/maaslin/alpha_diversity | tail'</data>
+  <data key="d8">2026-04-13 16:58:48.336891 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/alpha_diversity/all_results.tsv
+2026-04-13 16:58:48.340403 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/alpha_diversity/significant_results.tsv
+2026-04-13 16:58:48.394992 INFO::Creating output figures folder
+2026-04-13 16:58:48.397925 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/alpha_diversity/figures/summary_plot.pdf
+2026-04-13 16:58:54.294893 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/alpha_diversity/figures
+2026-04-13 16:58:54.408016 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-04-13 16:58:54.4716 INFO::Creating box plot for categorical data (linear), 
                         timepoint vs Faiths_PD
 </data>
   <data key="d9">Error in if ("linear" == model_name) { : argument is of length zero
@@ -441,13 +469,13 @@ This warning is displayed once per session.
 ℹ Please use `"qval"` instead of `.data$qval` 
 Execution halted
 </data>
-  <data key="d10">43067</data>
+  <data key="d10">31253</data>
   <data key="d11">0</data>
 </node>
 <node id="a2accc77-f2eb-452c-a4d1-f1d19196f0ec">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -466,7 +494,7 @@ Execution halted
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -479,16 +507,16 @@ Execution halted
     --cores 1 \
     results/filtered/anthro.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/anthro | tail'</data>
-  <data key="d8">2026-04-12 19:18:07.026536 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/anthro/fits/ranef_linear.rds
-2026-04-12 19:18:07.053806 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/healthy/anthro/all_results.tsv
-2026-04-12 19:18:07.05714 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/anthro/significant_results.tsv
-2026-04-12 19:18:07.098076 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/healthy/anthro/figures/summary_plot.pdf
-2026-04-12 19:18:12.756063 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/anthro/figures
-2026-04-12 19:18:12.840679 INFO::Plotting associations from most to least significant, grouped by metadata
-2026-04-12 19:18:12.907037 INFO::Creating box plot for categorical data (linear), 
+    results/healthy_change/maaslin/anthro | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.905087 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/anthro/all_results.tsv
+2026-04-13 16:58:52.908894 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/anthro/significant_results.tsv
+2026-04-13 16:58:52.982188 INFO::Creating output figures folder
+2026-04-13 16:58:52.985223 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/anthro/figures/summary_plot.pdf
+2026-04-13 16:58:59.74703 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/anthro/figures
+2026-04-13 16:58:59.875516 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-04-13 16:58:59.923689 INFO::Creating box plot for categorical data (linear), 
                         timepoint vs Length
 </data>
   <data key="d9">Error in if ("linear" == model_name) { : argument is of length zero
@@ -502,13 +530,13 @@ This warning is displayed once per session.
 ℹ Please use `"qval"` instead of `.data$qval` 
 Execution halted
 </data>
-  <data key="d10">43055</data>
+  <data key="d10">31256</data>
   <data key="d11">0</data>
 </node>
 <node id="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -527,7 +555,7 @@ Execution halted
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -540,16 +568,16 @@ Execution halted
     --cores 1 \
     results/filtered/head.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/head | tail'</data>
-  <data key="d8">2026-04-12 19:18:06.817713 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/head/fits/ranef_linear.rds
-2026-04-12 19:18:06.821031 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/head/fits/ranef_linear.rds
-2026-04-12 19:18:06.853189 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/healthy/head/all_results.tsv
-2026-04-12 19:18:06.857684 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/head/significant_results.tsv
-2026-04-12 19:18:06.900112 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/healthy/head/figures/summary_plot.pdf
-2026-04-12 19:18:12.761767 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/head/figures
-2026-04-12 19:18:12.845091 INFO::All associations had errors 
+    results/healthy_change/maaslin/head | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.544485 INFO::Writing extracted random effects to file results/healthy_change/maaslin/head/fits/ranef_linear.rds
+2026-04-13 16:58:52.587906 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/head/all_results.tsv
+2026-04-13 16:58:52.593553 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/head/significant_results.tsv
+2026-04-13 16:58:52.672573 INFO::Creating output figures folder
+2026-04-13 16:58:52.68313 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/head/figures/summary_plot.pdf
+2026-04-13 16:58:59.670551 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/head/figures
+2026-04-13 16:58:59.782312 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -560,13 +588,13 @@ This warning is displayed once per session.
 3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">43013</data>
+  <data key="d10">31262</data>
   <data key="d11">0</data>
 </node>
 <node id="d33c52f3-7c41-4d42-b1e8-48e37630fd34">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --warn_prevalence False \
     --small_random_effects True \
     --max_pngs 0 \
@@ -579,24 +607,24 @@ This warning is displayed once per session.
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --warn_prevalence False \
     --small_random_effects True \
     --max_pngs 0 \
     --cores 1 \
     results/filtered/species.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/species | tail'</data>
-  <data key="d8">2026-04-12 19:20:18.963681 INFO::Fitting model to feature number 1026, Butyricicoccus_sp_AM29_23AC|SGB14991
-2026-04-12 19:20:19.01031 INFO::Fitting model to feature number 1027, Aeromonas_jandaei|SGB9949
-2026-04-12 19:20:19.056047 INFO::Fitting model to feature number 1028, GGB71292_SGB97395|SGB97395
-2026-04-12 19:20:19.103551 INFO::Fitting model to feature number 1029, Clostridium_sp_AM49_4BH|SGB4652
-2026-04-12 19:20:19.152076 INFO::Fitting model to feature number 1030, GGB53985_SGB6367|SGB6367
-2026-04-12 19:20:19.198236 INFO::Fitting model to feature number 1031, Arachnia_SGB15899|SGB15899
-2026-04-12 19:20:19.247486 INFO::Fitting model to feature number 1032, Parvimonas_sp_oral_taxon_110|SGB6654
-2026-04-12 19:20:19.293308 INFO::Fitting model to feature number 1033, GGB1456_SGB2019|SGB2019
-2026-04-12 19:20:19.340347 INFO::Fitting model to feature number 1034, Extibacter_sp_GGCC_0201|SGB74335
-2026-04-12 19:20:26.664305 INFO::Counting total values for each feature
+    results/healthy_change/maaslin/species | tail'</data>
+  <data key="d8">2026-04-13 17:03:55.10973 INFO::Fitting model to feature number 1026, Butyricicoccus_sp_AM29_23AC|SGB14991
+2026-04-13 17:03:55.301875 INFO::Fitting model to feature number 1027, Aeromonas_jandaei|SGB9949
+2026-04-13 17:03:55.504974 INFO::Fitting model to feature number 1028, GGB71292_SGB97395|SGB97395
+2026-04-13 17:03:55.730147 INFO::Fitting model to feature number 1029, Clostridium_sp_AM49_4BH|SGB4652
+2026-04-13 17:03:55.979471 INFO::Fitting model to feature number 1030, GGB53985_SGB6367|SGB6367
+2026-04-13 17:03:56.13955 INFO::Fitting model to feature number 1031, Arachnia_SGB15899|SGB15899
+2026-04-13 17:03:56.27569 INFO::Fitting model to feature number 1032, Parvimonas_sp_oral_taxon_110|SGB6654
+2026-04-13 17:03:56.407096 INFO::Fitting model to feature number 1033, GGB1456_SGB2019|SGB2019
+2026-04-13 17:03:56.594243 INFO::Fitting model to feature number 1034, Extibacter_sp_GGCC_0201|SGB74335
+2026-04-13 17:04:17.922775 INFO::Counting total values for each feature
 </data>
   <data key="d9">boundary (singular) fit: see help('isSingular')
 boundary (singular) fit: see help('isSingular')
@@ -1135,13 +1163,13 @@ This warning is displayed once per session.
   Consider formula(paste(x, collapse = " ")) instead.
 Execution halted
 </data>
-  <data key="d10">43022</data>
+  <data key="d10">31270</data>
   <data key="d11">0</data>
 </node>
 <node id="e0c1750d-21ff-4acf-a27e-40142ecbb8ab">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -1160,7 +1188,7 @@ Execution halted
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -1173,16 +1201,16 @@ Execution halted
     --cores 1 \
     results/filtered/sleep.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/sleep | tail'</data>
-  <data key="d8">2026-04-12 19:18:07.20471 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/sleep/fits/ranef_linear.rds
-2026-04-12 19:18:07.20703 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/sleep/fits/ranef_linear.rds
-2026-04-12 19:18:07.240101 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/healthy/sleep/all_results.tsv
-2026-04-12 19:18:07.243424 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/sleep/significant_results.tsv
-2026-04-12 19:18:07.280231 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/healthy/sleep/figures/summary_plot.pdf
-2026-04-12 19:18:13.056772 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/sleep/figures
-2026-04-12 19:18:13.137996 INFO::All associations had errors 
+    results/healthy_change/maaslin/sleep | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.828662 INFO::Writing extracted random effects to file results/healthy_change/maaslin/sleep/fits/ranef_linear.rds
+2026-04-13 16:58:52.859617 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/sleep/all_results.tsv
+2026-04-13 16:58:52.863607 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/sleep/significant_results.tsv
+2026-04-13 16:58:52.942108 INFO::Creating output figures folder
+2026-04-13 16:58:52.944905 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/sleep/figures/summary_plot.pdf
+2026-04-13 16:58:59.815238 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/sleep/figures
+2026-04-13 16:58:59.923227 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -1193,13 +1221,13 @@ This warning is displayed once per session.
 3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">43030</data>
+  <data key="d10">31300</data>
   <data key="d11">0</data>
 </node>
 <node id="c9db0d50-0061-454a-9fa7-03b0866e57e5">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -1218,7 +1246,7 @@ This warning is displayed once per session.
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -1231,17 +1259,16 @@ This warning is displayed once per session.
     --cores 1 \
     results/filtered/vitamin.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/vitamin | tail
-'</data>
-  <data key="d8">2026-04-12 19:18:06.801324 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/vitamin/fits/ranef_linear.rds
-2026-04-12 19:18:06.803996 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/vitamin/fits/ranef_linear.rds
-2026-04-12 19:18:06.841495 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/healthy/vitamin/all_results.tsv
-2026-04-12 19:18:06.845142 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/vitamin/significant_results.tsv
-2026-04-12 19:18:06.884525 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/healthy/vitamin/figures/summary_plot.pdf
-2026-04-12 19:18:12.677965 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/vitamin/figures
-2026-04-12 19:18:12.74668 INFO::All associations had errors 
+    results/healthy_change/maaslin/vitamin | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.408396 INFO::Writing extracted random effects to file results/healthy_change/maaslin/vitamin/fits/ranef_linear.rds
+2026-04-13 16:58:52.446146 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/vitamin/all_results.tsv
+2026-04-13 16:58:52.451009 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/vitamin/significant_results.tsv
+2026-04-13 16:58:52.52129 INFO::Creating output figures folder
+2026-04-13 16:58:52.525748 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/vitamin/figures/summary_plot.pdf
+2026-04-13 16:58:59.358856 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/vitamin/figures
+2026-04-13 16:58:59.469678 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -1252,13 +1279,13 @@ This warning is displayed once per session.
 3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">43089</data>
+  <data key="d10">31307</data>
   <data key="d11">0</data>
 </node>
 <node id="692231b5-9a65-44e7-8c3b-8f6129db6d5e">
   <data key="d3">maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -1277,7 +1304,7 @@ This warning is displayed once per session.
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode;Vaginal" \
+    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -1290,16 +1317,16 @@ This warning is displayed once per session.
     --cores 1 \
     results/filtered/aa.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/healthy/aa | tail'</data>
-  <data key="d8">2026-04-12 19:18:10.45664 WARNING::Deleting existing ranef file: results/healthy_change/maaslin/healthy/aa/fits/ranef_linear.rds
-2026-04-12 19:18:10.459488 INFO::Writing extracted random effects to file results/healthy_change/maaslin/healthy/aa/fits/ranef_linear.rds
-2026-04-12 19:18:10.498165 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/healthy/aa/all_results.tsv
-2026-04-12 19:18:10.502476 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/healthy/aa/significant_results.tsv
-2026-04-12 19:18:10.544391 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/healthy/aa/figures/summary_plot.pdf
-2026-04-12 19:18:14.63619 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/healthy/aa/figures
-2026-04-12 19:18:14.69097 INFO::All associations had errors 
+    results/healthy_change/maaslin/aa | tail'</data>
+  <data key="d8">2026-04-13 16:58:56.6578 INFO::Writing extracted random effects to file results/healthy_change/maaslin/aa/fits/ranef_linear.rds
+2026-04-13 16:58:56.743407 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): results/healthy_change/maaslin/aa/all_results.tsv
+2026-04-13 16:58:56.747079 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/aa/significant_results.tsv
+2026-04-13 16:58:56.857063 INFO::Creating output figures folder
+2026-04-13 16:58:56.860006 INFO::Writing summary plot of significant
+                        results to file: results/healthy_change/maaslin/aa/figures/summary_plot.pdf
+2026-04-13 16:59:02.280511 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/aa/figures
+2026-04-13 16:59:02.331112 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -1310,7 +1337,7 @@ This warning is displayed once per session.
 3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">43009</data>
+  <data key="d10">31322</data>
   <data key="d11">0</data>
 </node>
 <node id="4a4564e6-ece6-49ad-8e78-f6806f22ef27">
@@ -1320,115 +1347,184 @@ This warning is displayed once per session.
   results/healthy_change/overall/{}.tsv</data>
   <data key="d4">983.389716388219</data>
   <data key="d5">649.4350018842644</data>
-  <data key="d6">fail</data>
+  <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; grep -v '\''^lipids$'\'' conf/timedatasets.txt | parallel -j 1 \
   overall_recovery.py \
   results/filtered/{}.tsv \
   results/healthy_change/overall/{}.tsv'</data>
-  <data key="d8"></data>
-  <data key="d9"></data>
-  <data key="d10">48227</data>
-  <data key="d11"></data>
+  <data key="d8">results/filtered/aa.tsv
+                         A_improvement(%)  ...  B_t2_pval
+results/filtered/aa.tsv        -31.119994  ...      0.029
+
+[1 rows x 6 columns]
+results/filtered/head.tsv
+                           A_improvement(%)  ...  B_t2_pval
+results/filtered/head.tsv         49.096011  ...      0.001
+
+[1 rows x 6 columns]
+results/filtered/anthro.tsv
+                             A_improvement(%)  ...  B_t2_pval
+results/filtered/anthro.tsv        263.403867  ...      0.001
+
+[1 rows x 6 columns]
+results/filtered/sleep.tsv
+                            A_improvement(%)  ...  B_t2_pval
+results/filtered/sleep.tsv        -80.604858  ...       0.14
+
+[1 rows x 6 columns]
+results/filtered/vitamin.tsv
+                              A_improvement(%)  ...  B_t2_pval
+results/filtered/vitamin.tsv        -90.167094  ...      0.014
+
+[1 rows x 6 columns]
+results/filtered/alpha_diversity.tsv
+                                      A_improvement(%)  ...  B_t2_pval
+results/filtered/alpha_diversity.tsv        -94.025011  ...      0.444
+
+[1 rows x 6 columns]
+results/filtered/species.tsv
+                              A_improvement(%)  ...  B_t2_pval
+results/filtered/species.tsv         44.292316  ...      0.126
+
+[1 rows x 6 columns]
+results/filtered/pathways.tsv
+                               A_improvement(%)  ...  B_t2_pval
+results/filtered/pathways.tsv      13033.258967  ...      0.616
+
+[1 rows x 6 columns]
+</data>
+  <data key="d9">/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+/home/tpor598/recovery/code/overall_recovery.py:36: SyntaxWarning: invalid escape sequence '\('
+  meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
+</data>
+  <data key="d10">31508</data>
+  <data key="d11">0</data>
 </node>
 <edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
   <data key="d12">ba4db628-915a-4dcb-b138-d940c943292f</data>
+  <data key="d13"></data>
 </edge>
 <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
   <data key="d12">dd9b7db1-8ca0-46e9-8aab-2e8d7caab366</data>
+  <data key="d13"></data>
 </edge>
 <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88">
   <data key="d12">31f8cfda-685d-4f6c-884a-b388e3b73a3e</data>
+  <data key="d13"></data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="efff9afc-b0ea-4937-a15d-319ee982992b">
   <data key="d12">d766b58c-d717-49d5-99b4-b75b1135e478</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="692231b5-9a65-44e7-8c3b-8f6129db6d5e">
   <data key="d12">835e9fe5-864c-47a8-850f-5cbb8d5cf856</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="e0c1750d-21ff-4acf-a27e-40142ecbb8ab">
   <data key="d12">7b916b7c-d93d-43fe-905a-ffecbd7ed3eb</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b">
   <data key="d12">98e2be2b-8242-4fdf-b258-3953e7216c69</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="a2accc77-f2eb-452c-a4d1-f1d19196f0ec">
   <data key="d12">b6738345-df9a-4a4e-92c6-08ea0fefb026</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="c9db0d50-0061-454a-9fa7-03b0866e57e5">
   <data key="d12">89abe1e7-ecf0-4c73-92e4-834909cb1b34</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="f7d638a8-1deb-4697-8cda-8b6759ccfc30">
   <data key="d12">a1fb117e-23f3-4e21-8dc2-c1a18f19eae4</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="d33c52f3-7c41-4d42-b1e8-48e37630fd34">
   <data key="d12">14693600-fca7-47e0-a560-b71a8b04d0b4</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="7a04012c-d2a4-492a-99c7-ad1876374d62">
   <data key="d12">26270889-d64b-4d58-8c9c-82639a3878da</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="4a4564e6-ece6-49ad-8e78-f6806f22ef27">
   <data key="d12">44da314f-e800-490e-8ff8-65236d83c097</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="5defd7d3-4b19-4373-b1a3-f86d754e39ce" target="05b34ebc-bb72-4db1-835f-78a960acfc33">
   <data key="d12">5ec4fadc-7ce9-4500-9775-a87dadc6bd8c</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="efff9afc-b0ea-4937-a15d-319ee982992b" target="e852a3bc-1df2-4249-9855-9c943d20b037">
   <data key="d12">629468d1-52c7-482c-848b-33d3a3998cdd</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="e852a3bc-1df2-4249-9855-9c943d20b037" target="b2979940-9977-4efd-a449-7cf18486839a">
   <data key="d12">ff375b22-641e-459f-ba12-cea9db9dc637</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="b2979940-9977-4efd-a449-7cf18486839a" target="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
   <data key="d12">d56b6aac-0660-4853-a2a6-4abe8136f6ed</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="7a04012c-d2a4-492a-99c7-ad1876374d62" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">d814df60-a423-408e-8f85-aac58c357ead</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="f7d638a8-1deb-4697-8cda-8b6759ccfc30" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">8566d274-cb18-49c7-a6cc-451f45d25a75</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="a2accc77-f2eb-452c-a4d1-f1d19196f0ec" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">7c4aec21-7cfc-4867-9511-0d32587118f5</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">cc707509-7e41-48b9-809a-f904b6a037bf</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="d33c52f3-7c41-4d42-b1e8-48e37630fd34" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">44edda47-4676-40d0-abda-fb4992a28f59</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="e0c1750d-21ff-4acf-a27e-40142ecbb8ab" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">bc86dd63-d70c-48ac-b364-f8462387476d</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="c9db0d50-0061-454a-9fa7-03b0866e57e5" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">d9d2c0be-b036-4c96-a359-62041089eaef</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="692231b5-9a65-44e7-8c3b-8f6129db6d5e" target="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d12">71f4bf83-97ec-45a1-af7e-829dfb37ad09</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="4a4564e6-ece6-49ad-8e78-f6806f22ef27" target="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
   <data key="d12">782d7c76-9318-4805-ae73-6c96d0c64b37</data>
-  <data key="d13">blocking</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 </graph></graphml>

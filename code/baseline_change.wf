@@ -34,7 +34,7 @@ done</data>
 done'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">7981</data>
+  <data key="d10">30910</data>
   <data key="d11">0</data>
 </node>
 <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
@@ -52,7 +52,7 @@ done'</data>
   <data key="d8">Saved 12870 rows × 15 columns to results/baseline_change/maaslin/baselinechange.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">8022</data>
+  <data key="d10">30951</data>
   <data key="d11">0</data>
 </node>
 <node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
@@ -190,7 +190,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
       dtype='object')
 </data>
   <data key="d9"></data>
-  <data key="d10">8052</data>
+  <data key="d10">30981</data>
   <data key="d11">0</data>
 </node>
 <node id="c27b93c1-8f27-467a-8d25-1ad31ccb6c77">
@@ -216,7 +216,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 <node id="4266ecc1-fceb-4453-9979-d627d61efa22">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/species.tsv \
@@ -227,21 +227,21 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/species.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/species | tail'</data>
-  <data key="d8">2026-04-13 10:22:07.066072 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/species/fits/fitted_logistic.rds
-2026-04-13 10:22:07.203183 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:45.702515 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/species/fits/fitted_logistic.rds
+2026-04-13 16:54:45.706953 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/species/fits/fitted_logistic.rds
+2026-04-13 16:54:45.78322 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/species/all_results.tsv
-2026-04-13 10:22:07.240615 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/species/significant_results.tsv
-2026-04-13 10:22:07.296067 INFO::Creating output figures folder
-2026-04-13 10:22:07.304182 INFO::Writing summary plot of significant
+2026-04-13 16:54:45.805721 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/species/significant_results.tsv
+2026-04-13 16:54:45.823904 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/species/figures/summary_plot.pdf
-2026-04-13 10:22:12.608286 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/species/figures
-2026-04-13 10:22:12.674056 INFO::All associations had errors 
+2026-04-13 16:54:49.398882 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/species/figures
+2026-04-13 16:54:49.439006 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -252,13 +252,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"logistic_error"` instead of `.data$logistic_error` 
 </data>
-  <data key="d10">7585</data>
+  <data key="d10">30562</data>
   <data key="d11">0</data>
 </node>
 <node id="cee743f6-e644-4c4a-a0b1-e7d3fe9236de">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/pathways.tsv \
@@ -269,21 +269,21 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--warn_prevalence False \
 	--max_pngs 0 \
 	results/timepoints/0/pathways.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/pathways | tail'</data>
-  <data key="d8">2026-04-13 10:22:07.523042 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/pathways/fits/fitted_logistic.rds
-2026-04-13 10:22:07.632114 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:45.885184 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/pathways/fits/fitted_logistic.rds
+2026-04-13 16:54:45.888332 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/pathways/fits/fitted_logistic.rds
+2026-04-13 16:54:45.94275 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/pathways/all_results.tsv
-2026-04-13 10:22:07.669799 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/pathways/significant_results.tsv
-2026-04-13 10:22:07.701509 INFO::Creating output figures folder
-2026-04-13 10:22:07.706105 INFO::Writing summary plot of significant
+2026-04-13 16:54:45.968437 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/pathways/significant_results.tsv
+2026-04-13 16:54:45.985432 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/pathways/figures/summary_plot.pdf
-2026-04-13 10:22:12.914404 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/pathways/figures
-2026-04-13 10:22:12.978016 INFO::All associations had errors 
+2026-04-13 16:54:49.416988 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/pathways/figures
+2026-04-13 16:54:49.459663 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -294,13 +294,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 3: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"logistic_error"` instead of `.data$logistic_error` 
 </data>
-  <data key="d10">7600</data>
+  <data key="d10">30557</data>
   <data key="d11">0</data>
 </node>
 <node id="1641d7e7-1b62-4672-b0d5-4a9c87148296">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -318,7 +318,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -331,15 +331,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/lipids.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/lipids | tail'</data>
-  <data key="d8">2026-04-13 10:21:59.18359 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/lipids/fits/fitted_linear.rds
-2026-04-13 10:21:59.265001 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:40.348353 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/lipids/fits/fitted_linear.rds
+2026-04-13 16:54:40.352472 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/lipids/fits/fitted_linear.rds
+2026-04-13 16:54:40.401603 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/lipids/all_results.tsv
-2026-04-13 10:21:59.288711 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/lipids/significant_results.tsv
-2026-04-13 10:21:59.320658 INFO::Creating output figures folder
-2026-04-13 10:21:59.323933 INFO::Writing summary plot of significant
+2026-04-13 16:54:40.414453 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/lipids/significant_results.tsv
+2026-04-13 16:54:40.434718 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/lipids/figures/summary_plot.pdf
-2026-04-13 10:22:04.730228 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/lipids/figures
-2026-04-13 10:22:04.826909 INFO::All associations had errors 
+2026-04-13 16:54:43.835469 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/lipids/figures
+2026-04-13 16:54:43.886661 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -348,13 +348,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7555</data>
+  <data key="d10">30565</data>
   <data key="d11">0</data>
 </node>
 <node id="e42dd40e-e4a0-45af-bb26-0619cf5b0537">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -372,7 +372,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -385,15 +385,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/filtered/surveillance_minus_catchup.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/surveillance | tail'</data>
-  <data key="d8">2026-04-13 10:21:34.648189 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/surveillance/fits/fitted_linear.rds
-2026-04-13 10:21:34.778859 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:24.565891 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/surveillance/fits/fitted_linear.rds
+2026-04-13 16:54:24.570209 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/surveillance/fits/fitted_linear.rds
+2026-04-13 16:54:24.679944 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/surveillance/all_results.tsv
-2026-04-13 10:21:34.784936 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/surveillance/significant_results.tsv
-2026-04-13 10:21:34.878581 INFO::Creating output figures folder
-2026-04-13 10:21:34.882305 INFO::Writing summary plot of significant
+2026-04-13 16:54:24.684546 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/surveillance/significant_results.tsv
+2026-04-13 16:54:24.760257 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/surveillance/figures/summary_plot.pdf
-2026-04-13 10:21:50.915998 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/surveillance/figures
-2026-04-13 10:21:51.034218 INFO::All associations had errors 
+2026-04-13 16:54:34.365594 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/surveillance/figures
+2026-04-13 16:54:34.44672 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -402,13 +402,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7472</data>
+  <data key="d10">30572</data>
   <data key="d11">0</data>
 </node>
 <node id="c9a3b889-c10c-440e-9439-ba5e6b62bc88">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -426,7 +426,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -439,15 +439,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/filtered/genetics.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/genetics | tail'</data>
-  <data key="d8">2026-04-13 10:21:33.926108 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/genetics/fits/fitted_linear.rds
-2026-04-13 10:21:34.004905 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:23.567528 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/genetics/fits/fitted_linear.rds
+2026-04-13 16:54:23.570898 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/genetics/fits/fitted_linear.rds
+2026-04-13 16:54:23.620987 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/genetics/all_results.tsv
-2026-04-13 10:21:34.009811 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/genetics/significant_results.tsv
-2026-04-13 10:21:34.120178 INFO::Creating output figures folder
-2026-04-13 10:21:34.123582 INFO::Writing summary plot of significant
+2026-04-13 16:54:23.624873 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/genetics/significant_results.tsv
+2026-04-13 16:54:23.678817 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/genetics/figures/summary_plot.pdf
-2026-04-13 10:21:50.580332 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/genetics/figures
-2026-04-13 10:21:50.762086 INFO::All associations had errors 
+2026-04-13 16:54:33.903903 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/genetics/figures
+2026-04-13 16:54:34.013605 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -456,13 +456,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7480</data>
+  <data key="d10">30580</data>
   <data key="d11">0</data>
 </node>
 <node id="ed1a047c-4ee4-44c2-856b-b8c1afa35d7c">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -480,7 +480,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -493,15 +493,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/vitamin.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/vitamin | tail'</data>
-  <data key="d8">2026-04-13 10:21:32.895669 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/vitamin/fits/fitted_linear.rds
-2026-04-13 10:21:33.007917 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:23.524375 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/vitamin/fits/fitted_linear.rds
+2026-04-13 16:54:23.528042 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/vitamin/fits/fitted_linear.rds
+2026-04-13 16:54:23.578929 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/vitamin/all_results.tsv
-2026-04-13 10:21:33.013661 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/vitamin/significant_results.tsv
-2026-04-13 10:21:33.109069 INFO::Creating output figures folder
-2026-04-13 10:21:33.112235 INFO::Writing summary plot of significant
+2026-04-13 16:54:23.588451 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/vitamin/significant_results.tsv
+2026-04-13 16:54:23.633017 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/vitamin/figures/summary_plot.pdf
-2026-04-13 10:21:49.773182 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/vitamin/figures
-2026-04-13 10:21:50.063052 INFO::All associations had errors 
+2026-04-13 16:54:33.646806 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/vitamin/figures
+2026-04-13 16:54:33.771793 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -510,13 +510,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7488</data>
+  <data key="d10">30592</data>
   <data key="d11">0</data>
 </node>
 <node id="7d64dcb5-8253-4d80-9436-436ecdf13890">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -534,7 +534,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -547,15 +547,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/anthro.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/anthro | tail'</data>
-  <data key="d8">2026-04-13 10:21:33.300486 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/anthro/fits/fitted_linear.rds
-2026-04-13 10:21:33.382506 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:23.597106 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/anthro/fits/fitted_linear.rds
+2026-04-13 16:54:23.614334 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/anthro/fits/fitted_linear.rds
+2026-04-13 16:54:23.669762 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/anthro/all_results.tsv
-2026-04-13 10:21:33.397578 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/anthro/significant_results.tsv
-2026-04-13 10:21:33.511638 INFO::Creating output figures folder
-2026-04-13 10:21:33.51762 INFO::Writing summary plot of significant
+2026-04-13 16:54:23.67272 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/anthro/significant_results.tsv
+2026-04-13 16:54:23.724885 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/anthro/figures/summary_plot.pdf
-2026-04-13 10:21:49.111135 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/anthro/figures
-2026-04-13 10:21:49.371484 INFO::All associations had errors 
+2026-04-13 16:54:33.602444 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/anthro/figures
+2026-04-13 16:54:33.737889 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -564,13 +564,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7507</data>
+  <data key="d10">30619</data>
   <data key="d11">0</data>
 </node>
 <node id="6a1a27fd-5551-42c0-b828-c751e3bcd7e1">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -588,7 +588,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -601,15 +601,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/sleep.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/sleep | tail'</data>
-  <data key="d8">2026-04-13 10:21:33.915355 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/sleep/fits/fitted_linear.rds
-2026-04-13 10:21:33.992966 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:23.457959 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/sleep/fits/fitted_linear.rds
+2026-04-13 16:54:23.46459 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/sleep/fits/fitted_linear.rds
+2026-04-13 16:54:23.515889 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/sleep/all_results.tsv
-2026-04-13 10:21:33.997736 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/sleep/significant_results.tsv
-2026-04-13 10:21:34.093503 INFO::Creating output figures folder
-2026-04-13 10:21:34.099291 INFO::Writing summary plot of significant
+2026-04-13 16:54:23.522296 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/sleep/significant_results.tsv
+2026-04-13 16:54:23.578367 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/sleep/figures/summary_plot.pdf
-2026-04-13 10:21:49.8044 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/sleep/figures
-2026-04-13 10:21:50.080952 INFO::All associations had errors 
+2026-04-13 16:54:33.688369 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/sleep/figures
+2026-04-13 16:54:33.824066 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -618,13 +618,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7565</data>
+  <data key="d10">30632</data>
   <data key="d11">0</data>
 </node>
 <node id="d5190bf3-5dfe-44a1-bf10-f4d9c27c53c2">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -642,7 +642,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -655,15 +655,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/head.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/head | tail'</data>
-  <data key="d8">2026-04-13 10:21:33.173343 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/head/fits/fitted_linear.rds
-2026-04-13 10:21:33.280924 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:23.25458 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/head/fits/fitted_linear.rds
+2026-04-13 16:54:23.26112 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/head/fits/fitted_linear.rds
+2026-04-13 16:54:23.310945 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/head/all_results.tsv
-2026-04-13 10:21:33.288648 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/head/significant_results.tsv
-2026-04-13 10:21:33.383268 INFO::Creating output figures folder
-2026-04-13 10:21:33.39185 INFO::Writing summary plot of significant
+2026-04-13 16:54:23.319822 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/head/significant_results.tsv
+2026-04-13 16:54:23.395804 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/head/figures/summary_plot.pdf
-2026-04-13 10:21:49.62467 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/head/figures
-2026-04-13 10:21:49.877142 INFO::All associations had errors 
+2026-04-13 16:54:33.675382 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/head/figures
+2026-04-13 16:54:33.819338 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -672,13 +672,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7535</data>
+  <data key="d10">30647</data>
   <data key="d11">0</data>
 </node>
 <node id="addd9bb9-20f5-45c4-af24-32217cedff2e">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -696,7 +696,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -709,15 +709,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/alpha_diversity.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/alpha_diversity | tail'</data>
-  <data key="d8">2026-04-13 10:21:33.866832 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/alpha_diversity/fits/fitted_linear.rds
-2026-04-13 10:21:33.945257 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:24.205326 WARNING::Deleting existing fitted file: results/baseline_change/maaslin/baseline/alpha_diversity/fits/fitted_linear.rds
+2026-04-13 16:54:24.209639 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/alpha_diversity/fits/fitted_linear.rds
+2026-04-13 16:54:24.250317 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/alpha_diversity/all_results.tsv
-2026-04-13 10:21:33.95054 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/alpha_diversity/significant_results.tsv
-2026-04-13 10:21:34.049349 INFO::Creating output figures folder
-2026-04-13 10:21:34.052508 INFO::Writing summary plot of significant
+2026-04-13 16:54:24.25384 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/alpha_diversity/significant_results.tsv
+2026-04-13 16:54:24.304529 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/alpha_diversity/figures/summary_plot.pdf
-2026-04-13 10:21:50.168902 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/alpha_diversity/figures
-2026-04-13 10:21:50.351117 INFO::All associations had errors 
+2026-04-13 16:54:33.825794 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/alpha_diversity/figures
+2026-04-13 16:54:33.932602 INFO::All associations had errors 
                                 or were insignificant.
 </data>
   <data key="d9">Warning messages:
@@ -726,13 +726,13 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 2: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
 ℹ Please use `"qval"` instead of `.data$qval` 
 </data>
-  <data key="d10">7525</data>
+  <data key="d10">30665</data>
   <data key="d11">0</data>
 </node>
 <node id="6f87e711-bac9-4082-b06f-2fc6ed83d75a">
   <data key="d3">maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -750,7 +750,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
-	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode;Vaginal" \
+	--reference "Recovery,No recovery;Sex,Male;Delivery_Mode,Vaginal" \
 	--min_abundance -100 \
 	--min_variance 0 \
 	--zero-threshold -100 \
@@ -763,15 +763,15 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/aa.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/aa | tail'</data>
-  <data key="d8">2026-04-13 10:21:35.076967 INFO::Writing all the results to file (ordered 
+  <data key="d8">2026-04-13 16:54:24.108347 INFO::Writing fitted values to file results/baseline_change/maaslin/baseline/aa/fits/fitted_linear.rds
+2026-04-13 16:54:24.182552 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/all_results.tsv
-2026-04-13 10:21:35.083107 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/significant_results.tsv
-2026-04-13 10:21:35.172413 INFO::Creating output figures folder
-2026-04-13 10:21:35.175775 INFO::Writing summary plot of significant
+2026-04-13 16:54:24.203901 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/baseline_change/maaslin/baseline/aa/significant_results.tsv
+2026-04-13 16:54:24.278006 INFO::Writing summary plot of significant
                         results to file: results/baseline_change/maaslin/baseline/aa/figures/summary_plot.pdf
-2026-04-13 10:21:51.01809 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/aa/figures
-2026-04-13 10:21:51.132708 INFO::Plotting associations from most to least significant, grouped by metadata
-2026-04-13 10:21:51.199656 INFO::Creating box plot for categorical data (linear), 
+2026-04-13 16:54:34.025426 INFO::Writing association plots (one for each significant association) to output folder: results/baseline_change/maaslin/baseline/aa/figures
+2026-04-13 16:54:34.135 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-04-13 16:54:34.188464 INFO::Creating box plot for categorical data (linear), 
                         Recovery vs aspartic_acid
 </data>
   <data key="d9">Error in if ("linear" == model_name) { : argument is of length zero
@@ -783,7 +783,7 @@ In addition: Warning messages:
 ℹ Please use `"qval"` instead of `.data$qval` 
 Execution halted
 </data>
-  <data key="d10">7464</data>
+  <data key="d10">30682</data>
   <data key="d11">0</data>
 </node>
 <node id="15768015-3b3b-4959-853d-9e4ffb088a2e">
@@ -874,7 +874,7 @@ Delivery_ModeCaesarean         vitamin  abundance       5.0    0.0       0.0    
 Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">8060</data>
+  <data key="d10">30989</data>
   <data key="d11">0</data>
 </node>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">

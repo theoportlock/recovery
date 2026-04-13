@@ -1,20 +1,20 @@
 model	dataset	formula	reference	random_effect	min_abundance	min_prevalence	max_significance	normalization	transform	evaluate_only_abundance	median_comparison_abundance	small_random_effects	warn_prevalence
-healthy	species	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0.2	0.1	TSS	LOG	FALSE	TRUE	TRUE	FALSE
-healthy	alpha_diversity	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
-healthy	anthro	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
-healthy	head	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
-healthy	pathways	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	TSS	LOG	FALSE	TRUE	TRUE	FALSE
-healthy	sleep	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
-healthy	aa	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
-healthy	vitamin	~ timepoint * Feed + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
-baseline	anthro	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	vitamin	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	genetics	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	surveillance	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	0.1	NONE	NONE	TRUE	FALSE
-baseline	aa	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	alpha_diversity	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	head	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	lipids	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	pathways	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	sleep	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
-baseline	species	~ Recovery + Sex	"Recovery,No recovery;Sex,male"	NA	0	0.2	0.1	TSS	LOG	FALSE	TRUE	TRUE	FALSE
+healthy	species	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0.2	0.1	TSS	LOG	FALSE	TRUE	TRUE	FALSE
+healthy	alpha_diversity	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
+healthy	anthro	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
+healthy	head	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
+healthy	pathways	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	TSS	LOG	FALSE	TRUE	TRUE	FALSE
+healthy	sleep	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
+healthy	aa	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
+healthy	vitamin	~ timepoint * Feed +  Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)	"Feed,Well-nourished;timepoint,yr1;Sex,male;Delivery_Mode,Vaginal"	subjectID	0	0	0.1	NONE	NONE	TRUE	FALSE	TRUE	FALSE
+baseline	anthro	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	vitamin	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	genetics	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	surveillance	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	0.1	NONE	NONE	TRUE	FALSE
+baseline	aa	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	alpha_diversity	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	head	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	lipids	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	pathways	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	sleep	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	-100	0	-100	0	1	NONE	NONE	TRUE	FALSE
+baseline	species	~ Recovery + Sex + baseline_WLZ + Delivery_Mode + BF	"Recovery,No recovery;Sex,male;Delivery_Mode,Vaginal"	NA	0	0.2	0.1	TSS	LOG	FALSE	TRUE	TRUE	FALSE

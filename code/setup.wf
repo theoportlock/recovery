@@ -38,8 +38,8 @@
     results/filtered/covmeta.tsv \
     --on subjectID \
     -o results/filtered/covtimemeta.tsv</data>
-  <data key="d12">2034.6527559250394</data>
-  <data key="d13">276.3705886375998</data>
+  <data key="d12">2381.6819296425138</data>
+  <data key="d13">84.34167416875073</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
     results/filtered/covmeta.tsv \
@@ -51,7 +51,7 @@ df1: 0 / 2961 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">7744</data>
+  <data key="d10">14983</data>
   <data key="d11">0</data>
 </node>
 <node id="build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3">
@@ -95,8 +95,8 @@ df2: 0 / 234 rows lost (0.00%)
   results/cleaned/bfpob.tsv \
   -j outer \
   -o results/cleaned/meta.tsv</data>
-  <data key="d12">-447.0035463324136</data>
-  <data key="d13">429.8793997787486</data>
+  <data key="d12">-475.32167244783545</data>
+  <data key="d13">446.2741043718876</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; merge.py \
   results/cleaned/premeta.tsv \
@@ -278,8 +278,8 @@ df2: 0 / 234 rows lost (0.00%)
   -d results/filtered/ \
   -i conf/timedatasets.txt \
   -o results/filtered/mapping.tsv</data>
-  <data key="d12">445.0190281444296</data>
-  <data key="d13">10.883846631017207</data>
+  <data key="d12">486.5387934349916</data>
+  <data key="d13">5.69387596969699</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; create_mapping.py \
   -d results/filtered/ \
@@ -794,8 +794,8 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
     --dtype "bool" \
     -o results/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation</data>
-  <data key="d12">-558.6473082392928</data>
-  <data key="d13">264.6659599886703</data>
+  <data key="d12">-578.0838095432292</data>
+  <data key="d13">288.3521202176755</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
   onehot.py \
@@ -830,8 +830,8 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
   <data key="d3">wget -q -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
-  <data key="d12">-1585.4481298234305</data>
-  <data key="d13">292.59781652649235</data>
+  <data key="d12">-1384.240391634907</data>
+  <data key="d13">-142.60706903683285</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; wget -q -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk'</data>
@@ -971,8 +971,8 @@ mkdir results/census'</data>
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/mothers.tsv \
   -o results/filtered/mothers.tsv</data>
-  <data key="d12">-65.84560841103874</data>
-  <data key="d13">551.9247983386248</data>
+  <data key="d12">-62.864753030468016</data>
+  <data key="d13">583.2237798346173</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   -q "~subjectID.str.startswith('\''LCC3'\'')" \
@@ -1322,8 +1322,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o results/filtered/anthro_recovery.tsv</data>
-  <data key="d12">1203.8405939766085</data>
-  <data key="d13">-250.80554855282014</data>
+  <data key="d12">1271.3102125737719</data>
+  <data key="d13">-354.6049617792249</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; assign.py results/filtered/anthro.tsv \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
@@ -1347,8 +1347,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   --timemeta results/filtered/timemeta.tsv \
   -t -2 \
   -o results/filtered/recovery_status_2sd.tsv</data>
-  <data key="d12">1606.4525239293484</data>
-  <data key="d13">-333.2981347271242</data>
+  <data key="d12">1673.9221425265118</data>
+  <data key="d13">-437.09754795352893</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
@@ -1374,8 +1374,8 @@ Name: count, dtype: int64
   --timemeta results/filtered/timemeta.tsv \
   -t -1 \
   -o results/filtered/recovery_status_1sd.tsv</data>
-  <data key="d12">1613.5228468542846</data>
-  <data key="d13">-191.44600756737816</data>
+  <data key="d12">1680.992465451448</data>
+  <data key="d13">-295.2454207937829</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
@@ -1397,14 +1397,14 @@ Name: count, dtype: int64
 <node id="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
   <data key="d3">join.py \
   results/filtered/meta.tsv \
-  results/timepoints/0/anthro.tsv \
+  results/filtered/baseline_WLZ.tsv \
   -o results/filtered/covmeta_norename.tsv</data>
-  <data key="d12">1617.2212255348713</data>
-  <data key="d13">161.2737046266442</data>
+  <data key="d12">2000.3447894635563</data>
+  <data key="d13">-19.970541716232447</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py \
   results/filtered/meta.tsv \
-  results/timepoints/0/anthro.tsv \
+  results/filtered/baseline_WLZ.tsv \
   -o results/filtered/covmeta_norename.tsv'</data>
   <data key="d8">Join summary
 ------------
@@ -1412,7 +1412,7 @@ df1: 0 / 234 rows lost (0.00%)
 df2: 0 / 234 rows lost (0.00%)
 </data>
   <data key="d9"></data>
-  <data key="d10">7683</data>
+  <data key="d10">14923</data>
   <data key="d11">0</data>
 </node>
 <node id="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
@@ -1421,8 +1421,8 @@ df2: 0 / 234 rows lost (0.00%)
   --match 'WLZ_WHZ' \
   --replace 'baseline_WLZ' \
   -o results/filtered/covmeta.tsv</data>
-  <data key="d12">2016.698009481212</data>
-  <data key="d13">163.6925979552633</data>
+  <data key="d12">2363.7271831986864</data>
+  <data key="d13">-28.336316513585757</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; rename_regex.py \
   results/filtered/covmeta_norename.tsv \
@@ -1432,7 +1432,7 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8">✅ Saved renamed DataFrame → results/filtered/covmeta.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">7713</data>
+  <data key="d10">14953</data>
   <data key="d11">0</data>
 </node>
 <node id="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
@@ -1440,8 +1440,8 @@ df2: 0 / 234 rows lost (0.00%)
   results/filtered/covmeta.tsv \
   -q "Condition == 'MAM'" \
   -o results/filtered/covmeta_MAM.tsv</data>
-  <data key="d12">2465.7408783427422</data>
-  <data key="d13">-51.86440206236864</data>
+  <data key="d12">2812.7700520602166</data>
+  <data key="d13">-243.89331653121758</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   results/filtered/covmeta.tsv \
@@ -1463,8 +1463,8 @@ df2: 0 / 234 rows lost (0.00%)
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d12">1231.8225911855611</data>
-  <data key="d13">152.8548445253524</data>
+  <data key="d12">1293.5903741354068</data>
+  <data key="d13">-38.02537158849964</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
   splitter.py \
@@ -1529,11 +1529,12 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
   <data key="d11">0</data>
 </node>
 <node id="3213ed29-410e-427a-b65c-8b3210baf978">
-  <data key="d3">filter.py results/filtered/covmeta.tsv \
+  <data key="d3">filter.py \
+  results/filtered/covmeta.tsv \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
   -o results/filtered/meta_MAM.tsv</data>
-  <data key="d12">2551.029519007405</data>
-  <data key="d13">154.82649589824416</data>
+  <data key="d12">2895.761296014885</data>
+  <data key="d13">-76.25816264050411</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/covmeta.tsv \
   -q '\''Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")'\'' \
@@ -1550,8 +1551,8 @@ Split files saved to subfolders in: /home/tpor598/recovery/results/timepoints
     results/filtered/meta.tsv \
     --on subjectID \
     -o results/filtered/timemeta.tsv</data>
-  <data key="d12">813.8170374391098</data>
-  <data key="d13">15.216006209997886</data>
+  <data key="d12">812.6875044684341</data>
+  <data key="d13">9.568341356619513</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py results/filtered/mapping.tsv \
     results/filtered/meta.tsv \
@@ -1571,8 +1572,8 @@ df2: 0 / 234 rows lost (0.00%)
 filter.py results/filtered/covtimemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -o results/filtered/timemeta_0_52tp.tsv</data>
-  <data key="d12">2504.998513358544</data>
-  <data key="d13">495.7582823174206</data>
+  <data key="d12">2852.0276870760185</data>
+  <data key="d13">303.72936784857154</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; # All kids
 filter.py results/filtered/covtimemeta.tsv \
@@ -1590,8 +1591,8 @@ filter.py results/filtered/covtimemeta.tsv \
   results/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
   --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
-  <data key="d12">2959.730210982565</data>
-  <data key="d13">499.2642088999154</data>
+  <data key="d12">3306.7593847000394</data>
+  <data key="d13">307.23529443106634</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; replace.py \
   results/filtered/timemeta_MAM_0_52tp.tsv \
@@ -1624,8 +1625,8 @@ filter.py results/filtered/covtimemeta.tsv \
   -q 'Condition == "MAM"' \
   -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
   -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
-  <data key="d12">2508.2878850031375</data>
-  <data key="d13">350.92968315004043</data>
+  <data key="d12">2855.317058720612</data>
+  <data key="d13">158.90076868119138</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; # Just looking at MAM kids
 filter.py results/filtered/covtimemeta.tsv \
@@ -1641,11 +1642,12 @@ filter.py results/filtered/covtimemeta.tsv \
   <data key="d11">0</data>
 </node>
 <node id="0c0e8e80-3923-4963-86bf-7d9e926490b2">
-  <data key="d3">filter.py results/filtered/covtimemeta.tsv \
+  <data key="d3">filter.py \
+  results/filtered/covtimemeta.tsv \
   -q 'Condition == "MAM"' \
   -o results/filtered/timemeta_MAM.tsv</data>
-  <data key="d12">2556.0800918353434</data>
-  <data key="d13">224.6708324893059</data>
+  <data key="d12">2897.3657737778326</data>
+  <data key="d13">16.560141050498373</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py results/filtered/covtimemeta.tsv \
   -q '\''Condition == "MAM"'\'' \
@@ -1662,8 +1664,8 @@ filter.py results/filtered/covtimemeta.tsv \
 	results/filtered/timemetaMAM_0_52tp_filled.tsv \
 	-q 'timepoint == 0' \
 	-o results/filtered/timemetaMAM_0tp_filled.tsv</data>
-  <data key="d12">3504.682581679096</data>
-  <data key="d13">357.8842913534396</data>
+  <data key="d12">3851.7117553965704</data>
+  <data key="d13">165.85537688459056</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
 	results/filtered/timemetaMAM_0_52tp_filled.tsv \
@@ -1682,8 +1684,8 @@ filter.py results/filtered/covtimemeta.tsv \
 	-c Feed,Recovery \
 	-v 'Well-nourished (C)' \
 	-o results/filtered/timemetaMAM_0_52tp_filled.tsv</data>
-  <data key="d12">3088.8099309867466</data>
-  <data key="d13">352.6901021857792</data>
+  <data key="d12">3435.839104704221</data>
+  <data key="d13">160.66118771693016</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; fillna.py \
 	-i results/filtered/timemeta_MAM_0_52tp.tsv \
@@ -1701,8 +1703,8 @@ filter.py results/filtered/covtimemeta.tsv \
     results/filtered/timemeta_0_52tp_filled.tsv \
     --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
     --output results/filtered/timemeta_0_52tp_filled_formatted.tsv</data>
-  <data key="d12">3331.8406011341826</data>
-  <data key="d13">727.8339971609985</data>
+  <data key="d12">3678.869774851657</data>
+  <data key="d13">535.8050826921494</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; replace.py \
     results/filtered/timemeta_0_52tp_filled.tsv \
@@ -1734,8 +1736,8 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
     -c Feed,Recovery \
     -v 'Well-nourished' \
     -o results/filtered/timemeta_0_52tp_filled.tsv</data>
-  <data key="d12">2912.9313920993195</data>
-  <data key="d13">718.1211203064539</data>
+  <data key="d12">3259.960565816794</data>
+  <data key="d13">526.0922058376049</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; fillna.py \
     -i results/filtered/timemeta_0_52tp.tsv \
@@ -1753,8 +1755,8 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
     results/filtered/covtimemeta.tsv \
     -q 'timepoint == 0 or timepoint == 52' \
     -o results/filtered/timemeta_0_52tp.tsv</data>
-  <data key="d12">2527.312164135769</data>
-  <data key="d13">728.4448060679726</data>
+  <data key="d12">2874.341337853243</data>
+  <data key="d13">536.4158915991236</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
     results/filtered/covtimemeta.tsv \
@@ -1765,6 +1767,24 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
 </data>
   <data key="d9"></data>
   <data key="d10">33595</data>
+  <data key="d11">0</data>
+</node>
+<node id="b843f388-d5b3-4ba5-95b5-4f31f2a177d5">
+  <data key="d3">select_features.py \
+  results/timepoints/0/anthro.tsv \
+  -c 'WLZ_WHZ' \
+  -o results/filtered/baseline_WLZ.tsv</data>
+  <data key="d12">1670.211957157751</data>
+  <data key="d13">-12.355188545191595</data>
+  <data key="d6">ran</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; select_features.py \
+  results/timepoints/0/anthro.tsv \
+  -c '\''WLZ_WHZ'\'' \
+  -o results/filtered/baseline_WLZ.tsv'</data>
+  <data key="d8">Saved 234 rows × 1 columns to results/filtered/baseline_WLZ.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">14893</data>
   <data key="d11">0</data>
 </node>
 <edge source="build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8" target="99a1770b-1153-428d-8172-e783bf221b38">
@@ -2030,10 +2050,9 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
   <data key="d16">blocking</data>
   <data key="d15"></data>
 </edge>
-<edge source="b8683318-306c-481f-bd22-c488428579c8" target="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
-  <data key="d14">3e172a3f-2ffa-4ae4-8784-6ae97d61c9bf</data>
+<edge source="b8683318-306c-481f-bd22-c488428579c8" target="b843f388-d5b3-4ba5-95b5-4f31f2a177d5">
+  <data key="d14">6466c4b4-8eda-452d-b82c-8ffedf7ba8d0</data>
   <data key="d16">blocking</data>
-  <data key="d15"></data>
 </edge>
 <edge source="2a750bc5-2baa-4258-8bb4-54c5615529cb" target="59608939-75a1-465d-8553-fd4809c332ef">
   <data key="d14">11e56e9d-c9b1-4e34-b221-6ed59214f8ab</data>
@@ -2067,6 +2086,11 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
 </edge>
 <edge source="95e0fd20-f2fa-4b0d-96f1-bfd665064606" target="94047242-c353-4943-b2d0-1190b09cc5c8">
   <data key="d14">52160f64-048c-45c6-bdef-7c9ec0453131</data>
+  <data key="d16">blocking</data>
+  <data key="d15"></data>
+</edge>
+<edge source="b843f388-d5b3-4ba5-95b5-4f31f2a177d5" target="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
+  <data key="d14">e3e66b24-2bd8-4b13-892f-45a3e1e831de</data>
   <data key="d16">blocking</data>
   <data key="d15"></data>
 </edge>

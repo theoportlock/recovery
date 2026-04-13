@@ -22,8 +22,8 @@
 <data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="f3f51679-47bd-4d95-b166-0773770b99c8">
   <data key="d3">workforce code/characteristics.wf</data>
-  <data key="d4">338.90577150547927</data>
-  <data key="d5">-357.7063241667163</data>
+  <data key="d4">345.7789117143536</data>
+  <data key="d5">-294.2673274045817</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 1
 table1_descriptive.sh'</data>
@@ -90,8 +90,8 @@ Saved results to: results/table1/work/merged_stats_fdr_2.tsv
   -i results/filtered/mothers.tsv \
   -m results/filtered/meta.tsv \
   -o results/mothers_modelout.tsv</data>
-  <data key="d4">337.7723115742009</data>
-  <data key="d5">180.5546810201771</data>
+  <data key="d4">341.9133712695664</data>
+  <data key="d5">147.42620345725305</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; mixedlm.py \
   -i results/filtered/mothers.tsv \
@@ -112,7 +112,7 @@ Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 133.
   <data key="d11">0</data>
 </node>
 <node id="be560393-d428-4755-8f8c-096cc59441f0">
-  <data key="d3"> box.py \
+  <data key="d3">box.py \
   results/filtered/mothers.tsv \
   -x Recovery \
   -y maternal_bmi \
@@ -140,8 +140,8 @@ Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 133.
 </node>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
   <data key="d3">workforce code/quality.wf</data>
-  <data key="d4">346.48339931809824</data>
-  <data key="d5">-211.01218276373197</data>
+  <data key="d4">347.2412576013534</data>
+  <data key="d5">-203.43359993118</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
   results/cleaned/quality.tsv \
@@ -394,14 +394,14 @@ done (c8ef17dd-f825-46cb-a537-0c32e66b7a2f)
 </node>
 <node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
   <data key="d3">workforce code/recovery_rates.wf</data>
-  <data key="d4">346.18987100923084</data>
-  <data key="d5">-99.95194873152582</data>
+  <data key="d4">344.1193411615481</data>
+  <data key="d5">-155.85625461896012</data>
   <data key="d6"></data>
 </node>
 <node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
   <data key="d3">workforce code/survival.wf</data>
-  <data key="d4">344.13072647271224</data>
-  <data key="d5">-265.4941920680885</data>
+  <data key="d4">347.23652124423637</data>
+  <data key="d5">-249.96521821046787</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; workforce code/survival.wf'</data>
   <data key="d8"></data>
@@ -417,12 +417,12 @@ done (c8ef17dd-f825-46cb-a537-0c32e66b7a2f)
 </node>
 <node id="689794d8-0cd7-4ff3-8b5f-000dde89a722">
   <data key="d3">workforce code/healthy_change.wf</data>
-  <data key="d4">348.36700906078886</data>
-  <data key="d5">63.04796068904531</data>
+  <data key="d4">346.2964792131061</data>
+  <data key="d5">48.55425175526602</data>
   <data key="d6"></data>
 </node>
 <node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
-  <data key="d3">makeSuppTables.py</data>
+  <data key="d3">makesupptable.py</data>
   <data key="d4">766.9041508538281</data>
   <data key="d5">32.651572761742415</data>
   <data key="d6"></data>

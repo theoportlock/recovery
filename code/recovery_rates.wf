@@ -36,8 +36,8 @@ anthrotime.py'</data>
 <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d3"># FIGURE 1A
 schematic.py</data>
-  <data key="d4">-137.70854607347889</data>
-  <data key="d5">-141.35450723457302</data>
+  <data key="d4">-130.20854607347889</data>
+  <data key="d5">-125.35450723457302</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1A
 schematic.py'</data>
@@ -49,8 +49,8 @@ schematic.py'</data>
 <node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
   <data key="d3"># FIGURE 1C
 recovery_barplot.py</data>
-  <data key="d4">-134.64371779065146</data>
-  <data key="d5">-3.406381693447429</data>
+  <data key="d4">-152.14371779065146</data>
+  <data key="d5">-6.406381693447429</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1C
 recovery_barplot.py'</data>
@@ -145,20 +145,20 @@ box.py \
 </node>
 <node id="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
   <data key="d3">table2_who_refeed_recovery.sh</data>
-  <data key="d4">-239.7400969107104</data>
-  <data key="d5">223.02996935764455</data>
+  <data key="d4">-229.18403362452727</data>
+  <data key="d5">182.12522412368477</data>
   <data key="d6"></data>
 </node>
 <node id="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
   <data key="d3">table2_refeed_recovery.sh</data>
-  <data key="d4">-180.21915550401866</data>
-  <data key="d5">298.3159305646946</data>
+  <data key="d4">-189.45571087942892</data>
+  <data key="d5">232.34053502604985</data>
   <data key="d6"></data>
 </node>
 <node id="89c86cb9-843c-4d42-91ee-c5f022db7f44">
   <data key="d3">table3_recovery.sh</data>
-  <data key="d4">-54.20076448246829</data>
-  <data key="d5">362.81561829218606</data>
+  <data key="d4">-136.01025495038775</data>
+  <data key="d5">284.9646515565853</data>
   <data key="d6"></data>
 </node>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
