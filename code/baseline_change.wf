@@ -19,14 +19,15 @@
 <data key="d1">'
 
 </data>
-<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
+<data key="d2">cd ~/recovery
+bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d3">for d in results/baseline_change/maaslin/baseline/*/; do
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/baseline_change/maaslin/change/$name.tsv"
 done</data>
-  <data key="d4">665.9688673690227</data>
-  <data key="d5">-120.73875724787365</data>
+  <data key="d4">574.2386717127083</data>
+  <data key="d5">-36.65274456291871</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/baseline_change/maaslin/baseline/*/; do
     name=$(basename "$d")
@@ -42,8 +43,8 @@ done'</data>
   --append \
   --add-filename \
   -o results/baseline_change/maaslin/baselinechange.tsv</data>
-  <data key="d4">1300.9006080537158</data>
-  <data key="d5">-123.32175622402701</data>
+  <data key="d4">1265.2277541873714</data>
+  <data key="d5">-39.23574353907206</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/baseline_change/maaslin/change/*.tsv \
   --append \
@@ -62,8 +63,8 @@ done'</data>
   --func mean \
   --group_by 'Recovery' \
   -o results/filtered/genetics_mean.tsv</data>
-  <data key="d4">-419.51017212288184</data>
-  <data key="d5">1102.2580263759135</data>
+  <data key="d4">-379.0264577967813</data>
+  <data key="d5">1233.6958347582026</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
   results/filtered/genetics_standard.tsv \
@@ -86,8 +87,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   <data key="d3">polar.py \
   results/filtered/genetics_mean_sort.tsv \
   -o results/baseline_change/genetics_recovery.svg</data>
-  <data key="d4">408.77714272562594</data>
-  <data key="d5">1127.7286329814335</data>
+  <data key="d4">449.2608570517266</data>
+  <data key="d5">1259.1664413637227</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; polar.py \
   results/filtered/genetics_mean_sort.tsv \
@@ -103,8 +104,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   results/filtered/genetics_mean.tsv \
   --ascending \
   -o results/filtered/genetics_mean_sort.tsv</data>
-  <data key="d4">-26.127029365123008</data>
-  <data key="d5">1118.6992444157956</data>
+  <data key="d4">14.356684960977645</data>
+  <data key="d5">1250.1370527980848</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; sort.py \
   results/filtered/genetics_mean.tsv \
@@ -125,8 +126,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   <data key="d3">scale.py standard \
   results/filtered/genetics.tsv \
   -o results/filtered/genetics_standard.tsv</data>
-  <data key="d4">-828.5317979088093</data>
-  <data key="d5">986.0271575280935</data>
+  <data key="d4">-815.0830513726702</data>
+  <data key="d5">1244.9155283487723</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; scale.py standard \
   results/filtered/genetics.tsv \
@@ -154,8 +155,8 @@ LCC1116    1.057056 -0.277666  0.317044  ...   -0.227870         0.438168  -1.53
 <node id="926989e3-4fb3-4348-8185-838470b98d88">
   <data key="d3">rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}</data>
-  <data key="d4">-2021.0887310907583</data>
-  <data key="d5">-38.61938137135533</data>
+  <data key="d4">-1789.2151809595189</data>
+  <data key="d5">-13.138771466823556</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/baseline_change/maaslin/{baseline,change}
 mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
@@ -171,8 +172,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   -x Recovery \
   -y 'aspartic_acid' \
   -o results/baseline_change/maaslin/aspartic.svg</data>
-  <data key="d4">1913.1955708739447</data>
-  <data key="d5">3.5299723459554713</data>
+  <data key="d4">1821.4653752176303</data>
+  <data key="d5">87.61598503091041</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; box.py \
   results/timepoints/0/aa.tsv \
@@ -199,8 +200,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   --labels days_of_catchup \
   --axis 1 \
   --outfile results/filtered/surveillance_minus_catchup.tsv </data>
-  <data key="d4">-1520.2992807267694</data>
-  <data key="d5">-64.99614335742996</data>
+  <data key="d4">-1288.42573059553</data>
+  <data key="d5">-39.51553345289818</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; drop.py \
   --infile results/filtered/surveillance.tsv \
@@ -222,8 +223,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/species.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/species | tail</data>
-  <data key="d4">-43.30232697576571</data>
-  <data key="d5">611.4799329185282</data>
+  <data key="d4">-39.12601469814928</data>
+  <data key="d5">720.3067670900566</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -264,8 +265,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/pathways.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/pathways | tail</data>
-  <data key="d4">-41.9800052744456</data>
-  <data key="d5">763.7832491282144</data>
+  <data key="d4">-37.80369299682917</data>
+  <data key="d5">912.9563229081601</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -367,8 +368,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/filtered/surveillance_minus_catchup.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/surveillance | tail</data>
-  <data key="d4">-589.4125589486528</data>
-  <data key="d5">-227.70849077087473</data>
+  <data key="d4">-586.8644979581995</data>
+  <data key="d5">-306.6983814749234</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -475,8 +476,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/vitamin.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/vitamin | tail</data>
-  <data key="d4">-590.5256354173346</data>
-  <data key="d5">323.73081248325184</data>
+  <data key="d4">-593.0736964077878</data>
+  <data key="d5">361.9517273400496</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -529,8 +530,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/anthro.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/anthro | tail</data>
-  <data key="d4">-591.7441084475088</data>
-  <data key="d5">601.6937111352677</data>
+  <data key="d4">-587.5677961698924</data>
+  <data key="d5">710.5205453067961</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -584,7 +585,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/sleep | tail</data>
   <data key="d4">-33.407534987902864</data>
-  <data key="d5">-483.564515369874</data>
+  <data key="d5">-626.2559308352522</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -637,8 +638,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/head.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/head | tail</data>
-  <data key="d4">-33.19415689048333</data>
-  <data key="d5">-218.3351463388982</data>
+  <data key="d4">-30.646095900030105</data>
+  <data key="d5">-297.32503704294686</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -691,8 +692,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/alpha_diversity.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/alpha_diversity | tail</data>
-  <data key="d4">-41.75056742888978</data>
-  <data key="d5">341.3630344954357</data>
+  <data key="d4">-44.29862841934295</data>
+  <data key="d5">376.22176271819876</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -746,7 +747,7 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/aa | tail</data>
   <data key="d4">-586.3682107117859</data>
-  <data key="d5">-497.2800244001618</data>
+  <data key="d5">-639.9714398655399</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -794,8 +795,8 @@ Execution halted
   -s qval_individual \
   -g name filename model \
   -o results/baseline_change/maaslin/baselinechange_summary.tsv</data>
-  <data key="d4">1922.1194877089288</data>
-  <data key="d5">-241.13280624242617</data>
+  <data key="d4">1830.3892920526143</data>
+  <data key="d5">-157.04679355747123</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
   results/baseline_change/maaslin/baselinechange.tsv \

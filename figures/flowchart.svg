@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="980"
+   height="1170"
+   viewBox="0 0 980 1170"
+   version="1.1"
+   id="svg821"
+   sodipodi:docname="flowchart.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="flowchart.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:c2pa="http://c2pa.org/manifest">
+  <sodipodi:namedview
+     id="namedview823"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.82298561"
+     inkscape:cx="528.56331"
+     inkscape:cy="631.8458"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="boxes" />
+  <metadata
+     id="metadata2">
+    <c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4OTA5ZGI2MC05NjNmLTQzODAtYTgxNy05OWE3NTJjMjI0NjkAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaPD0m3eEGHptspYI3mSKHisAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozOGIwNDc4OC1iZDQ2LTRmNmUtYWI3OC0yYTg3Y2I2MzZkNzRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoJ+TTEKrqQYOpSmjy5+xV7QAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg49CPTehDrXt4lMTcp2fqPGWdsmQZlFf90enjQTl422akZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaDE3Evn0vnxSdu+YbHcYQ30AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCdpt/jq0jQ3oCtxhIy5jM71Ctdsw1BxoqnrythnG85RWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi/Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjg5MDlkYjYwLTk2M2YtNDM4MC1hODE3LTk5YTc1MmMyMjQ2OS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmNkMjI3YjEzLTJlM2EtNDIzNi05M2JlLWIxNTU5MmZiYjAwOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDj0I9N6EOte3iUxNynZ+o8ZZ2yZBmUV/3R6eNBOXjbZqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggarH9fDV3asM13YovNEMHzPBwyo+g0OPr7wxfp9gupoiiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggU8hlBg9JJWhutos880d4yukOcuKAxG5wj4NETSn7Pyp0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQASVv6oJkhMciKAdHgVr+RMUoBrwiM5sbA0U7yJbLRvzO3zpNRhgQ09WPDONA6PT9giEXw29MVFGjYR9OL2ig1I=</c2pa:manifest>
+  </metadata>
+  <defs
+     id="defs7">
+    <marker
+       id="ah"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto">
+      <path
+         d="M0 0L10 5L0 10z"
+         fill="#000"
+         id="path4" />
+    </marker>
+  </defs>
+  <rect
+     width="980"
+     height="1170"
+     fill="#fff"
+     id="rect9" />
+  <g
+     id="connectors">
+    <path
+       d="M337 78V100"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       id="path11" />
+    <path
+       d="M337 100H372"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path13" />
+    <path
+       d="M205 100H470"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       id="path15" />
+    <path
+       d="M205 100V136"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path17" />
+    <path
+       d="M470 100V136"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path19" />
+    <path
+       d="M746 78V136"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path21" />
+    <path
+       d="M746 100H775"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path23" />
+    <path
+       d="M205 194V254"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path25" />
+    <path
+       d="M205 225H235"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path27" />
+    <path
+       d="M205 298V368"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path29" />
+    <path
+       d="M205 325H235"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path31" />
+    <path
+       d="M205 412V472"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path33" />
+    <path
+       d="m 205,443 h 30"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path35" />
+    <path
+       d="M470 194V254"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path37" />
+    <path
+       d="M470 225H498"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path39" />
+    <path
+       d="M470 298V368"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path41" />
+    <path
+       d="M470 325H498"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path43" />
+    <path
+       d="M470 412V472"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path45" />
+    <path
+       d="m 470,443 h 28"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path47" />
+    <path
+       d="M746 194V254"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path49" />
+    <path
+       d="M746 225H776"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path51" />
+    <path
+       d="M746 298V368"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path53" />
+    <path
+       d="M746 325H776"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path55" />
+    <path
+       d="M746 412V472"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path57" />
+    <path
+       d="M746 441H776"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path59" />
+    <path
+       d="M203 524V560"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path61" />
+    <path
+       d="M203 596V620"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       id="path63" />
+    <path
+       d="M94 620H271"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       id="path65" />
+    <path
+       d="M94 620V650"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path67" />
+    <path
+       d="M271 620V650"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path69" />
+    <path
+       d="M94 708V816"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path71" />
+    <path
+       d="M94 750H118"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path73" />
+    <path
+       d="M271 708V816"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path75" />
+    <path
+       d="M271 750H300"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path77" />
+    <path
+       d="M465 524V816"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path79" />
+    <path
+       d="M465 750H490"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path81" />
+    <path
+       d="M94 884V928"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path83" />
+    <path
+       d="m 94,904 h 24"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path85" />
+    <path
+       d="M271 884V928"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path87" />
+    <path
+       d="m 271,904 h 24"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path89" />
+    <path
+       d="M465 884V928"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path91" />
+    <path
+       d="m 465,904 h 25"
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path93" />
+    <path
+       d="M94 996V1070"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path95" />
+    <path
+       d="M94 1024H115"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path97" />
+    <path
+       d="M271 996V1070"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path99" />
+    <path
+       d="M271 1024H298"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path101" />
+    <path
+       d="M465 996V1070"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path103" />
+    <path
+       d="M465 1024H492"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path105" />
+    <path
+       d="M746 524V1070"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path107" />
+    <path
+       d="M746 1040H770"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path109" />
+  </g>
+  <g
+     id="boxes">
+    <g
+       id="screen_11_13">
+      <rect
+         x="218"
+         y="8"
+         width="238"
+         height="70"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect112" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="13"
+         fill="#000"
+         id="text124"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="337.0"
+           y="23.8"
+           id="tspan114"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">11-13mo community screening</tspan><tspan
+           x="337.0"
+           y="39.6"
+           id="tspan116"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">(MUAC measurement and verbal</tspan><tspan
+           x="337.0"
+           y="55.5"
+           id="tspan118"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">consent)</tspan><tspan
+           x="337.0"
+           y="71.3"
+           id="tspan122"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan120"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2110</tspan></text>
+    </g>
+    <g
+       id="screen_34_38">
+      <rect
+         x="627"
+         y="8"
+         width="238"
+         height="70"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect127" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="13"
+         fill="#000"
+         id="text139"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="746.0"
+           y="23.8"
+           id="tspan129"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">34-38mo community screening</tspan><tspan
+           x="746.0"
+           y="39.6"
+           id="tspan131"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">(MUAC measurement and verbal</tspan><tspan
+           x="746.0"
+           y="55.5"
+           id="tspan133"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">consent)</tspan><tspan
+           x="746.0"
+           y="71.3"
+           id="tspan137"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan135"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1350</tspan></text>
+    </g>
+    <g
+       id="excluded">
+      <rect
+         x="372"
+         y="82"
+         width="258.72791"
+         height="40.25824"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect142" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000000"
+         id="text152"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="-6"><tspan
+           x="507"
+           y="92.900002"
+           id="tspan146"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Excluded:(<tspan
+   font-style="italic"
+   id="tspan144"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 1045)</tspan><tspan
+           x="507"
+           y="105.7"
+           id="tspan148"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Reasons: Did not meet MUAC range, untested as</tspan><tspan
+           x="507"
+           y="118.5"
+           id="tspan150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">study reached target, refusals</tspan></text>
+    </g>
+    <g
+       id="g169">
+      <rect
+         x="775"
+         y="81.991524"
+         width="200"
+         height="49.835651"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect155" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10"
+         fill="#000"
+         id="text167"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="875.0"
+           y="93.2"
+           id="tspan159"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Excluded: (<tspan
+   font-style="italic"
+   id="tspan157"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 780)</tspan><tspan
+           x="875.0"
+           y="105.4"
+           id="tspan161"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Reasons: Did not meet MUAC range,</tspan><tspan
+           x="875.0"
+           y="117.6"
+           id="tspan163"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">untested as study reached target,</tspan><tspan
+           x="875.0"
+           y="129.8"
+           id="tspan165"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">refusals</tspan></text>
+    </g>
+    <g
+       id="box">
+      <rect
+         x="87"
+         y="136"
+         width="236"
+         height="58"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect171" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text181"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="205.0"
+           y="154.6"
+           id="tspan173"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">MUAC measurement in range</tspan><tspan
+           x="205.0"
+           y="169.2"
+           id="tspan175"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">for possible MAM (11-14cm)</tspan><tspan
+           x="205.0"
+           y="183.8"
+           id="tspan179"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan177"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 865</tspan></text>
+    </g>
+    <g
+       id="g196">
+      <rect
+         x="352"
+         y="136"
+         width="236"
+         height="58"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect184" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text194"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="470.0"
+           y="154.6"
+           id="tspan186"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">MUAC measurement in range</tspan><tspan
+           x="470.0"
+           y="169.2"
+           id="tspan188"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">for possible well-nourished (&gt; 14cm)</tspan><tspan
+           x="470.0"
+           y="183.8"
+           id="tspan192"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan190"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 200</tspan></text>
+    </g>
+    <g
+       id="g210">
+      <rect
+         x="628"
+         y="136"
+         width="236"
+         height="58"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect198" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text208"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="746.0"
+           y="154.6"
+           id="tspan200"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">MUAC measurement in range</tspan><tspan
+           x="746.0"
+           y="169.2"
+           id="tspan202"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">for possible MAM (11-14cm)</tspan><tspan
+           x="746.0"
+           y="183.8"
+           id="tspan206"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan204"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 570</tspan></text>
+    </g>
+    <g
+       id="g224">
+      <rect
+         x="235"
+         y="200"
+         width="204"
+         height="50"
+         fill="#d9d9d9"
+         stroke="#000"
+         stroke-width="1"
+         id="rect212" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text222"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="337.0"
+           y="215.9"
+           id="tspan216"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Excluded: (<tspan
+   font-style="italic"
+   id="tspan214"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 323)</tspan><tspan
+           x="337.0"
+           y="228.7"
+           id="tspan218"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Reasons: Lack of interest, logistical</tspan><tspan
+           x="337.0"
+           y="241.5"
+           id="tspan220"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">issues, or unavailability</tspan></text>
+    </g>
+    <g
+       id="g238">
+      <rect
+         x="498"
+         y="200"
+         width="196"
+         height="50"
+         fill="#d9d9d9"
+         stroke="#000"
+         stroke-width="1"
+         id="rect226" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text236"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="596.0"
+           y="215.9"
+           id="tspan230"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Excluded: (<tspan
+   font-style="italic"
+   id="tspan228"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 91)</tspan><tspan
+           x="596.0"
+           y="228.7"
+           id="tspan232"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Reasons: Non-response, family</tspan><tspan
+           x="596.0"
+           y="241.5"
+           id="tspan234"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">refusal, relocation</tspan></text>
+    </g>
+    <g
+       id="g252">
+      <rect
+         x="776"
+         y="200"
+         width="174"
+         height="50"
+         fill="#d9d9d9"
+         stroke="#000"
+         stroke-width="1"
+         id="rect240" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text250"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="863.0"
+           y="215.9"
+           id="tspan244"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Excluded: (<tspan
+   font-style="italic"
+   id="tspan242"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 343)</tspan><tspan
+           x="863.0"
+           y="228.7"
+           id="tspan246"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Reasons: Refusal,</tspan><tspan
+           x="863.0"
+           y="241.5"
+           id="tspan248"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">unavailability, relocation</tspan></text>
+    </g>
+    <g
+       id="g264">
+      <rect
+         x="87"
+         y="254"
+         width="236"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect254" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text262"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="205.0"
+           y="272.9"
+           id="tspan256"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Clinic screening</tspan><tspan
+           x="205.0"
+           y="287.5"
+           id="tspan260"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan258"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 542</tspan></text>
+    </g>
+    <g
+       id="g276">
+      <rect
+         x="352"
+         y="254"
+         width="236"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect266" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text274"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="470.0"
+           y="272.9"
+           id="tspan268"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Clinic screening</tspan><tspan
+           x="470.0"
+           y="287.5"
+           id="tspan272"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan270"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 109</tspan></text>
+    </g>
+    <g
+       id="g288">
+      <rect
+         x="628"
+         y="254"
+         width="236"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect278" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text286"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="746.0"
+           y="272.9"
+           id="tspan280"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Clinic screening</tspan><tspan
+           x="746.0"
+           y="287.5"
+           id="tspan284"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan282"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 227</tspan></text>
+    </g>
+    <g
+       id="g302">
+      <rect
+         x="235"
+         y="302.97818"
+         width="204"
+         height="48.031174"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect290" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text300"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="337.0"
+           y="315.9"
+           id="tspan294"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Excluded: (<tspan
+   font-style="italic"
+   id="tspan292"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 383)</tspan><tspan
+           x="337.0"
+           y="328.7"
+           id="tspan296"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Reasons: Z-score not matched (362),</tspan><tspan
+           x="337.0"
+           y="341.5"
+           id="tspan298"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">specimen denied (20), Illness (1)</tspan></text>
+    </g>
+    <g
+       id="g320">
+      <rect
+         x="498"
+         y="303.48907"
+         width="222"
+         height="57.520279"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect304" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#000000"
+         id="text318"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="6"><tspan
+           x="609"
+           y="314.20001"
+           id="tspan308"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Excluded: (<tspan
+   font-style="italic"
+   id="tspan306"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 34)</tspan><tspan
+           x="609"
+           y="324.60001"
+           id="tspan310"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Reasons: Z-score not matched (27),</tspan><tspan
+           x="609"
+           y="335"
+           id="tspan312"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">specimen denied (3), congenital</tspan><tspan
+           x="609"
+           y="345.29999"
+           id="tspan314"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">malformation (2), enrolled in another trail (1),</tspan><tspan
+           x="609"
+           y="355.70001"
+           id="tspan316"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">family will relocate within next 3 years (1)</tspan></text>
+    </g>
+    <g
+       id="g338">
+      <rect
+         x="776"
+         y="301.98752"
+         width="200.49841"
+         height="56.024956"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect322" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#000000"
+         id="text336"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="4"><tspan
+           x="876"
+           y="312.20001"
+           id="tspan326"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Excluded: (<tspan
+   font-style="italic"
+   id="tspan324"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 152)</tspan><tspan
+           x="876"
+           y="322.60001"
+           id="tspan328"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Reasons: Reasons: Z-score not matched</tspan><tspan
+           x="876"
+           y="333"
+           id="tspan330"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">(146), specimen denied (4), congenital</tspan><tspan
+           x="876"
+           y="343.29999"
+           id="tspan332"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">malformation (1), enrolled in another</tspan><tspan
+           x="876"
+           y="353.70001"
+           id="tspan334"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">trial (1)</tspan></text>
+    </g>
+    <g
+       id="g350">
+      <rect
+         x="87"
+         y="368"
+         width="236"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect340" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text348"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="205.0"
+           y="386.9"
+           id="tspan342"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Eligible for enrollment</tspan><tspan
+           x="205.0"
+           y="401.5"
+           id="tspan346"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan344"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 159</tspan></text>
+    </g>
+    <g
+       id="g362">
+      <rect
+         x="352"
+         y="368"
+         width="236"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect352" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text360"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="470.0"
+           y="386.9"
+           id="tspan354"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Eligible for enrollment</tspan><tspan
+           x="470.0"
+           y="401.5"
+           id="tspan358"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan356"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75</tspan></text>
+    </g>
+    <g
+       id="g374">
+      <rect
+         x="628"
+         y="368"
+         width="236"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect364" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text372"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="746.0"
+           y="386.9"
+           id="tspan366"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Eligible for enrollment</tspan><tspan
+           x="746.0"
+           y="401.5"
+           id="tspan370"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan368"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75</tspan></text>
+    </g>
+    <g
+       id="g390">
+      <rect
+         x="235"
+         y="416.2294"
+         width="204"
+         height="52.24609"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect376" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10"
+         fill="#000000"
+         id="text388"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="2"><tspan
+           x="337"
+           y="427.20001"
+           id="tspan380"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Excluded: (<tspan
+   font-style="italic"
+   id="tspan378"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 7)</tspan><tspan
+           x="337"
+           y="439.39999"
+           id="tspan382"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Reasons: withdrawal of consent (2),</tspan><tspan
+           x="337"
+           y="451.60001"
+           id="tspan384"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">relocation (2), failure to attend baseline</tspan><tspan
+           x="337"
+           y="463.79999"
+           id="tspan386"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">visit (3)</tspan></text>
+    </g>
+    <g
+       id="g406">
+      <rect
+         x="498"
+         y="416.46716"
+         width="170"
+         height="51.77058"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect392" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10"
+         fill="#000000"
+         id="text404"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="2"><tspan
+           x="583"
+           y="427.20001"
+           id="tspan396"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Excluded: (<tspan
+   font-style="italic"
+   id="tspan394"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 5)</tspan><tspan
+           x="583"
+           y="439.39999"
+           id="tspan398"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Reasons: withdrawal of</tspan><tspan
+           x="583"
+           y="451.60001"
+           id="tspan400"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">consent (1), failure to attend</tspan><tspan
+           x="583"
+           y="463.79999"
+           id="tspan402"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">baseline visit (4)</tspan></text>
+    </g>
+    <g
+       id="g416"
+       transform="translate(0,10)">
+      <rect
+         x="776"
+         y="414"
+         width="170"
+         height="36"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect408" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000000"
+         id="text414"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"><tspan
+           x="861"
+           y="435.70001"
+           id="tspan412"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Excluded: (<tspan
+   font-style="italic"
+   id="tspan410"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 0)</tspan></text>
+    </g>
+    <g
+       id="enrolled_MAM">
+      <rect
+         x="85"
+         y="472"
+         width="238"
+         height="52"
+         fill="#9b30d9"
+         stroke="#000"
+         stroke-width="1"
+         id="rect418" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#fff"
+         id="text428"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="204.0"
+           y="487.6"
+           id="tspan420"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Enrolled in MAM intervention</tspan><tspan
+           x="204.0"
+           y="502.2"
+           id="tspan422"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">cohorts + Baseline (12mo) visit</tspan><tspan
+           x="204.0"
+           y="516.8"
+           id="tspan426"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan424"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 152</tspan></text>
+    </g>
+    <g
+       id="enrolled_wellnourished">
+      <rect
+         x="350"
+         y="472"
+         width="238"
+         height="52"
+         fill="#e8702a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect431" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#000"
+         id="text441"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="469.0"
+           y="487.6"
+           id="tspan433"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Enrolled in well-nourished cohort +</tspan><tspan
+           x="469.0"
+           y="502.2"
+           id="tspan435"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Baseline (12mo) visit</tspan><tspan
+           x="469.0"
+           y="516.8"
+           id="tspan439"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan437"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 70</tspan></text>
+    </g>
+    <g
+       id="enrolled_ref">
+      <rect
+         x="625"
+         y="472"
+         width="238"
+         height="52"
+         fill="#2d6a1e"
+         stroke="#000"
+         stroke-width="1"
+         id="rect444" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12"
+         fill="#fff"
+         id="text454"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="744.0"
+           y="487.6"
+           id="tspan446"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Enrolled in MAM outcome ref.</tspan><tspan
+           x="744.0"
+           y="502.2"
+           id="tspan448"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">cohort + Baseline (36mo) visit</tspan><tspan
+           x="744.0"
+           y="516.8"
+           id="tspan452"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan450"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75</tspan></text>
+    </g>
+    <g
+       id="randomization">
+      <rect
+         x="132"
+         y="560"
+         width="142"
+         height="36"
+         fill="#ff0000"
+         stroke="#000"
+         stroke-width="1"
+         id="rect457" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="13"
+         fill="#000"
+         font-weight="bold"
+         id="text461"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="203.0"
+           y="582.5"
+           id="tspan459"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Randomization</tspan></text>
+    </g>
+    <g
+       id="g476">
+      <rect
+         x="17"
+         y="650"
+         width="154"
+         height="58"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect464" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="11.5"
+         fill="#000"
+         id="text474"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="94.0"
+           y="669.0"
+           id="tspan466"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Standard-of-Care Feeds +</tspan><tspan
+           x="94.0"
+           y="683.0"
+           id="tspan468"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">PS Stimulation</tspan><tspan
+           x="94.0"
+           y="697.1"
+           id="tspan472"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan470"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 77</tspan></text>
+    </g>
+    <g
+       id="g490">
+      <rect
+         x="195"
+         y="650"
+         width="152"
+         height="58"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect478" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="11.5"
+         fill="#000"
+         id="text488"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="271.0"
+           y="669.0"
+           id="tspan480"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Enhanced Feeds + PS</tspan><tspan
+           x="271.0"
+           y="683.0"
+           id="tspan482"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Stimulation</tspan><tspan
+           x="271.0"
+           y="697.1"
+           id="tspan486"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan484"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75</tspan></text>
+    </g>
+    <g
+       id="g510">
+      <rect
+         x="118"
+         y="712"
+         width="145.84515"
+         height="76.0215"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect492" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text508"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="194.0"
+           y="739.9"
+           id="tspan496"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Family Withdraw: <tspan
+   font-style="italic"
+   id="tspan494"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1</tspan><tspan
+           x="194.0"
+           y="751.5"
+           id="tspan498"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Migration out of area: 4</tspan><tspan
+           x="194.0"
+           y="763.1"
+           id="tspan502"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Fussiness Bayley: <tspan
+   font-style="italic"
+   id="tspan500"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan><tspan
+           x="194.0"
+           y="774.7"
+           id="tspan506"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Anthro not collected: <tspan
+   font-style="italic"
+   id="tspan504"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan></text>
+    </g>
+    <g
+       id="g534">
+      <rect
+         x="300"
+         y="712"
+         width="145"
+         height="84"
+         fill="#d9d9d9"
+         stroke="#000"
+         stroke-width="1"
+         id="rect512" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text532"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="372.5"
+           y="734.1"
+           id="tspan516"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Parent Withdraw: <tspan
+   font-style="italic"
+   id="tspan514"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan><tspan
+           x="372.5"
+           y="745.7"
+           id="tspan518"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Migration out of area: 1</tspan><tspan
+           x="372.5"
+           y="757.3"
+           id="tspan522"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Fussiness Bayley: <tspan
+   font-style="italic"
+   id="tspan520"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1</tspan><tspan
+           x="372.5"
+           y="768.9"
+           id="tspan526"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">No-show Bayley: <tspan
+   font-style="italic"
+   id="tspan524"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1</tspan><tspan
+           x="372.5"
+           y="780.5"
+           id="tspan530"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Anthro not collected : <tspan
+   font-style="italic"
+   id="tspan528"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan></text>
+    </g>
+    <g
+       id="g548">
+      <rect
+         x="490"
+         y="712"
+         width="145"
+         height="64"
+         fill="#d9d9d9"
+         stroke="#000"
+         stroke-width="1"
+         id="rect536" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text546"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="562.5"
+           y="741.5"
+           id="tspan540"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Parent withdraw: <tspan
+   font-style="italic"
+   id="tspan538"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 5</tspan><tspan
+           x="562.5"
+           y="753.1"
+           id="tspan544"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Anthro not collected: <tspan
+   font-style="italic"
+   id="tspan542"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 4</tspan></text>
+    </g>
+    <g
+       id="SoC_2yr">
+      <rect
+         x="17"
+         y="816"
+         width="154"
+         height="68"
+         fill="#f26b7a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect550" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12.5"
+         fill="#000"
+         id="text562"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="94.0"
+           y="839.1"
+           id="tspan552"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">2-year-old follow-up</tspan><tspan
+           x="94.0"
+           y="854.4"
+           id="tspan554"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">visit</tspan><tspan
+           x="94.0"
+           y="869.6"
+           id="tspan560"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan556"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 70 Bayley; <tspan
+   font-style="italic"
+   id="tspan558"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 70 Anthro</tspan></text>
+    </g>
+    <g
+       id="SoC_3yr">
+      <rect
+         x="17"
+         y="928"
+         width="154"
+         height="68"
+         fill="#f26b7a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect565" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12.5"
+         fill="#000"
+         id="text577"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="94.0"
+           y="951.1"
+           id="tspan567"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">3-year-old follow-up</tspan><tspan
+           x="94.0"
+           y="966.4"
+           id="tspan569"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">visit</tspan><tspan
+           x="94.0"
+           y="981.6"
+           id="tspan575"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan571"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 68 Bayley; <tspan
+   font-style="italic"
+   id="tspan573"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 67 Anthro</tspan></text>
+    </g>
+    <g
+       id="Enh_2yr">
+      <rect
+         x="195"
+         y="816"
+         width="152"
+         height="68"
+         fill="#33f0d0"
+         stroke="#000"
+         stroke-width="1"
+         id="rect580" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12.5"
+         fill="#000"
+         id="text592"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="271.0"
+           y="839.1"
+           id="tspan582"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">2-year-old follow-up</tspan><tspan
+           x="271.0"
+           y="854.4"
+           id="tspan584"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">visit</tspan><tspan
+           x="271.0"
+           y="869.6"
+           id="tspan590"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan586"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 70 Bayley; <tspan
+   font-style="italic"
+   id="tspan588"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 70 Anthro</tspan></text>
+    </g>
+    <g
+       id="Enh_3yr">
+      <rect
+         x="195"
+         y="928"
+         width="152"
+         height="68"
+         fill="#33f0d0"
+         stroke="#000"
+         stroke-width="1"
+         id="rect595" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12.5"
+         fill="#000"
+         id="text607"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="271.0"
+           y="951.1"
+           id="tspan597"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">3-year-old follow-up</tspan><tspan
+           x="271.0"
+           y="966.4"
+           id="tspan599"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">visit</tspan><tspan
+           x="271.0"
+           y="981.6"
+           id="tspan605"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan601"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 71 Bayley; <tspan
+   font-style="italic"
+   id="tspan603"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 69 Anthro</tspan></text>
+    </g>
+    <g
+       id="WN_2yr">
+      <rect
+         x="389"
+         y="816"
+         width="152"
+         height="68"
+         fill="#e8702a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect610" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12.5"
+         fill="#000"
+         id="text622"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="465.0"
+           y="839.1"
+           id="tspan612"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">2-year-old follow-up</tspan><tspan
+           x="465.0"
+           y="854.4"
+           id="tspan614"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">visit</tspan><tspan
+           x="465.0"
+           y="869.6"
+           id="tspan620"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan616"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 65 Bayley; <tspan
+   font-style="italic"
+   id="tspan618"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 61 Anthro</tspan></text>
+    </g>
+    <g
+       id="WN_3yr">
+      <rect
+         x="389"
+         y="928"
+         width="152"
+         height="68"
+         fill="#e8702a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect625" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="12.5"
+         fill="#000"
+         id="text637"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="465.0"
+           y="951.1"
+           id="tspan627"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">3-year-old follow-up</tspan><tspan
+           x="465.0"
+           y="966.4"
+           id="tspan629"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">visit</tspan><tspan
+           x="465.0"
+           y="981.6"
+           id="tspan635"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan631"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 62 Bayley; <tspan
+   font-style="italic"
+   id="tspan633"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 57 Anthro</tspan></text>
+    </g>
+    <g
+       id="g652">
+      <rect
+         x="118"
+         y="886.73273"
+         width="146.19753"
+         height="34.290283"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect640" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000000"
+         id="text650"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="14"><tspan
+           x="194"
+           y="902.5"
+           id="tspan644"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Migration out of area: <tspan
+   font-style="italic"
+   id="tspan642"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 1</tspan><tspan
+           x="194"
+           y="914.09998"
+           id="tspan648"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Parent Withdraw: <tspan
+   font-style="italic"
+   id="tspan646"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 4</tspan></text>
+    </g>
+    <g
+       id="g660">
+      <rect
+         x="295.74808"
+         y="894.47314"
+         width="149.25192"
+         height="24.305601"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect654" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000000"
+         id="text658"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="14"><tspan
+           x="370"
+           y="910.29999"
+           id="tspan656"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Parent Withdraw: 1</tspan></text>
+    </g>
+    <g
+       id="g674">
+      <rect
+         x="491.49615"
+         y="888.22888"
+         width="144.25192"
+         height="35.038383"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect662" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000000"
+         id="text672"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="14"><tspan
+           x="562.5"
+           y="902.5"
+           id="tspan666"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Parent withdraw: <tspan
+   font-style="italic"
+   id="tspan664"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 3</tspan><tspan
+           x="562.5"
+           y="914.09998"
+           id="tspan670"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Anthro not collected: <tspan
+   font-style="italic"
+   id="tspan668"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 1</tspan></text>
+    </g>
+    <g
+       id="g686">
+      <rect
+         x="115.74809"
+         y="1006.2289"
+         width="149.75574"
+         height="38.534546"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect676" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text684"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="191.0"
+           y="1021.5"
+           id="tspan678"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Dataset-wide exclusions:</tspan><tspan
+           x="191.0"
+           y="1033.1"
+           id="tspan682"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">&lt; 2 valid Bayleys: <tspan
+   font-style="italic"
+   id="tspan680"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 5</tspan></text>
+    </g>
+    <g
+       id="g702">
+      <rect
+         x="302.48849"
+         y="1002.4885"
+         width="149.77109"
+         height="50.53458"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect688" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text700"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="377.0"
+           y="1021.7"
+           id="tspan690"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Dataset-wide exclusions:</tspan><tspan
+           x="377.0"
+           y="1033.3"
+           id="tspan694"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">&lt; 2 valid Bayleys: <tspan
+   font-style="italic"
+   id="tspan692"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 3</tspan><tspan
+           x="377.0"
+           y="1044.9"
+           id="tspan698"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">&lt; 2 valid Anthro: <tspan
+   font-style="italic"
+   id="tspan696"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan></text>
+    </g>
+    <g
+       id="g718">
+      <rect
+         x="495.74042"
+         y="1003.2366"
+         width="147.75575"
+         height="50.534527"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect704" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text716"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="567.0"
+           y="1021.7"
+           id="tspan706"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Dataset-wide exclusions:</tspan><tspan
+           x="567.0"
+           y="1033.3"
+           id="tspan710"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">&lt; 2 valid Bayleys: <tspan
+   font-style="italic"
+   id="tspan708"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 5</tspan><tspan
+           x="567.0"
+           y="1044.9"
+           id="tspan714"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">&lt; 2 valid Anthro: <tspan
+   font-style="italic"
+   id="tspan712"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 3</tspan></text>
+    </g>
+    <g
+       id="g732">
+      <rect
+         x="772.24426"
+         y="1018.2289"
+         width="142.76344"
+         height="43.542217"
+         fill="#d9d9d9"
+         stroke="#000000"
+         stroke-width="1"
+         id="rect720" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text730"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="844.0"
+           y="1031.7"
+           id="tspan722"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Dataset-wide exclusions:</tspan><tspan
+           x="844.0"
+           y="1043.3"
+           id="tspan724"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Parent withdraw before</tspan><tspan
+           x="844.0"
+           y="1054.9"
+           id="tspan728"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Bayley: <tspan
+   font-style="italic"
+   id="tspan726"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 4</tspan></text>
+    </g>
+    <g
+       id="included">
+      <rect
+         x="17"
+         y="1070"
+         width="168"
+         height="82"
+         fill="#f26b7a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect734" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text754"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="101.0"
+           y="1089.1"
+           id="tspan736"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Included in Analyses</tspan><tspan
+           x="101.0"
+           y="1101.9"
+           id="tspan740"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan738"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 71 Bayley Longitudinal</tspan><tspan
+           x="101.0"
+           y="1114.7"
+           id="tspan744"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan742"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 68 Bayley Cross-Sectional</tspan><tspan
+           x="101.0"
+           y="1127.5"
+           id="tspan748"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan746"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 77 Anthro Longitudinal</tspan><tspan
+           x="101.0"
+           y="1140.3"
+           id="tspan752"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan750"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 67 Anthro Cross-Sectional</tspan></text>
+    </g>
+    <g
+       id="g779">
+      <rect
+         x="195"
+         y="1070"
+         width="168"
+         height="82"
+         fill="#33f0d0"
+         stroke="#000"
+         stroke-width="1"
+         id="rect757" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text777"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="279.0"
+           y="1089.1"
+           id="tspan759"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Included in Analyses</tspan><tspan
+           x="279.0"
+           y="1101.9"
+           id="tspan763"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan761"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 72 Bayley Longitudinal</tspan><tspan
+           x="279.0"
+           y="1114.7"
+           id="tspan767"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan765"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 71 Bayley Cross-Sectional</tspan><tspan
+           x="279.0"
+           y="1127.5"
+           id="tspan771"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan769"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 73 Anthro Longitudinal</tspan><tspan
+           x="279.0"
+           y="1140.3"
+           id="tspan775"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan773"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 69 Anthro Cross-Sectional</tspan></text>
+    </g>
+    <g
+       id="g803">
+      <rect
+         x="389"
+         y="1070"
+         width="168"
+         height="82"
+         fill="#e8702a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect781" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#000"
+         id="text801"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="473.0"
+           y="1089.1"
+           id="tspan783"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Included in Analyses</tspan><tspan
+           x="473.0"
+           y="1101.9"
+           id="tspan787"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan785"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 65 Bayley Longitudinal</tspan><tspan
+           x="473.0"
+           y="1114.7"
+           id="tspan791"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan789"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 62 Bayley Cross-Sectional</tspan><tspan
+           x="473.0"
+           y="1127.5"
+           id="tspan795"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan793"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 67 Anthro Longitudinal</tspan><tspan
+           x="473.0"
+           y="1140.3"
+           id="tspan799"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan797"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 57 Anthro Cross-Sectional</tspan></text>
+    </g>
+    <g
+       id="included_ref">
+      <rect
+         x="662"
+         y="1070"
+         width="168"
+         height="50"
+         fill="#2d6a1e"
+         stroke="#000"
+         stroke-width="1"
+         id="rect805" />
+      <text
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10.5"
+         fill="#fff"
+         id="text817"
+         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+           x="746.0"
+           y="1085.9"
+           id="tspan807"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Included in Analyses</tspan><tspan
+           x="746.0"
+           y="1098.7"
+           id="tspan811"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan809"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 71 Bayley Cross-Sectional</tspan><tspan
+           x="746.0"
+           y="1111.5"
+           id="tspan815"
+           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+   font-style="italic"
+   id="tspan813"
+   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75 Anthro Cross-Sectional</tspan></text>
+    </g>
+  </g>
+</svg>

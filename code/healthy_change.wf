@@ -19,7 +19,8 @@
 <data key="d1">'
 
 </data>
-<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
+<data key="d2">cd ~/recovery
+bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="14b716fa-cb0b-4379-9727-7769f1510a88">
   <data key="d3">multiline.py \
   --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
@@ -29,8 +30,8 @@
   --hue Recovery \
   --id subjectID \
   --output results/healthy_change/allis_multiline.svg</data>
-  <data key="d4">3678.520445226949</data>
-  <data key="d5">-140.1551478387505</data>
+  <data key="d4">3390.501973589391</data>
+  <data key="d5">-66.16875145479065</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; multiline.py \
   --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
@@ -72,8 +73,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/
     name=$(basename "$d")
     cp "$d/all_results.tsv" "results/healthy_change/change/$name.tsv"
 done</data>
-  <data key="d4">2466.895597974934</data>
-  <data key="d5">-287.53114242254384</data>
+  <data key="d4">2295.1414635121696</data>
+  <data key="d5">-160.69732005004124</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/*/; do
     name=$(basename "$d")
@@ -93,8 +94,8 @@ cp: cannot stat 'results/healthy_change/maaslin/species//all_results.tsv': No su
   --append \
   --add-filename \
   -o results/healthy_change/healthychange.tsv</data>
-  <data key="d4">3137.255144409433</data>
-  <data key="d5">-282.3715305472375</data>
+  <data key="d4">2910.011212658699</data>
+  <data key="d5">-171.3919359712977</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/change/*.tsv \
   --append \
@@ -114,8 +115,8 @@ cp: cannot stat 'results/healthy_change/maaslin/species//all_results.tsv': No su
   -s qval_individual \
   -g name filename model \
   -o results/healthy_change/healthychange_summary.tsv</data>
-  <data key="d4">3771.802459045507</data>
-  <data key="d5">-358.978527867248</data>
+  <data key="d4">3386.016249329145</data>
+  <data key="d5">-282.349760183861</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
   results/healthy_change/healthychange.tsv \
@@ -192,8 +193,8 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
   results/healthy_change/overall/*.tsv \
   -a \
   -o results/healthy_change/rec_merged.tsv</data>
-  <data key="d4">1563.5380009608011</data>
-  <data key="d5">738.8795697782234</data>
+  <data key="d4">1341.5788118089215</data>
+  <data key="d5">728.3100845805149</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; merge.py \
   results/healthy_change/overall/*.tsv \
@@ -207,8 +208,8 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
 </node>
 <node id="05b34ebc-bb72-4db1-835f-78a960acfc33">
   <data key="d3">hbar_fig3.py</data>
-  <data key="d4">2031.8352370855605</data>
-  <data key="d5">769.6863767645249</data>
+  <data key="d4">1870.6505878205053</data>
+  <data key="d5">756.4745202673892</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; hbar_fig3.py'</data>
   <data key="d8"></data>
@@ -222,8 +223,8 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
   results/filtered/{}.tsv \
   -o results/healthy_change/distance/{}.tsv' \
 :::: conf/timedatasets.txt</data>
-  <data key="d4">812.4977310521712</data>
-  <data key="d5">960.5427557897199</data>
+  <data key="d4">683.0215373802415</data>
+  <data key="d5">981.681726185137</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
   '\''distance.py \
@@ -297,8 +298,8 @@ ValueError: Distance matrix contains 8018748 missing values. Edge list does not 
   --group-col timepoint \
   -o results/healthy_change/spindle/{}.svg \
 :::: conf/timedatasets.txt</data>
-  <data key="d4">1533.0937107036634</data>
-  <data key="d5">981.356024017683</data>
+  <data key="d4">1599.152993189342</data>
+  <data key="d5">965.50179622112</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 spindle.py \
   results/healthy_change/pcoa/{}.tsv \
@@ -350,8 +351,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/
   results/healthy_change/spindle/*.svg \
   --rows 3 \
   -o results/healthy_change/all_spindle.svg</data>
-  <data key="d4">1902.7325388069999</data>
-  <data key="d5">998.3850616587436</data>
+  <data key="d4">2018.996875981794</data>
+  <data key="d5">985.1732051616075</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; arrange_svgs.py \
   results/healthy_change/spindle/*.svg \
@@ -374,8 +375,8 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/
     results/filtered/pathways.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/pathways | tail</data>
-  <data key="d4">1435.880540030689</data>
-  <data key="d5">159.42051909840706</data>
+  <data key="d4">1435.8805400306892</data>
+  <data key="d5">312.67805446518116</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -536,8 +537,8 @@ Execution halted
     results/filtered/alpha_diversity.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/alpha_diversity | tail</data>
-  <data key="d4">1439.3317546068422</data>
-  <data key="d5">-334.2764650443031</data>
+  <data key="d4">1439.3317546068424</data>
+  <data key="d5">-284.07141035518754</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -598,8 +599,8 @@ Execution halted
     results/filtered/anthro.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/anthro | tail</data>
-  <data key="d4">713.0299193734986</data>
-  <data key="d5">-774.3392311286437</data>
+  <data key="d4">694.6273767882683</data>
+  <data key="d5">-772.0389133054899</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -659,8 +660,8 @@ Execution halted
     results/filtered/head.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/head | tail</data>
-  <data key="d4">712.0299827840167</data>
-  <data key="d5">-492.8717060497443</data>
+  <data key="d4">690.3009619468125</data>
+  <data key="d5">-437.0398552855011</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -711,8 +712,8 @@ This warning is displayed once per session.
     results/filtered/species.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/species | tail</data>
-  <data key="d4">1437.2836723163578</data>
-  <data key="d5">-34.976208662625794</data>
+  <data key="d4">1437.283672316358</data>
+  <data key="d5">78.64575721274112</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1292,8 +1293,8 @@ Execution halted
     results/filtered/sleep.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/sleep | tail</data>
-  <data key="d4">710.3031567664733</data>
-  <data key="d5">-207.46634924666182</data>
+  <data key="d4">689.1641863710564</data>
+  <data key="d5">-93.84438337129492</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1408,8 +1409,8 @@ This warning is displayed once per session.
     results/filtered/aa.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/aa | tail</data>
-  <data key="d4">711.0215015780078</data>
-  <data key="d5">85.01143886220405</data>
+  <data key="d4">689.1478683485533</data>
+  <data key="d5">255.81171909227334</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1454,8 +1455,8 @@ This warning is displayed once per session.
   overall_recovery.py \
   results/filtered/{}.tsv \
   results/healthy_change/overall/{}.tsv</data>
-  <data key="d4">983.389716388219</data>
-  <data key="d5">649.4350018842644</data>
+  <data key="d4">735.0068142420681</data>
+  <data key="d5">733.9908834659328</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; grep -v '\''^lipids$'\'' conf/timedatasets.txt | parallel -j 1 \
   overall_recovery.py \

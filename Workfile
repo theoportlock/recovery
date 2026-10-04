@@ -1,470 +1,235 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="edge_type" attr.type="string"/>
-<key id="d13" for="edge" attr.name="status" attr.type="string"/>
-<key id="d12" for="edge" attr.name="id" attr.type="string"/>
-<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
-<key id="d10" for="node" attr.name="pid" attr.type="string"/>
-<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
-<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
-<key id="d7" for="node" attr.name="command" attr.type="string"/>
-<key id="d6" for="node" attr.name="status" attr.type="string"/>
-<key id="d5" for="node" attr.name="y" attr.type="string"/>
-<key id="d4" for="node" attr.name="x" attr.type="string"/>
-<key id="d3" for="node" attr.name="label" attr.type="string"/>
-<key id="d2" for="graph" attr.name="wrapper" attr.type="string"/>
-<key id="d1" for="graph" attr.name="suffix" attr.type="string"/>
-<key id="d0" for="graph" attr.name="prefix" attr.type="string"/>
-<graph edgedefault="directed"><data key="d0">bash -c '. env.sh 
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d14" for="edge" attr.name="status" attr.type="string" />
+  <key id="d13" for="edge" attr.name="edge_type" attr.type="string" />
+  <key id="d12" for="edge" attr.name="id" attr.type="string" />
+  <key id="d11" for="node" attr.name="error_code" attr.type="string" />
+  <key id="d10" for="node" attr.name="pid" attr.type="string" />
+  <key id="d9" for="node" attr.name="stderr" attr.type="string" />
+  <key id="d8" for="node" attr.name="stdout" attr.type="string" />
+  <key id="d7" for="node" attr.name="command" attr.type="string" />
+  <key id="d6" for="node" attr.name="status" attr.type="string" />
+  <key id="d5" for="node" attr.name="y" attr.type="string" />
+  <key id="d4" for="node" attr.name="x" attr.type="string" />
+  <key id="d3" for="node" attr.name="label" attr.type="string" />
+  <key id="d2" for="graph" attr.name="wrapper" attr.type="string" />
+  <key id="d1" for="graph" attr.name="suffix" attr.type="string" />
+  <key id="d0" for="graph" attr.name="prefix" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="f3f51679-47bd-4d95-b166-0773770b99c8">
+      <data key="d3">workforce web code/characteristics.wf</data>
+      <data key="d4">346.5954601560643</data>
+      <data key="d5">-309.3663363275383</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/characteristics.wf'</data>
+      <data key="d8">Opening workspace ws_872fcc59 in browser: http://127.0.0.1:5049/workspace/ws_872fcc59
+workspace_id: ws_872fcc59
+workfile: /home/tpor598/recovery/code/characteristics.wf
 </data>
-<data key="d1">'
-
-</data>
-<data key="d2">bash -c '. env.sh &amp;&amp; {}'</data>
-<node id="f3f51679-47bd-4d95-b166-0773770b99c8">
-  <data key="d3">workforce code/characteristics.wf</data>
-  <data key="d4">345.7789117143536</data>
-  <data key="d5">-294.2673274045817</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # TABLE 1
-table1_descriptive.sh'</data>
-  <data key="d8">✅ Filled missing values in columns Feed with 'Well-nourished (C)' → results/table1/work/meta.tsv
-Saved 234 rows × 2 columns to results/table1/work/selected/Demographics.tsv (index kept)
-Saved 234 rows × 2 columns to results/table1/work/selected/Parental_Education.tsv (index kept)
-Saved 234 rows × 4 columns to results/table1/work/selected/Economics.tsv (index kept)
-Saved 234 rows × 6 columns to results/table1/work/formatted/Parental_Education_and_Economics.tsv
-Saved 234 rows × 2 columns to results/table1/work/formatted/Family_Structure.tsv (index kept)
-Saved 234 rows × 6 columns to results/table1/work/formatted/Household_characteristics.tsv (index kept)
-Saved 234 rows × 2 columns to results/table1/work/selected/Other.tsv (index kept)
-Saved 234 rows × 4 columns to results/table1/work/formatted/Anthro.tsv (index kept)
-✅ Table 1 saved to results/table1/work/descriptive/Demographics.tsv
-✅ Table 1 saved to results/table1/work/descriptive/Parental_Education_and_Economics.tsv
-✅ Table 1 saved to results/table1/work/descriptive/Family_Structure.tsv
-✅ Table 1 saved to results/table1/work/descriptive/Household_characteristics.tsv
-✅ Table 1 saved to results/table1/work/descriptive/Other.tsv
-✅ Table 1 saved to results/table1/work/descriptive/Anthro.tsv
-Saved 234 rows × 2 columns to results/table1/work/meta.tsv (index kept)
-Saved 234 rows × 22 columns to results/table1/work/data.tsv
-Saved 234 rows × 24 columns to results/table1/work/all_data_merged.tsv
-[filter] Dtype 'bool' columns: kept 8/24
-[filter] Saved filtered output to: results/table1/work/all_stats/categories.tsv
-[filter] Dtype 'number' columns: kept 16/24
-[filter] Saved filtered output to: results/table1/work/all_stats/numbers.tsv
-[INFO] Dropped 0 rows with missing values (234 → 234).
-[INFO] Generated 256 test results.
-[INFO] Dropped 0 rows with missing values (234 → 234).
-[INFO] Generated 56 Fisher tests.
-Saved 552 rows × 4 columns to results/table1/work/all_stats/merged_stats.tsv
-[filter] Query '(source == "Condition, MAM")': kept 23/552
-[filter] Saved filtered output to: results/table1/work/all_stats/merged_stats_MAMstats.tsv
-✅ Saved renamed DataFrame → results/table1/work/all_stats/merged_stats_MAMstats_rename.tsv
-Saved 23 rows × 2 columns to results/table1/work/all_stats/merged_stats_MAMstats_vals.tsv (index dropped)
-[filter] Query '(`Condition, MAM` == True)': kept 159/234
-[filter] Saved filtered output to: results/table1/work/meta_oh_MAM.tsv
-Saved 159 rows × 24 columns to results/table1/work/MAM_data_merged.tsv
-[filter] Dtype 'bool' columns: kept 8/24
-[filter] Saved filtered output to: results/table1/work/MAM_stats/categories.tsv
-[filter] Dtype 'number' columns: kept 16/24
-[filter] Saved filtered output to: results/table1/work/MAM_stats/numbers.tsv
-[INFO] Dropped 0 rows with missing values (159 → 159).
-[INFO] Generated 224 test results.
-[INFO] Dropped 0 rows with missing values (159 → 159).
-[INFO] Generated 56 Fisher tests.
-Saved 520 rows × 4 columns to results/table1/work/MAM_stats/merged_stats.tsv
-[filter] Query '(source == "Feed, ERUSF (B)")': kept 23/520
-[filter] Saved filtered output to: results/table1/work/MAM_stats/merged_stats_Feedstats.tsv
-✅ Saved renamed DataFrame → results/table1/work/MAM_stats/merged_stats_Feedstats_rename.tsv
-Saved 23 rows × 2 columns to results/table1/work/MAM_stats/merged_stats_Feedstats_vals.tsv (index dropped)
-Saved 22 rows × 4 columns to results/table1/work/merged.tsv
-Saved 22 rows × 6 columns to results/table1/work/merged_stats.tsv
-Successfully processed 22 rows.
-Saved results to: results/table1/work/merged_stats_fdr.tsv
-Successfully processed 22 rows.
-Saved results to: results/table1/work/merged_stats_fdr_2.tsv
-</data>
-  <data key="d9"></data>
-  <data key="d10">28878</data>
-  <data key="d11">0</data>
-</node>
-<node id="78c8d135-ef42-4645-bc41-820a809c493c">
-  <data key="d3">mixedlm.py \
+      <data key="d9" />
+      <data key="d10">2714</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="78c8d135-ef42-4645-bc41-820a809c493c">
+      <data key="d3">mixedlm.py \
   -i results/filtered/mothers.tsv \
   -m results/filtered/meta.tsv \
   -o results/mothers_modelout.tsv</data>
-  <data key="d4">341.9133712695664</data>
-  <data key="d5">147.42620345725305</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; mixedlm.py \
+      <data key="d4">341.9133712695664</data>
+      <data key="d5">147.42620345725305</data>
+      <data key="d6">ran</data>
+      <data key="d7">bash -c '. env.sh &amp;&amp; mixedlm.py \
   -i results/filtered/mothers.tsv \
   -m results/filtered/meta.tsv \
   -o results/mothers_modelout.tsv'</data>
-  <data key="d8">['metatoolkit/metatoolkit/mixedlm.py', '-i', 'results/filtered/mothers.tsv', '-m', 'results/filtered/meta.tsv', '-o', 'results/mothers_modelout.tsv']
+      <data key="d8">['metatoolkit/metatoolkit/mixedlm.py', '-i', 'results/filtered/mothers.tsv', '-m', 'results/filtered/meta.tsv', '-o', 'results/mothers_modelout.tsv']
 No formula supplied → Using all metadata columns:
   Sex + Ethnicity + Condition + Feed + Recovery + Delivery_Mode + Supplementation + BF + PoB
 No grouping variable supplied → Models will be OLS
 ✓ Results saved to: results/mothers_modelout.tsv
 </data>
-  <data key="d9">
+      <data key="d9">
 Fitting models:   0%|          | 0/20 [00:00&lt;?, ?it/s]
 Fitting models:  65%|██████▌   | 13/20 [00:00&lt;00:00, 127.51it/s]
 Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 133.35it/s]
 </data>
-  <data key="d10">5211</data>
-  <data key="d11">0</data>
-</node>
-<node id="be560393-d428-4755-8f8c-096cc59441f0">
-  <data key="d3">box.py \
+      <data key="d10">5211</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="be560393-d428-4755-8f8c-096cc59441f0">
+      <data key="d3">box.py \
   results/filtered/mothers.tsv \
   -x Recovery \
   -y maternal_bmi \
   --meta results/filtered/meta.tsv \
   -o results/recovery_MAMatbirth_box.svg</data>
-  <data key="d4">696.1347534558384</data>
-  <data key="d5">131.52877459170256</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp;  box.py \
+      <data key="d4">739.3967736715435</data>
+      <data key="d5">107.49431891631085</data>
+      <data key="d6">ran</data>
+      <data key="d7">bash -c '. env.sh &amp;&amp;  box.py \
   results/filtered/mothers.tsv \
   -x Recovery \
   -y maternal_bmi \
   --meta results/filtered/meta.tsv \
   -o results/recovery_MAMatbirth_box.svg'</data>
-  <data key="d8">Index(['Age', 'M_Num', 'Menarche', 'Pregnanc', 'live_bir', 'BDA', 'MAMatBirth',
+      <data key="d8">Index(['Age', 'M_Num', 'Menarche', 'Pregnanc', 'live_bir', 'BDA', 'MAMatBirth',
        'FacilityDelivered', 'Twin', 'Caesarian', 'ANC', 'Supple', 'Hyperten',
        'Diabetes', 'Prenatal', 'Depress', 'Tetanus', 'Weight', 'Height',
        'maternal_bmi', 'Sex', 'Ethnicity', 'Condition', 'Feed', 'Recovery',
        'Delivery_Mode', 'Supplementation', 'BF', 'PoB'],
       dtype='object')
 </data>
-  <data key="d9"></data>
-  <data key="d10">5253</data>
-  <data key="d11">0</data>
-</node>
-<node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
-  <data key="d3">workforce code/quality.wf</data>
-  <data key="d4">347.2412576013534</data>
-  <data key="d5">-203.43359993118</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
-  results/cleaned/quality.tsv \
-  --group_by Feed timepoint \
-  --func mean std \
-  --meta results/filtered/timemeta.tsv \
-  --output results/quality_group.tsv'</data>
-  <data key="d8">                          hq_read_depth_million_reads_mean  ...  timepoint_std
-Feed           timepoint                                    ...               
-ERUSF (B)      0                                 41.304808  ...            0.0
-               12                                40.696358  ...            0.0
-               52                                46.906099  ...            0.0
-Local RUSF (A) 0                                 39.541742  ...            0.0
-               12                                41.825206  ...            0.0
-               52                                44.704357  ...            0.0
+      <data key="d9" />
+      <data key="d10">5253</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+      <data key="d3">workforce web code/quality.wf</data>
+      <data key="d4">343.77423531597964</data>
+      <data key="d5">-158.85140718251085</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/quality.wf'</data>
+      <data key="d8">Opening workspace ws_891aa097 in browser: http://127.0.0.1:5049/workspace/ws_891aa097
+workspace_id: ws_891aa097
+workfile: /home/tpor598/recovery/code/quality.wf
+</data>
+      <data key="d9" />
+      <data key="d10">9408</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="590f7132-e567-418c-bc2e-86a80543bc37">
+      <data key="d3">workforce web code/setup.wf</data>
+      <data key="d4">-74.03515587451557</data>
+      <data key="d5">-56.872208668167254</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/setup.wf'</data>
+      <data key="d8">Opening workspace ws_e1861e15 in browser: http://127.0.0.1:5049/workspace/ws_e1861e15
+workspace_id: ws_e1861e15
+workfile: /home/tpor598/recovery/code/setup.wf
+</data>
+      <data key="d9" />
+      <data key="d10">12321</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
+      <data key="d3">workforce web code/recovery_rates.wf</data>
+      <data key="d4">346.30510651960316</data>
+      <data key="d5">-99.02635530952847</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/recovery_rates.wf'</data>
+      <data key="d8">Opening workspace ws_55637d4a in browser: http://127.0.0.1:5049/workspace/ws_55637d4a
+workspace_id: ws_55637d4a
+workfile: /home/tpor598/recovery/code/recovery_rates.wf
+</data>
+      <data key="d9" />
+      <data key="d10">9526</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
+      <data key="d3">workforce web code/survival.wf</data>
+      <data key="d4">343.7694989588626</data>
+      <data key="d5">-215.74646947475162</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/survival.wf'</data>
+      <data key="d8">Opening workspace ws_89e43ddf in browser: http://127.0.0.1:5049/workspace/ws_89e43ddf
+workspace_id: ws_89e43ddf
+workfile: /home/tpor598/recovery/code/survival.wf
+</data>
+      <data key="d9" />
+      <data key="d10">9274</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="58045259-e97d-47ba-82b3-e76bee82429b">
+      <data key="d3">workforce web code/baseline_change.wf</data>
+      <data key="d4">341.925037613242</data>
+      <data key="d5">-14.697464820888392</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/baseline_change.wf'</data>
+      <data key="d8">Opening workspace ws_e23addbe in browser: http://127.0.0.1:5049/workspace/ws_e23addbe
+workspace_id: ws_e23addbe
+workfile: /home/tpor598/recovery/code/baseline_change.wf
+</data>
+      <data key="d9" />
+      <data key="d10">9778</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="689794d8-0cd7-4ff3-8b5f-000dde89a722">
+      <data key="d3">workforce web code/healthy_change.wf</data>
+      <data key="d4">337.7249311814259</data>
+      <data key="d5">44.488682974078145</data>
+      <data key="d6">ran</data>
+      <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/healthy_change.wf'</data>
+      <data key="d8">Opening workspace ws_067e70c7 in browser: http://127.0.0.1:5049/workspace/ws_067e70c7
+workspace_id: ws_067e70c7
+workfile: /home/tpor598/recovery/code/healthy_change.wf
+</data>
+      <data key="d9" />
+      <data key="d10">9906</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
+      <data key="d3">makesupptable.py</data>
+      <data key="d4">822.2197643385547</data>
+      <data key="d5">-116.12926265135556</data>
+      <data key="d6" />
+    </node>
+    <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
+      <data key="d12">674066e0-8334-4461-80a0-f6324b4d6ad0</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="78c8d135-ef42-4645-bc41-820a809c493c" target="be560393-d428-4755-8f8c-096cc59441f0">
+      <data key="d12">5c2f1a52-abf2-4f61-8f69-87a3d26c66e1</data>
+      <data key="d14" />
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="78c8d135-ef42-4645-bc41-820a809c493c">
+      <data key="d12">bb3c2a50-1f19-4563-bd85-6ce89d48ddf0</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="f3f51679-47bd-4d95-b166-0773770b99c8">
+      <data key="d12">b311d0a6-9df3-4ab1-8c76-621b3b52bafe</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="ca7c9851-bdcc-4427-978e-608038a9bc0e">
+      <data key="d12">b7cbcf0e-c6b0-4ffe-b6a7-11c03a6b8f79</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
+      <data key="d12">9085fcdd-3fe1-4696-9137-06583f279c6f</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
+      <data key="d12">9987c01a-83fd-4898-a1f3-c1f0ceba74c0</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="58045259-e97d-47ba-82b3-e76bee82429b">
+      <data key="d12">773c3ed0-780d-4b1b-8e7d-9b058213188f</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="689794d8-0cd7-4ff3-8b5f-000dde89a722">
+      <data key="d12">369fd9be-0bcc-4320-b404-08fa52603d9b</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="58045259-e97d-47ba-82b3-e76bee82429b" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
+      <data key="d12">a38d4152-887f-469e-90b8-3624b087d7b7</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <edge source="689794d8-0cd7-4ff3-8b5f-000dde89a722" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
+      <data key="d12">52cf5527-a261-4266-894b-6b48e8c8bf22</data>
+      <data key="d13">blocking</data>
+    </edge>
+    <data key="d0">bash -c '. env.sh 
+</data>
+    <data key="d1">'
 
-[6 rows x 4 columns]
 </data>
-  <data key="d9"></data>
-  <data key="d10">92232</data>
-  <data key="d11">0</data>
-</node>
-<node id="590f7132-e567-418c-bc2e-86a80543bc37">
-  <data key="d3">workforce code/setup.wf</data>
-  <data key="d4">-74.03515587451557</data>
-  <data key="d5">-56.872208668167254</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; workforce run \
-  code/setup.wf \
-  --wrapper "bash -c '\''cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; {}'\''"'</data>
-  <data key="d8"></data>
-  <data key="d9">2026-03-13 14:59:38,092 - workforce.run.client - INFO - Runner client starting for http://127.0.0.1:5049/workspace/ws_e1861e15
-2026-03-13 14:59:38,092 - workforce.run.client - INFO - Initial nodes: None
-2026-03-13 14:59:38,092 - workforce.run.client - INFO - Connecting to server via Socket.IO...
-2026-03-13 14:59:38,096 - workforce.run.client - INFO - Runner connected to http://127.0.0.1:5049/workspace/ws_e1861e15
-2026-03-13 14:59:38,096 - workforce.run.client - INFO - Posting /run to server with payload: {'nodes': [], 'socketio_sid': 'e58MSLLmzVGVDgHyAAA0', 'workfile_path': '/home/tpor598/recovery/code/setup.wf'}...
-2026-03-13 14:59:38,105 - workforce.run.client - INFO - Runner associated with run_id=98e130b7-46ce-4a0a-960b-62d0088fb8f8
-2026-03-13 14:59:38,105 - workforce.run.client - INFO - Waiting for node_ready events...
-2026-03-13 14:59:38,150 - workforce.run.client - INFO - Received node_ready for 04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7
-2026-03-13 14:59:38,151 - workforce.run.client - INFO - --&gt; Executing node: #rsync -aurvP $data .
-echo setup (04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7)
-2026-03-13 14:59:38,152 - workforce.run.client - INFO - Received node_ready for 246364a8-29bd-49c2-a045-ceb068383c79
-2026-03-13 14:59:38,152 - workforce.run.client - INFO - --&gt; Executing node: cat conf/notimedatasets.txt conf/timedatasets.txt &gt; conf/all_datasets.txt (246364a8-29bd-49c2-a045-ceb068383c79)
-2026-03-13 14:59:38,153 - workforce.run.client - INFO - Process 04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7 started with PID 16608
-2026-03-13 14:59:38,156 - workforce.run.client - INFO - Process 246364a8-29bd-49c2-a045-ceb068383c79 started with PID 16611
-2026-03-13 14:59:38,198 - workforce.run.client - INFO - --&gt; Node 246364a8-29bd-49c2-a045-ceb068383c79 completed successfully
-2026-03-13 14:59:38,204 - workforce.run.client - INFO - --&gt; Node 04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7 completed successfully
-2026-03-13 14:59:38,256 - workforce.run.client - INFO - Received node_ready for 0dabf5df-0bf6-4173-80b2-b30ff135acf8
-2026-03-13 14:59:38,256 - workforce.run.client - INFO - --&gt; Executing node: mkdir -p results/cleaned (0dabf5df-0bf6-4173-80b2-b30ff135acf8)
-2026-03-13 14:59:38,258 - workforce.run.client - INFO - Process 0dabf5df-0bf6-4173-80b2-b30ff135acf8 started with PID 16659
-2026-03-13 14:59:38,329 - workforce.run.client - INFO - --&gt; Node 0dabf5df-0bf6-4173-80b2-b30ff135acf8 completed successfully
-2026-03-13 14:59:38,459 - workforce.run.client - INFO - Received node_ready for build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed
-2026-03-13 14:59:38,460 - workforce.run.client - INFO - --&gt; Executing node: format_microbiome_samplesheet.py (build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed)
-2026-03-13 14:59:38,464 - workforce.run.client - INFO - Process build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed started with PID 16719
-2026-03-13 14:59:38,474 - workforce.run.client - INFO - Received node_ready for build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd
-2026-03-13 14:59:38,474 - workforce.run.client - INFO - --&gt; Executing node: format_anthro.py (build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd)
-2026-03-13 14:59:38,478 - workforce.run.client - INFO - Process build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd started with PID 16730
-2026-03-13 14:59:38,496 - workforce.run.client - INFO - Received node_ready for build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2
-2026-03-13 14:59:38,497 - workforce.run.client - INFO - --&gt; Executing node: format_head.py (build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2)
-2026-03-13 14:59:38,507 - workforce.run.client - INFO - Process build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2 started with PID 16743
-2026-03-13 14:59:38,517 - workforce.run.client - INFO - Received node_ready for build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e
-2026-03-13 14:59:38,517 - workforce.run.client - INFO - --&gt; Executing node: format_surveillance.py (build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e)
-2026-03-13 14:59:38,528 - workforce.run.client - INFO - Process build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e started with PID 16752
-2026-03-13 14:59:38,541 - workforce.run.client - INFO - Received node_ready for build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8
-2026-03-13 14:59:38,542 - workforce.run.client - INFO - --&gt; Executing node: format_genetics.py (build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8)
-2026-03-13 14:59:38,549 - workforce.run.client - INFO - Process build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8 started with PID 16763
-2026-03-13 14:59:38,570 - workforce.run.client - INFO - Received node_ready for build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e
-2026-03-13 14:59:38,571 - workforce.run.client - INFO - --&gt; Executing node: format_bfpob.py (build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e)
-2026-03-13 14:59:38,584 - workforce.run.client - INFO - Process build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e started with PID 16774
-2026-03-13 14:59:38,625 - workforce.run.client - INFO - Received node_ready for build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3
-2026-03-13 14:59:38,630 - workforce.run.client - INFO - --&gt; Executing node: format_ses.py (build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3)
-2026-03-13 14:59:38,673 - workforce.run.client - INFO - Process build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3 started with PID 16811
-2026-03-13 14:59:38,675 - workforce.run.client - INFO - Received node_ready for build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067
-2026-03-13 14:59:38,677 - workforce.run.client - INFO - --&gt; Executing node: format_feedsandrecovery.py (build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067)
-2026-03-13 14:59:38,710 - workforce.run.client - INFO - Process build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067 started with PID 16831
-2026-03-13 14:59:38,725 - workforce.run.client - INFO - Received node_ready for build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850
-2026-03-13 14:59:38,729 - workforce.run.client - INFO - --&gt; Executing node: format_deliverysupp.py (build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850)
-2026-03-13 14:59:38,739 - workforce.run.client - INFO - Process build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850 started with PID 16840
-2026-03-13 14:59:38,817 - workforce.run.client - INFO - Received node_ready for build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983
-2026-03-13 14:59:38,829 - workforce.run.client - INFO - --&gt; Executing node: format_vitamin.py (build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983)
-2026-03-13 14:59:38,834 - workforce.run.client - INFO - Received node_ready for build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3
-2026-03-13 14:59:38,834 - workforce.run.client - INFO - --&gt; Executing node: format_sleep.py (build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3)
-2026-03-13 14:59:38,839 - workforce.run.client - INFO - Received node_ready for 9b629faa-9494-44b8-9167-ac7b172d5af8
-2026-03-13 14:59:38,845 - workforce.run.client - INFO - --&gt; Executing node: wget -O results/mpa.nwk \
-  http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk (9b629faa-9494-44b8-9167-ac7b172d5af8)
-2026-03-13 14:59:38,862 - workforce.run.client - INFO - Process 9b629faa-9494-44b8-9167-ac7b172d5af8 started with PID 16901
-2026-03-13 14:59:38,868 - workforce.run.client - INFO - Process build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3 started with PID 16905
-2026-03-13 14:59:38,870 - workforce.run.client - INFO - Process build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983 started with PID 16899
-2026-03-13 14:59:38,894 - workforce.run.client - INFO - Received node_ready for build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b
-2026-03-13 14:59:38,894 - workforce.run.client - INFO - --&gt; Executing node: format_lipids.py (build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b)
-2026-03-13 14:59:38,918 - workforce.run.client - INFO - Process build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b started with PID 16928
-2026-03-13 14:59:38,994 - workforce.run.client - INFO - Received node_ready for 54aa994b-162d-49c0-a6ab-94a10c646e86
-2026-03-13 14:59:39,001 - workforce.run.client - INFO - --&gt; Executing node: rm -rf results/census
-mkdir results/census (54aa994b-162d-49c0-a6ab-94a10c646e86)
-2026-03-13 14:59:39,025 - workforce.run.client - INFO - Received node_ready for beaa0972-99c9-41ec-8d3f-0571fa49cb04
-2026-03-13 14:59:39,029 - workforce.run.client - INFO - Process 54aa994b-162d-49c0-a6ab-94a10c646e86 started with PID 16966
-2026-03-13 14:59:39,033 - workforce.run.client - INFO - --&gt; Executing node: unzip -o \
-  -d results/aaunzipped \
-  data/RE_\ M4EFaD\ amino\ acid\ measurements.zip (beaa0972-99c9-41ec-8d3f-0571fa49cb04)
-2026-03-13 14:59:39,062 - workforce.run.client - INFO - Process beaa0972-99c9-41ec-8d3f-0571fa49cb04 started with PID 16985
-2026-03-13 14:59:39,070 - workforce.run.client - INFO - Received node_ready for 403c9095-7c10-40b5-b31a-e570ddec6c56
-2026-03-13 14:59:39,077 - workforce.run.client - INFO - --&gt; Executing node: format_mothers.py (403c9095-7c10-40b5-b31a-e570ddec6c56)
-2026-03-13 14:59:39,115 - workforce.run.client - INFO - Process 403c9095-7c10-40b5-b31a-e570ddec6c56 started with PID 17000
-2026-03-13 14:59:39,138 - workforce.run.client - INFO - --&gt; Node 54aa994b-162d-49c0-a6ab-94a10c646e86 completed successfully
-2026-03-13 14:59:39,180 - workforce.run.client - INFO - --&gt; Node beaa0972-99c9-41ec-8d3f-0571fa49cb04 completed successfully
-2026-03-13 14:59:39,789 - workforce.run.client - INFO - --&gt; Node build_database.graphml::cd872bfc-9e1b-4a9f-8d8c-7ca7ca8bc4d2 completed successfully
-2026-03-13 14:59:40,194 - workforce.run.client - INFO - Received node_ready for e01d74fd-8601-460e-858c-2f6b0be61422
-2026-03-13 14:59:40,198 - workforce.run.client - INFO - --&gt; Executing node: wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
- -O results/census/census.xlsx (e01d74fd-8601-460e-858c-2f6b0be61422)
-2026-03-13 14:59:40,231 - workforce.run.client - INFO - Process e01d74fd-8601-460e-858c-2f6b0be61422 started with PID 17169
-2026-03-13 14:59:40,254 - workforce.run.client - INFO - --&gt; Node build_database.graphml::83e42192-9d98-4845-8f06-37bd40043e7e completed successfully
-2026-03-13 14:59:40,289 - workforce.run.client - INFO - Received node_ready for 3a43cff2-d4a9-4809-8fe3-f3ec751051f8
-2026-03-13 14:59:40,290 - workforce.run.client - INFO - --&gt; Executing node: wget https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
-  -O results/census/census_labels.xlsx (3a43cff2-d4a9-4809-8fe3-f3ec751051f8)
-2026-03-13 14:59:40,317 - workforce.run.client - INFO - Process 3a43cff2-d4a9-4809-8fe3-f3ec751051f8 started with PID 17180
-2026-03-13 14:59:40,394 - workforce.run.client - INFO - --&gt; Node build_database.graphml::05db6a7e-569f-41d8-8867-b43793540983 completed successfully
-2026-03-13 14:59:40,434 - workforce.run.client - INFO - Received node_ready for build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5
-2026-03-13 14:59:40,441 - workforce.run.client - INFO - --&gt; Executing node: format_aa.py (build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5)
-2026-03-13 14:59:40,470 - workforce.run.client - INFO - Process build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5 started with PID 17210
-2026-03-13 14:59:40,531 - workforce.run.client - INFO - --&gt; Node build_database.graphml::9cb8a797-ddb0-4045-80d1-b1d50aab3067 completed successfully
-2026-03-13 14:59:40,569 - workforce.run.client - INFO - --&gt; Node build_database.graphml::df3700d3-effc-4b0e-9c60-0402a49b05d3 completed successfully
-2026-03-13 14:59:40,604 - workforce.run.client - INFO - --&gt; Node build_database.graphml::f6179b7d-c264-48c0-ad22-da0e820bb850 completed successfully
-2026-03-13 14:59:40,702 - workforce.run.client - INFO - --&gt; Node build_database.graphml::21c025ab-621a-4ce7-97bc-1b8a97a135e3 completed successfully
-2026-03-13 14:59:40,787 - workforce.run.client - INFO - --&gt; Node build_database.graphml::5d97d099-7463-4e45-9af9-5b92507b33dd completed successfully
-2026-03-13 14:59:40,842 - workforce.run.client - INFO - --&gt; Node 403c9095-7c10-40b5-b31a-e570ddec6c56 completed successfully
-2026-03-13 14:59:41,025 - workforce.run.client - INFO - Received node_ready for 9fcf4732-486d-49fa-b99c-2e90a7bc15e9
-2026-03-13 14:59:41,026 - workforce.run.client - INFO - --&gt; Executing node: parallel -j1 \
-  onehot.py \
-    results/cleaned/{}.tsv \
-    --min-prevalence 0.1 \
-    --drop-onehot-values "No" \
-    --dtype "bool" \
-    -o results/cleaned/{}.tsv \
-  ::: education household media_consumption family sanitation (9fcf4732-486d-49fa-b99c-2e90a7bc15e9)
-2026-03-13 14:59:41,036 - workforce.run.client - INFO - Process 9fcf4732-486d-49fa-b99c-2e90a7bc15e9 started with PID 17324
-2026-03-13 14:59:41,147 - workforce.run.client - INFO - Received node_ready for build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee
-2026-03-13 14:59:41,148 - workforce.run.client - INFO - --&gt; Executing node: merge.py \
-  results/cleaned/premeta.tsv \
-  results/cleaned/feedandrecovery.tsv \
-  results/cleaned/deliverysupp.tsv \
-  results/cleaned/bfpob.tsv \
-  -j outer \
-  -o results/cleaned/meta.tsv (build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee)
-2026-03-13 14:59:41,157 - workforce.run.client - INFO - Process build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee started with PID 17341
-2026-03-13 14:59:41,180 - workforce.run.client - INFO - Received node_ready for 67aba30b-09d2-4052-94cd-9de174d0cdd3
-2026-03-13 14:59:41,180 - workforce.run.client - INFO - --&gt; Executing node: filter.py \
-  -q "~subjectID.str.startswith('LCC3')" \
-  results/cleaned/mothers.tsv \
-  -o results/filtered/mothers.tsv (67aba30b-09d2-4052-94cd-9de174d0cdd3)
-2026-03-13 14:59:41,192 - workforce.run.client - INFO - Process 67aba30b-09d2-4052-94cd-9de174d0cdd3 started with PID 17352
-2026-03-13 14:59:41,235 - workforce.run.client - INFO - --&gt; Node build_database.graphml::d0fd12ff-67da-4fa5-9bb0-cbd90d2d01ed completed successfully
-2026-03-13 14:59:41,269 - workforce.run.client - INFO - --&gt; Node 9b629faa-9494-44b8-9167-ac7b172d5af8 completed successfully
-2026-03-13 14:59:41,425 - workforce.run.client - INFO - Received node_ready for build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db
-2026-03-13 14:59:41,426 - workforce.run.client - INFO - --&gt; Executing node: format_humann.py (build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db)
-2026-03-13 14:59:41,450 - workforce.run.client - INFO - Received node_ready for build_database.graphml::00668448-144c-4299-9b79-bcf595c13524
-2026-03-13 14:59:41,453 - workforce.run.client - INFO - --&gt; Executing node: format_metaphlan.py (build_database.graphml::00668448-144c-4299-9b79-bcf595c13524)
-2026-03-13 14:59:41,458 - workforce.run.client - INFO - Process build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db started with PID 17444
-2026-03-13 14:59:41,478 - workforce.run.client - INFO - Process build_database.graphml::00668448-144c-4299-9b79-bcf595c13524 started with PID 17450
-2026-03-13 14:59:41,525 - workforce.run.client - INFO - Received node_ready for build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73
-2026-03-13 14:59:41,531 - workforce.run.client - INFO - --&gt; Executing node: format_kneaddata.py (build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73)
-2026-03-13 14:59:41,565 - workforce.run.client - INFO - Process build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73 started with PID 17474
-2026-03-13 14:59:41,800 - workforce.run.client - INFO - --&gt; Node build_database.graphml::870e78d5-9472-4ecb-9a0e-36a42484ccd8 completed successfully
-2026-03-13 14:59:42,151 - workforce.run.client - INFO - --&gt; Node build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee completed successfully
-2026-03-13 14:59:42,249 - workforce.run.client - INFO - Received node_ready for 67d6bf85-2665-4c80-b457-43e490d6fe20
-2026-03-13 14:59:42,250 - workforce.run.client - INFO - --&gt; Executing node: filter.py \
-  -q "~subjectID.str.startswith('LCC3')" \
-  results/cleaned/meta.tsv \
-  -o results/filtered/meta.tsv (67d6bf85-2665-4c80-b457-43e490d6fe20)
-2026-03-13 14:59:42,256 - workforce.run.client - INFO - Process 67d6bf85-2665-4c80-b457-43e490d6fe20 started with PID 17557
-2026-03-13 14:59:42,318 - workforce.run.client - INFO - --&gt; Node 67aba30b-09d2-4052-94cd-9de174d0cdd3 completed successfully
-2026-03-13 14:59:42,462 - workforce.run.client - INFO - --&gt; Node build_database.graphml::69d14a60-0747-4c78-88e5-ac83dda55b73 completed successfully
-2026-03-13 14:59:42,622 - workforce.run.client - INFO - --&gt; Node build_database.graphml::2694eca6-b3f3-48d3-9b43-03ad8a68dcb5 completed successfully
-2026-03-13 14:59:43,431 - workforce.run.client - INFO - --&gt; Node 67d6bf85-2665-4c80-b457-43e490d6fe20 completed successfully
-2026-03-13 14:59:44,104 - workforce.run.client - INFO - --&gt; Node 3a43cff2-d4a9-4809-8fe3-f3ec751051f8 completed successfully
-2026-03-13 14:59:44,567 - workforce.run.client - INFO - --&gt; Node e01d74fd-8601-460e-858c-2f6b0be61422 completed successfully
-2026-03-13 14:59:46,330 - workforce.run.client - INFO - --&gt; Node 9fcf4732-486d-49fa-b99c-2e90a7bc15e9 completed successfully
-2026-03-13 14:59:46,509 - workforce.run.client - INFO - --&gt; Node build_database.graphml::00668448-144c-4299-9b79-bcf595c13524 completed successfully
-2026-03-13 14:59:46,657 - workforce.run.client - INFO - Received node_ready for d4e4b648-4abc-47b1-b072-7227e8023ead
-2026-03-13 14:59:46,658 - workforce.run.client - INFO - --&gt; Executing node: extract_taxa.py \
-  results/cleaned/metaphlan.tsv \
-  --keep-parent \
-  -l "t__" \
-  -o results/cleaned/species.tsv (d4e4b648-4abc-47b1-b072-7227e8023ead)
-2026-03-13 14:59:46,679 - workforce.run.client - INFO - Process d4e4b648-4abc-47b1-b072-7227e8023ead started with PID 17721
-2026-03-13 14:59:46,729 - workforce.run.client - INFO - Received node_ready for 694c1739-f526-421a-a8ec-99152294abf4
-2026-03-13 14:59:46,730 - workforce.run.client - INFO - --&gt; Executing node: alpha_diversity.py \
-  results/cleaned/metaphlan.tsv \
-  -t results/mpa.nwk \
-  -o results/cleaned/alpha_diversity.tsv (694c1739-f526-421a-a8ec-99152294abf4)
-2026-03-13 14:59:46,746 - workforce.run.client - INFO - Process 694c1739-f526-421a-a8ec-99152294abf4 started with PID 17734
-2026-03-13 14:59:50,004 - workforce.run.client - INFO - --&gt; Node d4e4b648-4abc-47b1-b072-7227e8023ead completed successfully
-2026-03-13 14:59:50,549 - workforce.run.client - INFO - --&gt; Node build_database.graphml::41f31161-2c0b-447f-be2d-6dd0be0eb69e completed successfully
-2026-03-13 14:59:50,688 - workforce.run.client - INFO - Received node_ready for 99a1770b-1153-428d-8172-e783bf221b38
-2026-03-13 14:59:50,689 - workforce.run.client - INFO - --&gt; Executing node: parallel -j1 \
-filter.py \
-  -q "~subjectID.str.startswith\(\'LCC3\'\)" \
-  results/cleaned/{}.tsv \
-  -o results/filtered/{}.tsv \
-&lt; conf/notimedatasets.txt (99a1770b-1153-428d-8172-e783bf221b38)
-2026-03-13 14:59:50,693 - workforce.run.client - INFO - Process 99a1770b-1153-428d-8172-e783bf221b38 started with PID 17818
-2026-03-13 14:59:57,480 - workforce.run.client - INFO - --&gt; Node 99a1770b-1153-428d-8172-e783bf221b38 completed successfully
-2026-03-13 15:00:03,186 - workforce.run.client - INFO - --&gt; Node build_database.graphml::d5574efe-1475-4d9b-8053-8dc04329427b completed successfully
-2026-03-13 15:00:03,282 - workforce.run.client - INFO - Received node_ready for 9780f658-26ff-4a9b-a03f-a57be3e04748
-2026-03-13 15:00:03,283 - workforce.run.client - INFO - --&gt; Executing node: scale.py log \
-  results/cleaned/unlogged_lipids.tsv \
-  -o results/cleaned/lipids.tsv (9780f658-26ff-4a9b-a03f-a57be3e04748)
-2026-03-13 15:00:03,287 - workforce.run.client - INFO - Process 9780f658-26ff-4a9b-a03f-a57be3e04748 started with PID 17956
-2026-03-13 15:00:06,659 - workforce.run.client - INFO - --&gt; Node 9780f658-26ff-4a9b-a03f-a57be3e04748 completed successfully
-2026-03-13 15:00:18,031 - workforce.run.client - INFO - --&gt; Node build_database.graphml::4d6ac0a0-9a09-4e4b-91bb-52a4c0d083db completed successfully
-2026-03-13 15:00:52,797 - workforce.run.client - INFO - --&gt; Node 694c1739-f526-421a-a8ec-99152294abf4 completed successfully
-2026-03-13 15:00:52,958 - workforce.run.client - INFO - Received node_ready for 9430f225-f079-4a7f-bfd9-a272b950617f
-2026-03-13 15:00:52,959 - workforce.run.client - INFO - --&gt; Executing node: parallel -j1 \
-filter.py \
-  -q "~sampleID.str.startswith\(\'LCC3\'\)" \
-  results/cleaned/{}.tsv \
-  -o results/filtered/{}.tsv \
-&lt; conf/timedatasets.txt (9430f225-f079-4a7f-bfd9-a272b950617f)
-2026-03-13 15:00:52,963 - workforce.run.client - INFO - Process 9430f225-f079-4a7f-bfd9-a272b950617f started with PID 18054
-2026-03-13 15:00:56,349 - workforce.run.client - INFO - --&gt; Node 9430f225-f079-4a7f-bfd9-a272b950617f completed successfully
-2026-03-13 15:00:56,419 - workforce.run.client - INFO - Received node_ready for 9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83
-2026-03-13 15:00:56,419 - workforce.run.client - INFO - --&gt; Executing node: create_mapping.py \
-  -d results/filtered/ \
-  -i conf/timedatasets.txt \
-  -o results/filtered/mapping.tsv (9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83)
-2026-03-13 15:00:56,422 - workforce.run.client - INFO - Process 9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83 started with PID 18172
-2026-03-13 15:00:56,949 - workforce.run.client - INFO - --&gt; Node 9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83 completed successfully
-2026-03-13 15:00:56,998 - workforce.run.client - INFO - Received node_ready for 3a9d83fc-9062-4367-a6e3-510564bf386b
-2026-03-13 15:00:56,998 - workforce.run.client - INFO - --&gt; Executing node: join.py results/filtered/mapping.tsv \
-    results/filtered/meta.tsv \
-    --on subjectID \
-    -o results/filtered/timemeta.tsv (3a9d83fc-9062-4367-a6e3-510564bf386b)
-2026-03-13 15:00:57,002 - workforce.run.client - INFO - Process 3a9d83fc-9062-4367-a6e3-510564bf386b started with PID 18212
-2026-03-13 15:00:57,559 - workforce.run.client - INFO - --&gt; Node 3a9d83fc-9062-4367-a6e3-510564bf386b completed successfully
-2026-03-13 15:00:57,615 - workforce.run.client - INFO - Received node_ready for c8ef17dd-f825-46cb-a537-0c32e66b7a2f
-2026-03-13 15:00:57,616 - workforce.run.client - INFO - --&gt; Executing node: for f in $(cat conf/timedatasets.txt); do
-  splitter.py \
-    results/cleaned/${f}.tsv \
-    -m results/filtered/timemeta.tsv \
-    -col timepoint \
-    --outdir results/timepoints \
-    --reindex subjectID 
-done (c8ef17dd-f825-46cb-a537-0c32e66b7a2f)
-2026-03-13 15:00:57,618 - workforce.run.client - INFO - Process c8ef17dd-f825-46cb-a537-0c32e66b7a2f started with PID 18252
-2026-03-13 15:01:00,446 - workforce.run.client - INFO - --&gt; Node c8ef17dd-f825-46cb-a537-0c32e66b7a2f completed successfully
-2026-03-13 15:01:00,467 - workforce.run.client - INFO - Server signaled run completion. Disconnecting.
-2026-03-13 15:01:00,471 - workforce.run.client - INFO - Runner disconnected.
-</data>
-  <data key="d10">16569</data>
-  <data key="d11">0</data>
-</node>
-<node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
-  <data key="d3">workforce code/recovery_rates.wf</data>
-  <data key="d4">344.1193411615481</data>
-  <data key="d5">-155.85625461896012</data>
-  <data key="d6"></data>
-</node>
-<node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
-  <data key="d3">workforce code/survival.wf</data>
-  <data key="d4">347.23652124423637</data>
-  <data key="d5">-249.96521821046787</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; workforce code/survival.wf'</data>
-  <data key="d8"></data>
-  <data key="d9"></data>
-  <data key="d10">11811</data>
-  <data key="d11">0</data>
-</node>
-<node id="58045259-e97d-47ba-82b3-e76bee82429b">
-  <data key="d3">workforce code/baseline_change.wf</data>
-  <data key="d4">346.73173265786215</data>
-  <data key="d5">3.5679763486684237</data>
-  <data key="d6"></data>
-</node>
-<node id="689794d8-0cd7-4ff3-8b5f-000dde89a722">
-  <data key="d3">workforce code/healthy_change.wf</data>
-  <data key="d4">346.2964792131061</data>
-  <data key="d5">48.55425175526602</data>
-  <data key="d6"></data>
-</node>
-<node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
-  <data key="d3">makesupptable.py</data>
-  <data key="d4">766.9041508538281</data>
-  <data key="d5">32.651572761742415</data>
-  <data key="d6"></data>
-</node>
-<edge source="78c8d135-ef42-4645-bc41-820a809c493c" target="be560393-d428-4755-8f8c-096cc59441f0">
-  <data key="d12">5c2f1a52-abf2-4f61-8f69-87a3d26c66e1</data>
-  <data key="d13"></data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="78c8d135-ef42-4645-bc41-820a809c493c">
-  <data key="d12">bb3c2a50-1f19-4563-bd85-6ce89d48ddf0</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="f3f51679-47bd-4d95-b166-0773770b99c8">
-  <data key="d12">b311d0a6-9df3-4ab1-8c76-621b3b52bafe</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="ca7c9851-bdcc-4427-978e-608038a9bc0e">
-  <data key="d12">b7cbcf0e-c6b0-4ffe-b6a7-11c03a6b8f79</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
-  <data key="d12">9085fcdd-3fe1-4696-9137-06583f279c6f</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
-  <data key="d12">9987c01a-83fd-4898-a1f3-c1f0ceba74c0</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="58045259-e97d-47ba-82b3-e76bee82429b">
-  <data key="d12">773c3ed0-780d-4b1b-8e7d-9b058213188f</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="689794d8-0cd7-4ff3-8b5f-000dde89a722">
-  <data key="d12">369fd9be-0bcc-4320-b404-08fa52603d9b</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="58045259-e97d-47ba-82b3-e76bee82429b" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
-  <data key="d12">a38d4152-887f-469e-90b8-3624b087d7b7</data>
-  <data key="d14">blocking</data>
-</edge>
-<edge source="689794d8-0cd7-4ff3-8b5f-000dde89a722" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
-  <data key="d12">52cf5527-a261-4266-894b-6b48e8c8bf22</data>
-  <data key="d14">blocking</data>
-</edge>
-</graph></graphml>
+    <data key="d2">cd ~/recovery
+bash -c '. env.sh &amp;&amp; {}'</data>
+  </graph>
+</graphml>
