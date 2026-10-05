@@ -50,6 +50,22 @@ df = (
     .drop_duplicates()
 )  # remove duplicate, can be used for future batch effect analysis
 
+# Save community standards
+standards = df.loc[df.index.str.contains('Community')]
+
+# Assign batch numbers based on the starting characters of '*Name on tube'
+standards.loc[(standards['*Name on tube'].str[:2] == 'C1') | (standards['*Name on tube'].str[:2] == 'C2'), 'batch'] = 'batch_1'
+standards.loc[standards['*Name on tube'].str[:2] == 'C5', 'batch'] = 'batch_2'
+standards.loc[standards['*Name on tube'].str[:1] == 'J', 'batch'] = 'batch_3'
+standards.loc[standards['*Name on tube'].str[:1] == 'M', 'batch'] = 'batch_4'
+standards.loc[standards['*Name on tube'].str[:1] == 'B', 'batch'] = 'batch_5'
+standards = standards.rename(columns={'*Name on tube': 'Seq_ID'})
+standards = standards.set_index('Seq_ID')
+standards = standards.drop_duplicates(subset='batch').sort_values('batch')
+#quick fix
+standards.index = standards.index.str.replace('M298', 'M297')
+standards.to_csv('results/cleaned/standards.tsv', sep='\t')
+
 # Remove controls by filtering index
 df = df.loc[df.index.str.startswith('LCC')]
 

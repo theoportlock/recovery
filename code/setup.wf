@@ -844,8 +844,8 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   results/cleaned/metaphlan.tsv \
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv</data>
-  <data key="d4">-555.276624684559</data>
-  <data key="d5">85.00485330097455</data>
+  <data key="d4">-593.3314575008544</data>
+  <data key="d5">74.85689788329577</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; alpha_diversity.py \
   results/cleaned/metaphlan.tsv \
@@ -901,8 +901,8 @@ filter.py \
   results/cleaned/{}.tsv \
   -o results/filtered/{}.tsv \
 &lt; conf/timedatasets.txt</data>
-  <data key="d4">-42.04804336009278</data>
-  <data key="d5">-131.1904761904761</data>
+  <data key="d4">-29.3630990879943</data>
+  <data key="d5">-132.45897061768594</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
 filter.py \
@@ -1398,8 +1398,8 @@ Name: count, dtype: int64
   results/filtered/meta.tsv \
   results/filtered/baseline_WLZ.tsv \
   -o results/filtered/covmeta_norename.tsv</data>
-  <data key="d4">2000.3447894635563</data>
-  <data key="d5">-19.970541716232447</data>
+  <data key="d4">1978.259018700646</data>
+  <data key="d5">-21.07483025437797</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; join.py \
   results/filtered/meta.tsv \
@@ -1462,8 +1462,8 @@ df2: 0 / 234 rows lost (0.00%)
     --outdir results/timepoints \
     --reindex subjectID 
 done</data>
-  <data key="d4">1293.5903741354068</data>
-  <data key="d5">-38.02537158849964</data>
+  <data key="d4">1231.7502159992573</data>
+  <data key="d5">-46.85967989366385</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; for f in $(cat conf/timedatasets.txt); do
   splitter.py \
@@ -1773,8 +1773,8 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
   results/timepoints/0/anthro.tsv \
   -c 'WLZ_WHZ' \
   -o results/filtered/baseline_WLZ.tsv</data>
-  <data key="d4">1670.211957157751</data>
-  <data key="d5">-12.355188545191595</data>
+  <data key="d4">1630.4575697845119</data>
+  <data key="d5">-22.293785388501362</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; select_features.py \
   results/timepoints/0/anthro.tsv \

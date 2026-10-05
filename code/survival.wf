@@ -32,7 +32,8 @@ bash -c '. env.sh &amp;&amp; {}'</data>
   <data key="d4">737.3865165287659</data>
   <data key="d5">-180.2448524635232</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; km_plot.py \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; km_plot.py \
   --input results/filtered/anthro_recovery.tsv \
   --meta results/filtered/timemeta.tsv \
   --time timepoint \
@@ -42,43 +43,8 @@ bash -c '. env.sh &amp;&amp; {}'</data>
   <data key="d8">Log-Rank Test (Local RUSF (A) vs ERUSF (B)): p-value = 0.0000
 File saved: results/survival/recovery_2sd.svg
 </data>
-  <data key="d9">Fontconfig warning: using without calling FcInit()
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-</data>
-  <data key="d10">11869</data>
+  <data key="d9"></data>
+  <data key="d10">37121</data>
   <data key="d11">0</data>
 </node>
 <node id="05dd5002-f37e-4c44-a27e-0dbc5417d732">
@@ -92,7 +58,8 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d4">742.5192190209718</data>
   <data key="d5">20.909953731590093</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; km_plot.py \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; km_plot.py \
   --input results/filtered/anthro_recovery.tsv \
   --meta results/filtered/timemeta.tsv \
   --time timepoint \
@@ -102,45 +69,8 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d8">Log-Rank Test (Local RUSF (A) vs ERUSF (B)): p-value = 0.0000
 File saved: results/survival/recovery_1sd.svg
 </data>
-  <data key="d9">Fontconfig warning: using without calling FcInit()
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial
-</data>
-  <data key="d10">11861</data>
+  <data key="d9"></data>
+  <data key="d10">37117</data>
   <data key="d11">0</data>
 </node>
 <node id="f71e9f25-96da-4733-a6c0-0cb33b890be5">
@@ -152,7 +82,8 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d4">1316.5436761597182</data>
   <data key="d5">-79.26388817296682</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; arrange_svgs.py \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; arrange_svgs.py \
   results/survival/recovery_2sd.svg \
   results/survival/recovery_1sd.svg \
   --cols 2 \
@@ -160,7 +91,7 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d8">Output written to results/survival/recovery_km.svg
 </data>
   <data key="d9"></data>
-  <data key="d10">12101</data>
+  <data key="d10">37196</data>
   <data key="d11">0</data>
 </node>
 <node id="4d244e7d-a8c6-4f18-b16a-29e3da09517e">
@@ -174,7 +105,8 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
   <data key="d4">1040.1340274181384</data>
   <data key="d5">328.7059662989474</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; cox_model.py \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; cox_model.py \
   --input results/filtered/anthro_recovery.tsv \
   --meta results/filtered/timemeta_MAM.tsv \
   --time timepoint \
@@ -190,7 +122,7 @@ findfont: Generic family 'sans-serif' not found because none of the following fa
    number of observations = 159
 number of events observed = 147
    partial log-likelihood = -618.30
-         time fit was run = 2026-04-06 18:30:50 UTC
+         time fit was run = 2026-10-05 07:42:58 UTC
 
 ---
                        coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
@@ -220,7 +152,7 @@ log-likelihood ratio test = 24.25 on 6 df
 Results saved to results/survival/recovery_2sd.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">11877</data>
+  <data key="d10">36983</data>
   <data key="d11">0</data>
 </node>
 <node id="cdfb6fc2-c48d-41fb-9a56-72bf0956e42f">
@@ -234,7 +166,8 @@ Results saved to results/survival/recovery_2sd.tsv
   <data key="d4">1033.2319633874251</data>
   <data key="d5">503.1413442718441</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; logrank.py \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; logrank.py \
   --input results/filtered/anthro_recovery.tsv \
   --meta results/filtered/timemeta_MAM.tsv \
   --time timepoint \
@@ -246,7 +179,7 @@ Results saved to results/survival/recovery_2sd.tsv
 Subjects: 159
 Groups: 2
 </data>
-  <data key="d10">11885</data>
+  <data key="d10">36989</data>
   <data key="d11">0</data>
 </node>
 <node id="5caa1422-36a2-4e53-8929-7b6111e5dded">
@@ -260,7 +193,8 @@ Groups: 2
   <data key="d4">1036.0065453871728</data>
   <data key="d5">677.5696804689604</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; cox_model.py \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; cox_model.py \
   --input results/filtered/anthro_recovery.tsv \
   --meta results/filtered/timemeta_MAM.tsv \
   --time timepoint \
@@ -276,7 +210,7 @@ Groups: 2
    number of observations = 159
 number of events observed = 75
    partial log-likelihood = -350.52
-         time fit was run = 2026-04-06 18:30:50 UTC
+         time fit was run = 2026-10-05 07:42:58 UTC
 
 ---
                        coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
@@ -306,7 +240,7 @@ log-likelihood ratio test = 17.14 on 6 df
 Results saved to results/survival/recovery_1sd.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">11893</data>
+  <data key="d10">36993</data>
   <data key="d11">0</data>
 </node>
 <node id="46347093-b1c8-4351-a34f-ddf2f546df7f">
@@ -315,11 +249,12 @@ mkdir results/survival</data>
   <data key="d4">199.40950366928524</data>
   <data key="d5">180</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/survival
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; rm -rf results/survival
 mkdir results/survival'</data>
   <data key="d8"></data>
   <data key="d9"></data>
-  <data key="d10">11838</data>
+  <data key="d10">36940</data>
   <data key="d11">0</data>
 </node>
 <edge source="91c360b7-efcc-43f7-8a08-6dd664a32a1f" target="f71e9f25-96da-4733-a6c0-0cb33b890be5">

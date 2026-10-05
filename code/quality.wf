@@ -21,40 +21,6 @@
 </data>
 <data key="d2">cd ~/nipper
 bash -c '. env.sh &amp;&amp; {}'</data>
-<node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
-  <data key="d3">sig_summary.py \
-  -i results/figure3/timechange.tsv \
-  -p 0.1 \
-  -s qval_joint \
-  -o results/figure3/timechange_summary.tsv</data>
-  <data key="d4">516.0919878957012</data>
-  <data key="d5">-267.9502910321629</data>
-  <data key="d6"></data>
-</node>
-<node id="ce6b111f-bf9d-4c19-848f-b87f6c9363cb">
-  <data key="d3">replace.py results/rda/merged_dropped.tsv \
-  --to_replace "_rda_filtered_renamed" \
-  --value "" \
-  --regex \
-  -o results/rda/rda.tsv</data>
-  <data key="d4">522.3304461287602</data>
-  <data key="d5">90.32656738672682</data>
-  <data key="d6"></data>
-</node>
-<node id="ebde5cfa-fc84-46f8-abf8-0a1cbc3833e1">
-  <data key="d3">hbar_fig3.py</data>
-  <data key="d4">1138.9738344928185</data>
-  <data key="d5">-380.5142304612128</data>
-  <data key="d6"></data>
-</node>
-<node id="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab">
-  <data key="d3">fdr.py \
-  results/rda/rda.tsv \
-  -o results/rda/rda_fdr.tsv</data>
-  <data key="d4">916.9954461287618</data>
-  <data key="d5">104.6243451645052</data>
-  <data key="d6"></data>
-</node>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
   <data key="d3">group.py \
   results/cleaned/quality.tsv \
@@ -62,8 +28,8 @@ bash -c '. env.sh &amp;&amp; {}'</data>
   --func mean std \
   --meta results/filtered/timemeta.tsv \
   --output results/quality/quality_group.tsv</data>
-  <data key="d4">9.862249344869355</data>
-  <data key="d5">-147.52590086283587</data>
+  <data key="d4">260.3975896490504</data>
+  <data key="d5">-272.2757497818743</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
   results/cleaned/quality.tsv \
@@ -89,8 +55,8 @@ Local RUSF (A) 0                                 39.541742  ...            0.0
 <node id="8f43b81b-3379-4e7e-97ec-fbebb271f13d">
   <data key="d3">rm -rf results/quality
 mkdir results/quality</data>
-  <data key="d4">-209.64296103218408</data>
-  <data key="d5">-116.11604342511231</data>
+  <data key="d4">-299.1892094426502</data>
+  <data key="d5">-269.13811349363044</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/quality
 mkdir results/quality'</data>
@@ -99,16 +65,19 @@ mkdir results/quality'</data>
   <data key="d10">92920</data>
   <data key="d11">0</data>
 </node>
-<node id="ca844ade-4343-4ed9-aba7-837c7d40f236">
-  <data key="d3"># I need to check where these others fit in</data>
-  <data key="d4">104.7787222747319</data>
-  <data key="d5">-321.5439647639541</data>
+<node id="f655a05f-f061-4a1e-af6d-e012492d9790">
+  <data key="d3">check_standards.py</data>
+  <data key="d4">282.9028626692926</data>
+  <data key="d5">-363.5038362702163</data>
   <data key="d6"></data>
 </node>
-<edge source="ce6b111f-bf9d-4c19-848f-b87f6c9363cb" target="fd240e7e-8d77-4508-9cd1-8dcc8aa469ab"/>
 <edge source="8f43b81b-3379-4e7e-97ec-fbebb271f13d" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
   <data key="d12">da68611b-4c04-4307-8d28-144b45f41e6c</data>
   <data key="d13">blocking</data>
   <data key="d14"></data>
+</edge>
+<edge source="8f43b81b-3379-4e7e-97ec-fbebb271f13d" target="f655a05f-f061-4a1e-af6d-e012492d9790">
+  <data key="d12">0ea1b62d-cef9-4be4-ab21-59a5c3900454</data>
+  <data key="d13">blocking</data>
 </edge>
 </graph></graphml>
