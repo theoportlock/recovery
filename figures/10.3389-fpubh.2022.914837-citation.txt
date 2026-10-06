@@ -1,0 +1,17 @@
+AUTHOR=Rashid Mohammed Yahya , Kebira Jemal Yusuf , Oljira Lemessa , Dheresa Merga 
+  
+TITLE=Time to Recovery From Moderate Acute Malnutrition and Its Predictors Among Children 6–59 Months of Age Enrolled in Targeted Supplementary Feeding Program in Darolebu District, Eastern Ethiopia: A Retrospective Cohort Study
+  
+JOURNAL=Frontiers in Public Health
+  
+VOLUME=Volume 10 - 2022
+  
+YEAR=2022
+  
+URL=https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.914837
+  
+DOI=10.3389/fpubh.2022.914837
+  
+ISSN=2296-2565
+  
+ABSTRACT=Background: Acute malnutrition is a major global public health problem, particularly in low and middle-income countries. A targeted supplementary feeding program is an approach recommended to address moderate acute malnutrition in food insecure settings. Preventing and treating moderate acute malnutrition requires identifying factors shown to affect the treatment outcome and duration of stay on treatment. This study aimed to determine the treatment outcome and predictors of recovery time from moderate acute malnutrition among children 6-59 months of age in Darolebu district, Eastern Ethiopia.  Methods: A retrospective cohort study design was conducted on 540 children with moderate acute malnutrition. Kaplan-Meier survival analysis was used to estimate the recovery time. Cox proportional hazard regression model was used to determine the association between the independent and the outcome variables. The proportional hazard assumption of the model was checked graphically and statistically. Any violation of the proportional hazard assumption of the model was also considered and adjusted in the analysis. Finally, a variable with P-value < 0.05 in the multivariate cox regression model was considered statistically significant. Results: The overall recovery rate was 73% (95% CI 69.4%-76.4%) with the median time to recovery of 16 weeks. Being in the age range of 24-59 months (AHR=1.24, 95% CI: 1.01-1.54), having had mid-upper arm circumference (MUAC) at admission between 11.5-11.9cm (AHR=1.27, 95% CI: 1.03-1.56), being dewormed (AHR=1.87, 95% CI: 1.34-2.61), walk for an hour or less to receive the services (AHR=1.2, 95% CI:1.02-1.89), used ready-to-use supplementary food (AHR= 1.32, 95% CI: 1.01-1.73), and being from food secured family (AHR=1.8, 95%CI: 1.38-2.39) were significant predictors of recovery time. Conclusion: The recovery rate was slightly below the accepted minimum international standard, suggesting that further work is needed to improve the treatment outcomes and mortality and morbidity associated with moderate acute malnutrition.

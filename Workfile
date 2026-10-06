@@ -33,7 +33,7 @@ workspace_id: ws_872fcc59
 workfile: /home/tpor598/recovery/code/characteristics.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">2714</data>
+  <data key="d10">7910</data>
   <data key="d11">0</data>
 </node>
 <node id="78c8d135-ef42-4645-bc41-820a809c493c">
@@ -131,7 +131,7 @@ workspace_id: ws_55637d4a
 workfile: /home/tpor598/recovery/code/recovery_rates.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">36602</data>
+  <data key="d10">8198</data>
   <data key="d11">0</data>
 </node>
 <node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
@@ -146,7 +146,7 @@ workspace_id: ws_89e43ddf
 workfile: /home/tpor598/recovery/code/survival.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">36643</data>
+  <data key="d10">8159</data>
   <data key="d11">0</data>
 </node>
 <node id="58045259-e97d-47ba-82b3-e76bee82429b">
@@ -161,7 +161,7 @@ workspace_id: ws_e23addbe
 workfile: /home/tpor598/recovery/code/baseline_change.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">1971</data>
+  <data key="d10">7577</data>
   <data key="d11">0</data>
 </node>
 <node id="689794d8-0cd7-4ff3-8b5f-000dde89a722">
@@ -176,7 +176,7 @@ workspace_id: ws_067e70c7
 workfile: /home/tpor598/recovery/code/healthy_change.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">2131</data>
+  <data key="d10">7408</data>
   <data key="d11">0</data>
 </node>
 <node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">

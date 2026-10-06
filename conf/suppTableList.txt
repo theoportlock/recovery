@@ -1,4 +1,3 @@
-results/characteristics/recipe.tsv
 results/baseline_change/maaslin/baselinechange_summary.tsv
 results/baseline_change/maaslin/baselinechange.tsv
 results/healthy_change/rec_merged.tsv

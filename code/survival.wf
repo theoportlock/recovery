@@ -79,8 +79,8 @@ File saved: results/survival/recovery_1sd.svg
   results/survival/recovery_1sd.svg \
   --cols 2 \
   -o results/survival/recovery_km.svg</data>
-  <data key="d4">1316.5436761597182</data>
-  <data key="d5">-79.26388817296682</data>
+  <data key="d4">1192.6833322305883</data>
+  <data key="d5">-64.19979228969427</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; arrange_svgs.py \
