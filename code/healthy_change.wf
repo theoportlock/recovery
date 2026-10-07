@@ -30,8 +30,8 @@ bash -c '. env.sh &amp;&amp; {}'</data>
   --hue Recovery \
   --id subjectID \
   --output results/healthy_change/allis_multiline.svg</data>
-  <data key="d4">3390.501973589391</data>
-  <data key="d5">-66.16875145479065</data>
+  <data key="d4">3556.420042844655</data>
+  <data key="d5">-105.127008716161</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; multiline.py \
   --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
@@ -71,40 +71,54 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/
 <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
   <data key="d3">for d in results/healthy_change/maaslin/*/; do
     name=$(basename "$d")
-    cp "$d/all_results.tsv" "results/healthy_change/change/$name.tsv"
+    echo $d
+    cp "$d/all_results.tsv" "results/healthy_change/maaslin/$name.tsv"
 done</data>
-  <data key="d4">2295.1414635121696</data>
-  <data key="d5">-160.69732005004124</data>
+  <data key="d4">2275.323265680802</data>
+  <data key="d5">-171.84505633018566</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/*/; do
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/*/; do
     name=$(basename "$d")
-    cp "$d/all_results.tsv" "results/healthy_change/change/$name.tsv"
+    echo $d
+    cp "$d/all_results.tsv" "results/healthy_change/maaslin/$name.tsv"
 done'</data>
-  <data key="d8"></data>
+  <data key="d8">results/healthy_change/maaslin/aa/
+results/healthy_change/maaslin/alpha_diversity/
+results/healthy_change/maaslin/anthro/
+results/healthy_change/maaslin/change/
+results/healthy_change/maaslin/head/
+results/healthy_change/maaslin/healthy/
+results/healthy_change/maaslin/pathways/
+results/healthy_change/maaslin/sleep/
+results/healthy_change/maaslin/species/
+results/healthy_change/maaslin/vitamin/
+</data>
   <data key="d9">cp: cannot stat 'results/healthy_change/maaslin/change//all_results.tsv': No such file or directory
 cp: cannot stat 'results/healthy_change/maaslin/healthy//all_results.tsv': No such file or directory
 cp: cannot stat 'results/healthy_change/maaslin/pathways//all_results.tsv': No such file or directory
 cp: cannot stat 'results/healthy_change/maaslin/species//all_results.tsv': No such file or directory
 </data>
-  <data key="d10">31991</data>
+  <data key="d10">11856</data>
   <data key="d11">0</data>
 </node>
 <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
   <data key="d3">merge.py results/healthy_change/change/*.tsv \
   --append \
   --add-filename \
-  -o results/healthy_change/healthychange.tsv</data>
+  -o results/healthy_change/allhealthychange.tsv</data>
   <data key="d4">2910.011212658699</data>
   <data key="d5">-171.3919359712977</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/change/*.tsv \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/change/*.tsv \
   --append \
   --add-filename \
-  -o results/healthy_change/healthychange.tsv'</data>
-  <data key="d8">Saved 329 rows × 15 columns to results/healthy_change/healthychange.tsv
+  -o results/healthy_change/allhealthychange.tsv'</data>
+  <data key="d8">Saved 329 rows × 15 columns to results/healthy_change/allhealthychange.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">32040</data>
+  <data key="d10">9173</data>
   <data key="d11">0</data>
 </node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
@@ -115,8 +129,8 @@ cp: cannot stat 'results/healthy_change/maaslin/species//all_results.tsv': No su
   -s qval_individual \
   -g name filename model \
   -o results/healthy_change/healthychange_summary.tsv</data>
-  <data key="d4">3386.016249329145</data>
-  <data key="d5">-282.349760183861</data>
+  <data key="d4">3519.7250097926326</data>
+  <data key="d5">-313.6203573890315</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
   results/healthy_change/healthychange.tsv \
@@ -537,8 +551,8 @@ Execution halted
     results/filtered/alpha_diversity.tsv \
     results/filtered/timemeta_MAM_yr1_yr2.tsv \
     results/healthy_change/maaslin/alpha_diversity | tail</data>
-  <data key="d4">1439.3317546068424</data>
-  <data key="d5">-284.07141035518754</data>
+  <data key="d4">1435.5769082604195</data>
+  <data key="d5">-288.7649682882164</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
     --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
@@ -1523,6 +1537,26 @@ results/filtered/pathways.tsv      13033.258967  ...      0.616
   <data key="d10">31508</data>
   <data key="d11">0</data>
 </node>
+<node id="7a632088-cccc-4c27-aa6c-d79f031d9228">
+  <data key="d3">filter.py \
+  results/healthy_change/allhealthychange.tsv \
+  -q 'pval_individual &lt; 0.1' \
+  -o results/healthy_change/healthychange.tsv</data>
+  <data key="d4">3099.1396685359773</data>
+  <data key="d5">21.127422505238656</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; filter.py \
+  results/healthy_change/allhealthychange.tsv \
+  -q '\''pval_individual &lt; 0.1'\'' \
+  -o results/healthy_change/healthychange.tsv'</data>
+  <data key="d8">[filter] Query '(pval_individual &lt; 0.1)': kept 26/329
+[filter] Saved filtered output to: results/healthy_change/healthychange.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">13137</data>
+  <data key="d11">0</data>
+</node>
 <edge source="11811fc1-17fa-48e0-bd62-673d78fee349" target="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
   <data key="d12">ba4db628-915a-4dcb-b138-d940c943292f</data>
   <data key="d13"></data>
@@ -1534,6 +1568,10 @@ results/filtered/pathways.tsv      13033.258967  ...      0.616
 <edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="14b716fa-cb0b-4379-9727-7769f1510a88">
   <data key="d12">31f8cfda-685d-4f6c-884a-b388e3b73a3e</data>
   <data key="d13"></data>
+</edge>
+<edge source="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8" target="7a632088-cccc-4c27-aa6c-d79f031d9228">
+  <data key="d12">081e8bec-a5e8-43d0-8696-b792f2e09604</data>
+  <data key="d14">blocking</data>
 </edge>
 <edge source="08584b44-c135-4c3f-b26b-f2ac8df4e824" target="efff9afc-b0ea-4937-a15d-319ee982992b">
   <data key="d12">d766b58c-d717-49d5-99b4-b75b1135e478</data>

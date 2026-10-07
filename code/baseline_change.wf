@@ -24,36 +24,51 @@ bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="445f4183-2221-42ae-80fe-cfa8e3da2000">
   <data key="d3">for d in results/baseline_change/maaslin/baseline/*/; do
     name=$(basename "$d")
+    echo $name
     cp "$d/all_results.tsv" "results/baseline_change/maaslin/change/$name.tsv"
 done</data>
   <data key="d4">574.2386717127083</data>
   <data key="d5">-36.65274456291871</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; for d in results/baseline_change/maaslin/baseline/*/; do
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; for d in results/baseline_change/maaslin/baseline/*/; do
     name=$(basename "$d")
+    echo $name
     cp "$d/all_results.tsv" "results/baseline_change/maaslin/change/$name.tsv"
 done'</data>
-  <data key="d8"></data>
+  <data key="d8">aa
+alpha_diversity
+anthro
+genetics
+head
+lipids
+pathways
+sleep
+species
+surveillance
+vitamin
+</data>
   <data key="d9"></data>
-  <data key="d10">30910</data>
+  <data key="d10">11784</data>
   <data key="d11">0</data>
 </node>
 <node id="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
   <data key="d3">merge.py results/baseline_change/maaslin/change/*.tsv \
   --append \
   --add-filename \
-  -o results/baseline_change/maaslin/baselinechange.tsv</data>
+  -o results/baseline_change/maaslin/allbaselinechange.tsv</data>
   <data key="d4">1265.2277541873714</data>
   <data key="d5">-39.23574353907206</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; merge.py results/baseline_change/maaslin/change/*.tsv \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py results/baseline_change/maaslin/change/*.tsv \
   --append \
   --add-filename \
-  -o results/baseline_change/maaslin/baselinechange.tsv'</data>
-  <data key="d8">Saved 12870 rows × 15 columns to results/baseline_change/maaslin/baselinechange.tsv
+  -o results/baseline_change/maaslin/allbaselinechange.tsv'</data>
+  <data key="d8">Saved 12870 rows × 15 columns to results/baseline_change/maaslin/allbaselinechange.tsv
 </data>
   <data key="d9"></data>
-  <data key="d10">30951</data>
+  <data key="d10">10302</data>
   <data key="d11">0</data>
 </node>
 <node id="6b92ce8e-5a01-4280-83f8-f3edf8d36655">
@@ -172,8 +187,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   -x Recovery \
   -y 'aspartic_acid' \
   -o results/baseline_change/maaslin/aspartic.svg</data>
-  <data key="d4">1821.4653752176303</data>
-  <data key="d5">87.61598503091041</data>
+  <data key="d4">1981.7332477099008</data>
+  <data key="d5">67.89070841647708</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; box.py \
   results/timepoints/0/aa.tsv \
@@ -878,6 +893,26 @@ Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
   <data key="d10">30989</data>
   <data key="d11">0</data>
 </node>
+<node id="b1805f5f-e5e5-4a48-bba8-41db4e65ca70">
+  <data key="d3">filter.py \
+  results/baseline_change/maaslin/allbaselinechange.tsv \
+  -q 'pval_individual &lt; 0.1' \
+  -o results/baseline_change/maaslin/baselinechange.tsv</data>
+  <data key="d4">1456.9329981635053</data>
+  <data key="d5">166.33778777681326</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; filter.py \
+  results/baseline_change/maaslin/allbaselinechange.tsv \
+  -q '\''pval_individual &lt; 0.1'\'' \
+  -o results/baseline_change/maaslin/baselinechange.tsv'</data>
+  <data key="d8">[filter] Query '(pval_individual &lt; 0.1)': kept 885/12870
+[filter] Saved filtered output to: results/baseline_change/maaslin/baselinechange.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">12243</data>
+  <data key="d11">0</data>
+</node>
 <edge source="445f4183-2221-42ae-80fe-cfa8e3da2000" target="0d3dff36-1c60-4bb3-97fd-fb055272e5a7">
   <data key="d12">5997c9c4-d01a-4edd-9394-f77d4885ae4a</data>
   <data key="d13"></data>
@@ -888,6 +923,11 @@ Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
 </edge>
 <edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="15768015-3b3b-4959-853d-9e4ffb088a2e">
   <data key="d12">9530098c-79f2-4552-8fec-40975d4343c2</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
+</edge>
+<edge source="0d3dff36-1c60-4bb3-97fd-fb055272e5a7" target="b1805f5f-e5e5-4a48-bba8-41db4e65ca70">
+  <data key="d12">e199bd0b-3255-496e-a5d7-74ee41be62ef</data>
   <data key="d14">blocking</data>
   <data key="d13"></data>
 </edge>

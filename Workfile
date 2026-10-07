@@ -69,8 +69,8 @@ Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 133.
   -y maternal_bmi \
   --meta results/filtered/meta.tsv \
   -o results/recovery_MAMatbirth_box.svg</data>
-  <data key="d4">739.3967736715435</data>
-  <data key="d5">107.49431891631085</data>
+  <data key="d4">747.1267934385622</data>
+  <data key="d5">126.26722406478481</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp;  box.py \
   results/filtered/mothers.tsv \
@@ -181,8 +181,19 @@ workfile: /home/tpor598/recovery/code/healthy_change.wf
 </node>
 <node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
   <data key="d3">makesupptable.py</data>
-  <data key="d4">822.2197643385547</data>
-  <data key="d5">-116.12926265135556</data>
+  <data key="d4">824.4283414148458</data>
+  <data key="d5">-163.61366979161326</data>
+  <data key="d6"></data>
+</node>
+<node id="c9574e86-56be-4530-b452-568954e88efc">
+  <data key="d3"># Check for adverse events
+glmm.R \
+  -i results/cleaned/surveillance.tsv \
+  -m results/filtered/meta_MAM.tsv \
+  -f "Feed + Sex + baseline_WLZ + Delivery_Mode + BF" \
+  -o results/harms.tsv</data>
+  <data key="d4">820.8967678260761</data>
+  <data key="d5">-60.73703357872408</data>
   <data key="d6"></data>
 </node>
 <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
@@ -223,6 +234,10 @@ workfile: /home/tpor598/recovery/code/healthy_change.wf
 </edge>
 <edge source="58045259-e97d-47ba-82b3-e76bee82429b" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
   <data key="d12">a38d4152-887f-469e-90b8-3624b087d7b7</data>
+  <data key="d13">blocking</data>
+</edge>
+<edge source="58045259-e97d-47ba-82b3-e76bee82429b" target="c9574e86-56be-4530-b452-568954e88efc">
+  <data key="d12">44d84393-7ea3-4105-8d98-8f35f3b27356</data>
   <data key="d13">blocking</data>
 </edge>
 <edge source="689794d8-0cd7-4ff3-8b5f-000dde89a722" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
