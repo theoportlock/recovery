@@ -38,16 +38,17 @@ workfile: /home/tpor598/recovery/code/characteristics.wf
 </node>
 <node id="78c8d135-ef42-4645-bc41-820a809c493c">
   <data key="d3">mixedlm.py \
-  -i results/filtered/mothers.tsv \
-  -m results/filtered/meta.tsv \
-  -o results/mothers_modelout.tsv</data>
+  -i $WORK/filtered/mothers.tsv \
+  -m $WORK/filtered/meta.tsv \
+  -o $WORK/mothers_modelout.tsv</data>
   <data key="d4">341.9133712695664</data>
   <data key="d5">147.42620345725305</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; mixedlm.py \
-  -i results/filtered/mothers.tsv \
-  -m results/filtered/meta.tsv \
-  -o results/mothers_modelout.tsv'</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; mixedlm.py \
+  -i $WORK/filtered/mothers.tsv \
+  -m $WORK/filtered/meta.tsv \
+  -o $WORK/mothers_modelout.tsv'</data>
   <data key="d8">['metatoolkit/metatoolkit/mixedlm.py', '-i', 'results/filtered/mothers.tsv', '-m', 'results/filtered/meta.tsv', '-o', 'results/mothers_modelout.tsv']
 No formula supplied → Using all metadata columns:
   Sex + Ethnicity + Condition + Feed + Recovery + Delivery_Mode + Supplementation + BF + PoB
@@ -56,37 +57,37 @@ No grouping variable supplied → Models will be OLS
 </data>
   <data key="d9">
 Fitting models:   0%|          | 0/20 [00:00&lt;?, ?it/s]
-Fitting models:  65%|██████▌   | 13/20 [00:00&lt;00:00, 127.51it/s]
-Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 133.35it/s]
+Fitting models:  70%|███████   | 14/20 [00:00&lt;00:00, 131.60it/s]
+Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 136.14it/s]
 </data>
-  <data key="d10">5211</data>
+  <data key="d10">37054</data>
   <data key="d11">0</data>
 </node>
 <node id="be560393-d428-4755-8f8c-096cc59441f0">
   <data key="d3">box.py \
-  results/filtered/mothers.tsv \
+  $WORK/filtered/mothers.tsv \
   -x Recovery \
   -y maternal_bmi \
-  --meta results/filtered/meta.tsv \
-  -o results/recovery_MAMatbirth_box.svg</data>
+  --meta $WORK/filtered/meta.tsv \
+  -o $WORK/recovery_MAMatbirth_box.svg</data>
   <data key="d4">747.1267934385622</data>
   <data key="d5">126.26722406478481</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp;  box.py \
-  results/filtered/mothers.tsv \
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; box.py \
+  $WORK/filtered/mothers.tsv \
   -x Recovery \
   -y maternal_bmi \
-  --meta results/filtered/meta.tsv \
-  -o results/recovery_MAMatbirth_box.svg'</data>
-  <data key="d8">Index(['Age', 'M_Num', 'Menarche', 'Pregnanc', 'live_bir', 'BDA', 'MAMatBirth',
-       'FacilityDelivered', 'Twin', 'Caesarian', 'ANC', 'Supple', 'Hyperten',
-       'Diabetes', 'Prenatal', 'Depress', 'Tetanus', 'Weight', 'Height',
-       'maternal_bmi', 'Sex', 'Ethnicity', 'Condition', 'Feed', 'Recovery',
-       'Delivery_Mode', 'Supplementation', 'BF', 'PoB'],
-      dtype='object')
+  --meta $WORK/filtered/meta.tsv \
+  -o $WORK/recovery_MAMatbirth_box.svg'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/venv/lib/python3.12/site-packages/seaborn/axisgrid.py:854: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  func(*plot_args, **plot_kwargs)
 </data>
-  <data key="d9"></data>
-  <data key="d10">5253</data>
+  <data key="d10">37121</data>
   <data key="d11">0</data>
 </node>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
@@ -107,7 +108,7 @@ workfile: /home/tpor598/recovery/code/quality.wf
 <node id="590f7132-e567-418c-bc2e-86a80543bc37">
   <data key="d3">workforce web code/setup.wf</data>
   <data key="d4">-74.03515587451557</data>
-  <data key="d5">-56.872208668167254</data>
+  <data key="d5">-57.70910288390462</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; workforce web code/setup.wf'</data>
@@ -116,7 +117,7 @@ workspace_id: ws_e1861e15
 workfile: /home/tpor598/recovery/code/setup.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">2220</data>
+  <data key="d10">37375</data>
   <data key="d11">0</data>
 </node>
 <node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
@@ -136,8 +137,8 @@ workfile: /home/tpor598/recovery/code/recovery_rates.wf
 </node>
 <node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
   <data key="d3">workforce web code/survival.wf</data>
-  <data key="d4">343.7694989588626</data>
-  <data key="d5">-215.74646947475162</data>
+  <data key="d4">343.66116347405466</data>
+  <data key="d5">-216.47502820568107</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; workforce web code/survival.wf'</data>
@@ -146,7 +147,7 @@ workspace_id: ws_89e43ddf
 workfile: /home/tpor598/recovery/code/survival.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">8159</data>
+  <data key="d10">11095</data>
   <data key="d11">0</data>
 </node>
 <node id="58045259-e97d-47ba-82b3-e76bee82429b">
@@ -176,7 +177,7 @@ workspace_id: ws_067e70c7
 workfile: /home/tpor598/recovery/code/healthy_change.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">7408</data>
+  <data key="d10">15149</data>
   <data key="d11">0</data>
 </node>
 <node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
@@ -188,10 +189,10 @@ workfile: /home/tpor598/recovery/code/healthy_change.wf
 <node id="c9574e86-56be-4530-b452-568954e88efc">
   <data key="d3"># Check for adverse events
 glmm.R \
-  -i results/cleaned/surveillance.tsv \
-  -m results/filtered/meta_MAM.tsv \
+  -i $WORK/cleaned/surveillance.tsv \
+  -m $WORK/filtered/meta_MAM.tsv \
   -f "Feed + Sex + baseline_WLZ + Delivery_Mode + BF" \
-  -o results/harms.tsv</data>
+  -o $WORK/harms.tsv</data>
   <data key="d4">820.8967678260761</data>
   <data key="d5">-60.73703357872408</data>
   <data key="d6"></data>

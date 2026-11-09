@@ -1,23 +1,10 @@
 #!/usr/bin/env bash
-# Environment setup for fellowship project
 
-# Data path
-#export data="/mnt/d/fellowship/m4efad/recovery/data"
-export data="/run/media/theo/maindrive/fellowship/m4efad/recovery/data"
+export DATA="/run/media/theo/maindrive/fellowship/m4efad/recovery/data"
+export WORK="results"
 
-# Add project paths to PATH
 export PATH="code/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"
 export PATH="maaslin3/R/:$PATH"
-
-# Activate environment
-#source ~/miniconda3/etc/profile.d/conda.sh
-#conda activate metatoolkit
-
-#bash -lc "\
-#  source ~/miniconda3/etc/profile.d/conda.sh &&\
-#  conda activate metatoolkit && \
-#  {} \
-#  "
 
 source venv/bin/activate

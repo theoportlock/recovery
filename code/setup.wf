@@ -247,8 +247,8 @@ df2: 0 / 234 rows lost (0.00%)
   --keep-parent \
   -l "t__" \
   -o results/cleaned/species.tsv</data>
-  <data key="d4">-557.3786132183875</data>
-  <data key="d5">-56.436705136926214</data>
+  <data key="d4">-543.9883057665897</data>
+  <data key="d5">-56.43670513692622</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; extract_taxa.py \
   results/cleaned/metaphlan.tsv \
@@ -299,20 +299,6 @@ df2: 0 / 234 rows lost (0.00%)
   <data key="d8"></data>
   <data key="d9"></data>
   <data key="d10">6132</data>
-  <data key="d11">0</data>
-</node>
-<node id="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7">
-  <data key="d3">#rsync -aurvP $data .
-echo setup</data>
-  <data key="d4">-2207.9909005305635</data>
-  <data key="d5">53.74586900768341</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; #rsync -aurvP $data .
-echo setup'</data>
-  <data key="d8">setup
-</data>
-  <data key="d9"></data>
-  <data key="d10">6098</data>
   <data key="d11">0</data>
 </node>
 <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
@@ -814,8 +800,8 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   conf/notimedatasets.txt \
   conf/timedatasets.txt \
   &gt; conf/all_datasets.txt</data>
-  <data key="d4">-2119.886497792185</data>
-  <data key="d5">-84.72897842830109</data>
+  <data key="d4">-2154.1194424746964</data>
+  <data key="d5">20.178432695524066</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; cat \
   conf/notimedatasets.txt \
@@ -829,8 +815,8 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
 <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
   <data key="d3">wget -q -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
-  <data key="d4">-1562.7422693079143</data>
-  <data key="d5">114.2814862819983</data>
+  <data key="d4">-1592.8704610744592</data>
+  <data key="d5">89.1746598098774</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; wget -q -O results/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk'</data>
@@ -845,7 +831,7 @@ LCC3072_0       8.313643        8.830817  ...  5.346262   7.970425
   -t results/mpa.nwk \
   -o results/cleaned/alpha_diversity.tsv</data>
   <data key="d4">-593.3314575008544</data>
-  <data key="d5">74.85689788329577</data>
+  <data key="d5">81.55205160919468</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; alpha_diversity.py \
   results/cleaned/metaphlan.tsv \
@@ -970,8 +956,8 @@ mkdir results/census'</data>
   -q "~subjectID.str.startswith('LCC3')" \
   results/cleaned/mothers.tsv \
   -o results/filtered/mothers.tsv</data>
-  <data key="d4">-62.864753030468016</data>
-  <data key="d5">583.2237798346173</data>
+  <data key="d4">-112.336035691652</data>
+  <data key="d5">621.2786126509127</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; filter.py \
   -q "~subjectID.str.startswith('\''LCC3'\'')" \
@@ -1321,8 +1307,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o results/filtered/anthro_recovery.tsv</data>
-  <data key="d4">1271.3102125737719</data>
-  <data key="d5">-354.6049617792249</data>
+  <data key="d4">1282.3530979552272</data>
+  <data key="d5">-281.7219182616201</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; assign.py results/filtered/anthro.tsv \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
@@ -1346,8 +1332,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   --timemeta results/filtered/timemeta.tsv \
   -t -2 \
   -o results/filtered/recovery_status_2sd.tsv</data>
-  <data key="d4">1706.158185105544</data>
-  <data key="d5">-415.60685290084086</data>
+  <data key="d4">1712.783916334417</data>
+  <data key="d5">-373.64388845131083</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
@@ -1374,7 +1360,7 @@ Name: count, dtype: int64
   -t -1 \
   -o results/filtered/recovery_status_1sd.tsv</data>
   <data key="d4">1710.542171148894</data>
-  <data key="d5">-249.57769380682075</data>
+  <data key="d5">-214.24046058616386</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; calculate_recovery.py \
   --anthro results/filtered/anthro.tsv \
@@ -1960,11 +1946,6 @@ LCC2052_52   LCC2052       yr2  Female  ...  15.25  45.4         0.37
 </edge>
 <edge source="0dabf5df-0bf6-4173-80b2-b30ff135acf8" target="403c9095-7c10-40b5-b31a-e570ddec6c56">
   <data key="d12">edbcdd55-befc-403b-840e-df5642dbe8d5</data>
-  <data key="d13"></data>
-</edge>
-<edge source="04b1ffe7-ee60-49f3-a31c-c2f179a5f3e7" target="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
-  <data key="d12">efc94703-417d-4f6d-bd69-2247567a5f91</data>
-  <data key="d14">blocking</data>
   <data key="d13"></data>
 </edge>
 <edge source="9780f658-26ff-4a9b-a03f-a57be3e04748" target="9430f225-f079-4a7f-bfd9-a272b950617f">
