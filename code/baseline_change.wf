@@ -78,8 +78,8 @@ bash -c '. env.sh &amp;&amp; merge.py results/baseline_change/maaslin/change/*.t
   --func mean \
   --group_by 'Recovery' \
   -o results/filtered/genetics_mean.tsv</data>
-  <data key="d4">-379.0264577967813</data>
-  <data key="d5">1233.6958347582026</data>
+  <data key="d4">-394.6041028459982</data>
+  <data key="d5">1230.863535658345</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; group.py \
   results/filtered/genetics_standard.tsv \
@@ -102,8 +102,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   <data key="d3">polar.py \
   results/filtered/genetics_mean_sort.tsv \
   -o results/baseline_change/genetics_recovery.svg</data>
-  <data key="d4">449.2608570517266</data>
-  <data key="d5">1259.1664413637227</data>
+  <data key="d4">446.4285579518689</data>
+  <data key="d5">1249.253394514221</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; polar.py \
   results/filtered/genetics_mean_sort.tsv \
@@ -119,8 +119,8 @@ Recovered        -0.025710     -0.129544  ...             -0.021437       -0.012
   results/filtered/genetics_mean.tsv \
   --ascending \
   -o results/filtered/genetics_mean_sort.tsv</data>
-  <data key="d4">14.356684960977645</data>
-  <data key="d5">1250.1370527980848</data>
+  <data key="d4">12.940535411048842</data>
+  <data key="d5">1240.224005948583</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; sort.py \
   results/filtered/genetics_mean.tsv \
@@ -187,8 +187,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
   -x Recovery \
   -y 'aspartic_acid' \
   -o results/baseline_change/maaslin/aspartic.svg</data>
-  <data key="d4">1981.7332477099008</data>
-  <data key="d5">67.89070841647708</data>
+  <data key="d4">1989.1302264403134</data>
+  <data key="d5">122.13521910616859</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; box.py \
   results/timepoints/0/aa.tsv \
@@ -329,8 +329,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/timepoints/0/lipids.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/lipids | tail</data>
-  <data key="d4">-37.10606893178215</data>
-  <data key="d5">56.513783640372935</data>
+  <data key="d4">-35.47934027334912</data>
+  <data key="d5">23.979210471712634</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -437,8 +437,8 @@ mkdir -p results/baseline_change/maaslin/{baseline,change}'</data>
 	results/filtered/genetics.tsv \
 	results/filtered/meta_MAM.tsv \
 	results/baseline_change/maaslin/baseline/genetics | tail</data>
-  <data key="d4">-585.0308683035394</data>
-  <data key="d5">41.4281921813656</data>
+  <data key="d4">-591.5377829372715</data>
+  <data key="d5">21.907448280169405</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin3.R \
 	--formula "Recovery + Sex + baseline_WLZ + Delivery_Mode + BF" \
@@ -810,8 +810,8 @@ Execution halted
   -s qval_individual \
   -g name filename model \
   -o results/baseline_change/maaslin/baselinechange_summary.tsv</data>
-  <data key="d4">1830.3892920526143</data>
-  <data key="d5">-157.04679355747123</data>
+  <data key="d4">1988.1915049680808</data>
+  <data key="d5">-60.88607006210907</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
   results/baseline_change/maaslin/baselinechange.tsv \
@@ -898,8 +898,8 @@ Summary written to: results/baseline_change/maaslin/baselinechange_summary.tsv
   results/baseline_change/maaslin/allbaselinechange.tsv \
   -q 'pval_individual &lt; 0.1' \
   -o results/baseline_change/maaslin/baselinechange.tsv</data>
-  <data key="d4">1456.9329981635053</data>
-  <data key="d5">166.33778777681326</data>
+  <data key="d4">1488.9865726619591</data>
+  <data key="d5">156.47514946959663</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; filter.py \
