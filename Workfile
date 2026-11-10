@@ -33,7 +33,7 @@ workspace_id: ws_872fcc59
 workfile: /home/tpor598/recovery/code/characteristics.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">7910</data>
+  <data key="d10">8550</data>
   <data key="d11">0</data>
 </node>
 <node id="78c8d135-ef42-4645-bc41-820a809c493c">
@@ -117,7 +117,7 @@ workspace_id: ws_e1861e15
 workfile: /home/tpor598/recovery/code/setup.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">37375</data>
+  <data key="d10">10898</data>
   <data key="d11">0</data>
 </node>
 <node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
@@ -132,7 +132,7 @@ workspace_id: ws_55637d4a
 workfile: /home/tpor598/recovery/code/recovery_rates.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">8198</data>
+  <data key="d10">10688</data>
   <data key="d11">0</data>
 </node>
 <node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">

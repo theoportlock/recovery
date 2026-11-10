@@ -24,8 +24,8 @@ bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
   <data key="d3"># FIGURE 1B
 anthrotime.py</data>
-  <data key="d4">-136.11634714874765</data>
-  <data key="d5">-96.90754881321692</data>
+  <data key="d4">-98.4561074405663</data>
+  <data key="d5">-163.85908607220597</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; # FIGURE 1B
 anthrotime.py'</data>
@@ -37,8 +37,8 @@ anthrotime.py'</data>
 <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d3"># FIGURE 1A
 schematic.py</data>
-  <data key="d4">-131.47704050068873</data>
-  <data key="d5">-176.09428432296696</data>
+  <data key="d4">-93.81680079250738</data>
+  <data key="d5">-243.04582158195603</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1A
 schematic.py'</data>
@@ -50,8 +50,8 @@ schematic.py'</data>
 <node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
   <data key="d3"># FIGURE 1C
 recovery_barplot.py</data>
-  <data key="d4">-140.72726794576283</data>
-  <data key="d5">-20.359820392755765</data>
+  <data key="d4">-103.06702823758148</data>
+  <data key="d5">-87.31135765174483</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1C
 recovery_barplot.py'</data>
