@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="980"
-   height="1170"
-   viewBox="0 0 980 1170"
+   height="1572"
+   viewBox="0 0 980 1572"
    version="1.1"
    id="svg821"
-   sodipodi:docname="flowchart.svg"
+   sodipodi:docname="new.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   inkscape:export-filename="flowchart.png"
+   inkscape:export-filename="flowchart-exploratory.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,19 +25,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.82298561"
-     inkscape:cx="528.56331"
-     inkscape:cy="631.8458"
+     inkscape:zoom="0.899752"
+     inkscape:cx="284.52285"
+     inkscape:cy="1056.9579"
      inkscape:window-width="1920"
      inkscape:window-height="995"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="boxes" />
-  <metadata
-     id="metadata2">
-    <c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4OTA5ZGI2MC05NjNmLTQzODAtYTgxNy05OWE3NTJjMjI0NjkAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaPD0m3eEGHptspYI3mSKHisAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozOGIwNDc4OC1iZDQ2LTRmNmUtYWI3OC0yYTg3Y2I2MzZkNzRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoJ+TTEKrqQYOpSmjy5+xV7QAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg49CPTehDrXt4lMTcp2fqPGWdsmQZlFf90enjQTl422akZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaDE3Evn0vnxSdu+YbHcYQ30AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCdpt/jq0jQ3oCtxhIy5jM71Ctdsw1BxoqnrythnG85RWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi/Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjg5MDlkYjYwLTk2M2YtNDM4MC1hODE3LTk5YTc1MmMyMjQ2OS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmNkMjI3YjEzLTJlM2EtNDIzNi05M2JlLWIxNTU5MmZiYjAwOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDj0I9N6EOte3iUxNynZ+o8ZZ2yZBmUV/3R6eNBOXjbZqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggarH9fDV3asM13YovNEMHzPBwyo+g0OPr7wxfp9gupoiiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggU8hlBg9JJWhutos880d4yukOcuKAxG5wj4NETSn7Pyp0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQASVv6oJkhMciKAdHgVr+RMUoBrwiM5sbA0U7yJbLRvzO3zpNRhgQ09WPDONA6PT9giEXw29MVFGjYR9OL2ig1I=</c2pa:manifest>
-  </metadata>
+     inkscape:current-layer="svg821" />
   <defs
      id="defs7">
     <marker
@@ -56,7 +52,7 @@
   </defs>
   <rect
      width="980"
-     height="1170"
+     height="1572"
      fill="#fff"
      id="rect9" />
   <g
@@ -1366,7 +1362,7 @@
        id="g510">
       <rect
          x="118"
-         y="712"
+         y="724"
          width="145.84515"
          height="76.0215"
          fill="#d9d9d9"
@@ -1377,118 +1373,121 @@
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
          font-size="9.5"
-         fill="#000"
+         fill="#000000"
          id="text508"
-         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
-           x="194.0"
-           y="739.9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="12"><tspan
+           x="194"
+           y="751.90002"
            id="tspan496"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Family Withdraw: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Family Withdraw: <tspan
    font-style="italic"
    id="tspan494"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1</tspan><tspan
-           x="194.0"
-           y="751.5"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 1</tspan><tspan
+           x="194"
+           y="763.5"
            id="tspan498"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Migration out of area: 4</tspan><tspan
-           x="194.0"
-           y="763.1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Migration out of area: 4</tspan><tspan
+           x="194"
+           y="775.09998"
            id="tspan502"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Fussiness Bayley: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Fussiness Bayley: <tspan
    font-style="italic"
    id="tspan500"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan><tspan
-           x="194.0"
-           y="774.7"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 2</tspan><tspan
+           x="194"
+           y="786.70001"
            id="tspan506"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Anthro not collected: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Anthro not collected: <tspan
    font-style="italic"
    id="tspan504"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 2</tspan></text>
     </g>
     <g
        id="g534">
       <rect
          x="300"
-         y="712"
+         y="724"
          width="145"
          height="84"
          fill="#d9d9d9"
-         stroke="#000"
+         stroke="#000000"
          stroke-width="1"
          id="rect512" />
       <text
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
          font-size="9.5"
-         fill="#000"
+         fill="#000000"
          id="text532"
-         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="12"><tspan
            x="372.5"
-           y="734.1"
+           y="746.09998"
            id="tspan516"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Parent Withdraw: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Parent Withdraw: <tspan
    font-style="italic"
    id="tspan514"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 2</tspan><tspan
            x="372.5"
-           y="745.7"
+           y="757.70001"
            id="tspan518"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Migration out of area: 1</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Migration out of area: 1</tspan><tspan
            x="372.5"
-           y="757.3"
+           y="769.29999"
            id="tspan522"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Fussiness Bayley: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Fussiness Bayley: <tspan
    font-style="italic"
    id="tspan520"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 1</tspan><tspan
            x="372.5"
-           y="768.9"
+           y="780.90002"
            id="tspan526"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">No-show Bayley: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">No-show Bayley: <tspan
    font-style="italic"
    id="tspan524"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 1</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 1</tspan><tspan
            x="372.5"
-           y="780.5"
+           y="792.5"
            id="tspan530"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Anthro not collected : <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Anthro not collected : <tspan
    font-style="italic"
    id="tspan528"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 2</tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 2</tspan></text>
     </g>
     <g
        id="g548">
       <rect
          x="490"
-         y="712"
+         y="724"
          width="145"
          height="64"
          fill="#d9d9d9"
-         stroke="#000"
+         stroke="#000000"
          stroke-width="1"
          id="rect536" />
       <text
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
          font-size="9.5"
-         fill="#000"
+         fill="#000000"
          id="text546"
-         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial"
+         y="12"><tspan
            x="562.5"
-           y="741.5"
+           y="753.5"
            id="tspan540"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Parent withdraw: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Parent withdraw: <tspan
    font-style="italic"
    id="tspan538"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 5</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 5</tspan><tspan
            x="562.5"
-           y="753.1"
+           y="765.09998"
            id="tspan544"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Anthro not collected: <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">Anthro not collected: <tspan
    font-style="italic"
    id="tspan542"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 4</tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial">N</tspan> = 4</tspan></text>
     </g>
     <g
        id="SoC_2yr">
@@ -2133,4 +2132,1422 @@
    style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75 Anthro Cross-Sectional</tspan></text>
     </g>
   </g>
+  <g
+     id="exploratory_extension">
+    <path
+       d="M501 1172V1190"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path429" />
+    <g
+       id="exploratory_header">
+      <rect
+         x="351.0"
+         y="1190"
+         width="300"
+         height="44"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         stroke-dasharray="5 3"
+         id="rect432" />
+      <text
+         x="501"
+         y="1208.5"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="13"
+         fill="#000"
+         id="text434">Secondary analyses (exploratory)</text>
+      <text
+         x="501"
+         y="1224.5"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="13"
+         fill="#000"
+         id="text436">Recovery outcomes</text>
+    </g>
+    <path
+       d="M501 1234V1252"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       id="path439" />
+    <path
+       d="M255.0 1252H748.0"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       id="path441" />
+    <path
+       d="M255.0 1252V1270"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path443" />
+    <path
+       d="M748.0 1252V1270"
+       fill="none"
+       stroke="#000"
+       stroke-width="1.2"
+       marker-end="url(#ah)"
+       id="path445" />
+    <g
+       id="exploratory_panel_a">
+      <rect
+         x="17"
+         y="1270"
+         width="476"
+         height="282"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect447" />
+      <text
+         x="255.0"
+         y="1287"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="11.5"
+         fill="#000"
+         id="text449">Datasets by time point</text>
+      <text
+         x="255.0"
+         y="1300"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#000"
+         id="text451">n with data at week 0 and week 52 after the 12-month baseline</text>
+      <rect
+         x="183"
+         y="1308"
+         width="100"
+         height="20"
+         fill="#f26b7a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect453" />
+      <text
+         x="233.0"
+         y="1321.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text455">Standard-of-Care</text>
+      <rect
+         x="283"
+         y="1308"
+         width="100"
+         height="20"
+         fill="#33f0d0"
+         stroke="#000"
+         stroke-width="1"
+         id="rect458" />
+      <text
+         x="333.0"
+         y="1321.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text460">Enhanced</text>
+      <rect
+         x="383"
+         y="1308"
+         width="100"
+         height="20"
+         fill="#e8702a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect462" />
+      <text
+         x="433.0"
+         y="1321.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text464">Well-nourished</text>
+      <rect
+         x="183"
+         y="1328"
+         width="50"
+         height="14"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="0.5"
+         id="rect466" />
+      <text
+         x="208.0"
+         y="1338"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#333"
+         id="text468">Wk 0</text>
+      <rect
+         x="233"
+         y="1328"
+         width="50"
+         height="14"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="0.5"
+         id="rect470" />
+      <text
+         x="258.0"
+         y="1338"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#333"
+         id="text472">Wk 52</text>
+      <rect
+         x="283"
+         y="1328"
+         width="50"
+         height="14"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="0.5"
+         id="rect474" />
+      <text
+         x="308.0"
+         y="1338"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#333"
+         id="text476">Wk 0</text>
+      <rect
+         x="333"
+         y="1328"
+         width="50"
+         height="14"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="0.5"
+         id="rect479" />
+      <text
+         x="358.0"
+         y="1338"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#333"
+         id="text481">Wk 52</text>
+      <rect
+         x="383"
+         y="1328"
+         width="50"
+         height="14"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="0.5"
+         id="rect483" />
+      <text
+         x="408.0"
+         y="1338"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#333"
+         id="text485">Wk 0</text>
+      <rect
+         x="433"
+         y="1328"
+         width="50"
+         height="14"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="0.5"
+         id="rect487" />
+      <text
+         x="458.0"
+         y="1338"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="8.5"
+         fill="#333"
+         id="text489">Wk 52</text>
+      <rect
+         x="27"
+         y="1342"
+         width="456"
+         height="14"
+         fill="#efefef"
+         id="rect491" />
+      <text
+         x="31"
+         y="1352"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text493">Behaviour</text>
+      <text
+         x="37"
+         y="1367.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text495">Infant sleep</text>
+      <text
+         x="208.0"
+         y="1367.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text497">74</text>
+      <text
+         x="258.0"
+         y="1367.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text499">70</text>
+      <text
+         x="308.0"
+         y="1367.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text501">69</text>
+      <text
+         x="358.0"
+         y="1367.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text503">69</text>
+      <text
+         x="408.0"
+         y="1367.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text505">65</text>
+      <text
+         x="458.0"
+         y="1367.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text507">65</text>
+      <path
+         d="M27 1372L483 1372"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path509" />
+      <rect
+         x="27"
+         y="1372"
+         width="456"
+         height="14"
+         fill="#efefef"
+         id="rect511" />
+      <text
+         x="31"
+         y="1382"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text513">Anthropometrics</text>
+      <text
+         x="37"
+         y="1397.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text515">Head measurements</text>
+      <text
+         x="208.0"
+         y="1397.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text517">78</text>
+      <text
+         x="258.0"
+         y="1397.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text519">73</text>
+      <text
+         x="308.0"
+         y="1397.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text521">76</text>
+      <text
+         x="358.0"
+         y="1397.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text523">70</text>
+      <text
+         x="408.0"
+         y="1397.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text525">70</text>
+      <text
+         x="458.0"
+         y="1397.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text527">62</text>
+      <path
+         d="M27 1402L483 1402"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path529" />
+      <text
+         x="37"
+         y="1413.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text531">Body measurements</text>
+      <text
+         x="208.0"
+         y="1413.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text533">79</text>
+      <text
+         x="258.0"
+         y="1413.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text535">70</text>
+      <text
+         x="308.0"
+         y="1413.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text537">80</text>
+      <text
+         x="358.0"
+         y="1413.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text539">71</text>
+      <text
+         x="408.0"
+         y="1413.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text541">75</text>
+      <text
+         x="458.0"
+         y="1413.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text543">62</text>
+      <path
+         d="M27 1418L483 1418"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path545" />
+      <rect
+         x="27"
+         y="1418"
+         width="456"
+         height="14"
+         fill="#efefef"
+         id="rect547" />
+      <text
+         x="31"
+         y="1428"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text549">Blood</text>
+      <text
+         x="37"
+         y="1443.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text551">Plasma amino acids</text>
+      <text
+         x="208.0"
+         y="1443.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text553">68</text>
+      <text
+         x="258.0"
+         y="1443.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text555">68</text>
+      <text
+         x="308.0"
+         y="1443.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text557">66</text>
+      <text
+         x="358.0"
+         y="1443.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text559">68</text>
+      <text
+         x="408.0"
+         y="1443.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text561">74</text>
+      <text
+         x="458.0"
+         y="1443.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text563">62</text>
+      <path
+         d="M27 1448L483 1448"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path565" />
+      <text
+         x="37"
+         y="1459.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text567">Plasma lipids</text>
+      <text
+         x="208.0"
+         y="1459.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text569">74</text>
+      <text
+         x="258.0"
+         y="1459.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text571">69</text>
+      <text
+         x="308.0"
+         y="1459.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text573">76</text>
+      <text
+         x="358.0"
+         y="1459.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text575">65</text>
+      <text
+         x="408.0"
+         y="1459.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text578">73</text>
+      <text
+         x="458.0"
+         y="1459.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text580">62</text>
+      <path
+         d="M27 1464L483 1464"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path582" />
+      <text
+         x="37"
+         y="1475.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text584">Plasma water soluble vitamins</text>
+      <text
+         x="208.0"
+         y="1475.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text586">68</text>
+      <text
+         x="258.0"
+         y="1475.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text588">70</text>
+      <text
+         x="308.0"
+         y="1475.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text590">65</text>
+      <text
+         x="358.0"
+         y="1475.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text593">66</text>
+      <text
+         x="408.0"
+         y="1475.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text595">71</text>
+      <text
+         x="458.0"
+         y="1475.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text597">62</text>
+      <path
+         d="M27 1480L483 1480"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path599" />
+      <rect
+         x="27"
+         y="1480"
+         width="456"
+         height="14"
+         fill="#efefef"
+         id="rect601" />
+      <text
+         x="31"
+         y="1490"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text603">Fecal microbiome</text>
+      <text
+         x="37"
+         y="1505.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text605">Gut microbiome alpha diversity</text>
+      <text
+         x="208.0"
+         y="1505.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text608">78</text>
+      <text
+         x="258.0"
+         y="1505.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text610">72</text>
+      <text
+         x="308.0"
+         y="1505.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text612">78</text>
+      <text
+         x="358.0"
+         y="1505.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text614">71</text>
+      <text
+         x="408.0"
+         y="1505.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text616">74</text>
+      <text
+         x="458.0"
+         y="1505.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text618">65</text>
+      <path
+         d="M27 1510L483 1510"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path620" />
+      <text
+         x="37"
+         y="1521.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text623">Gut microbiome species</text>
+      <text
+         x="208.0"
+         y="1521.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text625">78</text>
+      <text
+         x="258.0"
+         y="1521.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text627">72</text>
+      <text
+         x="308.0"
+         y="1521.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text629">78</text>
+      <text
+         x="358.0"
+         y="1521.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text631">71</text>
+      <text
+         x="408.0"
+         y="1521.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text633">74</text>
+      <text
+         x="458.0"
+         y="1521.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text635">65</text>
+      <path
+         d="M27 1526L483 1526"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path637" />
+      <text
+         x="37"
+         y="1537.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text639">Gut microbiome gene pathways</text>
+      <text
+         x="208.0"
+         y="1537.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text641">78</text>
+      <text
+         x="258.0"
+         y="1537.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text643">72</text>
+      <text
+         x="308.0"
+         y="1537.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text645">78</text>
+      <text
+         x="358.0"
+         y="1537.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text647">72</text>
+      <text
+         x="408.0"
+         y="1537.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text649">74</text>
+      <text
+         x="458.0"
+         y="1537.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text651">65</text>
+      <path
+         d="M27 1542L483 1542"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path653" />
+      <rect
+         x="27"
+         y="1342"
+         width="456"
+         height="200"
+         fill="none"
+         stroke="#000"
+         stroke-width="1"
+         id="rect655" />
+      <path
+         d="M183 1342L183 1542"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.75"
+         id="path657" />
+      <path
+         d="M283 1342L283 1542"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.75"
+         id="path659" />
+      <path
+         d="M383 1342L383 1542"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.75"
+         id="path661" />
+      <path
+         d="M233 1342L233 1542"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path663" />
+      <path
+         d="M333 1342L333 1542"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path665" />
+      <path
+         d="M433 1342L433 1542"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path667" />
+    </g>
+    <g
+       id="exploratory_panel_b">
+      <rect
+         x="533"
+         y="1270"
+         width="430"
+         height="238"
+         fill="#fff"
+         stroke="#000"
+         stroke-width="1"
+         id="rect670" />
+      <text
+         x="748.0"
+         y="1287"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="11.5"
+         fill="#000"
+         id="text673">Other datasets</text>
+      <text
+         x="748.0"
+         y="1300"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#000"
+         id="text675">n with data per cohort</text>
+      <rect
+         x="701"
+         y="1308"
+         width="84"
+         height="20"
+         fill="#f26b7a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect677" />
+      <text
+         x="743.0"
+         y="1321.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text679">Standard-of-Care</text>
+      <rect
+         x="785"
+         y="1308"
+         width="84"
+         height="20"
+         fill="#33f0d0"
+         stroke="#000"
+         stroke-width="1"
+         id="rect681" />
+      <text
+         x="827.0"
+         y="1321.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text683">Enhanced</text>
+      <rect
+         x="869"
+         y="1308"
+         width="84"
+         height="20"
+         fill="#e8702a"
+         stroke="#000"
+         stroke-width="1"
+         id="rect685" />
+      <text
+         x="911.0"
+         y="1321.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text687">Well-nourished</text>
+      <rect
+         x="543"
+         y="1328"
+         width="410"
+         height="14"
+         fill="#efefef"
+         id="rect689" />
+      <text
+         x="547"
+         y="1338"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text691">Environment</text>
+      <text
+         x="553"
+         y="1353.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text693">Parent economics</text>
+      <text
+         x="743.0"
+         y="1353.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text695">79</text>
+      <text
+         x="827.0"
+         y="1353.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text697">80</text>
+      <text
+         x="911.0"
+         y="1353.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text699">75</text>
+      <path
+         d="M543 1358L953 1358"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path701" />
+      <text
+         x="553"
+         y="1369.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text703">Parent education</text>
+      <text
+         x="743.0"
+         y="1369.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text705">79</text>
+      <text
+         x="827.0"
+         y="1369.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text707">80</text>
+      <text
+         x="911.0"
+         y="1369.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text709">75</text>
+      <path
+         d="M543 1374L953 1374"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path711" />
+      <text
+         x="553"
+         y="1385.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text713">Family characteristics</text>
+      <text
+         x="743.0"
+         y="1385.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text715">79</text>
+      <text
+         x="827.0"
+         y="1385.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text717">80</text>
+      <text
+         x="911.0"
+         y="1385.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text719">75</text>
+      <path
+         d="M543 1390L953 1390"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path721" />
+      <text
+         x="553"
+         y="1401.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text723">Household characteristics</text>
+      <text
+         x="743.0"
+         y="1401.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text725">79</text>
+      <text
+         x="827.0"
+         y="1401.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text727">80</text>
+      <text
+         x="911.0"
+         y="1401.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text729">75</text>
+      <path
+         d="M543 1406L953 1406"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path731" />
+      <text
+         x="553"
+         y="1417.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text733">Family media consumption</text>
+      <text
+         x="743.0"
+         y="1417.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text735">79</text>
+      <text
+         x="827.0"
+         y="1417.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text737">80</text>
+      <text
+         x="911.0"
+         y="1417.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text739">75</text>
+      <path
+         d="M543 1422L953 1422"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path741" />
+      <text
+         x="553"
+         y="1433.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text743">Household sanitation practices</text>
+      <text
+         x="743.0"
+         y="1433.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text745">79</text>
+      <text
+         x="827.0"
+         y="1433.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text747">80</text>
+      <text
+         x="911.0"
+         y="1433.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text749">75</text>
+      <path
+         d="M543 1438L953 1438"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path751" />
+      <rect
+         x="543"
+         y="1438"
+         width="410"
+         height="14"
+         fill="#efefef"
+         id="rect753" />
+      <text
+         x="547"
+         y="1448"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text755">Genetics</text>
+      <text
+         x="553"
+         y="1463.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text757">Polygenic risk scores (PRS)</text>
+      <text
+         x="743.0"
+         y="1463.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text759">79</text>
+      <text
+         x="827.0"
+         y="1463.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text761">78</text>
+      <text
+         x="911.0"
+         y="1463.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text763">73</text>
+      <path
+         d="M543 1468L953 1468"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path765" />
+      <rect
+         x="543"
+         y="1468"
+         width="410"
+         height="14"
+         fill="#efefef"
+         id="rect767" />
+      <text
+         x="547"
+         y="1478"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9"
+         fill="#222"
+         font-style="italic"
+         id="text769">Surveillance</text>
+      <text
+         x="553"
+         y="1493.3"
+         text-anchor="start"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text771">Surveillance of child during visits</text>
+      <text
+         x="743.0"
+         y="1493.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text773">77</text>
+      <text
+         x="827.0"
+         y="1493.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#000"
+         id="text775">74</text>
+      <text
+         x="911.0"
+         y="1493.3"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="9.5"
+         fill="#555"
+         id="text778">N/D</text>
+      <path
+         d="M543 1498L953 1498"
+         fill="none"
+         stroke="#bbb"
+         stroke-width="0.5"
+         id="path780" />
+      <rect
+         x="543"
+         y="1328"
+         width="410"
+         height="170"
+         fill="none"
+         stroke="#000"
+         stroke-width="1"
+         id="rect782" />
+      <path
+         d="M701 1328L701 1498"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.75"
+         id="path784" />
+      <path
+         d="M785 1328L785 1498"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.75"
+         id="path786" />
+      <path
+         d="M869 1328L869 1498"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.75"
+         id="path788" />
+    </g>
+    <g
+       id="g1113"
+       transform="translate(0,-60)">
+      <rect
+         x="11.26983"
+         y="777.89459"
+         width="931.6413"
+         height="451.10123"
+         fill="#ffffff"
+         stroke="#000000"
+         stroke-width="1"
+         stroke-dasharray="5, 3"
+         id="rect1107"
+         style="fill:none" />
+      <text
+         x="502.87762"
+         y="1207.2483"
+         text-anchor="middle"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="13px"
+         fill="#000000"
+         id="text1109"><tspan
+           sodipodi:role="line"
+           id="tspan1117"
+           x="502.87762"
+           y="1207.2483" /></text>
+    </g>
+  </g>
+  <metadata
+     id="metadata792">
+    <c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5YjY3M2RkNS04ZjA4LTRmYTMtOTk3NC0zNWFkMDJiNmZlMTUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaASE8Yfgz5tV0AQczQrsDPsAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpkOGQzMGRhNi1iOTE4LTRlOGMtYTcyNC0wMDJmZGQwMzZmZTRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoK4lUgWeHXnS+EoiAP/WeTQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggxiMXCo9GTvKJ8hEVeSi+oDoIA+ni8+5gWA3BR/V+IYqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaA6liY4lRDik1EdsXByU7NEAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRKAAAAAAAAAAAAAGRoYXNoWCB8X8Wh0OoIsqsdjJlOQ5eL2m2LZ48i2taftHor+OxhZmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBoAAb3BZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjliNjczZGQ1LThmMDgtNGZhMy05OTc0LTM1YWQwMmI2ZmUxNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjhjNWM3ZjJkLTdhNDgtNDkwNi04YTY3LWNiMTM1ZmE3NjY2NXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDGIxcKj0ZO8onyERV5KL6gOggD6eLz7mBYDcFH9X4hiqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg5vafLKOY6VgXubLZJgfCJiO+Bsn7smgSYoc7442GmP+iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggL5Uf4S/hRY1XGsyUS5/T8s/1/fMBFdK7YHTiFnfNEGV0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQLoO3DvGEU5h4obprApazq0ogOIDxZP+1eUgzKamKtYbL2IzDC8qzlkhsFSrNhC8HUJbEHEGCXDuDGBhFpSbxVM=</c2pa:manifest>
+  </metadata>
+  <text
+     xml:space="preserve"
+     style="font-size:11.7859px;fill:none;fill-opacity:0.929412;stroke:#000000;stroke-width:0.736619;stroke-linecap:round;stroke-linejoin:bevel;paint-order:stroke markers fill"
+     x="801.94415"
+     y="737.02386"
+     id="text1907"><tspan
+       sodipodi:role="line"
+       id="tspan1905"
+       x="801.94415"
+       y="737.02386"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;stroke:none;stroke-width:0.736619">Primary analysis</tspan><tspan
+       sodipodi:role="line"
+       x="801.94415"
+       y="751.86371"
+       id="tspan1909"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;stroke:none;stroke-width:0.736619">(Neurological outcomes)</tspan></text>
 </svg>
