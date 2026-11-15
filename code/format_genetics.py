@@ -5,13 +5,14 @@
 Author: Theo Portlock
 For genetics data setup
 '''
+import os
 
 import pandas as pd
 from glob import glob
 from scipy.stats import zscore
 
 # Load and process data
-genetics_datasets = glob('data/Bang*.txt')
+genetics_datasets = glob(os.path.join(os.environ["DATA"], 'Bang*.txt'))
 dfs = []
 for file in genetics_datasets:
     df = pd.read_csv(file, sep='\t')
@@ -30,4 +31,4 @@ joined.index.name = 'subjectID'
 joined = joined.drop(['EF_PRS'], axis=1)
 
 # Save
-joined.to_csv('results/cleaned/genetics.tsv', sep='\t')
+joined.to_csv(os.path.join(os.environ["WORK"], 'cleaned/genetics.tsv'), sep='\t')

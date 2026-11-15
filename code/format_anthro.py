@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 # -*- coding: utf-8 -*-
 
 import numpy as np
@@ -41,8 +42,8 @@ def an_time_mapping(tdf):
     return grouped
 
 # Read the data
-anthro1 = pd.read_excel('data/06. LEAP_Child_anthropometry_for_1_Yrs_MAM (Baseline to ATP 3.04) on 26-May-2024.xlsx')
-anthro2 = pd.read_excel('data/07. LEAP_Child_Anthropometry_for_1_Yrs_Normal (Baseline to ATP 3.04) on 01-Jan-2024 2.xlsx')
+anthro1 = pd.read_excel(os.path.join(os.environ["DATA"], '06. LEAP_Child_anthropometry_for_1_Yrs_MAM (Baseline to ATP 3.04) on 26-May-2024.xlsx'))
+anthro2 = pd.read_excel(os.path.join(os.environ["DATA"], '07. LEAP_Child_Anthropometry_for_1_Yrs_Normal (Baseline to ATP 3.04) on 01-Jan-2024 2.xlsx'))
 
 # Generate mapping
 names1 = an_time_mapping(anthro1).rounded.to_dict()
@@ -75,4 +76,4 @@ mapping['sampleID'] = mapping['subjectID'] + '_' + mapping['timepoint'].astype(s
 mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
-df.to_csv('results/cleaned/anthro.tsv', sep='\t', index=True)
+df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/anthro.tsv'), sep='\t', index=True)

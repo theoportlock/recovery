@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import os
 
 import numpy as np
 import pandas as pd
@@ -32,7 +33,7 @@ def PERMANOVA(df, pval=True, full=False):
         return result['test statistic']
 
 # Load metadata
-meta = pd.read_csv('results/filtered/timemeta.tsv', sep='\t', index_col=0)
+meta = pd.read_csv(os.path.join(os.environ["WORK"], 'filtered/timemeta.tsv'), sep='\t', index_col=0)
 meta['Refeed'] = meta['Feed'].fillna('Healthy').str.replace('.*\(','', regex=True).str.replace(')','').str.replace('Healthy','H', regex=True)
 
 # Calculate |Ct2-Mt2X| / |Ct1-Mt1X| 

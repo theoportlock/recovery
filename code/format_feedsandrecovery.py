@@ -4,10 +4,11 @@
 '''
 Author: Theo Portlock
 '''
+import os
 
 import pandas as pd
 
-df = pd.read_excel("data/LEAP Anthro Recovery status files including samples_batch4_5.xlsx", index_col=0)
+df = pd.read_excel(os.path.join(os.environ["DATA"], 'LEAP Anthro Recovery status files including samples_batch4_5.xlsx'), index_col=0)
 
 df.loc[:,"Recovery"] = df.Recovery.replace({True:'Recovered',False:'No recovery'})
 df.index = df.index.set_names('ID')
@@ -21,5 +22,5 @@ df.index.name='subjectID'
 df.loc[df.index.str[3] ==2, 'Feed'] = 'Healthy'
 df.loc[df.index.str[3] ==2, 'Recovery'] = 'Healthy'
 
-df.to_csv('results/cleaned/feedandrecovery.tsv', sep='\t')
+df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/feedandrecovery.tsv'), sep='\t')
 

@@ -1,11 +1,12 @@
 #!/usr/bin/env python
+import os
 
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 # ---- Load data ----
-df = pd.read_csv('results/healthy_change/rec_merged.tsv', sep='\t', index_col=0)
+df = pd.read_csv(os.path.join(os.environ["WORK"], 'healthy_change/rec_merged.tsv'), sep='\t', index_col=0)
 df.index.name = 'dataset'
 
 # Stack A/B improvement into long format
@@ -46,6 +47,5 @@ plt.xlabel('Improvement (%)')
 plt.ylabel('')
 plt.legend(title='Feed', bbox_to_anchor=(1.02, 1), loc='upper left')
 plt.tight_layout()
-plt.savefig('results/healthy_change/hbar.svg')
-plt.show()
+plt.savefig(os.path.join(os.environ["WORK"], 'healthy_change/hbar.svg'))
 

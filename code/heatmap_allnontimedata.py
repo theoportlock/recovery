@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import os
 
 from pathlib import Path
 import argparse
@@ -10,7 +11,7 @@ import seaborn as sns
 def parse_arguments():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Analyze non-timeseries datasets split by RUSF type')
-    parser.add_argument('-d', '--datasets-file', type=Path, default='conf/notimedatasets.txt',
+    parser.add_argument('-d', '--datasets-file', type=Path, default=os.path.join(os.environ["CONF"], 'notimedatasets.txt'),
                         help='Path to file containing dataset names (one per line)')
     return parser.parse_args()
 
@@ -27,7 +28,7 @@ def prepare_heatmap_data(data):
     plotdf = ndf.to_frame(name='count')
     
     # Load dataset labels
-    labels = pd.read_csv('conf/dataset_labels.tsv', sep='\t', index_col=0)
+    labels = pd.read_csv(os.path.join(os.environ["CONF"], 'dataset_labels.tsv'), sep='\t', index_col=0)
     plotdf = plotdf.join(labels['name'], how='inner').set_index('name')
     return plotdf.T
 
@@ -35,9 +36,9 @@ def main():
     args = parse_arguments()
     
     # Load data
-    meta = pd.read_csv('results/filtered/meta.tsv', sep='\t', index_col=0)
+    meta = pd.read_csv(os.path.join(os.environ["WORK"], 'filtered/meta.tsv'), sep='\t', index_col=0)
     dataset_names = load_datasets(args.datasets_file)
-    datasets = {name: pd.read_csv(f'results/filtered/{name}.tsv', sep='\t', index_col=0) for name in dataset_names}
+    datasets = {name: pd.read_csv(os.path.join(os.environ["WORK"], f'filtered/{name}.tsv'), sep='\t', index_col=0) for name in dataset_names}
     
     df = pd.concat(datasets, axis=1)
     
@@ -109,7 +110,7 @@ def main():
     plt.gca().set_facecolor("white")
     plt.tight_layout()
 
-    output_file = Path('results/characteristics/combined_nontime_heatmap_splitmam.svg')
+    output_file = Path(os.path.join(os.environ["WORK"], 'characteristics/combined_nontime_heatmap_splitmam.svg'))
     plt.savefig(output_file)
     plt.close()
     print(f"Saved combined heatmap to {output_file}")

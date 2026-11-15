@@ -1,14 +1,14 @@
 #!/usr/bin/env python
+import os
 
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 
 # Setup
-input_file='data/recipe.xlsx'
-output='results/recipe'
+input_file=os.path.join(os.environ["DATA"], 'recipe.xlsx')
+output=os.path.join(os.environ["WORK"], 'recipe')
 os.makedirs(output, exist_ok=True)
 
 # Plotting
@@ -83,5 +83,5 @@ plt.savefig(f'{output}/{var}.svg')
 plt.clf()
 
 # Save
-df.to_csv('results/characteristics/recipe.tsv', sep='\t')
+df.to_csv(os.path.join(os.environ["WORK"], 'characteristics/recipe.tsv'), sep='\t')
 

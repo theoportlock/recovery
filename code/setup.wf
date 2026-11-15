@@ -18,10 +18,10 @@
       <data key="d6" />
     </node>
     <node id="3a9d83fc-9062-4367-a6e3-510564bf386b">
-      <data key="d3">join.py results/filtered/mapping.tsv \
-    results/filtered/covmeta.tsv \
+      <data key="d3">join.py $WORK/filtered/mapping.tsv \
+    $WORK/filtered/covmeta.tsv \
     --on subjectID \
-    -o results/filtered/covtimemeta.tsv</data>
+    -o $WORK/filtered/covtimemeta.tsv</data>
       <data key="d4">2494.6336243743995</data>
       <data key="d5">149.37035492010165</data>
       <data key="d6" />
@@ -46,12 +46,12 @@
     </node>
     <node id="build_database.graphml::5e1570b4-a679-4549-b4c9-dc882a268eee">
       <data key="d3">merge.py \
-  results/cleaned/premeta.tsv \
-  results/cleaned/feedandrecovery.tsv \
-  results/cleaned/deliverysupp.tsv \
-  results/cleaned/bfpob.tsv \
+  $WORK/cleaned/premeta.tsv \
+  $WORK/cleaned/feedandrecovery.tsv \
+  $WORK/cleaned/deliverysupp.tsv \
+  $WORK/cleaned/bfpob.tsv \
   -j outer \
-  -o results/cleaned/meta.tsv</data>
+  -o $WORK/cleaned/meta.tsv</data>
       <data key="d4">-462.0885651752301</data>
       <data key="d5">469.6865249311124</data>
       <data key="d6" />
@@ -124,10 +124,10 @@
     </node>
     <node id="d4e4b648-4abc-47b1-b072-7227e8023ead">
       <data key="d3">extract_taxa.py \
-  results/cleaned/metaphlan.tsv \
+  $WORK/cleaned/metaphlan.tsv \
   --keep-parent \
   -l "t__" \
-  -o results/cleaned/species.tsv</data>
+  -o $WORK/cleaned/species.tsv</data>
       <data key="d4">-543.9883057665897</data>
       <data key="d5">-56.43670513692622</data>
       <data key="d6" />
@@ -140,37 +140,37 @@
     </node>
     <node id="9ca2bf3c-32ed-4b3d-bd0f-8bfd571afd83">
       <data key="d3">create_mapping.py \
-  -d results/filtered/ \
-  -i conf/timedatasets.txt \
-  -o results/filtered/mapping.tsv</data>
+  -d $WORK/filtered/ \
+  -i $CONF/timedatasets.txt \
+  -o $WORK/filtered/mapping.tsv</data>
       <data key="d4">486.5387934349916</data>
       <data key="d5">5.69387596969699</data>
       <data key="d6" />
     </node>
     <node id="0dabf5df-0bf6-4173-80b2-b30ff135acf8">
-      <data key="d3">mkdir -p results/cleaned</data>
+      <data key="d3">mkdir -p $WORK/cleaned</data>
       <data key="d4">-1846.5410893633616</data>
       <data key="d5">41.164526539367714</data>
       <data key="d6" />
     </node>
     <node id="9780f658-26ff-4a9b-a03f-a57be3e04748">
       <data key="d3">scale.py log \
-  results/cleaned/unlogged_lipids.tsv \
-  -o results/cleaned/lipids.tsv</data>
+  $WORK/cleaned/unlogged_lipids.tsv \
+  -o $WORK/cleaned/lipids.tsv</data>
       <data key="d4">-581.0198645651299</data>
       <data key="d5">-437.10498240991126</data>
       <data key="d6" />
     </node>
     <node id="e01d74fd-8601-460e-858c-2f6b0be61422">
       <data key="d3">wget -q https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/72eaaa6c-6a30-4efd-bad9-02133b316ea8/download/bangladesh_bbs_population-and-housing-census-dataset_2022_admin-02.xlsx \
- -O results/census/census.xlsx</data>
+ -O $WORK/census/census.xlsx</data>
       <data key="d4">-1278.306748206061</data>
       <data key="d5">780.500493257276</data>
       <data key="d6" />
     </node>
     <node id="3a43cff2-d4a9-4809-8fe3-f3ec751051f8">
       <data key="d3">wget -q https://data.humdata.org/dataset/a6fedebe-72fe-4fc2-8657-1580acfa32c6/resource/039caab2-cde2-4093-a199-c712114789d6/download/indicator-definition_bangladesh_bbs_population-and-housing-census-dataset_admin-02.xlsx \
-  -O results/census/census_labels.xlsx</data>
+  -O $WORK/census/census_labels.xlsx</data>
       <data key="d4">-1285.809502696738</data>
       <data key="d5">870.6893784790744</data>
       <data key="d6" />
@@ -178,11 +178,11 @@
     <node id="9fcf4732-486d-49fa-b99c-2e90a7bc15e9">
       <data key="d3">parallel -j1 \
   onehot.py \
-    results/cleaned/{}.tsv \
+    $WORK/cleaned/{}.tsv \
     --min-prevalence 0.1 \
     --drop-onehot-values "No" \
     --dtype "bool" \
-    -o results/cleaned/{}.tsv \
+    -o $WORK/cleaned/{}.tsv \
   ::: education household media_consumption family sanitation</data>
       <data key="d4">-538.3844877254132</data>
       <data key="d5">265.9576309871127</data>
@@ -190,15 +190,15 @@
     </node>
     <node id="246364a8-29bd-49c2-a045-ceb068383c79">
       <data key="d3">cat \
-  conf/notimedatasets.txt \
-  conf/timedatasets.txt \
-  &gt; conf/all_datasets.txt</data>
+  $CONF/notimedatasets.txt \
+  $CONF/timedatasets.txt \
+  &gt; $CONF/all_datasets.txt</data>
       <data key="d4">-2154.1194424746964</data>
       <data key="d5">20.178432695524066</data>
       <data key="d6" />
     </node>
     <node id="9b629faa-9494-44b8-9167-ac7b172d5af8">
-      <data key="d3">wget -q -O results/mpa.nwk \
+      <data key="d3">wget -q -O $WORK/mpa.nwk \
   http://cmprod1.cibio.unitn.it/biobakery4/metaphlan_databases/mpa_vOct22_CHOCOPhlAnSGB_202212.nwk</data>
       <data key="d4">-1592.8704610744592</data>
       <data key="d5">89.1746598098774</data>
@@ -206,9 +206,9 @@
     </node>
     <node id="694c1739-f526-421a-a8ec-99152294abf4">
       <data key="d3">alpha_diversity.py \
-  results/cleaned/metaphlan.tsv \
-  -t results/mpa.nwk \
-  -o results/cleaned/alpha_diversity.tsv</data>
+  $WORK/cleaned/metaphlan.tsv \
+  -t $WORK/mpa.nwk \
+  -o $WORK/cleaned/alpha_diversity.tsv</data>
       <data key="d4">-593.3314575008544</data>
       <data key="d5">81.55205160919468</data>
       <data key="d6" />
@@ -217,9 +217,9 @@
       <data key="d3">parallel -j1 \
 filter.py \
   -q "~subjectID.str.startswith\(\'LCC3\'\)" \
-  results/cleaned/{}.tsv \
-  -o results/filtered/{}.tsv \
-&lt; conf/notimedatasets.txt</data>
+  $WORK/cleaned/{}.tsv \
+  -o $WORK/filtered/{}.tsv \
+&lt; $CONF/notimedatasets.txt</data>
       <data key="d4">-29.507161417963687</data>
       <data key="d5">31.556759731610782</data>
       <data key="d6" />
@@ -228,9 +228,9 @@ filter.py \
       <data key="d3">parallel -j1 \
 filter.py \
   -q "~sampleID.str.startswith\(\'LCC3\'\)" \
-  results/cleaned/{}.tsv \
-  -o results/filtered/{}.tsv \
-&lt; conf/timedatasets.txt</data>
+  $WORK/cleaned/{}.tsv \
+  -o $WORK/filtered/{}.tsv \
+&lt; $CONF/timedatasets.txt</data>
       <data key="d4">-29.3630990879943</data>
       <data key="d5">-132.45897061768594</data>
       <data key="d6" />
@@ -238,15 +238,15 @@ filter.py \
     <node id="67d6bf85-2665-4c80-b457-43e490d6fe20">
       <data key="d3">filter.py \
   -q "~subjectID.str.startswith('LCC3')" \
-  results/cleaned/meta.tsv \
-  -o results/filtered/meta.tsv</data>
+  $WORK/cleaned/meta.tsv \
+  -o $WORK/filtered/meta.tsv</data>
       <data key="d4">-14.606048299395042</data>
       <data key="d5">223.61672535196567</data>
       <data key="d6" />
     </node>
     <node id="54aa994b-162d-49c0-a6ab-94a10c646e86">
-      <data key="d3">rm -rf results/census
-mkdir results/census</data>
+      <data key="d3">rm -rf $WORK/census
+mkdir $WORK/census</data>
       <data key="d4">-1457.0337266695142</data>
       <data key="d5">569.4981910739865</data>
       <data key="d6" />
@@ -254,8 +254,8 @@ mkdir results/census</data>
     <node id="67aba30b-09d2-4052-94cd-9de174d0cdd3">
       <data key="d3">filter.py \
   -q "~subjectID.str.startswith('LCC3')" \
-  results/cleaned/mothers.tsv \
-  -o results/filtered/mothers.tsv</data>
+  $WORK/cleaned/mothers.tsv \
+  -o $WORK/filtered/mothers.tsv</data>
       <data key="d4">-112.336035691652</data>
       <data key="d5">621.2786126509127</data>
       <data key="d6" />
@@ -268,78 +268,78 @@ mkdir results/census</data>
     </node>
     <node id="beaa0972-99c9-41ec-8d3f-0571fa49cb04">
       <data key="d3">unzip -o \
-  -d results/aaunzipped \
+  -d $WORK/aaunzipped \
   data/RE_\ M4EFaD\ amino\ acid\ measurements.zip</data>
       <data key="d4">-1468.9461378339786</data>
       <data key="d5">-313.6611751707833</data>
       <data key="d6" />
     </node>
     <node id="59608939-75a1-465d-8553-fd4809c332ef">
-      <data key="d3">assign.py results/filtered/anthro.tsv \
+      <data key="d3">assign.py $WORK/filtered/anthro.tsv \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
-  -o results/filtered/anthro_recovery.tsv</data>
+  -o $WORK/filtered/anthro_recovery.tsv</data>
       <data key="d4">1282.3530979552272</data>
       <data key="d5">-281.7219182616201</data>
       <data key="d6" />
     </node>
     <node id="917e5a89-29df-410c-beab-58d165fb20cd">
       <data key="d3">calculate_recovery.py \
-  --anthro results/filtered/anthro.tsv \
-  --meta results/filtered/meta.tsv \
-  --timemeta results/filtered/timemeta.tsv \
+  --anthro $WORK/filtered/anthro.tsv \
+  --meta $WORK/filtered/meta.tsv \
+  --timemeta $WORK/filtered/timemeta.tsv \
   -t -2 \
-  -o results/filtered/recovery_status_2sd.tsv</data>
+  -o $WORK/filtered/recovery_status_2sd.tsv</data>
       <data key="d4">1712.783916334417</data>
       <data key="d5">-373.64388845131083</data>
       <data key="d6" />
     </node>
     <node id="c37322cc-afdd-467c-8196-b63a5fa7541a">
       <data key="d3">calculate_recovery.py \
-  --anthro results/filtered/anthro.tsv \
-  --meta results/filtered/meta.tsv \
-  --timemeta results/filtered/timemeta.tsv \
+  --anthro $WORK/filtered/anthro.tsv \
+  --meta $WORK/filtered/meta.tsv \
+  --timemeta $WORK/filtered/timemeta.tsv \
   -t -1 \
-  -o results/filtered/recovery_status_1sd.tsv</data>
+  -o $WORK/filtered/recovery_status_1sd.tsv</data>
       <data key="d4">1714.9593253014762</data>
       <data key="d5">-192.15468982325342</data>
       <data key="d6" />
     </node>
     <node id="ede9a0cc-c58b-4784-93e4-54a3a68f0825">
       <data key="d3">join.py \
-  results/filtered/meta.tsv \
-  results/filtered/baseline_WLZ.tsv \
-  -o results/filtered/covmeta_norename.tsv</data>
+  $WORK/filtered/meta.tsv \
+  $WORK/filtered/baseline_WLZ.tsv \
+  -o $WORK/filtered/covmeta_norename.tsv</data>
       <data key="d4">1982.676172853228</data>
       <data key="d5">1.0109405085324852</data>
       <data key="d6" />
     </node>
     <node id="956e9a61-fae1-4e44-aef5-5cbd2df9f378">
       <data key="d3">rename_regex.py \
-  results/filtered/covmeta_norename.tsv \
+  $WORK/filtered/covmeta_norename.tsv \
   --match 'WLZ_WHZ' \
   --replace 'baseline_WLZ' \
-  -o results/filtered/covmeta.tsv</data>
+  -o $WORK/filtered/covmeta.tsv</data>
       <data key="d4">2368.1443373512684</data>
       <data key="d5">-6.2505457506753</data>
       <data key="d6" />
     </node>
     <node id="c20e3c92-ce9f-4c48-8138-cd61cf1ca17c">
       <data key="d3">filter.py \
-  results/filtered/covmeta.tsv \
+  $WORK/filtered/covmeta.tsv \
   -q "Condition == 'MAM'" \
-  -o results/filtered/covmeta_MAM.tsv</data>
+  -o $WORK/filtered/covmeta_MAM.tsv</data>
       <data key="d4">2856.5105334563036</data>
       <data key="d5">-195.16916279690042</data>
       <data key="d6" />
     </node>
     <node id="b8683318-306c-481f-bd22-c488428579c8">
-      <data key="d3">for f in $(cat conf/timedatasets.txt); do
+      <data key="d3">for f in $(cat $CONF/timedatasets.txt); do
   splitter.py \
-    results/cleaned/${f}.tsv \
-    -m results/filtered/timemeta.tsv \
+    $WORK/cleaned/${f}.tsv \
+    -m $WORK/filtered/timemeta.tsv \
     -col timepoint \
-    --outdir results/timepoints \
+    --outdir $WORK/timepoints \
     --reindex subjectID 
 done</data>
       <data key="d4">1236.1673701518394</data>
@@ -348,112 +348,112 @@ done</data>
     </node>
     <node id="3213ed29-410e-427a-b65c-8b3210baf978">
       <data key="d3">filter.py \
-  results/filtered/covmeta.tsv \
+  $WORK/filtered/covmeta.tsv \
   -q 'Condition == "MAM" and (Recovery == "No recovery" or Recovery == "Recovered")' \
-  -o results/filtered/meta_MAM.tsv</data>
+  -o $WORK/filtered/meta_MAM.tsv</data>
       <data key="d4">2860.8551229239615</data>
       <data key="d5">-68.12583057690192</data>
       <data key="d6" />
     </node>
     <node id="2a750bc5-2baa-4258-8bb4-54c5615529cb">
-      <data key="d3">join.py results/filtered/mapping.tsv \
-    results/filtered/meta.tsv \
+      <data key="d3">join.py $WORK/filtered/mapping.tsv \
+    $WORK/filtered/meta.tsv \
     --on subjectID \
-    -o results/filtered/timemeta.tsv</data>
+    -o $WORK/filtered/timemeta.tsv</data>
       <data key="d4">812.6875044684341</data>
       <data key="d5">9.568341356619513</data>
       <data key="d6" />
     </node>
     <node id="f6f5fff9-cc43-4b25-a85e-d9da28978a18">
       <data key="d3"># All kids
-filter.py results/filtered/covtimemeta.tsv \
+filter.py $WORK/filtered/covtimemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
-  -o results/filtered/timemeta_0_52tp.tsv</data>
+  -o $WORK/filtered/timemeta_0_52tp.tsv</data>
       <data key="d4">2857.749465691163</data>
       <data key="d5">343.8845915789855</data>
       <data key="d6" />
     </node>
     <node id="119af91b-e955-43de-b714-34e8800c43f6">
       <data key="d3">replace.py \
-  results/filtered/timemeta_MAM_0_52tp.tsv \
+  $WORK/filtered/timemeta_MAM_0_52tp.tsv \
   --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
-  --output results/filtered/timemeta_MAM_yr1_yr2.tsv</data>
+  --output $WORK/filtered/timemeta_MAM_yr1_yr2.tsv</data>
       <data key="d4">3359.671977281598</data>
       <data key="d5">345.8387646414466</data>
       <data key="d6" />
     </node>
     <node id="edebf298-55ce-4634-b555-05629109188c">
       <data key="d3"># Just looking at MAM kids
-filter.py results/filtered/covtimemeta.tsv \
+filter.py $WORK/filtered/covtimemeta.tsv \
   -q 'timepoint == 0 or timepoint == 52' \
   -q 'Condition == "MAM"' \
   -q 'Recovery == "No recovery" or Recovery == "Recovered"' \
-  -o results/filtered/timemeta_MAM_0_52tp.tsv</data>
+  -o $WORK/filtered/timemeta_MAM_0_52tp.tsv</data>
       <data key="d4">2859.734212873194</data>
       <data key="d5">180.98653944410182</data>
       <data key="d6" />
     </node>
     <node id="0c0e8e80-3923-4963-86bf-7d9e926490b2">
       <data key="d3">filter.py \
-  results/filtered/covtimemeta.tsv \
+  $WORK/filtered/covtimemeta.tsv \
   -q 'Condition == "MAM"' \
-  -o results/filtered/timemeta_MAM.tsv</data>
+  -o $WORK/filtered/timemeta_MAM.tsv</data>
       <data key="d4">2858.0446199426447</data>
       <data key="d5">55.55706541585117</data>
       <data key="d6" />
     </node>
     <node id="dbadb780-4ac4-4f97-a957-6ccfdff72a53">
       <data key="d3">filter.py \
-	results/filtered/timemetaMAM_0_52tp_filled.tsv \
+	$WORK/filtered/timemetaMAM_0_52tp_filled.tsv \
 	-q 'timepoint == 0' \
-	-o results/filtered/timemetaMAM_0tp_filled.tsv</data>
+	-o $WORK/filtered/timemetaMAM_0tp_filled.tsv</data>
       <data key="d4">3903.958666280261</data>
       <data key="d5">198.741415296461</data>
       <data key="d6" />
     </node>
     <node id="1ad890ad-0576-4bc3-b9b8-cfa32cce730f">
       <data key="d3">fillna.py \
-	-i results/filtered/timemeta_MAM_0_52tp.tsv \
+	-i $WORK/filtered/timemeta_MAM_0_52tp.tsv \
 	-c Feed,Recovery \
 	-v 'Well-nourished (C)' \
-	-o results/filtered/timemetaMAM_0_52tp_filled.tsv</data>
+	-o $WORK/filtered/timemetaMAM_0_52tp_filled.tsv</data>
       <data key="d4">3440.256258856803</data>
       <data key="d5">182.7469584798406</data>
       <data key="d6" />
     </node>
     <node id="ee80ad05-11e8-43ee-959d-567a3ce0bb85">
       <data key="d3">replace.py \
-    results/filtered/timemeta_0_52tp_filled.tsv \
+    $WORK/filtered/timemeta_0_52tp_filled.tsv \
     --to_replace '{"timepoint": {"0": "yr1", "52": "yr2"}}' \
-    --output results/filtered/timemeta_0_52tp_filled_formatted.tsv</data>
+    --output $WORK/filtered/timemeta_0_52tp_filled_formatted.tsv</data>
       <data key="d4">3703.911251617725</data>
       <data key="d5">600.5106414608471</data>
       <data key="d6" />
     </node>
     <node id="94047242-c353-4943-b2d0-1190b09cc5c8">
       <data key="d3">fillna.py \
-    -i results/filtered/timemeta_0_52tp.tsv \
+    -i $WORK/filtered/timemeta_0_52tp.tsv \
     -c Feed,Recovery \
     -v 'Well-nourished' \
-    -o results/filtered/timemeta_0_52tp_filled.tsv</data>
+    -o $WORK/filtered/timemeta_0_52tp_filled.tsv</data>
       <data key="d4">3268.511615029134</data>
       <data key="d5">589.5292701790927</data>
       <data key="d6" />
     </node>
     <node id="95e0fd20-f2fa-4b0d-96f1-bfd665064606">
       <data key="d3">filter.py \
-    results/filtered/covtimemeta.tsv \
+    $WORK/filtered/covtimemeta.tsv \
     -q 'timepoint == 0 or timepoint == 52' \
-    -o results/filtered/timemeta_0_52tp.tsv</data>
+    -o $WORK/filtered/timemeta_0_52tp.tsv</data>
       <data key="d4">2876.549914929534</data>
       <data key="d5">596.0474726589819</data>
       <data key="d6" />
     </node>
     <node id="b843f388-d5b3-4ba5-95b5-4f31f2a177d5">
       <data key="d3">select_features.py \
-  results/timepoints/0/anthro.tsv \
+  $WORK/timepoints/0/anthro.tsv \
   -c 'WLZ_WHZ' \
-  -o results/filtered/baseline_WLZ.tsv</data>
+  -o $WORK/filtered/baseline_WLZ.tsv</data>
       <data key="d4">1634.874723937094</data>
       <data key="d5">-0.20801462559090567</data>
       <data key="d6" />
@@ -462,7 +462,7 @@ filter.py results/filtered/covtimemeta.tsv \
       <data key="d3">calculate_age.py \
   -i "data/06. LEAP_Child_anthropometry_for_1_Yrs_MAM (Baseline to ATP 3.04) on 26-May-2024.xlsx" \
      "data/07. LEAP_Child_Anthropometry_for_1_Yrs_Normal (Baseline to ATP 3.04) on 01-Jan-2024 2.xlsx" \
-  -o results/cleaned/anthro_age.tsv</data>
+  -o $WORK/cleaned/anthro_age.tsv</data>
       <data key="d4">-1443.8106783098165</data>
       <data key="d5">-544.1321254952281</data>
       <data key="d6" />
@@ -470,11 +470,11 @@ filter.py results/filtered/covtimemeta.tsv \
     <node id="aa7f493e-3722-4496-a84d-81a4c039fe5b">
       <data key="d3"># Just to check mean ages
 group.py \
-  results/cleaned/anthro_age.tsv \
+  $WORK/cleaned/anthro_age.tsv \
   --group_by Condition \
   --func mean std \
-  --meta results/filtered/covmeta.tsv \
-  -o results/cleaned/age_descriptive.tsv</data>
+  --meta $WORK/filtered/covmeta.tsv \
+  -o $WORK/cleaned/age_descriptive.tsv</data>
       <data key="d4">2659.0588910714473</data>
       <data key="d5">-381.5734017899135</data>
       <data key="d6" />

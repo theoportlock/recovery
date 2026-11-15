@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-export DATA="/run/media/theo/maindrive/fellowship/m4efad/recovery/data"
-export WORK="results"
+#export DATA="/run/media/theo/maindrive/fellowship/m4efad/recovery/data"
+export DATA="data"
+export WORK="newresults"
+export CONF="conf"
 
 export PATH="code/:$PATH"
 export PATH="metatoolkit/metatoolkit/:$PATH"

@@ -4,6 +4,7 @@
 """
 Author: Theo Portlock
 """
+import os
 
 import numpy as np
 import pandas as pd
@@ -11,11 +12,11 @@ from docx import Document
 
 # For samplesheet processing
 docs = []
-docs.append(Document('data/InoliWD_Batch3_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('data/InoliWD_Batch4_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('data/InoliWD_Batch5_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('data/InoliWD_JOS_CS-ANZ DNA Sample Information Form.docx'))
-docs.append(Document('data/CS-ANZ DNA Sample Information Form_Hui Hui_20240220_TPupdated.docx'))
+docs.append(Document(os.path.join(os.environ["DATA"], 'InoliWD_Batch3_JOS_CS-ANZ DNA Sample Information Form.docx')))
+docs.append(Document(os.path.join(os.environ["DATA"], 'InoliWD_Batch4_JOS_CS-ANZ DNA Sample Information Form.docx')))
+docs.append(Document(os.path.join(os.environ["DATA"], 'InoliWD_Batch5_JOS_CS-ANZ DNA Sample Information Form.docx')))
+docs.append(Document(os.path.join(os.environ["DATA"], 'InoliWD_JOS_CS-ANZ DNA Sample Information Form.docx')))
+docs.append(Document(os.path.join(os.environ["DATA"], 'CS-ANZ DNA Sample Information Form_Hui Hui_20240220_TPupdated.docx')))
 
 output = []
 
@@ -64,7 +65,7 @@ standards = standards.set_index('Seq_ID')
 standards = standards.drop_duplicates(subset='batch').sort_values('batch')
 #quick fix
 standards.index = standards.index.str.replace('M298', 'M297')
-standards.to_csv('results/cleaned/standards.tsv', sep='\t')
+standards.to_csv(os.path.join(os.environ["WORK"], 'cleaned/standards.tsv'), sep='\t')
 
 # Remove controls by filtering index
 df = df.loc[df.index.str.startswith('LCC')]
@@ -92,4 +93,4 @@ samplesheet.index = samplesheet.ID + samplesheet.timepoint
 # Rename
 samplesheet = samplesheet.rename(columns={'ID':'subjectID'})
 samplesheet.timepoint = samplesheet.timepoint.astype(int)
-samplesheet.to_csv('results/cleaned/samplesheet.tsv', sep='\t', index=False)
+samplesheet.to_csv(os.path.join(os.environ["WORK"], 'cleaned/samplesheet.tsv'), sep='\t', index=False)

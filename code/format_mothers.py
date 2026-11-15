@@ -4,10 +4,11 @@
 '''
 Author: Theo Portlock
 '''
+import os
 
 import pandas as pd
 
-sheets = pd.read_excel("data/04._LEAP-Mother_Enrollment_CRF.xlsx", sheet_name=[0,1], index_col=0)
+sheets = pd.read_excel(os.path.join(os.environ["DATA"], '04._LEAP-Mother_Enrollment_CRF.xlsx'), sheet_name=[0,1], index_col=0)
 labels = sheets[1].copy()
 labels = labels.set_index('Field Name/Variable Name')['Description'].to_frame()
 labels = labels.dropna()
@@ -66,4 +67,4 @@ outdf['Depress'] = outdf['Depress'].sub(2).mul(-1)
 outdf['Tetanus'] = outdf['Tetanus'].sub(2).mul(-1)
 outdf.loc[:, bools.values()] = outdf.loc[:, bools.values()].astype(bool)
 
-outdf.to_csv('results/cleaned/mothers.tsv', sep='\t')
+outdf.to_csv(os.path.join(os.environ["WORK"], 'cleaned/mothers.tsv'), sep='\t')

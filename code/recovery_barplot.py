@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import os
 
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('results/filtered/recovery_status.tsv', sep='\t', index_col=0)
-meta = pd.read_csv('results/filtered/meta.tsv', sep='\t', index_col=0)
+df = pd.read_csv(os.path.join(os.environ["WORK"],'filtered/recovery_status.tsv'), sep='\t', index_col=0)
+meta = pd.read_csv(os.path.join(os.environ["WORK"],'filtered/meta.tsv'), sep='\t', index_col=0)
  
 meta = meta.join(df)
 
@@ -61,6 +62,5 @@ ax.set_xlabel('Feed')
 ax.set_ylim(0, 100)
 ax.legend(title='Recovery status', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-plt.savefig('results/figure1/stacked_bar_recovery.svg')
-#plt.show()
+plt.savefig(os.path.join(os.environ["WORK"],'figure1/stacked_bar_recovery.svg'))
 

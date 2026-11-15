@@ -1,12 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="edge_type" attr.type="string"/>
-<key id="d13" for="edge" attr.name="status" attr.type="string"/>
-<key id="d12" for="edge" attr.name="id" attr.type="string"/>
-<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
-<key id="d10" for="node" attr.name="pid" attr.type="string"/>
-<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
-<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
-<key id="d7" for="node" attr.name="command" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="status" attr.type="string"/>
+<key id="d7" for="edge" attr.name="id" attr.type="string"/>
 <key id="d6" for="node" attr.name="status" attr.type="string"/>
 <key id="d5" for="node" attr.name="y" attr.type="string"/>
 <key id="d4" for="node" attr.name="x" attr.type="string"/>
@@ -26,123 +21,56 @@ bash -c '. env.sh &amp;&amp; {}'</data>
 anthrotime.py</data>
   <data key="d4">-98.4561074405663</data>
   <data key="d5">-163.85908607220597</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; # FIGURE 1B
-anthrotime.py'</data>
-  <data key="d8"></data>
-  <data key="d9"></data>
-  <data key="d10">20092</data>
-  <data key="d11">0</data>
+  <data key="d6"></data>
 </node>
 <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d3"># FIGURE 1A
 schematic.py</data>
   <data key="d4">-93.81680079250738</data>
   <data key="d5">-243.04582158195603</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1A
-schematic.py'</data>
-  <data key="d8"></data>
-  <data key="d9"></data>
-  <data key="d10">20081</data>
-  <data key="d11">0</data>
+  <data key="d6"></data>
 </node>
 <node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
   <data key="d3"># FIGURE 1C
 recovery_barplot.py</data>
   <data key="d4">-103.06702823758148</data>
   <data key="d5">-87.31135765174483</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1C
-recovery_barplot.py'</data>
-  <data key="d8"></data>
-  <data key="d9">/home/tpor598/recovery/code/recovery_barplot.py:49: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  y_pos = (bottom[i] if bottom is not None else 0) + pct / 2
-</data>
-  <data key="d10">20103</data>
-  <data key="d11">0</data>
+  <data key="d6"></data>
 </node>
 <node id="a191959b-1acd-4594-8819-65c36f01f33c">
   <data key="d3"># FIGURE 1D
 box.py \
-  results/filtered/surveillance.tsv \
-  --meta results/filtered/meta.tsv \
+  $WORK/filtered/surveillance.tsv \
+  --meta $WORK/filtered/meta.tsv \
   -x Feed \
   -y days_of_catchup \
   --figsize 2.7,2.7 \
-  -o results/recovery_rates/days_of_catchup_box.svg</data>
+  -o $WORK/recovery_rates/days_of_catchup_box.svg</data>
   <data key="d4">114.96116932638881</data>
   <data key="d5">-243.06407133731196</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
-box.py \
-  results/filtered/surveillance.tsv \
-  --meta results/filtered/meta.tsv \
-  -x Feed \
-  -y days_of_catchup \
-  --figsize 2.7,2.7 \
-  -o results/figure1/days_of_catchup_box.svg'</data>
-  <data key="d8">Index(['days_of_catchup', 'base_temp', 'fever', 'diarrhoea', 'cough', 'rash',
-       'antibiotic', 'ors', 'zinc', 'comp_khichuri', 'comp_suji', 'comp_halwa',
-       'comp_cookies.ruti.bread', 'comp_rice.and.curry',
-       'comp_tea.drinks.juice', 'comp_others', 'comp_none',
-       'fail_child.refused.to.take', 'fail_parents.refused.to.feed',
-       'fail_child.or.parents.not.at.home', 'fail_child.vomiting',
-       'fail_child.is.sick', 'fail_other', 'fail_no.failure', 'Sex',
-       'Ethnicity', 'Condition', 'Feed', 'Recovery', 'Delivery_Mode',
-       'Supplementation', 'BF', 'PoB'],
-      dtype='object')
-</data>
-  <data key="d9"></data>
-  <data key="d10">20114</data>
-  <data key="d11">0</data>
+  <data key="d6"></data>
 </node>
 <node id="6eaccd10-48fb-45f8-bf1d-07831d27c76a">
-  <data key="d3">rm -rf results/recovery_rates
-mkdir -p results/recovery_rates</data>
+  <data key="d3">rm -rf $WORK/recovery_rates
+mkdir -p $WORK/recovery_rates</data>
   <data key="d4">-519.491443679945</data>
   <data key="d5">77.90707031174657</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1
-rm -rf results/figure1
-mkdir -p results/figure1'</data>
-  <data key="d8"></data>
-  <data key="d9"></data>
-  <data key="d10">20043</data>
-  <data key="d11">0</data>
+  <data key="d6"></data>
 </node>
 <node id="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
   <data key="d3"># FIGURE 1D
 box.py \
-  results/filtered/recovery_status.tsv \
-  --meta results/filtered/meta.tsv \
+  $WORK/filtered/recovery_status.tsv \
+  --meta $WORK/filtered/meta.tsv \
   -x Feed \
   -y Days_to_recovery \
   --figsize 2.7,2.7 \
   --ymin 0 \
   --ymax 50 \
-  -o results/recovery_rates/days_to_recovery_box.svg</data>
+  -o $WORK/recovery_rates/days_to_recovery_box.svg</data>
   <data key="d4">111.60234542628461</data>
   <data key="d5">-53.79846368464483</data>
-  <data key="d6">ran</data>
-  <data key="d7">bash -c 'cd /home/tpor598/recovery &amp;&amp; . env.sh &amp;&amp; # FIGURE 1D
-box.py \
-  results/filtered/recovery_status.tsv \
-  --meta results/filtered/meta.tsv \
-  -x Feed \
-  -y Days_to_recovery \
-  --figsize 2.7,2.7 \
-  --ymin 0 \
-  --ymax 50 \
-  -o results/figure1/days_to_recovery_box.svg'</data>
-  <data key="d8">Index(['Recovered', 'Recovery_status', 'Days_to_recovery', 'Sex', 'Ethnicity',
-       'Condition', 'Feed', 'Recovery', 'Delivery_Mode', 'Supplementation',
-       'BF', 'PoB'],
-      dtype='object')
-</data>
-  <data key="d9"></data>
-  <data key="d10">20125</data>
-  <data key="d11">0</data>
+  <data key="d6"></data>
 </node>
 <node id="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
   <data key="d3">table2_who_refeed_recovery.sh</data>
@@ -163,35 +91,38 @@ box.py \
   <data key="d6"></data>
 </node>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
-  <data key="d12">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
-  <data key="d13"></data>
+  <data key="d7">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
-  <data key="d12">cb09b1c5-b3d4-4233-8723-bf4d5cab452b</data>
-  <data key="d13"></data>
+  <data key="d7">cb09b1c5-b3d4-4233-8723-bf4d5cab452b</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="7a113732-6455-4f0d-b805-fc6095b40ca3">
-  <data key="d12">15eb8994-2a70-4724-9cca-a28e314a02bc</data>
-  <data key="d13"></data>
+  <data key="d7">15eb8994-2a70-4724-9cca-a28e314a02bc</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="a191959b-1acd-4594-8819-65c36f01f33c">
-  <data key="d12">1c767b49-cc6f-48fb-8e6a-eafdfa150517</data>
-  <data key="d13"></data>
+  <data key="d7">1c767b49-cc6f-48fb-8e6a-eafdfa150517</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
-  <data key="d12">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
-  <data key="d13"></data>
+  <data key="d7">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
-  <data key="d12">3e46d63d-47f2-4822-b853-845a66df87e1</data>
-  <data key="d14">blocking</data>
+  <data key="d7">3e46d63d-47f2-4822-b853-845a66df87e1</data>
+  <data key="d9">blocking</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
-  <data key="d12">efa7f1b2-1fd5-4e49-8a1b-8acee9077e2c</data>
-  <data key="d14">blocking</data>
+  <data key="d7">efa7f1b2-1fd5-4e49-8a1b-8acee9077e2c</data>
+  <data key="d9">blocking</data>
+  <data key="d8"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="89c86cb9-843c-4d42-91ee-c5f022db7f44">
-  <data key="d12">081bbe28-1e93-4067-a19e-914c05747061</data>
-  <data key="d14">blocking</data>
+  <data key="d7">081bbe28-1e93-4067-a19e-914c05747061</data>
+  <data key="d9">blocking</data>
+  <data key="d8"></data>
 </edge>
 </graph></graphml>

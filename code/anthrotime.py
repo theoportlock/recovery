@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import os
 
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
 # Load data
-anthro = pd.read_csv('results/filtered/anthro.tsv', sep='\t', index_col=0)
-timemeta = pd.read_csv('results/filtered/timemeta.tsv', sep='\t', index_col=0)
+anthro = pd.read_csv(os.path.join(os.environ["WORK"], 'filtered/anthro.tsv'), sep='\t', index_col=0)
+timemeta = pd.read_csv(os.path.join(os.environ["WORK"], 'filtered/timemeta.tsv'), sep='\t', index_col=0)
 df = anthro.join(timemeta)
 
 # Add condition to timemeta
@@ -61,34 +62,4 @@ line(df, 'timepoint', 'Weight', 'Recovery', axs[2])
 # Layout tweaks
 plt.subplots_adjust(wspace=0.4)
 plt.tight_layout()
-plt.savefig('results/recovery_rates/anthro_time.svg')
-
-
-'''
-
-# --- Compute weight gain deltas per subject ---
-# Sort by subject and time
-df = df.sort_values(["subjectID", "timepoint"])
-
-# Compute simple week-to-week delta in grams
-df["delta_weight"] = df.groupby("subjectID")["Weight"].diff()
-
-# Optionally: compute velocity (g/kg/day) which is standard in malnutrition recovery
-# (using average weight between visits for scaling)
-mean_weight = (df["Weight"] + df.groupby("subjectID")["Weight"].shift()) / 2
-days = (df["timepoint"] - df.groupby("subjectID")["timepoint"].shift()) * 7
-df["g_per_kg_per_day"] = df["delta_weight"] / (mean_weight * days)
-
-# Optional smoothing: 2-point rolling mean per subject
-df["delta_weight_smooth"] = (
-    df.groupby("subjectID")["delta_weight"].transform(lambda x: x.rolling(2, min_periods=1).mean())
-)
-
-# Example: plot raw weekly weight delta
-fig, ax = plt.subplots(figsize=(4, 2.5))
-var = "g_per_kg_per_day"
-line(df, "timepoint", var, "Recovery", ax)
-ax.set_ylabel(var)
-plt.savefig("results/weight_deltas.svg")
-
-'''
+plt.savefig(os.path.join(os.environ["WORK"], 'figure1/anthro_time.svg'))

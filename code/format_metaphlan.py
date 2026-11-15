@@ -5,15 +5,16 @@
 Author: Theo Portlock
 Script to format MetaPhlAn4 output for downstream analysis
 """
+import os
 
 import pandas as pd
 
 # Load MetaPhlAn3 output file, skipping the first row (contains description/metadata)
-df = pd.read_csv('data/metaphlan_merged_profiles.tsv',
+df = pd.read_csv(os.path.join(os.environ["DATA"], 'metaphlan_merged_profiles.tsv'),
                  sep='\t', index_col=0, header=1)
 
 # Load the sample metadata
-samplesheet = pd.read_csv('results/cleaned/samplesheet.tsv',
+samplesheet = pd.read_csv(os.path.join(os.environ["WORK"], 'cleaned/samplesheet.tsv'),
                           sep='\t', index_col=0)
 
 # Clean column names: remove ".metaphlan" suffix
@@ -40,4 +41,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Transmute and save formatted data - for alpha-diversity analysis
-df.to_csv('results/cleaned/metaphlan.tsv', sep='\t')
+df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/metaphlan.tsv'), sep='\t')

@@ -19,7 +19,6 @@ Description:
 
 At some point convert this to proportion.py and groupby changes
 """
-
 import pandas as pd
 import numpy as np
 import argparse

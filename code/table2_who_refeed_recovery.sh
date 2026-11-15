@@ -2,28 +2,28 @@
 
 source env.sh
 
-output='results/table2_plus'
+output='$WORK/table2_plus'
 rm -rf $output
 mkdir -p $output/work/{selected,formatted,descriptive}
 
 onehot.py \
-	results/filtered/recovery_status.tsv \
+	$WORK/filtered/recovery_status.tsv \
 	--prefix-sep ', ' \
 	--dtype bool \
 	-o $output/formatted/recovery_status_oh.tsv
 
 select.py \
-	results/filtered/surveillance.tsv \
+	$WORK/filtered/surveillance.tsv \
 	-c 'days_of_catchup,fail_no.failure' \
 	-o $output/formatted/surveillance.tsv
 
 select.py \
-	results/filtered/meta_MAM.tsv \
+	$WORK/filtered/meta_MAM.tsv \
 	-c 'Feed' \
 	-o $output/selected/meta_MAM.tsv
 
 onehot.py \
-	results/table2/work/selected/meta_MAM.tsv \
+	$WORK/table2/work/selected/meta_MAM.tsv \
 	--prefix-sep ', ' \
 	--dtype bool \
 	-o $output/formatted/meta_MAM_oh.tsv
@@ -31,7 +31,7 @@ onehot.py \
 for file in $output/formatted/{meta_MAM_oh,recovery_status_oh,surveillance}.tsv; do
     descriptive.py \
         -i "$file" \
-        --meta results/filtered/meta.tsv \
+        --meta $WORK/filtered/meta.tsv \
         -g 'Feed' \
         -o "$output/work/descriptive/$(basename "$file")"
 done

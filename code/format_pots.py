@@ -5,10 +5,11 @@
 Author: Theo Portlock
 For project setup
 '''
+import os
 
 import pandas as pd
 
-df = pd.read_csv('data/DhakaBangladeshLEAPE-SpinThePotsScoring_DATA_LABELS_2024-07-18_2302.csv',index_col=0)
+df = pd.read_csv(os.path.join(os.environ["DATA"], 'DhakaBangladeshLEAPE-SpinThePotsScoring_DATA_LABELS_2024-07-18_2302.csv'),index_col=0)
 
 df.index = df.index +  df['Event Name'].replace(
         {'12_month (Arm 2: Intervention)':'000',
@@ -29,5 +30,5 @@ df.columns = df.columns.str.replace(' ','_')
 # Drop timepoint as all 52
 df = df.droplevel(1)
 
-df.to_csv('results/cleaned/pots.tsv', sep='\t')
+df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/pots.tsv'), sep='\t')
 

@@ -5,6 +5,7 @@
 Author: Theo Portlock
 Purpose: Setup and clean lipid data for analysis
 """
+import os
 
 import pandas as pd
 import numpy as np
@@ -21,7 +22,7 @@ LEAP_COLUMN_MAPPING = {
 # Load and clean dataset1
 # ------------------------------
 # Read the Excel file, skipping the first 5 columns and resetting the index.
-dataset1 = pd.read_excel('data/LEAP03_for_Theo.xlsx', index_col=0).iloc[:, 5:].reset_index()
+dataset1 = pd.read_excel(os.path.join(os.environ["DATA"], 'LEAP03_for_Theo.xlsx'), index_col=0).iloc[:, 5:].reset_index()
 
 # Fix the LEAP IDs using the mapping
 dataset1['LEAP'] = dataset1['LEAP'].replace(LEAP_COLUMN_MAPPING, regex=True)
@@ -50,7 +51,7 @@ dataset1 = dataset1.T.groupby(level=0).max().T  # drops 126 duplicate lipids
 # Load and clean dataset2
 # ------------------------------
 # Read the Excel file and skip the first 4 columns, then reset index.
-dataset2 = pd.read_excel('data/LEAP05_combined_Theo.xlsx', index_col=1).iloc[:, 4:].reset_index()
+dataset2 = pd.read_excel(os.path.join(os.environ["DATA"], 'LEAP05_combined_Theo.xlsx'), index_col=1).iloc[:, 4:].reset_index()
 
 # Remove QC samples by filtering rows where the 'M4EFaD' column starts with 'L'
 dataset2 = dataset2.loc[dataset2['M4EFaD'].astype(str).str.startswith('L')]
@@ -72,11 +73,11 @@ dataset2 = dataset2.T.groupby(level=0).max().T  # drops 58 duplicate lipids
 # Load and clean baseline dataset (dataset3)
 # ------------------------------
 # Read the POS and NEG sheets, skipping the first row (assumed header)
-dfp = pd.read_excel("data/LEAP_01_&_02_combined_Theo_v03.xlsx", sheet_name='POS', index_col=0).iloc[1:, :]
-dfn = pd.read_excel("data/LEAP_01_&_02_combined_Theo_v03.xlsx", sheet_name='NEG', index_col=0).iloc[1:, :]
+dfp = pd.read_excel(os.path.join(os.environ["DATA"], 'LEAP_01_&_02_combined_Theo_v03.xlsx'), sheet_name='POS', index_col=0).iloc[1:, :]
+dfn = pd.read_excel(os.path.join(os.environ["DATA"], 'LEAP_01_&_02_combined_Theo_v03.xlsx'), sheet_name='NEG', index_col=0).iloc[1:, :]
 
 # Load the sample IDs
-metabid = pd.read_excel("data/LEAP_01_&_02_combined_Theo_v03.xlsx", sheet_name='sample IDs', index_col=0)
+metabid = pd.read_excel(os.path.join(os.environ["DATA"], 'LEAP_01_&_02_combined_Theo_v03.xlsx'), sheet_name='sample IDs', index_col=0)
 
 # Clean up row indices for dfn and dfp using regex substitutions:
 dfn.index = dfn.index.str.replace(r'.*_S', '', regex=True) \
@@ -112,7 +113,7 @@ df = df.T.groupby(level=0).max().T
 
 # Process the sample ID dataframe (metabid):
 metabid['sample'] = metabid['sample'].str[:-4] + '1001'
-metabid['Liggins sample'] = metabid['Liggins sample'].str.extract('(\d+)').astype(int)
+metabid['Liggins sample'] = metabid['Liggins sample'].str.extract(r'(\d+)').astype(int)
 metabid.treatment = metabid.treatment.str.upper()
 metabid.set_index(['treatment', 'Liggins sample'], inplace=True)
 
@@ -124,7 +125,7 @@ df = metab.astype(float)
 # Filtering and merging datasets
 # ------------------------------
 # Filter columns: keep only those with names that contain ':' and remove unwanted columns
-df = df.loc[:, df.columns.str.contains('\:')]
+df = df.loc[:, df.columns.str.contains(':')]
 df = df.loc[:, ~df.columns.str.contains('nsettled')]
 df = df.loc[:, ~df.columns.str.contains('Unnamed')]
 
@@ -168,4 +169,4 @@ mapping = mapping[['sampleID', 'subjectID', 'timepoint']]
 df.index = mapping['sampleID']
 
 # Export the final data to a TSV file
-df.to_csv('results/cleaned/unlogged_lipids.tsv', sep='\t')
+df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/unlogged_lipids.tsv'), sep='\t')

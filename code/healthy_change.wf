@@ -23,24 +23,24 @@
 bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="14b716fa-cb0b-4379-9727-7769f1510a88">
   <data key="d3">multiline.py \
-  --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
-  --meta results/filtered/timemeta.tsv \
+  --subject $WORK/healthy_change/maaslin/change/species/features/data_transformed.tsv \
+  --meta $WORK/filtered/timemeta.tsv \
   --x timepoint \
   --y 'Allisonella_histaminiformans|SGB5843' \
   --hue Recovery \
   --id subjectID \
-  --output results/healthy_change/allis_multiline.svg</data>
+  --output $WORK/healthy_change/allis_multiline.svg</data>
   <data key="d4">3556.420042844655</data>
   <data key="d5">-105.127008716161</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; multiline.py \
-  --subject results/healthy_change/maaslin/change/species/features/data_transformed.tsv \
-  --meta results/filtered/timemeta.tsv \
+  --subject $WORK/healthy_change/maaslin/change/species/features/data_transformed.tsv \
+  --meta $WORK/filtered/timemeta.tsv \
   --x timepoint \
   --y '\''Allisonella_histaminiformans|SGB5843'\'' \
   --hue Recovery \
   --id subjectID \
-  --output results/healthy_change/allis_multiline.svg'</data>
+  --output $WORK/healthy_change/allis_multiline.svg'</data>
   <data key="d8"></data>
   <data key="d9">Traceback (most recent call last):
   File "/home/tpor598/recovery/metatoolkit/metatoolkit/multiline.py", line 94, in &lt;module&gt;
@@ -63,59 +63,59 @@ bash -c '. env.sh &amp;&amp; {}'</data>
   File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
     handle = open(
              ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/maaslin/change/species/features/data_transformed.tsv'
+FileNotFoundError: [Errno 2] No such file or directory: '$WORK/healthy_change/maaslin/change/species/features/data_transformed.tsv'
 </data>
   <data key="d10">32094</data>
   <data key="d11">1</data>
 </node>
 <node id="11811fc1-17fa-48e0-bd62-673d78fee349">
-  <data key="d3">for d in results/healthy_change/maaslin/*/; do
+  <data key="d3">for d in $WORK/healthy_change/maaslin/*/; do
     name=$(basename "$d")
     echo $d
-    cp "$d/all_results.tsv" "results/healthy_change/maaslin/$name.tsv"
+    cp "$d/all_results.tsv" "$WORK/healthy_change/maaslin/$name.tsv"
 done</data>
   <data key="d4">2275.323265680802</data>
   <data key="d5">-171.84505633018566</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
-bash -c '. env.sh &amp;&amp; for d in results/healthy_change/maaslin/*/; do
+bash -c '. env.sh &amp;&amp; for d in $WORK/healthy_change/maaslin/*/; do
     name=$(basename "$d")
     echo $d
-    cp "$d/all_results.tsv" "results/healthy_change/maaslin/$name.tsv"
+    cp "$d/all_results.tsv" "$WORK/healthy_change/maaslin/$name.tsv"
 done'</data>
-  <data key="d8">results/healthy_change/maaslin/aa/
-results/healthy_change/maaslin/alpha_diversity/
-results/healthy_change/maaslin/anthro/
-results/healthy_change/maaslin/change/
-results/healthy_change/maaslin/head/
-results/healthy_change/maaslin/healthy/
-results/healthy_change/maaslin/pathways/
-results/healthy_change/maaslin/sleep/
-results/healthy_change/maaslin/species/
-results/healthy_change/maaslin/vitamin/
+  <data key="d8">$WORK/healthy_change/maaslin/aa/
+$WORK/healthy_change/maaslin/alpha_diversity/
+$WORK/healthy_change/maaslin/anthro/
+$WORK/healthy_change/maaslin/change/
+$WORK/healthy_change/maaslin/head/
+$WORK/healthy_change/maaslin/healthy/
+$WORK/healthy_change/maaslin/pathways/
+$WORK/healthy_change/maaslin/sleep/
+$WORK/healthy_change/maaslin/species/
+$WORK/healthy_change/maaslin/vitamin/
 </data>
-  <data key="d9">cp: cannot stat 'results/healthy_change/maaslin/change//all_results.tsv': No such file or directory
-cp: cannot stat 'results/healthy_change/maaslin/healthy//all_results.tsv': No such file or directory
-cp: cannot stat 'results/healthy_change/maaslin/pathways//all_results.tsv': No such file or directory
-cp: cannot stat 'results/healthy_change/maaslin/species//all_results.tsv': No such file or directory
+  <data key="d9">cp: cannot stat '$WORK/healthy_change/maaslin/change//all_results.tsv': No such file or directory
+cp: cannot stat '$WORK/healthy_change/maaslin/healthy//all_results.tsv': No such file or directory
+cp: cannot stat '$WORK/healthy_change/maaslin/pathways//all_results.tsv': No such file or directory
+cp: cannot stat '$WORK/healthy_change/maaslin/species//all_results.tsv': No such file or directory
 </data>
   <data key="d10">11856</data>
   <data key="d11">0</data>
 </node>
 <node id="452de8f7-5ee0-45bb-9433-fae1b3c1c7c8">
-  <data key="d3">merge.py results/healthy_change/change/*.tsv \
+  <data key="d3">merge.py $WORK/healthy_change/change/*.tsv \
   --append \
   --add-filename \
-  -o results/healthy_change/allhealthychange.tsv</data>
+  -o $WORK/healthy_change/allhealthychange.tsv</data>
   <data key="d4">2910.011212658699</data>
   <data key="d5">-171.3919359712977</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
-bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/change/*.tsv \
+bash -c '. env.sh &amp;&amp; merge.py $WORK/healthy_change/change/*.tsv \
   --append \
   --add-filename \
-  -o results/healthy_change/allhealthychange.tsv'</data>
-  <data key="d8">Saved 329 rows × 15 columns to results/healthy_change/allhealthychange.tsv
+  -o $WORK/healthy_change/allhealthychange.tsv'</data>
+  <data key="d8">Saved 329 rows × 15 columns to $WORK/healthy_change/allhealthychange.tsv
 </data>
   <data key="d9"></data>
   <data key="d10">9173</data>
@@ -123,22 +123,22 @@ bash -c '. env.sh &amp;&amp; merge.py results/healthy_change/change/*.tsv \
 </node>
 <node id="55fc276f-bcd2-4182-b94b-a6f2dee86ba9">
   <data key="d3">maaslin_sig_summary.py \
-  results/healthy_change/healthychange.tsv \
+  $WORK/healthy_change/healthychange.tsv \
   -p 0.1 \
   -c coef \
   -s qval_individual \
   -g name filename model \
-  -o results/healthy_change/healthychange_summary.tsv</data>
+  -o $WORK/healthy_change/healthychange_summary.tsv</data>
   <data key="d4">3519.7250097926326</data>
   <data key="d5">-313.6203573890315</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; maaslin_sig_summary.py \
-  results/healthy_change/healthychange.tsv \
+  $WORK/healthy_change/healthychange.tsv \
   -p 0.1 \
   -c coef \
   -s qval_individual \
   -g name filename model \
-  -o results/healthy_change/healthychange_summary.tsv'</data>
+  -o $WORK/healthy_change/healthychange_summary.tsv'</data>
   <data key="d8">                      name        filename     model  n_tested  n_sig  n_sig_up  n_sig_down  pct_sig  pct_sig_up  pct_sig_down
                         BF              aa abundance      23.0    0.0       0.0         0.0      0.0         0.0           0.0
                         BF alpha_diversity abundance       4.0    0.0       0.0         0.0      0.0         0.0           0.0
@@ -183,20 +183,20 @@ timepointyr2:FeedERUSF (B)            head abundance       5.0    0.0       0.0 
 timepointyr2:FeedERUSF (B)           sleep abundance       6.0    0.0       0.0         0.0      0.0         0.0           0.0
 timepointyr2:FeedERUSF (B)         vitamin abundance       5.0    0.0       0.0         0.0      0.0         0.0           0.0
 
-Summary written to: results/healthy_change/healthychange_summary.tsv
+Summary written to: $WORK/healthy_change/healthychange_summary.tsv
 </data>
   <data key="d9"></data>
   <data key="d10">32083</data>
   <data key="d11">0</data>
 </node>
 <node id="08584b44-c135-4c3f-b26b-f2ac8df4e824">
-  <data key="d3">rm -rf results/healthy_change/{maaslin,change,overall}
-mkdir -p results/healthy_change/{maaslin,change,overall}</data>
+  <data key="d3">rm -rf $WORK/healthy_change/{maaslin,change,overall}
+mkdir -p $WORK/healthy_change/{maaslin,change,overall}</data>
   <data key="d4">-242.21639441002958</data>
   <data key="d5">150.29791862817385</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf results/healthy_change/maaslin/{healthy,change}
-mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
+  <data key="d7">bash -c '. env.sh &amp;&amp; rm -rf $WORK/healthy_change/maaslin/{healthy,change}
+mkdir -p $WORK/healthy_change/maaslin/{healthy,change}'</data>
   <data key="d8"></data>
   <data key="d9"></data>
   <data key="d10">5900</data>
@@ -204,17 +204,17 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
 </node>
 <node id="5defd7d3-4b19-4373-b1a3-f86d754e39ce">
   <data key="d3">merge.py \
-  results/healthy_change/overall/*.tsv \
+  $WORK/healthy_change/overall/*.tsv \
   -a \
-  -o results/healthy_change/rec_merged.tsv</data>
+  -o $WORK/healthy_change/rec_merged.tsv</data>
   <data key="d4">1341.5788118089215</data>
   <data key="d5">728.3100845805149</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; merge.py \
-  results/healthy_change/overall/*.tsv \
+  $WORK/healthy_change/overall/*.tsv \
   -a \
-  -o results/healthy_change/rec_merged.tsv'</data>
-  <data key="d8">Saved 8 rows × 6 columns to results/healthy_change/rec_merged.tsv
+  -o $WORK/healthy_change/rec_merged.tsv'</data>
+  <data key="d8">Saved 8 rows × 6 columns to $WORK/healthy_change/rec_merged.tsv
 </data>
   <data key="d9"></data>
   <data key="d10">32552</data>
@@ -234,34 +234,34 @@ mkdir -p results/healthy_change/maaslin/{healthy,change}'</data>
 <node id="efff9afc-b0ea-4937-a15d-319ee982992b">
   <data key="d3">parallel -j1 \
   'distance.py \
-  results/filtered/{}.tsv \
-  -o results/healthy_change/distance/{}.tsv' \
-:::: conf/timedatasets.txt</data>
+  $WORK/filtered/{}.tsv \
+  -o $WORK/healthy_change/distance/{}.tsv' \
+:::: $CONF/timedatasets.txt</data>
   <data key="d4">683.0215373802415</data>
   <data key="d5">981.681726185137</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 \
   '\''distance.py \
-  results/filtered/{}.tsv \
-  -o results/healthy_change/distance/{}.tsv'\'' \
-:::: conf/timedatasets.txt'</data>
-  <data key="d8">Distance edgelist saved to: results/healthy_change/distance/aa.tsv
+  $WORK/filtered/{}.tsv \
+  -o $WORK/healthy_change/distance/{}.tsv'\'' \
+:::: $CONF/timedatasets.txt'</data>
+  <data key="d8">Distance edgelist saved to: $WORK/healthy_change/distance/aa.tsv
 Rows: 293764 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/head.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/head.tsv
 Rows: 242064 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/anthro.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/anthro.tsv
 Rows: 109453 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/sleep.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/sleep.tsv
 Rows: 169744 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/vitamin.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/vitamin.tsv
 Rows: 289444 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/lipids.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/lipids.tsv
 Rows: 306916 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/alpha_diversity.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/alpha_diversity.tsv
 Rows: 342225 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/species.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/species.tsv
 Rows: 342225 (includes duplicates and self-distances)
-Distance edgelist saved to: results/healthy_change/distance/pathways.tsv
+Distance edgelist saved to: $WORK/healthy_change/distance/pathways.tsv
 Rows: 343396 (includes duplicates and self-distances)
 </data>
   <data key="d9"></data>
@@ -270,26 +270,26 @@ Rows: 343396 (includes duplicates and self-distances)
 </node>
 <node id="e852a3bc-1df2-4249-9855-9c943d20b037">
   <data key="d3">parallel -j1 pcoa.py \
-  results/healthy_change/distance/{}.tsv \
+  $WORK/healthy_change/distance/{}.tsv \
   --distance-col distance \
-  -o results/healthy_change/pcoa/{}.tsv \
-:::: conf/timedatasets.txt</data>
+  -o $WORK/healthy_change/pcoa/{}.tsv \
+:::: $CONF/timedatasets.txt</data>
   <data key="d4">1183.3523285686056</data>
   <data key="d5">979.8352466217992</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 pcoa.py \
-  results/healthy_change/distance/{}.tsv \
+  $WORK/healthy_change/distance/{}.tsv \
   --distance-col distance \
-  -o results/healthy_change/pcoa/{}.tsv \
-:::: conf/timedatasets.txt'</data>
-  <data key="d8">PCoA results saved to: results/healthy_change/pcoa/aa.tsv
-PCoA results saved to: results/healthy_change/pcoa/head.tsv
-PCoA results saved to: results/healthy_change/pcoa/sleep.tsv
-PCoA results saved to: results/healthy_change/pcoa/vitamin.tsv
-PCoA results saved to: results/healthy_change/pcoa/lipids.tsv
-PCoA results saved to: results/healthy_change/pcoa/alpha_diversity.tsv
-PCoA results saved to: results/healthy_change/pcoa/species.tsv
-PCoA results saved to: results/healthy_change/pcoa/pathways.tsv
+  -o $WORK/healthy_change/pcoa/{}.tsv \
+:::: $CONF/timedatasets.txt'</data>
+  <data key="d8">PCoA results saved to: $WORK/healthy_change/pcoa/aa.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/head.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/sleep.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/vitamin.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/lipids.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/alpha_diversity.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/species.tsv
+PCoA results saved to: $WORK/healthy_change/pcoa/pathways.tsv
 </data>
   <data key="d9">Traceback (most recent call last):
   File "/home/tpor598/recovery/metatoolkit/metatoolkit//pcoa.py", line 155, in &lt;module&gt;
@@ -306,30 +306,30 @@ ValueError: Distance matrix contains 8018748 missing values. Edge list does not 
 </node>
 <node id="b2979940-9977-4efd-a449-7cf18486839a">
   <data key="d3">parallel -j1 spindle.py \
-  results/healthy_change/pcoa/{}.tsv \
+  $WORK/healthy_change/pcoa/{}.tsv \
   --title-from-subject \
-  --meta results/filtered/timemeta.tsv \
+  --meta $WORK/filtered/timemeta.tsv \
   --group-col timepoint \
-  -o results/healthy_change/spindle/{}.svg \
-:::: conf/timedatasets.txt</data>
+  -o $WORK/healthy_change/spindle/{}.svg \
+:::: $CONF/timedatasets.txt</data>
   <data key="d4">1599.152993189342</data>
   <data key="d5">965.50179622112</data>
   <data key="d6">fail</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; parallel -j1 spindle.py \
-  results/healthy_change/pcoa/{}.tsv \
+  $WORK/healthy_change/pcoa/{}.tsv \
   --title-from-subject \
-  --meta results/filtered/timemeta.tsv \
+  --meta $WORK/filtered/timemeta.tsv \
   --group-col timepoint \
-  -o results/healthy_change/spindle/{}.svg \
-:::: conf/timedatasets.txt'</data>
-  <data key="d8">Saved to results/healthy_change/spindle/aa.svg
-Saved to results/healthy_change/spindle/head.svg
-Saved to results/healthy_change/spindle/sleep.svg
-Saved to results/healthy_change/spindle/vitamin.svg
-Saved to results/healthy_change/spindle/lipids.svg
-Saved to results/healthy_change/spindle/alpha_diversity.svg
-Saved to results/healthy_change/spindle/species.svg
-Saved to results/healthy_change/spindle/pathways.svg
+  -o $WORK/healthy_change/spindle/{}.svg \
+:::: $CONF/timedatasets.txt'</data>
+  <data key="d8">Saved to $WORK/healthy_change/spindle/aa.svg
+Saved to $WORK/healthy_change/spindle/head.svg
+Saved to $WORK/healthy_change/spindle/sleep.svg
+Saved to $WORK/healthy_change/spindle/vitamin.svg
+Saved to $WORK/healthy_change/spindle/lipids.svg
+Saved to $WORK/healthy_change/spindle/alpha_diversity.svg
+Saved to $WORK/healthy_change/spindle/species.svg
+Saved to $WORK/healthy_change/spindle/pathways.svg
 </data>
   <data key="d9">Traceback (most recent call last):
   File "/home/tpor598/recovery/metatoolkit/metatoolkit//spindle.py", line 238, in &lt;module&gt;
@@ -355,24 +355,24 @@ Saved to results/healthy_change/spindle/pathways.svg
   File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
     handle = open(
              ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/pcoa/anthro.tsv'
+FileNotFoundError: [Errno 2] No such file or directory: '$WORK/healthy_change/pcoa/anthro.tsv'
 </data>
   <data key="d10">39859</data>
   <data key="d11">1</data>
 </node>
 <node id="96bd10cb-3dbb-491c-9427-4cc226a7d79e">
   <data key="d3">arrange_svgs.py \
-  results/healthy_change/spindle/*.svg \
+  $WORK/healthy_change/spindle/*.svg \
   --rows 3 \
-  -o results/healthy_change/all_spindle.svg</data>
+  -o $WORK/healthy_change/all_spindle.svg</data>
   <data key="d4">2018.996875981794</data>
   <data key="d5">985.1732051616075</data>
   <data key="d6">ran</data>
   <data key="d7">bash -c '. env.sh &amp;&amp; arrange_svgs.py \
-  results/healthy_change/spindle/*.svg \
+  $WORK/healthy_change/spindle/*.svg \
   --rows 3 \
-  -o results/healthy_change/all_spindle.svg'</data>
-  <data key="d8">Output written to results/healthy_change/all_spindle.svg
+  -o $WORK/healthy_change/all_spindle.svg'</data>
+  <data key="d8">Output written to $WORK/healthy_change/all_spindle.svg
 </data>
   <data key="d9"></data>
   <data key="d10">40132</data>
@@ -386,9 +386,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/
     --small_random_effects True \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/pathways.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/pathways | tail</data>
+    $WORK/filtered/pathways.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/pathways | tail</data>
   <data key="d4">1435.8805400306892</data>
   <data key="d5">312.67805446518116</data>
   <data key="d6">ran</data>
@@ -399,9 +399,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'results/healthy_change/
     --small_random_effects True \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/pathways.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/pathways | tail'</data>
+    $WORK/filtered/pathways.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/pathways | tail'</data>
   <data key="d8">2026-04-13 17:00:32.324046 INFO::Fitting model to feature number 490, THRESYN-PWY
 2026-04-13 17:00:32.327344 INFO::Fitting model to feature number 491, TRNA-CHARGING-PWY
 2026-04-13 17:00:32.337643 INFO::Fitting model to feature number 492, TYRFUMCAT-PWY
@@ -548,9 +548,9 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/alpha_diversity.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/alpha_diversity | tail</data>
+    $WORK/filtered/alpha_diversity.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/alpha_diversity | tail</data>
   <data key="d4">1435.5769082604195</data>
   <data key="d5">-288.7649682882164</data>
   <data key="d6">ran</data>
@@ -568,16 +568,16 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/alpha_diversity.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/alpha_diversity | tail'</data>
+    $WORK/filtered/alpha_diversity.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/alpha_diversity | tail'</data>
   <data key="d8">2026-04-13 16:58:48.336891 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/alpha_diversity/all_results.tsv
-2026-04-13 16:58:48.340403 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/alpha_diversity/significant_results.tsv
+            by increasing individual q-values): $WORK/healthy_change/maaslin/alpha_diversity/all_results.tsv
+2026-04-13 16:58:48.340403 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): $WORK/healthy_change/maaslin/alpha_diversity/significant_results.tsv
 2026-04-13 16:58:48.394992 INFO::Creating output figures folder
 2026-04-13 16:58:48.397925 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/alpha_diversity/figures/summary_plot.pdf
-2026-04-13 16:58:54.294893 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/alpha_diversity/figures
+                        results to file: $WORK/healthy_change/maaslin/alpha_diversity/figures/summary_plot.pdf
+2026-04-13 16:58:54.294893 INFO::Writing association plots (one for each significant association) to output folder: $WORK/healthy_change/maaslin/alpha_diversity/figures
 2026-04-13 16:58:54.408016 INFO::Plotting associations from most to least significant, grouped by metadata
 2026-04-13 16:58:54.4716 INFO::Creating box plot for categorical data (linear), 
                         timepoint vs Faiths_PD
@@ -610,9 +610,9 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/anthro.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/anthro | tail</data>
+    $WORK/filtered/anthro.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/anthro | tail</data>
   <data key="d4">694.6273767882683</data>
   <data key="d5">-772.0389133054899</data>
   <data key="d6">ran</data>
@@ -629,16 +629,16 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/anthro.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/anthro | tail'</data>
+    $WORK/filtered/anthro.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/anthro | tail'</data>
   <data key="d8">2026-04-13 16:58:52.905087 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/anthro/all_results.tsv
-2026-04-13 16:58:52.908894 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/anthro/significant_results.tsv
+            by increasing individual q-values): $WORK/healthy_change/maaslin/anthro/all_results.tsv
+2026-04-13 16:58:52.908894 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): $WORK/healthy_change/maaslin/anthro/significant_results.tsv
 2026-04-13 16:58:52.982188 INFO::Creating output figures folder
 2026-04-13 16:58:52.985223 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/anthro/figures/summary_plot.pdf
-2026-04-13 16:58:59.74703 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/anthro/figures
+                        results to file: $WORK/healthy_change/maaslin/anthro/figures/summary_plot.pdf
+2026-04-13 16:58:59.74703 INFO::Writing association plots (one for each significant association) to output folder: $WORK/healthy_change/maaslin/anthro/figures
 2026-04-13 16:58:59.875516 INFO::Plotting associations from most to least significant, grouped by metadata
 2026-04-13 16:58:59.923689 INFO::Creating box plot for categorical data (linear), 
                         timepoint vs Length
@@ -671,9 +671,9 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/head.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/head | tail</data>
+    $WORK/filtered/head.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/head | tail</data>
   <data key="d4">690.3009619468125</data>
   <data key="d5">-437.0398552855011</data>
   <data key="d6">ran</data>
@@ -690,17 +690,17 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/head.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/head | tail'</data>
-  <data key="d8">2026-04-13 16:58:52.544485 INFO::Writing extracted random effects to file results/healthy_change/maaslin/head/fits/ranef_linear.rds
+    $WORK/filtered/head.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/head | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.544485 INFO::Writing extracted random effects to file $WORK/healthy_change/maaslin/head/fits/ranef_linear.rds
 2026-04-13 16:58:52.587906 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/head/all_results.tsv
-2026-04-13 16:58:52.593553 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/head/significant_results.tsv
+            by increasing individual q-values): $WORK/healthy_change/maaslin/head/all_results.tsv
+2026-04-13 16:58:52.593553 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): $WORK/healthy_change/maaslin/head/significant_results.tsv
 2026-04-13 16:58:52.672573 INFO::Creating output figures folder
 2026-04-13 16:58:52.68313 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/head/figures/summary_plot.pdf
-2026-04-13 16:58:59.670551 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/head/figures
+                        results to file: $WORK/healthy_change/maaslin/head/figures/summary_plot.pdf
+2026-04-13 16:58:59.670551 INFO::Writing association plots (one for each significant association) to output folder: $WORK/healthy_change/maaslin/head/figures
 2026-04-13 16:58:59.782312 INFO::All associations had errors 
                                 or were insignificant.
 </data>
@@ -723,9 +723,9 @@ This warning is displayed once per session.
     --small_random_effects True \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/species.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/species | tail</data>
+    $WORK/filtered/species.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/species | tail</data>
   <data key="d4">1437.283672316358</data>
   <data key="d5">78.64575721274112</data>
   <data key="d6">ran</data>
@@ -736,9 +736,9 @@ This warning is displayed once per session.
     --small_random_effects True \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/species.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/species | tail'</data>
+    $WORK/filtered/species.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/species | tail'</data>
   <data key="d8">2026-04-13 17:03:55.10973 INFO::Fitting model to feature number 1026, Butyricicoccus_sp_AM29_23AC|SGB14991
 2026-04-13 17:03:55.301875 INFO::Fitting model to feature number 1027, Aeromonas_jandaei|SGB9949
 2026-04-13 17:03:55.504974 INFO::Fitting model to feature number 1028, GGB71292_SGB97395|SGB97395
@@ -1304,9 +1304,9 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/sleep.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/sleep | tail</data>
+    $WORK/filtered/sleep.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/sleep | tail</data>
   <data key="d4">689.1641863710564</data>
   <data key="d5">-93.84438337129492</data>
   <data key="d6">ran</data>
@@ -1323,17 +1323,17 @@ Execution halted
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/sleep.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/sleep | tail'</data>
-  <data key="d8">2026-04-13 16:58:52.828662 INFO::Writing extracted random effects to file results/healthy_change/maaslin/sleep/fits/ranef_linear.rds
+    $WORK/filtered/sleep.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/sleep | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.828662 INFO::Writing extracted random effects to file $WORK/healthy_change/maaslin/sleep/fits/ranef_linear.rds
 2026-04-13 16:58:52.859617 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/sleep/all_results.tsv
-2026-04-13 16:58:52.863607 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/sleep/significant_results.tsv
+            by increasing individual q-values): $WORK/healthy_change/maaslin/sleep/all_results.tsv
+2026-04-13 16:58:52.863607 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): $WORK/healthy_change/maaslin/sleep/significant_results.tsv
 2026-04-13 16:58:52.942108 INFO::Creating output figures folder
 2026-04-13 16:58:52.944905 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/sleep/figures/summary_plot.pdf
-2026-04-13 16:58:59.815238 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/sleep/figures
+                        results to file: $WORK/healthy_change/maaslin/sleep/figures/summary_plot.pdf
+2026-04-13 16:58:59.815238 INFO::Writing association plots (one for each significant association) to output folder: $WORK/healthy_change/maaslin/sleep/figures
 2026-04-13 16:58:59.923227 INFO::All associations had errors 
                                 or were insignificant.
 </data>
@@ -1362,9 +1362,9 @@ This warning is displayed once per session.
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/vitamin.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/vitamin | tail</data>
+    $WORK/filtered/vitamin.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/vitamin | tail</data>
   <data key="d4">1438.7453754831608</data>
   <data key="d5">-623.5152306013554</data>
   <data key="d6">ran</data>
@@ -1381,17 +1381,17 @@ This warning is displayed once per session.
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/vitamin.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/vitamin | tail'</data>
-  <data key="d8">2026-04-13 16:58:52.408396 INFO::Writing extracted random effects to file results/healthy_change/maaslin/vitamin/fits/ranef_linear.rds
+    $WORK/filtered/vitamin.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/vitamin | tail'</data>
+  <data key="d8">2026-04-13 16:58:52.408396 INFO::Writing extracted random effects to file $WORK/healthy_change/maaslin/vitamin/fits/ranef_linear.rds
 2026-04-13 16:58:52.446146 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/vitamin/all_results.tsv
-2026-04-13 16:58:52.451009 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/vitamin/significant_results.tsv
+            by increasing individual q-values): $WORK/healthy_change/maaslin/vitamin/all_results.tsv
+2026-04-13 16:58:52.451009 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): $WORK/healthy_change/maaslin/vitamin/significant_results.tsv
 2026-04-13 16:58:52.52129 INFO::Creating output figures folder
 2026-04-13 16:58:52.525748 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/vitamin/figures/summary_plot.pdf
-2026-04-13 16:58:59.358856 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/vitamin/figures
+                        results to file: $WORK/healthy_change/maaslin/vitamin/figures/summary_plot.pdf
+2026-04-13 16:58:59.358856 INFO::Writing association plots (one for each significant association) to output folder: $WORK/healthy_change/maaslin/vitamin/figures
 2026-04-13 16:58:59.469678 INFO::All associations had errors 
                                 or were insignificant.
 </data>
@@ -1420,9 +1420,9 @@ This warning is displayed once per session.
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/aa.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/aa | tail</data>
+    $WORK/filtered/aa.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/aa | tail</data>
   <data key="d4">689.1478683485533</data>
   <data key="d5">255.81171909227334</data>
   <data key="d6">ran</data>
@@ -1439,17 +1439,17 @@ This warning is displayed once per session.
     --evaluate_only abundance \
     --max_pngs 0 \
     --cores 1 \
-    results/filtered/aa.tsv \
-    results/filtered/timemeta_MAM_yr1_yr2.tsv \
-    results/healthy_change/maaslin/aa | tail'</data>
-  <data key="d8">2026-04-13 16:58:56.6578 INFO::Writing extracted random effects to file results/healthy_change/maaslin/aa/fits/ranef_linear.rds
+    $WORK/filtered/aa.tsv \
+    $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
+    $WORK/healthy_change/maaslin/aa | tail'</data>
+  <data key="d8">2026-04-13 16:58:56.6578 INFO::Writing extracted random effects to file $WORK/healthy_change/maaslin/aa/fits/ranef_linear.rds
 2026-04-13 16:58:56.743407 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): results/healthy_change/maaslin/aa/all_results.tsv
-2026-04-13 16:58:56.747079 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): results/healthy_change/maaslin/aa/significant_results.tsv
+            by increasing individual q-values): $WORK/healthy_change/maaslin/aa/all_results.tsv
+2026-04-13 16:58:56.747079 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): $WORK/healthy_change/maaslin/aa/significant_results.tsv
 2026-04-13 16:58:56.857063 INFO::Creating output figures folder
 2026-04-13 16:58:56.860006 INFO::Writing summary plot of significant
-                        results to file: results/healthy_change/maaslin/aa/figures/summary_plot.pdf
-2026-04-13 16:59:02.280511 INFO::Writing association plots (one for each significant association) to output folder: results/healthy_change/maaslin/aa/figures
+                        results to file: $WORK/healthy_change/maaslin/aa/figures/summary_plot.pdf
+2026-04-13 16:59:02.280511 INFO::Writing association plots (one for each significant association) to output folder: $WORK/healthy_change/maaslin/aa/figures
 2026-04-13 16:59:02.331112 INFO::All associations had errors 
                                 or were insignificant.
 </data>
@@ -1465,55 +1465,55 @@ This warning is displayed once per session.
   <data key="d11">0</data>
 </node>
 <node id="4a4564e6-ece6-49ad-8e78-f6806f22ef27">
-  <data key="d3">grep -v '^lipids$' conf/timedatasets.txt | parallel -j 1 \
+  <data key="d3">grep -v '^lipids$' $CONF/timedatasets.txt | parallel -j 1 \
   overall_recovery.py \
-  results/filtered/{}.tsv \
-  results/healthy_change/overall/{}.tsv</data>
+  $WORK/filtered/{}.tsv \
+  $WORK/healthy_change/overall/{}.tsv</data>
   <data key="d4">735.0068142420681</data>
   <data key="d5">733.9908834659328</data>
   <data key="d6">ran</data>
-  <data key="d7">bash -c '. env.sh &amp;&amp; grep -v '\''^lipids$'\'' conf/timedatasets.txt | parallel -j 1 \
+  <data key="d7">bash -c '. env.sh &amp;&amp; grep -v '\''^lipids$'\'' $CONF/timedatasets.txt | parallel -j 1 \
   overall_recovery.py \
-  results/filtered/{}.tsv \
-  results/healthy_change/overall/{}.tsv'</data>
-  <data key="d8">results/filtered/aa.tsv
+  $WORK/filtered/{}.tsv \
+  $WORK/healthy_change/overall/{}.tsv'</data>
+  <data key="d8">$WORK/filtered/aa.tsv
                          A_improvement(%)  ...  B_t2_pval
-results/filtered/aa.tsv        -31.119994  ...      0.029
+$WORK/filtered/aa.tsv        -31.119994  ...      0.029
 
 [1 rows x 6 columns]
-results/filtered/head.tsv
+$WORK/filtered/head.tsv
                            A_improvement(%)  ...  B_t2_pval
-results/filtered/head.tsv         49.096011  ...      0.001
+$WORK/filtered/head.tsv         49.096011  ...      0.001
 
 [1 rows x 6 columns]
-results/filtered/anthro.tsv
+$WORK/filtered/anthro.tsv
                              A_improvement(%)  ...  B_t2_pval
-results/filtered/anthro.tsv        263.403867  ...      0.001
+$WORK/filtered/anthro.tsv        263.403867  ...      0.001
 
 [1 rows x 6 columns]
-results/filtered/sleep.tsv
+$WORK/filtered/sleep.tsv
                             A_improvement(%)  ...  B_t2_pval
-results/filtered/sleep.tsv        -80.604858  ...       0.14
+$WORK/filtered/sleep.tsv        -80.604858  ...       0.14
 
 [1 rows x 6 columns]
-results/filtered/vitamin.tsv
+$WORK/filtered/vitamin.tsv
                               A_improvement(%)  ...  B_t2_pval
-results/filtered/vitamin.tsv        -90.167094  ...      0.014
+$WORK/filtered/vitamin.tsv        -90.167094  ...      0.014
 
 [1 rows x 6 columns]
-results/filtered/alpha_diversity.tsv
+$WORK/filtered/alpha_diversity.tsv
                                       A_improvement(%)  ...  B_t2_pval
-results/filtered/alpha_diversity.tsv        -94.025011  ...      0.444
+$WORK/filtered/alpha_diversity.tsv        -94.025011  ...      0.444
 
 [1 rows x 6 columns]
-results/filtered/species.tsv
+$WORK/filtered/species.tsv
                               A_improvement(%)  ...  B_t2_pval
-results/filtered/species.tsv         44.292316  ...      0.126
+$WORK/filtered/species.tsv         44.292316  ...      0.126
 
 [1 rows x 6 columns]
-results/filtered/pathways.tsv
+$WORK/filtered/pathways.tsv
                                A_improvement(%)  ...  B_t2_pval
-results/filtered/pathways.tsv      13033.258967  ...      0.616
+$WORK/filtered/pathways.tsv      13033.258967  ...      0.616
 
 [1 rows x 6 columns]
 </data>
@@ -1539,19 +1539,19 @@ results/filtered/pathways.tsv      13033.258967  ...      0.616
 </node>
 <node id="7a632088-cccc-4c27-aa6c-d79f031d9228">
   <data key="d3">filter.py \
-  results/healthy_change/allhealthychange.tsv \
+  $WORK/healthy_change/allhealthychange.tsv \
   -q 'pval_individual &lt; 0.1' \
-  -o results/healthy_change/healthychange.tsv</data>
+  -o $WORK/healthy_change/healthychange.tsv</data>
   <data key="d4">3099.1396685359773</data>
   <data key="d5">21.127422505238656</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; filter.py \
-  results/healthy_change/allhealthychange.tsv \
+  $WORK/healthy_change/allhealthychange.tsv \
   -q '\''pval_individual &lt; 0.1'\'' \
-  -o results/healthy_change/healthychange.tsv'</data>
+  -o $WORK/healthy_change/healthychange.tsv'</data>
   <data key="d8">[filter] Query '(pval_individual &lt; 0.1)': kept 26/329
-[filter] Saved filtered output to: results/healthy_change/healthychange.tsv
+[filter] Saved filtered output to: $WORK/healthy_change/healthychange.tsv
 </data>
   <data key="d9"></data>
   <data key="d10">13137</data>

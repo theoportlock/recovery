@@ -5,15 +5,16 @@
 Author: Theo Portlock
 Script to format MetaPhlAn4 output for downstream analysis
 """
+import os
 
 import pandas as pd
 
 # Load MetaPhlAn3 output file, skipping the first row (contains description/metadata)
-df = pd.read_csv('data/metaphlan_merged_profiles.tsv',
+df = pd.read_csv(os.path.join(os.environ["DATA"], 'metaphlan_merged_profiles.tsv'),
                  sep='\t', index_col=0, header=1)
 
 # Load the sample metadata
-samplesheet = pd.read_csv('results/cleaned/standards.tsv',
+samplesheet = pd.read_csv(os.path.join(os.environ["WORK"], 'cleaned/standards.tsv'),
                           sep='\t', index_col=0)
 
 # Clean column names: remove ".metaphlan" suffix
@@ -29,7 +30,7 @@ df = df.T
 df = df.join(samplesheet['batch']).dropna().set_index('batch').sort_index()
 
 # Transmute and save formatted data - for alpha-diversity analysis
-df.to_csv('results/cleaned/standards_metaphlan.tsv', sep='\t')
+df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/standards_metaphlan.tsv'), sep='\t')
 
 
 from scipy.spatial.distance import pdist, squareform
@@ -45,7 +46,7 @@ dist_matrix = pd.DataFrame(squareform(bray_curtis_dist), index=df.index, columns
 
 print("--- Inter-Batch Bray-Curtis Distance ---")
 print(dist_matrix.T)
-dist_matrix.to_csv('results/cleaned/batch_braycurtis_distances.tsv', sep='\t')
+dist_matrix.to_csv(os.path.join(os.environ["WORK"], 'cleaned/batch_braycurtis_distances.tsv'), sep='\t')
 
 # ==========================================
 # 2. Deviation from Theoretical Baseline
@@ -83,7 +84,7 @@ for species, theoretical_val in theoretical_abundances.items():
 
 print("\n--- Deviation from Theoretical Composition (Observed - Expected %) ---")
 print(deviation_df.T)
-deviation_df.to_csv('results/cleaned/batch_theoretical_deviations.tsv', sep='\t')
+deviation_df.to_csv(os.path.join(os.environ["WORK"], 'cleaned/batch_theoretical_deviations.tsv'), sep='\t')
 
 # ==========================================
 # 3. Overall Batch Bias (Mean Absolute Error)
@@ -94,4 +95,4 @@ batch_mae.name = 'Mean_Absolute_Error'
 
 print("\n--- Mean Absolute Error (MAE) by Batch ---")
 print(batch_mae)
-batch_mae.to_csv('results/cleaned/batch_mae.tsv', sep='\t', header=True)
+batch_mae.to_csv(os.path.join(os.environ["WORK"], 'cleaned/batch_mae.tsv'), sep='\t', header=True)

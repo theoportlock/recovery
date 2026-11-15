@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 # -*- coding: utf-8 -*-
 
 import pandas as pd
@@ -7,8 +8,8 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="Format AA permutation results with dataset labels.")
     parser.add_argument('--labels', default='conf/dataset_labels.tsv', help='Path to dataset labels file (TSV)')
-    parser.add_argument('--input', default='results/aa_perm.tsv', help='Path to input results file (TSV)')
-    parser.add_argument('--output', default='results/aa_perm_formatted.tsv', help='Path to output file (TSV)')
+    parser.add_argument('--input', default=os.path.join(os.environ["WORK"], 'aa_perm.tsv'), help='Path to input results file (TSV)')
+    parser.add_argument('--output', default=os.path.join(os.environ["WORK"], 'aa_perm_formatted.tsv'), help='Path to output file (TSV)')
 
     args = parser.parse_args()
 
