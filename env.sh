@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
+PROJECT="$HOME/recovery"
+
 #export DATA="/run/media/theo/maindrive/fellowship/m4efad/recovery/data"
-export DATA="data"
-export WORK="newresults"
-export CONF="conf"
+export DATA="$PROJECT/data"
+export WORK="$PROJECT/newresults"
+export CONF="$PROJECT/conf"
 
-export PATH="code/:$PATH"
-export PATH="metatoolkit/metatoolkit/:$PATH"
-export PATH="maaslin3/R/:$PATH"
+export PATH="$PROJECT/code:$PATH"
+export PATH="$PROJECT/metatoolkit/metatoolkit/:$PATH"
+export PATH="$PROJECT/maaslin3/R/:$PATH"
 
-source venv/bin/activate
+source "$PROJECT/venv/bin/activate"

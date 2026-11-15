@@ -25,7 +25,16 @@ bash -c '. env.sh &amp;&amp; {} ' | tail -n 50</data>
   <data key="d3">workforce web code/characteristics.wf</data>
   <data key="d4">341.7545457748747</data>
   <data key="d5">-282.67594688056</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/characteristics.wf ' | tail -n 50</data>
+  <data key="d8">Opening workspace ws_872fcc59 in browser: http://127.0.0.1:5049/workspace/ws_872fcc59
+workspace_id: ws_872fcc59
+workfile: /home/tpor598/recovery/code/characteristics.wf
+</data>
+  <data key="d9"></data>
+  <data key="d10">13306</data>
+  <data key="d11">0</data>
 </node>
 <node id="78c8d135-ef42-4645-bc41-820a809c493c">
   <data key="d3">mixedlm.py \
@@ -34,7 +43,25 @@ bash -c '. env.sh &amp;&amp; {} ' | tail -n 50</data>
   -o $WORK/mothers_modelout.tsv</data>
   <data key="d4">341.9133712695664</data>
   <data key="d5">147.42620345725305</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; mixedlm.py \
+  -i $WORK/filtered/mothers.tsv \
+  -m $WORK/filtered/meta.tsv \
+  -o $WORK/mothers_modelout.tsv ' | tail -n 50</data>
+  <data key="d8">['/home/tpor598/recovery/metatoolkit/metatoolkit/mixedlm.py', '-i', '/home/tpor598/recovery/newresults/filtered/mothers.tsv', '-m', '/home/tpor598/recovery/newresults/filtered/meta.tsv', '-o', '/home/tpor598/recovery/newresults/mothers_modelout.tsv']
+No formula supplied → Using all metadata columns:
+  Sex + Ethnicity + Condition + Feed + Recovery + Delivery_Mode + Supplementation + BF + PoB
+No grouping variable supplied → Models will be OLS
+✓ Results saved to: /home/tpor598/recovery/newresults/mothers_modelout.tsv
+</data>
+  <data key="d9">
+Fitting models:   0%|          | 0/20 [00:00&lt;?, ?it/s]
+Fitting models:  55%|█████▌    | 11/20 [00:00&lt;00:00, 108.08it/s]
+Fitting models: 100%|██████████| 20/20 [00:00&lt;00:00, 120.59it/s]
+</data>
+  <data key="d10">59105</data>
+  <data key="d11">0</data>
 </node>
 <node id="be560393-d428-4755-8f8c-096cc59441f0">
   <data key="d3">box.py \
@@ -45,19 +72,53 @@ bash -c '. env.sh &amp;&amp; {} ' | tail -n 50</data>
   -o $WORK/recovery_MAMatbirth_box.svg</data>
   <data key="d4">747.1267934385622</data>
   <data key="d5">126.26722406478481</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; box.py \
+  $WORK/filtered/mothers.tsv \
+  -x Recovery \
+  -y maternal_bmi \
+  --meta $WORK/filtered/meta.tsv \
+  -o $WORK/recovery_MAMatbirth_box.svg ' | tail -n 50</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/venv/lib/python3.12/site-packages/seaborn/axisgrid.py:854: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  func(*plot_args, **plot_kwargs)
+</data>
+  <data key="d10">59148</data>
+  <data key="d11">0</data>
 </node>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
   <data key="d3">workforce web code/quality.wf</data>
   <data key="d4">343.77423531597964</data>
   <data key="d5">-158.85140718251085</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/quality.wf ' | tail -n 50</data>
+  <data key="d8">Opening workspace ws_891aa097 in browser: http://127.0.0.1:5049/workspace/ws_891aa097
+workspace_id: ws_891aa097
+workfile: /home/tpor598/recovery/code/quality.wf
+</data>
+  <data key="d9"></data>
+  <data key="d10">16454</data>
+  <data key="d11">0</data>
 </node>
 <node id="590f7132-e567-418c-bc2e-86a80543bc37">
   <data key="d3">workforce web code/setup.wf</data>
   <data key="d4">-74.03515587451557</data>
   <data key="d5">-57.70910288390462</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/setup.wf ' | tail -n 50</data>
+  <data key="d8">Opening workspace ws_e1861e15 in browser: http://127.0.0.1:5049/workspace/ws_e1861e15
+workspace_id: ws_e1861e15
+workfile: /home/tpor598/recovery/code/setup.wf
+</data>
+  <data key="d9"></data>
+  <data key="d10">9809</data>
+  <data key="d11">0</data>
 </node>
 <node id="ca7c9851-bdcc-4427-978e-608038a9bc0e">
   <data key="d3">workforce web code/recovery_rates.wf</data>
@@ -71,20 +132,38 @@ workspace_id: ws_55637d4a
 workfile: /home/tpor598/recovery/code/recovery_rates.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">8049</data>
+  <data key="d10">16875</data>
   <data key="d11">0</data>
 </node>
 <node id="1e18dc92-49ac-4ce6-a81e-199ba6b10d63">
   <data key="d3">workforce web code/survival.wf</data>
   <data key="d4">343.66116347405466</data>
   <data key="d5">-216.47502820568107</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/survival.wf ' | tail -n 50</data>
+  <data key="d8">Opening workspace ws_89e43ddf in browser: http://127.0.0.1:5049/workspace/ws_89e43ddf
+workspace_id: ws_89e43ddf
+workfile: /home/tpor598/recovery/code/survival.wf
+</data>
+  <data key="d9"></data>
+  <data key="d10">15453</data>
+  <data key="d11">0</data>
 </node>
 <node id="58045259-e97d-47ba-82b3-e76bee82429b">
   <data key="d3">workforce web code/baseline_change.wf</data>
   <data key="d4">341.925037613242</data>
   <data key="d5">-14.697464820888392</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/baseline_change.wf ' | tail -n 50</data>
+  <data key="d8">Opening workspace ws_e23addbe in browser: http://127.0.0.1:5049/workspace/ws_e23addbe
+workspace_id: ws_e23addbe
+workfile: /home/tpor598/recovery/code/baseline_change.wf
+</data>
+  <data key="d9"></data>
+  <data key="d10">32083</data>
+  <data key="d11">0</data>
 </node>
 <node id="689794d8-0cd7-4ff3-8b5f-000dde89a722">
   <data key="d3">workforce web code/healthy_change.wf</data>
@@ -98,14 +177,20 @@ workspace_id: ws_067e70c7
 workfile: /home/tpor598/recovery/code/healthy_change.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">8706</data>
+  <data key="d10">34088</data>
   <data key="d11">0</data>
 </node>
 <node id="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
   <data key="d3">makesupptable.py</data>
-  <data key="d4">824.4283414148458</data>
+  <data key="d4">826.1021298463206</data>
   <data key="d5">-163.61366979161326</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; makesupptable.py ' | tail -n 50</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">59488</data>
+  <data key="d11">0</data>
 </node>
 <node id="c9574e86-56be-4530-b452-568954e88efc">
   <data key="d3"># Check for adverse events
@@ -116,7 +201,21 @@ glmm.R \
   -o $WORK/harms.tsv</data>
   <data key="d4">820.8967678260761</data>
   <data key="d5">-60.73703357872408</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; # Check for adverse events
+glmm.R \
+  -i $WORK/cleaned/surveillance.tsv \
+  -m $WORK/filtered/meta_MAM.tsv \
+  -f "Feed + Sex + baseline_WLZ + Delivery_Mode + BF" \
+  -o $WORK/harms.tsv ' | tail -n 50</data>
+  <data key="d8">No grouping variable supplied → using fixed-effects model
+GLMM analysis complete.
+Results written to: /home/tpor598/recovery/newresults/harms.tsv 
+</data>
+  <data key="d9"></data>
+  <data key="d10">59216</data>
+  <data key="d11">0</data>
 </node>
 <node id="5210dcef-290b-48db-bd74-55ec0a13a339">
   <data key="d3">makefigures.sh</data>

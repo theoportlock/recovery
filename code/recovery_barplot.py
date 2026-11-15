@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(os.path.join(os.environ["WORK"],'filtered/recovery_status.tsv'), sep='\t', index_col=0)
+df = pd.read_csv(os.path.join(os.environ["WORK"],'filtered/recovery_status_1sd.tsv'), sep='\t', index_col=0)
 meta = pd.read_csv(os.path.join(os.environ["WORK"],'filtered/meta.tsv'), sep='\t', index_col=0)
  
 meta = meta.join(df)

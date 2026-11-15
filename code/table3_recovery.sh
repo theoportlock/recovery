@@ -1,12 +1,13 @@
 #!/bin/bash
 
 source env.sh
+set -e
 
 rm -rf $WORK/table3
 mkdir -p $WORK/table3/work/{selected,formatted,descriptive}
 
-select.py \
-	$WORK/filtered/recovery_status.tsv \
+select_features.py \
+	$WORK/filtered/recovery_status_1sd.tsv \
 	-c Recovered \
 	-o $WORK/table3/work/recovery.tsv
 
@@ -15,7 +16,7 @@ onehot.py \
 	--dtype bool \
 	-o $WORK/table3/work/formatted/recovery.tsv
 
-for file in $WORK/table1/work/formatted/{Demographics,Parental_Education_and_Economics,Family_Structure,Household_characteristics,Other}.tsv; do
+for file in $WORK/characteristics/work/formatted/{Demographics,Parental_Education_and_Economics,Family_Structure,Household_characteristics,Other}.tsv; do
     descriptive.py \
         -i "$file" \
         --meta $WORK/table3/work/recovery.tsv \
@@ -32,21 +33,25 @@ merge.py \
 
 # For the stats
 merge.py \
-	$WORK/table1/work/MAM_data_merged.tsv \
+	$WORK/characteristics/work/MAM_data_merged.tsv \
 	$WORK/table3/work/formatted/recovery.tsv \
 	-o $WORK/table3/work/MAM_data_merged_recovery.tsv
 
 descriptive_stats.sh \
 	$WORK/table3/work/MAM_data_merged_recovery.tsv \
 	$WORK/table3/work/MAM_recovery_stats
-
+	
+#filter.py \
+#	$WORK/table3/work/MAM_recovery_stats/merged_stats.tsv \
+#	-q 'source == "Recovered.Recovered"' \
+#	--drop \
+#	-o $WORK/table3/work/MAM_recovery_stats/merged_stats_Recoverstats.tsv
 filter.py \
 	$WORK/table3/work/MAM_recovery_stats/merged_stats.tsv \
 	-q 'source == "Recovered.Recovered"' \
-	--drop \
 	-o $WORK/table3/work/MAM_recovery_stats/merged_stats_Recoverstats.tsv
 	
-select.py \
+select_features.py \
 	$WORK/table3/work/MAM_recovery_stats/merged_stats_Recoverstats.tsv \
 	-c 'target,p_value' \
 	--drop-index \

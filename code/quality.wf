@@ -1,7 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="status" attr.type="string"/>
-<key id="d8" for="edge" attr.name="edge_type" attr.type="string"/>
-<key id="d7" for="edge" attr.name="id" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="status" attr.type="string"/>
+<key id="d13" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d12" for="edge" attr.name="id" attr.type="string"/>
+<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d10" for="node" attr.name="pid" attr.type="string"/>
+<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d7" for="node" attr.name="command" attr.type="string"/>
 <key id="d6" for="node" attr.name="status" attr.type="string"/>
 <key id="d5" for="node" attr.name="y" attr.type="string"/>
 <key id="d4" for="node" attr.name="x" attr.type="string"/>
@@ -14,7 +19,7 @@
 <data key="d1">'
 
 </data>
-<data key="d2">cd ~/nipper
+<data key="d2">cd ~/recovery
 bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
   <data key="d3">group.py \
@@ -23,31 +28,97 @@ bash -c '. env.sh &amp;&amp; {}'</data>
   --func mean std \
   --meta $WORK/filtered/timemeta.tsv \
   --output $WORK/quality/quality_group.tsv</data>
-  <data key="d4">260.3975896490504</data>
-  <data key="d5">-272.2757497818743</data>
-  <data key="d6"></data>
+  <data key="d4">304.6191840595564</data>
+  <data key="d5">127.64127793052756</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; group.py \
+  $WORK/cleaned/quality.tsv \
+  --group_by Feed timepoint \
+  --func mean std \
+  --meta $WORK/filtered/timemeta.tsv \
+  --output $WORK/quality/quality_group.tsv'</data>
+  <data key="d8">                          hq_read_depth_million_reads_mean  ...  timepoint_std
+Feed           timepoint                                    ...               
+ERUSF (B)      0                                 41.304808  ...            0.0
+               12                                40.696358  ...            0.0
+               52                                46.906099  ...            0.0
+Local RUSF (A) 0                                 39.541742  ...            0.0
+               12                                41.874325  ...            0.0
+               52                                44.704357  ...            0.0
+
+[6 rows x 4 columns]
+</data>
+  <data key="d9"></data>
+  <data key="d10">16765</data>
+  <data key="d11">0</data>
 </node>
 <node id="8f43b81b-3379-4e7e-97ec-fbebb271f13d">
   <data key="d3">rm -rf $WORK/quality
 mkdir $WORK/quality</data>
-  <data key="d4">-299.1892094426502</data>
-  <data key="d5">-269.13811349363044</data>
-  <data key="d6"></data>
+  <data key="d4">-254.9676150321443</data>
+  <data key="d5">130.77891421877143</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; rm -rf $WORK/quality
+mkdir $WORK/quality'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">16744</data>
+  <data key="d11">0</data>
 </node>
 <node id="f655a05f-f061-4a1e-af6d-e012492d9790">
   <data key="d3">check_standards.py</data>
-  <data key="d4">282.9028626692926</data>
-  <data key="d5">-363.5038362702163</data>
-  <data key="d6"></data>
+  <data key="d4">327.12445707979856</data>
+  <data key="d5">36.413191442185564</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; check_standards.py'</data>
+  <data key="d8">--- Inter-Batch Bray-Curtis Distance ---
+batch     batch_1   batch_2   batch_3   batch_4   batch_5
+batch                                                    
+batch_1  0.000000  0.052537  0.060438  0.060891  0.055781
+batch_2  0.052537  0.000000  0.036977  0.035962  0.072012
+batch_3  0.060438  0.036977  0.000000  0.007475  0.093208
+batch_4  0.060891  0.035962  0.007475  0.000000  0.092890
+batch_5  0.055781  0.072012  0.093208  0.092890  0.000000
+
+--- Deviation from Theoretical Composition (Observed - Expected %) ---
+batch                              batch_1   batch_2  ...   batch_4   batch_5
+s__Listeria_monocytogenes         -8.10559  -8.70946  ...  -8.94609  -7.51034
+s__Pseudomonas_aeruginosa          5.30721  10.78003  ...  13.00857   2.53460
+s__Bacillus_subtilis             -11.57197 -11.66074  ... -11.64990 -11.88163
+s__Escherichia_coli               17.50464  14.64451  ...  14.54522  15.81700
+s__Salmonella_enterica            16.75272  13.58779  ...  15.35311  15.27267
+s__Limosilactobacillus_fermentum  -6.76538  -6.01838  ...  -6.05187  -4.42402
+s__Enterococcus_faecalis          -2.78152  -4.38508  ...  -5.15176  -0.46902
+s__Staphylococcus_aureus          -6.85602  -4.65166  ...  -7.68138  -5.55637
+s__Saccharomyces_cerevisiae       -1.68491  -1.75339  ...  -1.70806  -1.81333
+s__Cryptococcus_neoformans        -1.96831  -1.97873  ...  -1.95302  -1.98368
+
+[10 rows x 5 columns]
+
+--- Mean Absolute Error (MAE) by Batch ---
+batch
+batch_1    7.929827
+batch_2    7.816977
+batch_3    8.659651
+batch_4    8.604898
+batch_5    6.726266
+Name: Mean_Absolute_Error, dtype: float64
+</data>
+  <data key="d9"></data>
+  <data key="d10">16772</data>
+  <data key="d11">0</data>
 </node>
 <edge source="8f43b81b-3379-4e7e-97ec-fbebb271f13d" target="44f8dc35-eb5b-4794-86ed-1e0ded33e0c6">
-  <data key="d7">da68611b-4c04-4307-8d28-144b45f41e6c</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">da68611b-4c04-4307-8d28-144b45f41e6c</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="8f43b81b-3379-4e7e-97ec-fbebb271f13d" target="f655a05f-f061-4a1e-af6d-e012492d9790">
-  <data key="d7">0ea1b62d-cef9-4be4-ab21-59a5c3900454</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">0ea1b62d-cef9-4be4-ab21-59a5c3900454</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 </graph></graphml>

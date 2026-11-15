@@ -1,7 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="edge_type" attr.type="string"/>
-<key id="d8" for="edge" attr.name="status" attr.type="string"/>
-<key id="d7" for="edge" attr.name="id" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d13" for="edge" attr.name="status" attr.type="string"/>
+<key id="d12" for="edge" attr.name="id" attr.type="string"/>
+<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d10" for="node" attr.name="pid" attr.type="string"/>
+<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d7" for="node" attr.name="command" attr.type="string"/>
 <key id="d6" for="node" attr.name="status" attr.type="string"/>
 <key id="d5" for="node" attr.name="y" attr.type="string"/>
 <key id="d4" for="node" attr.name="x" attr.type="string"/>
@@ -19,23 +24,46 @@ bash -c '. env.sh &amp;&amp; {}'</data>
 <node id="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
   <data key="d3"># FIGURE 1B
 anthrotime.py</data>
-  <data key="d4">-98.4561074405663</data>
+  <data key="d4">-97.49476843164226</data>
   <data key="d5">-163.85908607220597</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; # FIGURE 1B
+anthrotime.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">18047</data>
+  <data key="d11">0</data>
 </node>
 <node id="92024ec7-33d5-4507-976e-8eec7faadc0e">
   <data key="d3"># FIGURE 1A
 schematic.py</data>
   <data key="d4">-93.81680079250738</data>
   <data key="d5">-243.04582158195603</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; # FIGURE 1A
+schematic.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">18039</data>
+  <data key="d11">0</data>
 </node>
 <node id="7a113732-6455-4f0d-b805-fc6095b40ca3">
   <data key="d3"># FIGURE 1C
 recovery_barplot.py</data>
   <data key="d4">-103.06702823758148</data>
   <data key="d5">-87.31135765174483</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; # FIGURE 1C
+recovery_barplot.py'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/code/recovery_barplot.py:50: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  y_pos = (bottom[i] if bottom is not None else 0) + pct / 2
+</data>
+  <data key="d10">19347</data>
+  <data key="d11">0</data>
 </node>
 <node id="a191959b-1acd-4594-8819-65c36f01f33c">
   <data key="d3"># FIGURE 1D
@@ -48,19 +76,52 @@ box.py \
   -o $WORK/recovery_rates/days_of_catchup_box.svg</data>
   <data key="d4">114.96116932638881</data>
   <data key="d5">-243.06407133731196</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; # FIGURE 1D
+box.py \
+  $WORK/filtered/surveillance.tsv \
+  --meta $WORK/filtered/meta.tsv \
+  -x Feed \
+  -y days_of_catchup \
+  --figsize 2.7,2.7 \
+  -o $WORK/recovery_rates/days_of_catchup_box.svg'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/venv/lib/python3.12/site-packages/seaborn/axisgrid.py:854: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  func(*plot_args, **plot_kwargs)
+</data>
+  <data key="d10">18063</data>
+  <data key="d11">0</data>
 </node>
 <node id="6eaccd10-48fb-45f8-bf1d-07831d27c76a">
   <data key="d3">rm -rf $WORK/recovery_rates
-mkdir -p $WORK/recovery_rates</data>
+mkdir -p $WORK/recovery_rates
+
+rm -rf $WORK/figure1
+mkdir -p $WORK/figure1
+</data>
   <data key="d4">-519.491443679945</data>
-  <data key="d5">77.90707031174657</data>
-  <data key="d6"></data>
+  <data key="d5">78.74396452748391</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; rm -rf $WORK/recovery_rates
+mkdir -p $WORK/recovery_rates
+
+rm -rf $WORK/figure1
+mkdir -p $WORK/figure1
+'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">18011</data>
+  <data key="d11">0</data>
 </node>
 <node id="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
   <data key="d3"># FIGURE 1D
 box.py \
-  $WORK/filtered/recovery_status.tsv \
+  $WORK/filtered/recovery_status_1sd.tsv \
   --meta $WORK/filtered/meta.tsv \
   -x Feed \
   -y Days_to_recovery \
@@ -70,59 +131,291 @@ box.py \
   -o $WORK/recovery_rates/days_to_recovery_box.svg</data>
   <data key="d4">111.60234542628461</data>
   <data key="d5">-53.79846368464483</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; # FIGURE 1D
+box.py \
+  $WORK/filtered/recovery_status_1sd.tsv \
+  --meta $WORK/filtered/meta.tsv \
+  -x Feed \
+  -y Days_to_recovery \
+  --figsize 2.7,2.7 \
+  --ymin 0 \
+  --ymax 50 \
+  -o $WORK/recovery_rates/days_to_recovery_box.svg'</data>
+  <data key="d8"></data>
+  <data key="d9">/home/tpor598/recovery/venv/lib/python3.12/site-packages/seaborn/axisgrid.py:854: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  func(*plot_args, **plot_kwargs)
+</data>
+  <data key="d10">19410</data>
+  <data key="d11">0</data>
 </node>
 <node id="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
-  <data key="d3">table2_who_refeed_recovery.sh</data>
+  <data key="d3"># for 1sd
+table2_who_refeed_recovery.sh</data>
   <data key="d4">-213.96210049800908</data>
   <data key="d5">168.17178542437645</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; table2_who_refeed_recovery.sh'</data>
+  <data key="d8">✅ Table 1 saved to $WORK/table2_plus/work/descriptive/meta_MAM_oh.tsv
+✅ Table 1 saved to $WORK/table2_plus/work/descriptive/recovery_status_oh.tsv
+Saved 7 rows × 3 columns to $WORK/table2_plus/merged.tsv
+Saved 159 rows × 9 columns to $WORK/table2_plus/data_merged.tsv
+[filter] Dtype 'bool' columns: kept 8/9
+[filter] Saved filtered output to: $WORK/table2_plus/MAM_recovery_stats/categories.tsv
+[filter] Dtype 'number' columns: kept 1/9
+[filter] Saved filtered output to: $WORK/table2_plus/MAM_recovery_stats/numbers.tsv
+No valid correlations found.
+[INFO] Dropped 85 rows with missing values (159 → 74).
+[INFO] Generated 12 test results.
+[INFO] Dropped 0 rows with missing values (159 → 159).
+[INFO] Generated 56 Fisher tests.
+Saved 68 rows × 4 columns to $WORK/table2_plus/MAM_recovery_stats/merged_stats.tsv
+[filter] Query '(source == "Feed, ERUSF (B)")': kept 8/68
+[filter] Saved filtered output to: $WORK/table2_plus/MAM_recovery_stats/merged_stats_Recoverstats.tsv
+Saved 7 rows × 3 columns to $WORK/table2_plus/merged_stats.tsv
+</data>
+  <data key="d9">/home/tpor598/recovery/code/table2_who_refeed_recovery.sh: line 16: select.py: command not found
+/home/tpor598/recovery/code/table2_who_refeed_recovery.sh: line 21: select.py: command not found
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/code/descriptive.py", line 141, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/code/descriptive.py", line 122, in main
+    df = pd.read_csv(args.input, sep="\t", index_col=0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '$WORK/table2_plus/formatted/surveillance.tsv'
+⚠️ No files matched: $WORK/table2_plus/work/descriptive/surveillance_fixed.tsv
+⚠️ No files matched: $WORK/table2_plus/formatted/surveillance.tsv
+⚠️ No files matched: $WORK/table2_plus/MAM_recovery_stats/corr.tsv
+/home/tpor598/recovery/code/table2_who_refeed_recovery.sh: line 64: select.py: command not found
+⚠️ No files matched: $WORK/table2_plus/work/merged.tsv
+⚠️ No files matched: $WORK/table2_plus/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
+❌ No valid input files found.
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 125, in &lt;module&gt;
+    df = load_dataframe(args.subject)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 65, in load_dataframe
+    return pd.read_csv(
+           ^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/$WORK/table2_plus/descriptive/surveillance.tsv.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 125, in &lt;module&gt;
+    df = load_dataframe(args.subject)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/rename_regex.py", line 65, in load_dataframe
+    return pd.read_csv(
+           ^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/$WORK/table2_plus/descriptive/surveillance_fixed.tsv.tsv'
+⚠️ No files matched: $WORK/table2_plus/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv
+</data>
+  <data key="d10">19524</data>
+  <data key="d11">0</data>
 </node>
 <node id="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
   <data key="d3">table2_refeed_recovery.sh</data>
-  <data key="d4">-184.6816212499127</data>
-  <data key="d5">234.25017087785636</data>
-  <data key="d6"></data>
+  <data key="d4">-183.72028224098867</data>
+  <data key="d5">257.3223070920334</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; table2_refeed_recovery.sh'</data>
+  <data key="d8">Saved 151 rows × 2 columns to /home/tpor598/recovery/newresults/table2/work/formatted/surveillance.tsv (index kept)
+Saved 159 rows × 1 columns to /home/tpor598/recovery/newresults/table2/work/selected/meta_MAM.tsv (index kept)
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table2/work/descriptive/meta_MAM_oh.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table2/work/descriptive/surveillance.tsv
+Saved 151 rows × 4 columns to /home/tpor598/recovery/newresults/table2/work/data_merged.tsv
+[filter] Dtype 'bool' columns: kept 2/4
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/table2/work/MAM_recovery_stats/categories.tsv
+[filter] Dtype 'number' columns: kept 2/4
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/table2/work/MAM_recovery_stats/numbers.tsv
+Results saved to /home/tpor598/recovery/newresults/table2/work/MAM_recovery_stats/corr.tsv
+[INFO] Dropped 83 rows with missing values (151 → 68).
+[INFO] Generated 8 test results.
+[INFO] Dropped 0 rows with missing values (151 → 151).
+[INFO] Generated 2 Fisher tests.
+Saved 11 rows × 4 columns to /home/tpor598/recovery/newresults/table2/work/MAM_recovery_stats/merged_stats.tsv
+[filter] Query '(source == "Feed, ERUSF (B)")': kept 3/11
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/table2/work/MAM_recovery_stats/merged_stats_Recoverstats.tsv
+Saved 3 rows × 2 columns to /home/tpor598/recovery/newresults/table2/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv (index dropped)
+Saved 3 rows × 1 columns to /home/tpor598/recovery/newresults/table2/work/merged_stats.tsv
+✓ Saved renamed DataFrame → /home/tpor598/recovery/newresults/table2/work/descriptive/surveillance_fixed.tsv
+✓ Saved renamed DataFrame → /home/tpor598/recovery/newresults/table2/work/descriptive/surveillance_fixed.tsv
+Saved 3 rows × 1 columns to /home/tpor598/recovery/newresults/table2/work/merged_stats.tsv
+</data>
+  <data key="d9">Traceback (most recent call last):
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/onehot.py", line 146, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/onehot.py", line 109, in main
+    df = load(args.subject)
+         ^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/metatoolkit/metatoolkit/onehot.py", line 15, in load
+    return pd.read_csv(f"results/{subject}.tsv", sep="\t", index_col=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results//home/tpor598/recovery/newresults/filtered/recovery_status.tsv.tsv'
+Traceback (most recent call last):
+  File "/home/tpor598/recovery/code/descriptive.py", line 141, in &lt;module&gt;
+    main()
+  File "/home/tpor598/recovery/code/descriptive.py", line 122, in main
+    df = pd.read_csv(args.input, sep="\t", index_col=0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/tpor598/recovery/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/tpor598/recovery/newresults/table2/work/formatted/recovery_status_oh.tsv'
+⚠️ No files matched: /home/tpor598/recovery/newresults/table2/work/descriptive/recovery_status_oh.tsv
+⚠️ No files matched: /home/tpor598/recovery/newresults/table2/work/descriptive/surveillance_fixed.tsv
+❌ No valid input files found.
+⚠️ No files matched: /home/tpor598/recovery/newresults/table2/work/formatted/recovery_status_oh.tsv
+⚠️ No files matched: /home/tpor598/recovery/newresults/table1/work/merged.tsv
+⚠️ No files matched: /home/tpor598/recovery/newresults/table2/work/merged.tsv
+</data>
+  <data key="d10">27197</data>
+  <data key="d11">0</data>
 </node>
 <node id="89c86cb9-843c-4d42-91ee-c5f022db7f44">
-  <data key="d3">table3_recovery.sh</data>
-  <data key="d4">-136.31014302971093</data>
-  <data key="d5">298.29073725328044</data>
-  <data key="d6"></data>
+  <data key="d3"># for 1sd
+table3_recovery.sh</data>
+  <data key="d4">-142.07817708325516</data>
+  <data key="d5">318.4788564406854</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; table3_recovery.sh'</data>
+  <data key="d8">Saved 159 rows × 1 columns to /home/tpor598/recovery/newresults/table3/work/recovery.tsv (index kept)
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table3/work/descriptive/Demographics.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table3/work/descriptive/Parental_Education_and_Economics.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table3/work/descriptive/Family_Structure.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table3/work/descriptive/Household_characteristics.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/table3/work/descriptive/Other.tsv
+Saved 18 rows × 3 columns to /home/tpor598/recovery/newresults/table3/work/merged.tsv
+Saved 159 rows × 26 columns to /home/tpor598/recovery/newresults/table3/work/MAM_data_merged_recovery.tsv
+[filter] Dtype 'bool' columns: kept 10/26
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/table3/work/MAM_recovery_stats/categories.tsv
+[filter] Dtype 'number' columns: kept 16/26
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/table3/work/MAM_recovery_stats/numbers.tsv
+Results saved to /home/tpor598/recovery/newresults/table3/work/MAM_recovery_stats/corr.tsv
+[INFO] Dropped 0 rows with missing values (159 → 159).
+[INFO] Generated 288 test results.
+[INFO] Dropped 0 rows with missing values (159 → 159).
+[INFO] Generated 90 Fisher tests.
+Saved 498 rows × 4 columns to /home/tpor598/recovery/newresults/table3/work/MAM_recovery_stats/merged_stats.tsv
+[filter] Query '(source == "Recovered.Recovered")': kept 25/498
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/table3/work/MAM_recovery_stats/merged_stats_Recoverstats.tsv
+Saved 25 rows × 2 columns to /home/tpor598/recovery/newresults/table3/work/MAM_recovery_stats/merged_stats_Recoverstats_vals.tsv (index dropped)
+Saved 18 rows × 4 columns to /home/tpor598/recovery/newresults/table3/work/merged_stats.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">31687</data>
+  <data key="d11">0</data>
 </node>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="92024ec7-33d5-4507-976e-8eec7faadc0e">
-  <data key="d7">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
-  <data key="d8"></data>
+  <data key="d12">b2191780-d9c9-4bb6-ba0a-c7a31e9420e6</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="5c9b9837-c3c7-43d8-9322-b3d650f6b75b">
-  <data key="d7">cb09b1c5-b3d4-4233-8723-bf4d5cab452b</data>
-  <data key="d8"></data>
+  <data key="d12">cb09b1c5-b3d4-4233-8723-bf4d5cab452b</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="7a113732-6455-4f0d-b805-fc6095b40ca3">
-  <data key="d7">15eb8994-2a70-4724-9cca-a28e314a02bc</data>
-  <data key="d8"></data>
+  <data key="d12">15eb8994-2a70-4724-9cca-a28e314a02bc</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="a191959b-1acd-4594-8819-65c36f01f33c">
-  <data key="d7">1c767b49-cc6f-48fb-8e6a-eafdfa150517</data>
-  <data key="d8"></data>
+  <data key="d12">1c767b49-cc6f-48fb-8e6a-eafdfa150517</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="14028c6f-c2e1-4fb7-874c-d9fe63fdfc29">
-  <data key="d7">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
-  <data key="d8"></data>
+  <data key="d12">341ff5aa-b790-44e7-b0ee-bb9730ffa1db</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="74c177aa-a161-41bb-bf7b-d73dbc8c85ba">
-  <data key="d7">3e46d63d-47f2-4822-b853-845a66df87e1</data>
-  <data key="d9">blocking</data>
-  <data key="d8"></data>
+  <data key="d12">3e46d63d-47f2-4822-b853-845a66df87e1</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="8c9a1e46-3c46-476e-9fed-ea5a55c1c733">
-  <data key="d7">efa7f1b2-1fd5-4e49-8a1b-8acee9077e2c</data>
-  <data key="d9">blocking</data>
-  <data key="d8"></data>
+  <data key="d12">efa7f1b2-1fd5-4e49-8a1b-8acee9077e2c</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 <edge source="6eaccd10-48fb-45f8-bf1d-07831d27c76a" target="89c86cb9-843c-4d42-91ee-c5f022db7f44">
-  <data key="d7">081bbe28-1e93-4067-a19e-914c05747061</data>
-  <data key="d9">blocking</data>
-  <data key="d8"></data>
+  <data key="d12">081bbe28-1e93-4067-a19e-914c05747061</data>
+  <data key="d14">blocking</data>
+  <data key="d13"></data>
 </edge>
 </graph></graphml>

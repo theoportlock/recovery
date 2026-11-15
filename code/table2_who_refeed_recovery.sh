@@ -7,7 +7,7 @@ rm -rf $output
 mkdir -p $output/work/{selected,formatted,descriptive}
 
 onehot.py \
-	$WORK/filtered/recovery_status.tsv \
+	$WORK/filtered/recovery_status_1sd.tsv \
 	--prefix-sep ', ' \
 	--dtype bool \
 	-o $output/formatted/recovery_status_oh.tsv

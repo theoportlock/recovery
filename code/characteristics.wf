@@ -1,7 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="status" attr.type="string"/>
-<key id="d8" for="edge" attr.name="edge_type" attr.type="string"/>
-<key id="d7" for="edge" attr.name="id" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="status" attr.type="string"/>
+<key id="d13" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d12" for="edge" attr.name="id" attr.type="string"/>
+<key id="d11" for="node" attr.name="error_code" attr.type="string"/>
+<key id="d10" for="node" attr.name="pid" attr.type="string"/>
+<key id="d9" for="node" attr.name="stderr" attr.type="string"/>
+<key id="d8" for="node" attr.name="stdout" attr.type="string"/>
+<key id="d7" for="node" attr.name="command" attr.type="string"/>
 <key id="d6" for="node" attr.name="status" attr.type="string"/>
 <key id="d5" for="node" attr.name="y" attr.type="string"/>
 <key id="d4" for="node" attr.name="x" attr.type="string"/>
@@ -21,7 +26,14 @@ bash -c '. env.sh &amp;&amp; {}'</data>
 mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   <data key="d4">-4.051235854405775</data>
   <data key="d5">196.00953005513932</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; rm -rf $WORK/characteristics
+mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">13394</data>
+  <data key="d11">0</data>
 </node>
 <node id="648469a0-beae-4f62-83bd-8142f5756d71">
   <data key="d3">fillna.py \
@@ -31,7 +43,18 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
 	-o $WORK/characteristics/work/meta.tsv</data>
   <data key="d4">846.3681525317426</data>
   <data key="d5">-329.12520396872924</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; fillna.py \
+	-i $WORK/filtered/meta.tsv \
+	-v '\''Well-nourished (C)'\'' \
+	-c '\''Feed'\'' \
+	-o $WORK/characteristics/work/meta.tsv'</data>
+  <data key="d8">✅ Filled missing values in columns Feed with 'Well-nourished (C)' → /home/tpor598/recovery/newresults/characteristics/work/meta.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">13422</data>
+  <data key="d11">0</data>
 </node>
 <node id="076eda25-d8fc-444d-836d-b29104432372">
   <data key="d3">select_features.py \
@@ -40,7 +63,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
 	-o $WORK/characteristics/work/selected/Demographics.tsv</data>
   <data key="d4">1261.0285118775837</data>
   <data key="d5">-320.9690401569404</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+	$WORK/characteristics/work/meta.tsv \
+	-c '\''Sex,Delivery_Mode'\'' \
+	-o $WORK/characteristics/work/selected/Demographics.tsv'</data>
+  <data key="d8">Saved 234 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/selected/Demographics.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13693</data>
+  <data key="d11">0</data>
 </node>
 <node id="4730d833-d0e5-438b-b4e7-f94208487149">
   <data key="d3">onehot.py \
@@ -51,7 +84,18 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
 	-o $WORK/characteristics/work/formatted/Demographics.tsv</data>
   <data key="d4">1776.5086012413344</data>
   <data key="d5">-337.2815035680566</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; onehot.py \
+	$WORK/characteristics/work/selected/Demographics.tsv \
+	--drop-onehot-values '\''Male,Vaginal'\'' \
+	--prefix-sep '\'', '\'' \
+	--dtype bool \
+	-o $WORK/characteristics/work/formatted/Demographics.tsv'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">13796</data>
+  <data key="d11">0</data>
 </node>
 <node id="6ba48050-312e-418b-874a-774b9538deac">
   <data key="d3">select_features.py \
@@ -60,7 +104,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/selected/Parental_Education.tsv</data>
   <data key="d4">844.9256808327673</data>
   <data key="d5">-160.70391302891673</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/filtered/education.tsv \
+  -c '\''Years_of_fathers_education,Years_of_mothers_education'\'' \
+  -o $WORK/characteristics/work/selected/Parental_Education.tsv'</data>
+  <data key="d8">Saved 234 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/selected/Parental_Education.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13430</data>
+  <data key="d11">0</data>
 </node>
 <node id="2af13dad-0266-4b5a-ad29-888dc6194249">
   <data key="d3">select_features.py \
@@ -69,7 +123,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/selected/Economics.tsv</data>
   <data key="d4">842.3531944925247</data>
   <data key="d5">-30.01180687050727</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/filtered/economics.tsv \
+  -c '\''Mothers_income,Fathers_income,Total_monthly_income,Monthly_total_expenditure'\'' \
+  -o $WORK/characteristics/work/selected/Economics.tsv'</data>
+  <data key="d8">Saved 234 rows × 4 columns to /home/tpor598/recovery/newresults/characteristics/work/selected/Economics.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13438</data>
+  <data key="d11">0</data>
 </node>
 <node id="1dbff117-0167-4600-9d77-8098ec92beca">
   <data key="d3">merge.py \
@@ -78,7 +142,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/formatted/Parental_Education_and_Economics.tsv</data>
   <data key="d4">1648.223291897287</data>
   <data key="d5">-101.14674469245408</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py \
+  $WORK/characteristics/work/selected/Parental_Education.tsv \
+  $WORK/characteristics/work/selected/Economics.tsv \
+  -o $WORK/characteristics/work/formatted/Parental_Education_and_Economics.tsv'</data>
+  <data key="d8">Saved 234 rows × 6 columns to /home/tpor598/recovery/newresults/characteristics/work/formatted/Parental_Education_and_Economics.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">13685</data>
+  <data key="d11">0</data>
 </node>
 <node id="3bc5f738-8436-41ae-bfb0-60821985d9df">
   <data key="d3">select_features.py \
@@ -87,7 +161,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/formatted/Family_Structure.tsv</data>
   <data key="d4">837.466641655614</data>
   <data key="d5">109.89147184475729</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/filtered/family.tsv \
+  -c '\''Number_of_living_children,Number_of_children_under_five_years,Family_type.Nuclear'\'' \
+  -o $WORK/characteristics/work/formatted/Family_Structure.tsv'</data>
+  <data key="d8">Saved 234 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/formatted/Family_Structure.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13446</data>
+  <data key="d11">0</data>
 </node>
 <node id="8ae5234e-a93d-4e36-8149-ed3254541e3d">
   <data key="d3">select_features.py \
@@ -102,7 +186,23 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/formatted/Household_characteristics.tsv</data>
   <data key="d4">836.2387220552266</data>
   <data key="d5">247.75758342836366</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/filtered/household.tsv \
+  -c '\''
+    Members_in_household
+    Number_of_years_lived_in_current_household
+    Number_of_rooms_in_current_household
+    Cooking_gas.Yes  
+    Working_TV.Yes  
+    Household_food_availability.Sometimes deficit'\'' \
+  -o $WORK/characteristics/work/formatted/Household_characteristics.tsv'</data>
+  <data key="d8">Saved 234 rows × 6 columns to /home/tpor598/recovery/newresults/characteristics/work/formatted/Household_characteristics.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13454</data>
+  <data key="d11">0</data>
 </node>
 <node id="8d4e9837-14ac-4cf7-bed2-e4d9d7352749">
   <data key="d3">select_features.py \
@@ -111,7 +211,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/selected/Other.tsv</data>
   <data key="d4">841.1057190144728</data>
   <data key="d5">665.3841526287911</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/filtered/meta.tsv \
+  -c '\''BF,PoB'\'' \
+  -o $WORK/characteristics/work/selected/Other.tsv'</data>
+  <data key="d8">Saved 234 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/selected/Other.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13462</data>
+  <data key="d11">0</data>
 </node>
 <node id="3cd7721a-7f4a-4b56-8272-866b82f02ecd">
   <data key="d3">onehot.py \
@@ -121,7 +231,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/formatted/Other.tsv</data>
   <data key="d4">1770.0311008863785</data>
   <data key="d5">619.266501331761</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; onehot.py \
+  $WORK/characteristics/work/selected/Other.tsv \
+  --drop-onehot-values '\''Clinic'\'' \
+  --prefix-sep '\'', '\'' \
+  -o $WORK/characteristics/work/formatted/Other.tsv'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">13734</data>
+  <data key="d11">0</data>
 </node>
 <node id="1a6148c4-c06c-4a40-a25a-502b19bf0555">
   <data key="d3">select_features.py \
@@ -130,13 +250,30 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/formatted/Anthro.tsv</data>
   <data key="d4">842.5200980261066</data>
   <data key="d5">536.2873118155126</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/timepoints/0/anthro.tsv \
+  -c '\''WLZ_WHZ,Weight,MUAC,HC'\'' \
+  -o $WORK/characteristics/work/formatted/Anthro.tsv'</data>
+  <data key="d8">Saved 234 rows × 4 columns to /home/tpor598/recovery/newresults/characteristics/work/formatted/Anthro.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13496</data>
+  <data key="d11">0</data>
 </node>
 <node id="c8392659-52d0-4726-a793-7ec6eed4993f">
   <data key="d3">echo 'Data formatted'</data>
   <data key="d4">2515.4191335528076</data>
   <data key="d5">173.00274217169022</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; echo '\''Data formatted'\'''</data>
+  <data key="d8">Data formatted
+</data>
+  <data key="d9"></data>
+  <data key="d10">13844</data>
+  <data key="d11">0</data>
 </node>
 <node id="a3a3c4d3-4d0f-4876-9804-8c3ea04e0d88">
   <data key="d3">select_features.py \
@@ -145,7 +282,17 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/meta.tsv</data>
   <data key="d4">2597.334078452781</data>
   <data key="d5">622.6615353250093</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/filtered/meta.tsv \
+  -c '\''Condition,Feed'\'' \
+  -o $WORK/characteristics/work/meta.tsv'</data>
+  <data key="d8">Saved 234 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/meta.tsv (index kept)
+</data>
+  <data key="d9"></data>
+  <data key="d10">13880</data>
+  <data key="d11">0</data>
 </node>
 <node id="ebc6e1db-855f-48fd-80f3-e5f945183d4b">
   <data key="d3">onehot.py \
@@ -156,7 +303,18 @@ mkdir -p $WORK/characteristics/work/{selected,formatted,descriptive}</data>
   -o $WORK/characteristics/work/meta_oh.tsv</data>
   <data key="d4">3079.55011862202</data>
   <data key="d5">605.554145679446</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; onehot.py \
+  $WORK/characteristics/work/meta.tsv \
+  --drop-onehot-values '\''Well-nourished,Local RUSF (A)'\'' \
+  --prefix-sep '\'', '\'' \
+  --dtype bool \
+  -o $WORK/characteristics/work/meta_oh.tsv'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">13962</data>
+  <data key="d11">0</data>
 </node>
 <node id="2ab6e488-f8c5-45ef-908a-0a0247af69a2">
   <data key="d3">for file in $WORK/characteristics/work/formatted/{\
@@ -174,7 +332,31 @@ Anthro}.tsv; do
 done</data>
   <data key="d4">3085.582506410109</data>
   <data key="d5">-351.42390473254216</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; for file in $WORK/characteristics/work/formatted/{\
+Demographics,\
+Parental_Education_and_Economics,\
+Family_Structure,\
+Household_characteristics,\
+Other,\
+Anthro}.tsv; do
+    descriptive.py \
+        -i "$file" \
+        --meta $WORK/characteristics/work/meta.tsv \
+        -g '\''Feed'\'' \
+        -o "$WORK/characteristics/work/descriptive/$(basename "$file")"
+done'</data>
+  <data key="d8">✅ Table 1 saved to /home/tpor598/recovery/newresults/characteristics/work/descriptive/Demographics.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/characteristics/work/descriptive/Parental_Education_and_Economics.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/characteristics/work/descriptive/Family_Structure.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/characteristics/work/descriptive/Household_characteristics.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/characteristics/work/descriptive/Other.tsv
+✅ Table 1 saved to /home/tpor598/recovery/newresults/characteristics/work/descriptive/Anthro.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">13864</data>
+  <data key="d11">0</data>
 </node>
 <node id="dba66cb2-7b86-472d-846b-6ce69b5d489c">
   <data key="d3">merge.py \
@@ -187,7 +369,21 @@ done</data>
   -o $WORK/characteristics/work/data.tsv</data>
   <data key="d4">3068.698011091302</data>
   <data key="d5">123.22519115386945</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py \
+  $WORK/characteristics/work/formatted/Demographics.tsv \
+  $WORK/characteristics/work/formatted/Parental_Education_and_Economics.tsv \
+  $WORK/characteristics/work/formatted/Family_Structure.tsv \
+  $WORK/characteristics/work/formatted/Household_characteristics.tsv \
+  $WORK/characteristics/work/formatted/Other.tsv \
+  $WORK/characteristics/work/formatted/Anthro.tsv \
+  -o $WORK/characteristics/work/data.tsv'</data>
+  <data key="d8">Saved 234 rows × 22 columns to /home/tpor598/recovery/newresults/characteristics/work/data.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">13872</data>
+  <data key="d11">0</data>
 </node>
 <node id="7bedcaa4-7614-4a96-9ec8-fb3af7f5858b">
   <data key="d3">merge.py \
@@ -196,7 +392,17 @@ done</data>
   -o $WORK/characteristics/work/all_data_merged.tsv</data>
   <data key="d4">4170.362116559916</data>
   <data key="d5">-192.17577410940953</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py \
+  $WORK/characteristics/work/meta_oh.tsv \
+  $WORK/characteristics/work/data.tsv \
+  -o $WORK/characteristics/work/all_data_merged.tsv'</data>
+  <data key="d8">Saved 234 rows × 24 columns to /home/tpor598/recovery/newresults/characteristics/work/all_data_merged.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14019</data>
+  <data key="d11">0</data>
 </node>
 <node id="65aa3646-7f53-4ce2-9b5b-18b6602d5533">
   <data key="d3">merge.py \
@@ -205,7 +411,17 @@ done</data>
   -o $WORK/characteristics/work/MAM_data_merged.tsv</data>
   <data key="d4">4155.186184892746</data>
   <data key="d5">617.601215205645</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py \
+  $WORK/characteristics/work/meta_oh_MAM.tsv \
+  $WORK/characteristics/work/data.tsv \
+  -o $WORK/characteristics/work/MAM_data_merged.tsv'</data>
+  <data key="d8">Saved 159 rows × 24 columns to /home/tpor598/recovery/newresults/characteristics/work/MAM_data_merged.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14096</data>
+  <data key="d11">0</data>
 </node>
 <node id="2481d681-868d-451e-a558-307b619d7b00">
   <data key="d3">select_features.py \
@@ -215,7 +431,18 @@ done</data>
   -o $WORK/characteristics/work/all_stats/merged_stats_MAMstats_vals.tsv</data>
   <data key="d4">4710.607905352752</data>
   <data key="d5">304.62878266104053</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/characteristics/work/all_stats/merged_stats_MAMstats_rename.tsv \
+  -c '\''target,pval_mam'\'' \
+  --drop-index \
+  -o $WORK/characteristics/work/all_stats/merged_stats_MAMstats_vals.tsv'</data>
+  <data key="d8">Saved 23 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/all_stats/merged_stats_MAMstats_vals.tsv (index dropped)
+</data>
+  <data key="d9"></data>
+  <data key="d10">14614</data>
+  <data key="d11">0</data>
 </node>
 <node id="6218315e-f053-4982-a15b-99d2ad8b5b9b">
   <data key="d3">descriptive_stats.sh \
@@ -223,7 +450,25 @@ done</data>
   $WORK/characteristics/work/all_stats</data>
   <data key="d4">4287.73206521591</data>
   <data key="d5">-62.72285653708451</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; descriptive_stats.sh \
+  $WORK/characteristics/work/all_data_merged.tsv \
+  $WORK/characteristics/work/all_stats'</data>
+  <data key="d8">[filter] Dtype 'bool' columns: kept 8/24
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/all_stats/categories.tsv
+[filter] Dtype 'number' columns: kept 16/24
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/all_stats/numbers.tsv
+Results saved to /home/tpor598/recovery/newresults/characteristics/work/all_stats/corr.tsv
+[INFO] Dropped 0 rows with missing values (234 → 234).
+[INFO] Generated 256 test results.
+[INFO] Dropped 0 rows with missing values (234 → 234).
+[INFO] Generated 56 Fisher tests.
+Saved 432 rows × 4 columns to /home/tpor598/recovery/newresults/characteristics/work/all_stats/merged_stats.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14117</data>
+  <data key="d11">0</data>
 </node>
 <node id="c2a2f142-fef8-4637-b3f4-107b8dd284c7">
   <data key="d3">filter.py \
@@ -232,7 +477,18 @@ done</data>
   -o $WORK/characteristics/work/all_stats/merged_stats_MAMstats.tsv</data>
   <data key="d4">4417.709139746922</data>
   <data key="d5">42.64225046633737</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; filter.py \
+  $WORK/characteristics/work/all_stats/merged_stats.tsv \
+  -q '\''source == "Condition, MAM"'\'' \
+  -o $WORK/characteristics/work/all_stats/merged_stats_MAMstats.tsv'</data>
+  <data key="d8">[filter] Query '(source == "Condition, MAM")': kept 23/432
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/all_stats/merged_stats_MAMstats.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14487</data>
+  <data key="d11">0</data>
 </node>
 <node id="a5677d73-1cbc-4f51-b1f4-33ab7fae6ef8">
   <data key="d3">filter.py \
@@ -241,7 +497,18 @@ done</data>
   -o $WORK/characteristics/work/meta_oh_MAM.tsv</data>
   <data key="d4">3597.6560754170055</data>
   <data key="d5">616.5899984566477</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; filter.py \
+  $WORK/characteristics/work/meta_oh.tsv \
+  -q '\''`Condition, MAM` == True'\'' \
+  -o $WORK/characteristics/work/meta_oh_MAM.tsv'</data>
+  <data key="d8">[filter] Query '(`Condition, MAM` == True)': kept 159/234
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/meta_oh_MAM.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14027</data>
+  <data key="d11">0</data>
 </node>
 <node id="b4204505-10e6-4508-8f18-fd77bb22eb26">
   <data key="d3">rename_regex.py \
@@ -251,7 +518,18 @@ done</data>
   --o $WORK/characteristics/work/all_stats/merged_stats_MAMstats_rename.tsv</data>
   <data key="d4">4544.393191359851</data>
   <data key="d5">160.68440718571128</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; rename_regex.py \
+  $WORK/characteristics/work/all_stats/merged_stats_MAMstats.tsv \
+  --match '\''p_value'\'' \
+  --replace '\''pval_mam'\'' \
+  --o $WORK/characteristics/work/all_stats/merged_stats_MAMstats_rename.tsv'</data>
+  <data key="d8">✓ Saved renamed DataFrame → /home/tpor598/recovery/newresults/characteristics/work/all_stats/merged_stats_MAMstats_rename.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14548</data>
+  <data key="d11">0</data>
 </node>
 <node id="f151b962-5abd-4e55-8d80-0c6d2bd5fd55">
   <data key="d3">descriptive_stats.sh \
@@ -259,7 +537,25 @@ done</data>
   $WORK/characteristics/work/MAM_stats</data>
   <data key="d4">4308.512079101563</data>
   <data key="d5">739.3198930044202</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; descriptive_stats.sh \
+  $WORK/characteristics/work/MAM_data_merged.tsv \
+  $WORK/characteristics/work/MAM_stats'</data>
+  <data key="d8">[filter] Dtype 'bool' columns: kept 8/24
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/categories.tsv
+[filter] Dtype 'number' columns: kept 16/24
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/numbers.tsv
+Results saved to /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/corr.tsv
+[INFO] Dropped 0 rows with missing values (159 → 159).
+[INFO] Generated 224 test results.
+[INFO] Dropped 0 rows with missing values (159 → 159).
+[INFO] Generated 56 Fisher tests.
+Saved 400 rows × 4 columns to /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/merged_stats.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14178</data>
+  <data key="d11">0</data>
 </node>
 <node id="a91bcb45-b6e8-438d-bfa5-683fe3af699d">
   <data key="d3">select_features.py \
@@ -269,7 +565,18 @@ done</data>
   -o $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats_vals.tsv</data>
   <data key="d4">4760.464048983226</data>
   <data key="d5">1097.4964741577212</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; select_features.py \
+  $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats_rename.tsv \
+  -c '\''target,pval_feed'\'' \
+  --drop-index \
+  -o $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats_vals.tsv'</data>
+  <data key="d8">Saved 23 rows × 2 columns to /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/merged_stats_Feedstats_vals.tsv (index dropped)
+</data>
+  <data key="d9"></data>
+  <data key="d10">14644</data>
+  <data key="d11">0</data>
 </node>
 <node id="3c646afa-3458-4f68-bc77-93ccdf5a34c8">
   <data key="d3">rename_regex.py \
@@ -279,7 +586,18 @@ done</data>
   --o $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats_rename.tsv</data>
   <data key="d4">4594.328701282882</data>
   <data key="d5">959.0843798069154</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; rename_regex.py \
+  $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats.tsv \
+  --match '\''p_value'\'' \
+  --replace '\''pval_feed'\'' \
+  --o $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats_rename.tsv'</data>
+  <data key="d8">✓ Saved renamed DataFrame → /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/merged_stats_Feedstats_rename.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14578</data>
+  <data key="d11">0</data>
 </node>
 <node id="a2f6492e-a4de-421e-a7a9-8071befdf393">
   <data key="d3">filter.py \
@@ -288,7 +606,18 @@ done</data>
   -o $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats.tsv</data>
   <data key="d4">4455.031504055775</data>
   <data key="d5">839.1127766129254</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; filter.py \
+  $WORK/characteristics/work/MAM_stats/merged_stats.tsv \
+  -q '\''source == "Feed, ERUSF (B)"'\'' \
+  -o $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats.tsv'</data>
+  <data key="d8">[filter] Query '(source == "Feed, ERUSF (B)")': kept 23/400
+[filter] Saved filtered output to: /home/tpor598/recovery/newresults/characteristics/work/MAM_stats/merged_stats_Feedstats.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14517</data>
+  <data key="d11">0</data>
 </node>
 <node id="b43eaf30-d7ec-4b65-be69-0e8a3b66bf15">
   <data key="d3">merge.py \
@@ -298,7 +627,18 @@ done</data>
   -o $WORK/characteristics/work/merged_stats.tsv</data>
   <data key="d4">5623.37644665119</data>
   <data key="d5">306.8160564259665</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py \
+  $WORK/characteristics/work/merged.tsv \
+  $WORK/characteristics/work/MAM_stats/merged_stats_Feedstats_vals.tsv \
+  $WORK/characteristics/work/all_stats/merged_stats_MAMstats_vals.tsv \
+  -o $WORK/characteristics/work/merged_stats.tsv'</data>
+  <data key="d8">Saved 22 rows × 5 columns to /home/tpor598/recovery/newresults/characteristics/work/merged_stats.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14683</data>
+  <data key="d11">0</data>
 </node>
 <node id="7beb5794-773f-4f5a-84c7-d1ea3f38dac0">
   <data key="d3">merge.py \
@@ -314,7 +654,24 @@ done</data>
   -o $WORK/characteristics/work/merged.tsv</data>
   <data key="d4">4896.003246001427</data>
   <data key="d5">-345.41899144044726</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; merge.py \
+  $WORK/characteristics/work/descriptive/Demographics.tsv \
+  $WORK/characteristics/work/descriptive/Parental_Education_and_Economics.tsv \
+  $WORK/characteristics/work/descriptive/Family_Structure.tsv \
+  $WORK/characteristics/work/descriptive/Household_characteristics.tsv \
+  $WORK/characteristics/work/descriptive/Other.tsv \
+  $WORK/characteristics/work/descriptive/Anthro.tsv \
+  -a \
+  --add-filename \
+  --filename-format base \
+  -o $WORK/characteristics/work/merged.tsv'</data>
+  <data key="d8">Saved 22 rows × 3 columns to /home/tpor598/recovery/newresults/characteristics/work/merged.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">14223</data>
+  <data key="d11">0</data>
 </node>
 <node id="168616e2-03e6-40c9-ad84-13e2be2a4b29">
   <data key="d3">fdr.py \
@@ -324,7 +681,19 @@ done</data>
   -o $WORK/characteristics/work/merged_stats_fdr.tsv</data>
   <data key="d4">5931.070859740907</data>
   <data key="d5">511.24815489396406</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; fdr.py \
+  $WORK/characteristics/work/merged_stats.tsv \
+  -p pval_feed \
+  --colname qval_feed \
+  -o $WORK/characteristics/work/merged_stats_fdr.tsv'</data>
+  <data key="d8">Successfully processed 22 rows.
+Saved results to: /home/tpor598/recovery/newresults/characteristics/work/merged_stats_fdr.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">15098</data>
+  <data key="d11">0</data>
 </node>
 <node id="9e522180-5712-4b68-9b81-3fda30b2a551">
   <data key="d3">fdr.py \
@@ -334,246 +703,282 @@ done</data>
   -o $WORK/characteristics/characteristics.tsv</data>
   <data key="d4">6185.114782093395</data>
   <data key="d5">661.0379064707141</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; fdr.py \
+  $WORK/characteristics/work/merged_stats_fdr.tsv \
+  -p pval_mam \
+  --colname qval_mam \
+  -o $WORK/characteristics/characteristics.tsv'</data>
+  <data key="d8">Successfully processed 22 rows.
+Saved results to: /home/tpor598/recovery/newresults/characteristics/characteristics.tsv
+</data>
+  <data key="d9"></data>
+  <data key="d10">15139</data>
+  <data key="d11">0</data>
 </node>
 <node id="68f1b10a-85e5-4604-be45-74b2c1981da5">
   <data key="d3">heatmap_allnontimedata.py \
   -d $CONF/notimedatasets.txt</data>
   <data key="d4">404.0272008675912</data>
   <data key="d5">471.4352955240497</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; heatmap_allnontimedata.py \
+  -d $CONF/notimedatasets.txt'</data>
+  <data key="d8">Saved combined heatmap to /home/tpor598/recovery/newresults/characteristics/combined_nontime_heatmap_splitmam.svg
+</data>
+  <data key="d9">/home/tpor598/recovery/code/heatmap_allnontimedata.py:111: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+</data>
+  <data key="d10">13501</data>
+  <data key="d11">0</data>
 </node>
 <node id="07e65b0d-f571-4ff0-af6b-4acf015e4285">
   <data key="d3">heatmap_alltimedata.py \
   -d $CONF/timedatasets.txt</data>
   <data key="d4">408.57435056712245</data>
   <data key="d5">570.1834086114019</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; heatmap_alltimedata.py \
+  -d $CONF/timedatasets.txt'</data>
+  <data key="d8">Saved combined heatmap to /home/tpor598/recovery/newresults/characteristics/combined_heatmap.svg
+</data>
+  <data key="d9"></data>
+  <data key="d10">13509</data>
+  <data key="d11">0</data>
 </node>
 <node id="86c02c2d-a791-49d1-8a12-fe762bb09ceb">
   <data key="d3">plot_recipe.py</data>
   <data key="d4">423.7219275685885</data>
   <data key="d5">678.3064786613589</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; plot_recipe.py'</data>
+  <data key="d8"></data>
+  <data key="d9"></data>
+  <data key="d10">13539</data>
+  <data key="d11">0</data>
 </node>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="648469a0-beae-4f62-83bd-8142f5756d71">
-  <data key="d7">ac05d9d2-fc8a-4005-9bb2-78e7fac90ea7</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">ac05d9d2-fc8a-4005-9bb2-78e7fac90ea7</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="6ba48050-312e-418b-874a-774b9538deac">
-  <data key="d7">a0f5375d-ad4f-4c19-a9e7-2b0572070ffd</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">a0f5375d-ad4f-4c19-a9e7-2b0572070ffd</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="2af13dad-0266-4b5a-ad29-888dc6194249">
-  <data key="d7">dbe6508b-a902-417e-839c-e3d325aa2167</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">dbe6508b-a902-417e-839c-e3d325aa2167</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="3bc5f738-8436-41ae-bfb0-60821985d9df">
-  <data key="d7">05b0ea88-4e85-4d63-98db-5b5b6e123d7b</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">05b0ea88-4e85-4d63-98db-5b5b6e123d7b</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="8ae5234e-a93d-4e36-8149-ed3254541e3d">
-  <data key="d7">7dd37c81-a87c-47ae-bf77-04d113b3e6c6</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">7dd37c81-a87c-47ae-bf77-04d113b3e6c6</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="8d4e9837-14ac-4cf7-bed2-e4d9d7352749">
-  <data key="d7">962ff76a-d572-437e-b9b3-29cd3bd2485e</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">962ff76a-d572-437e-b9b3-29cd3bd2485e</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="1a6148c4-c06c-4a40-a25a-502b19bf0555">
-  <data key="d7">2fc72da3-6d20-4fd4-a6c8-ff23651873de</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">2fc72da3-6d20-4fd4-a6c8-ff23651873de</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="68f1b10a-85e5-4604-be45-74b2c1981da5">
-  <data key="d7">e7daef18-2784-4ef4-8fc5-43eb660748bb</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">e7daef18-2784-4ef4-8fc5-43eb660748bb</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="07e65b0d-f571-4ff0-af6b-4acf015e4285">
-  <data key="d7">0de638da-dee9-43a9-97e1-e2eef1ba54c1</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">0de638da-dee9-43a9-97e1-e2eef1ba54c1</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="86c02c2d-a791-49d1-8a12-fe762bb09ceb">
-  <data key="d7">fb9437ce-fd87-4807-8f57-605b03c2cf48</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">fb9437ce-fd87-4807-8f57-605b03c2cf48</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="648469a0-beae-4f62-83bd-8142f5756d71" target="076eda25-d8fc-444d-836d-b29104432372">
-  <data key="d7">31f9a287-e170-46c2-8355-20495b08a72a</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">31f9a287-e170-46c2-8355-20495b08a72a</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="076eda25-d8fc-444d-836d-b29104432372" target="4730d833-d0e5-438b-b4e7-f94208487149">
-  <data key="d7">56cb7f20-490e-4559-b857-bc388815cf7d</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">56cb7f20-490e-4559-b857-bc388815cf7d</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="4730d833-d0e5-438b-b4e7-f94208487149" target="c8392659-52d0-4726-a793-7ec6eed4993f">
-  <data key="d7">535cbe36-d339-49ea-b4f9-71ba928760e4</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">535cbe36-d339-49ea-b4f9-71ba928760e4</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="6ba48050-312e-418b-874a-774b9538deac" target="1dbff117-0167-4600-9d77-8098ec92beca">
-  <data key="d7">c6952130-cdca-43e4-abce-082f18b019a3</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">c6952130-cdca-43e4-abce-082f18b019a3</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="2af13dad-0266-4b5a-ad29-888dc6194249" target="1dbff117-0167-4600-9d77-8098ec92beca">
-  <data key="d7">a8b65a9d-3072-4a35-a2c9-cdf289bcd9c6</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">a8b65a9d-3072-4a35-a2c9-cdf289bcd9c6</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="1dbff117-0167-4600-9d77-8098ec92beca" target="c8392659-52d0-4726-a793-7ec6eed4993f">
-  <data key="d7">7c906048-08af-4b5b-a85d-d45c619926eb</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">7c906048-08af-4b5b-a85d-d45c619926eb</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="3bc5f738-8436-41ae-bfb0-60821985d9df" target="c8392659-52d0-4726-a793-7ec6eed4993f">
-  <data key="d7">d0d68108-916c-48c3-9ade-1345fa57f0ee</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">d0d68108-916c-48c3-9ade-1345fa57f0ee</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="8ae5234e-a93d-4e36-8149-ed3254541e3d" target="c8392659-52d0-4726-a793-7ec6eed4993f">
-  <data key="d7">f0fa606e-3e1c-45a7-85e8-7a664ed7c7d8</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">f0fa606e-3e1c-45a7-85e8-7a664ed7c7d8</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="8d4e9837-14ac-4cf7-bed2-e4d9d7352749" target="3cd7721a-7f4a-4b56-8272-866b82f02ecd">
-  <data key="d7">305497cf-e01f-4ca5-8238-62399f90c9bc</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">305497cf-e01f-4ca5-8238-62399f90c9bc</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="3cd7721a-7f4a-4b56-8272-866b82f02ecd" target="c8392659-52d0-4726-a793-7ec6eed4993f">
-  <data key="d7">0f130c9b-b3c9-4cb1-93ca-c0a573982739</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">0f130c9b-b3c9-4cb1-93ca-c0a573982739</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="1a6148c4-c06c-4a40-a25a-502b19bf0555" target="c8392659-52d0-4726-a793-7ec6eed4993f">
-  <data key="d7">d5fdcb05-153a-4ad5-a3c5-675f6ac0997e</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">d5fdcb05-153a-4ad5-a3c5-675f6ac0997e</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="c8392659-52d0-4726-a793-7ec6eed4993f" target="2ab6e488-f8c5-45ef-908a-0a0247af69a2">
-  <data key="d7">5145776f-8e57-48ee-9447-a5be1a2f6017</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">5145776f-8e57-48ee-9447-a5be1a2f6017</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="c8392659-52d0-4726-a793-7ec6eed4993f" target="dba66cb2-7b86-472d-846b-6ce69b5d489c">
-  <data key="d7">9e39cdf5-d09a-4386-a529-cd2aaf48b939</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">9e39cdf5-d09a-4386-a529-cd2aaf48b939</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="c8392659-52d0-4726-a793-7ec6eed4993f" target="a3a3c4d3-4d0f-4876-9804-8c3ea04e0d88">
-  <data key="d7">09b86d63-4982-4bae-90c0-7fe9d41995ab</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">09b86d63-4982-4bae-90c0-7fe9d41995ab</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="a3a3c4d3-4d0f-4876-9804-8c3ea04e0d88" target="ebc6e1db-855f-48fd-80f3-e5f945183d4b">
-  <data key="d7">2d9bcb63-e98d-4b9c-9549-9ed07e3da938</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">2d9bcb63-e98d-4b9c-9549-9ed07e3da938</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="ebc6e1db-855f-48fd-80f3-e5f945183d4b" target="7bedcaa4-7614-4a96-9ec8-fb3af7f5858b">
-  <data key="d7">28ba4dc5-c156-4eb8-9cce-935e915bff68</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">28ba4dc5-c156-4eb8-9cce-935e915bff68</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="ebc6e1db-855f-48fd-80f3-e5f945183d4b" target="a5677d73-1cbc-4f51-b1f4-33ab7fae6ef8">
-  <data key="d7">4ff44ba4-7353-4730-b341-ef98810f62eb</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">4ff44ba4-7353-4730-b341-ef98810f62eb</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="2ab6e488-f8c5-45ef-908a-0a0247af69a2" target="7beb5794-773f-4f5a-84c7-d1ea3f38dac0">
-  <data key="d7">7375260a-a887-48b9-a64a-e4c21ac862c1</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">7375260a-a887-48b9-a64a-e4c21ac862c1</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="dba66cb2-7b86-472d-846b-6ce69b5d489c" target="7bedcaa4-7614-4a96-9ec8-fb3af7f5858b">
-  <data key="d7">fb5f2a6c-3071-4392-8efb-ff32acda4223</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">fb5f2a6c-3071-4392-8efb-ff32acda4223</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="dba66cb2-7b86-472d-846b-6ce69b5d489c" target="65aa3646-7f53-4ce2-9b5b-18b6602d5533">
-  <data key="d7">fd4b9c96-b859-4247-99e1-9020fd038916</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">fd4b9c96-b859-4247-99e1-9020fd038916</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="7bedcaa4-7614-4a96-9ec8-fb3af7f5858b" target="6218315e-f053-4982-a15b-99d2ad8b5b9b">
-  <data key="d7">c2d0a678-c651-408b-98c6-79b38c3ea6ce</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">c2d0a678-c651-408b-98c6-79b38c3ea6ce</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="65aa3646-7f53-4ce2-9b5b-18b6602d5533" target="f151b962-5abd-4e55-8d80-0c6d2bd5fd55">
-  <data key="d7">9f4370a3-944f-4da2-9486-5b54fcbf9724</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">9f4370a3-944f-4da2-9486-5b54fcbf9724</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="2481d681-868d-451e-a558-307b619d7b00" target="b43eaf30-d7ec-4b65-be69-0e8a3b66bf15">
-  <data key="d7">7ba8dbc8-de43-4b17-a3d5-627c8382ef61</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">7ba8dbc8-de43-4b17-a3d5-627c8382ef61</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="6218315e-f053-4982-a15b-99d2ad8b5b9b" target="c2a2f142-fef8-4637-b3f4-107b8dd284c7">
-  <data key="d7">6ae44029-f4dd-421d-bce7-cf7ac93da272</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">6ae44029-f4dd-421d-bce7-cf7ac93da272</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="c2a2f142-fef8-4637-b3f4-107b8dd284c7" target="b4204505-10e6-4508-8f18-fd77bb22eb26">
-  <data key="d7">e30532d8-a3a5-4a8e-9745-59fc67b6817e</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">e30532d8-a3a5-4a8e-9745-59fc67b6817e</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="a5677d73-1cbc-4f51-b1f4-33ab7fae6ef8" target="65aa3646-7f53-4ce2-9b5b-18b6602d5533">
-  <data key="d7">15df622c-b866-4c27-99bf-5f3787dc2ec0</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">15df622c-b866-4c27-99bf-5f3787dc2ec0</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="b4204505-10e6-4508-8f18-fd77bb22eb26" target="2481d681-868d-451e-a558-307b619d7b00">
-  <data key="d7">b903efb1-8bbf-4ce5-a2da-faf5ef1fa26d</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">b903efb1-8bbf-4ce5-a2da-faf5ef1fa26d</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="f151b962-5abd-4e55-8d80-0c6d2bd5fd55" target="a2f6492e-a4de-421e-a7a9-8071befdf393">
-  <data key="d7">adffab04-af3f-4ce8-b053-aee5f7637153</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">adffab04-af3f-4ce8-b053-aee5f7637153</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="a91bcb45-b6e8-438d-bfa5-683fe3af699d" target="b43eaf30-d7ec-4b65-be69-0e8a3b66bf15">
-  <data key="d7">aca905d6-c3e3-46ff-986c-37205cde4e13</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">aca905d6-c3e3-46ff-986c-37205cde4e13</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="3c646afa-3458-4f68-bc77-93ccdf5a34c8" target="a91bcb45-b6e8-438d-bfa5-683fe3af699d">
-  <data key="d7">66e3a99b-8fe8-4030-898c-1509899486e9</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">66e3a99b-8fe8-4030-898c-1509899486e9</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="a2f6492e-a4de-421e-a7a9-8071befdf393" target="3c646afa-3458-4f68-bc77-93ccdf5a34c8">
-  <data key="d7">a5b7a5fc-e9cd-4ded-ace0-0e37a1d6c75f</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">a5b7a5fc-e9cd-4ded-ace0-0e37a1d6c75f</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="b43eaf30-d7ec-4b65-be69-0e8a3b66bf15" target="168616e2-03e6-40c9-ad84-13e2be2a4b29">
-  <data key="d7">57f2b549-6966-4ea7-98d5-95017c15c59b</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">57f2b549-6966-4ea7-98d5-95017c15c59b</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="7beb5794-773f-4f5a-84c7-d1ea3f38dac0" target="b43eaf30-d7ec-4b65-be69-0e8a3b66bf15">
-  <data key="d7">f95980b6-7d45-470f-be54-f3bda88a8c4e</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">f95980b6-7d45-470f-be54-f3bda88a8c4e</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 <edge source="168616e2-03e6-40c9-ad84-13e2be2a4b29" target="9e522180-5712-4b68-9b81-3fda30b2a551">
-  <data key="d7">b3910a9f-a1f0-4ba6-9f99-86ae1c7ba044</data>
-  <data key="d8">blocking</data>
-  <data key="d9"></data>
+  <data key="d12">b3910a9f-a1f0-4ba6-9f99-86ae1c7ba044</data>
+  <data key="d13">blocking</data>
+  <data key="d14"></data>
 </edge>
 </graph></graphml>
