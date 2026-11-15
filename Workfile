@@ -221,7 +221,25 @@ Results written to: /home/tpor598/recovery/newresults/harms.tsv
   <data key="d3">makefigures.sh</data>
   <data key="d4">1011.9626654041365</data>
   <data key="d5">-164.0479266722432</data>
-  <data key="d6"></data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; makefigures.sh ' | tail -n 50</data>
+  <data key="d8">==&gt; figures/Figure1-flowchart.svg
+==&gt; figures/Figure2-recovery.svg
+==&gt; figures/Figure3-factors.svg
+==&gt; figures/Figure4-healthy.svg
+==&gt; figures/FigureS1-alldata.svg
+==&gt; figures/FigureS2-extendedrecovery.svg
+==&gt; figures/FigureS3-kmcurves.svg
+==&gt; figures/FigureS4-recipe.svg
+Done: 8 figure(s) processed.
+</data>
+  <data key="d9">WARNING: unknown type: c2pa:manifest
+WARNING: unknown type: c2pa:manifest
+WARNING: unknown type: c2pa:manifest
+</data>
+  <data key="d10">60273</data>
+  <data key="d11">0</data>
 </node>
 <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
   <data key="d12">674066e0-8334-4461-80a0-f6324b4d6ad0</data>
