@@ -42,7 +42,7 @@ workfile: /home/tpor598/recovery/code/characteristics.wf
   -m $WORK/filtered/meta.tsv \
   -o $WORK/mothers_modelout.tsv</data>
   <data key="d4">341.9133712695664</data>
-  <data key="d5">147.42620345725305</data>
+  <data key="d5">227.76804816803997</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; mixedlm.py \
@@ -162,7 +162,7 @@ workspace_id: ws_e23addbe
 workfile: /home/tpor598/recovery/code/baseline_change.wf
 </data>
   <data key="d9"></data>
-  <data key="d10">32083</data>
+  <data key="d10">9661</data>
   <data key="d11">0</data>
 </node>
 <node id="689794d8-0cd7-4ff3-8b5f-000dde89a722">
@@ -241,6 +241,21 @@ WARNING: unknown type: c2pa:manifest
   <data key="d10">60273</data>
   <data key="d11">0</data>
 </node>
+<node id="1b6cba1d-1942-4ff5-9afa-c676bbac467f">
+  <data key="d3">workforce web code/enhanced_change.wf</data>
+  <data key="d4">335.4945927138593</data>
+  <data key="d5">111.15831593790344</data>
+  <data key="d6">ran</data>
+  <data key="d7">cd ~/recovery
+bash -c '. env.sh &amp;&amp; workforce web code/enhanced_change.wf ' | tail -n 50</data>
+  <data key="d8">Opening workspace ws_f913ad5c in browser: http://127.0.0.1:5049/workspace/ws_f913ad5c
+workspace_id: ws_f913ad5c
+workfile: /home/tpor598/recovery/code/enhanced_change.wf
+</data>
+  <data key="d9"></data>
+  <data key="d10">9910</data>
+  <data key="d11">0</data>
+</node>
 <edge source="f3f51679-47bd-4d95-b166-0773770b99c8" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
   <data key="d12">674066e0-8334-4461-80a0-f6324b4d6ad0</data>
   <data key="d13">blocking</data>
@@ -285,6 +300,10 @@ WARNING: unknown type: c2pa:manifest
   <data key="d13">blocking</data>
   <data key="d14"></data>
 </edge>
+<edge source="590f7132-e567-418c-bc2e-86a80543bc37" target="1b6cba1d-1942-4ff5-9afa-c676bbac467f">
+  <data key="d12">d5b74f7f-56f6-450c-8da3-1b0ce532b017</data>
+  <data key="d13">blocking</data>
+</edge>
 <edge source="58045259-e97d-47ba-82b3-e76bee82429b" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
   <data key="d12">a38d4152-887f-469e-90b8-3624b087d7b7</data>
   <data key="d13">blocking</data>
@@ -304,5 +323,9 @@ WARNING: unknown type: c2pa:manifest
   <data key="d12">5d9cb13e-275f-473a-8caa-76579a2d1859</data>
   <data key="d13">blocking</data>
   <data key="d14"></data>
+</edge>
+<edge source="1b6cba1d-1942-4ff5-9afa-c676bbac467f" target="d2d6d1d9-f0b2-46ce-8cb8-5aed9ec15dc9">
+  <data key="d12">a2ca681f-cf73-417e-9a60-3bf5cc93d87c</data>
+  <data key="d13">blocking</data>
 </edge>
 </graph></graphml>

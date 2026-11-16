@@ -761,6 +761,20 @@ bash -c '. env.sh &amp;&amp; plot_recipe.py'</data>
   <data key="d10">13539</data>
   <data key="d11">0</data>
 </node>
+<node id="fbf5f40c-d511-4602-b422-8a439c1bd487">
+  <data key="d3">W=$WORK/characteristics/work
+# metadata restricted to MAM children (for A vs B)
+filter.py $W/meta_oh.tsv \
+  -q '`Condition, MAM` == True' \
+  -o $W/mam_meta.tsv
+# A vs B: SMD within MAM only
+change.py $W/data.tsv -df2 $W/mam_meta.tsv \
+  -c "Feed, ERUSF (B)" -a smd --quiet \
+  -o $W/all_stats/AvsB_smd.tsv</data>
+  <data key="d4">4174.861363095104</data>
+  <data key="d5">-542.3132966897494</data>
+  <data key="d6"></data>
+</node>
 <edge source="5760c8c1-94d1-4427-b870-30efcef769eb" target="648469a0-beae-4f62-83bd-8142f5756d71">
   <data key="d12">ac05d9d2-fc8a-4005-9bb2-78e7fac90ea7</data>
   <data key="d13">blocking</data>
@@ -915,6 +929,10 @@ bash -c '. env.sh &amp;&amp; plot_recipe.py'</data>
   <data key="d12">c2d0a678-c651-408b-98c6-79b38c3ea6ce</data>
   <data key="d13">blocking</data>
   <data key="d14"></data>
+</edge>
+<edge source="7bedcaa4-7614-4a96-9ec8-fb3af7f5858b" target="fbf5f40c-d511-4602-b422-8a439c1bd487">
+  <data key="d12">a1ab44e9-f3f4-4703-8607-7c6e8b51b2c1</data>
+  <data key="d13">blocking</data>
 </edge>
 <edge source="65aa3646-7f53-4ce2-9b5b-18b6602d5533" target="f151b962-5abd-4e55-8d80-0c6d2bd5fd55">
   <data key="d12">9f4370a3-944f-4da2-9486-5b54fcbf9724</data>

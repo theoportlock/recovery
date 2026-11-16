@@ -607,8 +607,8 @@ bash -c '. env.sh &amp;&amp; maaslin3.R \
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; maaslin3.R \
-    --formula "~ timepoint * Feed + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
-    --reference "Feed,Local RUSF (A);timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
+    --formula "~ timepoint * Condition + Sex + baseline_WLZ + Delivery_Mode + BF + (1|subjectID)" \
+    --reference "Condition,Well-nourished;timepoint,yr1;Sex,Male;Delivery_Mode,Vaginal" \
     --min_abundance 0 \
     --min_prevalence 0.0 \
     --max_significance 0.1 \
@@ -622,19 +622,24 @@ bash -c '. env.sh &amp;&amp; maaslin3.R \
     $WORK/filtered/anthro.tsv \
     $WORK/filtered/timemeta_MAM_yr1_yr2.tsv \
     $WORK/healthy_change/maaslin/anthro | tail'</data>
-  <data key="d8">2026-11-15 20:17:43.92 INFO::Writing fitted values to file /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/fits/fitted_linear.rds
-2026-11-15 20:17:43.93 WARNING::Deleting existing ranef file: /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/fits/ranef_linear.rds
-2026-11-15 20:17:43.93 INFO::Writing extracted random effects to file /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/fits/ranef_linear.rds
-2026-11-15 20:17:43.94 INFO::Writing all the results to file (ordered 
-            by increasing individual q-values): /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/all_results.tsv
-2026-11-15 20:17:43.94 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/significant_results.tsv
-2026-11-15 20:17:43.98 INFO::Writing summary plot of significant
-                        results to file: /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/figures/summary_plot.pdf
-2026-11-15 20:17:47.71 INFO::Writing association plots (one for each significant association) to output folder: /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/figures
-2026-11-15 20:17:47.74 INFO::Plotting associations from most to least significant, grouped by metadata
+  <data key="d8">2026-11-16 22:44:42.77 INFO::Total samples in data: 302
+2026-11-16 22:44:42.77 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2026-11-16 22:44:42.77 INFO::Max samples allowed with min abundance for a feature not to be filtered: 302.000000
+2026-11-16 22:44:42.78 INFO::Total filtered features: 0
+2026-11-16 22:44:42.78 INFO::Filtered feature names from abundance, min prevalence, and max prevalence filtering:
+2026-11-16 22:44:42.78 INFO::Total features filtered by non-zero variance filtering: 1
+2026-11-16 22:44:42.78 INFO::Filtered feature names from variance filtering: WLZ_WHZ
+2026-11-16 22:44:42.78 INFO::Writing filtered data to file /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/features/filtered_data.tsv
+2026-11-16 22:44:42.78 INFO::Running selected transform method: NONE
+2026-11-16 22:44:42.78 INFO::Writing normalized, filtered, transformed data to file /home/tpor598/recovery/newresults/healthy_change/maaslin/anthro/features/data_transformed.tsv
 </data>
-  <data key="d9"></data>
-  <data key="d10">49082</data>
+  <data key="d9">Error in maaslin_process_metadata(metadata, formula, fixed_effects, reference,  : 
+  Provided categorical metadata has
+                fewer than 2 unique, non-NA values.
+Calls: maaslin3 -&gt; maaslin_process_metadata
+Execution halted
+</data>
+  <data key="d10">15314</data>
   <data key="d11">0</data>
 </node>
 <node id="fcbe36d2-9dd3-4e65-a2f2-cca5ede2f20b">
