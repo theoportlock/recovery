@@ -11,7 +11,7 @@
    inkscape:export-xdpi="500"
    inkscape:export-ydpi="500"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="FigureS4-kmcurves.svg"
+   sodipodi:docname="FigureS3-kmcurves.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.7673572"
-     inkscape:cx="246.41312"
-     inkscape:cy="150.79012"
+     inkscape:zoom="1.8206838"
+     inkscape:cx="199.65026"
+     inkscape:cy="155.16148"
      inkscape:window-width="1499"
      inkscape:window-height="900"
      inkscape:window-x="26"
@@ -226,7 +226,7 @@
       <g
          id="g1990"
          style="stroke-linecap:butt;stroke-linejoin:round"
-         transform="matrix(1.5246732,0,0,2.6084382,-67.353975,1.9030704)">
+         transform="matrix(1.5246732,0,0,2.6084382,-55.165559,16.589828)">
         <path
            d="m 136.79,15.42 h 4.5 v 0 h 4.5 v 0"
            style="fill:none;stroke:#66ccff;stroke-width:0.4;stroke-linecap:square;stroke-linejoin:round"
@@ -235,17 +235,17 @@
       <g
          id="g1994"
          style="stroke-linecap:butt;stroke-linejoin:round"
-         transform="translate(6.7770987,25.437922)">
+         transform="translate(18.965515,40.12468)">
         <text
            style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round"
            x="150.59"
            y="18.24"
-           id="text1992">Local RUSF (A)</text>
+           id="text1992">Standard</text>
       </g>
       <g
          id="line2d_19"
          style="stroke-linecap:butt;stroke-linejoin:round"
-         transform="matrix(1.5246732,0,0,2.6084382,-67.353975,-33.628452)">
+         transform="matrix(1.5246732,0,0,2.6084382,-55.165559,-18.941694)">
         <path
            d="m 136.79,25.74 h 4.5 v 0 h 4.5 v 0"
            style="fill:none;stroke:#ff961a;stroke-width:0.4;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1"
@@ -254,13 +254,24 @@
       <g
          id="text_17-6"
          style="stroke-linecap:butt;stroke-linejoin:round"
-         transform="translate(6.7770987,7.0271698)">
+         transform="translate(18.965515,21.713928)">
         <text
            style="font-size:6px;font-family:Arial, sans-serif;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round"
            x="150.59"
            y="28.559999"
-           id="text1999">ERUSF (B)</text>
+           id="text1999">Enhanced</text>
       </g>
+      <text
+         xml:space="preserve"
+         style="font-size:6.13692px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;stroke-width:0.306846;stroke-linecap:round;stroke-linejoin:bevel;paint-order:stroke markers fill"
+         x="148.39217"
+         y="41.925972"
+         id="text499"><tspan
+           sodipodi:role="line"
+           id="tspan497"
+           style="font-size:6.13692px;stroke-width:0.306846"
+           x="148.39217"
+           y="41.925972">Refeeding arm</tspan></text>
     </g>
     <g
        id="figure_1-36"
@@ -1034,24 +1045,24 @@
     <text
        xml:space="preserve"
        style="font-size:2.82222px;font-family:Arial, sans-serif;-inkscape-font-specification:'Arial, sans-serif';fill:#000000;stroke-width:0.141111;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4.6;stroke-dashoffset:0.373333;stop-color:#000000"
-       x="34.295605"
-       y="14.062204"
+       x="34.824772"
+       y="14.591371"
        id="text2365"><tspan
          sodipodi:role="line"
          id="tspan2363"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Arial, sans-serif;-inkscape-font-specification:'Arial, sans-serif Bold';stroke-width:0.141111"
-         x="34.295605"
-         y="14.062204">a</tspan></text>
+         x="34.824772"
+         y="14.591371">a</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.82222px;font-family:Arial, sans-serif;-inkscape-font-specification:'Arial, sans-serif';fill:#000000;stroke-width:0.141111;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4.6;stroke-dashoffset:0.373333;stop-color:#000000"
-       x="108.37894"
-       y="14.062204"
+       x="108.9081"
+       y="14.591371"
        id="text5984"><tspan
          sodipodi:role="line"
          id="tspan5982"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Arial, sans-serif;-inkscape-font-specification:'Arial, sans-serif Bold';stroke-width:0.141111"
-         x="108.37894"
-         y="14.062204">b</tspan></text>
+         x="108.9081"
+         y="14.591371">b</tspan></text>
   </g>
 </svg>

@@ -5,7 +5,7 @@
    viewBox="0 0 980 1572"
    version="1.1"
    id="svg821"
-   sodipodi:docname="new.svg"
+   sodipodi:docname="Figure1-flowchart.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    inkscape:export-filename="flowchart-exploratory.png"
    inkscape:export-xdpi="600"
@@ -25,9 +25,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.899752"
-     inkscape:cx="284.52285"
-     inkscape:cy="1056.9579"
+     inkscape:zoom="1.3503869"
+     inkscape:cx="606.49287"
+     inkscape:cy="148.84623"
      inkscape:window-width="1920"
      inkscape:window-height="995"
      inkscape:window-x="0"
@@ -1276,7 +1276,8 @@
          fill="#ff0000"
          stroke="#000"
          stroke-width="1"
-         id="rect457" />
+         id="rect457"
+         style="fill:#ff8989;fill-opacity:1" />
       <text
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
@@ -1305,24 +1306,26 @@
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
          font-size="11.5"
-         fill="#000"
+         fill="#000000"
          id="text474"
-         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
-           x="94.0"
-           y="669.0"
-           id="tspan466"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Standard-of-Care Feeds +</tspan><tspan
-           x="94.0"
-           y="683.0"
-           id="tspan468"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">PS Stimulation</tspan><tspan
-           x="94.0"
-           y="697.1"
-           id="tspan472"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
-   font-style="italic"
-   id="tspan470"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 77</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;inline-size:264.636"
+         transform="translate(92.159364,662.39543)"
+         xml:space="preserve"><tspan
+           x="0"
+           y="0"
+           id="tspan3082">Standard Refeeding
+</tspan><tspan
+           x="0"
+           y="13.333376"
+           id="tspan3084">(L-RUSF + SQ-LNS)
+</tspan><tspan
+           x="0"
+           y="26.666751"
+           id="tspan3086">+ PS Stimulation
+</tspan><tspan
+           x="0"
+           y="40.000127"
+           id="tspan3088">N = 77</tspan></text>
     </g>
     <g
        id="g490">
@@ -1335,28 +1338,6 @@
          stroke="#000"
          stroke-width="1"
          id="rect478" />
-      <text
-         text-anchor="middle"
-         font-family="Arial, Helvetica, sans-serif"
-         font-size="11.5"
-         fill="#000"
-         id="text488"
-         style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
-           x="271.0"
-           y="669.0"
-           id="tspan480"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Enhanced Feeds + PS</tspan><tspan
-           x="271.0"
-           y="683.0"
-           id="tspan482"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">Stimulation</tspan><tspan
-           x="271.0"
-           y="697.1"
-           id="tspan486"
-           style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px"><tspan
-   font-style="italic"
-   id="tspan484"
-   style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 75</tspan></text>
     </g>
     <g
        id="g510">
@@ -1992,6 +1973,30 @@
    id="tspan750"
    style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px">N</tspan> = 67 Anthro Cross-Sectional</tspan></text>
     </g>
+    <text
+       text-anchor="middle"
+       font-family="Arial, Helvetica, sans-serif"
+       font-size="11.5"
+       fill="#000000"
+       id="text961"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;inline-size:264.636"
+       transform="translate(271.24176,662.91906)"
+       xml:space="preserve"><tspan
+         x="0"
+         y="0"
+         id="tspan3090">Enhanced Refeeding
+</tspan><tspan
+         x="0"
+         y="13.333376"
+         id="tspan3092">(E-RUSF + ESQ-LNS)
+</tspan><tspan
+         x="0"
+         y="26.666751"
+         id="tspan3094">+ PS Stimulation
+</tspan><tspan
+         x="0"
+         y="40.000127"
+         id="tspan3096">N = 75</tspan></text>
     <g
        id="g779">
       <rect
@@ -2233,13 +2238,13 @@
          stroke-width="1"
          id="rect453" />
       <text
-         x="233.0"
+         x="233"
          y="1321.3"
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
-         font-size="9.5"
-         fill="#000"
-         id="text455">Standard-of-Care</text>
+         font-size="9.5px"
+         fill="#000000"
+         id="text455">Standard Refeeding</text>
       <rect
          x="283"
          y="1308"
@@ -2250,13 +2255,13 @@
          stroke-width="1"
          id="rect458" />
       <text
-         x="333.0"
+         x="333"
          y="1321.3"
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
-         font-size="9.5"
-         fill="#000"
-         id="text460">Enhanced</text>
+         font-size="9.5px"
+         fill="#000000"
+         id="text460">Enhanced Refeeding</text>
       <rect
          x="383"
          y="1308"
@@ -3081,13 +3086,14 @@
          stroke-width="1"
          id="rect677" />
       <text
-         x="743.0"
-         y="1321.3"
+         x="742.98932"
+         y="1321.0477"
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
-         font-size="9.5"
-         fill="#000"
-         id="text679">Standard-of-Care</text>
+         font-size="8.52468px"
+         fill="#000000"
+         id="text679"
+         style="stroke-width:0.897335">Standard Refeeding</text>
       <rect
          x="785"
          y="1308"
@@ -3098,13 +3104,14 @@
          stroke-width="1"
          id="rect681" />
       <text
-         x="827.0"
-         y="1321.3"
+         x="827.00586"
+         y="1321.0477"
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
-         font-size="9.5"
-         fill="#000"
-         id="text683">Enhanced</text>
+         font-size="8.52468px"
+         fill="#000000"
+         id="text683"
+         style="stroke-width:0.897335">Enhanced Refeeding</text>
       <rect
          x="869"
          y="1308"
@@ -3115,13 +3122,14 @@
          stroke-width="1"
          id="rect685" />
       <text
-         x="911.0"
-         y="1321.3"
+         x="910.9707"
+         y="1320.9568"
          text-anchor="middle"
          font-family="Arial, Helvetica, sans-serif"
-         font-size="9.5"
-         fill="#000"
-         id="text687">Well-nourished</text>
+         font-size="8.52468px"
+         fill="#000000"
+         id="text687"
+         style="stroke-width:0.897335">Well-nourished</text>
       <rect
          x="543"
          y="1328"
