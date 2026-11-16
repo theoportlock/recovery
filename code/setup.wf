@@ -1342,8 +1342,8 @@ bash -c '. env.sh &amp;&amp; unzip -o \
   -a "recover_1sd = (WLZ_WHZ &gt;= -1) * 1" \
   -a "recover_2sd = (WLZ_WHZ &gt;= -2) * 1" \
   -o $WORK/filtered/anthro_recovery.tsv</data>
-  <data key="d4">1282.3530979552272</data>
-  <data key="d5">-281.7219182616201</data>
+  <data key="d4">1283.621592382437</data>
+  <data key="d5">-280.4534238344103</data>
   <data key="d6">ran</data>
   <data key="d7">cd ~/recovery
 bash -c '. env.sh &amp;&amp; assign.py $WORK/filtered/anthro.tsv \
